@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="pt-BR" ng-app="copeltelecom">
+<head>
+	
+	<title>COPEL  |  Wvt Cadastro Completo de Cliente</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="../_assets/images/favicons/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="../_assets/images/favicons/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="../_assets/images/favicons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="../_assets/images/favicons/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="../_assets/images/favicons/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="../_assets/images/favicons/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="../_assets/images/favicons/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="../_assets/images/favicons/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="../_assets/images/favicons/apple-touch-icon-180x180.png">
+	<link rel="icon" type="image/png" href="../_assets/images/favicons/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="../_assets/images/favicons/favicon-194x194.png" sizes="194x194">
+	<link rel="icon" type="image/png" href="../_assets/images/favicons/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="../_assets/images/favicons/android-chrome-192x192.png" sizes="192x192">
+	<link rel="icon" type="image/png" href="../_assets/images/favicons/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="../_assets/images/favicons/manifest.json">
+	<link rel="mask-icon" href="../_assets/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-TileImage" content="../_assets/images/favicons/mstile-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,300,100,700,900,italic" rel="stylesheet" type="text/css">
+
+	<link rel="stylesheet" id="css-css" href="../_assets/css/all.min.css?ver=4.4.2" type="text/css" media="all">
+
+	<script type="text/javascript" src="../_assets/js/all.min.js?ver=4.4.2"></script>
+
+</head>
+<body ng-controller="copel">
+
+<div id="sb-site">
+	<header class="header-main ">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-sm-12 col-xs-12">
+					<nav class="nav-section">
+						<ul>
+							<li>
+								<a href="" class="">
+									Para sua casa
+								</a>
+							</li>
+							<li>
+								<a href="/para-empresas/" class="">
+									Para empresas
+								</a>
+							</li>
+							<li><a href="/blog/">Blog fique ligado</a></li>
+						</ul>
+						<span class="nav-city">
+							<em><a href="" ng-click="go_cidade()">Panambi, PR</a></em>
+							<i class="fa fa-map-marker"></i>
+						</span>
+					</nav>
+				</div>
+				<div class="col-md-4 col-sm-12 col-xs-12">
+					<nav class="nav-out">
+						<a href="/area-do-cliente-login/">Área do Cliente</a>
+						<a href="/atendimento-e-suporte/">Atendimento e Suporte</a>
+					</nav>
+				</div>
+			</div>
+
+			<div class="nav-site">
+				<a href="" class="logo-copel"><img src="../_assets/images/logo-copel-header.png" alt="COPEL"></a>
+				<ul>
+					<li><a href="/copel-telecom/">O que é a Copel Telecom</a></li>
+					<li><a href="/planos/">Planos e preços</a></li>
+					<li><a href="/vantagens/">Diferenciais</a></li>
+					<li><a href="/faq/">Perguntas frequentes</a></li>
+				</ul>	
+			</div>
+		</div>
+		<div class="header-mobile">
+			<i class="fa fa-bars sb-toggle-left sb-hide"></i>
+			<a href="" class="logo-copel"><img src="../_assets/images/logo-copel-white.svg" alt="COPEL"></a>
+		</div>
+	</header>
+
+
+
+	<section class="cadastro-completo-de-cliente wow fadeIn">
+		<header class="ccdc-header">
+			<div class="container">
+				<div class="col-sm-5"><h1>Cadastro<br>completo de cliente</h1></div>
+				<div class="col-sm-5"><small>Esta área possui rede de fibra óptica GPON. Para a conclusão do estudo de viabilidade, favor preencher o formulário.</small></div>
+			</div>
+		</header>
+		<div class="ccdc-wrapper">
+			<div class="container">
+				<div class="row">
+					<nav class="col-sm-3 col-xs-12">
+						<ul class="nav-tabs" role="tablist">
+							<li role="presentation" class="active infos-pessoais">
+								<a href="#infos-pessoais">
+									<i class="i-ccdc-infos"></i>Informações<strong>Pessoais</strong>
+								</a>
+							</li>
+							<li role="presentation" class="dados-de-cadastro">
+								<a href="#dados-de-cadastro">
+									<i class="i-ccdc-dados"></i><strong>Dados</strong>de Cadastro
+								</a>
+							</li>
+							<li role="presentation" class="resumo-da-compra">
+								<a href="#resumo-da-compra">
+									<i class="i-ccdc-resumo"></i><strong>Resumo</strong>da Compra
+								</a>
+							</li>
+						</ul>
+					</nav>
+					<article class="col-sm-9 col-xs-12">
+						
+							<div role="tabpanel" class="tab-pane active" id="infos-pessoais">
+								<form action="?step=dados-de-cadastro" id="form-infos-pessoais" method="post">
+									<fieldset>
+										<legend class="ccdc-legend">Informações pessoais</legend>
+										<div class="row"><label class="col-sm-4"><input type="number" name="cpf" placeholder="CPF"></label></div>
+										<div class="row"><label class="col-sm-8"><input type="text" name="nome" placeholder="Nome"></label></div>
+										<div class="row"><label class="col-sm-8"><input type="text" name="nome-mae" placeholder="Nome da Mãe" required></label></div>
+										<div class="row"><label class="col-sm-4"><input type="number" name="nascimento" placeholder="Nascimento"></label></div>
+									</fieldset>
+									<div class="repeatable">
+										<fieldset>
+											<legend class="ccdc-legend">contato </legend>
+											<div class="row"><label class="col-sm-8"><input type="text" name="nome" placeholder="Nome" required></label></div>
+											<div class="row"><label class="col-sm-4"><input type="number" name="telefone" placeholder="Telefone" required></label></div>
+											<div class="row"><label class="col-sm-4"><input type="number" name="celular" placeholder="Celular" required></label></div>
+											<div class="row"><label class="col-sm-6"><input type="text" name="email" placeholder="E-mail" required></label></div>
+										</fieldset>
+									</div>
+									<button class="bt-o-b active">SEGUINTE</button>
+								</form>
+							</div>
+						
+							<div role="tabpanel" class="tab-pane" id="dados-de-cadastro">
+								<form action="?step=resumo-da-compra" id="dados-de-cadastro" method="post">
+									<fieldset>
+										<legend class="ccdc-legend">Endereço para instalação</legend>
+										<div class="ccdc-gray">
+											<div class="row">
+												<label class="col-sm-10">
+													<div class="dropdown dropdown-select">
+														<input type="text" name="endereco-text" value="AL CARLOS DE CARVALHO" readonly required>
+														<input type="hidden" name="endereco" value="AL CARLOS DE CARVALHO">
+														<button type="button" data-toggle="dropdown"><i class="fa fa-angle-down"></i></button>
+														<ul class="dropdown-menu">
+															<li><a href="#" data-value="Rua Marechal Deodoro" data-text="Rua Marechal Deodoro">AL CARLOS DE CARVALHO</a></li>
+														</ul>
+													</div>
+												</label>
+											</div>
+											<label><input type="checkbox"> <span>Não identifiquei minha rua na lista!</span></label>
+											
+											<small>CEP*</small>
+											<span>80430180</span>
+
+											<small>Nº*</small>
+											<span>537</span>
+
+											<small>Bairro</small>
+											<span>CENTRO</span>
+
+											<small>Município</small>
+											<span>CURITIBA - PR</span>
+											
+										</div>
+									</fieldset>
+
+									<fieldset>
+										<legend class="ccdc-legend">Tipo de Imóvel</legend>
+
+										<div class="dropdown dropdown-select">
+											<input type="text" name="tipo-text" value="Tipo de Imóvel" readonly required>
+											<input type="hidden" name="tipo" value="">
+											<button type="button" data-toggle="dropdown"><i class="fa fa-angle-down"></i></button>
+											<ul class="dropdown-menu">
+												<li><a href="#" data-value="Condomínio Vertical" data-text="Condomínio Vertical">Condomínio Vertical</a></li>
+												<li><a href="#" data-value="Condomínio Horizontal" data-text="Condomínio Horizontal">Condomínio Horizontal</a></li>
+												<li><a href="#" data-value="Casa" data-text="Casa">Casa</a></li>
+											</ul>
+										</div>
+
+									</fieldset>
+
+									<fieldset class="hide">
+										<legend class="ccdc-legend">Condomínio Vertical</legend>
+										<dl>
+											<dt>Nome do condomínio</dt>
+											<dd><input type="text"></dd>
+										</dl>
+										<dl>
+											<dt>Quantidade de casas no condomínio</dt>
+											<dd><input type="text"></dd>
+										</dl>
+									</fieldset>
+
+									<fieldset class="hide">
+										<legend class="ccdc-legend">Condomínio Horizontal</legend>
+										<dl>
+											<dt>Tipo de estabelecimento</dt>
+											<dd>
+												<div class="dropdown dropdown-select">
+													<input type="text" name="tipo-text" value="Tipo de estabelecimento" readonly required>
+													<input type="hidden" name="tipo" value="">
+													<button type="button" data-toggle="dropdown"><i class="fa fa-angle-down"></i></button>
+													<ul class="dropdown-menu">
+														<li><a href="#" data-value="Residência" data-text="Residência">Residência</a></li>
+														<li><a href="#" data-value="Comércio" data-text="Comércio">Comércio</a></li>
+													</ul>
+												</div>
+											</dd>
+										</dl>
+										<dl>
+											<dt>Nome do condomínio</dt>
+											<dd><input type="text" name="" /></dd>
+										</dl>
+										<dl>
+											<dt>Qtde de andares</dt>
+											<dd><input type="text" name=""></dd>
+										</dl>
+										<dl>
+											<dt>Quantidade de aptos por andar</dt>
+											<dd><input type="text" name=""></dd>
+										</dl>
+										<dl>
+											<dt>Quantidade de blocos</dt>
+											<dd><input type="text" name=""></dd>
+										</dl>
+									</fieldset>
+
+
+									<fieldset class="fieldset-cobranca">
+										<legend class="ccdc-legend">cobrança</legend>
+										<div data-toggle="buttons" class="radio-cobranca">
+											<label class="btn bt-o active">
+											    <input type="radio" name="enderecocobranca" id="option1" autocomplete="off" checked> mesmo endereço de instalação
+											</label>
+											<small>ou</small>
+											<label class="btn bt-o">
+											    <input type="radio" name="enderecocobranca" id="option2" autocomplete="off"> outro endereço
+											</label>
+										</div>
+										<small>Escolha o melhor dia de vencimento da fatura</small>
+										<div data-toggle="buttons" class="radio-cobranca">
+											<label class="btn bt-o active"><input type="radio" name="diadafatura" id="option5" autocomplete="off" checked>&nbsp; 5 &nbsp;</label>
+											<label class="btn bt-o"><input type="radio" name="diadafatura" id="option10" autocomplete="off">10</label>
+											<label class="btn bt-o"><input type="radio" name="diadafatura" id="option15" autocomplete="off">15</label>
+											<label class="btn bt-o"><input type="radio" name="diadafatura" id="option20" autocomplete="off">20</label>
+											<label class="btn bt-o"><input type="radio" name="diadafatura" id="option25" autocomplete="off">25</label>
+										</div>
+										<label>
+											<input type="checkbox"><small>Receber a fatura online<br><i>A fatura do serviço Copel Fibra é disponibilizada na Área do Cliente.</i></small>
+										</label>
+									</fieldset>
+									<button class="bt-o-b active">SEGUINTE</button>
+								</form>
+							</div>
+						
+							<div role="tabpanel" class="tab-pane" id="resumo-da-compra">
+								<h6 class="ccdc-legend">confirme seus dados</h6>
+								<br>
+								<h6 class="ccdc-legend">Informações pessoais</h6>
+								<div class="row">
+									<div class="col-sm-6 col-xs-12">
+										<ul>
+											<li class="row">
+												<div class="col-sm-6"><small>Nome</small></div>
+												<div class="col-sm-6"><span>João da Silva</span></div>
+											</li>
+											<li class="row">
+												<div class="col-sm-6"><small>CPF</small></div>
+												<div class="col-sm-6"><span>123.456.789-12</span></div>
+											</li>
+											<li class="row">
+												<div class="col-sm-6"><small>Nome da Mãe</small></div>
+												<div class="col-sm-6"><span>Maria da Silva</span></div>
+											</li>
+											<li class="row">
+												<div class="col-sm-6"><small>Data de Nascimento</small></div>
+												<div class="col-sm-6"><span>22/04/1984</span></div>
+											</li>
+										</ul>
+										<h6 class="ccdc-legend">Contato</h6>
+										<ul>
+											<li class="row">
+												<div class="col-sm-6"><small>Nome</small></div>
+												<div class="col-sm-6"><span>João da Silva</span></div>
+											</li>
+											<li class="row">
+												<div class="col-sm-6"><small>Telefone</small></div>
+												<div class="col-sm-6"><span>(12) 1234-5678</span></div>
+											</li>
+											<li class="row">
+												<div class="col-sm-6"><small>Celular</small></div>
+												<div class="col-sm-6"><span>(12) 1234-5678</span></div>
+											</li>
+											<li class="row">
+												<div class="col-sm-6"><small>Email</small></div>
+												<div class="col-sm-6"><span>email@email.com.br</span></div>
+											</li>
+										</ul>
+										<h6 class="ccdc-legend">endereço para instalação</h6>
+										<ul>
+											<li class="row">
+												<div class="col-sm-6"><small>CEP</small></div>
+												<div class="col-sm-6"><span>80430190</span></div>
+											</li>
+											<li class="row">
+												<div class="col-sm-6"><small>Celular</small></div>
+												<div class="col-sm-6"><span>(12) 1234-5678</span></div>
+											</li>
+											<li class="row">
+												<div class="col-sm-6"><small>Nome da Rua</small></div>
+												<div class="col-sm-6"><span>AL CARLOS DE CARVALHO</span></div>
+											</li>
+											<li class="row">
+												<div class="col-sm-6"><small>Nº.</small></div>
+												<div class="col-sm-6"><span>537</span></div>
+											</li>
+											<li class="row">
+												<div class="col-sm-6"><small>Complemento</small></div>
+												<div class="col-sm-6"><span></span></div>
+											</li>
+											<li class="row">
+												<div class="col-sm-6"><small>Bairro</small></div>
+												<div class="col-sm-6"><span>Centro</span></div>
+											</li>
+											<li class="row">
+												<div class="col-sm-6"><small>Município</small></div>
+												<div class="col-sm-6"><span>CURITIBA - PR</span></div>
+											</li>
+										</ul>
+										<h6 class="ccdc-legend">dados da compra</h6>
+										<ul>
+											<li class="row">
+												<div class="col-sm-6"><small>CEP</small></div>
+												<div class="col-sm-6"><span>80430190</span></div>
+											</li>
+											<li class="row">
+												<div class="col-sm-6"><small>Nome da Rua</small></div>
+												<div class="col-sm-6"><span>AL CARLOS DE CARVALHO</span></div>
+											</li>
+											<li class="row">
+												<div class="col-sm-6"><small>N.</small></div>
+												<div class="col-sm-6"><span>537</span></div>
+											</li>
+											<li class="row">
+												<div class="col-sm-6"><small>Complemento</small></div>
+												<div class="col-sm-6"><span></span></div>
+											</li>
+											<li class="row">
+												<div class="col-sm-6"><small>Bairro</small></div>
+												<div class="col-sm-6"><span>Centro</span></div>
+											</li>
+											<li class="row">
+												<div class="col-sm-6"><small>Município</small></div>
+												<div class="col-sm-6"><span>CURITIBA - PR</span></div>
+											</li>
+										</ul>
+										<h6 class="ccdc-legend">endereço de cobrança</h6>
+										<ul>
+											<li class="row">
+												<div class="col-sm-6"><small>Plano de Internet</small></div>
+												<div class="col-sm-6"><span>COPEL FIBRA 60 MEGA</span></div>
+											</li>
+											<li class="row">
+												<div class="col-sm-6"><small>Data de vencimento</small></div>
+												<div class="col-sm-6"><span>5</span></div>
+											</li>
+											<li class="row">
+												<div class="col-sm-6"><small>Receber Fatura online</small></div>
+												<div class="col-sm-6"><span>SIM</span></div>
+											</li>
+											<li class="row">
+												<div class="col-sm-6"><strong>Data da instalação</strong></div>
+												<div class="col-sm-6"><span>25/03/2016</span></div>
+											</li>
+										</ul>
+										<h6 class="ccdc-legend">FIDELIZAÇÃO: MENSALIDADE POR PRAZO DE FIDELIZAÇÃO</h6>
+										<ul>
+											<li class="row">
+												<div class="col-sm-6"><strong>Fidelidade de 1 ano</strong></div>
+												<div class="col-sm-6"><span>R$ 229,90</span></div>
+											</li>
+											<li class="row">
+												<div class="col-sm-6"><strong>Adesão (Taxa Única)</strong></div>
+												<div class="col-sm-6"><span>1 X R$ 99,99</span></div>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<form action="?step=finalizado" id="form-resumo-da-compra" method="post">
+									<div class="row">
+										<div class="col-sm-10">
+											<div class="termos bg">
+													<p><strong>Termo de Adesão</strong></p>
+													<p>
+														Este Termo de Adesão está vinculado à concordância com a cotação em reais e demais informações para o serviço/produto e à aceitação do Contrato de Prestação de Serviço de Telecomunicações na modalidade SCM - Serviço de Comunicação Multimídia correspondente, reproduzido no arquivo abaixo.
+													</p>
+													<p class="input-check">
+														<input type="checkbox" name="termos" required> Li e aceito o <a href="#">Termo de Adesão</a> e o <a href="#">Contrato do serviço</a> de internet banda larga Copel Fibra da Copel Telecom.
+													</p>
+											</div>
+
+											<div class="termos bg">
+												<p class="input-check">
+													<input type="checkbox" name="termos" required> Declaro que as informações fornecidas neste formulário são verdadeiras e estou ciente de que a falsidade do presente formulário pode implicar na sanção penal prevista no art. 299 do Código Penal, conforme transição abaixo: "Art. 299 - Omitir, em documento público ou particular, declaração que dele devia constar, ou nele inserir ou fazer inserir declaração falsa ou diversa da que devia ser escrita, com o fim de prejudicar direito, criar obrigação ou alterar a verdade sobre fato juridicamente relevante: Pena - reclusão, de um a cinco anos, e multa, se o documento é público, e reclusão de um a três anos, e multa, se o documento é particular."
+												</p>
+											</div>
+
+											<div class="row">
+												<div class="col-sm-3"><img src="http://placehold.it/180x50" alt=""></div>
+												<div class="col-sm-4">
+													<label>
+														<input type="text" placeholder="Digite o código ao lado" required>
+														<small>Digite o texto exatamente como aparece na imagem ao lado, respeitando maiúscula e maiúscula.</small>
+													</label>
+												</div>
+											</div>
+
+											<div class="termos">
+												<div class="text-center"><button class="bt-o-b active">FINALIZAR</button></div>
+											</div>
+
+
+											<div class="termos">
+												<small>
+													Observações<br>
+													* Impostos já inclusos, excluídos os casos de tributação especial. ** A taxa de acesso poderá ser parcelada conforme prazo de fidelização, com aplicação de juros de 1,5% a.m, mediante solicitação antes do aceite da proposta.  *** Prazo(s) de instalação condicionado(s) à: Curitiba e Pinhais em 40 dias | Demais Cidades do Paraná em 30 dias | Para serviço Copel Fibra ver prazo no site | contados a partir da assinatura do contrato ou aceite da proposta. - disponibilização dos requisitos mínimos de infra-estrutura (vide MIT - manual de infra-estrutura interna no endereço: www.copeltelecom.com). - A presente cotação não compreende o fornecimento/instalação de rede de acesso redundante e/ou proteção de placas/equipamentos nas pontas - Eventuais restrições/condicionamentos para passagem de cabo óptico interno e demais situações que obriguem a obtenção de liberação /autorização de uso da infra-estrutura interna (shoppings centers, prédios comerciais, centros administrativos, interconexão de operadoras e outros), deverão ser tratadas/negociadas pelo cliente, cabendo a este, quando aplicável, a responsabilidade e pagamento ao detentor da infra-estrutura. - Podem inviabilizar o atendimento: 1- A falta de autorização da concessionária para a passagem de cabo óptico em faixa de domínio nas rodovias pedagiadas. 2- Condições técnicas inapropriadas no local do atendimento, tanto pela Copel Telecom quanto pelo Cliente, que garantam a qualidade do serviço prestado. 3- Qualquer outra situação imprevista que impossibilite o atendimento. - O prazo de entrega pode sofrer alteração, caso o atendimento do ponto a ser instalado demande licenciamento do uso de calçamento e arruamento junto a Prefeitura. - Informações que sejam requeridas à época da instalação que não sejam de responsabilidade da Copel Telecomunicações, poderão impedir ou atrasar a entrega do serviço, tais como: registro Br, endereçamentos IP, etc. - A fatura e demais documentos estarão disponíveis na Área do Cliente do site da Copel Telecom, em www.copeltelecom.com.
+												</small>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+
+							<div role="tabpanel" class="tab-pane" id="finalizado">
+								<h6>CADASTRO REALIZADO COM SUCESSO</h6>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ven.</p>
+								<p>Contrato: 012547010852</p>
+							</div>
+						</div>
+					</article>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+
+
+	<footer id="footer-main" class="wow fadeIn">
+		<div class="container">
+			<aside class="col-md-3 col-sm-12 col-xs-12">
+				<ul>
+					<li><a href="#"><i class="i-footer-facebook"></i></a></li>
+					<li><a href="#"><i class="i-footer-youtube"></i></a></li>
+				</ul>
+				<a href="http://www.cidadao.pr.gov.br/" target="_blank"><img src="../_assets/images/footer-logo-parana.png" id="footer-logo" alt=""></a>
+			</aside>
+			<div class="col-md-9 col-sm-12 col-xs-12">
+				<div class="row">
+					<article class="border-left col-md-3 col-sm-3 col-xs-6" data-mh="footer-group">
+						<h6>internet fibra óptica</h6>
+						<ul>
+							<li><a href="">O que é / Como funciona</a></li>
+							<li><a href="/vantagens/">Vantagens</a></li>
+							<li><a href="/comparativo/">Compare</a></li>
+						</ul>
+					</article>
+					<article class="col-md-3 col-sm-3 col-xs-6" data-mh="footer-group">
+						<h6>planos e preços</h6>
+						<ul>
+							<li><a href="/planos/">Conheça</a></li>
+							<li><a href="/parana-conectado/">Paraná Conectado</a></li>
+							<li><a href="/wvt-verificar-disponibilidade/">Contrate agora</a></li>
+						</ul>
+					</article>
+					<article class="col-md-3 col-sm-3 col-xs-6" data-mh="footer-group">
+						<h6>atendimento</h6>
+						<ul>
+							<li><a href="/area-do-cliente-login/">Área do cliente</a></li>
+							<li><a href="/area-do-cliente-login/">2ª via da fatura</a></li>
+							<li><a href="/faq/">Perguntas Frequentes</a></li>
+						</ul>
+					</article>
+					<article class="col-md-3 col-sm-3 col-xs-6" data-mh="footer-group">
+						<h6>institucional</h6>
+						<ul>
+							<li><a href="/copel-telecom/">Sobre a Copel Telecom</a></li>
+							<li><a href="http://www.copel.com/hpcopel/root/nivel2.jsp?endereco=%2Fhpcopel%2Fri%2Fpagcopel2.nsf%2Fdocs%2F8A85489DDD579DAD0325742400656466" target="_blank">Balanço</a></li>
+							<li><a href="#">Governança</a></li>
+						</ul>
+					</article>
+				</div>
+				<div class="text-center">
+					<div id="footer-bts">
+						<a href="/blog/">Blog Fique Ligado</a>
+						<a href="http://www.copel.com" target="_blank">COPEL</a>
+						<a href="http://www.cidadao.pr.gov.br/" target="_blank">Governo do Paraná</a>
+					</div>
+					<a href="tel:0800 41 41 81" id="footer-phone"><i></i>0800 41 41 81</a>
+				</div>
+			</div>
+		</div>
+		<div id="footer-copy">
+			<div class="container">
+				<div class="row">
+					<small class="col-md-7 col-sm-6 col-xs-12">Copyright 2016 © COPEL - Companhia Paranaense de Energia. Todos os direitos reservados.</small>
+					<small class="col-md-5 col-sm-6 col-xs-12">Rua Coronel Dulcídio, 800 - Batel - CEP 80420-170 - Curitiba - PR | 0800 41 4181</small>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+</div><!-- sb-site -->
+
+</body>
+</html>
