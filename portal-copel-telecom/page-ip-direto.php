@@ -137,11 +137,8 @@
 												<input type="hidden" name="plano" value="3 Mbps">
 												<button type="button" data-toggle="dropdown"><i class="fa fa-angle-down"></i></button>
 												<ul class="dropdown-menu">
-													<li><a href="#" data-value="3 Mbps" data-text="3 Mbps">3 Mbps</a></li>
 													<li><a href="#" data-value="5 Mbps" data-text="5 Mbps">5 Mbps</a></li>
-													<li><a href="#" data-value="8 Mbps" data-text="8 Mbps">8 Mbps</a></li>
 													<li><a href="#" data-value="10 Mbps" data-text="10 Mbps">10 Mbps</a></li>
-													<li><a href="#" data-value="12 Mbps" data-text="12 Mbps">12 Mbps</a></li>
 													<li><a href="#" data-value="15 Mbps" data-text="15 Mbps">15 Mbps</a></li>
 													<li><a href="#" data-value="20 Mbps" data-text="20 Mbps">20 Mbps</a></li>
 													<li><a href="#" data-value="25 Mbps" data-text="25 Mbps">25 Mbps</a></li>
@@ -164,6 +161,18 @@
 								<div id="outro-endereco"></div>
 								<div class="text-center"><button class="bt-o add-field-id" type="button">Adicionar outro endereço de instalação</button></div>
 								<button class="bt-o-b active">SEGUINTE</button>
+							</form>
+						</div>
+
+					</article>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="alert hide text-center" id="response"></div>
+		</div>
+	</section>
+<?php get_footer(); ?>			<button class="bt-o-b active">SEGUINTE</button>
 							</form>
 						</div>
 
