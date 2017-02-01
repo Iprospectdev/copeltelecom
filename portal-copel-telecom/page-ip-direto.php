@@ -133,8 +133,8 @@
 									<div class="row">
 										<label class="col-sm-10">
 											<div class="dropdown dropdown-select">
-												<input type="text" name="plano-text" value="3 Mbps" readonly>
-												<input type="hidden" name="plano" value="3 Mbps">
+												<input type="text" name="plano-text" value="5 Mbps" readonly>
+												<input type="hidden" name="plano" value="5 Mbps">
 												<button type="button" data-toggle="dropdown"><i class="fa fa-angle-down"></i></button>
 												<ul class="dropdown-menu">
 													<li><a href="#" data-value="5 Mbps" data-text="5 Mbps">5 Mbps</a></li>
@@ -161,18 +161,6 @@
 								<div id="outro-endereco"></div>
 								<div class="text-center"><button class="bt-o add-field-id" type="button">Adicionar outro endereço de instalação</button></div>
 								<button class="bt-o-b active">SEGUINTE</button>
-							</form>
-						</div>
-
-					</article>
-				</div>
-			</div>
-		</div>
-		<div class="container">
-			<div class="alert hide text-center" id="response"></div>
-		</div>
-	</section>
-<?php get_footer(); ?>			<button class="bt-o-b active">SEGUINTE</button>
 							</form>
 						</div>
 
