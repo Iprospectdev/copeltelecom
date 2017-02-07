@@ -174,28 +174,29 @@
 					<ul class="row">
 						<li class="col-sm-6 col-xs-12 nav-highlights-orange-light" data-mh="nh-group">
 							<div class="nav-highlights-tt">
+								<div class="space-10"></div>
 								<a href="http://www.copeltelecom.com/site/blog/conheca-o-aplicativo-da-copel-telecom/">
 									<i><img src="<?php bloginfo('template_url'); ?>/_assets/images/home/app-icone.png" alt=""></i>
 									<h3>Novo App Copel Telecom</h3>
 									<p>Toda a facilidade e velocidade da<br><strong>Copel Telecom - Copel Fibra</strong> agora em suas mãos</p>
 								</a>
 							</div>
+							<div class="space-20"></div>
 							<img src="<?php bloginfo('template_url'); ?>/_assets/images/home/app.jpg" class="img-app" alt="">
 							<span class="space-5"></span>
-							<a href="http://www.copeltelecom.com/site/blog/conheca-o-aplicativo-da-copel-telecom/" class="bt bt-white">CONHEÇA</a>
+							<a href="http://www.copeltelecom.com/site/blog/conheca-o-aplicativo-da-copel-telecom/" class="bt bt-white mrg20T">CONHEÇA</a>
 						</li>
 						<li class="col-sm-6 col-xs-12" data-mh="nh-group">
-							<div class="nav-highlights-tt mrg45L">
+							<div class="nav-highlights-tt mrg50L">
 								<a href="<?php bloginfo('url'); ?>/esporte-interativo">
 									<i><img src="<?php bloginfo('template_url'); ?>/_assets/images/home/ei-icone.png" alt=""></i>
-									<span class="space-5"></span>
 									<h3>Esporte Interativo</h3>
+									<p>Cliente Copel Telecom* tem acesso gratuito ao conteúdo do Esporte Interativo para assistir o melhor da liga dos campeões, Europa League, NFL e MMA.</p>
 								</a>
 							</div>
 							<div class="row">
-								<span class="space-40"></span>
-								<img src="<?php bloginfo('template_url'); ?>/_assets/images/home/ei.jpg" class="img-app" alt="">
-								<a href="<?php bloginfo('url'); ?>/esporte-interativo" class="bt pad15R pad15L mrg20T">CONFIRA COMO ADQUIRIR E APROVEITAR ESSA PROMOÇÃO</a>
+								<img src="<?php bloginfo('template_url'); ?>/_assets/images/home/ei.jpg" class="" alt="">
+								<a href="<?php bloginfo('url'); ?>/esporte-interativo" class="bt mrg5T pad50L pad50R">APROVEITE JÁ</a>
 							</div>
 						</li>
 					</ul>

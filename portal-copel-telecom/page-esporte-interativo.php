@@ -9,10 +9,10 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6 col-sm-9 col-xs-12">
-						<h1>Clientes Copel Telecom*, tem acesso gratuito ao aplicativo EI Plus.</h1>
-						<p>Com ele, você pode acompanhar as maiores competições esportivas do planeta! Aproveite, o beneficio vai até o final de abril de 2017. Não perca tempo!</p>
+						<h1>Cliente Copel Telecom, tem acesso gratuito ao conteúdo do Esporte Interativo</h1>
+						<p>Com ele, você pode acompanhar as maiores competições esportivas do planeta! Aproveite, o beneficio vai até o final de abril. Não perca tempo!</p>
 						<a href="#sobre" class="bt bt-orange">SAIBA COMO ASSISTIR</a>
-						<small>*Disponível para os planos residenciais a partir de 10Mbps.</small>
+						<small>*Disponível para os planos residenciais a partir de 10 Mbps.</small>
 						<div class="clearfix"></div>
 					</div>
 					<div class="col-md-6 col-sm-9 col-xs-12">
@@ -30,19 +30,19 @@
 				
 				<article class="row">
 					
-					<figure class="col-sm-5 col-sm-offset-1 pad25R hidden-sm hidden-xs">
+					<figure class="col-sm-6 hidden-sm hidden-xs">
 
 						<img src="<?php bloginfo('template_url'); ?>/_assets/images/esporte-interativo/campeonatos.jpg" class="mrg50R" alt="Campeonatos">
 
 					</figure>
 
-					<div class="col-sm-5 pad25L">
+					<div class="col-sm-5 pad50L">
 
 						<span class="space-50"></span>
 						<img src="<?php bloginfo('template_url'); ?>/_assets/images/esporte-interativo/logo.jpg" class="logo-ei" alt="Canais Esporte Interativo">
 						<h3>A paixão e a emoção pelo esporte, onde você estiver</h3>
-						<p>Assista aos principais conteúdos oferecidos pelos Canais Esporte Interativo e fique por dentro de tudo o que acontece no mundo dos esportes. São programas imperdíveis como a <strong class="text-orange">UEFA Champions League</strong> (competição que reúne os melhores times do futebol europeu) e a <strong class="text-orange">E-League</strong> (maior torneio de Counter Strike), além da <strong class="text-orange">National Football League (NFL)</strong>, a maior liga de futebol americano que conecta você às novidades dos times dos Estados Unidos.</p>
-						<p>Você também pode ficar ligado nas transmissões das lutas mais emocionantes de <strong class="text-orange">MMA</strong> e <strong class="text-orange">Wrestling</strong> e desfrutar por completo do mundo dos esportes através de toda a programação dos Canais do Esporte Interativo.</p>
+						<p>Assista aos principais conteúdos oferecidos pelos Canais Esporte Interativo e fique por dentro de tudo o que acontece no mundo dos esportes. São programas imperdíveis, como a <strong class="text-orange">UEFA Champions League</strong> (maior torneio de clubes do mundo) e a <strong class="text-orange">E-League</strong> (maior competição de Counter Strike), além da <strong class="text-orange">National Football League (NFL)</strong>, a maior liga de futebol americano que conecta você às novidades dos times dos Estados Unidos.</p>
+						<p>Você também pode ficar ligado nas transmissões das lutas mais surpreendentes de <strong class="text-orange">MMA</strong> e em toda emoção do <strong class="text-orange">Wrestling.</strong> É hora de desfrutar por completo do mundo dos esportes através de toda a programação dos Canais do Esporte Interativo.</p>
 
 					</div>
 
@@ -64,7 +64,7 @@
 						<div class="col-sm-4">
 
 							<h3>Sobre o Esporte Interativo</h3>
-							<p>O Esporte Interativo é uma das maiores marcas do mundo dedicada a produção e distribuição de conteúdos esportivos em múltiplas plataformas. Formado pelos canais <span class="text-orange">EIMAXX</span>, <span class="text-orange">EIMAXX 2</span> e <span class="text-orange">Esporte Interativo</span>, o EI Plus, tem o objetivo de estar próximo do público apaixonado por esportes, onde ele estiver. </p>
+							<p>O Esporte Interativo é uma das maiores marcas do mundo dedicada à produção e distribuição de conteúdos esportivos em múltiplas plataformas. Formado pelos canais <span class="text-orange">EIMAXX</span>, <span class="text-orange">EIMAXX 2</span> e <span class="text-orange">Esporte Interativo</span>, o EI Plus, tem o objetivo de estar próximo do público apaixonado por esportes, onde ele estiver. </p>
 							<p><strong>No EI Plus você pode acompanhar todos os conteúdos dos Canais Esporte interativo no celular, no computador, na smart TV LG, no tablet ou na Apple TV.</strong></p>
 							<a href="#como-acessar" class="bt bt-orange">SAIBA COMO ACESSAR</a>
 						</div>
@@ -98,7 +98,7 @@
 						<h3>Clientes Copel Telecom</h3>
 
 						<div class="col-sm-10 col-sm-offset-1 text-center">
-							<p>Para começar a aproveitar os benefícios dessa parceria, basta você baixar o aplicativo EI Plus nas lojas <strong class="text-orange">Apple Store</strong> ou <strong class="text-orange">Google Play Store</strong>. Depois, faça o login no aplicativo com os dados de acesso que você recebeu por e-mail da Copel Telecom. Aproveite! O plano do EI Plus permite até dois acessos simultâneos.</a>
+							<p>Confira abaixo como é fácil baixar o aplicativo do <strong class="text-orange">EI Plus</strong> na seu smartphone ou tablet:<br>*O plano do <strong class="text-orange">EI Plus</strong> permite até dois acessos simultâneos.</p>
 						</div>
 
 					</div>
@@ -116,7 +116,7 @@
 						<li class="col-sm-3 col-xs-6 mrg30B">
 							<div data-mh="group-li">
 								<i>2</i>
-								<span>Acesse a loja de aplicativos no seu smartphone Apple ou Android e baixe o aplicativo <strong>EI Plus</strong></span>
+								<span>Acesse a loja de aplicativos no seu Smartphone ou tablet e baixe o aplicativo <strong>EI Plus</strong></span>
 								<span class="space-20"></span>
 								<img src="<?php bloginfo('template_url'); ?>/_assets/images/esporte-interativo/i-store.png" alt="App Store">
 								<img src="<?php bloginfo('template_url'); ?>/_assets/images/esporte-interativo/i-play.png" alt="Google Play">
@@ -126,7 +126,7 @@
 						<li class="col-sm-3 col-xs-6 mrg30B">
 							<div data-mh="group-li">
 								<i>3</i>
-								<span>No aplicativo <strong>EI Plus</strong> faça o login com o dados de acesso recebidos por e-mail*</span>
+								<span>No aplicativo <strong>EI Plus</strong>, faça o login com o dados de acesso recebidos por e-mail*</span>
 								<span class="space-35"></span>
 								<img src="<?php bloginfo('template_url'); ?>/_assets/images/esporte-interativo/form.png" alt="Formulário">
 								<small>* Após o seu primeiro acesso, recomendamos que você altere a sua senha.</small>
@@ -135,7 +135,7 @@
 						<li class="col-sm-3 col-xs-6 mrg30B">
 							<div data-mh="group-li">
 								<i>4</i>
-								<span>Aproveite! Assinantes Copel Telecom tem até dois acessos simultâneos no celular, computador, tablet e Apple TV*</span>
+								<span>Aproveite! Assinante Copel Telecom tem até dois acessos simultâneos</span>
 								<span class="space-10"></span>
 								<img src="<?php bloginfo('template_url'); ?>/_assets/images/esporte-interativo/i-el-plus.png" alt="El Plus">
 							</div>
@@ -146,11 +146,11 @@
 
 				<span class="space-25 hidden-sm"></span>
 
-				<small class="text-center display-block">*Caso você não tenha recebido o e-mail, o login é seu e-mail cadastrado na Copel Telecom e sua senha você pode recuperar no site www.eiplus.com.br/entrar<br> escolhendo a opção “Esqueci minha senha”. Caso ainda não tenha conseguido acessar, entre em contato pelo e-mail relacionamento@esporteinterativoplus.com.br </small>
+				<small class="text-center display-block">*Caso você não tenha recebido o e-mail, o login é seu e-mail cadastrado na Copel Telecom e sua senha você pode recuperar no site <strong><u>www.eiplus.com.br/entrar</u></strong><br> escolhendo a opção <strong>“Esqueci minha senha”</strong>. Caso ainda não tenha conseguido acessar, entre em contato pelo e-mail <strong>relacionamento@esporteinterativoplus.com.br</strong> </small>
 				
 				<span class="space-20"></span>
 
-				<small class="text-center display-block">Já se cadastrou mas esqueceu sua senha? Entre no site www.eiplus.com.br, clique na opção “Esqueci minha senha” e informe seu e-mail ou telefone cadastrado. </small>
+				<small class="text-center display-block">Já se cadastrou mas esqueceu sua senha? Entre no site www.eiplus.com.br, clique na opção <strong>“Esqueci minha senha”</strong> e informe seu e-mail ou telefone cadastrado.</small>
 
 				<span class="space-50"></span>	
 
@@ -168,9 +168,8 @@
 						<div class="col-sm-7">
 							<h3>Disponibilidade</h3>
 							<p>
-								O acesso gratuito ao aplicativo EI Plus está disponível para clientes de planos residenciais a partir de 10Mbps que possuem os seguintes planos:
+								O acesso gratuito ao aplicativo EI Plus está disponível para clientes de planos residenciais a partir de 10 Mbps
 							</p>
-							<h6>COPEL FIBRA 10, 25, 50, 75, E 150 Mbps</h6>
 						</div>
 
 						<div class="col-sm-4 col-sm-offset-1">
@@ -212,7 +211,7 @@
 				Ainda não é cliente Copel Telecom?
 			</h6>
 			<p class="text-center">
-				<a href="<?php bloginfo('url'); ?>/planos"><u class="text-orange">Conheça os nossos planos</u></a> de banda extralarga e qualquer dúvida liga pra gente.
+				<a href="<?php bloginfo('url'); ?>/planos"><u class="text-orange">Conheça os nossos planos</u></a> de banda extralarga
 			</p>
 
 		</div>
