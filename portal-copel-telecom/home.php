@@ -10,7 +10,9 @@
 			get_template_part("templates/home", "default");
 		}
 	} else {
-		get_template_part("templates/home", "bussola");
+		// get_template_part("templates/home", "bussola");
+			get_template_part("templates/home", "default");
+		
 	}
 
 ?>
