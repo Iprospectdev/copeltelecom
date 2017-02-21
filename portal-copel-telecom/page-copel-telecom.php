@@ -76,7 +76,7 @@
 			</div>
 		</article>
 		<aside>
-			<div class="nav-highlights wow fadeIn">
+	<!-- 		<div class="nav-highlights wow fadeIn">
 				<div class="container">
 					<ul class="row">
 						<li class="nav-highlights-orange-light col-sm-6 col-xs-12">
@@ -99,7 +99,7 @@
 						</li>
 					</ul>
 				</div>
-			</div>
+			</div> -->
 			<div class="nav-infos wow fadeIn">
 				<div class="container">
 					<ol class="row">

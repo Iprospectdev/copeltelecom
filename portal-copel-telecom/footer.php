@@ -30,7 +30,6 @@
 						<h6>planos e preços</h6>
 						<ul>
 							<li><a href="<?php $p=get_page_by_title('Planos'); echo get_permalink($p->ID); ?>">Conheça</a></li>
-							<li><a href="<?php $p=get_page_by_title('Paraná Conectado'); echo get_permalink($p->ID); ?>">Paraná Conectado</a></li>
 							<li><a href="<?php echo LINK_WVT; ?>">Contrate agora</a></li>
 						</ul>
 					</article>
@@ -40,7 +39,7 @@
 							<li><a href="http://www.copeltelecom.com/autoatendimento" target="_blank">Área do cliente</a></li>
 							<li><a href="http://www.copeltelecom.com/autoatendimento" target="_blank">2ª via da fatura</a></li>
 							<li><a href="<?php echo get_post_type_archive_link('faq'); ?>">Perguntas Frequentes</a></li>
-							<li><a href="<?php echo get_post_type_archive_link('faq'); ?>#as-documentos">Documentos</a></li>
+							<li><a href="<?php $p=get_page_by_title('Atendimento e Suporte'); echo get_permalink($p->ID); ?>#as-documentos">Documentos</a></li>
 						</ul>
 					</article>
 					<article class="col-md-3 col-sm-3 col-xs-6" data-mh="footer-group">

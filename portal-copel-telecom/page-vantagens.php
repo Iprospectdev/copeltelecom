@@ -1,4 +1,11 @@
-<?php get_header(); ?>
+<?php
+	
+	$url = get_bloginfo('url');
+	wp_redirect( $url );
+	exit;
+
+	get_header(); 
+?>
 	<section id="vantagens">
 		<header class="wow fadeIn">
 			<h1 class="main-tt">Veja por que a banda extra larga da Copel Telecom está preparada para o futuro</h1>

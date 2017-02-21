@@ -1,5 +1,9 @@
 <?php
 	
+	$url = get_bloginfo('url');
+	wp_redirect( $url );
+	exit;
+
 	get_header();
 
 	$services = new Services;
