@@ -25,16 +25,16 @@ add_theme_support( 'post-thumbnails' );
 
 switch (get_bloginfo("url")) {
 	case 'http://www.copeltelecom.com/site':
-		define(WEBSERVICE, "http://webprd");
-		define(LINK_WVT, "http://www.copel.com/wvtweb/site/verificar_disponibilidade.jsf");
+		define('WEBSERVICE', "http://webprd");
+		define('LINK_WVT', "http://www.copel.com/wvtweb/site/verificar_disponibilidade.jsf");
 		break;
 	case 'http://hml.copeltelecom.com/site':
-		define(WEBSERVICE, "http://webhml");
-		define(LINK_WVT, "http://hml.copel.com/wvtweb/site/verificar_disponibilidade.jsf");
+		define('WEBSERVICE', "http://webhml");
+		define('LINK_WVT', "http://hml.copel.com/wvtweb/site/verificar_disponibilidade.jsf");
 		break;
 	default:
-		define(WEBSERVICE, "http://hml.copel.com");
-		define(LINK_WVT, "http://www.copel.com/wvtweb/site/verificar_disponibilidade.jsf");
+		define('WEBSERVICE', "http://hml.copel.com");
+		define('LINK_WVT', "http://www.copel.com/wvtweb/site/verificar_disponibilidade.jsf");
 		break;
 }
 
