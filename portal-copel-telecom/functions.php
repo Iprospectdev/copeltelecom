@@ -23,20 +23,23 @@ add_theme_support( 'post-thumbnails' );
 
 */
 
-switch (get_bloginfo("url")) {
-	case 'http://www.copeltelecom.com/site':
-		define('WEBSERVICE', "http://webprd");
-		define('LINK_WVT', "http://www.copel.com/wvtweb/site/verificar_disponibilidade.jsf");
-		break;
-	case 'http://hml.copeltelecom.com/site':
-		define('WEBSERVICE', "http://webhml");
-		define('LINK_WVT', "http://hml.copel.com/wvtweb/site/verificar_disponibilidade.jsf");
-		break;
-	default:
-		define('WEBSERVICE', "http://hml.copel.com");
-		define('LINK_WVT', "http://www.copel.com/wvtweb/site/verificar_disponibilidade.jsf");
-		break;
+if(getenv('SIGLA_APP_LOW')) {
+    $linkWVT = getenv('LINK_WVT');
+    $webserviceHost = getenv('WEBSERVICE_HOST');
+} else {
+    $linkWVT='http://www.copel.com/wvtweb/site/verificar_disponibilidade.jsf';
+    switch (get_bloginfo("url")) {
+        case 'http://www.copeltelecom.com/site':
+            $webserviceHost = 'http://webprd';
+            break;
+        default:
+            $webserviceHost = 'http://hml.copel.com';
+            break;
+    }
 }
+
+define('WEBSERVICE', $webserviceHost);
+define('LINK_WVT', $linkWVT);
 
 # Frameworks
 include dirname(__FILE__) . "/_theme/metabox/meta-box.php";
