@@ -28,9 +28,11 @@
 
 					<span class="space-50"></span>
 
-					<h3>Compre Copel Fibra e aproveite ainda mais a Netflix</h3>
+					<!-- <h3>Compre Copel Fibra e aproveite ainda mais a Netflix</h3>
 
-					<p>Agora, ao adquirir <strong>Copel Fibra de 25, 50, 75 ou 150 Mbps</strong>, você tem direito a acessar<br class="hidden-xs">o serviço <strong>Netflix</strong> por um período de 3 a 6 meses, dependendo da velocidade contratada.</p>
+					<p>Agora, ao adquirir <strong>Copel Fibra de 25, 50, 75 ou 150 Mbps</strong>, você tem direito a acessar<br class="hidden-xs">o serviço <strong>Netflix</strong> por um período de 3 a 6 meses, dependendo da velocidade contratada.</p> -->
+
+					<p>Agora, ao adquirir <strong>Copel Fibra de 30, 60,100 ou 150 Mbps</strong>, você tem direito a acessar o serviço Netflix por um período de 3 a 6 meses, dependendo da velocidade contratada.</p>
 
 					<span class="space-50"></span>
 
@@ -66,11 +68,17 @@
 							<div class="col-sm-9">
 								<p>Após a ativação da internet <strong>Copel Fibra</strong> em sua casa, entre na “Área do Cliente” em nosso site com login e senha. Clique na opção “Netflix”. Você será redirecionado para a página da <strong>Netflix</strong> para realizar o seu cadastro. Depois é só preparar a pipoca e curtir o seu período de degustação!</p>
 								<span class="space-25"></span>
-								<p>
+								<!-- <p>
 									<strong>Confira os períodos de degustação para cada plano</strong><br>
 									•	Copel Fibra de 25Mbps: 3 meses<br>
 									•	Copel Fibra de 50, 75 e 150 Mbps: 6 meses<br>
+								</p> -->
+
+								<p>
+									•	Copel Fibra 30Mbps: 3 Meses <br>
+									•	Copel Fibra de 60, 100 e 150 Mbps: 6 meses
 								</p>
+
 								<span class="space-25"></span>
 								<p>Para saber mais detalhes sobre a promoção, acesse o regulamento e o nosso FAQ para tirar suas dúvidas.</p>
 							</div>
