@@ -118,8 +118,12 @@
 								<i>2</i>
 								<span>Acesse a loja de aplicativos no seu Smartphone ou tablet e baixe o aplicativo <strong>EI Plus</strong></span>
 								<span class="space-20"></span>
-								<img src="<?php bloginfo('template_url'); ?>/_assets/images/esporte-interativo/i-store.png" alt="App Store">
-								<img src="<?php bloginfo('template_url'); ?>/_assets/images/esporte-interativo/i-play.png" alt="Google Play">
+								<a href="https://itunes.apple.com/us/app/esporte-interativo-ao-vivo/id509496846?ls=1&mt=8" target="_blank">
+									<img src="<?php bloginfo('template_url'); ?>/_assets/images/esporte-interativo/i-store.png" alt="App Store">
+								</a>
+								<a href="https://play.google.com/store/apps/details?id=com.ideastek.esporteinterativo3" target="_blank">
+									<img src="<?php bloginfo('template_url'); ?>/_assets/images/esporte-interativo/i-play.png" alt="Google Play">
+								</a>
 								<small>Você também pode fazer o seu login pelo computador em <a href="http://www.eiplus.com.br/entrar/" target="_blank">www.eiplus.com.br/entrar/</a></small>
 							</div>
 						</li>
@@ -128,7 +132,9 @@
 								<i>3</i>
 								<span>No aplicativo <strong>EI Plus</strong>, faça o login com o dados de acesso recebidos por e-mail*</span>
 								<span class="space-35"></span>
-								<img src="<?php bloginfo('template_url'); ?>/_assets/images/esporte-interativo/form.png" alt="Formulário">
+								<a href="https://www.eiplus.com.br/entrar/" target="_blank">
+									<img src="<?php bloginfo('template_url'); ?>/_assets/images/esporte-interativo/form.png" alt="Formulário">
+								</a>
 								<small>* Após o seu primeiro acesso, recomendamos que você altere a sua senha.</small>
 							</div>
 						</li>
@@ -177,7 +183,7 @@
 							<span class="space-20"></span>
 
 							<a href="">
-								<a href="<?php bloginfo('url'); ?>/planos"><img src="<?php bloginfo('template_url'); ?>/_assets/images/esporte-interativo/nao-tem.png" alt="Não tem Copel Fibra mas quer EI Plus? Clique aqui."></a>
+								<a href="https://www.eiplus.com.br/entrar/" target="_blank"><img src="<?php bloginfo('template_url'); ?>/_assets/images/esporte-interativo/nao-tem.png" alt="Não tem Copel Fibra mas quer EI Plus? Clique aqui."></a>
 							</a>
 
 						</div>
