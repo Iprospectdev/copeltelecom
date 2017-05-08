@@ -10,9 +10,9 @@
 				<div class="row">
 					<div class="col-md-6 col-sm-9 col-xs-12">
 						<h1>Cliente Copel Telecom, tem acesso gratuito ao conteúdo do Esporte Interativo</h1>
-						<p>Com ele, você pode acompanhar as maiores competições esportivas do planeta! Aproveite, o beneficio vai até o final de abril. Não perca tempo!</p>
+						<p>Com ele, você pode acompanhar as maiores competições esportivas do planeta! Aproveite, o beneficio vai até o final de maio. Não perca tempo!</p>
 						<a href="#sobre" class="bt bt-orange">SAIBA COMO ASSISTIR</a>
-						<small>*Disponível para os planos residenciais a partir de 10 Mbps.</small>
+						<small>*Disponível para os planos residenciais a partir de 30 Mbps.</small>
 						<div class="clearfix"></div>
 					</div>
 					<div class="col-md-6 col-sm-9 col-xs-12">
@@ -174,7 +174,7 @@
 						<div class="col-sm-7">
 							<h3>Disponibilidade</h3>
 							<p>
-								O acesso gratuito ao aplicativo EI Plus está disponível para clientes de planos residenciais a partir de 10 Mbps
+								O acesso gratuito ao aplicativo EI Plus está disponível para clientes de planos residenciais a partir de 30 Mbps
 							</p>
 						</div>
 

@@ -47,7 +47,7 @@
 						<ul>
 							<li><a href="<?php $p=get_page_by_title('Copel Telecom'); echo get_permalink($p->ID); ?>">Sobre a Copel Telecom</a></li>
 							<li><a href="http://www.copel.com/hpcopel/root/nivel2.jsp?endereco=%2Fhpcopel%2Fri%2Fpagcopel2.nsf%2Fdocs%2F8A85489DDD579DAD0325742400656466" target="_blank">Balanço</a></li>
-							<li><a href="http://www.copel.com/hpcopel/ri/mapaGovernanca.jsp" target="_blank">Governança</a></li>
+							<li><a href="http://www.copel.com/hpcopel/acopel/mapaGovernanca.jsp" target="_blank">Governança</a></li>
 						</ul>
 					</article>
 				</div>
@@ -132,6 +132,27 @@
 			// });
 		</script>
 	<?php endif; ?>
+
+
+
+	<div class="modal" id="modal-cidades" tabindex="-1" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content" ng-controller="bussola">
+				<button type="button" data-dismiss="modal" class="i-c-modal-close"></button>
+				<div class="modal-body">
+					<h4><strong>Em qual cidade do Paraná</strong> você precisa de uma internet banda larga 100% fibra óptica?</h4>
+					<div class="call">
+						<dl class="action">
+							<dt><span><i class="icon-font-bussola-04"></i></span></dt>
+							<dd><input type="text" id="cidade" > <button type="button" ng-click="select_cidade()">></button></dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
 <?php wp_footer(); ?>
 <!-- <script src="//api.handtalk.me/plugin/latest/handtalk.min.js"></script>
 <script>
