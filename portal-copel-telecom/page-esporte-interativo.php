@@ -41,8 +41,8 @@
 						<span class="space-50"></span>
 						<img src="<?php bloginfo('template_url'); ?>/_assets/images/esporte-interativo/logo.jpg" class="logo-ei" alt="Canais Esporte Interativo">
 						<h3>A paixão e a emoção pelo esporte, onde você estiver</h3>
-						<p>Assista aos principais conteúdos oferecidos pelos Canais Esporte Interativo e fique por dentro de tudo o que acontece no mundo dos esportes. São programas imperdíveis, como a <strong class="text-orange">UEFA Champions League</strong> (maior torneio de clubes do mundo) e a <strong class="text-orange">E-League</strong> (maior competição de Counter Strike), além da <strong class="text-orange">National Football League (NFL)</strong>, a maior liga de futebol americano que conecta você às novidades dos times dos Estados Unidos.</p>
-						<p>Você também pode ficar ligado nas transmissões das lutas mais surpreendentes de <strong class="text-orange">MMA</strong> e em toda emoção do <strong class="text-orange">Wrestling.</strong> É hora de desfrutar por completo do mundo dos esportes através de toda a programação dos Canais do Esporte Interativo.</p>
+						<p>Assista aos principais conteúdos oferecidos pelos Canais Esporte Interativo e fique por dentro de tudo o que acontece no mundo dos esportes. São programas imperdíveis, como a <strong class="text-orange">UEFA Champions League</strong> (maior competição de clubes do mundo) e a <strong class="text-orange">E-League</strong> (maior competição de Counter Strike), além da <strong class="text-orange">National Football League (NFL)</strong>, a maior liga de futebol americano que conecta você às novidades dos times dos Estados Unidos.</p>
+						<p>Você também pode ficar ligado nas transmissões das lutas mais surpreendentes de <strong class="text-orange">MMA</strong> e em toda a emoção do <strong class="text-orange">Pro Wrestling.</strong> É hora de desfrutar por completo do mundo dos esportes através de toda a programação dos Canais do Esporte Interativo.</p>
 
 					</div>
 
