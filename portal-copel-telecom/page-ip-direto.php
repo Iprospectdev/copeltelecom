@@ -108,15 +108,15 @@
 									</div>
 									<div class="row">
 										<label class="col-sm-6 col-xs-12">
-											<input type="text" name="id_dominio" placeholder="ID do registro.br ou domínio.br" >
-											<small>sem estas informações o link não é ativo. Por exigência da ANATEL, estes dados devem ser informados. Domínios .com e .net não são válido</small>
+											<input type="text" name="id_dominio" class="required-popup" placeholder="ID do registro.br ou domínio.br" >
+											<small><a href="http://www.copeltelecom.com/site/faq/como-fazer-o-registro-br/" style="color:#8e939f;" target="_blank">Saiba mais</a></small>
 										</label>
 									</div>
-									<div class="row">
+<!-- 									<div class="row">
 										<label>
 											<textarea name="observacoes" placeholder="Observações"></textarea>
 										</label>
-									</div>
+									</div> -->
 								</fieldset>
 								<fieldset>
 									<legend class="ccdc-legend">Endereço de instalação*</legend>
@@ -172,4 +172,19 @@
 			<div class="alert hide text-center" id="response"></div>
 		</div>
 	</section>
+
+
+	<div class="modal" id="required-modal" tabindex="-1" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<button type="button" data-dismiss="modal" class="i-c-modal-close"></button>
+				<div class="modal-body">
+					<p>
+						É importante o preenchimento do campo ID do registro.br ou domínio.br para a configuração correta do circuito.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
 <?php get_footer(); ?>

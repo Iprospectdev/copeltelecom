@@ -121,7 +121,7 @@
 									<div class="row"><label><input type="text" name="endereco[local]" placeholder="Local de instalação do equipamento" required></label></div>
 									<div class="row"><label class="col-sm-6 col-xs-12"><input type="text" name="endereco[coordenadas]" placeholder="Coordenadas geográficas (latitude e longitude)"  ><small>Caso não possua o Número da Unidade Consumidora</small></label></div>
 									<div class="row"><label class="col-sm-6 col-xs-12"><input type="text" name="endereco[ip]" placeholder="Endereço IP" ></label></div>
-									<div class="row"><label class="col-sm-6 col-xs-12"><input type="text" name="endereco[mascara]"placeholder="Máscara de rede" ></label></div>
+									<div class="row"><label class="col-sm-6 col-xs-12"><input type="text" name="endereco[mascara]" placeholder="Máscara de rede" ></label></div>
 									<div class="row"><label class="col-sm-6 col-xs-12"><input type="text" name="endereco[gateway]" placeholder="Gateway" ></label></div>
 								</fieldset>
 								<fieldset>
@@ -177,4 +177,20 @@
 			<div class="alert hide text-center" id="response"></div>
 		</div>
 	</section>
+
+
+
+	<div class="modal" id="required-modal" tabindex="-1" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<button type="button" data-dismiss="modal" class="i-c-modal-close"></button>
+				<div class="modal-body">
+					<p>
+						Para a configuração correta do circuito se faz necessário o preenchimento dos campos: Endereço IP, Máscara de rede e Gateway.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
 <?php get_footer(); ?>
