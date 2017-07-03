@@ -64,7 +64,7 @@
 						<div class="col-sm-4">
 
 							<h3>Sobre o Esporte Interativo</h3>
-							<p>O Esporte Interativo é uma das maiores marcas do mundo dedicada à produção e distribuição de conteúdos esportivos em múltiplas plataformas. Formado pelos canais <span class="text-orange">EIMAXX</span>, <span class="text-orange">EIMAXX 2</span> e <span class="text-orange">Esporte Interativo</span>, o EI Plus, tem o objetivo de estar próximo do público apaixonado por esportes, onde ele estiver. </p>
+							<p>O Esporte Interativo é uma das maiores marcas do mundo dedicada à produção e distribuição de conteúdos esportivos em múltiplas plataformas. Formado pelos canais <span class="text-orange">Esporte Interativo</span> e <span class="text-orange">Esporte Interativo 2</span>, o EI Plus, tem o objetivo de estar próximo do público apaixonado por esportes, onde ele estiver. </p>
 							<p><strong>No EI Plus você pode acompanhar todos os conteúdos dos Canais Esporte interativo no celular, no computador, na smart TV LG, no tablet ou na Apple TV.</strong></p>
 							<a href="#como-acessar" class="bt bt-orange">SAIBA COMO ACESSAR</a>
 						</div>
