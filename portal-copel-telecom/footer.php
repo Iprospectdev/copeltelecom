@@ -112,16 +112,16 @@
 				<div class="modal-content">
 					<button type="button" data-dismiss="modal" class="i-c-modal-close"></button>
 					<div class="modal-body">
-						<a href="http://www.copeltelecom.com/site/faq/como-funciona-nova-fatura-da-copel-telecom/?utm_source=facebook&utm_medium=post&utm_term=financeiro&utm_content=fatura&utm_campaign=ct_call">
+						<a href="/site/faq/como-funciona-nova-fatura-da-copel-telecom/?utm_source=facebook&utm_medium=post&utm_term=financeiro&utm_content=fatura&utm_campaign=ct_call">
 							<img src="<?php bloginfo('template_url'); ?>/_assets/images/home/barcode.png" alt="">
 						</a>
 						<h6>
-							<a href="http://www.copeltelecom.com/site/faq/como-funciona-nova-fatura-da-copel-telecom/?utm_source=facebook&utm_medium=post&utm_term=financeiro&utm_content=fatura&utm_campaign=ct_call">
+							<a href="/site/faq/como-funciona-nova-fatura-da-copel-telecom/?utm_source=facebook&utm_medium=post&utm_term=financeiro&utm_content=fatura&utm_campaign=ct_call">
 								Novidade <i class="fa fa-angle-right"></i> <span  style="color: #737c8f;">Nova Fatura Copel Telecom<small>|</small></span>
 							</a>
 						</h6>
 						<br><br>
-						<a href="http://www.copeltelecom.com/site/faq/como-funciona-nova-fatura-da-copel-telecom/?utm_source=facebook&utm_medium=post&utm_term=financeiro&utm_content=fatura&utm_campaign=ct_call" class="bt bt-orange">Clique e veja as vantagens</a>
+						<a href="/site/faq/como-funciona-nova-fatura-da-copel-telecom/?utm_source=facebook&utm_medium=post&utm_term=financeiro&utm_content=fatura&utm_campaign=ct_call" class="bt bt-orange">Clique e veja as vantagens</a>
 					</div>
 				</div>
 			</div>

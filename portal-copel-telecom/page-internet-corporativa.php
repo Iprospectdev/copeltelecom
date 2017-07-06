@@ -66,7 +66,7 @@
 						<h6 class="main-tt-barra">Como funciona</h6>
 						<p>
 							Por meio de sua rede 100% em fibra Óptica, a Copel Telecom deixa sua empresa conectada com a internet de alta velocidade e disponibilidade.<br>
-							<a href="http://www.copeltelecom.com/site/wp-content/uploads/2016/03/Caracter%C3%ADsticas-T%C3%A9cnicas-do-Servi%C3%A7o-Internet-Corporativa-IP-Direto.pdf" target="_blank">Confira as características do serviço</a>
+							<a href="/site/wp-content/uploads/2016/03/Caracter%C3%ADsticas-T%C3%A9cnicas-do-Servi%C3%A7o-Internet-Corporativa-IP-Direto.pdf" target="_blank">Confira as características do serviço</a>
 						</p>
 					</div>
 					<div class="col-sm-8"><img src="<?php bloginfo('template_url'); ?>/_assets/images/empresas/como-funciona.png" alt=""></div>

@@ -175,7 +175,7 @@
 						<li class="col-sm-6 col-xs-12 nav-highlights-orange-light" data-mh="nh-group">
 							<div class="nav-highlights-tt">
 								<div class="space-10"></div>
-								<a href="http://www.copeltelecom.com/site/blog/conheca-o-aplicativo-da-copel-telecom/">
+								<a href="/site/blog/conheca-o-aplicativo-da-copel-telecom/">
 									<i><img src="<?php bloginfo('template_url'); ?>/_assets/images/home/app-icone.png" alt=""></i>
 									<h3>Novo App Copel Telecom</h3>
 									<p>Toda a facilidade e velocidade da<br><strong>Copel Telecom - Copel Fibra</strong> agora em suas mãos</p>
@@ -184,7 +184,7 @@
 							<div class="space-20"></div>
 							<img src="<?php bloginfo('template_url'); ?>/_assets/images/home/app.jpg" class="img-app" alt="">
 							<span class="space-5"></span>
-							<a href="http://www.copeltelecom.com/site/blog/conheca-o-aplicativo-da-copel-telecom/" class="bt bt-white mrg20T">CONHEÇA</a>
+							<a href="/site/blog/conheca-o-aplicativo-da-copel-telecom/" class="bt bt-white mrg20T">CONHEÇA</a>
 						</li>
 						<li class="col-sm-6 col-xs-12" data-mh="nh-group">
 							<div class="nav-highlights-tt mrg50L">
@@ -207,10 +207,10 @@
 		<?php get_template_part('template','blog-home'); ?>
 
 
-		<a href="http://www.copeltelecom.com/site/blog/conheca-o-aplicativo-da-copel-telecom/" class="app-banner hidden-xs">
+		<a href="/site/blog/conheca-o-aplicativo-da-copel-telecom/" class="app-banner hidden-xs">
 			<img src="<?php bloginfo('template_url'); ?>/_assets/images/home/app-banner.png" alt="">
 		</a>
-		<a href="http://www.copeltelecom.com/site/blog/conheca-o-aplicativo-da-copel-telecom/" class="app-banner visible-xs hidden-sm hidden-md hidden-lg">
+		<a href="/site/blog/conheca-o-aplicativo-da-copel-telecom/" class="app-banner visible-xs hidden-sm hidden-md hidden-lg">
 			<span class="space-10"></span>
 			<span class="space-40"></span>
 			<img src="<?php bloginfo('template_url'); ?>/_assets/images/home/app-banner-mobile.png" alt="">
