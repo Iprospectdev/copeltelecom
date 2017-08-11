@@ -66,7 +66,7 @@
 						<h6 class="main-tt-barra">Como funciona</h6>
 						<p>
 							Por meio de sua rede 100% em fibra Óptica, a Copel Telecom deixa sua empresa conectada com a internet de alta velocidade e disponibilidade.<br>
-							<a href="/site/wp-content/uploads/2016/03/Caracter%C3%ADsticas-T%C3%A9cnicas-do-Servi%C3%A7o-Internet-Corporativa-IP-Direto.pdf" target="_blank">Confira as características do serviço</a>
+							<a href="<?php bloginfo('template_url'); ?>/_assets/pdf/CS.IPDIRETO.V.2.001.pdf" target="_blank">Confira as características do serviço</a>
 						</p>
 					</div>
 					<div class="col-sm-8"><img src="<?php bloginfo('template_url'); ?>/_assets/images/empresas/como-funciona.png" alt=""></div>
@@ -120,15 +120,12 @@
 
 		<article>
 			<div class="container">
-				<h6 class="main-tt-barra">Produtos Acessórios</h6>
+
+					<h6 class="main-tt-barra text-center">Produtos Acessórios</h6>
 				<ul class="row">
-					<li class="col-xs-12 col-sm-4">
+					<li class="col-xs-12 col-sm-4 col-md-4 col-md-offset-4">
 						<i class="i-ep-grafico"></i>
 						<p><strong>GRÁFICO</strong><br>Fornecimento de gráfico, via internet, para verificar a utilização dos links contratados.</p>
-					</li>
-					<li class="col-xs-12 col-sm-4">
-						<i class="i-ep-grafico"></i>
-						<p><strong>IP ADICIONAL</strong><br>Possibilidade de contratação de até 5 endereçamentos de IP´s válidos.</p>
 					</li>
 				</ul>
 			</div>
