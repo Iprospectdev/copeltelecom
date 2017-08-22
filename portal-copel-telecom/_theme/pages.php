@@ -168,6 +168,17 @@ if (!$page_speedtest) {
 	wp_insert_post( $page_speedtest_args );
 }
 
+$page_speedtest = get_page_by_title("Speedtest novo", "", "page" );
+if (!$page_speedtest) {
+	$page_speedtest_args = array(
+		'post_content'   => "",
+		'post_title'     => "Speedtest novo",
+		'post_status'    => 'publish',
+		'post_type'      => 'page'
+	);
+	wp_insert_post( $page_speedtest_args );
+}
+
 $page_acessibilidade = get_page_by_title("Acessibilidade", "", "page" );
 if (!$page_acessibilidade) {
 	$page_acessibilidade_args = array(
