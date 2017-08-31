@@ -108,15 +108,15 @@
 									</div>
 									<div class="row">
 										<label class="col-sm-6 col-xs-12">
-											<input type="text" name="id_dominio" placeholder="ID do registro.br ou domínio.br" >
-											<small>sem estas informações o link não é ativo. Por exigência da ANATEL, estes dados devem ser informados. Domínios .com e .net não são válido</small>
+											<input type="text" name="id_dominio" class="required-popup" placeholder="ID do registro.br ou domínio.br" >
+											<small><a href="http://www.copeltelecom.com/site/faq/como-fazer-o-registro-br/" style="color:#8e939f;" target="_blank">Saiba mais</a></small>
 										</label>
 									</div>
-									<div class="row">
+<!-- 									<div class="row">
 										<label>
 											<textarea name="observacoes" placeholder="Observações"></textarea>
 										</label>
-									</div>
+									</div> -->
 								</fieldset>
 								<fieldset>
 									<legend class="ccdc-legend">Endereço de instalação*</legend>
@@ -138,8 +138,11 @@
 												<button type="button" data-toggle="dropdown"><i class="fa fa-angle-down"></i></button>
 												<ul class="dropdown-menu">
 													<li><a href="#" data-value="5 Mbps" data-text="5 Mbps">5 Mbps</a></li>
+													<li><a href="#" data-value="8 Mbps" data-text="8 Mbps">8 Mbps</a></li>
 													<li><a href="#" data-value="10 Mbps" data-text="10 Mbps">10 Mbps</a></li>
+													<li><a href="#" data-value="12 Mbps" data-text="12 Mbps">12 Mbps</a></li>
 													<li><a href="#" data-value="15 Mbps" data-text="15 Mbps">15 Mbps</a></li>
+													<li><a href="#" data-value="18 Mbps" data-text="18 Mbps">18 Mbps</a></li>
 													<li><a href="#" data-value="20 Mbps" data-text="20 Mbps">20 Mbps</a></li>
 													<li><a href="#" data-value="25 Mbps" data-text="25 Mbps">25 Mbps</a></li>
 													<li><a href="#" data-value="30 Mbps" data-text="30 Mbps">30 Mbps</a></li>
@@ -172,4 +175,19 @@
 			<div class="alert hide text-center" id="response"></div>
 		</div>
 	</section>
+
+
+	<div class="modal" id="required-modal" tabindex="-1" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<button type="button" data-dismiss="modal" class="i-c-modal-close"></button>
+				<div class="modal-body">
+					<p>
+						É importante o preenchimento do campo ID do registro.br ou domínio.br para a configuração correta do circuito.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
 <?php get_footer(); ?>
