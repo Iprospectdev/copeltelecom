@@ -155,43 +155,62 @@ j=d.createElement
 
 <?php get_template_part('menu','mobile'); ?>
 
-<ul class="nav-contatos sb-slide <?php echo (is_page("Ouvidoria") || is_page("Acessibilidade")) ? "hide" : ""; ?>">
+<div class="nav-contatos sb-slide <?php echo (is_page("Ouvidoria") || is_page("Acessibilidade")) ? "hide" : ""; ?>">
+
+	<div class="nav-contatos-open">
+		<i class="i-nc-whats"></i>
+		<small>PRECISA DE AJUDA?</small>FALE COM A GENTE
+		<span class="nav-contatos-close">x</span>
+	</div>
 	
-	<?php if(!is_page('RAV') && !is_page('IP Direto')): ?>
-	<li>
+	<ul>
+		
+		<?php if(!is_page('RAV') && !is_page('IP Direto')): ?>
+		<li>
 			<a class="btn_ligar" id="smchat-agent-button" href="https://chat.softmarketing.com.br/copel/chat?locale=pt-br" target="_blank" onclick="SMChat.Objects.ChatPopups['55c37642ea2f0ff3'].open();return false;">
 				<i class="i-nc-chat"></i>
 				<span>
 					<small>Contate via</small>chat
 				</span>
 			</a>
-    <script type="text/javascript" src="https://chat.softmarketing.com.br/copel/js/compiled/chat_popup.js"></script>
-    <script type="text/javascript">SMChat.ChatPopup.init({"id":"55c37642ea2f0ff3","url":"https:\/\/chat.softmarketing.com.br\/copel\/chat?locale=pt-br",
-            "preferIFrame":true,"modSecurity":false,"width":640,"height":480,"resizable":true,
-            "styleLoader":"https:\/\/chat.softmarketing.com.br\/copel\/chat\/style\/popup"});</script>
-    <div id="smchat-invitation"></div><script type="text/javascript" src="https://chat.softmarketing.com.br/copel/js/compiled/widget.js"></script>
-    <script type="text/javascript">SMChat.Widget.init({"inviteStyle":"https:\/\/chat.softmarketing.com.br\/copel\/styles\/invitations\/default\/invite.css",
-            "requestTimeout":10000,"requestURL":"https:\/\/chat.softmarketing.com.br\/copel\/widget","locale":"pt-br","visitorCookieName":"SMCHAT_VisitorID"})</script>
-		</li><!-- / smchat button --> 
-	<?php endif; ?>
+	    <script type="text/javascript" src="https://chat.softmarketing.com.br/copel/js/compiled/chat_popup.js"></script>
+	    <script type="text/javascript">SMChat.ChatPopup.init({"id":"55c37642ea2f0ff3","url":"https:\/\/chat.softmarketing.com.br\/copel\/chat?locale=pt-br",
+	            "preferIFrame":true,"modSecurity":false,"width":640,"height":480,"resizable":true,
+	            "styleLoader":"https:\/\/chat.softmarketing.com.br\/copel\/chat\/style\/popup"});</script>
+	    <div id="smchat-invitation"></div><script type="text/javascript" src="https://chat.softmarketing.com.br/copel/js/compiled/widget.js"></script>
+	    <script type="text/javascript">SMChat.Widget.init({"inviteStyle":"https:\/\/chat.softmarketing.com.br\/copel\/styles\/invitations\/default\/invite.css",
+	            "requestTimeout":10000,"requestURL":"https:\/\/chat.softmarketing.com.br\/copel\/widget","locale":"pt-br","visitorCookieName":"SMCHAT_VisitorID"})</script>
+			</li><!-- / smchat button --> 
+		<?php endif; ?>
 
-	<li>
-		<a class="btn_ligar" href="<?php $p = get_page_by_title("Ligar para meu número"); echo get_permalink($p->ID); ?>">
-			<i class="i-nc-ligamos"></i>
-			<span>
-				<small>Ligamos para você</small>DEIXE SEU NÚMERO
-			</span>
-		</a>
-	</li>
-	<li>
-		<a class="btn_ligar" href="<?php $p = get_page_by_title("Contato"); echo get_permalink($p->ID); ?>">
-			<i class="i-nc-ligue"></i>
-			<span>
-				<small>ENTRE EM CONTATO</small>0800 41 41 81
-			</span>
-		</a>
-	</li>
-</ul>
+		<li>
+			<a class="btn_ligar" href="<?php $p = get_page_by_title("Ligar para meu número"); echo get_permalink($p->ID); ?>">
+				<i class="i-nc-ligamos"></i>
+				<span>
+					<small>Ligamos para você</small>DEIXE SEU NÚMERO
+				</span>
+			</a>
+		</li>
+		<li>
+			<a class="btn_ligar" href="<?php $p = get_page_by_title("Contato"); echo get_permalink($p->ID); ?>">
+				<i class="i-nc-ligue"></i>
+				<span>
+					<small>ENTRE EM CONTATO</small>0800 41 41 81
+				</span>
+			</a>
+		</li>
+		<li>
+			<a href="https://api.whatsapp.com/send?phone=5541929024181" target="_blank">
+				<i class="i-nc-whats"></i>
+				<span>
+					<small>ATENDIMENTO WHATSAPP</small>55 41 9 29024181
+				</span>
+			</a>
+		</li>
+	</ul>
+
+</div>
+
 
 <div id="sb-site">
 
