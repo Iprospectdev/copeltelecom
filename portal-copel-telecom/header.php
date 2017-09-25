@@ -200,10 +200,10 @@ j=d.createElement
 			</a>
 		</li>
 		<li>
-			<a href="https://api.whatsapp.com/send?phone=5541929024181" target="_blank">
+			<a href="https://api.whatsapp.com/send?phone=554192024181" target="_blank">
 				<i class="i-nc-whats"></i>
 				<span>
-					<small>ATENDIMENTO WHATSAPP</small>55 41 9 29024181
+					<small>ATENDIMENTO WHATSAPP</small>41 9202-4181
 				</span>
 			</a>
 		</li>
