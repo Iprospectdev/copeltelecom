@@ -31,7 +31,7 @@
 							
 							<div class="col-md-8 col-sm-12 col-xs-12 wow fadeIn">
 								
-								<iframe src="http://speedtest.copel.net/speedtest_geral_new.html" frameborder="0" height="465" width="100%"></iframe>
+								<iframe src="http://tvc.copel.net/index_ookla.html" frameborder="0" height="620px" style="height: 620px;" width="100%"></iframe>
 								
 								<aside>
 
