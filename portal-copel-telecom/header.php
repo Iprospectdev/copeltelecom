@@ -167,7 +167,8 @@ j=d.createElement
 		
 		<?php if(!is_page('RAV') && !is_page('IP Direto')): ?>
 		<li>
-			<a class="btn_ligar" id="smchat-agent-button" href="https://chat.softmarketing.com.br/copel/chat?locale=pt-br" target="_blank" onclick="SMChat.Objects.ChatPopups['55c37642ea2f0ff3'].open();return false;">
+<!-- Init code pzw.io  //--><script>var $_PowerZAP = { defaultCountry: '+55', widget_id: '1681', company: "5526" }; (function(i,s,o,g,r,a,m){ i[r]={context:{id:'8659e62744a37a52c5c1d594238d2d32'}};a=o;o=s.createElement(o); o.async=1;o.src=g;m=s.getElementsByTagName(a)[0];m.parentNode.insertBefore(o,m); })(window,document,'script','https://widget-omni.powerzap.com.br/js/widget.js?v=6.1.0.6','pwz');</script><!-- End code pzw.io  //-->
+		<!-- 	<a class="btn_ligar" id="smchat-agent-button" href="https://chat.softmarketing.com.br/copel/chat?locale=pt-br" target="_blank" onclick="SMChat.Objects.ChatPopups['55c37642ea2f0ff3'].open();return false;">
 				<i class="i-nc-chat"></i>
 				<span>
 					<small>Contate via</small>chat
@@ -180,7 +181,7 @@ j=d.createElement
 	    <div id="smchat-invitation"></div><script type="text/javascript" src="https://chat.softmarketing.com.br/copel/js/compiled/widget.js"></script>
 	    <script type="text/javascript">SMChat.Widget.init({"inviteStyle":"https:\/\/chat.softmarketing.com.br\/copel\/styles\/invitations\/default\/invite.css",
 	            "requestTimeout":10000,"requestURL":"https:\/\/chat.softmarketing.com.br\/copel\/widget","locale":"pt-br","visitorCookieName":"SMCHAT_VisitorID"})</script>
-			</li><!-- / smchat button --> 
+			</li> -->
 		<?php endif; ?>
 
 		<li>
@@ -200,7 +201,7 @@ j=d.createElement
 			</a>
 		</li>
 		<li>
-			<a href="https://api.whatsapp.com/send?phone=554192024181" target="_blank">
+			<a href="#" data-toggle="modal" data-target="#modal-whats">
 				<i class="i-nc-whats"></i>
 				<span>
 					<small>ATENDIMENTO WHATSAPP</small>41 9202-4181

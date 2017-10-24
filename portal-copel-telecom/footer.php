@@ -112,16 +112,16 @@
 				<div class="modal-content">
 					<button type="button" data-dismiss="modal" class="i-c-modal-close"></button>
 					<div class="modal-body">
-						<a href="/site/faq/como-funciona-nova-fatura-da-copel-telecom/?utm_source=facebook&utm_medium=post&utm_term=financeiro&utm_content=fatura&utm_campaign=ct_call">
+						<a href="http://www.copeltelecom.com/site/faq/como-funciona-nova-fatura-da-copel-telecom/?utm_source=facebook&utm_medium=post&utm_term=financeiro&utm_content=fatura&utm_campaign=ct_call">
 							<img src="<?php bloginfo('template_url'); ?>/_assets/images/home/barcode.png" alt="">
 						</a>
 						<h6>
-							<a href="/site/faq/como-funciona-nova-fatura-da-copel-telecom/?utm_source=facebook&utm_medium=post&utm_term=financeiro&utm_content=fatura&utm_campaign=ct_call">
+							<a href="http://www.copeltelecom.com/site/faq/como-funciona-nova-fatura-da-copel-telecom/?utm_source=facebook&utm_medium=post&utm_term=financeiro&utm_content=fatura&utm_campaign=ct_call">
 								Novidade <i class="fa fa-angle-right"></i> <span  style="color: #737c8f;">Nova Fatura Copel Telecom<small>|</small></span>
 							</a>
 						</h6>
 						<br><br>
-						<a href="/site/faq/como-funciona-nova-fatura-da-copel-telecom/?utm_source=facebook&utm_medium=post&utm_term=financeiro&utm_content=fatura&utm_campaign=ct_call" class="bt bt-orange">Clique e veja as vantagens</a>
+						<a href="http://www.copeltelecom.com/site/faq/como-funciona-nova-fatura-da-copel-telecom/?utm_source=facebook&utm_medium=post&utm_term=financeiro&utm_content=fatura&utm_campaign=ct_call" class="bt bt-orange">Clique e veja as vantagens</a>
 					</div>
 				</div>
 			</div>
@@ -152,6 +152,23 @@
 		</div>
 	</div>
 
+	<div class="modal" id="modal-whats" tabindex="-1" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<button type="button" data-dismiss="modal" class="i-c-modal-close"></button>
+				<div class="modal-body">
+					<h6>
+						Você está saindo do site da<br>Copel Telecom para o WhatsApp:
+					</h6>
+					<a href="https://api.whatsapp.com/send?phone=554192024181" class="bt bt-orange" target="_blank">PROSSEGUIR PARA WHATSAPP</a>
+					<a href="#" data-toggle="modal" data-target="#modal-whats" class="bt-gray">FICAR NO SITE</a>
+				</div>
+				<div class="modal-footer">
+					<small>Você também pode falar com a gente adicionando o número<br>+55 41 9202-4181 na sua agenda. Aguardamos sua mensagem.</small>
+				</div>
+			</div>
+		</div>
+	</div>
 
 <?php wp_footer(); ?>
 <!-- <script src="//api.handtalk.me/plugin/latest/handtalk.min.js"></script>

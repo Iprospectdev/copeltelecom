@@ -23,19 +23,6 @@ if (!$page_bussola) {
 	wp_insert_post( $page_bussola_args );
 }
 
-
-
-$page_copel = get_page_by_title("Copel Telecom", "", "page" );
-if (!$page_copel) {
-	$page_copel_args = array(
-		'post_content'   => "",
-		'post_title'     => "Copel Telecom",
-		'post_status'    => 'publish',
-		'post_type'      => 'page'
-	);
-	wp_insert_post( $page_copel_args );
-}
-
 $page_rav = get_page_by_title("RAV", "", "page" );
 if (!$page_rav) {
 	$page_rav_args = array(
