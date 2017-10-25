@@ -144,7 +144,7 @@
 					<dl>
 						<dt>Quer contratar um plano de telefonia também?</dt>
 						<dd>
-							Para ter Copel Telecom na sua casa você não precisa adquirir um combo de serviços, apenas o plano de internet. Mas, caso deseje contratar um serviço de telefonia, entre em contato com a <a href="http://www.sercomtel.com.br/portalSercomtel/fixa.planoLider.do" target="_blank">Sercomtel</a>. 
+							Para ter Copel Telecom na sua casa você não precisa adquirir um combo de serviços, apenas o plano de internet. Mas, caso deseje contratar um serviço de telefonia, entre em contato com a <a href="https://www.sercomtel.com.br/plano/fixa/pos-pago/3/N" target="_blank">Sercomtel</a>. 
 							<br><br>
 							A Copel Telecom mantém uma parceria para disponibilizar telefonia fixa da Sercomtel por meio da mesma infraestrutura de fibra óptica usada para internet. Confira os planos telefônicos da Sercomtel ou tire dúvidas sobre esse serviço por meio do telefone 103 43.
 						</dd>
@@ -163,8 +163,7 @@
 					</p>
 
 					<p><a href="<?php bloginfo("url"); ?>/wp-content/uploads/2016/04/Caracteristicas-tecnicas-Copel-Fibra.pdf" target="_blank">Consulte aqui</a> as características técnicas dos planos de serviço.</p>
-					<p><a href="<?php bloginfo("url"); ?>/wp-content/uploads/2016/12/Contrato-COPEL-FIBRA-1.pdf 
-" target="_blank">Contrato</a> e <a href="<?php bloginfo("template_url"); ?>/_assets/pdf/termo-de-oferta-de-beneficio-e-fidelizacao-copel-fibra.pdf" target="_blank">termo de fidelidade</a> aplicável ao plano de serviço.</p>
+					<p><a href="<?php bloginfo("url"); ?>/wp-content/uploads/2016/12/Contrato-COPEL-FIBRA-1.pdf" target="_blank">Contrato</a> e <a href="<?php bloginfo("template_url"); ?>/_assets/pdf/termo-de-oferta-de-beneficio-e-fidelizacao-copel-fibra.pdf" target="_blank">termo de fidelidade</a> aplicável ao plano de serviço.</p>
 				</div>
 
 				<?php get_template_part('template','bts-contato'); ?>

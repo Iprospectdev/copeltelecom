@@ -158,13 +158,15 @@
 				<button type="button" data-dismiss="modal" class="i-c-modal-close"></button>
 				<div class="modal-body">
 					<h6>
-						Você está saindo do site da<br>Copel Telecom para o WhatsApp:
+						Você está saindo do site da<br>Copel Telecom para o WhatsApp
 					</h6>
 					<a href="https://api.whatsapp.com/send?phone=554192024181" class="bt bt-orange" target="_blank">PROSSEGUIR PARA WHATSAPP</a>
-					<a href="#" data-toggle="modal" data-target="#modal-whats" class="bt-gray">FICAR NO SITE</a>
+					<a href="#" data-toggle="modal" data-target="#modal-whats" class="bt-gray">FICAR NO SITE DA COPEL</a>
 				</div>
 				<div class="modal-footer">
-					<small>Você também pode falar com a gente adicionando o número<br>+55 41 9202-4181 na sua agenda. Aguardamos sua mensagem.</small>
+					<small>
+						Serviço compatível apenas com o navegador Google Chrome.<br>Outros navegadores: adicione o número +55 41 9202-4181 para falar conosco.<br>Aguardamos sua mensagem.
+					</small>
 				</div>
 			</div>
 		</div>
