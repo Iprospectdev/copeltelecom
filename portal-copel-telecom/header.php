@@ -201,7 +201,8 @@ j=d.createElement
 			</a>
 		</li>
 		<li>
-			<a href="#" data-toggle="modal" data-target="#modal-whats">
+			<!-- <a href="#" data-toggle="modal" data-target="#modal-whats"> -->
+			<a href="javascript:void(0);" class="whatsapp-button">
 				<i class="i-nc-whats"></i>
 				<span>
 					<small>ATENDIMENTO WHATSAPP</small>41 9202-4181

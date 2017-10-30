@@ -160,7 +160,7 @@
 					<h6>
 						Você está saindo do site da<br>Copel Telecom para o WhatsApp
 					</h6>
-					<a href="https://api.whatsapp.com/send?phone=554192024181" class="bt bt-orange" target="_blank">PROSSEGUIR PARA WHATSAPP</a>
+					<a href="javascript:void(0);" class="bt bt-orange whatsapp-button" target="_blank">PROSSEGUIR PARA WHATSAPP</a>
 					<a href="#" data-toggle="modal" data-target="#modal-whats" class="bt-gray">FICAR NO SITE DA COPEL</a>
 				</div>
 				<div class="modal-footer">
@@ -173,6 +173,42 @@
 	</div>
 
 <?php wp_footer(); ?>
+<script>var _url_widget = 'https://widget.powerzap.com.br';</script>
+<script src="https://pzw.io/widget/js/main.js"></script>
+<script>
+    var chat;
+    $(document).ready(function(){
+		  function openWhatsapp(whatsapp, msg) {
+		      var paramString = 'phone=' + whatsapp + '&text=' + msg;
+		      var url = window.encodeURI('whatsapp://send?' + paramString);
+		      var fallbackUrl = window.encodeURI('https://web.whatsapp.com/send?' + paramString);
+
+		      if (isMobile.any) {
+		          fallbackUrl = 'https://www.whatsapp.com/download/';
+		          window.location = url;
+		      } else {
+		          window.open(fallbackUrl);
+		          return false;
+		      }
+
+		      // Mobile detection
+		      var now = Date.now();
+		      var localAppInstallTimeout = window.setTimeout(function() {
+		          if (Date.now() - now > 1250) return;
+		          window.open(fallbackUrl,'_blank');
+		      }, 5000);
+
+		      // Desktop detection
+		      window.addEventListener('blur', function() {
+		          window.clearTimeout(localAppInstallTimeout);
+		      });
+		  };
+
+        $('.whatsapp-button').click(function() {
+            openWhatsapp('554192024181', 'Oi');
+        });
+    });
+</script>
 <!-- <script src="//api.handtalk.me/plugin/latest/handtalk.min.js"></script>
 <script>
 	 var ht = new HT({
