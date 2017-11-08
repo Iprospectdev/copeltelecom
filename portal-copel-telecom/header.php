@@ -155,65 +155,6 @@ j=d.createElement
 
 <?php get_template_part('menu','mobile'); ?>
 
-<div class="nav-contatos sb-slide <?php echo (is_page("Ouvidoria") || is_page("Acessibilidade")) ? "hide" : ""; ?>">
-
-	<div class="nav-contatos-open">
-		<i class="i-nc-whats"></i>
-		<small>PRECISA DE AJUDA?</small>FALE COM A GENTE
-		<span class="nav-contatos-close">x</span>
-	</div>
-	
-	<ul>
-		
-		<?php if(!is_page('RAV') && !is_page('IP Direto')): ?>
-		<li>
-<!-- Init code pzw.io  //--><script>var $_PowerZAP = { defaultCountry: '+55', widget_id: '1681', company: "5526" }; (function(i,s,o,g,r,a,m){ i[r]={context:{id:'8659e62744a37a52c5c1d594238d2d32'}};a=o;o=s.createElement(o); o.async=1;o.src=g;m=s.getElementsByTagName(a)[0];m.parentNode.insertBefore(o,m); })(window,document,'script','https://widget-omni.powerzap.com.br/js/widget.js?v=6.1.0.6','pwz');</script><!-- End code pzw.io  //-->
-		<!-- 	<a class="btn_ligar" id="smchat-agent-button" href="https://chat.softmarketing.com.br/copel/chat?locale=pt-br" target="_blank" onclick="SMChat.Objects.ChatPopups['55c37642ea2f0ff3'].open();return false;">
-				<i class="i-nc-chat"></i>
-				<span>
-					<small>Contate via</small>chat
-				</span>
-			</a>
-	    <script type="text/javascript" src="https://chat.softmarketing.com.br/copel/js/compiled/chat_popup.js"></script>
-	    <script type="text/javascript">SMChat.ChatPopup.init({"id":"55c37642ea2f0ff3","url":"https:\/\/chat.softmarketing.com.br\/copel\/chat?locale=pt-br",
-	            "preferIFrame":true,"modSecurity":false,"width":640,"height":480,"resizable":true,
-	            "styleLoader":"https:\/\/chat.softmarketing.com.br\/copel\/chat\/style\/popup"});</script>
-	    <div id="smchat-invitation"></div><script type="text/javascript" src="https://chat.softmarketing.com.br/copel/js/compiled/widget.js"></script>
-	    <script type="text/javascript">SMChat.Widget.init({"inviteStyle":"https:\/\/chat.softmarketing.com.br\/copel\/styles\/invitations\/default\/invite.css",
-	            "requestTimeout":10000,"requestURL":"https:\/\/chat.softmarketing.com.br\/copel\/widget","locale":"pt-br","visitorCookieName":"SMCHAT_VisitorID"})</script>
-			</li> -->
-		<?php endif; ?>
-
-		<li>
-			<a class="btn_ligar" href="<?php $p = get_page_by_title("Ligar para meu número"); echo get_permalink($p->ID); ?>">
-				<i class="i-nc-ligamos"></i>
-				<span>
-					<small>Ligamos para você</small>DEIXE SEU NÚMERO
-				</span>
-			</a>
-		</li>
-		<li>
-			<a class="btn_ligar" href="<?php $p = get_page_by_title("Contato"); echo get_permalink($p->ID); ?>">
-				<i class="i-nc-ligue"></i>
-				<span>
-					<small>ENTRE EM CONTATO</small>0800 41 41 81
-				</span>
-			</a>
-		</li>
-		<li>
-			<!-- <a href="#" data-toggle="modal" data-target="#modal-whats"> -->
-			<a href="javascript:void(0);" class="whatsapp-button">
-				<i class="i-nc-whats"></i>
-				<span>
-					<small>ATENDIMENTO WHATSAPP</small>41 9202-4181
-				</span>
-			</a>
-		</li>
-	</ul>
-
-</div>
-
-
 <div id="sb-site">
 
 	<header class="header-main <?php echo (is_home() || is_page(array('Para sua Casa', 'Para Empresas'))) ? 'is_home' : ''; ?>">
@@ -310,6 +251,3 @@ j=d.createElement
 		<?php get_template_part('header','mobile'); ?>
 
 	</header>
-
-<script type="text/javascript" src="https://chat.softmarketing.com.br/smchat/js/compiled/chat_popup.js"></script>
-<script type="text/javascript">SMChat.ChatPopup.init({"id":"5629507674a80ec3","url":"https:\/\/chat.softmarketing.com.br\/smchat\/chat?locale=pt-br","preferIFrame":((window.innerWidth < 480)?false:true),"modSecurity":false,"width":640,"height":480,"resizable":true,"styleLoader":"https:\/\/chat.softmarketing.com.br\/smchat\/chat\/style\/popup"});</script>

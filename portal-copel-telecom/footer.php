@@ -173,8 +173,34 @@
 	</div>
 
 <?php wp_footer(); ?>
-<script>var _url_widget = 'https://widget.powerzap.com.br';</script>
-<script src="https://pzw.io/widget/js/main.js"></script>
+
+<?php if(!is_page('RAV') && !is_page('IP Direto')): ?>
+
+	<!-- Init code pzw.io  //-->
+	<script>
+		var $_PowerZAP = { defaultCountry: '+55', widget_id: '1681', company: "5526" };
+		(function(i,s,o,g,r,a,m){
+			i[r]={context:{id:'8659e62744a37a52c5c1d594238d2d32'}};
+			a=o;
+			o=s.createElement(o);
+			o.async=1;
+			o.src=g;
+			m=s.getElementsByTagName(a)[0];
+			m.parentNode.insertBefore(o,m);
+		})(window,document,'script','https://widget-omni.powerzap.com.br/js/widget.js?v=6.1.0.6','pwz');
+	</script>
+	<style>.display-none{display: none!important}</style>
+	<!-- End code pzw.io  //-->
+	<li>
+		<a class="btn_ligar" href="#" id="open-chat" target="_blank">
+			<i class="i-nc-chat"></i>
+			<span>
+				<small>Contate via</small>chat
+			</span>
+		</a>
+	</li>
+<?php endif; ?>
+
 <script>
     var chat;
     $(document).ready(function(){
