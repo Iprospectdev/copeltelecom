@@ -191,14 +191,6 @@
 	</script>
 	<style>.display-none{display: none!important}</style>
 	<!-- End code pzw.io  //-->
-	<li>
-		<a class="btn_ligar" href="#" id="open-chat" target="_blank">
-			<i class="i-nc-chat"></i>
-			<span>
-				<small>Contate via</small>chat
-			</span>
-		</a>
-	</li>
 <?php endif; ?>
 
 <script>
