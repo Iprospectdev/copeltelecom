@@ -25,6 +25,8 @@
 	$slides = get_posts(array(
 		"post_type" => "slider-home",
 		"nopaging" => true,
+		"orderby" => "menu_order",
+		"order" => "asc",
 		'meta_query' => array(
 	        array(
 	            'key' => 'slider_local',
@@ -42,53 +44,59 @@
 			<?php if ($slides): ?>
 			<div class="owl-carousel">
 				<?php foreach ($slides as $slide): ?>
-					<?php
-			
-						if(get_post_meta($slide->ID, "slider_link", true)){echo '<a href="'.get_post_meta($slide->ID, "slider_link", true).'">';}
-
-						$desktop = array_values(rwmb_meta( 'slider_image_desktop', 'type=image', $slide->ID));
-						$desktop = $desktop[0];
-
-						$mobile = array_values(rwmb_meta( 'slider_image_mobile', 'type=image', $slide->ID));
-						$mobile = ($mobile) ? $mobile[0] : $desktop;
-
-					?>
-				<article data-saibamais="<?php echo (get_post_meta($slide->ID, "slider_link_saibamais", true)) ? get_post_meta($slide->ID, "slider_link_saibamais", true) : '#'; ?>">
-					<img src="<?php echo $desktop["full_url"]; ?>" alt="<?php echo $desktop["title"]; ?>">
-					<figure class="bgjs"><img src="<?php echo $mobile["full_url"]; ?>" alt="<?php echo $mobile["title"]; ?>"></figure>
-					<div class="container">
-						<div class="main-tt-highlight" style="
-							<?php
-								if(get_post_meta($slide->ID, "slider_posicao_left", true)){
-									echo 'margin-left:'.get_post_meta($slide->ID, "slider_posicao_left", true).'px;';
-								}
-								if(get_post_meta($slide->ID, "slider_posicao_top", true)){
-									echo 'margin-top:'.get_post_meta($slide->ID, "slider_posicao_top", true).'px;';
-								}
-								if(get_post_meta($slide->ID, "slider_width", true)){
-									echo 'max-width:'.get_post_meta($slide->ID, "slider_width", true).'px;';
-								}
-								if(get_post_meta($slide->ID, "slider_posicao_left", true) || get_post_meta($slide->ID, "slider_posicao_top", true) || get_post_meta($slide->ID, "slider_width", true)){
-									echo 'padding: 0px;';
-								}
-							?>">
-							<h2 style="
-								<?php  if(get_post_meta($slide->ID, "slider_sn")){
-									echo 'font-weight: 700;font-size: 32px;line-height: 30px;';
-								}?>
-							"><?php echo nl2br(get_post_meta($slide->ID, "slider_principal", true)); ?></h2>
-							<p style="
-								<?php  if(get_post_meta($slide->ID, "slider_sn")){
-									echo 'font-weight: 300;font-size: 20px;line-height: 24px;';
-								}?>
-							"><?php echo nl2br(get_post_meta($slide->ID, "slider_secundario", true)); ?></p>
-						</div>
+					<div>
+						<?php
+							if(get_post_meta($slide->ID, "slider_link", true)){echo '<a href="'.get_post_meta($slide->ID, "slider_link", true).'">';}
+							$desktop = array_values(rwmb_meta( 'slider_image_desktop', 'type=image', $slide->ID));
+							$desktop = $desktop[0];
+							$mobile = array_values(rwmb_meta( 'slider_image_mobile', 'type=image', $slide->ID));
+							$mobile = ($mobile) ? $mobile[0] : $desktop;
+						?>
+						<article data-saibamais="<?php echo (get_post_meta($slide->ID, "slider_link_saibamais", true)) ? get_post_meta($slide->ID, "slider_link_saibamais", true) : '#'; ?>">
+							<figure class="bgjs hidden-sm hidden-xs"><img src="<?php echo $desktop["full_url"]; ?>" alt="<?php echo $desktop["title"]; ?>"></figure>
+							<figure class="bgjs hidden-md hidden-lg"><img src="<?php echo $mobile["full_url"]; ?>" alt="<?php echo $mobile["title"]; ?>"></figure>
+							<div class="container">
+								<div class="main-tt-highlight" style="
+									<?php
+										if(get_post_meta($slide->ID, "slider_posicao_left", true)){
+											echo 'margin-left:'.get_post_meta($slide->ID, "slider_posicao_left", true).'px;';
+										}
+										if(get_post_meta($slide->ID, "slider_posicao_top", true)){
+											echo 'margin-top:'.get_post_meta($slide->ID, "slider_posicao_top", true).'px;';
+										}
+										if(get_post_meta($slide->ID, "slider_width", true)){
+											echo 'max-width:'.get_post_meta($slide->ID, "slider_width", true).'px;';
+										}
+										if(get_post_meta($slide->ID, "slider_posicao_left", true) || get_post_meta($slide->ID, "slider_posicao_top", true) || get_post_meta($slide->ID, "slider_width", true)){
+											echo 'padding: 0px;';
+										}
+									?>">
+									<h2 style="
+										<?php
+										if(get_post_meta($slide->ID, "slider_sn")){
+											echo 'font-weight: 700;font-size: 32px;line-height: 30px;';
+										}
+										if(get_post_meta($slide->ID, "slider_principal_color")){
+											echo 'color: '.get_post_meta($slide->ID, "slider_principal_color", true);
+										}
+										?>
+									"><?php echo nl2br(get_post_meta($slide->ID, "slider_principal", true)); ?></h2>
+									<p style="
+										<?php  if(get_post_meta($slide->ID, "slider_sn")){
+											echo 'font-weight: 300;font-size: 20px;line-height: 24px;';
+										}?>
+									"><?php echo nl2br(get_post_meta($slide->ID, "slider_secundario", true)); ?></p>
+									<?php 
+										if(get_post_meta($slide->ID, "slider_botao_text")){
+											echo '<a href="'.get_post_meta($slide->ID, "slider_botao_link", true).'" class="bt-o" style="'.get_post_meta($slide->ID, "slider_botao_style", true).'">'.get_post_meta($slide->ID, "slider_botao_text", true).'</a>';
+										}
+									?>
+								</div>
+							</div>
+						</article>
+						<?php if(get_post_meta($slide->ID, "slider_link", true)){echo '</a>';} ?>
 					</div>
-				</article>
-				<?php 
-						if(get_post_meta($slide->ID, "slider_link", true)){echo '</a>';}
-					endforeach;
-				?>
+				<?php endforeach;?>
 			</div>	
 			<?php else: ?>
 			<div class="owl-carousel">
@@ -175,7 +183,7 @@
 						<li class="col-sm-6 col-xs-12 nav-highlights-orange-light" data-mh="nh-group">
 							<div class="nav-highlights-tt">
 								<div class="space-10"></div>
-								<a href="/site/blog/conheca-o-aplicativo-da-copel-telecom/">
+								<a href="http://www.copeltelecom.com/site/blog/conheca-o-aplicativo-da-copel-telecom/">
 									<i><img src="<?php bloginfo('template_url'); ?>/_assets/images/home/app-icone.png" alt=""></i>
 									<h3>Novo App Copel Telecom</h3>
 									<p>Toda a facilidade e velocidade da<br><strong>Copel Telecom - Copel Fibra</strong> agora em suas mãos</p>
@@ -184,7 +192,7 @@
 							<div class="space-20"></div>
 							<img src="<?php bloginfo('template_url'); ?>/_assets/images/home/app.jpg" class="img-app" alt="">
 							<span class="space-5"></span>
-							<a href="/site/blog/conheca-o-aplicativo-da-copel-telecom/" class="bt bt-white mrg20T">CONHEÇA</a>
+							<a href="http://www.copeltelecom.com/site/blog/conheca-o-aplicativo-da-copel-telecom/" class="bt bt-white mrg20T">CONHEÇA</a>
 						</li>
 						<li class="col-sm-6 col-xs-12" data-mh="nh-group">
 							<div class="nav-highlights-tt mrg50L">
@@ -207,10 +215,10 @@
 		<?php get_template_part('template','blog-home'); ?>
 
 
-		<a href="/site/blog/conheca-o-aplicativo-da-copel-telecom/" class="app-banner hidden-xs">
+		<a href="http://www.copeltelecom.com/site/blog/conheca-o-aplicativo-da-copel-telecom/" class="app-banner hidden-xs">
 			<img src="<?php bloginfo('template_url'); ?>/_assets/images/home/app-banner.png" alt="">
 		</a>
-		<a href="/site/blog/conheca-o-aplicativo-da-copel-telecom/" class="app-banner visible-xs hidden-sm hidden-md hidden-lg">
+		<a href="http://www.copeltelecom.com/site/blog/conheca-o-aplicativo-da-copel-telecom/" class="app-banner visible-xs hidden-sm hidden-md hidden-lg">
 			<span class="space-10"></span>
 			<span class="space-40"></span>
 			<img src="<?php bloginfo('template_url'); ?>/_assets/images/home/app-banner-mobile.png" alt="">
