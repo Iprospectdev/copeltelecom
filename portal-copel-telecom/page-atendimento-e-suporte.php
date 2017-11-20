@@ -76,7 +76,7 @@
 			</div>
 		</div>
 
-		<?php $documentos = get_posts("post_type=documentos&nopaging=true"); ?>
+		<?php $documentos = get_posts("post_type=documentos&nopaging=true&orderby=menu_order&order=asc"); ?>
 		<?php if ($documentos): ?>
 		<section id="as-documentos">
 			<div class="container">

@@ -45,7 +45,7 @@ $labels = array(
 );
 $args = array(
 	'labels'              => $labels,
-	'supports'            => array('title'),
+	'supports'            => array('title','page-attributes'),
 	'hierarchical'        => false,
 	'public'              => true,
 	'show_ui'             => true,
@@ -75,7 +75,7 @@ $labels = array(
 );
 $args = array(
 	'labels'              => $labels,
-	'supports'            => array('title'),
+	'supports'            => array('title','page-attributes'),
 	'hierarchical'        => false,
 	'public'              => true,
 	'show_ui'             => true,
