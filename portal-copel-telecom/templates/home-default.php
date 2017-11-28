@@ -199,7 +199,7 @@
 								<a href="<?php bloginfo('url'); ?>/esporte-interativo">
 									<i><img src="<?php bloginfo('template_url'); ?>/_assets/images/home/ei-icone.png" alt=""></i>
 									<h3>Esporte Interativo</h3>
-									<p>Cliente Copel Telecom* tem acesso gratuito ao conteúdo do Esporte Interativo para assistir o melhor da Liga dos Campeões, Europa League, NFL e MMA.</p>
+									<p>Cliente Copel Telecom tem acesso gratuito ao conteúdo do Esporte Interativo para assistir ao vivo o melhor da Liga dos Campeões, Europa League, E-League e muito mais.</p>
 								</a>
 							</div>
 							<div class="row">
