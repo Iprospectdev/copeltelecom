@@ -254,4 +254,15 @@ if (!$page_esporteinterativo) {
 	wp_insert_post( $page_esporteinterativo_args );
 }
 
+$page_cartoonnetwork = get_page_by_title("Cartoon Network", "", "page" );
+if (!$page_cartoonnetwork) {
+	$page_cartoonnetwork_args = array(
+		'post_content'   => "",
+		'post_title'     => "Cartoon Network",
+		'post_status'    => 'publish',
+		'post_type'      => 'page'
+	);
+	wp_insert_post( $page_cartoonnetwork_args );
+}
+
 
