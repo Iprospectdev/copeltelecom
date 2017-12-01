@@ -113,10 +113,10 @@
 							<div class="post-content">
 								<p class="mrg0B">Baixe o CN Já! e comece a usar agora</p>
 							</div>
-							<a href="#" target="_blank" class="pull-left">
+							<a href="https://play.google.com/store/apps/details?id=com.turner.cnja.br&hl=pt_BR" target="_blank" class="pull-left">
 								<img src="<?php bloginfo('template_url'); ?>/_assets/images/cartoon-network/i-play.png" alt="Google Play">
 							</a>
-							<a href="#" target="_blank" class="pull-left mrg10R">
+							<a href="https://itunes.apple.com/us/app/cartoon-network-já/id1290928633?mt=8" target="_blank" class="pull-left mrg10R">
 								<img src="<?php bloginfo('template_url'); ?>/_assets/images/cartoon-network/i-store.png" alt="App Store">
 							</a>
 							<span class="space-90"></span>
