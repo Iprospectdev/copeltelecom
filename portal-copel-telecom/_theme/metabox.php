@@ -68,6 +68,12 @@ function copeltelecom_mb( $meta_boxes ) {
 				'rows' => 3,
 			),
 
+            array(
+				'name' => "Texto Principal",
+				'id'   => "slider_principal_color",
+				'type' => 'color',
+			),
+
 			array(
 				'name' => "Texto Secundário",
 				'id'   => "slider_secundario",
@@ -103,6 +109,27 @@ function copeltelecom_mb( $meta_boxes ) {
 				'id'   => "slider_width",
 				'type' => 'number',
 				'desc' => 'Pixels'
+			),
+
+            array(
+				'name' => "Botão - link (Somente Residencial)",
+				'id'   => "slider_botao_link",
+				'type' => 'url',
+				'desc' => 'Exemplo: http://www.google.com.br'
+			),
+
+            array(
+				'name' => "Botão - texto (Somente Residencial)",
+				'id'   => "slider_botao_text",
+				'type' => 'text',
+				'desc' => 'Exemplo: Veja como'
+			),
+
+            array(
+				'name' => "Botão - style (Somente Residencial)",
+				'id'   => "slider_botao_style",
+				'type' => 'text',
+				'desc' => 'Exemplo: color: #00000; border: 2px solid #000000;'
 			),
 
             array(
