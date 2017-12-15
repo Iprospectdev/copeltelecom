@@ -72,7 +72,7 @@ function ligar_settings_page() {
 			<hr>
 
 			<p>
-				<a href="<?php bloginfo("template_url"); ?>/_theme/contato/download.php" target="_blank" class="btn btn-success">Download dos Contatos</a>
+				<a href="<?php bloginfo("template_url"); ?>/_theme/ligar/download.php" target="_blank" class="btn btn-success">Download dos Contatos</a>
 			</p>
 
 		</div>

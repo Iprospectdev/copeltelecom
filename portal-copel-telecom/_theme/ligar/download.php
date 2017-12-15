@@ -5,7 +5,7 @@
 	global $wpdb;
 
 	$filename = 'ligacoes_' . date("d-m-y") . '_'.date("h-i").'.xls';
-	$contatos = $wpdb->get_results("SELECT * FROM contatos");
+	$contatos = $wpdb->get_results("SELECT * FROM contatos_telefone");
 
 	$contents = "NOME\t";
 	$contents .= "TELEFONE \t";
@@ -21,14 +21,14 @@
 	header('Content-Disposition: attachment; filename='.$filename);
 
 	if ($contatos): foreach($contatos as $contato):
-		$contents .= $contato->nome . "\t";
+		$contents .= utf8_decode($contato->nome) . "\t";
 		$contents .= $contato->telefone . "\t";
 		$contents .= $contato->email . "\t";
 		$contents .= $contato->documento . "\t";
 		$contents .= $contato->tipo_documento . "\t";
 		$contents .= $contato->contrato . "\t";
-		$contents .= $contato->motivo . "\t";
-		$contents .= $contato->mensagem . "\t";
+		$contents .= utf8_decode($contato->motivo) . "\t";
+		$contents .= utf8_decode($contato->mensagem) . "\t";
 		$contents .= $contato->created . "\t \n";
 	endforeach; endif;
 
