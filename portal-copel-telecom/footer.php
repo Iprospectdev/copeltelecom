@@ -21,7 +21,6 @@
 					<article class="border-left col-md-3 col-sm-3 col-xs-6" data-mh="footer-group">
 						<h6>internet fibra óptica</h6>
 						<ul>
-							<li><a href="<?php $p=get_page_by_title('Comparativo'); echo get_permalink($p->ID); ?>">Compare</a></li>
 							<li><a href="<?php $p=get_page_by_title('Acessibilidade'); echo get_permalink($p->ID); ?>">Acessibilidade</a></li>
 							<li><a href="<?php $p=get_page_by_title('Speedtest'); echo get_permalink($p->ID); ?>">Teste de Velocidade</a></li>
 						</ul>
@@ -223,7 +222,7 @@
 		  };
 
         $('.whatsapp-button').click(function() {
-            openWhatsapp('554192024181', 'Oi');
+            openWhatsapp('41991194181', 'Oi');
         });
     });
 </script>
