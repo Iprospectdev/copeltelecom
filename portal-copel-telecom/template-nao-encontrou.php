@@ -10,9 +10,6 @@
 			<div class="col-md-3 col-sm-6 col-xs-12" data-mh="as-aside-group">
 				<span><i class="i-as-fone"></i><strong>Ligue Grátis</strong><em>0800 41 41 81</em></span>
 			</div>
-			<div class="col-md-3 col-sm-6 col-xs-12" data-mh="as-aside-group">
-				<a href="<?php $p = get_page_by_title("Ligar para meu Número"); echo get_permalink($p->ID); ?>"><i class="i-as-msg"></i><strong>Deixe seu número</strong><sub>Ligamos pra você</sub></a>
-			</div>
 		</div>
 	</div>
 </div>

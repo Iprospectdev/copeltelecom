@@ -11,11 +11,6 @@
 			<span>Ligue grátis</span>
 			0800 41 41 81
 		</div>
-		<a href="<?php $p = get_page_by_title("Ligar para meu Número"); echo get_permalink($p->ID); ?>" class="bt btn_fale_com_a_gente">
-			<i class="i-p-cel"></i>
-			<span>Deixe seu número</span>
-			Ligamos para você
-		</a>
 		<a href="<?php $p = get_page_by_title("Contato"); echo get_permalink($p->ID); ?>" class="bt btn_fale_com_a_gente">
 			<i class="i-p-chat"></i>
 			<span>Formulário</span>
