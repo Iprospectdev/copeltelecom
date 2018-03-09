@@ -213,6 +213,9 @@ j=d.createElement
 						<a href="http://www.copeltelecom.com/autoatendimento" target="_blank">Área do Cliente</a>
 						<a href="<?php $p = get_page_by_title("Atendimento e Suporte"); echo get_permalink($p->ID); ?>">Atendimento e Suporte</a>
 						<div class="nav-acessibilidade">
+							<a href="<?php $p = get_page_by_title("Acessibilidade"); echo get_permalink($p->ID); ?>" title="Acessibilidade">
+								<img src="<?php bloginfo("template_url"); ?>/_assets/images/libras.png" alt="">
+							</a>
 							<a href="#" class="contraste"><i class="fa fa-adjust"></i></a>
 							<a href="#" class="font-more"><i class="fa fa-font"></i>+</a>
 							<a href="#" class="font-default"><i class="fa fa-font"></i>-</a>
