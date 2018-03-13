@@ -9,8 +9,14 @@
 					<div class="col-sm-6">
 						<h1 class="main-tt main-tt-barra">Blog Conecta</h1>
 					</div>
-					<div class="col-sm-3">
-						<h2>Aqui tem dicas, informações e muito mais conteúdo para você.</h2>
+					<div class="col-sm-6">
+						<form action="<?php bloginfo("url"); ?>/" class="blog-search">
+							<input type="hidden" name="post_type" value="post">
+							<label for="" class="autocomplete">
+								<input type="text" name="s" placeholder="Buscar assunto">
+								<button type="submit"><i class="i-faq-search"></i></button>
+							</label>
+						</form>
 					</div>
 				</div>
 			</div>

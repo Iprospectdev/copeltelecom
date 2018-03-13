@@ -25,16 +25,16 @@ add_theme_support( 'post-thumbnails' );
 
 switch (get_bloginfo("url")) {
 	case 'http://www.copeltelecom.com/site':
-		define('WEBSERVICE', "http://webprd");
-		define('LINK_WVT', "http://www.copel.com/wvtweb/site/verificar_disponibilidade.jsf");
+		define(WEBSERVICE, "http://webprd");
+		define(LINK_WVT, "http://www.copel.com/wvtweb/site/verificar_disponibilidade.jsf");
 		break;
 	case 'http://hml.copeltelecom.com/site':
-		define('WEBSERVICE', "http://webhml");
-		define('LINK_WVT', "http://hml.copel.com/wvtweb/site/verificar_disponibilidade.jsf");
+		define(WEBSERVICE, "http://webhml");
+		define(LINK_WVT, "http://hml.copel.com/wvtweb/site/verificar_disponibilidade.jsf");
 		break;
 	default:
-		define('WEBSERVICE', "http://hml.copel.com");
-		define('LINK_WVT', "http://www.copel.com/wvtweb/site/verificar_disponibilidade.jsf");
+		define(WEBSERVICE, "http://hml.copel.com");
+		define(LINK_WVT, "http://www.copel.com/wvtweb/site/verificar_disponibilidade.jsf");
 		break;
 }
 
@@ -150,15 +150,15 @@ function get_the_categorias($id) {
 }
 
 // Prefix Blog nos Posts
-function add_rewrite_rules( $wp_rewrite ) {
-	$new_rules = array(
-		'blog/page/(.+?)/?$' => 'index.php?post_type=post&paged='. $wp_rewrite->preg_index(1),
-		'blog/(.+?)/?$' => 'index.php?post_type=post&name='. $wp_rewrite->preg_index(1),
-	);
+// function add_rewrite_rules( $wp_rewrite ) {
+// 	$new_rules = array(
+// 		'blog/page/(.+?)/?$' => 'index.php?post_type=post&paged='. $wp_rewrite->preg_index(1),
+// 		'blog/(.+?)/?$' => 'index.php?post_type=post&name='. $wp_rewrite->preg_index(1),
+// 	);
  
-	$wp_rewrite->rules = $new_rules + $wp_rewrite->rules;
-}
-add_action('generate_rewrite_rules', 'add_rewrite_rules');
+// 	$wp_rewrite->rules = $new_rules + $wp_rewrite->rules;
+// }
+// add_action('generate_rewrite_rules', 'add_rewrite_rules');
  
  
 function change_blog_links($post_link, $id=0){
@@ -172,3 +172,44 @@ function change_blog_links($post_link, $id=0){
 	return $post_link;
 }
 add_filter('post_link', 'change_blog_links', 1, 3);
+
+
+// Verifica se não existe nenhuma função com o nome count_post_views
+if ( ! function_exists( 'count_post_views' ) ) {
+    // Conta os views do post
+    function count_post_views () { 
+        // Garante que vamos tratar apenas de posts
+        if ( is_single() ) {
+        
+            // Precisamos da variável $post global para obter o ID do post
+            global $post;
+            
+            // Se a sessão daquele posts não estiver vazia
+            if ( empty( $_SESSION[ 'post_counter_' . $post->ID ] ) ) {
+                
+                // Cria a sessão do posts
+                $_SESSION[ 'post_counter_' . $post->ID ] = true;
+            
+                // Cria ou obtém o valor da chave para contarmos
+                $key = 'post_counter';
+                $key_value = get_post_meta( $post->ID, $key, true );
+                
+                // Se a chave estiver vazia, valor será 1
+                if ( empty( $key_value ) ) { // Verifica o valor
+                    $key_value = 1;
+                    update_post_meta( $post->ID, $key, $key_value );
+                } else {
+                    // Caso contrário, o valor atual + 1
+                    $key_value += 1;
+                    update_post_meta( $post->ID, $key, $key_value );
+                } // Verifica o valor
+                
+            } // Checa a sessão
+            
+        } // is_single
+        
+        return;
+        
+    }
+    add_action( 'get_header', 'count_post_views' );
+}

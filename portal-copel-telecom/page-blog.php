@@ -14,116 +14,140 @@
 					<div class="col-sm-6">
 						<h1 class="main-tt main-tt-barra">Blog Conecta</h1>
 					</div>
-					<div class="col-sm-3">
-						<h2>Aqui tem dicas, informações e muito mais conteúdo para você.</h2>
+					<div class="col-sm-6">
+						<form action="<?php bloginfo("url"); ?>/" class="blog-search">
+							<input type="hidden" name="post_type" value="post">
+							<label for="" class="autocomplete">
+								<input type="text" name="s" placeholder="Buscar assunto">
+								<button type="submit"><i class="i-faq-search"></i></button>
+							</label>
+						</form>
 					</div>
 				</div>
 			</div>
 		</header>
 		<div class="blog-list blog-margin-top">
 			<div class="container">
-				<div class="owl-carousel">
+				<?php
+					query_posts(array(
+						"post_type" => "post",
+						'paged' => get_query_var( 'paged' )
+					));
+					$i = 0;
+				?>
+				<?php while (have_posts()): the_post(); ?>
+					<?php
+						if($i==0 && get_query_var( 'paged' )<=1){
+							$class = 'col-xs-12 large';
+							$style = 'height: 500px;';
+						}elseif($i==4 && get_query_var( 'paged' )<=1){
+							$class = 'col-md-8 col-sm-12 col-xs-12 pull-right';
+							$style = 'height: 540px';
+						}elseif($i==9 && get_query_var( 'paged' )>1){
+							$class = 'col-xs-12';
+							$style = 'height: 500px;';
+						}else{
+							$class = 'col-md-4 col-sm-6 col-xs-12 large';
+							$style = '';
+						}
+					?>
 					<article>
-						<div class="highlight-blog row">
+						<a href="<?php the_permalink(); ?>" class="highlight-blog-item bgcolor <?php echo $class; ?>" data-color="<?php echo ($i % 2 == 0) ? "#737c8f" : "#ff9600"; ?>" style="<?php echo $style; ?>">
 							<?php
-								query_posts(array(
-									"post_type" => "post",
-									"posts_per_page" => 7,
-								));
-								$i = 0;
+								if (has_post_thumbnail( $post->ID )){
+									if($i==0){
+										echo get_the_post_thumbnail( $post->ID , "full" );
+									}else{
+										echo get_the_post_thumbnail( $post->ID , "thumb-blog" );
+									}
+								}
 							?>
-							<?php while (have_posts()): the_post(); ?>
-							<a href="<?php the_permalink(); ?>" class="highlight-blog-item col-md-4 col-sm-6 col-xs-12 bgcolor" data-color="<?php echo ($i % 2 == 0) ? "#ff9600" : "#737c8f"; ?>">
-								<?php if (has_post_thumbnail( $post->ID )): ?>
-									<?php echo get_the_post_thumbnail( $post->ID , "thumb-blog" ); ?>
-								<?php endif ?>
-								<dl>
-									<dt>
-										<h3>
-											<span><?php get_the_categorias($post->ID); ?></span>
-											<?php the_title(); ?>
-										</h3>
-									</dt>
-									<dd>
-										<?php 
-											if (get_post_meta($post->ID, "gravata", true)) {
-												echo wpautop(get_post_meta($post->ID, "gravata", true));
-											} else {
-												the_excerpt();
-											}
-										?>
-									</dd>
-								</dl>
-							</a>
-							<?php $i++; endwhile; ?>
-
-							<aside class="col-md-8 col-sm-6 highlight-blog-form">
-								<form action="<?php bloginfo("url"); ?>/" class="faq-form-search faq-form-search-gray">
-									<h6>Ainda não<br>achou o que precisava?</h6>
-									<label class="autocomplete">
-										<input type="text" name="s" placeholder="Buscar assunto">
-										<button type=submit><i class="i-faq-search-gray"></i></button>
-									</label>
-								</form>
-							</aside>
-						</div>
+							<dl>
+								<dt>
+									<h3>
+										<span><?php get_the_categorias($post->ID); ?></span>
+										<?php the_title(); ?>
+									</h3>
+								</dt>
+								<dd>
+									<?php 
+										if (get_post_meta($post->ID, "gravata", true)) {
+											echo wpautop(get_post_meta($post->ID, "gravata", true));
+										} else {
+											the_excerpt();
+										}
+									?>
+								</dd>
+							</dl>
+						</a>
 					</article>
-					
-					<?php for($a = 1; $a <= $posts_query->max_num_pages; $a++): ?>
-						<?php
-							$offset = ((($a-1)*9)+7);
-							query_posts(array(
-								"post_type" => "post",
-								"posts_per_page" => 9,
-								"offset" => $offset
-							));
-							$i = 0;
-						?>
-						<?php if (have_posts()): ?>
-						<article>
-							<div class="highlight-blog row">
-								<?php while (have_posts()): the_post(); ?>
-								<a href="<?php the_permalink(); ?>" class="highlight-blog-item col-md-4 col-sm-6 col-xs-12 bgcolor" data-color="<?php echo ($i % 2 == 0) ? "#ff9600" : "#737c8f"; ?>">
-									<?php if (has_post_thumbnail( $post->ID )): ?>
-										<?php echo get_the_post_thumbnail( $post->ID , "thumb-blog" ); ?>
-									<?php endif ?>
-									<dl>
-										<dt>
-											<span><?php get_the_categorias($post->ID); ?></span>
-											<?php the_title(); ?>
-										</dt>
-										<dd>
-											<?php 
-												if (get_post_meta($post->ID, "gravata", true)) {
-													echo wpautop(get_post_meta($post->ID, "gravata", true));
-												} else {
-													the_excerpt();
-												}
-											?>
-										</dd>
-									</dl>
-								</a>
-								<?php $i++;endwhile; wp_reset_query(); ?>
-							</div>
-						</article>
-						<?php endif ?>
-					<?php endfor; ?>
+					<?php if($i==2 && get_query_var( 'paged' )<=1): ?>
+						<aside class="col-md-4 col-sm-6 col-xs-12 highlight-blog-item-categories bg-white">
+							<span>Navegar por categorias</span>
+							<?php
+								$categorias = get_terms("category");
+								if ($categorias) {
+									foreach ($categorias as $cat) {
+										echo '<a href="'. get_term_link($cat->slug, 'category') .'" class="bt-o">'.$cat->name.'</a>';
+									}
+								}
+							?>
+						</aside>
+					<?php endif; ?>
+
+					<?php 
+						if($i==5 && get_query_var( 'paged' )<=1): 
+							$nova_consulta = new WP_Query( 
+							    array(
+							        'posts_per_page'      => 5,
+							        'no_found_rows'       => true,
+							        'post_status'         => 'publish',
+							        'ignore_sticky_posts' => true,
+							        'orderby'             => 'meta_value_num',
+							        'meta_key'            => 'post_counter',
+							        'order'               => 'DESC'
+							    )
+							);
+							if($nova_consulta->have_posts()):
+					?>
+						<aside class="col-md-4 col-sm-6 col-xs-12 highlight-blog-item-maisvistos" style="height: 540px;">
+							<span>Mais Vistos</span>
+							<ul>
+								<?php
+						        	while ( $nova_consulta->have_posts() ):
+							            $nova_consulta->the_post();
+							            $post_counter = get_post_meta( $post->ID, 'post_counter', true );
+										$categoria = get_terms("category");
+										echo '<li>';
+											if ($categoria) {
+												$categoria = $categoria[0];
+												echo '<a href="'. get_term_link($categoria->slug, 'category') .'"><small>'.$categoria->name.'</small></a>';
+											}
+								            echo '<a href="'.get_permalink($post->ID).'" title="'.get_the_title().'">'.get_the_title().'</a>';
+							            echo '</li>';
+							        endwhile;
+							    ?>
+						    </ul>
+						</aside>
+					<?php 
+							endif;
+						endif;
+					?>
+				<?php $i++; endwhile; ?>
+				<div class="pagination">
+					<?php
+						$args = array(
+							'end_size'           => 3,
+							'mid_size'           => 3,
+							'prev_text'          => __('ANTERIOR'),
+							'next_text'          => __('PRÓXIMA')
+						);
+						echo paginate_links($args);
+					?>
 				</div>
 			</div>
 		</div>
-		<aside class="blog-categorias">
-			<div class="container">
-				<span>Navegar por categorias</span>
-				<?php
-					$categorias = get_terms("category");
-					if ($categorias) {
-						foreach ($categorias as $cat) {
-							echo '<a href="'. get_term_link($cat->slug, 'category') .'" class="bt-o">'.$cat->name.'</a>';
-						}
-					}
-				?>
-			</div>
-		</aside>
+
 
 	</section>
 <?php get_footer(); ?>
