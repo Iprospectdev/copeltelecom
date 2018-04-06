@@ -266,3 +266,14 @@ if (!$page_cartoonnetwork) {
 }
 
 
+$page_rav = get_page_by_title("Entendendo a sua fatura", "", "faq" );
+if (!$page_rav) {
+	$page_rav_args = array(
+		'post_content'   => "",
+		'post_title'     => "Entendendo a sua fatura",
+		'post_status'    => 'publish',
+		'post_type'      => 'faq'
+	);
+	wp_insert_post( $page_rav_args );
+}
+
