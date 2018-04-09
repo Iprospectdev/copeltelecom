@@ -161,7 +161,7 @@ j=d.createElement
 
 		<div class="container">
 			<div class="row">
-				<div class="col-md-7 col-sm-12">
+				<div class="col-md-6 col-sm-12">
 					<nav class="nav-section menu_principal">
 						<?php
 							$residencial = get_page_by_title("Para sua Casa");
@@ -208,13 +208,13 @@ j=d.createElement
 						</span>
 					</nav>
 				</div>
-				<div class="col-md-5 hidden-sm">
+				<div class="col-md-6 hidden-sm">
 					<nav class="nav-out">
 						<a href="http://www.copeltelecom.com/autoatendimento" target="_blank">Área do Cliente</a>
 						<a href="<?php $p = get_page_by_title("Atendimento e Suporte"); echo get_permalink($p->ID); ?>">Atendimento e Suporte</a>
 						<div class="nav-acessibilidade">
 							<a href="<?php $p = get_page_by_title("Acessibilidade"); echo get_permalink($p->ID); ?>" title="Acessibilidade">
-								<img src="<?php bloginfo("template_url"); ?>/_assets/images/libras.png" alt="">
+								<img src="<?php bloginfo("template_url"); ?>/_assets/images/libras.png" alt=""> Acessibilidade
 							</a>
 							<a href="#" class="contraste"><i class="fa fa-adjust"></i></a>
 							<a href="#" class="font-more"><i class="fa fa-font"></i>+</a>
