@@ -22,6 +22,9 @@
 		$cents = $services->profile_cents($planos->bel[0]->precoProduto);
 	}
 
+	$velocidade = str_replace('a', '', $velocidade);
+	$velocidade = str_replace('A', '', $velocidade);
+
 	$slides = get_posts(array(
 		"post_type" => "slider-home",
 		"nopaging" => true,
