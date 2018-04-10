@@ -79,7 +79,7 @@
 			<div class="modal-body">
 				<h6>Planos de Serviço</h6>
 				<div class="list-files">
-					<?php $doc = get_page_by_title( "Planos de Serviço - Vigentes", "", "documentos" ); ?>
+					<?php $doc = get_page_by_title( "Planos de Serviços", "", "documentos" ); ?>
 					<?php if ($doc): ?>
 						<ul>
 							<?php if (rwmb_meta( "files", "type=file", $doc->ID )): ?>
