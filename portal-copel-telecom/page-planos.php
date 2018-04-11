@@ -67,7 +67,16 @@
 							<li class="col-xs-4">
 								<i class="i-vd-velocidade2"></i>
 								<?php if ($planos): ?>
-									Velocidades de<strong><?php echo $services->profile_velocidade($planos->bel[0]->nomeProduto); ?> a <?php echo $services->profile_velocidade(end($planos->bel)->nomeProduto); ?> mega</strong>
+									<?php
+										$ini = $services->profile_velocidade($planos->bel[0]->nomeProduto);
+										$ini = str_replace('a', '', $ini);
+										$ini = str_replace('A', '', $ini);
+
+										$end = $services->profile_velocidade(end($planos->bel)->nomeProduto);
+										$end = str_replace('a', '', $end);
+										$end = str_replace('A', '', $end);
+									?>
+									Velocidades de<strong><?php echo $ini; ?> a <?php echo $end; ?> mega</strong>
 								<?php else: ?>
 									Velocidades de<strong>1 a 150 mega</strong>
 								<?php endif; ?>
@@ -110,17 +119,20 @@
 											}else{
 												echo '<small>Copel Fibra</small>';
 											}
+											$velocidade = $services->profile_velocidade($plan->nomeProduto);
+											$velocidade = str_replace('a', '', $velocidade);
+											$velocidade = str_replace('A', '', $velocidade);
 										 ?>
-										<strong><?php echo $services->profile_velocidade($plan->nomeProduto); ?><span>MEGA</span></strong>
+										<strong><?php echo $velocidade; ?><span>MEGA</span></strong>
 									</dt>
 									<dd class="col-sm-15 col-xs-6" data-mh="ct-pc-group">
 										<i class="i-down-gray"></i>
-										<strong><?php echo $services->profile_velocidade($plan->nomeProduto); ?><span>MEGA</span></strong>
+										<strong><?php echo $velocidade; ?><span>MEGA</span></strong>
 										Velocidade<br>de <small>download</small>
 									</dd>
 									<dd class="col-sm-15 col-xs-6" data-mh="ct-pc-group">
 										<i class="i-up-gray"></i>
-										<strong><?php echo $services->profile_velocidade($plan->nomeProduto); ?><span>MEGA</span></strong>
+										<strong><?php echo $velocidade; ?><span>MEGA</span></strong>
 										Velocidade<br>de <small>upload</small>
 									</dd>
 									<dd class="col-sm-15 col-xs-12 plano-preco" data-mh="c-dt-group">
@@ -128,7 +140,7 @@
 									</dd>
 									<dd class="col-sm-15 col-xs-12 plano-bts" data-mh="ct-pc-group">
 										<a href="<?php echo LINK_WVT; ?>?s=<?php echo $plan->id; ?>&locate=<?php echo $profile->cidade; ?>&p=<?php echo $profile->tipo->name; ?>" class="bt">VERIFICAR DISPONIBILIDADE</a>
-										<a href="#" class="detalhe btn-planos btn_disponibilidade_<?php echo $services->profile_velocidade($plan->nomeProduto); ?>mb">Plano de Serviço</a>
+										<a href="#" class="detalhe btn-planos btn_disponibilidade_<?php echo $velocidade; ?>mb">Plano de Serviço</a>
 									</dd>
 								</dl>
 							</li>
