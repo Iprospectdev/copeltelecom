@@ -4,10 +4,10 @@
 
 	the_post();
 
-	if(is_page('Entendendo sua fatura')){
-		get_template_part('templates/faq', 'page' );	
-	}else{
+	if(get_the_title()=='Entendendo a sua fatura'){
 		get_template_part('single', 'faq-entendendo-sua-fatura' );
+	}else{
+		get_template_part('templates/faq', 'page' );	
 	}
 	
 
