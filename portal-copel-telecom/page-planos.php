@@ -174,8 +174,8 @@
 						Planos sujeitos a disponibilidade. Válidos para <strong><?php echo $profile->cidade; ?></strong> (<a href="" ng-click="go_cidade()">alterar</a>)
 					</p>
 
-					<p><a href="<?php bloginfo("url"); ?>/wp-content/uploads/2016/04/Caracteristicas-tecnicas-Copel-Fibra.pdf" target="_blank">Consulte aqui</a> as características técnicas dos planos de serviço.</p>
-					<p><a href="<?php bloginfo("url"); ?>/wp-content/uploads/2016/12/Contrato-COPEL-FIBRA-1.pdf" target="_blank">Contrato</a> e <a href="<?php bloginfo("template_url"); ?>/_assets/pdf/termo-de-oferta-de-beneficio-e-fidelizacao-copel-fibra.pdf" target="_blank">termo de fidelidade</a> aplicável ao plano de serviço.</p>
+					<p><a href="<?php bloginfo("url"); ?>/wp-content/uploads/2018/04/Caracteristicas-tecnicas-Copel-Fibra-1.pdf" target="_blank">Consulte aqui</a> as características técnicas dos planos de serviço.</p>
+					<p><a href="<?php bloginfo("url"); ?>/wp-content/uploads/2018/04/Contrato-COPEL-FIBRA-1.pdf" target="_blank">Contrato</a> e <a href="<?php bloginfo("url"); ?>/wp-content/uploads/2018/04/termo-de-oferta-de-beneficio-e-fidelizacao-copel-fibra-1.pdf" target="_blank">termo de fidelidade</a> aplicável ao plano de serviço.</p>
 				</div>
 
 				<?php get_template_part('template','bts-contato'); ?>
