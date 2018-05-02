@@ -124,11 +124,6 @@
 													Código de barras e mês de referência 
 													<small>Disponível apenas em faturas que ainda não foram pagas ou que não estão em débito automático.</small>
 												</li>
-												<li>
-													<span>9A.</span>
-													Nota fiscal da mensalidade
-													<small>Disponível apenas em faturas que ainda não foram pagas ou que não estão em débito automático.</small>
-												</li>
 											</ol>
 										</div>
 									</div>
@@ -143,7 +138,7 @@
 												<li>
 													<span>9A.</span>
 													Nota fiscal da mensalidade
-													<small>Disponível apenas em faturas que ainda não foram pagas ou que não estão em débito automático.</small>
+													<small>Referente à mensalidade do plano contratado. Emitida todos os meses.</small>
 												</li>
 											</ol>
 										</div>
@@ -245,11 +240,6 @@
 													<span>8.</span>
 													Fatura com baixa
 													<small>Faturas quitadas em nossos sistemas não apresentam o código de barras e o mês de referência para pagamento. Caso você perceba que não realizou o pagamento, mas o código de barras não está disponível, deve entrar em contato com o Contact Center.</small>
-												</li>
-												<li>
-													<span>9A.</span>
-													Nota fiscal da mensalidade
-													<small>Disponível apenas em faturas que ainda não foram pagas ou que não estão em débito automático.</small>
 												</li>
 											</ol>
 										</div>
