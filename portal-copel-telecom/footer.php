@@ -8,9 +8,9 @@
 					<li><a href="https://www.youtube.com/channel/UCWLv_uuedAttlRGCpDhI3fg" target="_blank"><i class="i-footer-youtube"></i></a></li>
 				</ul>
 				<div id="footer-logo">
-					<div>
+<!-- 					<div>
 						<a href="http://www.cidadao.pr.gov.br/" target="_blank"><img src="<?php bloginfo('template_url'); ?>/_assets/images/footer-logo-parana.png" alt="Paraná" /></a>
-					</div>
+					</div> -->
 					<div>
 						<img src="<?php bloginfo('template_url'); ?>/_assets/images/logo-ipv6.png" id="ipv6-logo" alt="IPV6" />
 					</div>

@@ -210,7 +210,7 @@
 			<span class="space-20"></span>
 
 			<p class="text-center">
-				Mais detalhes sobre a parceria você pode consultar no <a href="<?php bloginfo('template_url'); ?>/_assets/pdf/RegulamentoEIplus.pdf" target="_blank"><strong><u>Regulamento!</u></strong></a>
+				Mais detalhes sobre a parceria você pode consultar no <a href="<?php bloginfo('template_url'); ?>/wp-content/uploads/2018/04/Regulamento_EIPLUS.pdf" target="_blank"><strong><u>Regulamento!</u></strong></a>
 			</p>
 
 			<span class="space-30"></span>
