@@ -102,6 +102,18 @@
 
 	<?php wp_head(); ?>
 
+	<?php if(is_page($empresas)): ?>	
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-51608830-2"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-51608830-2');
+		</script>
+	<?php endif; ?>
+
 </head>
 
 <body ng-controller="copel" class="font-large">
