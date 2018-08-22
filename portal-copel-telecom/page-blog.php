@@ -47,7 +47,7 @@
 							$class = 'col-xs-12';
 							$style = 'height: 500px;';
 						}else{
-							$class = 'col-md-4 col-sm-6 col-xs-12 large';
+							$class = 'col-md-4 col-sm-6 col-xs-12';
 							$style = '';
 						}
 					?>
