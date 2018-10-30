@@ -1,0 +1,281 @@
+#copel-telecom{
+	padding-top: 20px;
+
+	article{
+		h1,h2{
+			color: @blue;
+			display: block;
+			font-size: 52px;
+			font-weight: 900;
+			line-height: 52px;
+			margin: 0 auto;
+			max-width: 965px;
+			text-align: center;
+		}
+		h3{
+			color: @blue;
+			font-size: 44px;
+			font-weight: 900;
+			line-height: 44px;
+			&:after{
+				content:"|";
+				font-weight: 100;
+			}
+		}
+		li,
+		p{
+			color: @blue;
+			font-size: 24px;
+			font-weight: 400;
+			line-height: 29px;
+			strong{font-weight: 900;}
+		}
+		.little{
+			li,
+			p{
+				font-size: 16px;
+				line-height: 22px;
+				font-weight: 300;
+			}
+		}
+
+	}
+
+	#ct-header{
+		padding-bottom: 150px;
+		background-position: center bottom;
+		background-size: auto;
+		h1{margin-bottom: 265px;}
+	}
+
+	#ct-futuro{
+		background: @orange-light;
+		padding: 90px 0;
+		img{max-width: 100%;}
+		h2{margin-bottom: 40px;}
+		h2,li,p{color: #ffffff;}
+		ol,ul{
+			list-style: none;
+			margin-bottom: 35px;
+			margin-top: 95px;
+			li{
+				display: table-cell;
+				float: none;
+				padding-left: 105px;
+				position: relative;
+				vertical-align: middle;
+				strong{display: block;}
+				i{
+					left: 15px;
+					margin-top: -38px;
+					position: absolute;
+					top: 50%;
+				}
+			}
+		}
+	}
+
+	#ct-pode-confiar{
+		padding: 50px 0 0;
+		header{
+			margin-bottom: 100px;
+			h1{
+				max-width: 946px;
+				margin: 0 auto 20px;
+			}
+			p{
+				display: block;
+				margin: 0 auto;
+				max-width: 725px;
+				text-align: center;
+			}
+		}
+		h2{
+			margin-bottom: 20px;
+		}
+		figure{
+			background-position: 100% 100%;
+			background-size: auto 100%;
+			margin-right: -15px;
+			position: relative;
+		    margin-left: 15px;
+		}
+		#ct-podeconfiar-quer-dizer{
+			background: #ededed;
+			margin-top: 15px;
+			padding: 20px 30px;
+			h6{
+				color: @blue;
+				display: block;
+				margin: 0;
+				font-size: 16px;
+				font-weight: 900;
+				text-align: center;
+
+			}
+			ol,ul{
+				list-style: none;
+				margin: 25px 0 35px;
+				li{
+					font-size: 14px;
+					padding: 0 2px;
+					text-align: center;
+				}
+			}
+			p{
+				display: block;
+				font-size: 16px;
+				line-height: auto;
+				margin: 0 auto;
+				max-width: 300px;
+				text-align: center;
+			}
+		}
+		a{
+			border-bottom: 1px solid #c8ccd5;
+			border-top: 1px solid #c8ccd5;
+			color: @blue;
+			display: block;
+			font-size: 11px;
+			font-weight: 700;
+			margin: 0;
+			padding: 27px;
+			position: relative;
+			text-align: center;
+			text-transform: uppercase;
+			&:after{
+				-moz-osx-font-smoothing: grayscale;
+				-webkit-font-smoothing: antialiased;
+				content:"\f105";
+				display: inline-block;
+				font-size: inherit;
+				font-weight: 100;
+				font: normal normal normal 32px/1 FontAwesome;
+				margin-top: -17px;
+				position: absolute;
+				right: 10px;
+				text-rendering: auto;
+				top: 50%;
+			}
+		}
+	}
+	.nav-highlights{
+		padding-bottom: 190px;
+	}
+	@media (max-width: 1200px) {
+		article{
+			.little{
+				li,
+				p{
+					font-size: 14px;
+					line-height: 18px;
+				}
+			}
+
+		}
+	}
+
+	@media (max-width: 992px) {
+		article{
+			.little{
+				p{
+					br{
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+@media all and (max-width: 768px){
+	#copel-telecom{
+		article{
+			h1,h2{
+				font-size: 28px;
+				line-height: 34px;
+			}
+			p{
+				font-size: 14px;
+				line-height: 20px;
+			}
+		}
+		#ct-header{
+			background: none !important;
+			padding: 0 20px 50px;
+			text-align: center;
+			h1{
+				margin: 0 0 20px;
+			}
+			p{
+				br{
+					display: none;
+				}
+			}
+		}
+		#ct-pode-confiar{
+			figure{
+				background-position: center;
+				height: 480px;
+				margin-bottom: 20px;
+				margin-left: 0;
+			}
+			#ct-podeconfiar-quer-dizer ul li{margin-bottom: 20px;}
+		}
+		#ct-futuro{
+			padding: 40px 0;
+			ul{
+				margin-top: 50px;
+				li{
+					display: block;
+					margin-bottom: 55px;
+				}
+			}
+		}
+		.nav-highlights {
+		    padding-bottom: 0px;
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	#copel-telecom{
+		article{
+			h1,h2{
+				font-size: 20px;
+				line-height: 26px;
+			}
+		}
+		#ct-header{
+			h1{
+				margin: 0 0 20px;
+			}
+		}
+		#ct-pode-confiar{
+			text-align: center;
+			header{
+				margin-bottom: 20px;
+			}
+			h2{
+				margin-bottom: 20px;
+				br{
+					display: none;
+				}
+			}
+			figure{
+				display: none;
+			}
+		}
+	}
+	.nav-infos {
+		ul {
+			li {
+				a{
+					font-size: 10px;
+				}
+			}
+		}
+	}
+}
