@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header('old'); ?>
 
 	<section class="empresas home-empresas-intena">
 		
@@ -38,7 +38,7 @@
 							Serviço de interligação de pontos fixos para compor a rede de serviços da operadora.
 						</p>
 					</div>
-					<div class="col-sm-8"><img src="<?php bloginfo('template_url'); ?>/_assets/images/empresas/como-funciona.png" alt=""></div>
+					<div class="col-sm-8"><img src="<?php bloginfo('template_url'); ?>/_assets/old/images/empresas/como-funciona.png" alt=""></div>
 				</div>
 			</div>
 		</article>
@@ -68,7 +68,7 @@
 						</p>
 					</div>
 					<div class="col-md-6 col-sm-12 col-xs-12">
-						<img src="<?php bloginfo('template_url'); ?>/_assets/images/copel-telecom/mapa-pr.png" alt="">
+						<img src="<?php bloginfo('template_url'); ?>/_assets/old/images/copel-telecom/mapa-pr.png" alt="">
 					</div>
 				</div>
 			</div>
@@ -117,7 +117,7 @@
 							Serviço de interconexão IP na modalidade peering pago, através de porta de conectividade à web para troca de tráfego e trânsito IP. Não inclui meios de transmissão, de exclusiva responsabilidade da operadora solicitante.
 						</p>
 					</div>
-					<div class="col-sm-8"><img src="<?php bloginfo('template_url'); ?>/_assets/images/empresas/como-funciona.png" alt=""></div>
+					<div class="col-sm-8"><img src="<?php bloginfo('template_url'); ?>/_assets/old/images/empresas/como-funciona.png" alt=""></div>
 				</div>
 			</div>
 		</article>
@@ -146,7 +146,7 @@
 						</p>
 					</div>
 					<div class="col-md-6 col-sm-12 col-xs-12">
-						<img src="<?php bloginfo('template_url'); ?>/_assets/images/copel-telecom/mapa-pr.png" alt="">
+						<img src="<?php bloginfo('template_url'); ?>/_assets/old/images/copel-telecom/mapa-pr.png" alt="">
 					</div>
 				</div>
 			</div>
@@ -193,7 +193,7 @@
 							Serviço de Interligação IP que disponibiliza porta de conectividade à rede mundial internet, além de prover trânsito e tráfego a outras redes de telecomunicações. Não inclui meios de transmissão para interconexão, de exclusiva responsabilidade da operadora solicitante.
 						</p>
 					</div>
-					<div class="col-sm-8"><img src="<?php bloginfo('template_url'); ?>/_assets/images/empresas/como-funciona.png" alt=""></div>
+					<div class="col-sm-8"><img src="<?php bloginfo('template_url'); ?>/_assets/old/images/empresas/como-funciona.png" alt=""></div>
 				</div>
 			</div>
 		</article>
@@ -222,7 +222,7 @@
 						</p>
 					</div>
 					<div class="col-md-6 col-sm-12 col-xs-12">
-						<img src="<?php bloginfo('template_url'); ?>/_assets/images/copel-telecom/mapa-pr.png" alt="">
+						<img src="<?php bloginfo('template_url'); ?>/_assets/old/images/copel-telecom/mapa-pr.png" alt="">
 					</div>
 				</div>
 			</div>
@@ -249,4 +249,4 @@
 		</div>
 	</footer>
 
-<?php get_footer(); ?>
+<?php get_footer('old'); ?>

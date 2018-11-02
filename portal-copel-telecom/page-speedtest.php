@@ -1,5 +1,5 @@
 <?php
-	get_header();
+	get_header('old');
 ?>
 	<section class="speedtest">
 		<?php if($_GET['flash']=='0'): ?>
@@ -41,17 +41,17 @@
 									<ul>
 										
 										<li>
-											<img src="<?php bloginfo('template_url'); ?>/_assets/images/speedtest/i-fibra.png" alt="">
+											<img src="<?php bloginfo('template_url'); ?>/_assets/old/images/speedtest/i-fibra.png" alt="">
 											Fibra Óptica<br><strong>de ponta a ponta</strong>
 										</li>
 
 										<li>
-											<img src="<?php bloginfo('template_url'); ?>/_assets/images/speedtest/i-time.png" alt="">
+											<img src="<?php bloginfo('template_url'); ?>/_assets/old/images/speedtest/i-time.png" alt="">
 											Velocidades de<br><strong>30 a 150 mega</strong>
 										</li>
 
 										<li>
-											<img src="<?php bloginfo('template_url'); ?>/_assets/images/speedtest/i-upload.png" alt="">
+											<img src="<?php bloginfo('template_url'); ?>/_assets/old/images/speedtest/i-upload.png" alt="">
 											<strong>O maior upload</strong><br>do mercado
 										</li>
 
@@ -194,4 +194,4 @@
 			<?php get_template_part('template','highlight-blog'); ?>
 		</aside>
 	</section>
-<?php get_footer(); ?>
+<?php get_footer('old'); ?>

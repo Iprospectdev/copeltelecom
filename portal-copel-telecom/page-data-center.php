@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header('old'); ?>
 
 	<section id="home-empresas-datacenter" class="empresas">
 		<div class="container">
@@ -33,7 +33,7 @@
 		<article>
 			<div class="empresas-vantagens">
 				<div class="container">
-					<img src="<?php bloginfo('template_url'); ?>/_assets/images/empresas/highlight-datacenter.png" alt="">
+					<img src="<?php bloginfo('template_url'); ?>/_assets/old/images/empresas/highlight-datacenter.png" alt="">
 					<h4>Aproveite benefícios com o peso da marca Copel.</h4>
 					<ul class="row">
 						<li class="col-sm-15 col-sm-offset-1 col-xs-12" data-mh="ev-group">
@@ -91,4 +91,4 @@
 
 	</section>
 	
-<?php get_footer(); ?>
+<?php get_footer('old'); ?>

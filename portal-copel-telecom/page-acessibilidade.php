@@ -1,8 +1,8 @@
-<?php get_header(); ?>
+<?php get_header('old'); ?>
 	<section id="acessibilidade">
 		<header>
 			<h1 class="main-tt main-tt-barra">Acessibilidade</h1>
-			<img src="<?php bloginfo('template_url'); ?>/_assets/images/acessibilidade/macbook.jpg" alt="">
+			<img src="<?php bloginfo('template_url'); ?>/_assets/old/images/acessibilidade/macbook.jpg" alt="">
 			<div class="container">
 				<div id="acessibilidade-intro">
 					<div class="row">
@@ -90,15 +90,15 @@
 					No Firefox o comando muda para alt + shift + letra.
 				</p>
 				<p class="text-right">
-					<img src="<?php bloginfo('template_url'); ?>/_assets/images/acessibilidade/alt_l.png" alt=""><br>
+					<img src="<?php bloginfo('template_url'); ?>/_assets/old/images/acessibilidade/alt_l.png" alt=""><br>
 					Pressione a tecla Alt em conjunto com a letra I (Alt + i) para acessar a página inicial.
 				</p>
 				<p class="text-right">
-					<img src="<?php bloginfo('template_url'); ?>/_assets/images/acessibilidade/alt_c.png" alt=""><br>
+					<img src="<?php bloginfo('template_url'); ?>/_assets/old/images/acessibilidade/alt_c.png" alt=""><br>
 					Pressione a tecla Alt em conjunto com a letra C (Alt + c) para chegar ao conteúdo específico de uma página.
 				</p>
 				<p class="text-right">
-					<img src="<?php bloginfo('template_url'); ?>/_assets/images/acessibilidade/alt_m.png" alt=""><br>
+					<img src="<?php bloginfo('template_url'); ?>/_assets/old/images/acessibilidade/alt_m.png" alt=""><br>
 					Pressione a tecla Alt em conjunto com a letra M (Alt + m) para acessar o menu.
 				</p>
 				<p class="text-right">
@@ -115,4 +115,4 @@
 		<aside><?php get_template_part('template','highlight-blog'); ?></aside>
 	</section>
 
-<?php get_footer(); ?>
+<?php get_footer('old'); ?>

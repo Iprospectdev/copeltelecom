@@ -1,5 +1,5 @@
 <?php
-	get_header();
+	get_header('old');
 	the_post();
 ?>
 	<section class="blog" id="blog-single">
@@ -89,4 +89,4 @@
 	        });
 		});
 	</script>	
-<?php get_footer(); ?>
+<?php get_footer('old'); ?>

@@ -1,5 +1,5 @@
 <?php
-	get_header();
+	get_header('old');
 	$services = new Services;
 	$profile = $services->profile();
 	$planos = json_decode($services->planos("F",$profile->cidade));
@@ -211,4 +211,4 @@
 		</aside>
 	</section>
 
-<?php get_footer(); ?>
+<?php get_footer('old'); ?>

@@ -1,4 +1,4 @@
-<?php get_header();?>
+<?php get_header('old');?>
 	<section id="rav">
 		<header>
 			<h1 class="main-tt">Internet Corporativa – IP Direto</h1>
@@ -190,4 +190,4 @@
 		</div>
 	</div>
 
-<?php get_footer(); ?>
+<?php get_footer('old'); ?>

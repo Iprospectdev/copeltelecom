@@ -1,0 +1,142 @@
+.header-top {
+	background: #737C8F;
+	padding: 13px 0;
+
+	&--nav {
+		float: left;
+	}
+	
+	&--acessibilidade {
+		float: left;
+		margin-left: 25px;
+		padding-left: 25px;
+		position: relative;
+
+		&:before {
+			background: rgba(#fff,0.2);
+			content: "";
+			display: block;
+			height: 100%;
+			left: 0;
+			position: absolute;
+			width: 1px;
+		}
+
+		a, button {
+			background: none;
+			border: 0;
+			color: #fff;
+			cursor: pointer;
+			display: inline-block;
+			font-size: 12px;
+			font-weight: 400;
+			padding: 0 5px;
+			letter-spacing: 0.5px;
+
+			&:focus {
+				outline: none;
+			}
+		}
+	}
+	
+	&--btn {
+		color: #fff;
+		font-size: 12px;
+		text-transform: uppercase;
+		padding: 5px 15px;
+		border-radius: 5px;
+		text-decoration: none;
+		letter-spacing: 0.5px;
+
+		i {
+			margin-right: 5px;
+		}
+
+		&:hover {
+			color: #fff;
+		}
+
+		&.active {
+			border: 2px solid rgba(#fff,0.2);
+			font-weight: 700;
+		}
+	}
+
+	&:after {
+		clear: both;
+		content: "";
+		display: table;
+	}
+}
+
+.header-fixed {
+	background: #FFFFFF;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+	position: static;
+	top: -100px;
+	width: 100%;
+	transition: all 0.3s ease-in-out;
+
+	.logo {
+		float: left;
+		padding: 18px 20px 18px 0;
+	}
+
+	nav {
+		float: left;
+
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+
+			&>li {
+				display: inline-block;
+
+				&>a {
+					color: color('gray');
+					display: block;
+					font-size: 12px;
+					padding: 30px 8px;
+
+					i {
+						margin-left: 5px;
+					}
+
+					strong {
+						font-size: 15px;
+						font-weight: 500;
+					}
+				}
+			}
+		}
+	}
+
+	&--btn {
+		background: color('orange');
+		border-radius: 5px;
+		color: #fff;
+		display: inline-block;
+		float: right;
+		font-weight: 700;
+		margin: 18px 0;
+		padding: 10px 40px;
+		transition: all 0.3s ease-in-out;
+
+		&:hover {
+			background-image: linear-gradient(49deg, #FFA600 0%, #FF6D00 100%);
+			color: #fff;
+		}
+	}
+
+	&:after {
+		clear: both;
+		content: "";
+		display: table;
+	}
+
+	&.active {
+		position: fixed;
+		top: 0;
+	}
+}

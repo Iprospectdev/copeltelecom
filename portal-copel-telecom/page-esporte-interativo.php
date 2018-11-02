@@ -1,6 +1,6 @@
 <?php
 
-	get_header();
+	get_header('old');
 
 ?>
 	<section id="page-esporte-interativo">
@@ -16,7 +16,7 @@
 						<div class="clearfix"></div>
 					</div>
 					<div class="col-md-6 col-sm-9 col-xs-12">
-						<img src="<?php bloginfo('template_url'); ?>/_assets/images/esporte-interativo/header-cel.png" alt="Assista em seu Computador, no Tablet ou no Celular.">
+						<img src="<?php bloginfo('template_url'); ?>/_assets/old/images/esporte-interativo/header-cel.png" alt="Assista em seu Computador, no Tablet ou no Celular.">
 					</div>
 				</div>
 			</div>
@@ -32,14 +32,14 @@
 					
 					<figure class="col-sm-6 hidden-sm hidden-xs">
 
-						<img src="<?php bloginfo('template_url'); ?>/_assets/images/esporte-interativo/campeonatos.jpg" class="mrg50R" alt="Campeonatos">
+						<img src="<?php bloginfo('template_url'); ?>/_assets/old/images/esporte-interativo/campeonatos.jpg" class="mrg50R" alt="Campeonatos">
 
 					</figure>
 
 					<div class="col-sm-5 pad50L">
 
 						<span class="space-50"></span>
-						<img src="<?php bloginfo('template_url'); ?>/_assets/images/esporte-interativo/logo.jpg" class="logo-ei" alt="Canais Esporte Interativo">
+						<img src="<?php bloginfo('template_url'); ?>/_assets/old/images/esporte-interativo/logo.jpg" class="logo-ei" alt="Canais Esporte Interativo">
 						<h3>A paixão e a emoção pelo esporte, onde você estiver</h3>
 						<p>Assista aos principais conteúdos oferecidos pelos Canais Esporte Interativo e fique por dentro de tudo o que acontece no mundo dos esportes. São programas imperdíveis, como a <strong class="text-orange">UEFA Champions League</strong> (maior competição de clubes do mundo) a <strong class="text-orange">E-League</strong> (maior competição de Counter Strike) e muito mais.</p>
 						<p>Você também pode ficar ligado nas transmissões das lutas mais surpreendentes de <strong class="text-orange">MMA</strong> e em toda a emoção do <strong class="text-orange">Pro Wrestling.</strong> É hora de desfrutar por completo do mundo dos esportes através de toda a programação dos Canais do Esporte Interativo.</p>
@@ -77,7 +77,7 @@
 							<span class="space-50"></span>
 							<span class="space-30"></span>
 
-							<img src="<?php bloginfo('template_url'); ?>/_assets/images/esporte-interativo/canais.jpg" alt="Canais">
+							<img src="<?php bloginfo('template_url'); ?>/_assets/old/images/esporte-interativo/canais.jpg" alt="Canais">
 
 						</figure>
 
@@ -121,10 +121,10 @@
 										<span><strong>Baixe o aplicativo Esporte Interativo Plus</strong> na Play Store ou na Apple Store.</span>
 										<span class="space-20"></span>
 										<a href="https://play.google.com/store/apps/details?id=com.ideastek.esporteinterativo3" target="_blank">
-											<img src="<?php bloginfo('template_url'); ?>/_assets/images/esporte-interativo/i-play.png" alt="Google Play">
+											<img src="<?php bloginfo('template_url'); ?>/_assets/old/images/esporte-interativo/i-play.png" alt="Google Play">
 										</a>
 										<a href="https://itunes.apple.com/us/app/esporte-interativo-ao-vivo/id509496846?ls=1&mt=8" target="_blank">
-											<img src="<?php bloginfo('template_url'); ?>/_assets/images/esporte-interativo/i-store.png" alt="App Store">
+											<img src="<?php bloginfo('template_url'); ?>/_assets/old/images/esporte-interativo/i-store.png" alt="App Store">
 										</a>
 										<small>Você também pode fazer o seu login pelo computador em <a href="http://www.eiplus.com.br/entrar/" target="_blank">www.eiplus.com.br/entrar/</a></small>
 									</div>
@@ -136,7 +136,7 @@
 										<span class="space-25"></span>
 										<span class="space-100 hidden-md hidden-lg"></span>
 										<span class="space-50 hidden-md hidden-lg"></span>
-										<img src="<?php bloginfo('template_url'); ?>/_assets/images/esporte-interativo/passo-2.png" class="pos-absolute" alt="">
+										<img src="<?php bloginfo('template_url'); ?>/_assets/old/images/esporte-interativo/passo-2.png" class="pos-absolute" alt="">
 									</div>
 								</li>
 								<li class="col-sm-4 col-xs-12 mrg30B">
@@ -145,7 +145,7 @@
 										<span>Pronto, aproveite! <strong>Assinante Copel Telecom tem até dois acessos simultâneos.</strong></span>
 										<span class="space-35"></span>
 										<a href="https://www.eiplus.com.br/entrar/" target="_blank">
-											<img src="<?php bloginfo('template_url'); ?>/_assets/images/esporte-interativo/passo-3.png" alt="">
+											<img src="<?php bloginfo('template_url'); ?>/_assets/old/images/esporte-interativo/passo-3.png" alt="">
 										</a>
 									</div>
 								</li>
@@ -194,7 +194,7 @@
 							<span class="space-20"></span>
 
 							<a href="">
-								<a href="https://www.eiplus.com.br/entrar/" target="_blank"><img src="<?php bloginfo('template_url'); ?>/_assets/images/esporte-interativo/nao-tem.png" alt="Não tem Copel Fibra mas quer EI Plus? Clique aqui."></a>
+								<a href="https://www.eiplus.com.br/entrar/" target="_blank"><img src="<?php bloginfo('template_url'); ?>/_assets/old/images/esporte-interativo/nao-tem.png" alt="Não tem Copel Fibra mas quer EI Plus? Clique aqui."></a>
 							</a>
 
 						</div>
@@ -237,4 +237,4 @@
 
 	</section>
 	
-<?php get_footer(); ?>
+<?php get_footer('old'); ?>

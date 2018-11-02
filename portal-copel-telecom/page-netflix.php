@@ -1,6 +1,6 @@
 <?php
 
-	get_header();
+	get_header('old');
 
 ?>
 	<section id="page-netflix">
@@ -13,7 +13,7 @@
 							<h1>A história de dois amigos e um triste fim: ficar sem internet no meio do episódio.</h1>
 							<h6>Não veja pela metade. Assine Copel Telecom e leve até 6 meses de Netflix por nossa conta.</h6>
 							<p>A Copel Telecom está oferecendo uma promoção superbacana para clientes que, como você, curtem assistir filmes e séries online. </p>
-							<img src="<?php bloginfo('template_url'); ?>/_assets/images/netflix-preco.png" alt="Preços">
+							<img src="<?php bloginfo('template_url'); ?>/_assets/old/images/netflix-preco.png" alt="Preços">
 							<div class="clearfix"></div>
 						</div>
 					</div>
@@ -42,7 +42,7 @@
 
 					<figure class="col-sm-7">
 
-						<img src="<?php bloginfo('template_url'); ?>/_assets/images/netflix-tela.png" alt="Netflix">
+						<img src="<?php bloginfo('template_url'); ?>/_assets/old/images/netflix-tela.png" alt="Netflix">
 
 					</figure>
 
@@ -86,7 +86,7 @@
 					</div>
 					<figure class="col-sm-5">
 						<span class="space-20 hidden-sm hidden-md hidden-lg"></span>
-						<img src="<?php bloginfo('template_url'); ?>/_assets/images/netflix-login.png" alt="Netflix">
+						<img src="<?php bloginfo('template_url'); ?>/_assets/old/images/netflix-login.png" alt="Netflix">
 					</figure>
 				</div>
 
@@ -135,4 +135,4 @@
 
 	</section>
 	
-<?php get_footer(); ?>
+<?php get_footer('old'); ?>

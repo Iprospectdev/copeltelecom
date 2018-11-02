@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header('old'); ?>
 	<section class="faq">
 		<?php $categorias = get_terms("faq-categoria"); ?>
 		<?php if ($categorias): ?>
@@ -63,4 +63,4 @@
 
 	</section>
 
-<?php get_footer(); ?>
+<?php get_footer('old'); ?>

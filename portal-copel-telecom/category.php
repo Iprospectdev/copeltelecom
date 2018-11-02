@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header('old'); ?>
 	<section class="blog" id="blog-single">
 		<header class="blog-header">
 			<div class="container">
@@ -63,4 +63,4 @@
 		</div>
 
 	</section>
-<?php get_footer(); ?>
+<?php get_footer('old'); ?>

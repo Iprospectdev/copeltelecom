@@ -25,16 +25,16 @@ add_theme_support( 'post-thumbnails' );
 
 switch (get_bloginfo("url")) {
 	case 'http://www.copeltelecom.com/site':
-		define(WEBSERVICE, "http://webprd");
-		define(LINK_WVT, "http://www.copel.com/wvtweb/site/verificar_disponibilidade.jsf");
+		define("WEBSERVICE", "http://webprd");
+		define("LINK_WVT", "http://www.copel.com/wvtweb/site/verificar_disponibilidade.jsf");
 		break;
 	case 'http://hml.copeltelecom.com/site':
-		define(WEBSERVICE, "http://webhml");
-		define(LINK_WVT, "http://hml.copel.com/wvtweb/site/verificar_disponibilidade.jsf");
+		define("WEBSERVICE", "http://webhml");
+		define("LINK_WVT", "http://hml.copel.com/wvtweb/site/verificar_disponibilidade.jsf");
 		break;
 	default:
-		define(WEBSERVICE, "http://hml.copel.com");
-		define(LINK_WVT, "http://www.copel.com/wvtweb/site/verificar_disponibilidade.jsf");
+		define("WEBSERVICE", "http://hml.copel.com");
+		define("LINK_WVT", "http://www.copel.com/wvtweb/site/verificar_disponibilidade.jsf");
 		break;
 }
 
@@ -66,24 +66,19 @@ include dirname(__FILE__) .  "/_theme/Services.php";
 include dirname(__FILE__) .  "/_theme/custom_search.php";
 
 # Scripts
-function theme_scripts() {
 
-	wp_enqueue_style ( 'css', get_template_directory_uri() . '/_assets/css/all.min.css' );
-	wp_enqueue_script( 'js', get_template_directory_uri() . '/_assets/js/all.min.js');
-
-	wp_localize_script(
-		'js',
-		'copel',
-		array(
-			'ajax_url'      => admin_url( 'admin-ajax.php' ),
-			'template' 		=> get_bloginfo('template_url'), 
-			'url' 			=> get_bloginfo('url')."/",
-			'query_vars' 	=> json_encode( $wp_query->query )
-		)
-	);
-
+function vars(){ ?>
+	<script type="text/javascript">
+	var copel = <?php echo json_encode(array(
+		'ajax_url'      => admin_url( 'admin-ajax.php' ),
+		'template' 		=> get_bloginfo('template_url'), 
+		'url' 			=> get_bloginfo('url')."/",
+		'query_vars' 	=> json_encode( $wp_query->query )
+	)); ?>;
+	</script><?php 
 }
-add_action( 'wp_enqueue_scripts', 'theme_scripts' );
+add_action ( 'wp_head', 'vars' );
+
 
 # Custom Admin
 function remove_admin_bar_links() {
@@ -107,8 +102,8 @@ function remove_menus(){
 add_action( 'admin_menu', 'remove_menus' );
 
 function custom_admin() {
-	wp_enqueue_style ( 'custom-admin', get_template_directory_uri() . '/_assets/css/admin.min.css' );
-	wp_enqueue_script( 'custom-js', get_template_directory_uri() . '/_assets/js/admin.min.js');
+	wp_enqueue_style ( 'custom-admin', get_template_directory_uri() . '/_assets/old/css/admin.min.css' );
+	wp_enqueue_script( 'custom-js', get_template_directory_uri() . '/_assets/old/js/admin.min.js');
 }
 add_action('admin_enqueue_scripts', 'custom_admin');
 add_action('login_enqueue_scripts', 'custom_admin');

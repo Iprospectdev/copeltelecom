@@ -1,6 +1,6 @@
 <?php
 
-	get_header();
+	get_header('old');
 
 ?>
 	<section id="page-cartoon-network">
@@ -21,13 +21,13 @@
 						</div>
 						<span class="space-70 hidden-sm hidden-xs"></span>
 						<span class="space-30 hidden-md hidden-lg"></span>
-						<img src="<?php bloginfo('template_url'); ?>/_assets/images/cartoon-network/cn-logo.png" class="mrg10R" alt="">			
-						<img src="<?php bloginfo('template_url'); ?>/_assets/images/cartoon-network/parana-logo.png" alt="">			
+						<img src="<?php bloginfo('template_url'); ?>/_assets/old/images/cartoon-network/cn-logo.png" class="mrg10R" alt="">			
+						<img src="<?php bloginfo('template_url'); ?>/_assets/old/images/cartoon-network/parana-logo.png" alt="">			
 						<span class="space-50 hidden-sm hidden-xs"></span>
 						<span class="space-20 hidden-md hidden-lg"></span>
 					</div>
-					<img src="<?php bloginfo('template_url'); ?>/_assets/images/cartoon-network/img-1.jpg" class="cn-img hidden-xs hidden-sm" alt="">
-					<img src="<?php bloginfo('template_url'); ?>/_assets/images/cartoon-network/img-1-mobile.jpg" class="cn-img hidden-md hidden-lg" alt="">
+					<img src="<?php bloginfo('template_url'); ?>/_assets/old/images/cartoon-network/img-1.jpg" class="cn-img hidden-xs hidden-sm" alt="">
+					<img src="<?php bloginfo('template_url'); ?>/_assets/old/images/cartoon-network/img-1-mobile.jpg" class="cn-img hidden-md hidden-lg" alt="">
 					<span class="space-20 hidden-sm hidden-xs"></span>
 				</div>
 			</div>
@@ -62,30 +62,30 @@
 						<div class="cn-slide">
 							<div class="cn-slide-1 cn-slide-item">
 								<div>
-									<img src="<?php bloginfo('template_url'); ?>/_assets/images/cartoon-network/img-a-1.jpg" class="active" alt="">
-									<img src="<?php bloginfo('template_url'); ?>/_assets/images/cartoon-network/img-a-2.jpg" alt="">
+									<img src="<?php bloginfo('template_url'); ?>/_assets/old/images/cartoon-network/img-a-1.jpg" class="active" alt="">
+									<img src="<?php bloginfo('template_url'); ?>/_assets/old/images/cartoon-network/img-a-2.jpg" alt="">
 								</div>
 							</div>
 							<div class="cn-slide-2 cn-slide-item">
 								<div>
-									<img src="<?php bloginfo('template_url'); ?>/_assets/images/cartoon-network/img-b-1.jpg" class="active" alt="">
-									<img src="<?php bloginfo('template_url'); ?>/_assets/images/cartoon-network/img-b-2.jpg" alt="">
+									<img src="<?php bloginfo('template_url'); ?>/_assets/old/images/cartoon-network/img-b-1.jpg" class="active" alt="">
+									<img src="<?php bloginfo('template_url'); ?>/_assets/old/images/cartoon-network/img-b-2.jpg" alt="">
 								</div>
 							</div>
 							<div class="cn-slide-3 cn-slide-item">
 								<div>
-									<img src="<?php bloginfo('template_url'); ?>/_assets/images/cartoon-network/img-c-2.jpg" class="active" alt="">
-									<img src="<?php bloginfo('template_url'); ?>/_assets/images/cartoon-network/img-c-1.jpg" alt="">
+									<img src="<?php bloginfo('template_url'); ?>/_assets/old/images/cartoon-network/img-c-2.jpg" class="active" alt="">
+									<img src="<?php bloginfo('template_url'); ?>/_assets/old/images/cartoon-network/img-c-1.jpg" alt="">
 								</div>
 							</div>
 							<div class="cn-slide-4 cn-slide-item">
 								<div>
-									<img src="<?php bloginfo('template_url'); ?>/_assets/images/cartoon-network/img-d-2.jpg" class="active" alt="">
-									<img src="<?php bloginfo('template_url'); ?>/_assets/images/cartoon-network/img-d-1.jpg" alt="">
+									<img src="<?php bloginfo('template_url'); ?>/_assets/old/images/cartoon-network/img-d-2.jpg" class="active" alt="">
+									<img src="<?php bloginfo('template_url'); ?>/_assets/old/images/cartoon-network/img-d-1.jpg" alt="">
 								</div>
 							</div>
 						</div>
-						<img src="<?php bloginfo('template_url'); ?>/_assets/images/cartoon-network/img-2.jpg" class="cn-img right hidde-sm hidden-xs" alt="">
+						<img src="<?php bloginfo('template_url'); ?>/_assets/old/images/cartoon-network/img-2.jpg" class="cn-img right hidde-sm hidden-xs" alt="">
 						<span class="hidden-md hidden-lg space-100"></span>
 						<span class="hidden-md hidden-lg space-100"></span>
 						<span class="hidden-md hidden-lg space-100"></span>
@@ -114,14 +114,14 @@
 								<p class="mrg0B">Baixe o CN Já! e comece a usar agora</p>
 							</div>
 							<a href="https://play.google.com/store/apps/details?id=com.turner.cnja.br&hl=pt_BR" target="_blank" class="pull-left">
-								<img src="<?php bloginfo('template_url'); ?>/_assets/images/cartoon-network/i-play.png" alt="Google Play">
+								<img src="<?php bloginfo('template_url'); ?>/_assets/old/images/cartoon-network/i-play.png" alt="Google Play">
 							</a>
 							<a href="https://itunes.apple.com/us/app/cartoon-network-já/id1290928633?mt=8" target="_blank" class="pull-left mrg10R">
-								<img src="<?php bloginfo('template_url'); ?>/_assets/images/cartoon-network/i-store.png" alt="App Store">
+								<img src="<?php bloginfo('template_url'); ?>/_assets/old/images/cartoon-network/i-store.png" alt="App Store">
 							</a>
 							<span class="space-90"></span>
 						</div>
-						<img src="<?php bloginfo('template_url'); ?>/_assets/images/cartoon-network/img-3.jpg" class="cn-img left" alt="">
+						<img src="<?php bloginfo('template_url'); ?>/_assets/old/images/cartoon-network/img-3.jpg" class="cn-img left" alt="">
 
 					</div>
 					
@@ -166,4 +166,4 @@
 
 	</script>
 
-<?php get_footer(); ?>
+<?php get_footer('old'); ?>

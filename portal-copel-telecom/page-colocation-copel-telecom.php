@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header('old'); ?>
 
 	<section class="empresas home-empresas-intena">
 		
@@ -81,7 +81,7 @@
 						
 					</div>
 					<div class="col-md-6 col-sm-12 col-xs-12">
-						<img src="<?php bloginfo('template_url'); ?>/_assets/images/copel-telecom/mapa-pr.png" alt="">
+						<img src="<?php bloginfo('template_url'); ?>/_assets/old/images/copel-telecom/mapa-pr.png" alt="">
 					</div>
 				</div>
 			</div>
@@ -93,4 +93,4 @@
 
 	</section>
 	
-<?php get_footer(); ?>
+<?php get_footer('old'); ?>

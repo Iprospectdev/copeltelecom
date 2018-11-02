@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header('old'); ?>
 	<section id="copel-telecom">
 		<article id="ct-header" class="bgjs wow fadeIn">
 			<div class="container">
@@ -10,7 +10,7 @@
 						</p>
 					</div>
 				</div>
-				<img src="<?php bloginfo('template_url'); ?>/_assets/images/copel-telecom/banner-1.jpg" alt="">
+				<img src="<?php bloginfo('template_url'); ?>/_assets/old/images/copel-telecom/banner-1.jpg" alt="">
 			</div>
 		</article>
 		<article id="ct-futuro" class="wow fadeIn">
@@ -18,7 +18,7 @@
 				<h2 class="main-tt-barra">O futuro chega antes para quem tem a internet da Copel Telecom</h2>
 				<div class="row">
 					<div class="col-md-6 col-sm-12 col-xs-12">
-						<img src="<?php bloginfo('template_url'); ?>/_assets/images/copel-telecom/mapa-pr.png" alt="">
+						<img src="<?php bloginfo('template_url'); ?>/_assets/old/images/copel-telecom/mapa-pr.png" alt="">
 					</div>
 					<div class="col-md-6 col-sm-12 col-xs-12">
 						<div class="little">
@@ -53,7 +53,7 @@
 				<h3>É a internet do futuro presente<br>na casa dos paranaenses.</h3>
 				<div class="row">
 					<figure class="col-md-6 col-sm-12 col-xs-12 bgjs wow slideInLeft" data-mh="ct-pc-group">
-						<img src="<?php bloginfo('template_url'); ?>/_assets/images/copel-telecom/ct-pode-confiar.jpg" alt="">
+						<img src="<?php bloginfo('template_url'); ?>/_assets/old/images/copel-telecom/ct-pode-confiar.jpg" alt="">
 					</figure>
 					<div class="col-md-6 col-sm-12 col-xs-12 little wow slideInRight" data-mh="ct-pc-group">
 						<div class="row">
@@ -112,4 +112,4 @@
 			<?php get_template_part('template', 'highlight-blog' ); ?>
 		</aside>
 	</section>
-<?php get_footer(); ?>
+<?php get_footer('old'); ?>

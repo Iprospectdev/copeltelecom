@@ -1,4 +1,4 @@
-<?php get_header();?>
+<?php get_header('old');?>
 	<section id="rav">
 		<header>
 			<h1 class="main-tt">Rede de Alta Velocidade - RAV</h1>
@@ -177,4 +177,4 @@
 			<div class="alert hide text-center" id="response"></div>
 		</div>
 	</section>
-<?php get_footer(); ?>
+<?php get_footer('old'); ?>

@@ -1,6 +1,6 @@
 <?php
 
-	get_header();
+	get_header('old');
 
 	$services = new Services;
 	$profile = $services->profile();
@@ -84,7 +84,7 @@
 			<?php else: ?>
 			<div class="owl-carousel">
 				<article class="bgjs">
-					<img src="<?php bloginfo('template_url'); ?>/_assets/images/home/home03.jpg" alt="">
+					<img src="<?php bloginfo('template_url'); ?>/_assets/old/images/home/home03.jpg" alt="">
 					<div class="container">
 						<div class="main-tt-highlight right">
 							<h2>
@@ -172,7 +172,7 @@
 			<div class="container">
 				<div class="empresas-highlight">
 					<div class="nav-highlights">
-						<img src="<?php bloginfo('template_url'); ?>/_assets/images/empresas/highlight-1.png" alt="">
+						<img src="<?php bloginfo('template_url'); ?>/_assets/old/images/empresas/highlight-1.png" alt="">
 						<ul class="row">
 							<li class="col-sm-4 col-xs-12" data-mh="nav-highlight-group">
 								<div class="nav-highlights-tt no-icon">
@@ -231,4 +231,4 @@
 
 	</section>
 	
-<?php get_footer(); ?>
+<?php get_footer('old'); ?>

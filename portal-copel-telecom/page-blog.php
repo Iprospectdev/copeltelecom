@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header('old'); ?>
 
 <?php
 	$posts_query = new WP_Query(array(
@@ -150,4 +150,4 @@
 
 
 	</section>
-<?php get_footer(); ?>
+<?php get_footer('old'); ?>

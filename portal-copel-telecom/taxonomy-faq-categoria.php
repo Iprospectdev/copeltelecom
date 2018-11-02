@@ -1,11 +1,11 @@
 <?php 
 
-	get_header();
+	get_header('old');
 
 	the_post();
 
 	get_template_part('templates/faq', 'page' );
 
-	get_footer();
+	get_footer('old');
 
 ?>

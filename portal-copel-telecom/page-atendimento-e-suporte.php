@@ -1,4 +1,4 @@
-<?php get_header();?>
+<?php get_header('old');?>
 	<section id="atendimento-e-suporte">
 
 		<header>
@@ -117,4 +117,4 @@
 		});
 	</script>
 
-<?php get_footer(); ?>
+<?php get_footer('old'); ?>

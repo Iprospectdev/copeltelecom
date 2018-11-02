@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Prompt:300,400,500,700');
+
+@import '~bootstrap/scss/bootstrap';
+
+$owl-image-path: '../images/';
+@import '~owl.carousel/src/scss/owl.carousel.scss';
+
+@import 'font-awesome-pro';
+
+@import 'mixins';
+@import 'variables';
+
+@import 'main';
+@import 'header';
+@import 'home';
+@import 'footer';
+

@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header('old'); ?>
 
 <?php if ($_GET["post_type"] == "faq"): ?>
 	<?php get_template_part("templates/faq", "page"); ?>
@@ -144,4 +144,4 @@
 
 <?php endif ?>
 
-<?php get_footer(); ?>
+<?php get_footer('old'); ?>

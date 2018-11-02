@@ -10,7 +10,7 @@
 				<li><a href="https://www.linkedin.com/company/copel-telecom" target="_blank"><i class="fa fa-linkedin"></i></a></li>
 				<li><a href="https://www.youtube.com/channel/UCWLv_uuedAttlRGCpDhI3fg" target="_blank"><i class="fa fa-youtube"></i></a></li>
 			</ul>
-			<a href="<?php $p = get_page_by_title("Contato"); echo get_permalink($p->ID); ?>" class="main-nao-encontrou-form"><img src="<?php bloginfo('template_url'); ?>/_assets/images/nao-encontrou-form-contato.png" alt=""></a>
+			<a href="<?php $p = get_page_by_title("Contato"); echo get_permalink($p->ID); ?>" class="main-nao-encontrou-form"><img src="<?php bloginfo('template_url'); ?>/_assets/old/images/nao-encontrou-form-contato.png" alt=""></a>
 		</div>
 	</div>
 </div>

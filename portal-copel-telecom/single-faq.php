@@ -1,6 +1,6 @@
 <?php 
 
-	get_header();
+	get_header('old');
 
 	the_post();
 
@@ -11,6 +11,6 @@
 	}
 	
 
-	get_footer();
+	get_footer('old');
 
 ?>

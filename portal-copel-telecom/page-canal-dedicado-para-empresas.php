@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header('old'); ?>
 
 	<section class="empresas home-empresas-intena">
 		
@@ -62,7 +62,7 @@
 							Os Canais Dedicados para Empresas permitem a interconexão de dois pontos do cliente dentro do Estado por meio de canal determinístico.<br>
 						</p>
 					</div>
-					<div class="col-sm-8"><img src="<?php bloginfo('template_url'); ?>/_assets/images/empresas/canal-dedicado-empresas.png" alt="Canais Dedicados para Empresas"></div>
+					<div class="col-sm-8"><img src="<?php bloginfo('template_url'); ?>/_assets/old/images/empresas/canal-dedicado-empresas.png" alt="Canais Dedicados para Empresas"></div>
 				</div>
 			</div>
 		</article>
@@ -97,7 +97,7 @@
 						
 					</div>
 					<div class="col-md-6 col-sm-12 col-xs-12">
-						<img src="<?php bloginfo('template_url'); ?>/_assets/images/copel-telecom/mapa-pr.png" alt="">
+						<img src="<?php bloginfo('template_url'); ?>/_assets/old/images/copel-telecom/mapa-pr.png" alt="">
 					</div>
 				</div>
 			</div>
@@ -109,4 +109,4 @@
 
 	</section>
 	
-<?php get_footer(); ?>
+<?php get_footer('old'); ?>
