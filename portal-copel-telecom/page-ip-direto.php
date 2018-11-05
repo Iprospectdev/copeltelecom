@@ -83,12 +83,21 @@
 												<input type="hidden" name="vencimento_fatura" value="">
 												<button type="button" data-toggle="dropdown"><i class="fa fa-angle-down"></i></button>
 												<ul class="dropdown-menu">
-													<li><a href="#" data-value="1" data-text="1">1</a></li>
-													<li><a href="#" data-value="5" data-text="5">5</a></li>
 													<li><a href="#" data-value="10" data-text="10">10</a></li>
 													<li><a href="#" data-value="15" data-text="15">15</a></li>
 													<li><a href="#" data-value="20" data-text="20">20</a></li>
 													<li><a href="#" data-value="25" data-text="25">25</a></li>
+													<li><a href="#" data-value="30" data-text="30">30</a></li>
+													<li><a href="#" data-value="35" data-text="35">35</a></li>
+													<li><a href="#" data-value="40" data-text="40">40</a></li>
+													<li><a href="#" data-value="45" data-text="45">45</a></li>
+													<li><a href="#" data-value="50" data-text="50">50</a></li>
+													<li><a href="#" data-value="60" data-text="60">60</a></li>
+													<li><a href="#" data-value="70" data-text="70">70</a></li>
+													<li><a href="#" data-value="80" data-text="80">80</a></li>
+													<li><a href="#" data-value="90" data-text="90">90</a></li>
+													<li><a href="#" data-value="100" data-text="100">100</a></li>
+													<li><a href="#" data-value="Maior que 100" data-text="Maior que 100">Maior que 100</a></li>
 												</ul>
 											</div>
 										</label>
