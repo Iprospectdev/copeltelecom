@@ -1,29 +1,37 @@
 const css = require('../styles/app.scss');
 
+
 import 'bootstrap';
 import 'popper.js';
 import 'owl.carousel';
 
 window.onload = function() {
 
-  const sizeToFixed = $('.header-top').height() + $('.header-fixed').height() + $('.home-slider').height();
-  console.log(sizeToFixed);
+  const sizeToFixed = $('.header').height() + 70;
   $(window).on('scroll', function () {
     if( $(window).scrollTop() > sizeToFixed) {
-      $('.header-fixed').addClass('active');
+      $('.header-nav.fixed').addClass('active');
     } else {
-      $('.header-fixed').removeClass('active');
+      $('.header-nav.fixed').removeClass('active');
     }
   });
+  
+  $('body').scrollspy({ target: '.js-scrollspy', offset: $('.header-nav.fixed').height()+10 })
 
-  $('.toggle-menu').on('click', function(){
+  $(window).on('activate.bs.scrollspy', function () {
+    const middle = $('.header-nav.fixed .active').outerWidth()/2
+    const position = $('.header-nav.fixed .active').position().left
+    $('.header-nav--loader').width(position+middle);
+  })
+
+  $('.header-mobile-button').on('click', function(){
       $(this).toggleClass('active')
-      $('.section-header').toggleClass('active')
+      $('.header-mobile-nav, body').toggleClass('menu-opened')
   })
 
   $('.js-scrollto').on('click', function(e){
     var hash = $(this).attr('href')
-    var offset = $('.section-header').height() + $('#wpadminbar').height()
+    var offset = $('.header-nav.fixed').height()
     $('html,body').animate({
       scrollTop: $(hash).offset().top - offset
     }, 800);

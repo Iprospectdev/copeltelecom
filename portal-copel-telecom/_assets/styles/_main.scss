@@ -3,9 +3,41 @@ body {
 	font-family: 'Prompt', sans-serif;
 }
 
+html,body {
+	min-height: 100%;
+  position: relative;
+}
+
 a:hover {
 	text-decoration: none;
 	transition: all 0.2s ease-in-out;
+}
+
+.btn-more {
+	&:before {
+		border-radius: 50%;
+		border: 2px solid color('orange');
+		color: color('orange');
+		content: "\F061";
+		display: inline-block;
+		font-family: "Font Awesome 5 Pro";
+		font-size: 11px;
+		transition: all 0.3s ease-in-out;
+		font-weight: 900;
+		height: 21px;
+		line-height: 18px;
+		width: 21px;
+		padding-right: 3px;
+		text-align: right;
+	}
+
+	&:hover {
+		color: inherit;
+		&:before {
+			border-radius: 50px;			
+			width: 30px;
+		}	
+	}
 }
 
 // text content

@@ -1,7 +1,7 @@
 	<footer class="footer">
 		<div class="container">
 			<div class="row">
-				<div class="col-3">
+				<div class="col-12 col-md-3">
 					<div class="footer-share">
 						<a href="">
 							<!-- facebook -->
@@ -63,14 +63,11 @@
 						</a>
 					</div>
 				</div>
-				<div class="col-6">
+				<div class="col-6 d-none d-md-block">
 					<nav class="footer-nav justify-content-between d-flex flex-row">
 						<ul>
 							<li>
 								<a href="#"><strong>Copel Telecom</strong></a>
-							</li>
-							<li>
-								<a href="">Copel Telecom</a>
 							</li>
 							<li>
 								<a href="">Planos e preços</a>
@@ -127,7 +124,7 @@
 						</ul>
 					</nav>
 				</div>
-				<div class="col-3">
+				<div class="col-3 d-none d-md-block">
 					<a href="#" class="footer--btn">
 						COPEL
 					</a>
@@ -155,13 +152,11 @@
 		<div class="footer-copy">
 			<div class="container">
 				<small>Copyright 2016 © Copel Telecomunicações S.A. CNPJ: 04.368.865/0001-66</small>
-				<address>Rua José Izidoro Biazetto, 158 - bloco A - Mossunguê - CEP: 81200-240 - Curitiba - PR</address>
+				<address class="d-none d-md-block">Rua José Izidoro Biazetto, 158 - bloco A - Mossunguê - CEP: 81200-240 - Curitiba - PR</address>
 			</div>
 		</div>
 	</footer>
 	<?php wp_footer(); ?>
 	<script src="<?php bloginfo('template_url');?>/_assets/js/app.bundle.js"></script>
-
-</script>
 </body>
 </html>
