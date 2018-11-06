@@ -178,7 +178,7 @@
                         </li>
                     </ul>
                 </nav>
-                <a href="#" class="header-nav--btn">
+                <a href="#" class="btn-assine">
                     Assine Já
                 </a>
             </div>

@@ -40,6 +40,23 @@ a:hover {
 	}
 }
 
+.btn-assine {
+	background: color('orange');
+	border-radius: 5px;
+	color: #fff;
+	display: inline-block;
+	float: right;
+	font-weight: 700;
+	margin: 18px 0;
+	padding: 10px 40px;
+	transition: all 0.3s ease-in-out;
+
+	&:hover {
+		background-image: linear-gradient(49deg, #FFA600 0%, #FF6D00 100%);
+		color: #fff;
+	}
+}
+
 // text content
 .post-content {
 	color: #8E8E8E;
@@ -57,19 +74,6 @@ a:hover {
 	.owl-nav {
 		button.owl-prev,
 		button.owl-next {
-			border-radius: 0;
-			border: 2px solid color('gray-dark');
-			color: color('gray-dark');
-			display: inline-block;
-			font-size: 11px;
-			font-weight: 600;
-			height: 45px;
-			line-height: 45px;
-			padding: 0 20px;
-			text-align: center;
-			outline: none;
-			width: 60px;
-
 			span {
 			    -moz-osx-font-smoothing: grayscale;
 			    -webkit-font-smoothing: antialiased;
@@ -106,22 +110,100 @@ a:hover {
 	}
 
 	.owl-dots{
-		text-align: center;
-		padding: 25px 0;
+	    height: auto;
+	    position: absolute;
+	    right: 35px;
+	    top: 50%;
+	    transform: translateY(-50%);
+	    width: 40px;
 
-		.owl-dot {
-			background: rgba(#212424, 0.2);
-			border-radius: 50%;
-			display: inline-block;
-			height: 6px;
-			margin: 0 3px;
-			width: 6px;
+		.owl-dot{
+			display: block;
+			margin: 0 0 10px;
+			width: 32px;
+			height: 32px;
+			position: relative;
+
+			&:after {
+				background: #FFFFFF;
+				border-radius: 50%;
+				content: "";
+				display: block;
+				height: 17px;
+				left: 50%;
+				transform: translate(-50%,-50%);
+				opacity: 0.2;
+				position: absolute;
+				top: 50%;
+				transition: all 0.3s ease-in-out;
+				width: 17px;
+			}
+
+			.svg-dot{
+				pointer-events: none;
+				transform: rotate(-90deg);
+
+				&--circle {
+					fill: transparent;
+					stroke: transparent;
+					stroke-width: 1px;
+					stroke-dasharray: 150;
+					position: relative;
+					z-index: 1;
+				}
+
+				&--animation {
+					fill: transparent;
+					stroke: none;
+					stroke-width: 2px;
+					stroke-dasharray: 150;
+					transition: stroke-dashoffset 5s;
+					z-index: 3;
+				} 
+			}
 
 			&.active {
-				background: color('yellow');
-				height: 9px;
-				width: 9px;
+				&:after {
+					background: linear-gradient(#FFC705 0%, color('orange-light') 100%);
+					opacity: 1;
+				}
+				.svg-dot {
+					&--circle {
+						stroke: #6d788e;
+					}
+					&--animation  {
+						stroke: #fff;
+						stroke-dashoffset: 0;
+						animation: show100 14s;
+					}
+				}
 			}
 		}
-	}
+
+		@include media-breakpoint-down(sm) {
+			left: -30px;
+			right: -30px;
+			top: 30%;
+			width: auto;
+			transform: scale(0.8);
+
+			.owl-dot {
+				display: inline-block;
+				margin: 0 0 10px;
+			}
+		}
+	}  
 }
+
+
+@keyframes show100 {
+  from {
+    stroke-dashoffset: 150;
+  }
+  
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+

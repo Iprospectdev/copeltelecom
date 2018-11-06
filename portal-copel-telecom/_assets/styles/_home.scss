@@ -1,4 +1,187 @@
-#home {
+
+.home-carousel{
+	position: relative;
+	width: 100%;
+
+	.container {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+	}
+
+	h6 {
+		opacity: 0;
+		transition: all 0.6s ease-in-out 0.3s;
+		align-items: center;
+		color: color('orange-light');
+		display: flex;
+		font-size: 22px;
+		font-weight: 700;
+		letter-spacing: 0;
+		line-height: 25px;
+		margin-bottom: 40px;
+		max-width: 370px;
+
+		img {
+			float: left;
+			max-width: 77px;
+			margin-right: 18px;
+		}
+	}
+
+	h5 {
+		opacity: 0;
+		transition: all 0.6s ease-in-out 0.6s;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-image: linear-gradient(-90deg, #FFA600 0%, color('orange') 100%);
+		clear: both;
+		font-size: 40px;
+		font-weight: 700;
+		max-width: 370px;
+	}
+
+	p {
+		opacity: 0;
+		transition: all 0.6s ease-in-out 0.9s;
+		color: #FFFFFF;
+		font-size: 22px;
+		font-weight: 400;
+		letter-spacing: 0;
+		line-height: 30px;
+		max-width: 370px;
+	}
+
+	.active {
+		h6,
+		h5,
+		p {
+			opacity: 1;
+		}
+	}
+
+	@include media-breakpoint-down(sm) {
+		margin-top: 64px;
+
+		.container {
+			background: #464D5C;
+			padding-bottom: 30px;
+			padding-top: 30px;
+			position: static;
+			transform: none;
+		}
+
+		h6 {
+			font-size: 18px;
+			line-height: 25px;
+			margin-bottom: 20px;
+
+			img {
+				max-width: 68px;
+			}
+		}
+
+		h5 {
+			font-size: 25px;
+		}
+
+		p {
+			font-size: 18px;
+			line-height: 24px;
+		}
+	}
+}
+
+.home-carousel-planos {
+	&:before {
+		background-image: linear-gradient(-90deg, #FFA600 0%, #FF6D00 50%);
+		border-radius: 5px 5px 0 0;
+		content: "";
+		display: block;
+		height: 102px;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
+	}
+	&--item {
+		h6 {
+			align-items: left;
+			color: #fff;
+			display: flex;
+			flex-direction: column;
+			font-size: 35px;
+			font-weight: 700;
+			height: 102px;
+			justify-content: center;
+			padding: 0 35px;
+			margin-bottom: 35px;
+			text-align: left;
+
+			small {
+				color: #fff;
+				display: block;
+				font-size: 15px;
+				font-weight: 500;
+				letter-spacing: 0;
+			}
+
+			svg {
+				height: 100%;
+				left: 50%;
+				position: absolute;
+				top: 0;
+				transform: translateX(-50%);
+				width: auto;
+			}
+		}
+
+		ul {
+			list-style: none;
+			padding: 0 35px 20px;
+
+			li {
+				align-items: center;
+				color: color('gray-dark');
+				display: flex;
+				flex-wrap: wrap;
+				font-family: 500;
+				font-size: 13px;
+				justify-content: flex-start;
+				line-height: 20px;
+				margin-bottom: 12px;
+				padding: 0;
+				text-align: left;
+
+				svg, 
+				img {
+					margin-right: 10px;
+				}
+			}
+		}
+
+		p {
+			font-weight: 500;
+			font-size: 15px;
+			color: color('gray-dark');
+			line-height: 20px;
+			padding: 0 35px;
+
+			strong {
+				font-weight: 700;
+				font-size: 32px;
+			}
+		}
+
+		.btn-assine {
+			display: block;
+			font-size: 20px;
+			margin: 0 35px 42px;
+			text-align: center;
+			width: calc(100% - 70px);
+		}
+	}
 }
 
 .home-fibra-optica{position: relative;}
@@ -8,3 +191,11 @@
 .home-testes{position: relative;}
 .home-app-copel{position: relative;}
 .home-blog{position: relative;}
+
+
+
+
+
+
+
+
