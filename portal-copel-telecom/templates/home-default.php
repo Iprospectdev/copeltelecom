@@ -1,114 +1,115 @@
 <?php get_header(); ?>
-       
-    <div class="header-nav fixed fixed-top">
-        <div class="container">
-            <a href="<?php bloginfo('url'); ?>" class="logo">
-                <img src="<?php bloginfo('template_url'); ?>/_assets/images/logo.svg" alt="Logo Copel Telecom">
-            </a>
-            <nav class="js-scrollspy">
-                <ul class="nav">
-                    <li>
-                        <a href="#fibraoptica" class="active nav-link js-scrollto">
-                            Fibra Óptica
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#usosideias" class="nav-link js-scrollto">
-                            Usos Ideis
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#ei" class="nav-link js-scrollto">
-                            Esporta Interativo
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#cnja" class="nav-link js-scrollto">
-                            CN Já!
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#testes" class="nav-link js-scrollto">
-                            Testes
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#appcopel" class="nav-link js-scrollto">
-                            App Copel
-                        </a>
-                    </li>
+    <section id="home">   
+    
+        <nav class="header-nav fixed fixed-top">
+            <div class="container">
+                <a href="<?php bloginfo('url'); ?>" class="logo">
+                    <img src="<?php bloginfo('template_url'); ?>/_assets/images/logo.svg" alt="Logo Copel Telecom">
+                </a>
+                <nav class="js-scrollspy">
+                    <ul class="nav">
+                        <li>
+                            <a href="#fibraoptica" class="active nav-link js-scrollto">
+                                Fibra Óptica
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#usosideias" class="nav-link js-scrollto">
+                                Usos Ideis
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#ei" class="nav-link js-scrollto" data-show=".home-canais--devices, .home-canais--mockups-ei">
+                                Esporta Interativo
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#cnja" class="nav-link js-scrollto" data-show=".home-canais--devices, .home-canais--mockups-cnja">
+                                CN Já!
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#testes" class="nav-link js-scrollto">
+                                Testes
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#appcopel" class="nav-link js-scrollto">
+                                App Copel
+                            </a>
+                        </li>
 
-                    <li>
-                        <a href="#blog" class="nav-link js-scrollto">
-                            Blog
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <a href="#" class="btn-assine">
-                Assine Já
-            </a>
-        </div>
-        <span class="header-nav--loader" style="width: 30%;"></span>
-    </div>
-
-	<div id="home">
-		<section class="home-fibra-optica" id="fibraoptica">
-            <div class="home-carousel owl-carousel">
-                <div class="home-carousel--item">
-                    <img src="<?php bloginfo('template_url'); ?>/_assets/images/slide.jpg" class="d-none d-md-block" alt="">
-                    <img src="<?php bloginfo('template_url'); ?>/_assets/images/slide-mobile.jpg" class="d-block d-md-none" alt="">
-                    <div class="container">
-                        <h6>
-                            <img src="<?php bloginfo('template_url') ?>/_assets/images/icon-game-over.png" alt="Icone Game Over">
-                            Game over para Internet meia boca 
-                        </h6>
-                        <h5>
-                            Recomece o jogo com Copel Fibra
-                        </h5>
-                        <p>
-                            A banda larga que não deixa nenhum mega pelo caminho
-                        </p>
-                    </div>
-                </div>
-
-                <div class="home-carousel--item">
-                    <img src="<?php bloginfo('template_url'); ?>/_assets/images/slide-2.jpg" class="d-none d-md-block" alt="">
-                    <img src="<?php bloginfo('template_url'); ?>/_assets/images/slide-2-mobile.jpg" class="d-block d-md-none" alt="">
-                    <div class="container">
-                        <h6>
-                            <img src="<?php bloginfo('template_url') ?>/_assets/images/icon-unlike.png" alt="Icone Unlike">
-                            Desfaça amizade com Internet que só trava
-                        </h6>
-                        <h5>
-                            Curta suas redes sociais com Copel Fibra
-                        </h5>
-                        <p>
-                            A banda larga que não deixa nenhum mega pelo caminho
-                        </p>
-                    </div>
-                </div>
-
-                <div class="home-carousel--item">
-                    <img src="<?php bloginfo('template_url'); ?>/_assets/images/slide-3.jpg" class="d-none d-md-block" alt="">
-                    <img src="<?php bloginfo('template_url'); ?>/_assets/images/slide-3-mobile.jpg" class="d-block d-md-none" alt="">
-                    <div class="container">
-                        <h6>
-                            <img src="<?php bloginfo('template_url') ?>/_assets/images/icon-spoiler.png" alt="Icone Spoiler">
-                            Spoiler Alert!
-                        </h6>
-                        <h5>
-                            Fibra feliz com Copel Fibra
-                        </h5>
-                        <p>
-                            A banda larga que não deixa nenhum mega pelo caminho
-                        </p>
-                    </div>
+                        <li>
+                            <a href="#blog" class="nav-link js-scrollto">
+                                Blog
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="#" class="btn-assine">
+                    Assine Já
+                </a>
+            </div>
+            <span class="header-nav--loader" style="width: 0%;"></span>
+        </nav>
+	
+	
+        <div class="home-carousel owl-carousel">
+            <div class="home-carousel--item">
+                <img src="<?php bloginfo('template_url'); ?>/_assets/images/placeholder/slide.jpg" class="d-none d-md-block" alt="">
+                <img src="<?php bloginfo('template_url'); ?>/_assets/images/placeholder/slide-mobile.jpg" class="d-block d-md-none" alt="">
+                <div class="container">
+                    <h6>
+                        <img src="<?php bloginfo('template_url') ?>/_assets/images/icon-game-over.png" alt="Icone Game Over">
+                        Game over para Internet meia boca 
+                    </h6>
+                    <h5>
+                        Recomece o jogo com Copel Fibra
+                    </h5>
+                    <p>
+                        A banda larga que não deixa nenhum mega pelo caminho
+                    </p>
                 </div>
             </div>
 
-            <div class="home-planos d-none">
-                <button class="home-carousel-planos-prev">
+            <div class="home-carousel--item">
+                <img src="<?php bloginfo('template_url'); ?>/_assets/images/placeholder/slide-2.jpg" class="d-none d-md-block" alt="">
+                <img src="<?php bloginfo('template_url'); ?>/_assets/images/placeholder/slide-2-mobile.jpg" class="d-block d-md-none" alt="">
+                <div class="container">
+                    <h6>
+                        <img src="<?php bloginfo('template_url') ?>/_assets/images/icon-unlike.png" alt="Icone Unlike">
+                        Desfaça amizade com Internet que só trava
+                    </h6>
+                    <h5>
+                        Curta suas redes sociais com Copel Fibra
+                    </h5>
+                    <p>
+                        A banda larga que não deixa nenhum mega pelo caminho
+                    </p>
+                </div>
+            </div>
+
+            <div class="home-carousel--item">
+                <img src="<?php bloginfo('template_url'); ?>/_assets/images/placeholder/slide-3.jpg" class="d-none d-md-block" alt="">
+                <img src="<?php bloginfo('template_url'); ?>/_assets/images/placeholder/slide-3-mobile.jpg" class="d-block d-md-none" alt="">
+                <div class="container">
+                    <h6>
+                        <img src="<?php bloginfo('template_url') ?>/_assets/images/icon-spoiler.png" alt="Icone Spoiler">
+                        Spoiler Alert!
+                    </h6>
+                    <h5>
+                        Fibra feliz com Copel Fibra
+                    </h5>
+                    <p>
+                        A banda larga que não deixa nenhum mega pelo caminho
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <section class="home-planos">
+            <div class="home-planos-list d-none">
+                <button class="home-planos-carousel-prev">
                     <svg width="36px" height="69px" viewBox="0 0 36 69" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <g id="00_home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                             <g id="01_home_banner1_1920" transform="translate(0.000000, -817.000000)">
@@ -123,7 +124,7 @@
                     </svg>
                 </button>
 
-                <button class="home-carousel-planos-next">
+                <button class="home-planos-carousel-next">
                     <svg width="36px" height="69px" viewBox="0 0 36 69" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <g id="00_home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                             <g id="01_home_banner1_1920" transform="translate(-1884.000000, -817.000000)">
@@ -139,7 +140,7 @@
                 </button>
 
                 <div class="container px-0 px-sm-3">
-                    <div class="home-carousel-planos owl-carousel">
+                    <div class="home-planos-carousel owl-carousel">
                         <div>
                             <h6>
                                 5 Mega <small>Download igual Upload</small>
@@ -269,12 +270,12 @@
                 </div>
 
                 <div class="container">
-                    <small class="home-planos--alert">
+                    <small class="home-planos-list--alert">
                         *Valor de instalação de internet com plano de fidelidade de 12 meses: R$ 99,00. Valor de instalação de internet sem fidelidade: R$ 999,00. Consulte aqui as características técnicas dos planos de serviço.<br>Contrato e termo de fidelidade aplicável ao plano de serviço. Planos sujeitos a disponibilidade. Válidos para CURITIBA (alterar).
                     </small>
                 </div>
             </div>
-            
+
             <div class="container">
                 <div class="home-geolocation">
                     <h5>
@@ -346,16 +347,63 @@
 
                 </div>
             </div>
+
+            <div class="home-planos--box-empresas">
+                <h6>Copel Fibra para empresas</h6>
+                <p>Se você tem uma empresa e quer ter a garantia da melhor entrega, com máxima estabilidade para todos os seus dispositivos, os nossos planos empresarias são ideais para você.</p>
+                <a href="#" class="btn-more"></a>
+            </div>
+
+            <h6 class="home-planos--heading">
+                Conheça as vantagens <br>para sua casa
+            </h6>
+            
+        </section>
+
+        <section class="home-fibra-optica" id="fibraoptica">
+            <div style="height: 500px; background: #f4f4f4; display: block;"></div>
 		</section>
 		<section class="home-usos-ideias" id="usosideias">
 			<div style="height: 500px; background: #f4f4f4; display: block;"></div>
 		</section>
-		<section class="home-ei" id="ei">
-			<div style="height: 500px; background: #f2f2f2; display: block;"></div>
-		</section>
-		<section class="home-cn-ja" id="cnja">
-			<div style="height: 500px; background: #f4f4f4; display: block;"></div>
-		</section>
+
+        <div class="home-canais">
+            <div class="sticky-top">
+                <div class="home-canais--devices">
+                    <div class="tv">
+                        <div class="tv--img">
+                            <img src="<?php bloginfo('template_url'); ?>/_assets/images/placeholder/mockup-ei-tv.jpg" class="home-canais--mockups-ei active" alt="">
+                            <img src="<?php bloginfo('template_url'); ?>/_assets/images/placeholder/mockup-cnja-tv.jpg" class="home-canais--mockups-cnja" alt="">
+                        </div>
+                    </div>
+                    <div class="notebook">
+                        <div class="notebook--img">
+                            <img src="<?php bloginfo('template_url'); ?>/_assets/images/placeholder/mockup-ei-notebook.jpg" class="home-canais--mockups-ei active" alt="">
+                            <img src="<?php bloginfo('template_url'); ?>/_assets/images/placeholder/mockup-cnja-notebook.jpg" class="home-canais--mockups-cnja" alt="">
+                        </div>
+                    </div>
+                    <div class="ipad">
+                        <div class="ipad--img">
+                            <img src="<?php bloginfo('template_url'); ?>/_assets/images/placeholder/mockup-ei-ipad.jpg" class="home-canais--mockups-ei active" alt="">
+                            <img src="<?php bloginfo('template_url'); ?>/_assets/images/placeholder/mockup-cnja-ipad.jpg" class="home-canais--mockups-cnja" alt="">
+                        </div>
+                    </div>
+                    <div class="phone">
+                        <div class="phone--img">
+                            <img src="<?php bloginfo('template_url'); ?>/_assets/images/placeholder/mockup-ei-phone.jpg" class="home-canais--mockups-ei active" alt="">
+                            <img src="<?php bloginfo('template_url'); ?>/_assets/images/placeholder/mockup-cnja-phone.jpg" class="home-canais--mockups-cnja" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+    		<section class="home-ei" id="ei">
+    			<div style="height: 500px; background: #f2f2f2; display: block;"></div>
+    		</section>
+    		<section class="home-cn-ja" id="cnja">
+    			<div style="height: 500px; background: #f4f4f4; display: block;"></div>
+    		</section>
+        </div>
+
 		<section class="home-testes" id="testes">
 			<div style="height: 500px; background: #f2f2f2; display: block;"></div>
 		</section>
@@ -365,5 +413,6 @@
 		<section class="home-blog" id="blog">
 			<div style="height: 500px; background: #f2f2f2; display: block;"></div>
 		</section>
-	</div>
+
+	</section>
 <?php get_footer(); ?>
