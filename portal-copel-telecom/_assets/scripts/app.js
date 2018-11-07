@@ -78,11 +78,13 @@ window.onload = function() {
       }
   }
 
-  if($(".home-carousel-planos").length > 0) {
-   
-      $(".home-carousel-planos").owlCarousel({
+  var owlplanos = $(".home-carousel-planos");
+  if(owlplanos.length > 0) {
+      owlplanos.owlCarousel({
         autoplay: false,
         loop: false,
+        dots: false,
+        nav: false,
         responsive : {
           0: {
             items: 1,
@@ -91,20 +93,61 @@ window.onload = function() {
             items: 4
           }
         }
-      });
+      })
+
+      disableNav();
+      removeNav();
+      owlplanos.on('changed.owl.carousel', function(event) {       
+        disableNav();
+      })
+
+      $('.home-carousel-planos-next').click(function() {
+          owlplanos.trigger('next.owl.carousel');
+      })
+
+      $('.home-carousel-planos-prev').click(function() {
+          owlplanos.trigger('prev.owl.carousel');
+      })
       
       dotsPosition();
       $(".home-carousel").on('changed.owl.carousel', function(event) {
         dotsPosition();
       })
 
-      function dotsPosition(){
+      function disableNav() {
+        setTimeout(function() {
+          $('.home-carousel-planos-prev,.home-carousel-planos-next').removeClass('disabled');
+          if(!$('.home-carousel-planos .owl-item.active').first().prev().length) {
+            $('.home-carousel-planos-prev').addClass('disabled');
+          }
+          if(!$('.home-carousel-planos .owl-item.active').last().next().length) {
+            $('.home-carousel-planos-next').addClass('disabled');
+          }
+        }, 350);
+      }
+
+      function dotsPosition() {
         let top;
         if($(window).width() <= 768){
           top = $('.home-carousel .active img.d-block').height() - 45;
           $('.home-carousel .owl-dots').css('top', top);
         }
       }
+
+      function removeNav() {
+        if(!$('.home-carousel-planos .owl-item.active').last().next().length){
+          $('.home-carousel-planos-prev,.home-carousel-planos-next').hide();
+        } else {
+          $('.home-carousel-planos-prev,.home-carousel-planos-next').show();
+        }
+      }
+
+      $('.home-geolocation button').click(function(event) {
+        $('.home-geolocation').addClass('d-none');
+        $('.home-planos').removeClass('d-none');
+        owlplanos.trigger('refresh.owl.carousel');
+        removeNav();
+      });
   }
 
 } //window on load
