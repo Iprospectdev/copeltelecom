@@ -14,7 +14,12 @@ a:hover {
 }
 
 .btn-more {
-	&:before {
+	font-weight: 500;
+	font-size: 18px;
+	color: color('orange');
+	letter-spacing: 0;
+
+	&:after {
 		border-radius: 50%;
 		border: 2px solid color('orange');
 		color: color('orange');
@@ -25,15 +30,17 @@ a:hover {
 		transition: all 0.3s ease-in-out;
 		font-weight: 900;
 		height: 21px;
-		line-height: 18px;
+		line-height: 17px;
 		width: 21px;
 		padding-right: 3px;
 		text-align: right;
+		margin-left: 5px;
 	}
 
 	&:hover {
-		color: inherit;
-		&:before {
+		color: color('orange');
+
+		&:after {
 			border-radius: 50px;			
 			width: 30px;
 		}	

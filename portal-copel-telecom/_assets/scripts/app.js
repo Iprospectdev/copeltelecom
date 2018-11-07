@@ -18,6 +18,12 @@ window.onload = function() {
   
   $('body').scrollspy({ target: '.js-scrollspy', offset: $('.header-nav.fixed').height()+10 })
 
+  $(window).on('scroll', function(event) {
+    if(!$('.header-nav.fixed .active').length){
+      $('.header-nav--loader').width($(window).scrollTop() / 3);
+    }
+  });
+
   $(window).on('activate.bs.scrollspy', function () {
     const middle = $('.header-nav.fixed .active').outerWidth()/2
     const position = $('.header-nav.fixed .active').position().left
@@ -39,7 +45,7 @@ window.onload = function() {
     var offset = $('.header-nav.fixed').height()
     $('html,body').animate({
       scrollTop: $(hash).offset().top - offset
-    }, 800);
+    }, 400);
     return false;
   })
   

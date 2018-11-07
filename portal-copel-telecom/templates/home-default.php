@@ -9,22 +9,22 @@
                 <nav class="js-scrollspy">
                     <ul class="nav">
                         <li>
-                            <a href="#fibraoptica" class="active nav-link js-scrollto">
+                            <a href="#fibraoptica" class="nav-link js-scrollto">
                                 Fibra Óptica
                             </a>
                         </li>
                         <li>
-                            <a href="#usosideias" class="nav-link js-scrollto">
+                            <a href="#usosideias" class="nav-link js-scrollto" data-show=".home-usos--devices, .home-usos--mockups-usos">
                                 Usos Ideis
                             </a>
                         </li>
                         <li>
-                            <a href="#ei" class="nav-link js-scrollto" data-show=".home-canais--devices, .home-canais--mockups-ei">
+                            <a href="#ei" class="nav-link js-scrollto" data-show=".home-usos--devices, .home-usos--mockups-ei">
                                 Esporta Interativo
                             </a>
                         </li>
                         <li>
-                            <a href="#cnja" class="nav-link js-scrollto" data-show=".home-canais--devices, .home-canais--mockups-cnja">
+                            <a href="#cnja" class="nav-link js-scrollto" data-show=".home-usos--devices, .home-usos--mockups-cnja">
                                 CN Já!
                             </a>
                         </li>
@@ -344,7 +344,6 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
 
@@ -360,47 +359,61 @@
             
         </section>
 
-        <section class="home-fibra-optica" id="fibraoptica">
-            <div style="height: 500px; background: #f4f4f4; display: block;"></div>
-		</section>
-		<section class="home-usos-ideias" id="usosideias">
-			<div style="height: 500px; background: #f4f4f4; display: block;"></div>
+        <section class="home-fibra" id="fibraoptica" style="background-image: url(<?php bloginfo('template_url'); ?>/_assets/images/home-fibra-bg.jpg);">
+            <div class="container">
+                <div class="home-fibra--text">
+                    <h6 class="home-fibra--heading">
+                        <svg width="112px" height="112px" viewBox="0 0 112 112" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><linearGradient x1="100%" y1="5.78661152%" x2="1.11022302e-14%" y2="93.8648897%" id="linearGradient-1"><stop stop-color="#FFA600" offset="0%"></stop><stop stop-color="#FF6D00" offset="100%"></stop></linearGradient></defs><g id="00_home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="01_home_banner1_informar-endereco" transform="translate(-98.000000, -1630.000000)"><g id="Group-40" transform="translate(0.000000, 1426.000000)"><g id="Group-12" transform="translate(98.000000, 206.000000)"><g id="Group-30" transform="translate(2.000000, 0.000000)"><g id="Group-8-Copy"><circle id="Oval-6" stroke="url(#linearGradient-1)" stroke-width="3" cx="54" cy="54" r="54"></circle><g id="Page-1" transform="translate(49.000000, 62.500000) rotate(-330.000000) translate(-49.000000, -62.500000) translate(32.000000, 29.000000)"><path d="M0,43 L34,43" id="Stroke-1" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M5,43 L5,24" id="Stroke-3" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M11,43 L11,34" id="Stroke-4" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M17,43 L17,7" id="Stroke-5" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M23,43 L23,15" id="Stroke-6" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M29,43 L29,24" id="Stroke-7" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><g id="Group-20"><path d="M11.0159583,27.5351652 C9.18283333,27.5351652 7.69533333,29.041513 7.69533333,30.899687 C7.69533333,32.7593391 9.18283333,34.265687 11.0159583,34.265687 C12.8490833,34.265687 14.335125,32.7593391 14.335125,30.899687 C14.335125,29.041513 12.8490833,27.5351652 11.0159583,27.5351652 M11.0159583,30.491687 C11.237625,30.491687 11.4184583,30.6749913 11.4184583,30.899687 C11.4184583,31.1258609 11.237625,31.3091652 11.0159583,31.3091652 C10.7928333,31.3091652 10.612,31.1258609 10.612,30.899687 C10.612,30.6749913 10.7928333,30.491687 11.0159583,30.491687" id="Fill-8" fill="#FFFFFF"></path><path d="M5.08433333,18.5783826 C3.25120833,18.5783826 1.76516667,20.0847304 1.76516667,21.9429043 C1.76516667,23.8025565 3.25120833,25.3089043 5.08433333,25.3089043 C6.91745833,25.3089043 8.4035,23.8025565 8.4035,21.9429043 C8.4035,20.0847304 6.91745833,18.5783826 5.08433333,18.5783826 M5.08433333,21.5349043 C5.306,21.5349043 5.48683333,21.7182087 5.48683333,21.9429043 C5.48683333,22.1690783 5.306,22.3523826 5.08433333,22.3523826 C4.86266667,22.3523826 4.68183333,22.1690783 4.68183333,21.9429043 C4.68183333,21.7182087 4.86266667,21.5349043 5.08433333,21.5349043" id="Fill-10" fill="#FFFFFF"></path><path d="M16.9468542,0.170043478 C15.1137292,0.170043478 13.6276875,1.6763913 13.6276875,3.53456522 C13.6276875,5.39421739 15.1137292,6.90056522 16.9468542,6.90056522 C18.7799792,6.90056522 20.2660208,5.39421739 20.2660208,3.53456522 C20.2660208,1.6763913 18.7799792,0.170043478 16.9468542,0.170043478 M16.9468542,3.12656522 C17.1699792,3.12656522 17.3493542,3.30986957 17.3493542,3.53456522 C17.3493542,3.76073913 17.1699792,3.94404348 16.9468542,3.94404348 C16.7251875,3.94404348 16.5443542,3.76073913 16.5443542,3.53456522 C16.5443542,3.30986957 16.7251875,3.12656522 16.9468542,3.12656522" id="Fill-12" fill="#FFFFFF"></path><path d="M22.8784792,9.50378261 C21.0453542,9.50378261 19.5593125,11.0116087 19.5593125,12.8697826 C19.5593125,14.7279565 21.0453542,16.2343043 22.8784792,16.2343043 C24.7116042,16.2343043 26.1976458,14.7279565 26.1976458,12.8697826 C26.1976458,11.0116087 24.7116042,9.50378261 22.8784792,9.50378261 M22.8784792,12.4603043 C23.1001458,12.4603043 23.2809792,12.6436087 23.2809792,12.8697826 C23.2809792,13.0944783 23.1001458,13.2777826 22.8784792,13.2777826 C22.6568125,13.2777826 22.4759792,13.0944783 22.4759792,12.8697826 C22.4759792,12.6436087 22.6568125,12.4603043 22.8784792,12.4603043" id="Fill-14" fill="#FFFFFF"></path><path d="M28.8101042,17.1001217 C26.9769792,17.1001217 25.4909375,18.6064696 25.4909375,20.4646435 C25.4909375,22.3242957 26.9769792,23.8306435 28.8101042,23.8306435 C30.6432292,23.8306435 32.1292708,22.3242957 32.1292708,20.4646435 C32.1292708,18.6064696 30.6432292,17.1001217 28.8101042,17.1001217 M28.8101042,20.0566435 C29.0317708,20.0566435 29.2126042,20.2399478 29.2126042,20.4646435 C29.2126042,20.6908174 29.0317708,20.8741217 28.8101042,20.8741217 C28.5884375,20.8741217 28.4076042,20.6908174 28.4076042,20.4646435 C28.4076042,20.2399478 28.5884375,20.0566435 28.8101042,20.0566435" id="Fill-16" fill="#FFFFFF"></path><polyline id="Stroke-18" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="33.8942917 67 33.8942917 47.4293043 -0.000291666667 47.4293043 -0.000291666667 67"></polyline></g></g></g></g></g></g></g></g></svg>
+                        Copel<br>Fibra
+                    </h6>
+                    <p>Copel Fibra é a internet fibra óptica de ponta a ponta. Isso quer dizer melhor qualidade de entrega, estabilidade de conexão, download e upload na mesma velocidade.</p>
+                    <span class="home-fibra--highlight">Upload = Download</span>
+                    <a href="#" class="btn-more">Saiba mais</a>
+                </div>
+            </div>
 		</section>
 
-        <div class="home-canais">
+        <div class="home-usos">
             <div class="sticky-top">
-                <div class="home-canais--devices">
+                <div class="home-usos--devices">
                     <div class="tv">
                         <div class="tv--img">
-                            <img src="<?php bloginfo('template_url'); ?>/_assets/images/placeholder/mockup-ei-tv.jpg" class="home-canais--mockups-ei active" alt="">
-                            <img src="<?php bloginfo('template_url'); ?>/_assets/images/placeholder/mockup-cnja-tv.jpg" class="home-canais--mockups-cnja" alt="">
+                            <img src="<?php bloginfo('template_url'); ?>/_assets/images/placeholder/mockup-tv.jpg" class="home-usos--mockups-usos active" alt="">
+                            <img src="<?php bloginfo('template_url'); ?>/_assets/images/placeholder/mockup-ei-tv.jpg" class="home-usos--mockups-ei" alt="">
+                            <img src="<?php bloginfo('template_url'); ?>/_assets/images/placeholder/mockup-cnja-tv.jpg" class="home-usos--mockups-cnja" alt="">
                         </div>
                     </div>
                     <div class="notebook">
                         <div class="notebook--img">
-                            <img src="<?php bloginfo('template_url'); ?>/_assets/images/placeholder/mockup-ei-notebook.jpg" class="home-canais--mockups-ei active" alt="">
-                            <img src="<?php bloginfo('template_url'); ?>/_assets/images/placeholder/mockup-cnja-notebook.jpg" class="home-canais--mockups-cnja" alt="">
+                            <img src="<?php bloginfo('template_url'); ?>/_assets/images/placeholder/mockup-notebook.jpg" class="home-usos--mockups-usos active" alt="">
+                            <img src="<?php bloginfo('template_url'); ?>/_assets/images/placeholder/mockup-ei-notebook.jpg" class="home-usos--mockups-ei" alt="">
+                            <img src="<?php bloginfo('template_url'); ?>/_assets/images/placeholder/mockup-cnja-notebook.jpg" class="home-usos--mockups-cnja" alt="">
                         </div>
                     </div>
                     <div class="ipad">
                         <div class="ipad--img">
-                            <img src="<?php bloginfo('template_url'); ?>/_assets/images/placeholder/mockup-ei-ipad.jpg" class="home-canais--mockups-ei active" alt="">
-                            <img src="<?php bloginfo('template_url'); ?>/_assets/images/placeholder/mockup-cnja-ipad.jpg" class="home-canais--mockups-cnja" alt="">
+                            <img src="<?php bloginfo('template_url'); ?>/_assets/images/placeholder/mockup-ipad.jpg" class="home-usos--mockups-usos active" alt="">
+                            <img src="<?php bloginfo('template_url'); ?>/_assets/images/placeholder/mockup-ei-ipad.jpg" class="home-usos--mockups-ei" alt="">
+                            <img src="<?php bloginfo('template_url'); ?>/_assets/images/placeholder/mockup-cnja-ipad.jpg" class="home-usos--mockups-cnja" alt="">
                         </div>
                     </div>
                     <div class="phone">
                         <div class="phone--img">
-                            <img src="<?php bloginfo('template_url'); ?>/_assets/images/placeholder/mockup-ei-phone.jpg" class="home-canais--mockups-ei active" alt="">
-                            <img src="<?php bloginfo('template_url'); ?>/_assets/images/placeholder/mockup-cnja-phone.jpg" class="home-canais--mockups-cnja" alt="">
+                            <img src="<?php bloginfo('template_url'); ?>/_assets/images/placeholder/mockup-phone.jpg" class="home-usos--mockups-usos active" alt="">
+                            <img src="<?php bloginfo('template_url'); ?>/_assets/images/placeholder/mockup-ei-phone.jpg" class="home-usos--mockups-ei" alt="">
+                            <img src="<?php bloginfo('template_url'); ?>/_assets/images/placeholder/mockup-cnja-phone.jpg" class="home-usos--mockups-cnja" alt="">
                         </div>
                     </div>
                 </div>
             </div>
+            <section class="home-usos-ideias" id="usosideias">
+                <div style="height: 600px; background: #f4f4f4; display: block;"></div>
+            </section>
     		<section class="home-ei" id="ei">
-    			<div style="height: 500px; background: #f2f2f2; display: block;"></div>
+    			<div style="height: 600px; background: #f2f2f2; display: block;"></div>
     		</section>
     		<section class="home-cn-ja" id="cnja">
-    			<div style="height: 500px; background: #f4f4f4; display: block;"></div>
+    			<div style="height: 600px; background: #f4f4f4; display: block;"></div>
     		</section>
         </div>
 

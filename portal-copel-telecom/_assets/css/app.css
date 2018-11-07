@@ -11648,27 +11648,32 @@ a:hover {
   text-decoration: none;
   transition: all 0.2s ease-in-out; }
 
-.btn-more:before {
-  border-radius: 50%;
-  border: 2px solid #FF6D00;
+.btn-more {
+  font-weight: 500;
+  font-size: 18px;
   color: #FF6D00;
-  content: "\F061";
-  display: inline-block;
-  font-family: "Font Awesome 5 Pro";
-  font-size: 11px;
-  transition: all 0.3s ease-in-out;
-  font-weight: 900;
-  height: 21px;
-  line-height: 18px;
-  width: 21px;
-  padding-right: 3px;
-  text-align: right; }
-
-.btn-more:hover {
-  color: inherit; }
-  .btn-more:hover:before {
-    border-radius: 50px;
-    width: 30px; }
+  letter-spacing: 0; }
+  .btn-more:after {
+    border-radius: 50%;
+    border: 2px solid #FF6D00;
+    color: #FF6D00;
+    content: "\F061";
+    display: inline-block;
+    font-family: "Font Awesome 5 Pro";
+    font-size: 11px;
+    transition: all 0.3s ease-in-out;
+    font-weight: 900;
+    height: 21px;
+    line-height: 17px;
+    width: 21px;
+    padding-right: 3px;
+    text-align: right;
+    margin-left: 5px; }
+  .btn-more:hover {
+    color: #FF6D00; }
+    .btn-more:hover:after {
+      border-radius: 50px;
+      width: 30px; }
 
 .btn-assine {
   background: #FF6D00;
@@ -11900,7 +11905,7 @@ a:hover {
     display: block;
     height: 3px;
     position: absolute;
-    transition: all 0.3s ease-in-out; }
+    transition: all 0.2s ease-in; }
     .header-nav--loader:after {
       background: #fff;
       box-shadow: 0px 0px 7px 7px rgba(255, 150, 2, 0.75);
@@ -12193,7 +12198,7 @@ body.menu-opened {
     background-image: url(../images/home-planos-bg.png);
     background-position: right center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% auto;
     bottom: 0;
     content: "";
     height: 100%;
@@ -12229,12 +12234,12 @@ body.menu-opened {
       top: 50%;
       transform: translateY(-50%); }
       .home-planos--box-empresas .btn-more:before {
-        height: 30px;
+        after: 30px;
         line-height: 27px;
         width: 30px;
         font-size: 16px;
         padding-right: 5px; }
-      .home-planos--box-empresas .btn-more:hover:before {
+      .home-planos--box-empresas .btn-more:hover:after {
         border-radius: 50px;
         width: 39px; }
   .home-planos--heading {
@@ -12542,9 +12547,56 @@ body.menu-opened {
       .home-geolocation--form .input-group > .input-group-prepend:first-child > .input-group-text:not(:first-child) i {
         color: #fff; }
 
-.home-canais {
+.home-fibra {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .home-fibra .container {
+    -ms-flex-align: center;
+        align-items: center;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 700px; }
+  .home-fibra .home-fibra--text {
+    max-width: 340px;
+    display: block; }
+  .home-fibra h6 {
+    color: #FFFFFF;
+    font-size: 75px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 70px;
+    position: relative;
+    padding-left: 100px;
+    z-index: 2; }
+    .home-fibra h6 svg {
+      position: absolute;
+      left: 0;
+      top: -10px;
+      border: 3px solid #FF6D00;
+      border-radius: 50%;
+      z-index: -1; }
+  .home-fibra p {
+    font-weight: 400;
+    font-size: 15px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: 22px; }
+  .home-fibra .home-fibra--highlight {
+    border-bottom: 1px solid #FF6D00;
+    border-top: 1px solid #FF6D00;
+    color: #FFFFFF;
+    display: block;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    padding: 5px 0;
+    text-align: center; }
+
+.home-usos {
   position: relative; }
-  .home-canais--devices {
+  .home-usos--devices {
     display: block;
     height: 521px;
     right: 100%;
@@ -12552,16 +12604,16 @@ body.menu-opened {
     transition: all 0.3s ease-in-out;
     width: 752px;
     margin-top: 150px; }
-    .home-canais--devices img {
+    .home-usos--devices img {
       position: absolute;
       width: 100%;
       height: 100%;
       top: 100%; }
-      .home-canais--devices img.active {
+      .home-usos--devices img.active {
         top: 0; }
-    .home-canais--devices div div img:first-child {
+    .home-usos--devices div div img:first-child {
       top: 0 !important; }
-    .home-canais--devices .phone {
+    .home-usos--devices .phone {
       background-image: url(../images/device-phone.png);
       background-position: center;
       background-repeat: no-repeat;
@@ -12571,7 +12623,7 @@ body.menu-opened {
       right: 38px;
       width: 109px;
       height: 221px; }
-      .home-canais--devices .phone--img {
+      .home-usos--devices .phone--img {
         display: block;
         bottom: 30px;
         left: 9px;
@@ -12579,9 +12631,9 @@ body.menu-opened {
         width: 94px;
         height: 172px;
         overflow: hidden; }
-      .home-canais--devices .phone img {
-        transition: all 0.5s ease-in 0.3s; }
-    .home-canais--devices .ipad {
+      .home-usos--devices .phone img {
+        transition: all 0.3s ease-in 0.3s; }
+    .home-usos--devices .ipad {
       background-image: url(../images/device-ipad.png);
       background-position: center;
       background-repeat: no-repeat;
@@ -12591,7 +12643,7 @@ body.menu-opened {
       left: 64px;
       position: absolute;
       width: 302px; }
-      .home-canais--devices .ipad--img {
+      .home-usos--devices .ipad--img {
         display: block;
         height: 189px;
         width: 250px;
@@ -12599,9 +12651,9 @@ body.menu-opened {
         left: 28px;
         position: absolute;
         overflow: hidden; }
-      .home-canais--devices .ipad img {
-        transition: all 0.5s ease-in 0.5s; }
-    .home-canais--devices .notebook {
+      .home-usos--devices .ipad img {
+        transition: all 0.3s ease-in 0.5s; }
+    .home-usos--devices .notebook {
       background-image: url(../images/device-notebook.png);
       background-position: center;
       background-repeat: no-repeat;
@@ -12611,7 +12663,7 @@ body.menu-opened {
       right: 0;
       width: 545px;
       height: 299px; }
-      .home-canais--devices .notebook--img {
+      .home-usos--devices .notebook--img {
         display: block;
         bottom: 77px;
         left: 110px;
@@ -12619,9 +12671,9 @@ body.menu-opened {
         width: 362px;
         height: 210.5px;
         overflow: hidden; }
-      .home-canais--devices .notebook img {
-        transition: all 0.5s ease-in 0.6s; }
-    .home-canais--devices .tv {
+      .home-usos--devices .notebook img {
+        transition: all 0.3s ease-in 0.6s; }
+    .home-usos--devices .tv {
       background-image: url(../images/device-tv.png);
       background-position: center;
       background-repeat: no-repeat;
@@ -12631,7 +12683,7 @@ body.menu-opened {
       position: absolute;
       top: 0;
       width: 601px; }
-      .home-canais--devices .tv--img {
+      .home-usos--devices .tv--img {
         display: block;
         height: 330px;
         width: 583px;
@@ -12639,9 +12691,9 @@ body.menu-opened {
         left: 9px;
         bottom: 61px;
         overflow: hidden; }
-      .home-canais--devices .tv img {
-        transition: all 0.5s ease-in 0.6s; }
-    .home-canais--devices.active {
+      .home-usos--devices .tv img {
+        transition: all 0.3s ease-in 0.6s; }
+    .home-usos--devices.active {
       right: 45%; }
 
 .planos-item {
