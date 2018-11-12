@@ -145,11 +145,11 @@
                             <a href="#">Parcerias<i class="fas fa-caret-down"></i></a>
                             <div class="header-subnav">
                                 <div class="planos-item">
-                                    <a href="#">
+                                    <a href="<?php $p=get_page_by_title('Esporte Interativo'); echo get_permalink($p->ID); ?>">
                                         <figure>
-                                            <img src="http://placehold.it/400x120" alt="">
+                                            <img src="<?php bloginfo('template_url'); ?>/_assets/images/ei-menu.jpg" alt="">
                                         </figure>
-                                        <img src="http://placehold.it/135x40" class="planos-item--logo" alt="">
+                                        <img src="<?php bloginfo('template_url'); ?>/_assets/images/logo-ei.png" class="planos-item--logo" alt="">
                                         <h6 class="planos-item--heading">
                                             Assista online o melhor do esporte.
                                         </h6>
@@ -157,13 +157,13 @@
                                     </a>
                                 </div>
                                 <div class="planos-item">
-                                    <a href="#">
+                                    <a href="<?php $p=get_page_by_title('Cartoon Network'); echo get_permalink($p->ID); ?>">
                                         <figure>
-                                            <img src="http://placehold.it/400x120" alt="">
+                                            <img src="<?php bloginfo('template_url'); ?>/_assets/images/cnja-menu.jpg" alt="">
                                         </figure>
-                                        <img src="http://placehold.it/135x40" class="planos-item--logo" alt="">
+                                        <img src="<?php bloginfo('template_url'); ?>/_assets/images/logo-cnja.png" class="planos-item--logo" alt="">
                                         <h6 class="planos-item--heading">
-                                            Assista online o melhor do esporte.
+                                            Seus desenhos preferidos onde você estiver.
                                         </h6>
                                         <span class="btn-more"></span>
                                     </a>
@@ -216,7 +216,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#">Sobre nós</a>
+                            <a href="<?php $p = get_page_by_title('Quem Somos'); echo get_permalink($p->ID); ?>">Sobre nós</a>
                         </li>
                         <li>
                             <a href="#">App Copel</a>

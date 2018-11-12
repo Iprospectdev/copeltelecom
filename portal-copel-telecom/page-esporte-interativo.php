@@ -12,16 +12,23 @@
 					<a href="#" class="btn">Saiba como assistir</a>
 				</div>
 			</div>
+
 			<img src="<?php bloginfo('template_url'); ?>/_assets/images/ei-phone.png" alt="">
+
+			<svg width="1366px" height="171px" viewBox="0 0 1366 171" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+		        <g id="01_esporte-interativo" transform="translate(0.000000, -674.000000)" fill="#FFFFFF">
+		            <polygon id="Triangle" points="0 674.097137 1366 841.730772 0 844.730772"></polygon>
+		        </g>
+			</svg>
 		</header>
 
 		<article class="parcerias-content">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-6">
+					<div class="col-12 col-md-6">
 						<img src="<?php bloginfo('template_url'); ?>/_assets/images/ei-campeonatos.png" alt="Campeonatos Esporte Interativo">
 					</div>
-					<div class="col-md-5 offset-md-1 parcerias-content--text">
+					<div class="col-12 col-md-4 offset-md-1 parcerias-content--text">
 						<img src="<?php bloginfo('template_url'); ?>/_assets/images/logo-ei.png" alt="Logo Esporte Interativo">
 						<h6>A paixão e a emoção pelo esporte, onde você estiver</h6>
 						<p>Assista aos principais conteúdos oferecidos pelos Canais Esporte Interativo e fique por dentro de tudo o que acontece no mundo dos esportes. São programas imperdíveis, como a UEFA Champions League (maior competição de clubes do mundo) a E-League (maior competição de Counter Strike) e muito mais.</p>
@@ -50,13 +57,13 @@
 			</div>
 		</article>
 
-		<article class="parcerias-cliente">
+		<article class="parcerias-steps">
 			<div class="container">
 				<h2>Cliente Copel Telecom</h2>
 				<p>Confira abaixo como é fácil baixar o aplicativo do Esporte Interativo Plus no seu smartphone ou tablet.</p>
 				<div class="row">
 					<div class="col-md-4">
-						<div class="parcerias-cliente--item step-1">
+						<div class="parcerias-steps--item step-1">
 							<small>1</small>
 							<p>Baixe o aplicativo Esporte Interativo Plus na Play Store ou na Apple Store.</p>
 							<a href="#">
@@ -69,21 +76,21 @@
 						</div>
 					</div>
 					<div class="col-md-4">
-						<div class="parcerias-cliente--item step-2">
+						<div class="parcerias-steps--item step-2">
 							<small>2</small>
 							<p>No app Esporte Interativo Plus, faça login com seu e-mail cadastrado na Copel Telecom. A senha é o seu CPF*.</p>
 							<img src="<?php bloginfo('template_url'); ?>/_assets/images/ei-hand.png" alt="">
 						</div>
 					</div>
 					<div class="col-md-4">
-						<div class="parcerias-cliente--item step-3">
+						<div class="parcerias-steps--item step-3">
 							<small>3</small>
 							<p>Pronto, aproveite! Assinante Copel Telecom tem até dois acessos simultâneos.</p>
 							<img src="<?php bloginfo('template_url'); ?>/_assets/images/ei-devices.png" alt="">
 						</div>
 					</div>
 				</div>
-				<small class="parcerias-cliente--obs">*Após o seu primeiro acesso, recomendamos que você altere a sua senha.</small>
+				<small class="parcerias-steps--obs">*Após o seu primeiro acesso, recomendamos que você altere a sua senha.</small>
 			</div>
 		</article>
 
@@ -100,7 +107,7 @@
 		<article class="parcerias-naocliente">
 			<div class="container">
 				<h6>Ainda não é cliente Copel Telecom?</h6>
-				<a href="#" class="btn">Conheça nossos planos</a>
+				<a href="<?php $p=get_page_by_title( 'planos' ); echo get_permalink( $p->ID ) ?>" class="btn">Conheça nossos planos</a>
 			</div>
 		</article>
 	</section>

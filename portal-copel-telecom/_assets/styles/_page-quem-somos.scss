@@ -1,24 +1,3 @@
-.quem-somos-i {
-    background-image: url(../images/quem-somos-i.png);
-    background-repeat: no-repeat;
-    display: block;
-    height: 48px;
-    margin: 0 auto;
-    width: 50px;
-	
-	&.estatuto {
-		background-position: 0 0;
-	}
-	
-	&.acionista {
-		background-position: -50px 0;
-	}
-	
-	&.balancos {
-		background-position: -100px 0;
-	}
-}
-
 .quem-somos-heading {
 	h1,h2,h3,h4,h5,h6 {
 		-webkit-background-clip: text;
@@ -50,8 +29,13 @@
 	}
 
 	@include media-breakpoint-down(sm) {
+		text-align: center;
+
+		h1,h2,h3,h4,h5,h6 {
+			font-size: 30px;
+		}
 		p {
-			padding-top: 40px;
+			padding-top: 0;
 		}
 	}
 }
@@ -81,7 +65,7 @@
 		margin-bottom: -2px;
 	}
 
-	h1,h2,h3,h4 {
+	h1,h2,h3,h4,h5,h6 {
 		font-weight: 700;
 		font-size: 30px;
 		color: #FFFFFF;
@@ -115,6 +99,15 @@
 		color: #FFFFFF;
 		line-height: 25px;
 	}
+	@include media-breakpoint-down(sm) {
+		padding-top: 20px;
+		padding-bottom: 40px;
+
+		h1,h2,h3,h4,h5,h6{
+			font-size: 24px;
+			line-height: 36px;
+		}
+	}
 }
 
 .quem-somos-copel {
@@ -126,6 +119,7 @@
 		color: color('gray-dark');
 		text-align: center;
 		line-height: 40px;
+		margin-bottom: 20px;
 	}
 
 	p {
@@ -137,7 +131,12 @@
 	}
 
 	@include media-breakpoint-down(sm) {
-		padding: 60px 0;
+		padding: 60px 0 70px;
+
+		h1,h2,h3,h4,h5,h6 {
+			font-size: 24px;
+			line-height: 36px;
+		}
 	}
 }
 
@@ -157,7 +156,7 @@
 		position: relative;
 	}
 
-	h1,h2,h3,h4,h5 {
+	h1,h2,h3,h4,h5,h6 {
 		font-weight: 700;
 		font-size: 30px;
 		color: #FFFFFF;
@@ -214,7 +213,12 @@
 
 	@include media-breakpoint-down(sm) {
 		.container {
-			padding: 60px 0;
+			padding: 90px 0 100px;
+		}
+
+		h1,h2,h3,h4,h5,h6 {
+			font-size: 24px;
+			line-height: 36px;
 		}
 	}
 }
@@ -235,8 +239,8 @@
 			color: inherit;
 		}
 
-		i {
-			margin: 0 auto;
+		svg {
+			margin: 0 auto 10px;
 			display: block;
 		}
 
@@ -250,15 +254,6 @@
 		    right: 0;
 		    top: 50%;
 		    width: 1px;
-		}
-
-		@include media-breakpoint-down(sm) {
-			padding-top: 15px;
-			padding-bottom: 15px;	
-
-			&:after {
-				display: none;
-			}
 		}
 	}
 
@@ -278,6 +273,25 @@
 			right: 15px;
 			top: 50%;
 			margin-top: -25px;
+		}
+	}
+
+	@include media-breakpoint-down(sm) {
+		padding-top: 85px;
+
+		.quem-somos-nav--item{
+			padding-top: 15px;
+			padding-bottom: 15px;	
+			font-size: 13px;
+			white-space: nowrap;
+
+			&:after {
+				display: none;
+			}
+		}
+
+		.quem-somos-nav--link {
+			padding-left: 15px;
 		}
 	}
 }

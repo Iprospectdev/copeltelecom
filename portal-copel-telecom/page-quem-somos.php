@@ -27,7 +27,6 @@
 		<article class="quem-somos-alcance">
 			<div class="container">
 				<h3>O futuro chega antes para quem tem a internet da Copel Telecom</h3>
-
 				<div class="row">
 					<div class="col-sm-6">
 						<img src="<?php bloginfo('template_url'); ?>/_assets/images/quem-somos-mapa.svg" alt="">
@@ -111,7 +110,6 @@
 			<div class="container">
 				<h4>É a internet do futuro presente na casa dos paranaenses.</h4>
 				<p>Assim, mais e mais clientes vão contar com a melhor qualidade de sinal de internet do mercado, sem interferências e sem interrupções, além de download e upload na mesma velocidade.</p>
-
 				<div class="row">
 					<div class="col-12 col-md-4">
 						<div class="quem-somos-banner--item">
@@ -202,29 +200,59 @@
 		<nav class="quem-somos-nav">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-7">
+					<div class="col-12 col-md-7">
 						<div class="row">
-							<div class="col-md-4 quem-somos-nav--item">
+							<div class="col-4 quem-somos-nav--item">
 								<a href="#">
-									<i class="quem-somos-i estatuto"></i>
+									<svg width="24px" height="32px" viewBox="0 0 24 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+									    <g id="01_quem-somos" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+									        <g id="01_quem-somos_375" transform="translate(-51.000000, -3657.000000)" fill="#464D5C">
+									            <g id="Group-6" transform="translate(0.000000, 3521.000000)">
+									                <g id="Group-19" transform="translate(25.000000, 136.000000)">
+									                    <path d="M31.5,26 L44.5,26 C44.776,26 45,25.776 45,25.5 C45,25.224 44.776,25 44.5,25 L31.5,25 C31.224,25 31,25.224 31,25.5 C31,25.776 31.224,26 31.5,26 Z M31.5,22 L44.5,22 C44.776,22 45,21.776 45,21.5 C45,21.224 44.776,21 44.5,21 L31.5,21 C31.224,21 31,21.224 31,21.5 C31,21.776 31.224,22 31.5,22 Z M31.5,10 L37.5,10 C37.776,10 38,9.776 38,9.5 C38,9.224 37.776,9 37.5,9 L31.5,9 C31.224,9 31,9.224 31,9.5 C31,9.776 31.224,10 31.5,10 Z M31.5,18 L44.5,18 C44.776,18 45,17.776 45,17.5 C45,17.224 44.776,17 44.5,17 L31.5,17 C31.224,17 31,17.224 31,17.5 C31,17.776 31.224,18 31.5,18 Z M31.5,14 L44.5,14 C44.776,14 45,13.776 45,13.5 C45,13.224 44.776,13 44.5,13 L31.5,13 C31.224,13 31,13.224 31,13.5 C31,13.776 31.224,14 31.5,14 Z M27,1.5 C27,1.224 27.225,1 27.5,1 L41,1 L41,8.25 C41,9.059 41.655,10 42.5,10 L49,10 L49,30.5 C49,30.776 48.775,31 48.5,31 L27.5,31 C27.22,31 27,30.78 27,30.5 L27,1.5 Z M42,1.815 L48.387,9 L42.5,9 C42.28,9 42,8.58 42,8.25 L42,1.815 Z M27.5,32 L48.5,32 C49.327,32 50,31.327 50,30.5 L50,9.5 C50,9.483 49.992,9.469 49.991,9.453 C49.989,9.43 49.983,9.41 49.978,9.388 C49.961,9.317 49.932,9.253 49.888,9.197 C49.881,9.188 49.882,9.177 49.875,9.168 L41.875,0.168 C41.872,0.165 41.868,0.165 41.865,0.162 C41.805,0.098 41.729,0.054 41.642,0.028 C41.623,0.022 41.606,0.02 41.586,0.017 C41.557,0.012 41.53,0 41.5,0 L27.5,0 C26.673,0 26,0.673 26,1.5 L26,30.5 C26,31.327 26.673,32 27.5,32 Z" id="Page-1"></path>
+									                </g>
+									            </g>
+									        </g>
+									    </g>
+									</svg>
 									Estato Social
 								</a>
 							</div>
-							<div class="col-md-4 quem-somos-nav--item">
+							<div class="col-4 quem-somos-nav--item">
 								<a href="#">
-									<i class="quem-somos-i acionista"></i>
+									<svg width="38px" height="32px" viewBox="0 0 38 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+									    <g id="01_quem-somos" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+									        <g id="01_quem-somos_375" transform="translate(-169.000000, -3657.000000)" fill="#464D5C">
+									            <g id="Group-6" transform="translate(0.000000, 3521.000000)">
+									                <g id="Group-20" transform="translate(116.000000, 136.000000)">
+									                    <path d="M72.125,23 C73.068,23 74.048,22.961 75.039,22.884 C75.314,22.863 75.52,22.622 75.498,22.346 C75.477,22.071 75.246,21.86 74.96,21.887 C72.946,22.044 71.051,22.037 69.041,21.867 C68.777,21.84 68.524,22.048 68.501,22.323 C68.478,22.598 68.682,22.84 68.957,22.863 C70.033,22.954 71.099,23 72.125,23 Z M90,13.458 C90,15.222 81.543,18.958 72.125,18.958 C62.575,18.958 54,15.223 54,13.458 L54,8.5 C54,8.224 54.224,8 54.5,8 L89.5,8 C89.776,8 90,8.224 90,8.5 L90,13.458 Z M89.5,7 L54.5,7 C53.673,7 53,7.673 53,8.5 L53,13.458 C53,16.236 62.456,19.958 72.125,19.958 C81.668,19.958 91,16.236 91,13.458 L91,8.5 C91,7.673 90.327,7 89.5,7 Z M78.5,5 C78.776,5 79,4.776 79,4.5 L79,1.5 C79,0.673 78.327,0 77.5,0 L66.5,0 C65.673,0 65,0.673 65,1.5 L65,4.5 C65,4.776 65.224,5 65.5,5 C65.776,5 66,4.776 66,4.5 L66,1.5 C66,1.224 66.224,1 66.5,1 L77.5,1 C77.776,1 78,1.224 78,1.5 L78,4.5 C78,4.776 78.224,5 78.5,5 Z M90.5,18 C90.224,18 90,18.224 90,18.5 L90,30.5 C90,30.776 89.776,31 89.5,31 L54.5,31 C54.224,31 54,30.776 54,30.5 L54,18.5 C54,18.224 53.776,18 53.5,18 C53.224,18 53,18.224 53,18.5 L53,30.5 C53,31.327 53.673,32 54.5,32 L89.5,32 C90.327,32 91,31.327 91,30.5 L91,18.5 C91,18.224 90.776,18 90.5,18 Z" id="Page-1"></path>
+									                </g>
+									            </g>
+									        </g>
+									    </g>
+									</svg>
 									Acionista
 								</a>
 							</div>
-							<div class="col-md-4 quem-somos-nav--item">
+							<div class="col-4 quem-somos-nav--item">
 								<a href="#">
-									<i class="quem-somos-i balancos"></i>
+									<svg width="42px" height="32px" viewBox="0 0 42 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+									    <g id="01_quem-somos" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+									        <g id="01_quem-somos_375" transform="translate(-292.000000, -3657.000000)" fill="#464D5C">
+									            <g id="Group-6" transform="translate(0.000000, 3521.000000)">
+									                <g id="Group-17" transform="translate(278.000000, 136.000000)">
+									                    <path d="M53,5 C51.897,5 51,4.103 51,3 C51,1.897 51.897,1 53,1 C54.103,1 55,1.897 55,3 C55,4.103 54.103,5 53,5 M41,24 C39.897,24 39,23.103 39,22 C39,20.897 39.897,20 41,20 C42.103,20 43,20.897 43,22 C43,23.103 42.103,24 41,24 M27,15 C25.897,15 25,14.103 25,13 C25,11.897 25.897,11 27,11 C28.103,11 29,11.897 29,13 C29,14.103 28.103,15 27,15 M19,29 C19,30.103 18.103,31 17,31 C15.897,31 15,30.103 15,29 C15,27.897 15.897,27 17,27 C18.103,27 19,27.897 19,29 M53,0 C51.346,0 50,1.346 50,3 C50,3.888 50.396,4.679 51.011,5.229 L42.211,19.26 C41.84,19.095 41.431,19 41,19 C40.132,19 39.356,19.376 38.807,19.967 L29.734,14.222 C29.902,13.848 30,13.436 30,13 C30,11.346 28.654,10 27,10 C25.346,10 24,11.346 24,13 C24,13.904 24.41,14.706 25.044,15.256 L18.149,26.231 C17.795,26.083 17.407,26 17,26 C15.346,26 14,27.346 14,29 C14,30.654 15.346,32 17,32 C18.654,32 20,30.654 20,29 C20,28.112 19.605,27.322 18.99,26.772 L25.894,15.782 C26.237,15.92 26.609,16 27,16 C27.859,16 28.629,15.633 29.176,15.053 L38.254,20.801 C38.093,21.169 38,21.573 38,22 C38,23.654 39.346,25 41,25 C42.654,25 44,23.654 44,22 C44,21.137 43.629,20.364 43.043,19.816 L51.853,5.77 C52.207,5.917 52.594,6 53,6 C54.654,6 56,4.654 56,3 C56,1.346 54.654,0 53,0" id="Page-1"></path>
+									                </g>
+									            </g>
+									        </g>
+									    </g>
+									</svg>
 									Balanços
 								</a>
 							</div>
 						</div>
 					</div>
-					<div class="col-md-5 quem-somos-nav--link">
+					<div class="col-12 col-md-5 quem-somos-nav--link">
 						<p>
 							Confira aqui as informações referentes ao art. 48 da resolução 632/2014 
 							<span class="btn-more"></span>

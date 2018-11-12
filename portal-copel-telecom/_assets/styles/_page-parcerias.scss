@@ -5,7 +5,10 @@
 .parcerias-header {
 	position: relative;
 	height: 720px;
+	background-repeat: no-repeat;
 	background-position: bottom center;
+	background-size: cover;
+	z-index: 1;
 
 	.main-breadcrumb a {
 		color: #fff;
@@ -36,6 +39,12 @@
 		position: absolute;
 		top: 130px;
 		width: 37%;
+
+		&:after {
+			clear: both;
+			content: "";
+			display: table;
+		}
 	}
 
 	h1,h2,h3,h4,h5 {
@@ -60,28 +69,100 @@
 
 	img {
 		display: block;
-		left: 50%;
+		left: 54%;
 		position: absolute;
-		top: 50%;
+		top: 60%;
 		transform: translate(-50%,-50%);
+	}
+
+	svg {
+		bottom: -4px;
+		display: block;
+		height: 100%;
+		height: auto;
+		left: 0;
+		position: absolute;
+		width: 100%;
+		z-index: -1;
+	}
+
+	@include media-breakpoint-down(sm) {
+	    background-size: auto 301px;
+	    background-position: center 60px;
+	    height: auto;
+
+		&:before {
+			max-width: 128px;
+			left: 0;
+			right: auto;
+			z-index: 2;
+		}
+
+		.parcerias-header--text {
+			background: #fff;
+			top: auto;
+			width: auto;
+			position: relative;
+			margin: 190px -15px 0;
+			min-width: 100%;
+			text-align: center;
+			padding: 200px 15px 15px;
+			
+			&:before {
+				content: "";
+				display: block;
+				width: 100%;
+				background-image: url(../images/rectangle-white.svg);
+				background-size: 100% auto;
+				background-position: bottom;
+				background-repeat: no-repeat;
+				height: 328px;
+				position: absolute;
+				bottom: 100%;
+				left: 0;
+				margin-bottom: -2px;
+			}
+		}
+
+		h1,h2,h3,h4,h5,h6 {
+			color: #283336;
+		}
+
+		p {
+			color: #283336;
+		}
+
+		img {
+			transform: transformX(-50%);
+			left: 50%;
+			top: 255px;
+			max-width: 150px;
+		}
+
+		.btn {
+			color: #fff;
+			float: none;
+			background: color('orange');
+		}
 	}
 }
 
-
 .parcerias-content {
+	padding-top: 120px;
 
 	&--text {
-		margin-top: 120px;
+		margin-top: 30px;
 	}
 
 	img {
 		margin: 0 0 15px;
 		position: relative;
 		z-index: -1;
+		max-width: 100%;
 	}
 	
 	h2,h3,h4,h5,h6 {
-		font-family: 700;
+		font-weight: 700;
 		font-size: 30px;
 		color: color('gray-dark');
 		letter-spacing: 0;
@@ -95,6 +176,18 @@
 		font-weight: 400;
 		line-height: 25px;
 		margin-bottom: 20px;
+	}
+
+	@include media-breakpoint-down(sm) {
+		padding-top: 40px;
+
+		.parcerias-content--text {
+			margin-top: 50px;
+			h2,h3,h4,h5,h6 {
+				font-size: 24px;
+				line-height: 36px;
+			}
+		}
 	}
 }
 
@@ -140,17 +233,66 @@
 			margin-top: 20px;
 			display: inline-block;
 		}
+
+		@include media-breakpoint-down(sm) {
+			column-count: 1;
+			padding: 80px 0 60px;
+		}
+	}
+
+	&--itens {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		list-style: none;
+		margin: 0 auto;
+		max-width: 800px;
+		padding: 100px 0;
+		width: 100%;
+
+		li {
+			max-width: 200px;
+			font-weight: 400;
+			font-size: 15px;
+			color: #FFFFFF;
+			text-align: center;
+			line-height: 20px;			
+
+			svg {
+				display: block;
+				margin: 0 auto;
+			}
+		}
 	}
 
 	&--mockups {
 		display: block;
 		margin: 0 auto;
+		padding: 0 15px;
 		max-width: 100%;
 	}
+
+	@include media-breakpoint-down(sm) {
+		.parcerias-sobre--itens {
+			flex-direction: column;
+			padding-bottom: 50px;
+
+			li {
+				padding-bottom: 30px;
+				margin: 0 auto;
+			}
+		}
+
+	}	
 }
 
-.parcerias-cliente {
-	padding-top: 20px;
+.parcerias-steps {
+	
+	.container {
+		padding-top: 20px;
+		position: relative;
+		padding-bottom: 120px;
+	}
 
 	h1,h2,h3,h4,h5,h6 {
 		font-weight: 700;
@@ -167,6 +309,10 @@
 		color: color('gray-dark');
 		text-align: center;
 		line-height: 25px;
+
+		a {
+			color: color('orange-light');
+		}
 	}
 
 	&--item {
@@ -177,6 +323,7 @@
 		margin: 20px auto;
 		min-height: 474px;
 		overflow: hidden;
+		text-align: center;
 		padding: 40px 40px 0;
 		position: relative;
 
@@ -246,8 +393,30 @@
 		font-size: 13px;
 		font-weight: 400;
 		line-height: 25px;
-		padding: 40px 0 60px;
+		padding: 55px 0;
 		text-align: center;
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		left: 0;
+	}
+
+	@include media-breakpoint-down(sm) {
+		.container {
+			padding-top: 20px;
+			position: relative;
+			padding-bottom: 50px;
+		}
+
+		h1,h2,h3,h4,h5,h6 {
+			font-size: 24px;
+			line-height: 30px;
+		}
+
+		.parcerias-steps--obs {
+			position: static;
+			padding: 20px 0;
+		}
 	}
 }
 
@@ -275,6 +444,13 @@
 			color: color('orange');
 		}
 	}
+
+	@include media-breakpoint-down(sm) {
+		h1,h2,h3,h4,h5,h6 {
+			font-size: 24px;
+			line-height: 30px;
+		}
+	}
 }
 
 .parcerias-naocliente {
@@ -289,5 +465,13 @@
 		text-align: center;
 		line-height: 30px;
 		display: block;
+	}
+
+	@include media-breakpoint-down(sm) {
+		padding: 40px 0;
+		h1,h2,h3,h4,h5,h6 {
+			font-size: 24px;
+			line-height: 36px;
+		}
 	}
 }

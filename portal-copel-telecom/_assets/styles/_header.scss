@@ -80,9 +80,9 @@
 .header-nav {
 	background: #FFFFFF;
 	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
-	width: 100%;
-	transition: all 0.3s ease-in-out;
 	position: relative;
+	transition: all 0.3s ease-in-out;
+	width: 100%;
 
 	.logo {
 		float: left;
@@ -133,6 +133,10 @@
 				}
 			}
 		}
+	}
+
+	.btn-assine {
+		float: right;
 	}
 
 	&:after {
@@ -195,6 +199,11 @@
     top: -500px;
     transition: opacity 0.3s ease-in-out;
     z-index: -99999;
+
+    .planos-item {
+    	max-width: 270px;
+    	margin: 0 15px;
+    }
 
 	@include media-breakpoint-down(sm) {
 		display: none;
