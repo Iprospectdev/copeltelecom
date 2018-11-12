@@ -149,14 +149,24 @@
 					<?php endif ?>
 				</div>
 			</div>
-			
-			<?php if (in_array($profile->cidade, $sercontel)): ?>
+
 			<div class="container">
 				<div class="highlight-sercontel">
 					<dl>
+						<dd>
+							Consultando o site da Copel Telecom, observa-se que as cidades: Ângulo, Atalaia, Cascavel, Douradina, Fênix, Floraí, Flórida, Francisco Alves, Francisco Beltrão, Iguaraçu, Ivatuba, Mandaguaçu, Marialva, Mercedes, Nova Esperança, Nova Santa Rosa, Ourizona, Ouro Verde do Oeste, Paiçandu, Pato Bragado, Pitangueiras, Presidente Castelo Branco, Quatro Pontes, Quinta do Sol, Rio Branco do Ivaí, Sabáudia, São Jorge do Ivaí, São Pedro do Ivaí e Umuarama não estão com a opção: Quer contratar um plano de telefonia também?
+						</dd>
+					</dl>
+				</div>
+			</div>
+			
+			<?php if (in_array($profile->cidade, $sercontel)): ?>
+			<div class="container">
+				<div class="highlight-sercontel" style="padding-top: 30px;">
+					<dl>
 						<dt>Quer contratar um plano de telefonia também?</dt>
 						<dd>
-							Para ter Copel Telecom na sua casa você não precisa adquirir um combo de serviços, apenas o plano de internet. Mas, caso deseje contratar um serviço de telefonia, entre em contato com a <a href="https://www.sercomtel.com.br/plano/fixa/pos-pago/3/N" target="_blank">Sercomtel</a>. 
+							Para ter Copel Telecom na sua casa você não precisa adquirir um combo de serviços, apenas o plano de internet. Mas, caso deseje contratar um serviço de telefonia, entre em contato com a <a href="https://www.sercomtel.com.br/copel" target="_blank">Sercomtel</a>. 
 							<br><br>
 							A Copel Telecom mantém uma parceria para disponibilizar telefonia fixa da Sercomtel por meio da mesma infraestrutura de fibra óptica usada para internet. Confira os planos telefônicos da Sercomtel ou tire dúvidas sobre esse serviço por meio do telefone 103 43.
 						</dd>
