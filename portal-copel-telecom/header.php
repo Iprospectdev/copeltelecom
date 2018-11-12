@@ -43,8 +43,8 @@
         <div class="header-top">
             <div class="container">
                 <nav class="header-top--nav">
-                    <a href="" class="header-top--btn active">Para você</a>
-                    <a href="" class="header-top--btn">Para empresas</a>
+                    <a href="<?php echo home_url() ?>" class="header-top--btn active">Para você</a>
+                    <a href="<?php $p=get_page_by_title('Empresas'); echo get_permalink($p->ID); ?>" class="header-top--btn">Para empresas</a>
                 </nav>
                 
                 <div class="header-top--acessibilidade">
@@ -136,7 +136,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#">Sobre nós</a>
+                            <a href="<?php $p = get_page_by_title('Quem Somos'); echo get_permalink($p->ID); ?>">Sobre nós</a>
                         </li>
                         <li>
                             <a href="#">App Copel</a>

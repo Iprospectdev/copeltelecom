@@ -16,7 +16,7 @@ window.onload = function() {
     }
   });
   
-  $('body').scrollspy({ target: '.js-scrollspy', offset: $('.header-nav.fixed').height()+10 })
+  $('body').scrollspy({ target: '.js-scrollspy', offset: $('.header-nav.fixed').height() + 10 })
 
   $(window).on('scroll', function(event) {
     if(!$('.header-nav.fixed .active').length){
@@ -114,7 +114,6 @@ window.onload = function() {
           owlplanos.trigger('prev.owl.carousel');
       })
     
-
       function disableNav() {
         setTimeout(function() {
           $('.home-planos-carousel-prev,.home-planos-carousel-next').removeClass('disabled');
@@ -149,6 +148,17 @@ window.onload = function() {
         owlplanos.trigger('refresh.owl.carousel');
         removeNav();
       });
+  }
+
+  var owlcarousel = $(".home-usos-carousel");
+  if(owlcarousel.length > 0) {
+    owlcarousel.owlCarousel({
+      autoplay: false,
+      loop: false,
+      dots: false,
+      nav: true,
+      items: 3,
+    })
   }
 
 } //window on load

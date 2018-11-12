@@ -1,0 +1,283 @@
+.quem-somos-i {
+    background-image: url(../images/quem-somos-i.png);
+    background-repeat: no-repeat;
+    display: block;
+    height: 48px;
+    margin: 0 auto;
+    width: 50px;
+	
+	&.estatuto {
+		background-position: 0 0;
+	}
+	
+	&.acionista {
+		background-position: -50px 0;
+	}
+	
+	&.balancos {
+		background-position: -100px 0;
+	}
+}
+
+.quem-somos-heading {
+	h1,h2,h3,h4,h5,h6 {
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-image: linear-gradient(-90deg, #FFA600 0%, color('orange') 100%);
+		font-weight: 700;
+		text-align: center;
+		font-size: 40px;
+		margin: 20px 0;
+	}
+
+	p {
+		font-weight: 400;
+		font-size: 20px;
+		color: color('gray-dark');
+		line-height: 30px;
+		padding-top: 100px;
+	}
+
+	img {
+		float: right;
+		max-width: 100%;
+	}
+
+	&:after {
+		content: "";
+		clear: both;
+		display: table;
+	}
+
+	@include media-breakpoint-down(sm) {
+		p {
+			padding-top: 40px;
+		}
+	}
+}
+
+.quem-somos-alcance {
+	background: color('orange-light');
+	padding-bottom: 90px;
+	position: relative;
+	width: 100%;
+
+	img {
+		max-width: 100%;
+	}
+
+	&:before {
+		content: "";
+		display: block;
+		width: 100%;
+		background-image: url(../images/rectangle.svg);
+		background-size: 100% auto;
+		background-position: bottom;
+		background-repeat: no-repeat;
+		height: 328px;
+		position: absolute;
+		bottom: 100%;
+		left: 0;
+		margin-bottom: -2px;
+	}
+
+	h1,h2,h3,h4 {
+		font-weight: 700;
+		font-size: 30px;
+		color: #FFFFFF;
+		text-align: center;
+		line-height: 40px;
+		margin: 0 0 30px;
+	}
+
+	&--iconarea {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		margin-bottom: 40px;
+
+		svg,img {
+			margin-right: 10px;
+			width: 75px;
+			min-width: 75px;
+		}
+
+		span {
+			font-size: 15px;
+			color: #FFFFFF;
+			line-height: 20px;
+		}
+	}
+
+	p {
+		font-weight: 400;
+		font-size: 15px;
+		color: #FFFFFF;
+		line-height: 25px;
+	}
+}
+
+.quem-somos-copel {
+	padding: 100px 0;
+
+	h1,h2,h3,h4,h5,h6 {
+		font-weight: 700;
+		font-size: 30px;
+		color: color('gray-dark');
+		text-align: center;
+		line-height: 40px;
+	}
+
+	p {
+		font-family: 400;
+		font-size: 15px;
+		color: color('gray-dark');
+		text-align: center;
+		line-height: 25px;
+	}
+
+	@include media-breakpoint-down(sm) {
+		padding: 60px 0;
+	}
+}
+
+.quem-somos-banner {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	padding: 0 15px;
+
+	&:before {
+		@include main-lines('top');
+	}
+
+	.container {
+		padding: 150px 0;
+		position: relative;
+	}
+
+	h1,h2,h3,h4,h5 {
+		font-weight: 700;
+		font-size: 30px;
+		color: #FFFFFF;
+		text-align: center;
+		line-height: 40px;
+	}
+
+	p {
+		color: #FFFFFF;
+		display: block;
+		font-size: 15px;
+		font-weight: 400;
+		line-height: 25px;
+		margin: 0 auto 40px;
+		max-width: 900px;
+		text-align: center;
+	}
+
+	&--item {
+		max-width: 200px;
+		margin: 0 auto;
+
+		svg,img {
+			display: block;
+			margin: 0 auto 15px;
+		}
+		p {
+			font-family: 400;
+			font-size: 15px;
+			color: #FFFFFF;
+			text-align: center;
+			line-height: 20px;
+		}
+	}
+
+	small {
+		background: #FFFFFF;
+		border-radius: 5px;
+		bottom: 0;
+		display: block;
+		padding: 25px;
+		box-shadow: 0 2px 30px 0 rgba(0,0,0,0.15);
+		color: color('orange-light');
+		display: block;
+		font-size: 20px;
+		width: 100%;
+		font-weight: 700;
+		margin-bottom: -40px;
+		left: 0;
+		line-height: 25px;
+		position: absolute;
+		text-align: center;
+	}
+
+	@include media-breakpoint-down(sm) {
+		.container {
+			padding: 60px 0;
+		}
+	}
+}
+
+.quem-somos-nav {
+	background: #F2F5F6;
+	padding-top: 60px;
+
+	&--item {
+		color: color('gray-dark');
+		font-size: 15px;
+		position: relative;
+		text-align: center;
+		padding-top: 60px;
+		padding-bottom: 60px;
+		
+		a {
+			color: inherit;
+		}
+
+		i {
+			margin: 0 auto;
+			display: block;
+		}
+
+		&:after {
+		    background: #d4d5d7;
+		    content: "";
+		    display: block;
+		    height: 60px;
+		    margin-top: -30px;
+		    position: absolute;
+		    right: 0;
+		    top: 50%;
+		    width: 1px;
+		}
+
+		@include media-breakpoint-down(sm) {
+			padding-top: 15px;
+			padding-bottom: 15px;	
+
+			&:after {
+				display: none;
+			}
+		}
+	}
+
+	&--link {
+		display: flex;
+		align-items: center;
+		flex-direction: row;
+		padding: 15px 50px 15px 40px;
+		color: color('gray-dark');
+		
+		a {
+			color: inherit;
+		}
+
+		.btn-more {
+			position: absolute;
+			right: 15px;
+			top: 50%;
+			margin-top: -25px;
+		}
+	}
+}

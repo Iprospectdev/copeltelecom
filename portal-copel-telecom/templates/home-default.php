@@ -14,12 +14,12 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#usosideias" class="nav-link js-scrollto" data-show=".home-usos--devices, .home-usos--mockups-usos">
+                            <a href="#usosideias" class="nav-link js-scrollto" data-show=".home-usos--devices, .home-usos--mockups-usos, .fixed-top">
                                 Usos Ideis
                             </a>
                         </li>
                         <li>
-                            <a href="#ei" class="nav-link js-scrollto" data-show=".home-usos--devices, .home-usos--mockups-ei">
+                            <a href="#ei" class="nav-link js-scrollto" data-show=".home-usos--devices, .home-usos--mockups-ei, .fixed-top">
                                 Esporta Interativo
                             </a>
                         </li>
@@ -52,7 +52,6 @@
             </div>
             <span class="header-nav--loader" style="width: 0%;"></span>
         </nav>
-	
 	
         <div class="home-carousel owl-carousel">
             <div class="home-carousel--item">
@@ -301,21 +300,16 @@
                     <div class="row">
                         <div class="col-12 col-md-6 home-geolocation--legend">
 
+
                             <svg width="90px" height="115px" viewBox="0 0 90 115" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <defs>
-                                    <linearGradient x1="0%" y1="93.8648897%" x2="100%" y2="5.78661152%" id="linearGradient-1">
-                                        <stop stop-color="#FFA600" offset="0%"></stop>
-                                        <stop stop-color="#FF6D00" offset="100%"></stop>
-                                    </linearGradient>
-                                </defs>
                                 <g id="00_home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                                     <g id="01_home_banner1_informar-endereco" transform="translate(-154.000000, -743.000000)">
                                         <g id="Group-21" transform="translate(98.000000, 606.000000)">
                                             <g id="Group-9">
                                                 <g id="Group-30" transform="translate(58.000000, 139.000000)">
                                                     <g id="Group-39">
-                                                        <circle id="Oval-4" stroke="url(#linearGradient-1)" stroke-width="3" cx="43.5" cy="43.5" r="33.5"></circle>
-                                                        <circle id="Oval-4" stroke="url(#linearGradient-1)" stroke-width="3" cx="43" cy="43" r="43"></circle>
+                                                        <circle id="Oval-4" stroke="#FFA600" stroke-width="3" cx="43.5" cy="43.5" r="33.5"></circle>
+                                                        <circle id="Oval-4" stroke="#FFA600" stroke-width="3" cx="43" cy="43" r="43"></circle>
                                                         <ellipse id="Oval-3" fill="#464D5C" opacity="0.300000012" cx="43" cy="104" rx="25" ry="9"></ellipse>
                                                         <g id="placeholder" transform="translate(23.000000, 24.000000)" fill="#464D5C">
                                                             <path d="M34.3184444,28.5910664 L20.2524444,52.1222695 L5.81855556,28.8168398 C4.19266667,26.1859336 3.31111111,23.1506836 3.31111111,20.0390625 C3.31111111,10.8311133 10.81,3.31757812 20,3.31757812 C29.19,3.31757812 36.6777778,10.8311133 36.6777778,20.0390625 C36.6777778,23.0583926 35.8543333,26.0160469 34.3184444,28.5910664 Z M20,0 C8.972,0 0,8.98952344 0,20.0390625 C0,23.7723398 1.03211111,27.4156641 2.98544444,30.5764922 L18.8615556,56.2105723 C19.1656667,56.7016406 19.7014444,57 20.2776667,57 C20.2821111,57 20.2864444,57 20.2908889,57 C20.8721111,56.9954355 21.409,56.6878359 21.7075556,56.1881953 L37.179,30.3057422 C39.0245556,27.2117109 40,23.6615684 40,20.0390625 C40,8.98952344 31.028,0 20,0 Z" id="Fill-1"></path>
@@ -348,9 +342,11 @@
             </div>
 
             <div class="home-planos--box-empresas">
-                <h6>Copel Fibra para empresas</h6>
-                <p>Se você tem uma empresa e quer ter a garantia da melhor entrega, com máxima estabilidade para todos os seus dispositivos, os nossos planos empresarias são ideais para você.</p>
-                <a href="#" class="btn-more"></a>
+                <h6>
+                    Copel Fibra para empresas
+                    <a href="#" class="btn-more"></a>
+                </h6>
+                <p>Se você tem uma empresa e quer ter a garantia da melhor entrega, com máxima estabilidade para todos os seus dispositivos, os nossos planos empresarias são ideais para você.</p>                
             </div>
 
             <h6 class="home-planos--heading">
@@ -359,7 +355,8 @@
             
         </section>
 
-        <section class="home-fibra" id="fibraoptica" style="background-image: url(<?php bloginfo('template_url'); ?>/_assets/images/home-fibra-bg.jpg);">
+        <section class="home-fibra" id="fibraoptica">
+            <img src="<?php bloginfo('template_url'); ?>/_assets/images/placeholder/home-fibra.jpg" alt="">
             <div class="container">
                 <div class="home-fibra--text">
                     <h6 class="home-fibra--heading">
@@ -374,7 +371,9 @@
 		</section>
 
         <div class="home-usos">
-            <div class="sticky-top">
+            <img class="home-usos--bg" src="<?php bloginfo('template_url'); ?>/_assets/images/home-usos-bg.png" alt="">
+            <div class="fixed-top">
+                <img class="home-usos--bg" src="<?php bloginfo('template_url'); ?>/_assets/images/home-usos-bg.png" alt="">
                 <div class="home-usos--devices">
                     <div class="tv">
                         <div class="tv--img">
@@ -407,24 +406,195 @@
                 </div>
             </div>
             <section class="home-usos-ideias" id="usosideias">
-                <div style="height: 600px; background: #f4f4f4; display: block;"></div>
+                <div class="container d-flex align-items-center">
+                    <div class="home-usos--content">
+                        <img src="<?php bloginfo('template_url'); ?>/_assets/images/placeholder/mockups.jpg" class="home-usos--mobile" alt="">
+                        <h6>
+                            <svg width="112px" height="112px" viewBox="0 0 112 112" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="00_home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="01_home" transform="translate(-797.000000, -2587.000000)"><g id="Group-49" transform="translate(798.000000, 2589.000000)"><g id="Group-25"><g id="Group-41"><g id="Group-42" transform="translate(1.000000, 0.000000)"><g id="Group-56"><circle id="Oval-6" stroke="#FFA600" stroke-width="3" cx="54" cy="54" r="54"></circle><path d="M68.3989703,30.0819608 L39.4873452,52.6945422 C39.2585893,52.8751343 39.3123122,53.239825 39.5843931,53.343271 L49.7796272,57.2514236 C49.9997181,57.335583 50.0881011,57.6055944 49.9598591,57.805473 L38.0628198,76.4187291 C37.8357969,76.7729 38.2725127,77.1779172 38.6017826,76.9166723 L66.7474221,54.7020948 C66.970979,54.5250093 66.922455,54.1708385 66.6607721,54.0603793 L56.8398658,49.957608 C56.6249739,49.8681887 56.543523,49.6016839 56.6717649,49.4053119 L68.9362,30.5851639 C69.1649559,30.2309931 68.7299731,29.8224692 68.3989703,30.0819608 Z" id="Page-1" stroke="#464D5C" stroke-width="2"></path></g></g></g></g></g></g></g></svg>
+                            A internet que acompanha o seu uso!
+                        </h6>
+                        <p>A Copel Fibra entrega a internet que você precisa, na hora que você precisa, para tudo o que você precisa.</p>
+                        <div class="owl-carousel home-usos-carousel">
+                            <div class="home-usos-carousel--item">
+                                <div>
+                                    <img src="<?php bloginfo('template_url'); ?>/_assets/images/icon-videos-online.svg" alt="">
+                                    Vídeos Online
+                                </div>
+                            </div>
+                            <div class="home-usos-carousel--item">
+                                <div>
+                                    <img src="<?php bloginfo('template_url'); ?>/_assets/images/icon-jogos-online.svg" alt="">
+                                    Jogos Online
+                                </div>
+                            </div>
+                            <div class="home-usos-carousel--item">
+                                <div>
+                                    <img src="<?php bloginfo('template_url'); ?>/_assets/images/icon-redes-sociais.svg" alt="">
+                                    Redes Sociais
+                                </div>
+                            </div>
+                            <div class="home-usos-carousel--item">
+                                <div>
+                                    <img src="<?php bloginfo('template_url'); ?>/_assets/images/icon-videos-online.svg" alt="">
+                                    Vídeos Online
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
-    		<section class="home-ei" id="ei">
-    			<div style="height: 600px; background: #f2f2f2; display: block;"></div>
+    		<section class="home-ei home-usos--height" id="ei">
+                <div class="container d-flex align-items-center">
+                    <div class="home-usos--content">
+                        <img src="<?php bloginfo('template_url'); ?>/_assets/images/placeholder/mockups-ei.jpg" class="home-usos--mobile" alt="">
+                        <img src="<?php bloginfo('template_url'); ?>/_assets/images/logo-ei.png" alt="">
+                        <p>A Copel Fibra entrega a internet que você precisa, na hora que você precisa, para tudo o que você precisa.</p>
+                        <a href="#" class="btn-more">Saiba mais</a>
+                    </div>
+                </div>
     		</section>
-    		<section class="home-cn-ja" id="cnja">
-    			<div style="height: 600px; background: #f4f4f4; display: block;"></div>
+    		<section class="home-cn-ja home-usos--height" id="cnja">
+                <div class="container d-flex align-items-center">
+                    <div class="home-usos--content">
+                        <img src="<?php bloginfo('template_url'); ?>/_assets/images/placeholder/mockups-cnja.jpg" class="home-usos--mobile" alt="">
+                        <img src="<?php bloginfo('template_url'); ?>/_assets/images/logo-cnja.png" alt="">
+                        <p>A Copel Fibra entrega a internet que você precisa, na hora que você precisa, para tudo o que você precisa.</p>
+                        <a href="#" class="btn-more">Saiba mais</a>
+                    </div>
+                </div>
     		</section>
         </div>
 
 		<section class="home-testes" id="testes">
-			<div style="height: 500px; background: #f2f2f2; display: block;"></div>
+            <img src="<?php bloginfo('template_url'); ?>/_assets/images/home-testes-bg.svg" class="home-testes--bg" alt="">
+			<div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="home-testes--box">
+                            <h6>
+                                <svg width="90px" height="117px" viewBox="0 0 90 117" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><filter x="-6.0%" y="-16.7%" width="112.0%" height="133.3%" filterUnits="objectBoundingBox" id="filter-1"><feGaussianBlur stdDeviation="1" in="SourceGraphic"></feGaussianBlur></filter></defs><g id="00_home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="01_home_banner1_informar-endereco" transform="translate(-152.000000, -3014.000000)"><g id="Group-51" transform="translate(98.000000, 2962.000000)"><g id="Group-39" transform="translate(56.000000, 54.000000)"><g id="Group-45"><circle id="Oval-4" stroke="#FFA600" stroke-width="3" cx="43.5" cy="43.5" r="33.5"></circle><circle id="Oval-4" stroke="#FFA600" stroke-width="3" cx="43" cy="43" r="43"></circle><ellipse id="Oval-3" fill="#464D5C" opacity="0.5" filter="url(#filter-1)" cx="43" cy="104" rx="25" ry="9"></ellipse><g id="placeholder" transform="translate(23.000000, 24.000000)" fill="#464D5C"><path d="M34.3184444,28.5910664 L20.2524444,52.1222695 L5.81855556,28.8168398 C4.19266667,26.1859336 3.31111111,23.1506836 3.31111111,20.0390625 C3.31111111,10.8311133 10.81,3.31757812 20,3.31757812 C29.19,3.31757812 36.6777778,10.8311133 36.6777778,20.0390625 C36.6777778,23.0583926 35.8543333,26.0160469 34.3184444,28.5910664 Z M20,0 C8.972,0 0,8.98952344 0,20.0390625 C0,23.7723398 1.03211111,27.4156641 2.98544444,30.5764922 L18.8615556,56.2105723 C19.1656667,56.7016406 19.7014444,57 20.2776667,57 C20.2821111,57 20.2864444,57 20.2908889,57 C20.8721111,56.9954355 21.409,56.6878359 21.7075556,56.1881953 L37.179,30.3057422 C39.0245556,27.2117109 40,23.6615684 40,20.0390625 C40,8.98952344 31.028,0 20,0 Z" id="Fill-1"></path><path d="M20,26.6888889 C16.3047778,26.6888889 13.3111111,23.6852222 13.3111111,20 C13.3111111,16.324 16.324,13.3111111 20,13.3111111 C23.676,13.3111111 26.6777778,16.324 26.6777778,20 C26.6777778,23.6314444 23.7537778,26.6888889 20,26.6888889 Z M20,10 C14.486,10 10,14.486 10,20 C10,25.4787778 14.413,30 20,30 C25.6558889,30 30,25.4185556 30,20 C30,14.486 25.514,10 20,10 Z" id="Fill-2"></path></g></g></g></g></g></g></svg>
+                                Onde estamos
+                            </h6>
+                            <p>Temos a maior cobertura em fibra óptica do Paraná. Quer saber se já chegamos na sua rua?</p>
+                            <a href="#" class="btn-assine">Consulte</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="home-testes--box">
+                            <h6>
+                                <svg width="84px" height="129px" viewBox="0 0 84 129" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <defs>
+                                        <filter x="-5.0%" y="-16.7%" width="110.0%" height="133.3%" filterUnits="objectBoundingBox" id="filter-1">
+                                            <feGaussianBlur stdDeviation="1" in="SourceGraphic"></feGaussianBlur>
+                                        </filter>
+                                        <polygon id="path-2" points="0 0 69.9827869 0 69.9827869 60.7221754 0 60.7221754"></polygon>
+                                    </defs>
+                                    <g id="00_home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g id="01_home_banner1_nao-disponivel" transform="translate(-750.000000, -3013.000000)">
+                                            <g id="Group-50" transform="translate(698.000000, 2962.000000)">
+                                                <g id="Group-21" transform="translate(54.000000, 53.000000)">
+                                                    <path d="M34,9 L0,67" id="Line-3" stroke="#FFA600" stroke-width="3" stroke-linecap="round"></path>
+                                                    <path d="M47,0 L16,53" id="Line-3" stroke="#FFA600" stroke-width="3" stroke-linecap="round"></path>
+                                                    <g id="Group-38" transform="translate(12.000000, 30.000000)">
+                                                        <ellipse id="Oval-3" fill="#464D5C" opacity="0.5" filter="url(#filter-1)" cx="35" cy="86" rx="30" ry="9"></ellipse>
+                                                        <g id="download-speed">
+                                                            <g id="Group-3">
+                                                                <mask id="mask-3" fill="white">
+                                                                    <use xlink:href="#path-2"></use>
+                                                                </mask>
+                                                                <g id="Clip-2"></g>
+                                                                <path d="M70,35.5482559 C70,25.9128578 66.1448361,17.1687536 59.9085246,10.7961327 C59.8591803,10.7319526 59.8078279,10.6674834 59.7484426,10.6076398 C59.689918,10.5489526 59.6262295,10.4957583 59.5611066,10.4471896 C53.2384426,4.16274408 44.5613115,0.278113744 35,0.278113744 C25.4386885,0.278113744 16.7615574,4.16274408 10.4377459,10.4471896 C10.3737705,10.4969147 10.310082,10.5489526 10.2515574,10.6076398 C10.1921721,10.6674834 10.1408197,10.7307962 10.0914754,10.7961327 C3.85516393,17.1687536 0,25.9128578 0,35.5482559 C0,44.9676967 3.64,53.8233934 10.2484016,60.4851137 C10.2495492,60.4862701 10.2504098,60.4874265 10.2515574,60.4874265 C10.2515574,60.4885829 10.2527049,60.4885829 10.2527049,60.4897393 L10.2561475,60.4920521 C10.592377,60.8308768 11.0327459,61.0002891 11.4731148,61.0002891 C11.9134836,61.0002891 12.3538525,60.8308768 12.690082,60.4920521 C12.7193443,60.462564 12.7451639,60.4322085 12.7709836,60.401564 L18.074918,55.0555355 C18.747377,54.3778863 18.747377,53.2804645 18.074918,52.6028152 C17.4036066,51.9263223 16.3131557,51.9263223 15.6409836,52.6028152 L11.502377,56.7742322 C6.67467213,51.3617109 3.8752459,44.5496588 3.48967213,37.2828531 L9.34385246,37.2828531 C10.2943033,37.2828531 11.0651639,36.5057536 11.0651639,35.5482559 C11.0651639,34.5904692 10.2943033,33.8136588 9.34385246,33.8136588 L3.48967213,33.8136588 C3.8907377,26.3499763 6.85598361,19.5630758 11.5135656,14.3332654 L15.6409836,18.4934076 C15.9769262,18.8310758 16.417582,19.0004882 16.8579508,19.0004882 C17.2983197,19.0004882 17.7398361,18.8310758 18.074918,18.4934076 C18.747377,17.8160474 18.747377,16.7171801 18.074918,16.0395308 L13.9475,11.8790995 C19.1372541,7.18701422 25.872459,4.19772512 33.2786885,3.79472038 L33.2786885,9.69408531 C33.2786885,10.6527393 34.0498361,11.4286825 35,11.4286825 C35.9501639,11.4286825 36.7213115,10.6527393 36.7213115,9.69408531 L36.7213115,3.79472038 C44.127541,4.19772512 50.8627459,7.18701422 56.0525,11.8802559 L51.9239344,16.0395308 C51.252623,16.7171801 51.252623,17.8160474 51.9239344,18.4934076 C52.2601639,18.8310758 52.7005328,19.0004882 53.1409016,19.0004882 C53.5815574,19.0004882 54.0230738,18.8310758 54.3581557,18.4934076 L58.4864344,14.3332654 C63.1428689,19.5630758 66.1092623,26.3499763 66.5091803,33.8136588 L60.6561475,33.8136588 C59.7045492,33.8136588 58.9348361,34.5904692 58.9348361,35.5482559 C58.9348361,36.5057536 59.7045492,37.2828531 60.6561475,37.2828531 L66.5103279,37.2828531 C66.1247541,44.5496588 63.3241803,51.3617109 58.497623,56.7742322 L54.3581557,52.6028152 C53.6868443,51.9263223 52.5963934,51.9263223 51.9239344,52.6028152 C51.252623,53.2804645 51.252623,54.3790427 51.9239344,55.0555355 L57.3142213,60.4874265 C57.6504508,60.8262512 58.0908197,60.9956635 58.5311885,60.9956635 C58.7520902,60.9956635 58.9718443,60.9528768 59.1789754,60.869327 C59.3863934,60.7846209 59.5803279,60.6568389 59.7484426,60.4874265 C66.3591393,53.8257062 70,44.9688531 70,35.5482559 Z" id="Fill-1" fill="#464D5C" mask="url(#mask-3)"></path>
+                                                            </g>
+                                                            <path d="M41.9583001,16.1183419 C41.1076364,15.7808412 40.1425559,16.1899992 39.8026221,17.0307425 L35.0103842,28.8681556 C34.7868017,28.8446345 38.2491521,30.0753907 38.1258916,29.9963488 L42.880267,18.2508321 C43.2215826,17.4100889 42.8081347,16.4547486 41.9583001,16.1183419 Z" id="Fill-4" fill="#464D5C"></path>
+                                                            <path d="M35.5,42 C31.9101491,42 29,39.0898509 29,35.5 C29,31.9101491 31.9101491,29 35.5,29 C39.0898509,29 42,31.9101491 42,35.5 C42,39.0898509 39.0898509,42 35.5,42 Z M35.5,39.4 C37.6539105,39.4 39.4,37.6539105 39.4,35.5 C39.4,33.3460895 37.6539105,31.6 35.5,31.6 C33.3460895,31.6 31.6,33.3460895 31.6,35.5 C31.6,37.6539105 33.3460895,39.4 35.5,39.4 Z" id="Combined-Shape" fill="#464D5C"></path>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                                Speedtest
+                            </h6>
+                            <p>Entregamos a mesma velocidade de download e upload. Quer ver como está a velocidade da sua internet?</p>
+                            <a href="#" class="btn-assine">Teste</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 		</section>
-		<section class="home-app-copel" id="appcopel">
-			<div style="height: 500px; background: #f4f4f4; display: block;"></div>
+
+		<section class="home-app" id="appcopel">
+			<div class="container">
+                <div class="row d-flex align-items-center">
+                    <div class="col-12 col-md-7">
+                        <img src="<?php bloginfo('template_url'); ?>/_assets/images/home-app.png" alt="">
+                    </div>
+                    <div class="col-12 col-md-5">
+                        <div class="home-app--content">
+                            <h6>
+                                <img src="<?php bloginfo('template_url'); ?>/_assets/images/icon-phone.svg" alt="">
+                                App<br>Copel
+                            </h6>
+                            <p>Toda a facilidade e velocidade da <strong>Copel Fibra</strong> agora em suas mãos.</p>
+                            <a href="#" class="btn-assine">Saiba mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 		</section>
+
 		<section class="home-blog" id="blog">
-			<div style="height: 500px; background: #f2f2f2; display: block;"></div>
+            <div class="container">
+                <div class="home-blog--heading">
+                    <h6>Blog Conecta</h6>
+                    <p>Aqui tem dicas, informações e muitos mais para você.</p>
+                </div>
+                <div class="row mx-0">
+                    <article class="col-12 col-md-12 blog-item">
+                        <a href="#">
+                            <span style="background-image: url(https://placeimg.com/640/480/tech);"></span>
+                            <h6>
+                                <small>Especialista</small>
+                                A internet para quem usa internet
+                            </h6>
+                        </a>
+                    </article>
+                    <article class="col-12 col-md-4 blog-item">
+                        <a href="#">
+                            <span style="background-image: url(https://placeimg.com/640/480/tech);"></span>
+                            <h6>
+                                <small>Especialista</small>
+                                A internet para quem usa internet
+                            </h6>
+                        </a>
+                    </article>
+                    <article class="col-12 col-md-4 blog-item">
+                        <a href="#">
+                            <span style="background-image: url(https://placeimg.com/640/480/tech);"></span>
+                            <h6>
+                                <small>Especialista</small>
+                                A internet para quem usa internet
+                            </h6>
+                        </a>
+                    </article>
+                    <div class="col-12 col-md-4 blog-item-nav">
+                        <h6>Navegar por categorias</h6>
+                        <nav>
+                            <a href="">Copel</a>
+                            <a href="">Curiosidades</a>
+                            <a href="">Inovação</a>
+                            <a href="">Em alta velocidade</a>
+                            <a href="">Games</a>
+                            <a href="">Wi-Fi</a>
+                            <a href="">Institucional</a>
+                            <a href="">Notícias</a>
+                            <a href="">Vídeos</a>
+                        </nav>
+                        <a href="#" class="btn-assine">Veja todas as publicações</a>
+                    </div>
+                </div>
+            </div>
 		</section>
 
 	</section>

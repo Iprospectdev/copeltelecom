@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="964px" height="1660px" viewBox="0 0 964 1660" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Rectangle 5</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="20.5925649%" y1="24.27403%" x2="100%" y2="83.751852%" id="linearGradient-1">
+            <stop stop-color="#FFA600" offset="0%"></stop>
+            <stop stop-color="#FF6D00" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="01_parceiros" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="01_esporte-interativo-1920" transform="translate(0.000000, -136.000000)" fill="url(#linearGradient-1)">
+            <polygon id="Rectangle-5" transform="translate(480.500000, 968.500000) scale(1, -1) translate(-480.500000, -968.500000) " points="964 1801 -3 1801 -3 136"></polygon>
+        </g>
+    </g>
+</svg>

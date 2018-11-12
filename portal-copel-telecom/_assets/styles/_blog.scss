@@ -1,0 +1,141 @@
+.blog-item {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	min-height: 360px;
+	position: relative;
+	overflow: hidden;
+	padding-bottom: 20px;
+
+	span {
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		content: "";
+		display: block;
+		height: 100%;
+		left: 50%;
+		position: absolute;
+		top: 50%;
+		transform: translate(-50%,-50%);
+		width: 100%;
+		z-index: 1;
+		transition: all 0.3s ease-in-out;
+
+		&:before {
+			content: "";
+			display: block;
+			height: 100%;
+			left: 0;
+			position: absolute;
+			top: 0;
+			background-color: rgba(#464D5C,0.8);
+			width: 100%;
+			z-index: 2;
+		}
+	}
+
+	h6 {
+		font-weight: 700;
+		font-size: 30px;
+		color: #FFFFFF;
+		position: relative;
+		z-index: 2;
+
+		small {
+			font-weight: 400;
+			font-size: 15px;
+			color: #FFFFFF;
+			position: relative;
+			display: block;
+			text-transform: uppercase;
+			margin-bottom: 10px;
+
+			&:after {
+				border: 2px solid #FFFFFF;
+				width: 54px;
+				display: block;
+				margin: 8px 0 0 0;
+				content: "";
+			}
+		}
+	}
+
+	&.col-md-4 {
+		min-height: 283px;
+
+		h6{
+			font-size: 20px;
+			font-weight: 700;
+		}
+	}
+
+	&:hover {
+		span {
+			height: 110%;
+			width: 110%;
+		}
+
+		p {
+			max-height: 100px;
+		}
+	}
+
+	&:nth-child(1n+0) span:before {
+		background-color: rgba(#464D5C,0.8);
+	}
+	
+	&:nth-child(2n+0) span:before {
+		background-color: rgba(#FF9602,0.8);
+	}
+	
+	&:nth-child(3n+0) span:before {
+		background-color: rgba(#FF6D00,0.8);
+	}
+
+	@include media-breakpoint-down(sm) {
+		margin-left: -15px;
+		margin-right: -15px;
+		min-width: calc(100% + 30px);
+	}
+}
+
+.blog-item-nav {
+	align-items: left;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 283px;
+	padding: 40px;
+
+	h4,h5,h6 {
+		font-weight: 700;
+		font-size: 20px;
+		color: color('gray-dark');
+		margin-bottom: 15px;
+	}
+
+	nav a {
+		border-radius: 5px;
+		border: 2px solid rgba(color('gray-dark'),0.2);
+		color: color('gray-dark');
+		display: inline-block;
+		float: left;
+		font-size: 15px;
+		font-weight: 400;
+		margin-right: 5px;
+		margin-bottom: 5px;
+		padding: 5px 15px;
+	}
+
+	.btn-assine {
+		max-width: 291px;
+		width: 100%;
+		float: left;
+		margin: 10px 0 0;
+	}
+	
+	@include media-breakpoint-down(sm) {
+		padding: 15px 0;
+	}
+}
