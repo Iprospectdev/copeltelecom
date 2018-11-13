@@ -452,26 +452,3 @@
 		}
 	}
 }
-
-.parcerias-naocliente {
-	background-image: linear-gradient(-49deg, color('orange') 0%, #FFA600 100%);
-	padding: 85px 0;
-	text-align: center;
-
-	h1,h2,h3,h4,h5,h6 {
-		font-weight: 700;
-		font-size: 35px;
-		color: #FFFFFF;
-		text-align: center;
-		line-height: 30px;
-		display: block;
-	}
-
-	@include media-breakpoint-down(sm) {
-		padding: 40px 0;
-		h1,h2,h3,h4,h5,h6 {
-			font-size: 24px;
-			line-height: 36px;
-		}
-	}
-}

@@ -136,10 +136,10 @@
                             </a>
                         </li>
                         <li>
-                            <a href="<?php $p = get_page_by_title('Quem Somos'); echo get_permalink($p->ID); ?>">Sobre nós</a>
+                            <a href="<?php $p = get_page_by_title('Sobre Nós'); echo get_permalink($p->ID); ?>">Sobre nós</a>
                         </li>
                         <li>
-                            <a href="#">App Copel</a>
+                            <a href="<?php $p = get_page_by_title('App Copel'); echo get_permalink($p->ID); ?>">App Copel</a>
                         </li>
                         <li>
                             <a href="#">Parcerias<i class="fas fa-caret-down"></i></a>
@@ -216,10 +216,10 @@
                             </a>
                         </li>
                         <li>
-                            <a href="<?php $p = get_page_by_title('Quem Somos'); echo get_permalink($p->ID); ?>">Sobre nós</a>
+                            <a href="<?php $p = get_page_by_title('Sobre Nós'); echo get_permalink($p->ID); ?>">Sobre nós</a>
                         </li>
                         <li>
-                            <a href="#">App Copel</a>
+                            <a href="<?php $p = get_page_by_title('App Copel'); echo get_permalink($p->ID); ?>">App Copel</a>
                         </li>
                         <li>
                             <a href="#">Parcerias<i class="fas fa-caret-down"></i></a>

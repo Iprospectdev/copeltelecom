@@ -189,7 +189,6 @@
 
 .home-planos {
 	position: relative;
-	padding-bottom: 80px;
 
 	&:before {
 		background-image: url(../images/home-planos-bg.png);
@@ -270,26 +269,7 @@
 		}
 	}
 
-	&--heading {
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-image: linear-gradient(-90deg, #FFA600 0%, color('orange') 100%);
-		margin: 0 auto;
-		font-size: 45px;
-		display: block;
-		font-weight: 700;
-		line-height: 50px;
-		text-align: center;
-
-		@include media-breakpoint-down(sm) {
-			font-size: 30px;
-			line-height: 35px;
-		}
-	}
-
-	&:after {
-		@include main-lines('bottom');
-		
+	&:after {		
 		@include media-breakpoint-down(sm) {
 			background: #F2F5F6;
 			height: 75%;
@@ -299,10 +279,6 @@
 			bottom: auto;
 			width: 100%;
 		}
-	}
-
-	@include media-breakpoint-down(sm) {
-		padding-bottom: 40px;
 	}
 }
 

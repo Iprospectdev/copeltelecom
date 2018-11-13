@@ -8,11 +8,22 @@
 
 
 
-$page = get_page_by_title("Quem Somos", "", "page" );
+$page = get_page_by_title("Sobre Nós", "", "page" );
 if (!$page) {
 	$page_args = array(
 		'post_content'   => "",
-		'post_title'     => "Quem Somos",
+		'post_title'     => "Sobre Nós",
+		'post_status'    => 'publish',
+		'post_type'      => 'page'
+	);
+	wp_insert_post( $page_args );
+}
+
+$page = get_page_by_title("App Copel", "", "page" );
+if (!$page) {
+	$page_args = array(
+		'post_content'   => "",
+		'post_title'     => "App Copel",
 		'post_status'    => 'publish',
 		'post_type'      => 'page'
 	);

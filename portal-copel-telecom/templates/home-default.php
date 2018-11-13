@@ -348,10 +348,12 @@
                 </h6>
                 <p>Se você tem uma empresa e quer ter a garantia da melhor entrega, com máxima estabilidade para todos os seus dispositivos, os nossos planos empresarias são ideais para você.</p>                
             </div>
-
-            <h6 class="home-planos--heading">
-                Conheça as vantagens <br>para sua casa
-            </h6>
+            
+            <div class="main-heading">
+                <h6>
+                    Conheça as vantagens <br>para sua casa
+                </h6>
+            </div>
             
         </section>
 

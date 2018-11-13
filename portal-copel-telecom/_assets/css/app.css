@@ -11755,6 +11755,57 @@ a:hover {
     .main-breadcrumb a:last-child:after {
       display: none; }
 
+.main-heading {
+  position: relative;
+  padding: 80px 15px;
+  z-index: 2; }
+  .main-heading h1, .main-heading h2, .main-heading h3, .main-heading h4, .main-heading h5, .main-heading h6 {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(-90deg, #FFA600 0%, #FF6D00 100%);
+    margin: 0 auto;
+    font-size: 35px;
+    display: block;
+    font-weight: 700;
+    line-height: 45px;
+    text-align: center; }
+  .main-heading:after {
+    background: url(../images/lines.svg) no-repeat center;
+    content: "";
+    display: block;
+    height: 82px;
+    left: 50%;
+    margin-left: -25px;
+    position: absolute;
+    width: 58px;
+    z-index: 1;
+    bottom: -41px; }
+  @media (max-width: 767.98px) {
+    .main-heading {
+      padding-bottom: 40px;
+      padding-top: 40px; }
+      .main-heading h1, .main-heading h2, .main-heading h3, .main-heading h4, .main-heading h5, .main-heading h6 {
+        font-size: 30px;
+        line-height: 35px; } }
+
+.main-planos {
+  background-image: linear-gradient(-49deg, #FF6D00 0%, #FFA600 100%);
+  padding: 85px 0;
+  text-align: center; }
+  .main-planos h1, .main-planos h2, .main-planos h3, .main-planos h4, .main-planos h5, .main-planos h6 {
+    font-weight: 700;
+    font-size: 35px;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 30px;
+    display: block; }
+  @media (max-width: 767.98px) {
+    .main-planos {
+      padding: 40px 0; }
+      .main-planos h1, .main-planos h2, .main-planos h3, .main-planos h4, .main-planos h5, .main-planos h6 {
+        font-size: 24px;
+        line-height: 36px; } }
+
 .header {
   position: relative; }
 
@@ -12224,8 +12275,7 @@ body.menu-opened {
         line-height: 24px; } }
 
 .home-planos {
-  position: relative;
-  padding-bottom: 80px; }
+  position: relative; }
   .home-planos:before {
     background-image: url(../images/home-planos-bg.png);
     background-position: left center;
@@ -12285,43 +12335,15 @@ body.menu-opened {
           position: relative; }
         .home-planos--box-empresas .btn-more {
           right: -25px; } }
-  .home-planos--heading {
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-image: linear-gradient(-90deg, #FFA600 0%, #FF6D00 100%);
-    margin: 0 auto;
-    font-size: 45px;
-    display: block;
-    font-weight: 700;
-    line-height: 50px;
-    text-align: center; }
-    @media (max-width: 767.98px) {
-      .home-planos--heading {
-        font-size: 30px;
-        line-height: 35px; } }
-  .home-planos:after {
-    background: url(../images/lines.svg) no-repeat center;
-    content: "";
-    display: block;
-    height: 82px;
-    left: 50%;
-    margin-left: -25px;
-    position: absolute;
-    width: 58px;
-    z-index: 1;
-    bottom: -41px; }
-    @media (max-width: 767.98px) {
-      .home-planos:after {
-        background: #F2F5F6;
-        height: 75%;
-        margin: 0;
-        top: 0;
-        left: 0;
-        bottom: auto;
-        width: 100%; } }
   @media (max-width: 767.98px) {
-    .home-planos {
-      padding-bottom: 40px; } }
+    .home-planos:after {
+      background: #F2F5F6;
+      height: 75%;
+      margin: 0;
+      top: 0;
+      left: 0;
+      bottom: auto;
+      width: 100%; } }
 
 .home-planos-list {
   position: relative;
@@ -13055,7 +13077,7 @@ body.menu-opened {
     .home-blog {
       margin-bottom: 40px; } }
 
-.quem-somos-heading h1, .quem-somos-heading h2, .quem-somos-heading h3, .quem-somos-heading h4, .quem-somos-heading h5, .quem-somos-heading h6 {
+.sobre-nos-heading h1, .sobre-nos-heading h2, .sobre-nos-heading h3, .sobre-nos-heading h4, .sobre-nos-heading h5, .sobre-nos-heading h6 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-image: linear-gradient(-90deg, #FFA600 0%, #FF6D00 100%);
@@ -13064,38 +13086,38 @@ body.menu-opened {
   font-size: 40px;
   margin: 20px 0; }
 
-.quem-somos-heading p {
+.sobre-nos-heading p {
   font-weight: 400;
   font-size: 20px;
   color: #464D5C;
   line-height: 30px;
   padding-top: 100px; }
 
-.quem-somos-heading img {
+.sobre-nos-heading img {
   float: right;
   max-width: 100%; }
 
-.quem-somos-heading:after {
+.sobre-nos-heading:after {
   content: "";
   clear: both;
   display: table; }
 
 @media (max-width: 767.98px) {
-  .quem-somos-heading {
+  .sobre-nos-heading {
     text-align: center; }
-    .quem-somos-heading h1, .quem-somos-heading h2, .quem-somos-heading h3, .quem-somos-heading h4, .quem-somos-heading h5, .quem-somos-heading h6 {
+    .sobre-nos-heading h1, .sobre-nos-heading h2, .sobre-nos-heading h3, .sobre-nos-heading h4, .sobre-nos-heading h5, .sobre-nos-heading h6 {
       font-size: 30px; }
-    .quem-somos-heading p {
+    .sobre-nos-heading p {
       padding-top: 0; } }
 
-.quem-somos-alcance {
+.sobre-nos-alcance {
   background: #FF9602;
   padding-bottom: 90px;
   position: relative;
   width: 100%; }
-  .quem-somos-alcance img {
+  .sobre-nos-alcance img {
     max-width: 100%; }
-  .quem-somos-alcance:before {
+  .sobre-nos-alcance:before {
     content: "";
     display: block;
     width: 100%;
@@ -13108,14 +13130,14 @@ body.menu-opened {
     bottom: 100%;
     left: 0;
     margin-bottom: -2px; }
-  .quem-somos-alcance h1, .quem-somos-alcance h2, .quem-somos-alcance h3, .quem-somos-alcance h4, .quem-somos-alcance h5, .quem-somos-alcance h6 {
+  .sobre-nos-alcance h1, .sobre-nos-alcance h2, .sobre-nos-alcance h3, .sobre-nos-alcance h4, .sobre-nos-alcance h5, .sobre-nos-alcance h6 {
     font-weight: 700;
     font-size: 30px;
     color: #FFFFFF;
     text-align: center;
     line-height: 40px;
     margin: 0 0 30px; }
-  .quem-somos-alcance--iconarea {
+  .sobre-nos-alcance--iconarea {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: row;
@@ -13123,56 +13145,56 @@ body.menu-opened {
     -ms-flex-align: center;
         align-items: center;
     margin-bottom: 40px; }
-    .quem-somos-alcance--iconarea svg, .quem-somos-alcance--iconarea img {
+    .sobre-nos-alcance--iconarea svg, .sobre-nos-alcance--iconarea img {
       margin-right: 10px;
       width: 75px;
       min-width: 75px; }
-    .quem-somos-alcance--iconarea span {
+    .sobre-nos-alcance--iconarea span {
       font-size: 15px;
       color: #FFFFFF;
       line-height: 20px; }
-  .quem-somos-alcance p {
+  .sobre-nos-alcance p {
     font-weight: 400;
     font-size: 15px;
     color: #FFFFFF;
     line-height: 25px; }
   @media (max-width: 767.98px) {
-    .quem-somos-alcance {
+    .sobre-nos-alcance {
       padding-top: 20px;
       padding-bottom: 40px; }
-      .quem-somos-alcance h1, .quem-somos-alcance h2, .quem-somos-alcance h3, .quem-somos-alcance h4, .quem-somos-alcance h5, .quem-somos-alcance h6 {
+      .sobre-nos-alcance h1, .sobre-nos-alcance h2, .sobre-nos-alcance h3, .sobre-nos-alcance h4, .sobre-nos-alcance h5, .sobre-nos-alcance h6 {
         font-size: 24px;
         line-height: 36px; } }
 
-.quem-somos-copel {
+.sobre-nos-copel {
   padding: 100px 0; }
-  .quem-somos-copel h1, .quem-somos-copel h2, .quem-somos-copel h3, .quem-somos-copel h4, .quem-somos-copel h5, .quem-somos-copel h6 {
+  .sobre-nos-copel h1, .sobre-nos-copel h2, .sobre-nos-copel h3, .sobre-nos-copel h4, .sobre-nos-copel h5, .sobre-nos-copel h6 {
     font-weight: 700;
     font-size: 30px;
     color: #464D5C;
     text-align: center;
     line-height: 40px;
     margin-bottom: 20px; }
-  .quem-somos-copel p {
+  .sobre-nos-copel p {
     font-family: 400;
     font-size: 15px;
     color: #464D5C;
     text-align: center;
     line-height: 25px; }
   @media (max-width: 767.98px) {
-    .quem-somos-copel {
+    .sobre-nos-copel {
       padding: 60px 0 70px; }
-      .quem-somos-copel h1, .quem-somos-copel h2, .quem-somos-copel h3, .quem-somos-copel h4, .quem-somos-copel h5, .quem-somos-copel h6 {
+      .sobre-nos-copel h1, .sobre-nos-copel h2, .sobre-nos-copel h3, .sobre-nos-copel h4, .sobre-nos-copel h5, .sobre-nos-copel h6 {
         font-size: 24px;
         line-height: 36px; } }
 
-.quem-somos-banner {
+.sobre-nos-banner {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   padding: 0 15px; }
-  .quem-somos-banner:before {
+  .sobre-nos-banner:before {
     background: url(../images/lines.svg) no-repeat center;
     content: "";
     display: block;
@@ -13183,16 +13205,16 @@ body.menu-opened {
     width: 58px;
     z-index: 1;
     top: -41px; }
-  .quem-somos-banner .container {
+  .sobre-nos-banner .container {
     padding: 150px 0;
     position: relative; }
-  .quem-somos-banner h1, .quem-somos-banner h2, .quem-somos-banner h3, .quem-somos-banner h4, .quem-somos-banner h5, .quem-somos-banner h6 {
+  .sobre-nos-banner h1, .sobre-nos-banner h2, .sobre-nos-banner h3, .sobre-nos-banner h4, .sobre-nos-banner h5, .sobre-nos-banner h6 {
     font-weight: 700;
     font-size: 30px;
     color: #FFFFFF;
     text-align: center;
     line-height: 40px; }
-  .quem-somos-banner p {
+  .sobre-nos-banner p {
     color: #FFFFFF;
     display: block;
     font-size: 15px;
@@ -13201,19 +13223,19 @@ body.menu-opened {
     margin: 0 auto 40px;
     max-width: 900px;
     text-align: center; }
-  .quem-somos-banner--item {
+  .sobre-nos-banner--item {
     max-width: 200px;
     margin: 0 auto; }
-    .quem-somos-banner--item svg, .quem-somos-banner--item img {
+    .sobre-nos-banner--item svg, .sobre-nos-banner--item img {
       display: block;
       margin: 0 auto 15px; }
-    .quem-somos-banner--item p {
+    .sobre-nos-banner--item p {
       font-family: 400;
       font-size: 15px;
       color: #FFFFFF;
       text-align: center;
       line-height: 20px; }
-  .quem-somos-banner small {
+  .sobre-nos-banner small {
     background: #FFFFFF;
     border-radius: 5px;
     bottom: 0;
@@ -13231,28 +13253,28 @@ body.menu-opened {
     position: absolute;
     text-align: center; }
   @media (max-width: 767.98px) {
-    .quem-somos-banner .container {
+    .sobre-nos-banner .container {
       padding: 90px 0 100px; }
-    .quem-somos-banner h1, .quem-somos-banner h2, .quem-somos-banner h3, .quem-somos-banner h4, .quem-somos-banner h5, .quem-somos-banner h6 {
+    .sobre-nos-banner h1, .sobre-nos-banner h2, .sobre-nos-banner h3, .sobre-nos-banner h4, .sobre-nos-banner h5, .sobre-nos-banner h6 {
       font-size: 24px;
       line-height: 36px; } }
 
-.quem-somos-nav {
+.sobre-nos-nav {
   background: #F2F5F6;
   padding-top: 60px; }
-  .quem-somos-nav--item {
+  .sobre-nos-nav--item {
     color: #464D5C;
     font-size: 15px;
     position: relative;
     text-align: center;
     padding-top: 60px;
     padding-bottom: 60px; }
-    .quem-somos-nav--item a {
+    .sobre-nos-nav--item a {
       color: inherit; }
-    .quem-somos-nav--item svg {
+    .sobre-nos-nav--item svg {
       margin: 0 auto 10px;
       display: block; }
-    .quem-somos-nav--item:after {
+    .sobre-nos-nav--item:after {
       background: #d4d5d7;
       content: "";
       display: block;
@@ -13262,7 +13284,7 @@ body.menu-opened {
       right: 0;
       top: 50%;
       width: 1px; }
-  .quem-somos-nav--link {
+  .sobre-nos-nav--link {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: center;
@@ -13271,24 +13293,24 @@ body.menu-opened {
         flex-direction: row;
     padding: 15px 50px 15px 40px;
     color: #464D5C; }
-    .quem-somos-nav--link a {
+    .sobre-nos-nav--link a {
       color: inherit; }
-    .quem-somos-nav--link .btn-more {
+    .sobre-nos-nav--link .btn-more {
       position: absolute;
       right: 15px;
       top: 50%;
       margin-top: -25px; }
   @media (max-width: 767.98px) {
-    .quem-somos-nav {
+    .sobre-nos-nav {
       padding-top: 85px; }
-      .quem-somos-nav .quem-somos-nav--item {
+      .sobre-nos-nav .sobre-nos-nav--item {
         padding-top: 15px;
         padding-bottom: 15px;
         font-size: 13px;
         white-space: nowrap; }
-        .quem-somos-nav .quem-somos-nav--item:after {
+        .sobre-nos-nav .sobre-nos-nav--item:after {
           display: none; }
-      .quem-somos-nav .quem-somos-nav--link {
+      .sobre-nos-nav .sobre-nos-nav--link {
         padding-left: 15px; } }
 
 .page-parcerias {
@@ -13643,23 +13665,230 @@ body.menu-opened {
       font-size: 24px;
       line-height: 30px; } }
 
-.parcerias-naocliente {
-  background-image: linear-gradient(-49deg, #FF6D00 0%, #FFA600 100%);
-  padding: 85px 0;
-  text-align: center; }
-  .parcerias-naocliente h1, .parcerias-naocliente h2, .parcerias-naocliente h3, .parcerias-naocliente h4, .parcerias-naocliente h5, .parcerias-naocliente h6 {
-    font-weight: 700;
-    font-size: 35px;
+.page-app {
+  overflow: hidden; }
+
+.app-header {
+  position: relative;
+  height: 580px;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+  z-index: 1; }
+  .app-header .main-breadcrumb a {
+    color: #fff; }
+  .app-header:before {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-image: url(../images/rectangle-left.svg);
+    content: "";
+    display: block;
+    height: 1400px;
+    position: absolute;
+    right: 45%;
+    top: 0;
+    width: 1665px; }
+  .app-header .container {
+    position: relative; }
+  .app-header--text {
+    display: block;
+    left: 0;
+    max-width: 370px;
+    position: absolute;
+    top: 130px;
+    width: 37%; }
+    .app-header--text:after {
+      clear: both;
+      content: "";
+      display: table; }
+  .app-header h1, .app-header h2, .app-header h3, .app-header h4, .app-header h5 {
     color: #FFFFFF;
-    text-align: center;
-    line-height: 30px;
-    display: block; }
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 35px;
+    margin: 0 0 15px; }
+  .app-header p {
+    font-weight: 400;
+    font-size: 15px;
+    color: #FFFFFF;
+    line-height: 25px; }
+  .app-header img {
+    display: block;
+    right: 15px;
+    position: absolute;
+    top: 15px;
+    max-width: 50%; }
   @media (max-width: 767.98px) {
-    .parcerias-naocliente {
-      padding: 40px 0; }
-      .parcerias-naocliente h1, .parcerias-naocliente h2, .parcerias-naocliente h3, .parcerias-naocliente h4, .parcerias-naocliente h5, .parcerias-naocliente h6 {
-        font-size: 24px;
-        line-height: 36px; } }
+    .app-header {
+      height: auto;
+      padding-top: 120px; }
+      .app-header .main-breadcrumb {
+        display: none; }
+      .app-header:before {
+        max-width: 128px;
+        left: 0;
+        right: auto;
+        z-index: 2; }
+      .app-header .app-header--text {
+        background: #fff;
+        top: auto;
+        width: auto;
+        position: relative;
+        margin: 10px -15px 0;
+        min-width: 100%;
+        width: auto;
+        text-align: center;
+        padding: 0 15px 15px; }
+      .app-header h1, .app-header h2, .app-header h3, .app-header h4, .app-header h5, .app-header h6 {
+        color: #283336; }
+      .app-header p {
+        color: #283336; }
+      .app-header img {
+        transform: none;
+        display: block;
+        position: static;
+        max-width: 80%;
+        margin: 0 auto 30px; } }
+
+.app-box {
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 30px 0 rgba(0, 0, 0, 0.15);
+  display: block;
+  height: 576px;
+  margin-bottom: 80px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  z-index: 1; }
+  .app-box h1, .app-box h2, .app-box h3, .app-box h4, .app-box h5, .app-box h6 {
+    color: #464D5C;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 35px;
+    margin-bottom: 25px;
+    padding-left: 98px;
+    padding-top: 60px;
+    position: relative; }
+    .app-box h1 svg, .app-box h2 svg, .app-box h3 svg, .app-box h4 svg, .app-box h5 svg, .app-box h6 svg {
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: -1; }
+  .app-box p {
+    color: #464D5C;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    padding-left: 98px; }
+  .app-box--text {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    height: 576px;
+    -ms-flex-pack: center;
+        justify-content: center; }
+  .app-box--image {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: end;
+        justify-content: flex-end;
+    height: 576px;
+    overflow: hidden; }
+    .app-box--image img {
+      max-width: 270px;
+      display: block;
+      margin: 0 auto -60px; }
+  .app-box--scroll {
+    height: 100%;
+    margin-right: -25px;
+    overflow: scroll;
+    padding: 0 100px;
+    width: auto; }
+  .app-box--scrollbar {
+    background-image: linear-gradient(-90deg, #FFA600 0%, #FF6D00 100%);
+    height: 25%;
+    width: 4px;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2; }
+  @media (max-width: 767.98px) {
+    .app-box {
+      height: auto;
+      box-shadow: none;
+      overflow: initial; }
+      .app-box h1, .app-box h2, .app-box h3, .app-box h4, .app-box h5, .app-box h6 {
+        font-size: 30px;
+        line-height: 35px;
+        padding: 120px 0 0; }
+        .app-box h1 svg, .app-box h1 img, .app-box h2 svg, .app-box h2 img, .app-box h3 svg, .app-box h3 img, .app-box h4 svg, .app-box h4 img, .app-box h5 svg, .app-box h5 img, .app-box h6 svg, .app-box h6 img {
+          left: 50%;
+          transform: translateX(-50%);
+          top: 0;
+          z-index: 1; }
+      .app-box p {
+        font-size: 15px;
+        line-height: 25px;
+        padding: 0; }
+      .app-box--item {
+        background: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 30px 0 rgba(0, 0, 0, 0.15);
+        padding: 15px 15px 0;
+        margin-bottom: 30px;
+        width: 100%; }
+      .app-box--scroll {
+        margin: 0;
+        overflow: initial;
+        padding: 0; }
+      .app-box--scrollbar {
+        display: none; }
+      .app-box--text {
+        height: auto;
+        text-align: center;
+        padding-bottom: 10px;
+        padding-top: 20px; }
+      .app-box--image {
+        height: auto;
+        padding-bottom: 20px; }
+        .app-box--image img {
+          max-width: 185px; } }
+
+.app-banner {
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 90px 15px; }
+  .app-banner h1, .app-banner h2, .app-banner h3, .app-banner h4, .app-banner h5, .app-banner h6 {
+    color: #FFFFFF;
+    font-size: 55px;
+    font-weight: 700;
+    line-height: 55px;
+    padding-top: 95px;
+    position: relative;
+    text-align: center;
+    margin-bottom: 35px;
+    z-index: 1; }
+    .app-banner h1 img, .app-banner h1 svg, .app-banner h2 img, .app-banner h2 svg, .app-banner h3 img, .app-banner h3 svg, .app-banner h4 img, .app-banner h4 svg, .app-banner h5 img, .app-banner h5 svg, .app-banner h6 img, .app-banner h6 svg {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 0;
+      z-index: -1; }
+  .app-banner a {
+    display: inline-block;
+    margin: 15px; }
+  @media (max-width: 767.98px) {
+    .app-banner a {
+      margin: 5px 3px; } }
 
 .planos-item {
   background: #fff;

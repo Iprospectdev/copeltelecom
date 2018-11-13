@@ -1,4 +1,4 @@
-.quem-somos-heading {
+.sobre-nos-heading {
 	h1,h2,h3,h4,h5,h6 {
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
@@ -40,7 +40,7 @@
 	}
 }
 
-.quem-somos-alcance {
+.sobre-nos-alcance {
 	background: color('orange-light');
 	padding-bottom: 90px;
 	position: relative;
@@ -110,7 +110,7 @@
 	}
 }
 
-.quem-somos-copel {
+.sobre-nos-copel {
 	padding: 100px 0;
 
 	h1,h2,h3,h4,h5,h6 {
@@ -140,7 +140,7 @@
 	}
 }
 
-.quem-somos-banner {
+.sobre-nos-banner {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -223,7 +223,7 @@
 	}
 }
 
-.quem-somos-nav {
+.sobre-nos-nav {
 	background: #F2F5F6;
 	padding-top: 60px;
 
@@ -279,7 +279,7 @@
 	@include media-breakpoint-down(sm) {
 		padding-top: 85px;
 
-		.quem-somos-nav--item{
+		.sobre-nos-nav--item{
 			padding-top: 15px;
 			padding-bottom: 15px;	
 			font-size: 13px;
@@ -290,7 +290,7 @@
 			}
 		}
 
-		.quem-somos-nav--link {
+		.sobre-nos-nav--link {
 			padding-left: 15px;
 		}
 	}

@@ -104,7 +104,7 @@
 			</div>
 		</article>
 
-		<article class="parcerias-naocliente">
+		<article class="main-planos">
 			<div class="container">
 				<h6>Ainda não é cliente Copel Telecom?</h6>
 				<a href="<?php $p=get_page_by_title( 'planos' ); echo get_permalink( $p->ID ) ?>" class="btn">Conheça nossos planos</a>
