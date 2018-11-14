@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-    <section id="home">   
+    <section class="page-home">   
         <nav class="header-nav fixed fixed-top">
             <div class="container">
                 <a href="<?php bloginfo('url'); ?>" class="logo">

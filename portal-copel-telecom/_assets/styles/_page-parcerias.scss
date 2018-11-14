@@ -465,6 +465,7 @@
 		margin: -20px -20px 20px;
 		img {
 			max-width: 100%;
+			width: 100%;
 		}
 	}
 
@@ -486,5 +487,11 @@
 
 	.btn-more {
 		float: right;
+	}
+
+	&:after {
+		content: "";
+		clear: both;
+		display: table;
 	}
 }

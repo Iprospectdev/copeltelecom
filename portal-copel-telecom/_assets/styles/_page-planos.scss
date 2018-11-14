@@ -24,6 +24,19 @@
 		max-width: 970px;
 		margin: 0 auto;
 	}
+
+	@include media-breakpoint-down(sm) {
+		padding-top: 80px;
+
+		.main-breadcrumb {
+			 display: none;
+		}
+
+		h1,h2,h3,h4,h5,h6 {
+			font-size: 25px;
+			line-height: 35px;
+		}
+	}
 }
 
 
@@ -198,12 +211,20 @@
 			}
 		}
 	}
+
+	@include media-breakpoint-down(sm) {
+		margin: 0 -15px 20px;
+		border-radius: 0;
+		min-width: 100%;
+		width: auto;
+	}
 }
 
 .planos-list {
 	position: relative;
 	background: #F2F5F6;
 	padding: 100px 0;
+	margin-bottom: 130px;
 
 	&--icon {
 		position: absolute;
@@ -231,18 +252,27 @@
 			color: color('gray-dark');
 		}
 	}
+
+	@include media-breakpoint-down(sm) {
+		padding: 60px 0 40px;
+	}
 }
 
 .planos-item {
 	background: #FFFFFF;
 	border-radius: 5px;
+	position: relative;
+	display: flex;
+	justify-content: flex-end;
 	padding: 15px 10px;
 	margin-bottom: 20px;
 	box-shadow: 0 0 25px 5px rgba(#000,0.2);
 
 	&--vel {
-		position: relative;
-		float: left;
+		left: 20px;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
 		
 		img, svg {
 			left: -25px;
@@ -257,6 +287,7 @@
 			font-size: 18px;
 			font-weight: 400;
 			padding-left: 100px;
+			position: relative;
 			line-height: 24px;
 
 			strong {
@@ -300,9 +331,9 @@
 		display: flex;
 		flex-direction: row;
 		float: right;
-		padding: 0 22px;
-		font-weight: 700;
 		font-size: 22px;
+		font-weight: 700;
+		padding: 0 22px;
 
 		small {
 			font-weight: 400;
@@ -325,5 +356,209 @@
 		clear: both;
 		content: "";
 		display: table;
+	}
+
+	@include media-breakpoint-down(sm) {
+		border-radius: 0;
+		display: block;
+		margin: 0 -15px 20px;
+		min-width: 100%;
+		padding: 25px 15px;
+
+		&--vel {
+			position: relative;
+			transform: none;
+			left: auto;
+			top: auto;
+			text-align: center;
+
+			h6 {
+				display: inline-block;
+			}
+		}
+		
+		&--updown {
+			width: 100%;
+			justify-content: center;
+    		margin: 0 auto;
+    		padding: 35px 0;
+		}
+
+		&--price {
+			border: 0;
+			display: block;
+			width: 100%;
+
+			span {
+				width: 100%;
+				display: block;
+			}
+
+			.btn-assine {
+				display: block;
+				margin: 5px auto 0;
+				text-align: center;
+				max-width: 222px;
+			}
+		}
+	}
+}
+
+.planos-mockup {
+	margin-bottom: 70px;
+
+	h6 {
+		color: color('gray-dark');
+		font-size: 35px;
+		font-weight: 700;
+		line-height: 35px;
+		position: relative;
+		padding-left: 90px;
+		padding-top: 55px;
+
+		img,
+		svg {
+			position: absolute;
+			left: 0;
+			max-width: 108px;
+			top: 0;
+			z-index: -1;
+		}
+	}
+
+	img {
+		display: block;
+		margin-bottom: 20px;
+		max-width: 100%;
+	}
+
+	p{
+		font-weight: 400;
+		font-size: 15px;
+		color: color('gray-dark');
+		letter-spacing: 0;
+		line-height: 22px;
+	}	
+
+	@include media-breakpoint-down(sm) {
+		margin-bottom: 95px;
+
+		h6 {
+			font-size: 24px;
+			line-height: 26px;
+			padding-left: 69px;
+
+			img,svg {
+				max-width: 80px;
+			}
+		}
+	}
+}
+
+.planos-parcerias {
+	margin-bottom: 118px;
+
+	&--header {
+		margin-bottom: 70px;
+		position: relative;
+		
+		&:after {
+			@include main-lines('bottom');
+			left: auto;
+			margin: 0;
+			right: 0;
+			bottom: -110px;
+		}
+
+		h1,h2,h3,h4,h5,h6 {
+			font-weight: 700;
+			font-size: 30px;
+			color: color('orange-light');
+			text-align: center;
+			line-height: 30px;
+		}
+
+		p {
+			color: color('gray-dark');
+			display: block;
+			font-size: 15px;
+			font-weight: 400;
+			line-height: 25px;	
+			margin: 0 auto;
+			max-width: 970px;
+			text-align: center;
+		}
+	}
+
+	.parcerias-item {
+		padding: 0;
+		display: block;
+
+		figure {
+			margin: 0 0 15px;
+		}
+
+		.btn-more {
+			text-align: left;
+			display: block;
+			width: 100%;
+		}
+	}
+
+	@include media-breakpoint-down(sm) {
+		margin-bottom: 20px;
+
+		&--header {
+			h1,h2,h3,h4,h5,h6 {
+				font-size: 24px;
+				line-height: 36px;
+			}
+
+			&:after {
+				display: none;
+			}
+		}
+
+		.parcerias-item {
+			margin-bottom: 65px;
+		}
+	}
+}
+
+.planos-sercomtel {
+	background: #F2F5F6;
+	border-radius: 5px;
+	margin-bottom: 100px;
+	padding: 60px 85px;
+
+	img {
+		max-width: 100%;
+		display: block;
+		margin: 0 auto 25px;
+	}
+	
+	p {
+		font-weight: 400;
+		font-size: 15px;
+		color: color('gray-dark');
+		letter-spacing: 0;
+		text-align: center;
+		line-height: 22px;
+	}
+
+	small {
+		color: color('gray-dark');
+		display: block;
+		font-size: 26px;
+		font-weight: 400;
+		letter-spacing: 0;
+		text-align: center;
+	}
+
+	@include media-breakpoint-down(sm) {
+		padding: 15px;
+		margin: 0 -15px 20px;
+		min-width: 100%;
+		border-radius: 0;
 	}
 }

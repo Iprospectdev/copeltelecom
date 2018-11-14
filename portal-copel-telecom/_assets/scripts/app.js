@@ -7,6 +7,10 @@ import 'owl.carousel';
 
 window.onload = function() {
 
+    $('[data-toggle="tooltip"]').tooltip({
+        boundary: 'window'
+    });
+
     const sizeToFixed = $('.header').height() + 70;
     $(window).on('scroll', function () {
         if( $(window).scrollTop() > sizeToFixed) {

@@ -126,7 +126,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="<?php $p=get_page_by_title('Speedtest'); echo get_permalink($p->ID); ?>">
                                 <strong>Speedtest</strong>
                             </a>
                         </li>
@@ -206,7 +206,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="<?php $p=get_page_by_title('Speedtest'); echo get_permalink($p->ID); ?>">
                                 <strong>Speedtest</strong>
                             </a>
                         </li>
