@@ -452,3 +452,39 @@
 		}
 	}
 }
+
+.parcerias-item {
+	background: #fff;
+	display: inline-block;
+	max-width: 100%;
+	text-align: left;
+	padding: 20px;
+	position: relative;
+
+	figure {
+		margin: -20px -20px 20px;
+		img {
+			max-width: 100%;
+		}
+	}
+
+	&--logo {
+		width: auto;
+		margin: 0 0 20px;
+		max-height: 40px;
+	}
+
+	&--heading {
+		color: color('gray');
+		float: left;
+		font-size: 13px;
+		font-weight: 400;
+		line-height: 18px;
+		min-height: 45px;
+		width: calc(100% - 50px);
+	}
+
+	.btn-more {
+		float: right;
+	}
+}

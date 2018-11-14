@@ -1,6 +1,5 @@
 <?php get_header(); ?>
     <section id="home">   
-    
         <nav class="header-nav fixed fixed-top">
             <div class="container">
                 <a href="<?php bloginfo('url'); ?>" class="logo">
@@ -276,7 +275,7 @@
             </div>
 
             <div class="container">
-                <div class="home-geolocation">
+                <div class="planos-geolocation">
                     <h5>
                         <small>A melhor estabilidade do mercado com velocidade de</small>
                         Download = Upload
@@ -296,11 +295,8 @@
                             </g>
                         </svg>
                     </h5>
-
                     <div class="row">
-                        <div class="col-12 col-md-6 home-geolocation--legend">
-
-
+                        <div class="col-12 col-md-6 planos-geolocation--legend">
                             <svg width="90px" height="115px" viewBox="0 0 90 115" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <g id="00_home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                                     <g id="01_home_banner1_informar-endereco" transform="translate(-154.000000, -743.000000)">
@@ -322,11 +318,10 @@
                                     </g>
                                 </g>
                             </svg>
-
                             <h6>Planos Copel Fibra</h6>
                             <p>Informe sua cidade para podermos mostrar os planos disponíveis na sua região.</p>
                         </div>
-                        <div class="col-12 col-md-4 offset-md-1 home-geolocation--form">
+                        <div class="col-12 col-md-4 offset-md-1 planos-geolocation--form">
                             <label for="cidade">Onde você está?</label>
                             <div class="input-group mb-3">
                                 <input type="text" id="cidade" class="form-control" placeholder="Ex: Curitiba" aria-label="Ex: Curitiba" aria-describedby="button-addon2">

@@ -11786,7 +11786,9 @@ a:hover {
       padding-top: 40px; }
       .main-heading h1, .main-heading h2, .main-heading h3, .main-heading h4, .main-heading h5, .main-heading h6 {
         font-size: 30px;
-        line-height: 35px; } }
+        line-height: 35px; }
+        .main-heading h1 br, .main-heading h2 br, .main-heading h3 br, .main-heading h4 br, .main-heading h5 br, .main-heading h6 br {
+          display: none; } }
 
 .main-planos {
   background-image: linear-gradient(-49deg, #FF6D00 0%, #FFA600 100%);
@@ -11944,7 +11946,7 @@ a:hover {
   top: -500px;
   transition: opacity 0.3s ease-in-out;
   z-index: -99999; }
-  .header-subnav .planos-item {
+  .header-subnav .parcerias-item {
     max-width: 270px;
     margin: 0 15px; }
   @media (max-width: 767.98px) {
@@ -12501,134 +12503,9 @@ body.menu-opened {
       .home-planos-carousel-prev .arrow-bg {
         display: none; } }
 
-.home-geolocation {
-  background: #fff;
-  border-radius: 5px;
-  box-shadow: 0 2px 30px 0 rgba(0, 0, 0, 0.15);
-  display: block;
-  padding-bottom: 50px;
+.page-home .planos-geolocation {
   margin-top: -102px;
-  margin-bottom: 92px;
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-  z-index: 2; }
-  .home-geolocation .row {
-    margin: 0 25px; }
-  .home-geolocation h5 {
-    -ms-flex-align: center;
-        align-items: center;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    background-image: linear-gradient(-90deg, #FF6D00 0%, #FFA600 80%);
-    color: #fff;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    font-size: 35px;
-    font-weight: 700;
-    height: 102px;
-    -ms-flex-pack: center;
-        justify-content: center;
-    margin-bottom: 50px;
-    padding: 0;
-    position: relative;
-    border-radius: 5px 5px 0 0;
-    text-align: left; }
-    .home-geolocation h5 small {
-      font-weight: 500;
-      font-size: 15px;
-      text-align: center;
-      display: block;
-      line-height: 20px;
-      padding: 0 15px;
-      color: #fff;
-      letter-spacing: 0; }
-    .home-geolocation h5 svg {
-      height: 100%;
-      left: 50%;
-      position: absolute;
-      top: 0;
-      transform: translateX(-50%);
-      width: auto; }
-    .home-geolocation h5:after {
-      position: absolute;
-      left: 50%;
-      top: 100%;
-      content: "";
-      width: 0;
-      height: 0;
-      margin-left: -10px;
-      margin-top: -1px;
-      border-style: solid;
-      border-width: 10px 10px 0 10px;
-      border-color: #FF9602 transparent transparent transparent; }
-    @media (max-width: 767.98px) {
-      .home-geolocation h5 {
-        font-size: 28px;
-        line-height: 30px; }
-        .home-geolocation h5 small {
-          font-size: 15px; } }
-  .home-geolocation--legend {
-    position: relative;
-    padding: 0; }
-    .home-geolocation--legend svg {
-      left: 0;
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%); }
-    .home-geolocation--legend h6 {
-      font-weight: 700;
-      font-size: 35px;
-      color: #FF6D00;
-      line-height: 26px;
-      padding-left: 120px; }
-    .home-geolocation--legend p {
-      font-weight: 400;
-      font-size: 13px;
-      color: #464D5C;
-      letter-spacing: 0;
-      line-height: 18px;
-      padding-left: 120px; }
-    @media (max-width: 767.98px) {
-      .home-geolocation--legend {
-        margin-bottom: 30px; }
-        .home-geolocation--legend svg {
-          max-width: 66px; }
-        .home-geolocation--legend h6 {
-          font-size: 30px;
-          line-height: 35px; }
-        .home-geolocation--legend h6, .home-geolocation--legend p {
-          padding-left: 90px; } }
-  .home-geolocation--form {
-    padding: 0; }
-    .home-geolocation--form label {
-      color: #464D5C;
-      display: block;
-      font-size: 15px;
-      font-weight: 700;
-      text-align: left; }
-    .home-geolocation--form .form-control,
-    .home-geolocation--form .form-control:focus {
-      outline: none;
-      box-shadow: none;
-      border-color: #D4D7DC; }
-    .home-geolocation--form .input-group > .input-group-append > .btn,
-    .home-geolocation--form .input-group > .input-group-append > .input-group-text,
-    .home-geolocation--form .input-group > .input-group-prepend:not(:first-child) > .btn,
-    .home-geolocation--form .input-group > .input-group-prepend:not(:first-child) > .input-group-text,
-    .home-geolocation--form .input-group > .input-group-prepend:first-child > .btn:not(:first-child),
-    .home-geolocation--form .input-group > .input-group-prepend:first-child > .input-group-text:not(:first-child) {
-      border: 0;
-      background: #FF6D00; }
-      .home-geolocation--form .input-group > .input-group-append > .btn i,
-      .home-geolocation--form .input-group > .input-group-append > .input-group-text i,
-      .home-geolocation--form .input-group > .input-group-prepend:not(:first-child) > .btn i,
-      .home-geolocation--form .input-group > .input-group-prepend:not(:first-child) > .input-group-text i,
-      .home-geolocation--form .input-group > .input-group-prepend:first-child > .btn:not(:first-child) i,
-      .home-geolocation--form .input-group > .input-group-prepend:first-child > .input-group-text:not(:first-child) i {
-        color: #fff; }
+  padding: 50px 0; }
 
 .home-fibra {
   position: relative;
@@ -13665,6 +13542,32 @@ body.menu-opened {
       font-size: 24px;
       line-height: 30px; } }
 
+.parcerias-item {
+  background: #fff;
+  display: inline-block;
+  max-width: 100%;
+  text-align: left;
+  padding: 20px;
+  position: relative; }
+  .parcerias-item figure {
+    margin: -20px -20px 20px; }
+    .parcerias-item figure img {
+      max-width: 100%; }
+  .parcerias-item--logo {
+    width: auto;
+    margin: 0 0 20px;
+    max-height: 40px; }
+  .parcerias-item--heading {
+    color: #525A6B;
+    float: left;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    min-height: 45px;
+    width: calc(100% - 50px); }
+  .parcerias-item .btn-more {
+    float: right; }
+
 .page-app {
   overflow: hidden; }
 
@@ -13890,31 +13793,270 @@ body.menu-opened {
     .app-banner a {
       margin: 5px 3px; } }
 
-.planos-item {
-  background: #fff;
-  display: inline-block;
-  max-width: 100%;
-  text-align: left;
-  padding: 20px;
-  position: relative; }
-  .planos-item figure {
-    margin: -20px -20px 20px; }
-    .planos-item figure img {
-      max-width: 100%; }
-  .planos-item--logo {
-    width: auto;
-    margin: 0 0 20px;
-    max-height: 40px; }
-  .planos-item--heading {
-    color: #525A6B;
-    float: left;
-    font-size: 13px;
+.planos-header {
+  padding: 0 0 90px; }
+  .planos-header h1, .planos-header h2, .planos-header h3, .planos-header h4, .planos-header h5, .planos-header h6 {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(-90deg, #FFA600 0%, #FF6D00 100%);
+    margin: 25px auto 10px;
+    font-size: 35px;
+    display: block;
+    font-weight: 700;
+    line-height: 45px;
+    text-align: center; }
+  .planos-header p {
     font-weight: 400;
-    line-height: 18px;
-    min-height: 45px;
-    width: calc(100% - 50px); }
-  .planos-item .btn-more {
-    float: right; }
+    font-size: 15px;
+    color: #464D5C;
+    text-align: center;
+    line-height: 25px;
+    max-width: 970px;
+    margin: 0 auto; }
+
+.planos-geolocation {
+  background: #fff;
+  border-radius: 5px;
+  display: block;
+  margin-bottom: 20px;
+  overflow: hidden;
+  padding: 30px 0;
+  position: relative;
+  width: 100%;
+  z-index: 2;
+  box-shadow: 0 0 25px 5px rgba(0, 0, 0, 0.2); }
+  .planos-geolocation .row {
+    margin: 0 25px; }
+  .planos-geolocation h5 {
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    background-image: linear-gradient(-90deg, #FF6D00 0%, #FFA600 80%);
+    color: #fff;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    font-size: 35px;
+    font-weight: 700;
+    height: 102px;
+    -ms-flex-pack: center;
+        justify-content: center;
+    padding: 0;
+    position: relative;
+    border-radius: 5px 5px 0 0;
+    text-align: left; }
+    .planos-geolocation h5 small {
+      font-weight: 500;
+      font-size: 15px;
+      text-align: center;
+      display: block;
+      line-height: 20px;
+      padding: 0 15px;
+      color: #fff;
+      letter-spacing: 0; }
+    .planos-geolocation h5 svg {
+      height: 100%;
+      left: 50%;
+      position: absolute;
+      top: 0;
+      transform: translateX(-50%);
+      width: auto; }
+    .planos-geolocation h5:after {
+      position: absolute;
+      left: 50%;
+      top: 100%;
+      content: "";
+      width: 0;
+      height: 0;
+      margin-left: -10px;
+      margin-top: -1px;
+      border-style: solid;
+      border-width: 10px 10px 0 10px;
+      border-color: #FF9602 transparent transparent transparent; }
+    @media (max-width: 767.98px) {
+      .planos-geolocation h5 {
+        font-size: 28px;
+        line-height: 30px; }
+        .planos-geolocation h5 small {
+          font-size: 15px; } }
+  .planos-geolocation--legend {
+    position: relative;
+    padding: 50px 0 0; }
+    .planos-geolocation--legend svg {
+      left: 0;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%); }
+    .planos-geolocation--legend h6 {
+      font-weight: 700;
+      font-size: 35px;
+      color: #FF6D00;
+      line-height: 26px;
+      padding-left: 120px; }
+    .planos-geolocation--legend p {
+      font-weight: 400;
+      font-size: 13px;
+      color: #464D5C;
+      letter-spacing: 0;
+      line-height: 18px;
+      padding-left: 120px; }
+      .planos-geolocation--legend p strong {
+        color: #FF6D00;
+        display: block;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 26px;
+        margin: 0 0 10px; }
+    @media (max-width: 767.98px) {
+      .planos-geolocation--legend {
+        margin-bottom: 30px; }
+        .planos-geolocation--legend svg {
+          max-width: 66px; }
+        .planos-geolocation--legend h6 {
+          font-size: 30px;
+          line-height: 35px; }
+        .planos-geolocation--legend h6, .planos-geolocation--legend p {
+          padding-left: 90px; } }
+  .planos-geolocation--form {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: center;
+        justify-content: center;
+    padding: 0;
+    text-align: left; }
+    .planos-geolocation--form label {
+      color: #464D5C;
+      display: block;
+      font-size: 15px;
+      font-weight: 700;
+      text-align: left; }
+    .planos-geolocation--form .form-control {
+      height: 50px; }
+    .planos-geolocation--form .form-control,
+    .planos-geolocation--form .form-control:focus {
+      outline: none;
+      box-shadow: none;
+      border-color: #D4D7DC; }
+    .planos-geolocation--form .input-group > .input-group-append > .btn,
+    .planos-geolocation--form .input-group > .input-group-append > .input-group-text,
+    .planos-geolocation--form .input-group > .input-group-prepend:not(:first-child) > .btn,
+    .planos-geolocation--form .input-group > .input-group-prepend:not(:first-child) > .input-group-text,
+    .planos-geolocation--form .input-group > .input-group-prepend:first-child > .btn:not(:first-child),
+    .planos-geolocation--form .input-group > .input-group-prepend:first-child > .input-group-text:not(:first-child) {
+      border: 0;
+      background: #FF6D00;
+      margin: 0; }
+      .planos-geolocation--form .input-group > .input-group-append > .btn i,
+      .planos-geolocation--form .input-group > .input-group-append > .input-group-text i,
+      .planos-geolocation--form .input-group > .input-group-prepend:not(:first-child) > .btn i,
+      .planos-geolocation--form .input-group > .input-group-prepend:not(:first-child) > .input-group-text i,
+      .planos-geolocation--form .input-group > .input-group-prepend:first-child > .btn:not(:first-child) i,
+      .planos-geolocation--form .input-group > .input-group-prepend:first-child > .input-group-text:not(:first-child) i {
+        color: #fff; }
+
+.planos-list {
+  position: relative;
+  background: #F2F5F6;
+  padding: 100px 0; }
+  .planos-list--icon {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%); }
+  .planos-list ul {
+    padding: 0;
+    list-style: none; }
+  .planos-list--obs {
+    color: #464D5C;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 15px;
+    display: block;
+    text-align: center;
+    margin: 10px 0; }
+    .planos-list--obs a {
+      font-weight: 700;
+      color: #464D5C; }
+
+.planos-item {
+  background: #FFFFFF;
+  border-radius: 5px;
+  padding: 15px 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 25px 5px rgba(0, 0, 0, 0.2); }
+  .planos-item--vel {
+    position: relative;
+    float: left; }
+    .planos-item--vel img, .planos-item--vel svg {
+      left: -25px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%); }
+    .planos-item--vel h4, .planos-item--vel h5, .planos-item--vel h6 {
+      color: #464D5C;
+      display: block;
+      font-size: 18px;
+      font-weight: 400;
+      padding-left: 100px;
+      line-height: 24px; }
+      .planos-item--vel h4 strong, .planos-item--vel h5 strong, .planos-item--vel h6 strong {
+        display: block;
+        font-size: 35px;
+        font-weight: 700;
+        margin-top: 7px; }
+      .planos-item--vel h4 a, .planos-item--vel h5 a, .planos-item--vel h6 a {
+        font-weight: 400;
+        font-size: 13px;
+        color: #ABADB2;
+        text-decoration: underline; }
+  .planos-item--updown {
+    color: #464D5C;
+    float: right;
+    font-size: 22px;
+    font-weight: 700;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-align: center;
+        align-items: center;
+    padding: 0 22px; }
+    .planos-item--updown small {
+      font-weight: 400;
+      font-size: 15px;
+      color: #464D5C;
+      line-height: 22px;
+      display: block; }
+  .planos-item--price {
+    -ms-flex-align: center;
+        align-items: center;
+    border-left: 1px solid rgba(9, 66, 82, 0.2);
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    float: right;
+    padding: 0 22px;
+    font-weight: 700;
+    font-size: 22px; }
+    .planos-item--price small {
+      font-weight: 400;
+      font-size: 15px; }
+    .planos-item--price span {
+      color: #464D5C;
+      text-align: center;
+      font-weight: 700;
+      font-size: 32px; }
+    .planos-item--price .btn-assine {
+      margin-left: 20px; }
+  .planos-item:after {
+    clear: both;
+    content: "";
+    display: table; }
 
 .blog-item {
   display: -ms-flexbox;

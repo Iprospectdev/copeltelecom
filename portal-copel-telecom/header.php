@@ -121,7 +121,7 @@
                 <nav>
                     <ul data-target="#header-navbar">
                         <li>
-                            <a href="#planos-e-precos">
+                            <a href="<?php $p=get_page_by_title('Planos'); echo get_permalink($p->ID); ?>">
                                 <strong>Planos e preços</strong>
                             </a>
                         </li>
@@ -136,33 +136,33 @@
                             </a>
                         </li>
                         <li>
-                            <a href="<?php $p = get_page_by_title('Sobre Nós'); echo get_permalink($p->ID); ?>">Sobre nós</a>
+                            <a href="<?php $p=get_page_by_title('Sobre Nós'); echo get_permalink($p->ID); ?>">Sobre nós</a>
                         </li>
                         <li>
-                            <a href="<?php $p = get_page_by_title('App Copel'); echo get_permalink($p->ID); ?>">App Copel</a>
+                            <a href="<?php $p=get_page_by_title('App Copel'); echo get_permalink($p->ID); ?>">App Copel</a>
                         </li>
                         <li>
                             <a href="#">Parcerias<i class="fas fa-caret-down"></i></a>
                             <div class="header-subnav">
-                                <div class="planos-item">
+                                <div class="parcerias-item">
                                     <a href="<?php $p=get_page_by_title('Esporte Interativo'); echo get_permalink($p->ID); ?>">
                                         <figure>
                                             <img src="<?php bloginfo('template_url'); ?>/_assets/images/ei-menu.jpg" alt="">
                                         </figure>
-                                        <img src="<?php bloginfo('template_url'); ?>/_assets/images/logo-ei.png" class="planos-item--logo" alt="">
-                                        <h6 class="planos-item--heading">
+                                        <img src="<?php bloginfo('template_url'); ?>/_assets/images/logo-ei.png" class="parcerias-item--logo" alt="">
+                                        <h6 class="parcerias-item--heading">
                                             Assista online o melhor do esporte.
                                         </h6>
                                         <span class="btn-more"></span>
                                     </a>
                                 </div>
-                                <div class="planos-item">
+                                <div class="parcerias-item">
                                     <a href="<?php $p=get_page_by_title('Cartoon Network'); echo get_permalink($p->ID); ?>">
                                         <figure>
                                             <img src="<?php bloginfo('template_url'); ?>/_assets/images/cnja-menu.jpg" alt="">
                                         </figure>
-                                        <img src="<?php bloginfo('template_url'); ?>/_assets/images/logo-cnja.png" class="planos-item--logo" alt="">
-                                        <h6 class="planos-item--heading">
+                                        <img src="<?php bloginfo('template_url'); ?>/_assets/images/logo-cnja.png" class="parcerias-item--logo" alt="">
+                                        <h6 class="parcerias-item--heading">
                                             Seus desenhos preferidos onde você estiver.
                                         </h6>
                                         <span class="btn-more"></span>
@@ -201,7 +201,7 @@
                 <nav>
                     <ul>
                         <li>
-                            <a href="#planos-e-precos">
+                            <a href="<?php $p=get_page_by_title('Planos'); echo get_permalink($p->ID); ?>">
                                 <strong>Planos e preços</strong>
                             </a>
                         </li>
@@ -216,33 +216,33 @@
                             </a>
                         </li>
                         <li>
-                            <a href="<?php $p = get_page_by_title('Sobre Nós'); echo get_permalink($p->ID); ?>">Sobre nós</a>
+                            <a href="<?php $p=get_page_by_title('Sobre Nós'); echo get_permalink($p->ID); ?>">Sobre nós</a>
                         </li>
                         <li>
-                            <a href="<?php $p = get_page_by_title('App Copel'); echo get_permalink($p->ID); ?>">App Copel</a>
+                            <a href="<?php $p=get_page_by_title('App Copel'); echo get_permalink($p->ID); ?>">App Copel</a>
                         </li>
                         <li>
                             <a href="#">Parcerias<i class="fas fa-caret-down"></i></a>
                             <div class="header-subnav">
-                                <div class="planos-item">
+                                <div class="parcerias-item">
                                     <a href="#">
                                         <figure>
                                             <img src="http://placehold.it/400x120" alt="">
                                         </figure>
-                                        <img src="http://placehold.it/135x40" class="planos-item--logo" alt="">
-                                        <h6 class="planos-item--heading">
+                                        <img src="http://placehold.it/135x40" class="parcerias-item--logo" alt="">
+                                        <h6 class="parcerias-item--heading">
                                             Assista online o melhor do esporte.
                                         </h6>
                                         <span class="btn-more"></span>
                                     </a>
                                 </div>
-                                <div class="planos-item">
+                                <div class="parcerias-item">
                                     <a href="#">
                                         <figure>
                                             <img src="http://placehold.it/400x120" alt="">
                                         </figure>
-                                        <img src="http://placehold.it/135x40" class="planos-item--logo" alt="">
-                                        <h6 class="planos-item--heading">
+                                        <img src="http://placehold.it/135x40" class="parcerias-item--logo" alt="">
+                                        <h6 class="parcerias-item--heading">
                                             Assista online o melhor do esporte.
                                         </h6>
                                         <span class="btn-more"></span>
