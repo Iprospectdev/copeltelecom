@@ -6,7 +6,7 @@
 			<div class="container">
 				<div class="main-breadcrumb">
 					<a href="#"><i class="fas fa-home"></i>Home</a>
-					<a href="#">Planos e preços</a>
+					<a href="#">Speedtest</a>
 				</div>
 				<h2>Speedtest Copel Telecom</h2>
 				<p>Confira velocidade da sua banda larga é com o Speedtest da Copel Telecom. Se você já tem Copel Fibra, o seu download é igual ao upload. Se você ainda não tem Copel Fibra, veja o quanto a sua velocidade de upload pode ser muito maior.</p>
@@ -23,7 +23,7 @@
 				<ul>
 					<li>
 						<small><span>1</span></small>
-						Faça o teste em um computador concectado a internet por meio de um cabo de rede. <i class="fal fa-question-circle" data-toggle="tooltip" data-placement="bottom" title="Para que o resultado do teste seja mais preciso, evite fazer através do WI-FI. Redes sem fio sofrem a influência de diversos fatores, como: paredes, portas, janelas, persianas metálicas e outros equipamentos que emitem ondas eletromagnéticas. Não se esqueça, que a sua distância do equipamento da Copel Telecom, causa diferença na velocidade atingida. Outros fatores que podem influenciar no resultado são placas de rede - cabo e sem fio - que não suportam as velocidades do plano contratado. O ideal é sempre fazer o teste com o cabo conectado entre o computador e o equipamento da Copel Telecom."></i>
+						Faça o teste em um computador concectado a internet por meio de um cabo de rede. <i class="fal fa-question-circle" data-toggle="tooltip" data-placement="right" title="Para que o resultado do teste seja mais preciso, evite fazer através do WI-FI. Redes sem fio sofrem a influência de diversos fatores, como: paredes, portas, janelas, persianas metálicas e outros equipamentos que emitem ondas eletromagnéticas. Não se esqueça, que a sua distância do equipamento da Copel Telecom, causa diferença na velocidade atingida. Outros fatores que podem influenciar no resultado são placas de rede - cabo e sem fio - que não suportam as velocidades do plano contratado. O ideal é sempre fazer o teste com o cabo conectado entre o computador e o equipamento da Copel Telecom."></i>
 					</li>
 					<li>
 						<small><span>2</span></small>
@@ -45,9 +45,6 @@
 			<iframe src="http://tvc.copel.net/index_ookla.html" frameborder="0" height="620px" style="height: 620px;" width="100%"></iframe>
 			<div class="container">
 				<svg width="113px" height="169px" viewBox="0 0 113 169" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-				    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
-				    <desc>Created with Sketch.</desc>
-				    <defs></defs>
 				    <g id="01_speedtest" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
 				        <g transform="translate(-99.000000, -1179.000000)" id="Group-22" stroke="#FFFFFF" stroke-width="3">
 				            <g transform="translate(101.000000, 1181.000000)">
@@ -77,7 +74,9 @@
 
 				<div class="row">
 					<div class="col-md-6 offset-md-1">
-						<img src="<?php bloginfo('template_url'); ?>/_assets/images/speedtest-mockup.png" alt="">
+						<div class="speedtest-garantias--image">
+							<img src="<?php bloginfo('template_url'); ?>/_assets/images/speedtest-mockup.png" alt="">
+						</div>
 					</div>
 					<div class="col-md-4 offset-md-1">
 						<div class="speedtest-garantias--text">

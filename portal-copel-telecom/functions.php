@@ -1,5 +1,9 @@
 <?php
 
+@ini_set( 'upload_max_size' , '64M' );
+@ini_set( 'post_max_size', '64M');
+@ini_set( 'max_execution_time', '300' );
+
 setlocale(LC_ALL, "pt_BR", "pt_BR.iso-8859-1", "pt_BR.utf-8", "portuguese");
 date_default_timezone_set('America/Sao_Paulo');
 
@@ -169,42 +173,24 @@ function change_blog_links($post_link, $id=0){
 add_filter('post_link', 'change_blog_links', 1, 3);
 
 
-// Verifica se não existe nenhuma função com o nome count_post_views
 if ( ! function_exists( 'count_post_views' ) ) {
-    // Conta os views do post
     function count_post_views () { 
-        // Garante que vamos tratar apenas de posts
         if ( is_single() ) {
-        
-            // Precisamos da variável $post global para obter o ID do post
             global $post;
-            
-            // Se a sessão daquele posts não estiver vazia
             if ( empty( $_SESSION[ 'post_counter_' . $post->ID ] ) ) {
-                
-                // Cria a sessão do posts
                 $_SESSION[ 'post_counter_' . $post->ID ] = true;
-            
-                // Cria ou obtém o valor da chave para contarmos
                 $key = 'post_counter';
                 $key_value = get_post_meta( $post->ID, $key, true );
-                
-                // Se a chave estiver vazia, valor será 1
-                if ( empty( $key_value ) ) { // Verifica o valor
+                if ( empty( $key_value ) ) {
                     $key_value = 1;
                     update_post_meta( $post->ID, $key, $key_value );
                 } else {
-                    // Caso contrário, o valor atual + 1
                     $key_value += 1;
                     update_post_meta( $post->ID, $key, $key_value );
-                } // Verifica o valor
-                
-            } // Checa a sessão
-            
-        } // is_single
-        
+                }
+            }
+        }
         return;
-        
     }
     add_action( 'get_header', 'count_post_views' );
 }

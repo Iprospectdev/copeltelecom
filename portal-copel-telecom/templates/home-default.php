@@ -578,15 +578,15 @@
                     <div class="col-12 col-md-4 blog-item-nav">
                         <h6>Navegar por categorias</h6>
                         <nav>
-                            <a href="">Copel</a>
-                            <a href="">Curiosidades</a>
-                            <a href="">Inovação</a>
-                            <a href="">Em alta velocidade</a>
-                            <a href="">Games</a>
-                            <a href="">Wi-Fi</a>
-                            <a href="">Institucional</a>
-                            <a href="">Notícias</a>
-                            <a href="">Vídeos</a>
+                            <a href="#">Copel</a>
+                            <a href="#">Curiosidades</a>
+                            <a href="#">Inovação</a>
+                            <a href="#">Em alta velocidade</a>
+                            <a href="#">Games</a>
+                            <a href="#">Wi-Fi</a>
+                            <a href="#">Institucional</a>
+                            <a href="#">Notícias</a>
+                            <a href="#">Vídeos</a>
                         </nav>
                         <a href="#" class="btn-assine">Veja todas as publicações</a>
                     </div>

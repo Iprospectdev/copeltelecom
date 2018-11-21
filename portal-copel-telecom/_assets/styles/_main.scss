@@ -13,6 +13,44 @@ a:hover {
 	transition: all 0.2s ease-in-out;
 }
 
+.tooltip-inner {
+    max-width: 300px;
+    // padding: 3px 8px;
+    color: #fff;
+    text-align: center;
+    background-color: color('orange-light');
+    // border-radius: .25rem;
+}
+
+.tooltip.bs-tooltip-auto[x-placement^=top] .arrow::before, .tooltip.bs-tooltip-top .arrow::before {
+    margin-left: -3px;
+    content: "";
+    border-width: 5px 5px 0;
+    border-top-color: color('orange-light');
+}
+
+.tooltip.bs-tooltip-auto[x-placement^=left] .arrow::before, .tooltip.bs-tooltip-left .arrow::before {
+    right: 0;
+    margin-top: -3px;
+    content: "";
+    border-width: 5px 0 5px 5px;
+    border-left-color: color('orange-light');
+}
+
+.tooltip.bs-tooltip-auto[x-placement^=right] .arrow::before, .tooltip.bs-tooltip-right .arrow::before {
+    margin-top: -3px;
+    content: "";
+    border-width: 5px 5px 5px 0;
+    border-right-color: color('orange-light');
+}
+
+.tooltip.bs-tooltip-auto[x-placement^=bottom] .arrow::before, .tooltip.bs-tooltip-bottom .arrow::before {
+    margin-left: -3px;
+    content: "";
+    border-width: 0 5px 5px;
+    border-bottom-color: color('orange-light');
+}
+
 .btn-more {
 	font-weight: 500;
 	font-size: 18px;
@@ -231,5 +269,46 @@ a:hover {
 			font-size: 24px;
 			line-height: 36px;
 		}
+	}
+}
+
+.post-content {
+	h1,h2,h3,h4,h5,h6 {
+		color: color('orange');
+		font-size: 13px;
+		margin-bottom: 25px;
+	}
+
+	p {
+		font-size: 13px;
+		color: color('gray');
+	}
+
+	a {
+		color: color('orange');
+	}
+
+	img {
+		height: auto;
+		max-width: 100%;
+
+		&.alignleft {
+			float: left;
+		}
+
+		&.aligncenter {
+			display: block;
+			margin: 0 auto;
+		}
+
+		&.alignright {
+			float: right;
+		}
+	}
+
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
 	}
 }

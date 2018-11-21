@@ -1046,6 +1046,11 @@
 			line-height: 22px;
 		}
 	}
+
+	&.col-md-12 {
+		height: 360px;
+		min-height: 566px;
+	}
 	
 	@include media-breakpoint-down(sm) {
 		margin-bottom: 40px;
