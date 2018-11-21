@@ -180,6 +180,17 @@
 		margin-left: -15px;
 		margin-right: -15px;
 		min-width: calc(100% + 30px);
+		
+		&.col-md-12,
+		&.col-md-8 {
+			height: 250px;
+			min-height: 250px;
+		}
+
+		&.col-md-4 {
+			height: 250px;
+			min-height: 250px;
+		}
 	}
 }
 
@@ -221,6 +232,29 @@
 	
 	@include media-breakpoint-down(sm) {
 		padding: 15px 0;
+	}
+}
+
+.blog-item-confira {
+	font-weight: 400;
+	font-size: 15px;
+	color: color('gray-dark');
+	letter-spacing: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	p {
+		width: 170px;
+
+		a {
+			font-weight: 700;
+			color: inherit;
+		}
+	}
+
+	@include media-breakpoint-down(sm) {
+		p {width: 100%;}
 	}
 }
 
@@ -460,5 +494,134 @@
 		font-size: 30px;
 		color: color('gray-dark');
 		margin-bottom: 10px;
+	}
+}
+
+
+// search
+.blog-search-header {
+	position: relative;
+	padding: 70px 0 28px;
+
+	h1,h2,h3,h4 {
+		font-weight: 700;
+		font-size: 30px;
+		color: color('gray-dark');
+		line-height: 40px;
+		
+		small {
+			color: color('gray');
+			font-size: 13px;
+			font-weight: 700;
+			letter-spacing: 0;
+			line-height: 13px;
+			opacity: 0.3;
+		}
+	}
+
+	@include media-breakpoint-down(sm) {
+		padding-top: 10px;
+		
+		&--share {
+			top: 5px;
+		}
+	}	
+}
+
+.blog-sidebar-hidden {
+	.blog-sidebar {
+		padding-bottom: 0;
+	}
+}
+
+.blog-search-item {
+	border-bottom: 1px solid #CFD3D6;
+	margin-bottom: 20px;
+	max-width: 660px;
+	padding-bottom: 20px;
+
+	h1,h2,h3,h4,h5,h6 {
+		font-weight: 400;
+		font-size: 20px;
+		color: color('orange-light');
+		line-height: 25px;
+		margin: 0;
+
+		small {
+			color: color('gray');
+			display: block;
+			font-size: 13px;
+			font-weight: 400;
+			margin-bottom: 15px;
+		    line-height: 13px;
+			position: relative;
+			text-transform: uppercase;
+
+			&:after {
+				border: 1px solid color('gray');
+				content: "";
+				display: block;
+				margin: 8px 0 0 0;
+				width: 30px;
+			}
+		}
+	}
+}
+
+.blog-faq {
+	margin-top: 50px;
+	margin-bottom: 100px;
+}
+
+.blog-faq-heading {
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	height: 60px;
+	font-size: 15px;
+	text-align: right;
+	white-space: nowrap;
+	position: absolute;
+	right: 15px;
+	
+	h6 {
+		margin: 0;
+		color: inherit;
+	}
+
+	strong {
+		display: block;
+		font-size: 20px;
+	}
+
+	@include media-breakpoint-down(sm) {
+		position: static;
+		white-space: normal;
+		text-align: center;
+		margin-top: -55px;
+		margin-bottom: 20px;
+	}
+}
+
+.blog-faq-item {
+	background: #F2F5F6;
+	display: flex;
+	flex-direction: row;
+	height: 60px;
+	align-items: center;
+	padding: 0 20px;
+	color: color('gray-dark');
+	font-size: 15px;
+	font-weight: 400;
+	margin-bottom: 30px;
+	border-radius: 4px;
+
+	svg, i, img {
+		margin-right: 10px;
+		float: left;
+	}
+
+	&:hover {
+		color: color('gray-dark');
 	}
 }

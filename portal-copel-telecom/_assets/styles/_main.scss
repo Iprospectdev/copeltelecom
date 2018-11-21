@@ -164,6 +164,7 @@ a:hover {
 	padding: 20px 0;
 	a {
 		color: #ABADB2;
+		color: color('orange');
 		font-size: 12px;
 		font-weight: 500;
 
@@ -176,19 +177,17 @@ a:hover {
 			margin: 0 10px;
 		}
 
-		&:first-child {
-			color: color('orange');
-
-			&:hover {
-				color: color('orange');
-			}
-		}
-
 		&:hover {
-			color: #ABADB2;
+			color: color('orange');
 		}
 
 		&:last-child {
+			color: #ABADB2;
+
+			&:hover {
+				color: #ABADB2;
+			}
+	
 			&:after {
 				display: none;
 			}

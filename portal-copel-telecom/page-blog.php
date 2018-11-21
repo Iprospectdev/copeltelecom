@@ -44,16 +44,12 @@
 					<?php
 						if($i==0 && get_query_var( 'paged' )<=1){
 							$class = 'col-md-12 col-sm-12 col-12 float-left';
-							// $style = 'height: 500px;';
 						}elseif($i==4 && get_query_var( 'paged' )<=1){
 							$class = 'col-md-8 col-sm-12 col-12 float-right';
-							// $style = 'height: 540px';
 						}elseif($i==9 && get_query_var( 'paged' )>1){
 							$class = 'col-12 float-left';
-							// $style = 'height: 500px;';
 						}else{
 							$class = 'col-md-4 col-sm-6 col-12 float-left';
-							// $style = 'height: 260px;';
 						}
 					?>
 					<article class="<?php echo $class; ?> blog-item">

@@ -174,7 +174,7 @@
                             <a href="#">Perguntas frequentes</a>
                         </li>
                         <li>
-                            <a href="#">Blog</a>
+                            <a href="<?php $p=get_page_by_title('Blog'); echo get_permalink($p->ID); ?>">Blog</a>
                         </li>
                     </ul>
                 </nav>
@@ -254,7 +254,7 @@
                             <a href="#">Perguntas frequentes</a>
                         </li>
                         <li>
-                            <a href="#">Blog</a>
+                            <a href="<?php $p=get_page_by_title('Blog'); echo get_permalink($p->ID); ?>">Blog</a>
                         </li>
                         <li class="header-mobile-nav--minhacopel">
                             <a href="#">

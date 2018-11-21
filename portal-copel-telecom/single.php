@@ -72,9 +72,9 @@
 									</a>
 								</div>
 							</header>
-							<?php if(has_post_thumbnail()): ?>
+							<?php if ( get_the_post_thumbnail_url( $post->ID ) ):?>
 								<figure class="blog-single-figure">
-									<?php the_post_thumbnail( get_the_id() , "full" ); ?>
+									<?php the_post_thumbnail( $post->ID , "full" ); ?>
 								</figure>
 							<?php endif; ?>
 							<div class="post-content">
