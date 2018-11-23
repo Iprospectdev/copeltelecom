@@ -7,7 +7,9 @@ jQuery(document).ready(function($) {
 	$('.wvt-step .wvt-btn').on('click', function(event) {
 		$(this).parents('.wvt-step').addClass('completed');
 	    $(this).parents('.wvt-step').removeClass('active').next().addClass('active');
-	    return false;
+	    if(!$(this).atrr('href')) {
+	    	return false;
+	    }
 	});
 
 	// $('.wvt-endereco-cobranca').change(function(event) {

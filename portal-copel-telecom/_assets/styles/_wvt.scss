@@ -9,6 +9,7 @@
 .wvt-btn {
 	height: 60px;
 	line-height: 60px;
+	display: inline-block;
 	text-align: center;
 	color: #fff;
 	font-size: 20px;
@@ -21,6 +22,10 @@
 
 	&:focus {
 		outline: none;
+	}
+
+	&:hover {
+		color: #fff;
 	}
 }
 
@@ -739,6 +744,7 @@
 		margin-bottom: 0;
 		padding-bottom: 5px;
 	}
+
 	@include media-breakpoint-down(sm) {
 		.planos-list {
 			margin-bottom: 0;
