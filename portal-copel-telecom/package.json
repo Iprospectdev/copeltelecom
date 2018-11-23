@@ -70,8 +70,8 @@
     "popper.js": "^1.14.4"
   },
   "scripts": {
-    "start": "webpack --mode=development --watch --progress",
-    "build": "webpack --mode=production --progress",
+    "start": "webpack --env.NODE_ENV=development --mode development --watch --progress",
+    "build": "webpack --env.NODE_ENV=production --mode production --progress",
     "old-start": "gulp watch",
     "old-build": "gulp"
   },

@@ -4,6 +4,9 @@ const css = require('../styles/app.scss');
 import 'bootstrap';
 import 'popper.js';
 import 'owl.carousel';
+import './wvt.js';
+
+
 
 window.onload = function() {
 
