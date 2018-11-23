@@ -35,9 +35,13 @@
 <body>
 	<div class="wvt">
 		<div class="container">
+			<header class="wvt-heading d-block d-sm-none">
+				<h2>Pode comemorar! A Copel Fibra está disponível no seu endereço.</h2>
+				<p>Agora complete os campos abaixo e clique em próximo passo.</p>
+			</header>
 			<div class="row">
-				<section class="wvt-content col-md-8">
-					<header class="wvt-heading">
+				<section class="wvt-content col-md-8 order-2 order-sm-1">
+					<header class="wvt-heading d-none d-sm-block">
 						<h2>Pode comemorar! A Copel Fibra está disponível no seu endereço.</h2>
 						<p>Agora complete os campos abaixo e clique em próximo passo.</p>
 					</header>
@@ -99,16 +103,62 @@
 											</span>
 											<div class="wvt-checkbutton-group">
 												<label class="wvt-checkbutton">
-													<input type="radio" name="endereco" value="Mesmo endereço" checked>
+													<input type="radio" name="endereco-cobranca" value="Mesmo endereço" checked>
 													<span>Mesmo endereço</span>
 												</label>
 												<label class="wvt-checkbutton">
-													<input type="radio" name="endereco" value="Outro endereço">
+													<input type="radio" name="endereco-cobranca" value="Outro endereço">
 													<span>Outro endereço</span>
 												</label>
 											</div>
 										</div>
-										
+									</div>
+									
+									<div class="wvt-endereco-cobranca">
+										<div class="row">
+											<div class="col-md-6">
+												<label for="cep-cobranca" class="wvt-form-label">CEP</label>
+												<div class="wvt-form-control">
+													<input type="text" id="cep-cobranca" name="cep-cobranca">
+												</div>
+											</div>
+											<div class="col-md-6">
+												<label for="numero-cobranca" class="wvt-form-label">Número</label>
+												<div class="wvt-form-control">
+													<input type="number" id="numero-cobranca" name="numero-cobranca">
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="wvt-form-control">
+													<textarea name="endereco-cobranca">Rua lorem ipsum dolores Bairro Exemplo Curitiba - Paraná</textarea>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<label for="tipo-imovel-cobranca" class="wvt-form-label">Tipo de imóvel</label>
+												<div class="wvt-form-control">
+													<select name="tipo-imovel-cobranca" id="tipo-imovel-cobranca">
+														<option value=""></option>
+														<option value="Casa">Casa</option>
+														<option value="Apartamento">Apartamento</option>
+													</select>
+
+													<svg width="10px" height="7px">
+												        <g transform="translate(-507.000000, -624.000000)" fill="#464D5C" stroke="#464D5C">
+												            <g transform="translate(190.000000, 370.000000)"><polygon  points="322 261 318 255 326 255"></polygon></g>
+												        </g>
+													</svg>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<label for="complemento-cobranca" class="wvt-form-label">Complemento</label>
+												<div class="wvt-form-control">
+													<input type="text" id="complemento-cobranca">
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="row">	
 										<div class="col-md-12">
 											<span class="wvt-form-label">
 												Escolha o dia de vencimento da fatura
@@ -146,7 +196,7 @@
 													<span></span>
 												</span>
 												<small>Quero receber a fatura online</small>
-												<i class="fa fa-question"></i>
+												<i class="fal fa-question-circle" data-toggle="tooltip" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod"></i>
 											</label>
 										</div>
 									</div>
@@ -183,7 +233,7 @@
 											</div>
 										</div>
 										<div class="col-md-12">
-											<label for="data-nascimento" class="wvt-form-label">Data de nascimento</label>
+											<label for="data-nascimento" class="wvt-form-label ">Data de nascimento</label>
 											<div class="wvt-form-control">
 												<input type="text" id="data-nascimento" name="data-nascimento" placeholder="">
 											</div>
@@ -392,8 +442,8 @@
 									</span>
 									<div class="wvt-schelude">
 										<div class="wvt-form-control">
-											<i class="fa fa-calendary"></i>
-											<input type="text" id="agenda" name="agenda" placeholder="Selecione uma data">
+											<i class="fal fa-calendar-alt"></i>
+											<input type="text" id="agenda" class="flatpickr" name="agenda" placeholder="Selecione uma data">
 										</div>
 										<div class="wvt-checkbutton-group">
 											<label class="wvt-checkbutton">
@@ -442,7 +492,7 @@
 					</div>
 				</section>
 
-				<aside class="wvt-sidebar col-md-4">
+				<aside class="wvt-sidebar col-md-4 order-1 order-sm-2">
 					<img src="../_assets/images/logo.svg" class="wvt-sidebar-logo" alt="">
 
 					<div class="wvt-sidebar-plano">
@@ -477,10 +527,10 @@
 							Sem fidelidade
 						</label>
 
-						<p>Instalação R$ 99,00 <i class="fas fa-question"></i></p>
+						<p>Instalação R$ 99,00 <i class="fal fa-question-circle" data-toggle="tooltip" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod"></i></p>
 					</div>
 
-					<a href="#" class="wvt-sidebar-change">Escolher outro plano</a>
+					<a href="http://localhost:3000/wp-content/themes/portal-copel-telecom/wvt/plano.html" class="wvt-sidebar-change">Escolher outro plano</a>
 				</aside>
 			</div>
 		</div>

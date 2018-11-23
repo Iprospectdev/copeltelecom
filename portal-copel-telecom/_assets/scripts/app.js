@@ -5,13 +5,17 @@ import 'bootstrap';
 import 'popper.js';
 import 'owl.carousel';
 import './wvt.js';
-
+import flatpickr from "flatpickr";
 
 
 window.onload = function() {
 
     $('[data-toggle="tooltip"]').tooltip({
         boundary: 'window'
+    });
+
+    flatpickr(".flatpickr", {
+        dateFormat: "d-m-Y",
     });
 
     const sizeToFixed = $('.header').height() + 70;

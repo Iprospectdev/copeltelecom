@@ -59,6 +59,11 @@
 		width: 3000px;
 		z-index: -1;
 	}
+
+	@include media-breakpoint-down(sm) {
+		padding-bottom: 25px;
+		padding-top: 25px;
+	}
 }
 
 .wvt-sidebar-logo {
@@ -317,6 +322,30 @@
 			max-height: 10000px;
 		}
 	}
+
+	&.completed {
+		.wvt-step--heading {
+			strong {
+				color: #00A0B2;
+				opacity: 1;
+
+				&:after {
+					background: #00A0B2;
+				}
+			}
+			&:after {
+				color: color('gray-dark');
+				content: "Editar";
+				font-size: 13px;
+				font-weight: 700;
+				position: absolute;
+				right: 15px;
+				text-align: right;
+				top: 50%;
+				transform: translateY(-50%);
+			}
+		}
+	}
 }
 
 .wvt-table {
@@ -383,13 +412,17 @@
 		line-height: 21px;
 	}
 
-	i.fa {
+	i.fa,i.fal,i.far,i.fas {
 		position: absolute;
 		right: 0;
 		top: 50%;
 		margin-top: -12px;
 		color: color('gray-dark');
 		font-size: 16px;
+	}
+
+	@include media-breakpoint-down(sm) {
+		white-space: normal;
 	}
 }
 
@@ -415,6 +448,8 @@
 		width: 100%;
 		height: 50px;
 		line-height: 50px;
+
+		@include placeholder(#CDCFD3);
 
 		&:focus {
 			outline: none;
@@ -446,11 +481,26 @@
 		}
 	}
 
+	i {
+	    z-index: 999;
+	    top: 0;
+	    font-size: 24px;
+	    position: absolute;
+	    left: 15px;
+	    top: 11px;
+	    pointer-events: none;
+	    color: #D4D7DC;
+	}
+	
+	i + input {
+		padding-left: 50px;
+	}
+
 	&:after {
 		@include fontawesome('\F00C');
 		background: #F2F5F6;
 		font-weight: 900;
-		border: 1px solid #D4D7DC;
+		border: 0;
 		color: #00A0B2;
 		font-size: 18px;
 		height: 50px;
@@ -619,6 +669,12 @@
 	top: 0;
 	max-width: 100%;
 	z-index: -1;
+	height: auto;
+
+	@include media-breakpoint-down(sm) {
+		top: 0;
+		max-width: 50%;
+	}
 }
 
 .wvt-planos-header {
@@ -663,6 +719,32 @@
 		color: color('gray-dark');
 		text-align: center;
 	}
+
+	@include media-breakpoint-down(sm) {
+		margin-bottom: 0;
+
+		.logo {
+			margin-bottom: 20px;
+		}
+
+		small {
+			margin: 10px;
+		}
+	}
+}
+
+.wvt-planos-content {
+	.planos-list {
+		background: none;
+		margin-bottom: 0;
+		padding-bottom: 5px;
+	}
+	@include media-breakpoint-down(sm) {
+		.planos-list {
+			margin-bottom: 0;
+			padding-bottom: 5px;
+		}
+	}
 }
 
 .wvt-planos-footer {
@@ -683,4 +765,8 @@
 			}
 		}
 	}
+}
+
+.wvt-endereco-cobranca {
+	display: none;
 }
