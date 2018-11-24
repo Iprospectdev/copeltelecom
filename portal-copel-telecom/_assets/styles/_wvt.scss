@@ -539,6 +539,31 @@
 			opacity: 1;
 		}
 	}
+
+	&.error {
+		
+		input,
+		select {
+			width: calc(100% - 33px);
+		}
+
+		textarea {
+			background: #F2F5F6;
+			position: relative;
+			z-index: 2;
+		}
+
+		svg {
+			right: 50px;
+		}
+
+		&:after {
+			content: '\F00D';
+			font-weight: 600;
+			color: #DF5C5C;
+			opacity: 1;
+		}
+	}
 }
 
 .wvt-checkbutton {

@@ -6,7 +6,16 @@
 #					#
 #...................#
 
-
+$page = get_page_by_title("Disponibilidade", "", "page" );
+if (!$page) {
+	$page_args = array(
+		'post_content'   => "",
+		'post_title'     => "Disponibilidade",
+		'post_status'    => 'publish',
+		'post_type'      => 'page'
+	);
+	wp_insert_post( $page_args );
+}
 
 $page = get_page_by_title("Sucesso", "", "page" );
 if (!$page) {

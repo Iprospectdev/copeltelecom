@@ -11726,6 +11726,7 @@ a:hover {
   color: #fff;
   display: inline-block;
   font-weight: 700;
+  text-align: center;
   margin: 18px 0;
   padding: 10px 40px;
   transition: all 0.3s ease-in-out;
@@ -14580,10 +14581,12 @@ body.menu-opened {
         top: 20px;
         width: 50%; }
         .page-sucesso .parcerias-item figure img {
-          position: absolute;
           left: 50%;
-          min-width: 100%;
+          max-width: initial;
+          width: auto;
           min-height: 100%;
+          min-width: 100%;
+          position: absolute;
           top: 50%;
           transform: translate(-50%, -50%); }
       .page-sucesso .parcerias-item .btn-more {
@@ -14628,6 +14631,128 @@ body.menu-opened {
     .sucesso-header {
       background-position: left;
       margin-top: 63px; } }
+
+.disponibilidade-mapa {
+  background: url(../images/disponibilidade-mapa.png) center;
+  padding: 85px 15px; }
+  @media (max-width: 767.98px) {
+    .disponibilidade-mapa {
+      padding: 110px 15px 85px; } }
+
+.disponibilidade-modal {
+  background: #FFFFFF;
+  box-shadow: 0 2px 30px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  max-width: 770px;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  padding: 40px 100px 10px; }
+  .disponibilidade-modal--close {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    color: #A2A6AD;
+    background: none;
+    border: 0;
+    font-weight: 400;
+    border-radius: 0; }
+  .disponibilidade-modal--retangle {
+    position: absolute;
+    left: 0;
+    top: 0; }
+  .disponibilidade-modal--icon {
+    min-width: 77px;
+    margin-right: 23px;
+    position: relative;
+    z-index: 2; }
+  .disponibilidade-modal h1, .disponibilidade-modal h2, .disponibilidade-modal h3, .disponibilidade-modal h4, .disponibilidade-modal h5, .disponibilidade-modal h6 {
+    font-weight: 700;
+    font-size: 35px;
+    color: #464D5C;
+    margin: 0 0 5px; }
+  .disponibilidade-modal p {
+    font-weight: 400;
+    font-size: 13px;
+    color: #464D5C; }
+  .disponibilidade-modal div {
+    position: relative;
+    z-index: 2; }
+  @media (max-width: 767.98px) {
+    .disponibilidade-modal {
+      padding: 15px; }
+      .disponibilidade-modal p {
+        margin-bottom: 0; }
+      .disponibilidade-modal--icon {
+        display: none; } }
+
+.disponibilidade-header {
+  background: #F2F5F6;
+  position: relative;
+  min-height: 320px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+  .disponibilidade-header h1, .disponibilidade-header h2, .disponibilidade-header h3, .disponibilidade-header h4, .disponibilidade-header h5, .disponibilidade-header h6 {
+    max-width: 330px;
+    display: block;
+    font-weight: 700;
+    font-size: 45px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(-90deg, #FFA600 0%, #FF6D00 100%); }
+  @media (max-width: 767.98px) {
+    .disponibilidade-header {
+      margin-top: 60px;
+      min-height: 100px;
+      padding: 30px 0; }
+      .disponibilidade-header h1, .disponibilidade-header h2, .disponibilidade-header h3, .disponibilidade-header h4, .disponibilidade-header h5, .disponibilidade-header h6 {
+        font-size: 30px; } }
+
+.disponibilidade-content {
+  margin-top: 50px;
+  max-width: 370px;
+  width: 100%;
+  margin-bottom: 70px; }
+  .disponibilidade-content .post-content svg, .disponibilidade-content .post-content img {
+    min-width: 90px;
+    margin-right: 50px; }
+  .disponibilidade-content .post-content h1, .disponibilidade-content .post-content h2, .disponibilidade-content .post-content h3, .disponibilidade-content .post-content h4, .disponibilidade-content .post-content h5, .disponibilidade-content .post-content h6 {
+    color: #464D5C;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 35px; }
+  .disponibilidade-content .post-content p {
+    font-size: 15px; }
+  @media (max-width: 767.98px) {
+    .disponibilidade-content {
+      margin-top: 20px;
+      margin-bottom: 20px; }
+      .disponibilidade-content .post-content svg, .disponibilidade-content .post-content img {
+        margin-right: 15px; } }
+
+.disponibilidade-form {
+  background: #FFFFFF;
+  border-radius: 5px;
+  box-shadow: 0 2px 30px 0 rgba(0, 0, 0, 0.15);
+  padding: 50px;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 70px;
+  margin-top: -220px; }
+  .disponibilidade-form--icon {
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    top: -80px; }
+  @media (max-width: 767.98px) {
+    .disponibilidade-form {
+      margin-top: 70px;
+      margin-bottom: 50px;
+      padding: 15px; } }
 
 .blog-header h1, .blog-header h2, .blog-header h3 {
   color: #464D5C;
@@ -15552,6 +15677,20 @@ body.menu-opened {
   .wvt-form-control.active svg {
     right: 50px; }
   .wvt-form-control.active:after {
+    opacity: 1; }
+  .wvt-form-control.error input,
+  .wvt-form-control.error select {
+    width: calc(100% - 33px); }
+  .wvt-form-control.error textarea {
+    background: #F2F5F6;
+    position: relative;
+    z-index: 2; }
+  .wvt-form-control.error svg {
+    right: 50px; }
+  .wvt-form-control.error:after {
+    content: '\F00D';
+    font-weight: 600;
+    color: #DF5C5C;
     opacity: 1; }
 
 .wvt-checkbutton {
