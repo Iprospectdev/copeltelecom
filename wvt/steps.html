@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="pt-BR" ng-app="copeltelecom">
+<head>
+	
+	<title>COPEL  |  Wvt Passos</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="../_assets/images/favicons/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="../_assets/images/favicons/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="../_assets/images/favicons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="../_assets/images/favicons/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="../_assets/images/favicons/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="../_assets/images/favicons/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="../_assets/images/favicons/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="../_assets/images/favicons/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="../_assets/images/favicons/apple-touch-icon-180x180.png">
+	<link rel="icon" type="image/png" href="../_assets/images/favicons/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="../_assets/images/favicons/favicon-194x194.png" sizes="194x194">
+	<link rel="icon" type="image/png" href="../_assets/images/favicons/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="../_assets/images/favicons/android-chrome-192x192.png" sizes="192x192">
+	<link rel="icon" type="image/png" href="../_assets/images/favicons/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="../_assets/images/favicons/manifest.json">
+	<link rel="mask-icon" href="../_assets/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-TileImage" content="../_assets/images/favicons/mstile-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+	<link rel="stylesheet" id="css-css" href="../_assets/css/app.css" type="text/css" media="all">
+
+	<script type="text/javascript" src="../_assets/js/app.bundle.js"></script>
+
+</head>
+<body>
+	<div class="wvt">
+		<div class="container">
+			<header class="wvt-heading d-block d-sm-none">
+				<h2>Pode comemorar! A Copel Fibra está disponível no seu endereço.</h2>
+				<p>Agora complete os campos abaixo e clique em próximo passo.</p>
+			</header>
+			<div class="row">
+				<section class="wvt-content col-md-8 order-2 order-sm-1">
+					<header class="wvt-heading d-none d-sm-block">
+						<h2>Pode comemorar! A Copel Fibra está disponível no seu endereço.</h2>
+						<p>Agora complete os campos abaixo e clique em próximo passo.</p>
+					</header>
+
+					<div class="wvt-steps">
+						
+						<fieldset class="wvt-step active">
+							<div class="wvt-step--heading">
+								<strong>1</strong>
+								Dados de cadastro
+							</div>
+
+							<div class="wvt-step--content">
+								<div class="wvt-step--content--inner">
+									<div class="row">
+										<div class="col-md-6">
+											<label for="cep" class="wvt-form-label">CEP</label>
+											<div class="wvt-form-control">
+												<input type="text" id="cep" name="cep">
+											</div>
+										</div>
+										<div class="col-md-6">
+											<label for="numero" class="wvt-form-label">Número</label>
+											<div class="wvt-form-control">
+												<input type="number" id="numero" name="numero">
+											</div>
+										</div>
+										<div class="col-md-12">
+											<div class="wvt-form-control">
+												<textarea name="endereco">Rua lorem ipsum dolores Bairro Exemplo Curitiba - Paraná</textarea>
+											</div>
+										</div>
+										<div class="col-md-12">
+											<label for="tipo-imovel" class="wvt-form-label">Tipo de imóvel</label>
+											<div class="wvt-form-control">
+												<select name="tipo-imovel" id="tipo-imovel">
+													<option value=""></option>
+													<option value="Casa">Casa</option>
+													<option value="Apartamento">Apartamento</option>
+												</select>
+
+												<svg width="10px" height="7px">
+											        <g transform="translate(-507.000000, -624.000000)" fill="#464D5C" stroke="#464D5C">
+											            <g transform="translate(190.000000, 370.000000)"><polygon  points="322 261 318 255 326 255"></polygon></g>
+											        </g>
+												</svg>
+											</div>
+										</div>
+										<div class="col-md-12">
+											<label for="complemento" class="wvt-form-label">Complemento</label>
+											<div class="wvt-form-control">
+												<input type="text" id="complemento">
+											</div>
+										</div>
+
+										<div class="col-md-12">
+											<span class="wvt-form-label">
+												<strong>Cobrança</strong>
+											</span>
+											<div class="wvt-checkbutton-group">
+												<label class="wvt-checkbutton">
+													<input type="radio" name="endereco-cobranca" value="Mesmo endereço" checked>
+													<span>Mesmo endereço</span>
+												</label>
+												<label class="wvt-checkbutton">
+													<input type="radio" name="endereco-cobranca" value="Outro endereço">
+													<span>Outro endereço</span>
+												</label>
+											</div>
+										</div>
+									</div>
+									
+									<div class="wvt-endereco-cobranca">
+										<div class="row">
+											<div class="col-md-6">
+												<label for="cep-cobranca" class="wvt-form-label">CEP</label>
+												<div class="wvt-form-control">
+													<input type="text" id="cep-cobranca" name="cep-cobranca">
+												</div>
+											</div>
+											<div class="col-md-6">
+												<label for="numero-cobranca" class="wvt-form-label">Número</label>
+												<div class="wvt-form-control">
+													<input type="number" id="numero-cobranca" name="numero-cobranca">
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="wvt-form-control">
+													<textarea name="endereco-cobranca">Rua lorem ipsum dolores Bairro Exemplo Curitiba - Paraná</textarea>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<label for="tipo-imovel-cobranca" class="wvt-form-label">Tipo de imóvel</label>
+												<div class="wvt-form-control">
+													<select name="tipo-imovel-cobranca" id="tipo-imovel-cobranca">
+														<option value=""></option>
+														<option value="Casa">Casa</option>
+														<option value="Apartamento">Apartamento</option>
+													</select>
+
+													<svg width="10px" height="7px">
+												        <g transform="translate(-507.000000, -624.000000)" fill="#464D5C" stroke="#464D5C">
+												            <g transform="translate(190.000000, 370.000000)"><polygon  points="322 261 318 255 326 255"></polygon></g>
+												        </g>
+													</svg>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<label for="complemento-cobranca" class="wvt-form-label">Complemento</label>
+												<div class="wvt-form-control">
+													<input type="text" id="complemento-cobranca">
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="row">	
+										<div class="col-md-12">
+											<span class="wvt-form-label">
+												Escolha o dia de vencimento da fatura
+											</span>
+											<label class="wvt-checkbutton">
+												<input type="radio" name="dia-vencimento-fatura" value="1" checked>
+												<span>1</span>
+											</label>
+											<label class="wvt-checkbutton">
+												<input type="radio" name="dia-vencimento-fatura" value="05">
+												<span>05</span>
+											</label>
+											<label class="wvt-checkbutton">
+												<input type="radio" name="dia-vencimento-fatura" value="10">
+												<span>10</span>
+											</label>
+											<label class="wvt-checkbutton">
+												<input type="radio" name="dia-vencimento-fatura" value="15">
+												<span>15</span>
+											</label>
+											<label class="wvt-checkbutton">
+												<input type="radio" name="dia-vencimento-fatura" value="20">
+												<span>20</span>
+											</label>
+											<label class="wvt-checkbutton">
+												<input type="radio" name="dia-vencimento-fatura" value="25">
+												<span>25</span>
+											</label>
+										</div>
+
+										<div class="col-md-12">
+											<label class="wvt-form-label d-flex justify-center">
+												<span class="wvt-checkbox">
+													<input type="checkbox" name="newletter" checked>
+													<span></span>
+												</span>
+												<small>Quero receber a fatura online</small>
+												<i class="fal fa-question-circle" data-toggle="tooltip" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod"></i>
+											</label>
+										</div>
+									</div>
+									<button class="wvt-btn mt-4 mb-5">Próximo passo</button>
+								</div>
+							</div>
+						</fieldset>
+						
+						<fieldset class="wvt-step">
+							<div class="wvt-step--heading">
+								<strong>2</strong>
+								Informações pessoais
+							</div>
+
+							<div class="wvt-step--content">
+								<div class="wvt-step--content--inner">
+									<div class="row">
+										<div class="col-md-12">
+											<label for="nome" class="wvt-form-label">Nome completo</label>
+											<div class="wvt-form-control">
+												<input type="text" id="nome" name="nome" placeholder="Digite o seu nome">
+											</div>
+										</div>
+										<div class="col-md-12">
+											<label for="email" class="wvt-form-label">Email</label>
+											<div class="wvt-form-control">
+												<input type="email" id="email" name="email" placeholder="Digite o seu email">
+											</div>
+										</div>
+										<div class="col-md-12">
+											<label for="cpf" class="wvt-form-label">CPF</label>
+											<div class="wvt-form-control">
+												<input type="text" id="cpf" name="cpf" placeholder="Digite o seu cpf">
+											</div>
+										</div>
+										<div class="col-md-12">
+											<label for="data-nascimento" class="wvt-form-label ">Data de nascimento</label>
+											<div class="wvt-form-control">
+												<input type="text" id="data-nascimento" name="data-nascimento" placeholder="">
+											</div>
+										</div>
+										<div class="col-md-12">
+											<label for="nome-mae" class="wvt-form-label">Nome da mãe</label>
+											<div class="wvt-form-control">
+												<input type="text" id="nome-mae" name="nome-mae" placeholder="Digite o nome da sua mãe">
+											</div>
+										</div>
+										<div class="col-md-6">
+											<label for="tel" class="wvt-form-label">Telefone</label>
+											<div class="wvt-form-control">
+												<input type="text" id="tel" name="tel" placeholder="( )">
+											</div>
+										</div>
+										<div class="col-md-6">
+											<label for="cel" class="wvt-form-label">Celular <small>(opcional)</small></label>
+											<div class="wvt-form-control">
+												<input type="text" id="cel" name="cel" placeholder="( )">
+											</div>
+										</div>
+									</div>
+								</div>
+								<button class="wvt-btn mt-4 mb-5">Próximo passo</button>
+							</div>
+						</fieldset>
+						
+						<fieldset class="wvt-step">
+							<div class="wvt-step--heading">
+								<strong>3</strong>
+								Confirmação
+							</div>
+
+							<div class="wvt-step--content">
+								<div class="wvt-step--content--inner">
+									<p>Confira todas as informações que você preencheu. Depois aceite o Contrato e o Termo de Oferta de Benefício e Fidelização e clique e finalizar. Caso tenha preenchido algum dado errado, clique em Editar.</p>
+
+									<div class="wvt-table">
+										<strong>Informações pessoais</strong>
+										<table>
+											<tr>
+												<td>Nome</td>
+												<td>Antonio Fonseca da Silva</td>
+											</tr>
+											<tr>
+												<td>CPF</td>
+												<td>078.009.329-50</td>
+											</tr>
+											<tr>
+												<td>Nome da mãe</td>
+												<td>Jeni da Silva</td>
+											</tr>
+											<tr>
+												<td>Data de nascimento</td>
+												<td>28/10/1990</td>
+											</tr>
+										</table>
+									</div>
+
+									<div class="wvt-table">
+										<strong>Contato</strong>
+										<table>
+											<tr>
+												<td>Telefone</td>
+												<td>(41) 3368 4422</td>
+											</tr>
+											<tr>
+												<td>Celular</td>
+												<td>(41) 99242 8666</td>
+											</tr>
+											<tr>
+												<td>Email</td>
+												<td>antoniofon@gmail.com</td>
+											</tr>
+											<tr>
+												<td>Data de nascimento</td>
+												<td>28/10/1990</td>
+											</tr>
+										</table>
+									</div>
+
+									<div class="wvt-table">
+										<strong>Endereço para instalação</strong>
+										<table>
+											<tr>
+												<td>CEP</td>
+												<td>80420-210</td>
+											</tr>
+											<tr>
+												<td>Endereço</td>
+												<td>Rua Visconde do Rio Branco</td>
+											</tr>
+											<tr>
+												<td>Nº</td>
+												<td>1310</td>
+											</tr>
+											<tr>
+												<td>Complemento</td>
+												<td>Apartamento 10</td>
+											</tr>
+											<tr>
+												<td>Bairro</td>
+												<td>Bairro Alto</td>
+											</tr>
+											<tr>
+												<td>Município</td>
+												<td>Curitiba</td>
+											</tr>
+										</table>
+									</div>
+
+									<div class="wvt-table">
+										<strong>Endereço para cobrança</strong>
+										<table>
+											<tr>
+												<td>CEP</td>
+												<td>80420-210</td>
+											</tr>
+											<tr>
+												<td>Endereço</td>
+												<td>Rua Visconde do Rio Branco</td>
+											</tr>
+											<tr>
+												<td>Nº</td>
+												<td>1310</td>
+											</tr>
+											<tr>
+												<td>Complemento</td>
+												<td>Apartamento 10</td>
+											</tr>
+											<tr>
+												<td>Bairro</td>
+												<td>Bairro Alto</td>
+											</tr>
+											<tr>
+												<td>Município</td>
+												<td>Curitiba</td>
+											</tr>
+										</table>
+									</div>
+
+									<div class="wvt-table">
+										<strong>Dados da compra</strong>
+										<table>
+											<tr>
+												<td>Plano</td>
+												<td>Copel Fibra 75 MEGA</td>
+											</tr>
+											<tr>
+												<td>Data de vencimento</td>
+												<td>1</td>
+											</tr>
+											<tr>
+												<td>Receber fatura online</td>
+												<td>Sim</td>
+											</tr>
+											<tr>
+												<td>Complemento</td>
+												<td>Apartamento 10</td>
+											</tr>
+											<tr>
+												<td>Bairro</td>
+												<td>Bairro Alto</td>
+											</tr>
+											<tr>
+												<td>Município</td>
+												<td>Curitiba</td>
+											</tr>
+										</table>
+										<p><a href="#">Consulte aqui</a> as características técnicas dos planos de serviço.</p>
+									</div>
+
+									<div class="wvt-table">
+										<strong>Fidelização</strong>
+										<table>
+											<tr>
+												<td>Fidelidade de 1 ano</td>
+												<td>12 x R$ 149,90</td>
+											</tr>
+											<tr>
+												<td>Adesão (Taxa Única)</td>
+												<td>1 x R$ 99,90</td>
+											</tr>
+											<tr>
+												<td>Receber fatura online</td>
+												<td>Sim</td>
+											</tr>
+											<tr>
+												<td>Complemento</td>
+												<td>Apartamento 10</td>
+											</tr>
+											<tr>
+												<td>Bairro</td>
+												<td>Bairro Alto</td>
+											</tr>
+											<tr>
+												<td>Município</td>
+												<td>Curitiba</td>
+											</tr>
+										</table>
+									</div>
+
+									<span class="wvt-form-label">
+										<strong>Agende uma data para a instalação</strong>
+									</span>
+									<div class="wvt-schelude">
+										<div class="wvt-form-control">
+											<i class="fal fa-calendar-alt"></i>
+											<input type="text" id="agenda" class="flatpickr" name="agenda" placeholder="Selecione uma data">
+										</div>
+										<div class="wvt-checkbutton-group">
+											<label class="wvt-checkbutton">
+												<input type="radio" name="periodo" value="Manhã" checked>
+												<span>Manhã</span>
+											</label>
+											<label class="wvt-checkbutton">
+												<input type="radio" name="periodo" value="Tarde">
+												<span>Tarde</span>
+											</label>
+										</div>
+									</div>
+
+									<label class="d-block">
+										<span for="" class="wvt-form-label">
+											<strong>Contrato e Termo de Oferta de Benefício e Fidelização</strong>
+										</span>
+
+										<div class="wvt-deal">
+											<span class="wvt-checkbox">
+												<input type="checkbox" name="newletter" checked>
+												<span></span>
+											</span>
+											<p>Declaro que li e aceito os termos do Contrato de Prestação de Serviço, Termo de Oferta de Benefício e Fidelização e os Sumários do Contrato.</p>
+										</div>
+									</label>
+									
+									<p class="mt-4 mb-4">
+										<a href="#" style="text-decoration: none;"><i class="fa fa-file mr-1"></i>Contrato de prestação de serviço<br></a>
+										<a href="#" style="text-decoration: none;"><i class="fa fa-file mr-1"></i>Termo de oferta de Benefício de Fidelização<br></a>
+										<a href="#" style="text-decoration: none;"><i class="fa fa-file mr-1"></i>Sumários de Contrato</a>
+									</p>
+
+									<a href="/copeltelecom/sucesso" class="wvt-btn mb-5">Finalizar</a>
+
+									<p class="mt-5">
+										<small>
+											<strong>Observações</strong><br>
+											* Impostos já inclusos, excluídos os casos de tributação especial. ** A taxa de acesso poderá ser parcelada conforme prazo de fidelização, com aplicação de juros de 1,5% a.m, mediante solicitação antes do aceite da proposta.  *** Prazo(s) de instalação condicionado(s) à: Curitiba e Pinhais em 40 dias | Demais Cidades do Paraná em 30 dias | Para serviço BEL Fibra ver prazo no site | contados a partir da assinatura do contrato ou aceite da proposta. - disponibilização dos requisitos mínimos de infra-estrutura (vide MIT - manual de infra-estrutura interna no endereço: www.copeltelecom.com). - A presente cotação não compreende o fornecimento/instalação de rede de acesso redundante e/ou proteção de placas/equipamentos nas pontas - Eventuais restrições/condicionamentos para passagem de cabo óptico interno e demais situações que obriguem a obtenção de liberação /autorização de uso da infra-estrutura interna (shoppings centers, prédios comerciais, centros administrativos, interconexão de operadoras e outros), deverão ser tratadas/negociadas pelo cliente, cabendo a este, quando aplicável, a responsabilidade e pagamento ao detentor da infra-estrutura. - Podem inviabilizar o atendimento: 1- A falta de autorização da concessionária para a passagem de cabo óptico em faixa de domínio nas rodovias pedagiadas. 2- Condições técnicas inapropriadas no local do atendimento, tanto pela Copel Telecom quanto pelo Cliente, que garantam a qualidade do serviço prestado. 3- Qualquer outra situação imprevista que impossibilite o atendimento. - O prazo de entrega pode sofrer alteração, caso o atendimento do ponto a ser instalado demande licenciamento do uso de calçamento e arruamento junto a Prefeitura. - Informações que sejam requeridas à época da instalação que não sejam de responsabilidade da Copel Telecomunicações, poderão impedir ou atrasar a entrega do serviço, tais como: registro Br, endereçamentos IP, etc. - A Fatura e demais documentos estarão disponíveis no www.copeltelecom.com, acessando Serviços On-line.
+										</small>
+									</p>
+								</div>
+							</div>
+						</fieldset>
+
+					</div>
+				</section>
+
+				<aside class="wvt-sidebar col-md-4 order-1 order-sm-2">
+					<img src="../_assets/images/logo.svg" class="wvt-sidebar-logo" alt="">
+
+					<div class="wvt-sidebar-plano">
+						<h4>
+							<small>Copel Fibra</small>
+							150 Mega
+						</h4>
+
+						<h5>
+							<span><small>150 Mega de</small> Upload</span>
+							<span><small>150 Mega de</small> Download</span>
+						</h5>
+
+						<h6>
+							<small>Mensalidade</small>
+							R$ <strong>199,90</strong>/mês
+						</h6>
+
+						<label>
+							<span class="wvt-radio">
+								<input type="radio" name="tipo" checked>
+								<span></span>
+							</span>
+							Fidelidade de 12 meses
+						</label>
+
+						<label>
+							<span class="wvt-radio">
+								<input type="radio" name="tipo">
+								<span></span>
+							</span>
+							Sem fidelidade
+						</label>
+
+						<p>Instalação R$ 99,00 <i class="fal fa-question-circle" data-toggle="tooltip" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod"></i></p>
+					</div>
+
+					<a href="plano.html" class="wvt-sidebar-change">Escolher outro plano</a>
+				</aside>
+			</div>
+		</div>
+	</div>
+	
+	<script type="text/javascript" src="../_assets/js/app.bundle.js"></script>
+</body>
+</html>

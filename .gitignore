@@ -1,7 +1,5 @@
 *.DS_Store
-*/v8-compile-cache-0/
-*/node_modules/
-*/.sass-cache/*
-*/stylesheets/*
-*/assets/css/*
-*/assets/js/*
+v8-compile-cache-0/
+node_modules/
+.sass-cache/*
+stylesheets/*
