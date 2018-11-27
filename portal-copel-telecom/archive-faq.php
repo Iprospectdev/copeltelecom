@@ -32,7 +32,7 @@
 			?>
 		</nav>
 
-		<div class="container">
+		<div class="container faq-topics">
 			<div class="row">
 				<?php
 					$categorias = get_terms("faq-categoria");
@@ -47,7 +47,7 @@
 										$image = get_field('image', $cat);
 										if($image) { echo '<img src="'.$image.'" alt="'.$cat->name.'">'; }
 										echo $cat->name;
-										echo '<i class="fas fa-arrow-alt-circle-right"></i>';
+										echo '<i class="btn-more"></i>';
 									echo '</a>';
 								?>
 							</h6>

@@ -13,7 +13,7 @@
 					</div>
 					<div class="col-md-6 col-12">
 						<form action="<?php bloginfo("url"); ?>/">
-							<input type="hidden" name="post_type" value="post">
+							<input type="hidden" name="post_type" value="faq">
 							<input type="text" name="s" placeholder="Digite aqui sua dúvida">
 							<button type="submit"><i class="fas fa-search"></i></button>
 						</form>

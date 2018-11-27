@@ -604,17 +604,18 @@
 }
 
 .blog-faq-item {
+	align-items: center;
 	background: #F2F5F6;
+	border-radius: 4px;
+	color: color('gray-dark');
 	display: flex;
 	flex-direction: row;
-	height: 60px;
-	align-items: center;
-	padding: 0 20px;
-	color: color('gray-dark');
 	font-size: 15px;
 	font-weight: 400;
+	height: 60px;
 	margin-bottom: 30px;
-	border-radius: 4px;
+	padding: 0 20px;
+	transition: all 0.2s ease-in-out;
 
 	svg, i, img {
 		margin-right: 10px;
@@ -622,6 +623,12 @@
 	}
 
 	&:hover {
-		color: color('gray-dark');
+		color: #fff;
+		background: #464D5C;
+
+		img {
+			-webkit-filter: invert(90%); 
+			filter: invert(90%);
+		}
 	}
 }
