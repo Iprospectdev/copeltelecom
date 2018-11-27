@@ -153,11 +153,17 @@ window.onload = function() {
             }
         }
 
-        $('.home-geolocation button').click(function(event) {
-            $('.home-geolocation').addClass('d-none');
+        $('.planos-geolocation button').click(function(event) {
+            $('.planos-geolocation').addClass('d-none');
             $('.home-planos-list').removeClass('d-none');
             owlplanos.trigger('refresh.owl.carousel');
             removeNav();
+            console.log('click geolocation');
+        });
+
+        $('.js-disponibilidade-modal').on('click', function(event) {
+            $('#disponibilidade-modal').modal('show');
+            return false;
         });
     }
 

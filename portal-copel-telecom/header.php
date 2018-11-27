@@ -171,7 +171,7 @@
                             </div>
                         </li>
                         <li>
-                            <a href="#">Perguntas frequentes</a>
+                            <a href="<?php bloginfo('url'); ?>/faq">Perguntas frequentes</a>
                         </li>
                         <li>
                             <a href="<?php $p=get_page_by_title('Blog'); echo get_permalink($p->ID); ?>">Blog</a>
@@ -251,7 +251,7 @@
                             </div>
                         </li>
                         <li>
-                            <a href="#">Perguntas frequentes</a>
+                            <a href="<?php bloginfo('url'); ?>/faq">Perguntas frequentes</a>
                         </li>
                         <li>
                             <a href="<?php $p=get_page_by_title('Blog'); echo get_permalink($p->ID); ?>">Blog</a>

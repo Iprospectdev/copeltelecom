@@ -162,7 +162,7 @@
                             <p>
                                 R$ <strong>49,90</strong> /mês
                             </p>
-                            <a href="#" class="btn-assine">Assine já</a>
+                            <a href="#" class="btn-assine js-disponibilidade-modal">Assine já</a>
                         </div>
                         <div>
                             <h6>
@@ -187,7 +187,7 @@
                             <p>
                                 R$ <strong>99,90</strong> /mês
                             </p>
-                            <a href="#" class="btn-assine">Assine já</a>
+                            <a href="#" class="btn-assine js-disponibilidade-modal">Assine já</a>
                         </div>
                         <div>
                             <h6>
@@ -212,7 +212,7 @@
                             <p>
                                 R$ <strong>139,90</strong> /mês
                             </p>
-                            <a href="#" class="btn-assine">Assine já</a>
+                            <a href="#" class="btn-assine js-disponibilidade-modal">Assine já</a>
                         </div>
                         <div>
                             <h6>
@@ -237,7 +237,7 @@
                             <p>
                                 R$ <strong>149,90</strong> /mês
                             </p>
-                            <a href="#" class="btn-assine">Assine já</a>
+                            <a href="#" class="btn-assine js-disponibilidade-modal">Assine já</a>
                         </div>
                         <div>
                             <h6>
@@ -262,7 +262,7 @@
                             <p>
                                 R$ <strong>--</strong> /mês
                             </p>
-                            <a href="#" class="btn-assine">Assine já</a>
+                            <a href="#" class="btn-assine js-disponibilidade-modal">Assine já</a>
                         </div>
                     </div>
                 </div>
@@ -595,4 +595,111 @@
 		</section>
 
 	</section>
+
+    <div class="modal fade disponibilidade-modal" tabindex="-1" role="dialog" id="disponibilidade-modal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button class="disponibilidade-modal--close">
+                    <i class="fas fa-times"></i>
+                </button>
+                <svg width="159px" class="disponibilidade-modal--retangle" height="264px" viewBox="0 0 159 264">
+                    <g id="01_carrinho" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="01_pagina-disponibilidade" transform="translate(-299.000000, -225.000000)" fill="#F2F5F6">
+                            <g id="Group-3" transform="translate(299.000000, 225.000000)">
+                                <g id="Group-5">
+                                    <g id="Group-2">
+                                        <g id="Group-7">
+                                            <polygon id="Rectangle-5" transform="translate(78.701290, 132.771635) scale(1, -1) translate(-78.701290, -132.771635) " points="-0.997963177 0.17779894 158.400544 265.365471 -0.997963177 265.365471"></polygon>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+                <div class="d-flex mb-4">
+                    <svg width="81px" class="disponibilidade-modal--icon" height="108px" viewBox="0 0 81 108">
+                        <g id="01_carrinho" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="01_pagina-disponibilidade" transform="translate(-397.000000, -263.000000)">
+                                <g id="Group-3" transform="translate(299.000000, 225.000000)">
+                                    <g id="Group-39" transform="translate(100.000000, 40.000000)">
+                                        <circle id="Oval-4" stroke="#FFA600" stroke-width="3" cx="39" cy="39" r="30"></circle>
+                                        <circle id="Oval-4" stroke="#FFA600" stroke-width="3" cx="38.5" cy="38.5" r="38.5"></circle>
+                                        <ellipse id="Oval-3" fill="#464D5C" opacity="0.300000012" cx="39.5" cy="98" rx="22.5" ry="8"></ellipse>
+                                        <g id="placeholder" transform="translate(21.000000, 20.000000)" fill="#464D5C">
+                                            <path d="M30.8866,25.5814805 L18.2272,46.6357148 L5.2367,25.7834883 C3.7734,23.4295195 2.98,20.7137695 2.98,17.9296875 C2.98,9.69099609 9.729,2.96835937 18,2.96835937 C26.271,2.96835937 33.01,9.69099609 33.01,17.9296875 C33.01,20.6311934 32.2689,23.2775156 30.8866,25.5814805 Z M18,0 C8.0748,0 0,8.04325781 0,17.9296875 C0,21.2699883 0.9289,24.5298047 2.6869,27.3579141 L16.9754,50.2936699 C17.2491,50.7330469 17.7313,51 18.2499,51 C18.2539,51 18.2578,51 18.2618,51 C18.7849,50.995916 19.2681,50.7206953 19.5368,50.2736484 L33.4611,27.1156641 C35.1221,24.3473203 36,21.170877 36,17.9296875 C36,8.04325781 27.9252,0 18,0 Z" id="Fill-1"></path>
+                                            <path d="M18,23.8795322 C14.6743,23.8795322 11.98,21.1920409 11.98,17.8947368 C11.98,14.6056842 14.6916,11.9099415 18,11.9099415 C21.3084,11.9099415 24.01,14.6056842 24.01,17.8947368 C24.01,21.143924 21.3784,23.8795322 18,23.8795322 Z M18,8.94736842 C13.0374,8.94736842 9,12.9611579 9,17.8947368 C9,22.7968012 12.9717,26.8421053 18,26.8421053 C23.0903,26.8421053 27,22.7429181 27,17.8947368 C27,12.9611579 22.9626,8.94736842 18,8.94736842 Z" id="Fill-2"></path>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                    <span>
+                        <h2>Onde você está?</h2>
+                        <p>Preencha os campos abaixo para que a gente possa verificar disponibilidade da Copel Fibra no endereço onde pretende instalar.</p>
+                    </span>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="cep-cobranca" class="wvt-form-label">CEP</label>
+                        <div class="wvt-form-control">
+                            <input type="text" id="cep-cobranca" name="cep-cobranca">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="numero-cobranca" class="wvt-form-label">Número</label>
+                        <div class="wvt-form-control">
+                            <input type="number" id="numero-cobranca" name="numero-cobranca">
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="wvt-form-control">
+                            <textarea name="endereco-cobranca">Rua lorem ipsum dolores Bairro Exemplo Curitiba - Paraná</textarea>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <label for="nome" class="wvt-form-label">Nome completo</label>
+                        <div class="wvt-form-control error">
+                            <input type="text" id="nome" name="nome" placeholder="Digite o seu nome">
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <label for="email" class="wvt-form-label">Email</label>
+                        <div class="wvt-form-control">
+                            <input type="email" id="email" name="email" placeholder="Digite o seu email">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="tel" class="wvt-form-label">Telefone</label>
+                        <div class="wvt-form-control">
+                            <input type="text" id="tel" name="tel" placeholder="( )">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="cel" class="wvt-form-label">Celular <small>(opcional)</small></label>
+                        <div class="wvt-form-control">
+                            <input type="text" id="cel" name="cel" placeholder="( )">
+                        </div>
+                    </div>
+                    <div class="col-md-12 mt-2">
+                        <label class="wvt-form-label d-flex justify-center">
+                            <span class="wvt-checkbox">
+                                <input type="checkbox" name="newletter" checked>
+                                <span></span>
+                            </span>
+                            <small>Quero receber a fatura online</small>
+                            <i class="fal fa-question-circle" data-toggle="tooltip" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod"></i>
+                        </label>
+                    </div>
+                    <div class="col-md-12">
+                        <a href="<?php bloginfo('template_url'); ?>/wvt/plano.html" class="btn-assine">
+                            Consultar
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 <?php get_footer(); ?>

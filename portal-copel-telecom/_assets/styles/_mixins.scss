@@ -34,7 +34,7 @@
   font-weight: 300;
 }
 
-@mixin placeholder($color){
+@mixin placeholder($color) {
   ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
     color: $color;
   }

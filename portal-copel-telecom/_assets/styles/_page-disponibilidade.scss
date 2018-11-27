@@ -1,6 +1,20 @@
 .disponibilidade-mapa {
 	background: url(../images/disponibilidade-mapa.png) center;
 	padding: 85px 15px;
+	position: relative;
+
+	.disponibilidade-modal {
+		position: relative;
+		opacity: 1;
+		
+		.modal-dialog {
+			transform: none;
+		}
+
+		&--close {
+			display: none;
+		}
+	}
 
 	@include media-breakpoint-down(sm) {
 		padding: 110px 15px 85px;
@@ -8,14 +22,27 @@
 }
 
 .disponibilidade-modal {
-	background: #FFFFFF;
-	box-shadow: 0 2px 30px 0 rgba(0,0,0,0.15);
-	border-radius: 5px;
-	max-width: 770px;
-	display: block;
-	position: relative;
-	margin: 0 auto;
-	padding: 40px 100px 10px;
+    &.fade.show {
+		display: flex;
+	    align-items: center;    	
+    }
+	
+	.modal-content {
+		background: #FFFFFF;
+		box-shadow: 0 2px 30px 0 rgba(0,0,0,0.15);
+		border-radius: 5px;
+		max-width: 770px;
+		display: block;
+		position: relative;
+		margin: 0 auto;
+		padding: 40px 100px 10px;
+	}
+
+	.modal-dialog {
+		// margin: 0 auto;
+		max-width: 770px;
+		padding: 0;
+	}
 
 	&--close {
 		position: absolute;

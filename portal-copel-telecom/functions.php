@@ -9,6 +9,13 @@ date_default_timezone_set('America/Sao_Paulo');
 
 add_theme_support( 'post-thumbnails' );
 
+
+function cc_mime_types($mimes) {
+       $mimes['svg'] = 'image/svg+xml';
+       return $mimes;
+}
+add_filter('upload_mimes', 'cc_mime_types');
+
 /*
 
 	#
