@@ -11696,12 +11696,12 @@ a:hover {
 .btn-more {
   font-weight: 500;
   font-size: 18px;
-  color: #FF6D00;
+  color: #FF9602;
   letter-spacing: 0; }
   .btn-more:after {
     border-radius: 50%;
-    border: 2px solid #FF6D00;
-    color: #FF6D00;
+    border: 2px solid #FF9602;
+    color: #FF9602;
     content: "\F061";
     display: inline-block;
     font-family: "Font Awesome 5 Pro";
@@ -11715,7 +11715,7 @@ a:hover {
     text-align: right;
     margin-left: 5px; }
   .btn-more:hover {
-    color: #FF6D00; }
+    color: #FF9602; }
     .btn-more:hover:after {
       border-radius: 50px;
       width: 30px; }
@@ -12256,6 +12256,131 @@ body.menu-opened {
     top: 0;
     width: 100%;
     z-index: 98; }
+
+@media (max-width: 767.98px) {
+  .page-acessibilidade {
+    padding-bottom: 50px; } }
+
+.acessibilidade-heading {
+  margin-bottom: 350px;
+  text-align: center; }
+  .acessibilidade-heading h1, .acessibilidade-heading h2, .acessibilidade-heading h3, .acessibilidade-heading h4, .acessibilidade-heading h5, .acessibilidade-heading h6 {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(-90deg, #FFA600 0%, #FF6D00 100%);
+    font-weight: 700;
+    text-align: center;
+    font-size: 40px;
+    margin: 35px 0 15px; }
+  .acessibilidade-heading p {
+    font-weight: 400;
+    font-size: 15px;
+    color: #464D5C;
+    line-height: 25px; }
+  .acessibilidade-heading:after {
+    content: "";
+    clear: both;
+    display: table; }
+  @media (max-width: 767.98px) {
+    .acessibilidade-heading {
+      text-align: center;
+      margin-bottom: 215px; }
+      .acessibilidade-heading h1, .acessibilidade-heading h2, .acessibilidade-heading h3, .acessibilidade-heading h4, .acessibilidade-heading h5, .acessibilidade-heading h6 {
+        font-size: 30px; }
+      .acessibilidade-heading p {
+        padding-top: 0; } }
+
+.acessibilidade-intro {
+  background: #FF9602;
+  padding: 100px 0 90px;
+  margin-bottom: 90px;
+  position: relative;
+  width: 100%; }
+  .acessibilidade-intro img {
+    display: block;
+    margin: 0 auto;
+    max-width: 90%;
+    position: absolute;
+    top: -280px;
+    left: 50%;
+    transform: translateX(-50%); }
+  .acessibilidade-intro:before {
+    content: "";
+    display: block;
+    width: 100%;
+    background-image: url(../images/rectangle.svg);
+    background-size: 100% auto;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 328px;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    margin-bottom: -2px; }
+  .acessibilidade-intro p {
+    font-weight: 400;
+    font-size: 15px;
+    color: #FFFFFF;
+    line-height: 25px; }
+  @media (max-width: 767.98px) {
+    .acessibilidade-intro {
+      padding-top: 50px;
+      padding-bottom: 40px;
+      margin-bottom: 0; }
+      .acessibilidade-intro img {
+        top: -180px; } }
+
+.acessibilidade-figure {
+  margin-bottom: 100px; }
+  .acessibilidade-figure img {
+    max-width: 100%; }
+  @media (max-width: 767.98px) {
+    .acessibilidade-figure {
+      margin-bottom: 20px; } }
+
+.acessibilidade-text {
+  padding-bottom: 50px;
+  max-width: 770px;
+  display: block;
+  margin: 0 auto; }
+  .acessibilidade-text h1, .acessibilidade-text h2, .acessibilidade-text h3, .acessibilidade-text h4, .acessibilidade-text h5, .acessibilidade-text h6 {
+    font-weight: 700;
+    font-size: 35px;
+    color: #464D5C;
+    text-align: center;
+    line-height: 50px; }
+  .acessibilidade-text p {
+    font-weight: 400;
+    font-size: 15px;
+    color: #464D5C;
+    text-align: center;
+    line-height: 25px; }
+  @media (max-width: 767.98px) {
+    .acessibilidade-text {
+      padding: 40px 0; } }
+
+.acessibilidade-item {
+  margin-bottom: 90px;
+  max-width: 370px; }
+  .acessibilidade-item h5, .acessibilidade-item h6 {
+    font-weight: 700;
+    font-size: 20px;
+    color: #464D5C;
+    line-height: 22px;
+    margin: 0 0 15px; }
+    .acessibilidade-item h5 i, .acessibilidade-item h5 svg, .acessibilidade-item h6 i, .acessibilidade-item h6 svg {
+      margin-right: 5px;
+      display: inline-block; }
+  .acessibilidade-item p {
+    color: #464D5C;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 22px;
+    margin: 0 0 15px; }
+  @media (max-width: 767.98px) {
+    .acessibilidade-item {
+      margin-bottom: 30px; } }
 
 .home-carousel {
   position: relative;
@@ -15013,6 +15138,54 @@ body.menu-opened {
   padding-top: 30px; }
   .faq-sidebar a {
     margin-bottom: 5px; }
+
+.page-404 {
+  background-image: url(../images/404-bg.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 100% auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  height: 80vh;
+  min-height: 720px;
+  padding-left: 15px;
+  padding-right: 15px; }
+  .page-404 h1, .page-404 h2, .page-404 h3, .page-404 h4, .page-404 h5, .page-404 h6 {
+    font-weight: 700;
+    font-size: 45px;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 50px; }
+  .page-404 p {
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 50px;
+    text-align: center; }
+  .page-404 img {
+    max-width: 100%;
+    display: block;
+    margin: 75px auto 0; }
+  @media (max-width: 767.98px) {
+    .page-404 {
+      height: auto;
+      background-size: auto 400px;
+      min-height: 0;
+      padding: 100px 15px 55px; }
+      .page-404 h1, .page-404 h2, .page-404 h3, .page-404 h4, .page-404 h5, .page-404 h6 {
+        font-size: 25px;
+        line-height: 40px; }
+      .page-404 p {
+        font-size: 15px;
+        line-height: 25px; }
+      .page-404 img {
+        margin-top: 28px; } }
 
 .blog-header h1, .blog-header h2, .blog-header h3 {
   color: #464D5C;

@@ -72,7 +72,7 @@
                         A-
                     </button>
 
-                    <a href="#">
+                    <a href="<?php $p=get_page_by_title('Acessibilidade'); echo get_permalink($p->ID); ?>">
                         <svg width="17px" height="23px" viewBox="0 0 17 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <defs>
                                 <polygon id="path-1" points="0.0215292819 0.0350019048 13.8385332 0.0350019048 13.8385332 15.085696 0.0215292819 15.085696"></polygon>

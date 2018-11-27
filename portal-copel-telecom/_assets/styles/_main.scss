@@ -54,13 +54,13 @@ a:hover {
 .btn-more {
 	font-weight: 500;
 	font-size: 18px;
-	color: color('orange');
+	color: color('orange-light');
 	letter-spacing: 0;
 
 	&:after {
 		border-radius: 50%;
-		border: 2px solid color('orange');
-		color: color('orange');
+		border: 2px solid color('orange-light');
+		color: color('orange-light');
 		content: "\F061";
 		display: inline-block;
 		font-family: "Font Awesome 5 Pro";
@@ -76,7 +76,7 @@ a:hover {
 	}
 
 	&:hover {
-		color: color('orange');
+		color: color('orange-light');
 
 		&:after {
 			border-radius: 50px;			
