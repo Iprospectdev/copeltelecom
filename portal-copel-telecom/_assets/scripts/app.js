@@ -5,6 +5,7 @@ import 'bootstrap';
 import 'popper.js';
 import 'owl.carousel';
 import './wvt.js';
+import './planos.js'
 import flatpickr from "flatpickr";
 
 

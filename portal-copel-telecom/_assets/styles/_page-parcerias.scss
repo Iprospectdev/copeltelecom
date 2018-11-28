@@ -15,10 +15,10 @@
 	}
 
 	&:before {
-		background-position: center;
-		background-repeat: no-repeat;
-		background-position: right top;
 		background-image: url(../images/rectangle-left.svg);
+		background-position: right top;
+		background-repeat: no-repeat;
+		background-size: 100%;
 		content: "";
 		display: block;
 		height: 1400px;

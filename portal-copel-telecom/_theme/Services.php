@@ -23,8 +23,10 @@ class Services {
 
 		$cidade = preg_replace("/&([a-z])[a-z]+;/i", "$1", htmlentities(trim($cidade)));
 
+
 		$url = WEBSERVICE."/wvtweb/rest/portal/produtos/".$tipo."/".str_replace(' ','%20', $cidade);
 		$json = @file_get_contents($url);
+		
 		if (!$json) {
 			//$json = @file_get_contents(get_bloginfo("template_url") .  "/_theme/curitiba_f.json");
 			if ($tipo == "F") {
@@ -36,26 +38,26 @@ class Services {
 		return $json;
 	}
 
-	public function site($session) {
-		$_SESSION["copeltelecom"] = json_encode($session);
-	}
+	// public function site($session) {
+	// 	$_SESSION["copeltelecom"] = json_encode($session);
+	// }
 
-	public function exit_session() {
-		session_unset($_SESSION["copeltelecom"]);
-		session_destroy();
-	}
+	// public function exit_session() {
+	// 	session_unset($_SESSION["copeltelecom"]);
+	// 	session_destroy();
+	// }
 
-	public function profile() {
-		$session = json_decode($_SESSION["copeltelecom"]);
+	// public function profile() {
+	// 	$session = json_decode($_SESSION["copeltelecom"]);
 
-		if ($session->planos->precoProduto) {
-			$session->planos->price = $this->profile_price($session->planos->precoProduto);
-			$session->planos->cents = $this->profile_cents($session->planos->precoProduto);
-			$session->planos->velocidade = $this->profile_velocidade($session->planos->nomeProduto);
-		}
+	// 	if ($session->planos->precoProduto) {
+	// 		$session->planos->price = $this->profile_price($session->planos->precoProduto);
+	// 		$session->planos->cents = $this->profile_cents($session->planos->precoProduto);
+	// 		$session->planos->velocidade = $this->profile_velocidade($session->planos->nomeProduto);
+	// 	}
 
-		return $session;
-	}
+	// 	return $session;
+	// }
 
 	public function profile_cents($precoProduto) {
 		$cents = substr(strrchr($precoProduto,','),1);

@@ -1,3 +1,16 @@
+<?php 
+    session_start();
+    if($_COOKIE["copel_cidade"] && $_COOKIE["copel_estado"]) {
+        $_SESSION['copel_cidade'] = $_COOKIE["copel_cidade"];
+        $_SESSION['copel_estado'] = $_COOKIE["copel_estado"];
+    }else{
+        $_SESSION['copel_cidade'] = 'Curitiba';
+        $_SESSION['copel_estado'] = 'PR';
+    }
+    $services = new Services;
+    $planos = json_decode($services->planos());
+
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -107,7 +120,7 @@
                 </div>
                 
                 <div class="float-right">
-                    <a href="#" class="header-top--btn"><i class="fas fa-map-marker-alt"></i>Curitiba/PR</a>
+                    <a href="#" class="header-top--btn"><i class="fas fa-map-marker-alt"></i><?php echo $_SESSION['copel_cidade'].'/'.$_SESSION['copel_estado']; ?></a>
                     <a href="#" class="header-top--btn active">Minha copel</a>
                 </div>
             </div>        
@@ -242,7 +255,7 @@
                 </nav>
                 <div class="header-mobile-nav--acessibilidade">
                     
-                    <a href="<?php $p=get_page_by_title('Acessibilidade'); echo get_permalink($p->ID); ?>"><i class="fas fa-map-marker-alt"></i>Curitiba/PR</a>
+                    <a href="<?php $p=get_page_by_title('Acessibilidade'); echo get_permalink($p->ID); ?>"><i class="fas fa-map-marker-alt"></i><?php echo $_SESSION['copel_cidade'].'/'.$_SESSION['copel_estado']; ?></a>
 
                     <a href="#">
                         <svg width="17px" height="23px" viewBox="0 0 17 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
