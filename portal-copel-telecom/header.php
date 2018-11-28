@@ -222,33 +222,10 @@
                             <a href="<?php $p=get_page_by_title('App Copel'); echo get_permalink($p->ID); ?>">App Copel</a>
                         </li>
                         <li>
-                            <a href="#">Parcerias<i class="fas fa-caret-down"></i></a>
-                            <div class="header-subnav">
-                                <div class="parcerias-item">
-                                    <a href="#">
-                                        <figure>
-                                            <img src="http://placehold.it/400x120" alt="">
-                                        </figure>
-                                        <img src="http://placehold.it/135x40" class="parcerias-item--logo" alt="">
-                                        <h6 class="parcerias-item--heading">
-                                            Assista online o melhor do esporte.
-                                        </h6>
-                                        <span class="btn-more"></span>
-                                    </a>
-                                </div>
-                                <div class="parcerias-item">
-                                    <a href="#">
-                                        <figure>
-                                            <img src="http://placehold.it/400x120" alt="">
-                                        </figure>
-                                        <img src="http://placehold.it/135x40" class="parcerias-item--logo" alt="">
-                                        <h6 class="parcerias-item--heading">
-                                            Assista online o melhor do esporte.
-                                        </h6>
-                                        <span class="btn-more"></span>
-                                    </a>
-                                </div>
-                            </div>
+                            <a href="<?php $p=get_page_by_title('Esporte Interativo'); echo get_permalink($p->ID); ?>">Esporte Interativo</a>
+                        </li>
+                        <li>
+                            <a href="<?php $p=get_page_by_title('Cartoon Network'); echo get_permalink($p->ID); ?>">CN Já!</a>
                         </li>
                         <li>
                             <a href="<?php bloginfo('url'); ?>/faq">Perguntas frequentes</a>
@@ -265,7 +242,7 @@
                 </nav>
                 <div class="header-mobile-nav--acessibilidade">
                     
-                    <a href="#"><i class="fas fa-map-marker-alt"></i>Curitiba/PR</a>
+                    <a href="<?php $p=get_page_by_title('Acessibilidade'); echo get_permalink($p->ID); ?>"><i class="fas fa-map-marker-alt"></i>Curitiba/PR</a>
 
                     <a href="#">
                         <svg width="17px" height="23px" viewBox="0 0 17 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">

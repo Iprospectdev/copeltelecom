@@ -70,22 +70,22 @@
 								<a href="#"><strong>Copel Telecom</strong></a>
 							</li>
 							<li>
-								<a href="">Planos e preços</a>
+								<a href="<?php $p=get_page_by_title('Planos'); echo get_permalink($p->ID); ?>">Planos e preços</a>
 							</li>
 							<li>
 								<a href="">Cobertura</a>
 							</li>
 							<li>
-								<a href="">Teste de velocidade</a>
+								<a href="<?php $p=get_page_by_title('Speedtest'); echo get_permalink($p->ID); ?>">Teste de velocidade</a>
 							</li>
 							<li>
-								<a href="">Esporte Interativo</a>
+								<a href="<?php $p=get_page_by_title('Esporte Interativo'); echo get_permalink($p->ID); ?>">Esporte Interativo</a>
 							</li>
 							<li>
-								<a href="">CN Já!</a>
+								<a href="<?php $p=get_page_by_title('Cartoon Network'); echo get_permalink($p->ID); ?>">CN Já!</a>
 							</li>
 							<li>
-								<a href="">App Copel</a>
+								<a href="<?php $p=get_page_by_title('App Copel'); echo get_permalink($p->ID); ?>">App Copel</a>
 							</li>
 						</ul>
 						<ul>
@@ -93,30 +93,30 @@
 								<a href=""><strong>Institucional</strong></a>
 							</li>
 							<li>
-								<a href="">Sobre nós</a>
+								<a href="<?php $p=get_page_by_title('Sobre Nós'); echo get_permalink($p->ID); ?>">Sobre nós</a>
 							</li>
 							<li>
-								<a href="">Balanço</a>
+								<a href="http://www.copel.com/hpcopel/root/nivel2.jsp?endereco=%2Fhpcopel%2Fri%2Fpagcopel2.nsf%2Fdocs%2F8A85489DDD579DAD0325742400656466&_ga=2.98488729.789882387.1543346291-1485384620.1540335243" target="_blank">Balanço</a>
 							</li>
 							<li>
-								<a href="">Governança</a>
+								<a href="http://www.copel.com/hpcopel/acopel/mapaGovernanca.jsp?_ga=2.27890362.789882387.1543346291-1485384620.1540335243" target="_blank">Governança</a>
 							</li>
 							<li>
-								<a href="">Acessibilidade</a>
+								<a href="<?php $p=get_page_by_title('Acessibilidade'); echo get_permalink($p->ID); ?>">Acessibilidade</a>
 							</li>
 						</ul>
 						<ul>
 							<li>
-								<a href=""><strong>Atendimento</strong></a>
+								<a href="<?php bloginfo('url'); ?>/atendimento-e-suporte/"><strong>Atendimento</strong></a>
 							</li>
 							<li>
-								<a href="">Área do cliente</a>
+								<a href="http://www.copeltelecom.com/autoatendimento" target="_blank">Área do cliente</a>
 							</li>
 							<li>
-								<a href="">Perguntas Frequentes</a>
+								<a href="<?php bloginfo('url'); ?>/faq">Perguntas Frequentes</a>
 							</li>
 							<li>
-								<a href="">Documentos</a>
+								<a href="<?php bloginfo('url'); ?>/atendimento-e-suporte/#as-documentos">Documentos</a>
 							</li>
 							<li class="pt-3">
 								<a href=""><strong>Mapa do site</strong></a>
@@ -125,10 +125,10 @@
 					</nav>
 				</div>
 				<div class="col-3 d-none d-md-block">
-					<a href="#" class="footer--btn">
+					<a href="<?php $p=get_page_by_title('Sobre Nós'); echo get_permalink($p->ID); ?>" class="footer--btn">
 						COPEL
 					</a>
-					<a href="#" class="footer--btn">
+					<a href="<?php $p=get_page_by_title('Blog'); echo get_permalink($p->ID); ?>" class="footer--btn">
 						BLOG CONECTA
 					</a>
 					<a href="#" class="footer--btn">

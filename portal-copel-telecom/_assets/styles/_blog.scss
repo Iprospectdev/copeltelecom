@@ -68,6 +68,10 @@
 		form {
 			float: none;
 			display: block;
+
+			input {
+				width: 100%;
+			}
 		}
 	}
 }

@@ -15249,7 +15249,9 @@ body.menu-opened {
         display: none; }
     .blog-header form {
       float: none;
-      display: block; } }
+      display: block; }
+      .blog-header form input {
+        width: 100%; } }
 
 .blog-item {
   display: -ms-flexbox;
