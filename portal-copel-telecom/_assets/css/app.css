@@ -11927,6 +11927,27 @@ a:hover {
     width: 33%;
     float: right; }
 
+.autocomplete {
+  border-radius: 3px;
+  position: absolute;
+  max-height: 0;
+  overflow: hidden;
+  height: auto;
+  transition: all 0.2s ease-in-out; }
+  .autocomplete.open {
+    background: #fff;
+    border: 1px solid #ccc;
+    max-height: 100000px; }
+  .autocomplete ul {
+    padding: 0;
+    margin: 0; }
+    .autocomplete ul li {
+      padding: 5px;
+      cursor: pointer;
+      margin: 0; }
+      .autocomplete ul li:hover {
+        background: #c2c2c2; }
+
 .header {
   position: relative; }
 
@@ -14084,7 +14105,6 @@ body.menu-opened {
   border-radius: 5px;
   display: block;
   margin-bottom: 20px;
-  overflow: hidden;
   padding: 30px 0;
   position: relative;
   width: 100%;
@@ -14222,6 +14242,13 @@ body.menu-opened {
       .planos-geolocation--form .input-group > .input-group-prepend:first-child > .btn:not(:first-child) i,
       .planos-geolocation--form .input-group > .input-group-prepend:first-child > .input-group-text:not(:first-child) i {
         color: #fff; }
+      .planos-geolocation--form .input-group > .input-group-append > .btn:focus,
+      .planos-geolocation--form .input-group > .input-group-append > .input-group-text:focus,
+      .planos-geolocation--form .input-group > .input-group-prepend:not(:first-child) > .btn:focus,
+      .planos-geolocation--form .input-group > .input-group-prepend:not(:first-child) > .input-group-text:focus,
+      .planos-geolocation--form .input-group > .input-group-prepend:first-child > .btn:not(:first-child):focus,
+      .planos-geolocation--form .input-group > .input-group-prepend:first-child > .input-group-text:not(:first-child):focus {
+        outline: none; }
   @media (max-width: 767.98px) {
     .planos-geolocation {
       margin: 0 -15px 20px;

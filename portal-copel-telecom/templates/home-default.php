@@ -139,9 +139,9 @@
 
                 <div class="container px-0 px-sm-3">
                     <div class="home-planos-carousel owl-carousel">
-                        <div>
+                        <div class="home-planos-carousel--item">
                             <h6>
-                                5 Mega <small>Download igual Upload</small>
+                                <span class="js-velocidade">velocidade</span> <small>Download igual Upload</small>
                                 <svg width="86px" height="102px" viewBox="0 0 86 102" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="00_home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.149999991"><g id="01_home_banner1_1920" transform="translate(-475.000000, -606.000000)" fill="#FFFFFF"><g id="Group-9" transform="translate(376.000000, 605.000000)"><g id="Group-5" transform="translate(35.000000, 1.000000)"><path d="M120.621622,51 L150,51 L121.621622,102 L65,102 L93.3783784,51 L64,51 L92.3783784,0 L149,0 L120.621622,51 Z" id="Combined-Shape-Copy-2"></path></g></g></g></g></svg>
                             </h6>
                             <p>Para você que quer sempre mais da sua internet.</p>
@@ -160,107 +160,7 @@
                                 </li>
                             </ul>
                             <p>
-                                R$ <strong>49,90</strong> /mês
-                            </p>
-                            <a href="#" class="btn-assine js-disponibilidade-modal">Assine já</a>
-                        </div>
-                        <div>
-                            <h6>
-                                15 Mega <small>Download igual Upload</small>
-                                <svg width="86px" height="102px" viewBox="0 0 86 102" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="00_home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.149999991"><g id="01_home_banner1_1920" transform="translate(-475.000000, -606.000000)" fill="#FFFFFF"><g id="Group-9" transform="translate(376.000000, 605.000000)"><g id="Group-5" transform="translate(35.000000, 1.000000)"><path d="M120.621622,51 L150,51 L121.621622,102 L65,102 L93.3783784,51 L64,51 L92.3783784,0 L149,0 L120.621622,51 Z" id="Combined-Shape-Copy-2"></path></g></g></g></g></svg>
-                            </h6>
-                            <p>Para você que quer sempre mais da sua internet.</p>
-                            <ul>
-                                <li>
-                                    <svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><linearGradient x1="0%" y1="93.8648897%" x2="100%" y2="5.78661152%" id="linearGradient-1"><stop stop-color="#FFA600" offset="0%"></stop>    <stop stop-color="#FF6D00" offset="100%"></stop></linearGradient></defs><g id="00_home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="01_home_carrossel1" transform="translate(-279.000000, -825.000000)"><g id="Group-9" transform="translate(240.000000, 605.000000)"><g id="Group-5" transform="translate(35.000000, 1.000000)"><g id="Group-26-Copy" transform="translate(5.000000, 220.000000)"><g id="Group-3"><g id="Group-6"><g id="Group-4"><g id="Group-30"><circle id="Oval" stroke="url(#linearGradient-1)" stroke-width="2" cx="12" cy="12" r="12"></circle><path d="M5.16020001,12.9233617 C5.05250252,12.8156642 5,12.6520987 5,12.5444012 C5,12.4367037 5.05250252,12.2765037 5.16020001,12.1688062 L5.91475552,11.4142507 C6.1308236,11.1981826 6.45391605,11.1981826 6.66931102,11.4142507 L6.72248666,11.4694456 L9.68551373,14.6451752 C9.79321121,14.7535458 9.95341122,14.7535458 10.0617818,14.6451752 L17.2761671,7.1595269 L17.3313621,7.1595269 C17.5474302,6.94682437 17.8705226,6.94682437 18.0859176,7.1595269 L18.8384538,7.91408241 C19.0538487,8.13015049 19.0538487,8.45324294 18.8384538,8.66863792 L10.2246743,17.6088754 C10.1169768,17.7165729 10.0086062,17.7690754 9.84571374,17.7690754 C9.68551373,17.7690754 9.57781624,17.7165729 9.47011876,17.6088754 L5.2678975,13.0835617 L5.16020001,12.9233617 Z" id="Fill-1" fill="#FF9602"></path></g></g></g></g></g></g></g></g></g></svg>
-                                    Modem com Wi-Fi
-                                </li>
-                                <li>
-                                    <svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><linearGradient x1="0%" y1="93.8648897%" x2="100%" y2="5.78661152%" id="linearGradient-1"><stop stop-color="#FFA600" offset="0%"></stop>    <stop stop-color="#FF6D00" offset="100%"></stop></linearGradient></defs><g id="00_home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="01_home_carrossel1" transform="translate(-279.000000, -825.000000)"><g id="Group-9" transform="translate(240.000000, 605.000000)"><g id="Group-5" transform="translate(35.000000, 1.000000)"><g id="Group-26-Copy" transform="translate(5.000000, 220.000000)"><g id="Group-3"><g id="Group-6"><g id="Group-4"><g id="Group-30"><circle id="Oval" stroke="url(#linearGradient-1)" stroke-width="2" cx="12" cy="12" r="12"></circle><path d="M5.16020001,12.9233617 C5.05250252,12.8156642 5,12.6520987 5,12.5444012 C5,12.4367037 5.05250252,12.2765037 5.16020001,12.1688062 L5.91475552,11.4142507 C6.1308236,11.1981826 6.45391605,11.1981826 6.66931102,11.4142507 L6.72248666,11.4694456 L9.68551373,14.6451752 C9.79321121,14.7535458 9.95341122,14.7535458 10.0617818,14.6451752 L17.2761671,7.1595269 L17.3313621,7.1595269 C17.5474302,6.94682437 17.8705226,6.94682437 18.0859176,7.1595269 L18.8384538,7.91408241 C19.0538487,8.13015049 19.0538487,8.45324294 18.8384538,8.66863792 L10.2246743,17.6088754 C10.1169768,17.7165729 10.0086062,17.7690754 9.84571374,17.7690754 C9.68551373,17.7690754 9.57781624,17.7165729 9.47011876,17.6088754 L5.2678975,13.0835617 L5.16020001,12.9233617 Z" id="Fill-1" fill="#FF9602"></path></g></g></g></g></g></g></g></g></g></svg>
-                                    Esporte Interativo
-                                </li>
-                                <li>
-                                    <svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><linearGradient x1="0%" y1="93.8648897%" x2="100%" y2="5.78661152%" id="linearGradient-1"><stop stop-color="#FFA600" offset="0%"></stop>    <stop stop-color="#FF6D00" offset="100%"></stop></linearGradient></defs><g id="00_home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="01_home_carrossel1" transform="translate(-279.000000, -825.000000)"><g id="Group-9" transform="translate(240.000000, 605.000000)"><g id="Group-5" transform="translate(35.000000, 1.000000)"><g id="Group-26-Copy" transform="translate(5.000000, 220.000000)"><g id="Group-3"><g id="Group-6"><g id="Group-4"><g id="Group-30"><circle id="Oval" stroke="url(#linearGradient-1)" stroke-width="2" cx="12" cy="12" r="12"></circle><path d="M5.16020001,12.9233617 C5.05250252,12.8156642 5,12.6520987 5,12.5444012 C5,12.4367037 5.05250252,12.2765037 5.16020001,12.1688062 L5.91475552,11.4142507 C6.1308236,11.1981826 6.45391605,11.1981826 6.66931102,11.4142507 L6.72248666,11.4694456 L9.68551373,14.6451752 C9.79321121,14.7535458 9.95341122,14.7535458 10.0617818,14.6451752 L17.2761671,7.1595269 L17.3313621,7.1595269 C17.5474302,6.94682437 17.8705226,6.94682437 18.0859176,7.1595269 L18.8384538,7.91408241 C19.0538487,8.13015049 19.0538487,8.45324294 18.8384538,8.66863792 L10.2246743,17.6088754 C10.1169768,17.7165729 10.0086062,17.7690754 9.84571374,17.7690754 C9.68551373,17.7690754 9.57781624,17.7165729 9.47011876,17.6088754 L5.2678975,13.0835617 L5.16020001,12.9233617 Z" id="Fill-1" fill="#FF9602"></path></g></g></g></g></g></g></g></g></g></svg>
-                                    CN Já!
-                                </li>
-                            </ul>
-                            <p>
-                                R$ <strong>99,90</strong> /mês
-                            </p>
-                            <a href="#" class="btn-assine js-disponibilidade-modal">Assine já</a>
-                        </div>
-                        <div>
-                            <h6>
-                                50 Mega <small>Download igual Upload</small>
-                                <svg width="86px" height="102px" viewBox="0 0 86 102" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="00_home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.149999991"><g id="01_home_banner1_1920" transform="translate(-475.000000, -606.000000)" fill="#FFFFFF"><g id="Group-9" transform="translate(376.000000, 605.000000)"><g id="Group-5" transform="translate(35.000000, 1.000000)"><path d="M120.621622,51 L150,51 L121.621622,102 L65,102 L93.3783784,51 L64,51 L92.3783784,0 L149,0 L120.621622,51 Z" id="Combined-Shape-Copy-2"></path></g></g></g></g></svg>
-                            </h6>
-                            <p>Para você que quer sempre mais da sua internet.</p>
-                            <ul>
-                                <li>
-                                    <svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><linearGradient x1="0%" y1="93.8648897%" x2="100%" y2="5.78661152%" id="linearGradient-1"><stop stop-color="#FFA600" offset="0%"></stop>    <stop stop-color="#FF6D00" offset="100%"></stop></linearGradient></defs><g id="00_home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="01_home_carrossel1" transform="translate(-279.000000, -825.000000)"><g id="Group-9" transform="translate(240.000000, 605.000000)"><g id="Group-5" transform="translate(35.000000, 1.000000)"><g id="Group-26-Copy" transform="translate(5.000000, 220.000000)"><g id="Group-3"><g id="Group-6"><g id="Group-4"><g id="Group-30"><circle id="Oval" stroke="url(#linearGradient-1)" stroke-width="2" cx="12" cy="12" r="12"></circle><path d="M5.16020001,12.9233617 C5.05250252,12.8156642 5,12.6520987 5,12.5444012 C5,12.4367037 5.05250252,12.2765037 5.16020001,12.1688062 L5.91475552,11.4142507 C6.1308236,11.1981826 6.45391605,11.1981826 6.66931102,11.4142507 L6.72248666,11.4694456 L9.68551373,14.6451752 C9.79321121,14.7535458 9.95341122,14.7535458 10.0617818,14.6451752 L17.2761671,7.1595269 L17.3313621,7.1595269 C17.5474302,6.94682437 17.8705226,6.94682437 18.0859176,7.1595269 L18.8384538,7.91408241 C19.0538487,8.13015049 19.0538487,8.45324294 18.8384538,8.66863792 L10.2246743,17.6088754 C10.1169768,17.7165729 10.0086062,17.7690754 9.84571374,17.7690754 C9.68551373,17.7690754 9.57781624,17.7165729 9.47011876,17.6088754 L5.2678975,13.0835617 L5.16020001,12.9233617 Z" id="Fill-1" fill="#FF9602"></path></g></g></g></g></g></g></g></g></g></svg>
-                                    Modem com Wi-Fi
-                                </li>
-                                <li>
-                                    <svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><linearGradient x1="0%" y1="93.8648897%" x2="100%" y2="5.78661152%" id="linearGradient-1"><stop stop-color="#FFA600" offset="0%"></stop>    <stop stop-color="#FF6D00" offset="100%"></stop></linearGradient></defs><g id="00_home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="01_home_carrossel1" transform="translate(-279.000000, -825.000000)"><g id="Group-9" transform="translate(240.000000, 605.000000)"><g id="Group-5" transform="translate(35.000000, 1.000000)"><g id="Group-26-Copy" transform="translate(5.000000, 220.000000)"><g id="Group-3"><g id="Group-6"><g id="Group-4"><g id="Group-30"><circle id="Oval" stroke="url(#linearGradient-1)" stroke-width="2" cx="12" cy="12" r="12"></circle><path d="M5.16020001,12.9233617 C5.05250252,12.8156642 5,12.6520987 5,12.5444012 C5,12.4367037 5.05250252,12.2765037 5.16020001,12.1688062 L5.91475552,11.4142507 C6.1308236,11.1981826 6.45391605,11.1981826 6.66931102,11.4142507 L6.72248666,11.4694456 L9.68551373,14.6451752 C9.79321121,14.7535458 9.95341122,14.7535458 10.0617818,14.6451752 L17.2761671,7.1595269 L17.3313621,7.1595269 C17.5474302,6.94682437 17.8705226,6.94682437 18.0859176,7.1595269 L18.8384538,7.91408241 C19.0538487,8.13015049 19.0538487,8.45324294 18.8384538,8.66863792 L10.2246743,17.6088754 C10.1169768,17.7165729 10.0086062,17.7690754 9.84571374,17.7690754 C9.68551373,17.7690754 9.57781624,17.7165729 9.47011876,17.6088754 L5.2678975,13.0835617 L5.16020001,12.9233617 Z" id="Fill-1" fill="#FF9602"></path></g></g></g></g></g></g></g></g></g></svg>
-                                    Esporte Interativo
-                                </li>
-                                <li>
-                                    <svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><linearGradient x1="0%" y1="93.8648897%" x2="100%" y2="5.78661152%" id="linearGradient-1"><stop stop-color="#FFA600" offset="0%"></stop>    <stop stop-color="#FF6D00" offset="100%"></stop></linearGradient></defs><g id="00_home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="01_home_carrossel1" transform="translate(-279.000000, -825.000000)"><g id="Group-9" transform="translate(240.000000, 605.000000)"><g id="Group-5" transform="translate(35.000000, 1.000000)"><g id="Group-26-Copy" transform="translate(5.000000, 220.000000)"><g id="Group-3"><g id="Group-6"><g id="Group-4"><g id="Group-30"><circle id="Oval" stroke="url(#linearGradient-1)" stroke-width="2" cx="12" cy="12" r="12"></circle><path d="M5.16020001,12.9233617 C5.05250252,12.8156642 5,12.6520987 5,12.5444012 C5,12.4367037 5.05250252,12.2765037 5.16020001,12.1688062 L5.91475552,11.4142507 C6.1308236,11.1981826 6.45391605,11.1981826 6.66931102,11.4142507 L6.72248666,11.4694456 L9.68551373,14.6451752 C9.79321121,14.7535458 9.95341122,14.7535458 10.0617818,14.6451752 L17.2761671,7.1595269 L17.3313621,7.1595269 C17.5474302,6.94682437 17.8705226,6.94682437 18.0859176,7.1595269 L18.8384538,7.91408241 C19.0538487,8.13015049 19.0538487,8.45324294 18.8384538,8.66863792 L10.2246743,17.6088754 C10.1169768,17.7165729 10.0086062,17.7690754 9.84571374,17.7690754 C9.68551373,17.7690754 9.57781624,17.7165729 9.47011876,17.6088754 L5.2678975,13.0835617 L5.16020001,12.9233617 Z" id="Fill-1" fill="#FF9602"></path></g></g></g></g></g></g></g></g></g></svg>
-                                    CN Já!
-                                </li>
-                            </ul>
-                            <p>
-                                R$ <strong>139,90</strong> /mês
-                            </p>
-                            <a href="#" class="btn-assine js-disponibilidade-modal">Assine já</a>
-                        </div>
-                        <div>
-                            <h6>
-                                75 Mega <small>Download igual Upload</small>
-                                <svg width="86px" height="102px" viewBox="0 0 86 102" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="00_home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.149999991"><g id="01_home_banner1_1920" transform="translate(-475.000000, -606.000000)" fill="#FFFFFF"><g id="Group-9" transform="translate(376.000000, 605.000000)"><g id="Group-5" transform="translate(35.000000, 1.000000)"><path d="M120.621622,51 L150,51 L121.621622,102 L65,102 L93.3783784,51 L64,51 L92.3783784,0 L149,0 L120.621622,51 Z" id="Combined-Shape-Copy-2"></path></g></g></g></g></svg>
-                            </h6>
-                            <p>Para você que quer sempre mais da sua internet.</p>
-                            <ul>
-                                <li>
-                                    <svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><linearGradient x1="0%" y1="93.8648897%" x2="100%" y2="5.78661152%" id="linearGradient-1"><stop stop-color="#FFA600" offset="0%"></stop>    <stop stop-color="#FF6D00" offset="100%"></stop></linearGradient></defs><g id="00_home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="01_home_carrossel1" transform="translate(-279.000000, -825.000000)"><g id="Group-9" transform="translate(240.000000, 605.000000)"><g id="Group-5" transform="translate(35.000000, 1.000000)"><g id="Group-26-Copy" transform="translate(5.000000, 220.000000)"><g id="Group-3"><g id="Group-6"><g id="Group-4"><g id="Group-30"><circle id="Oval" stroke="url(#linearGradient-1)" stroke-width="2" cx="12" cy="12" r="12"></circle><path d="M5.16020001,12.9233617 C5.05250252,12.8156642 5,12.6520987 5,12.5444012 C5,12.4367037 5.05250252,12.2765037 5.16020001,12.1688062 L5.91475552,11.4142507 C6.1308236,11.1981826 6.45391605,11.1981826 6.66931102,11.4142507 L6.72248666,11.4694456 L9.68551373,14.6451752 C9.79321121,14.7535458 9.95341122,14.7535458 10.0617818,14.6451752 L17.2761671,7.1595269 L17.3313621,7.1595269 C17.5474302,6.94682437 17.8705226,6.94682437 18.0859176,7.1595269 L18.8384538,7.91408241 C19.0538487,8.13015049 19.0538487,8.45324294 18.8384538,8.66863792 L10.2246743,17.6088754 C10.1169768,17.7165729 10.0086062,17.7690754 9.84571374,17.7690754 C9.68551373,17.7690754 9.57781624,17.7165729 9.47011876,17.6088754 L5.2678975,13.0835617 L5.16020001,12.9233617 Z" id="Fill-1" fill="#FF9602"></path></g></g></g></g></g></g></g></g></g></svg>
-                                    Modem com Wi-Fi
-                                </li>
-                                <li>
-                                    <svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><linearGradient x1="0%" y1="93.8648897%" x2="100%" y2="5.78661152%" id="linearGradient-1"><stop stop-color="#FFA600" offset="0%"></stop>    <stop stop-color="#FF6D00" offset="100%"></stop></linearGradient></defs><g id="00_home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="01_home_carrossel1" transform="translate(-279.000000, -825.000000)"><g id="Group-9" transform="translate(240.000000, 605.000000)"><g id="Group-5" transform="translate(35.000000, 1.000000)"><g id="Group-26-Copy" transform="translate(5.000000, 220.000000)"><g id="Group-3"><g id="Group-6"><g id="Group-4"><g id="Group-30"><circle id="Oval" stroke="url(#linearGradient-1)" stroke-width="2" cx="12" cy="12" r="12"></circle><path d="M5.16020001,12.9233617 C5.05250252,12.8156642 5,12.6520987 5,12.5444012 C5,12.4367037 5.05250252,12.2765037 5.16020001,12.1688062 L5.91475552,11.4142507 C6.1308236,11.1981826 6.45391605,11.1981826 6.66931102,11.4142507 L6.72248666,11.4694456 L9.68551373,14.6451752 C9.79321121,14.7535458 9.95341122,14.7535458 10.0617818,14.6451752 L17.2761671,7.1595269 L17.3313621,7.1595269 C17.5474302,6.94682437 17.8705226,6.94682437 18.0859176,7.1595269 L18.8384538,7.91408241 C19.0538487,8.13015049 19.0538487,8.45324294 18.8384538,8.66863792 L10.2246743,17.6088754 C10.1169768,17.7165729 10.0086062,17.7690754 9.84571374,17.7690754 C9.68551373,17.7690754 9.57781624,17.7165729 9.47011876,17.6088754 L5.2678975,13.0835617 L5.16020001,12.9233617 Z" id="Fill-1" fill="#FF9602"></path></g></g></g></g></g></g></g></g></g></svg>
-                                    Esporte Interativo
-                                </li>
-                                <li>
-                                    <svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><linearGradient x1="0%" y1="93.8648897%" x2="100%" y2="5.78661152%" id="linearGradient-1"><stop stop-color="#FFA600" offset="0%"></stop>    <stop stop-color="#FF6D00" offset="100%"></stop></linearGradient></defs><g id="00_home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="01_home_carrossel1" transform="translate(-279.000000, -825.000000)"><g id="Group-9" transform="translate(240.000000, 605.000000)"><g id="Group-5" transform="translate(35.000000, 1.000000)"><g id="Group-26-Copy" transform="translate(5.000000, 220.000000)"><g id="Group-3"><g id="Group-6"><g id="Group-4"><g id="Group-30"><circle id="Oval" stroke="url(#linearGradient-1)" stroke-width="2" cx="12" cy="12" r="12"></circle><path d="M5.16020001,12.9233617 C5.05250252,12.8156642 5,12.6520987 5,12.5444012 C5,12.4367037 5.05250252,12.2765037 5.16020001,12.1688062 L5.91475552,11.4142507 C6.1308236,11.1981826 6.45391605,11.1981826 6.66931102,11.4142507 L6.72248666,11.4694456 L9.68551373,14.6451752 C9.79321121,14.7535458 9.95341122,14.7535458 10.0617818,14.6451752 L17.2761671,7.1595269 L17.3313621,7.1595269 C17.5474302,6.94682437 17.8705226,6.94682437 18.0859176,7.1595269 L18.8384538,7.91408241 C19.0538487,8.13015049 19.0538487,8.45324294 18.8384538,8.66863792 L10.2246743,17.6088754 C10.1169768,17.7165729 10.0086062,17.7690754 9.84571374,17.7690754 C9.68551373,17.7690754 9.57781624,17.7165729 9.47011876,17.6088754 L5.2678975,13.0835617 L5.16020001,12.9233617 Z" id="Fill-1" fill="#FF9602"></path></g></g></g></g></g></g></g></g></g></svg>
-                                    CN Já!
-                                </li>
-                            </ul>
-                            <p>
-                                R$ <strong>149,90</strong> /mês
-                            </p>
-                            <a href="#" class="btn-assine js-disponibilidade-modal">Assine já</a>
-                        </div>
-                        <div>
-                            <h6>
-                                100 Mega <small>Download igual Upload</small>
-                                <svg width="86px" height="102px" viewBox="0 0 86 102" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="00_home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.149999991"><g id="01_home_banner1_1920" transform="translate(-475.000000, -606.000000)" fill="#FFFFFF"><g id="Group-9" transform="translate(376.000000, 605.000000)"><g id="Group-5" transform="translate(35.000000, 1.000000)"><path d="M120.621622,51 L150,51 L121.621622,102 L65,102 L93.3783784,51 L64,51 L92.3783784,0 L149,0 L120.621622,51 Z" id="Combined-Shape-Copy-2"></path></g></g></g></g></svg>
-                            </h6>
-                            <p>Para você que quer sempre mais da sua internet.</p>
-                            <ul>
-                                <li>
-                                    <svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><linearGradient x1="0%" y1="93.8648897%" x2="100%" y2="5.78661152%" id="linearGradient-1"><stop stop-color="#FFA600" offset="0%"></stop>    <stop stop-color="#FF6D00" offset="100%"></stop></linearGradient></defs><g id="00_home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="01_home_carrossel1" transform="translate(-279.000000, -825.000000)"><g id="Group-9" transform="translate(240.000000, 605.000000)"><g id="Group-5" transform="translate(35.000000, 1.000000)"><g id="Group-26-Copy" transform="translate(5.000000, 220.000000)"><g id="Group-3"><g id="Group-6"><g id="Group-4"><g id="Group-30"><circle id="Oval" stroke="url(#linearGradient-1)" stroke-width="2" cx="12" cy="12" r="12"></circle><path d="M5.16020001,12.9233617 C5.05250252,12.8156642 5,12.6520987 5,12.5444012 C5,12.4367037 5.05250252,12.2765037 5.16020001,12.1688062 L5.91475552,11.4142507 C6.1308236,11.1981826 6.45391605,11.1981826 6.66931102,11.4142507 L6.72248666,11.4694456 L9.68551373,14.6451752 C9.79321121,14.7535458 9.95341122,14.7535458 10.0617818,14.6451752 L17.2761671,7.1595269 L17.3313621,7.1595269 C17.5474302,6.94682437 17.8705226,6.94682437 18.0859176,7.1595269 L18.8384538,7.91408241 C19.0538487,8.13015049 19.0538487,8.45324294 18.8384538,8.66863792 L10.2246743,17.6088754 C10.1169768,17.7165729 10.0086062,17.7690754 9.84571374,17.7690754 C9.68551373,17.7690754 9.57781624,17.7165729 9.47011876,17.6088754 L5.2678975,13.0835617 L5.16020001,12.9233617 Z" id="Fill-1" fill="#FF9602"></path></g></g></g></g></g></g></g></g></g></svg>
-                                    Modem com Wi-Fi
-                                </li>
-                                <li>
-                                    <svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><linearGradient x1="0%" y1="93.8648897%" x2="100%" y2="5.78661152%" id="linearGradient-1"><stop stop-color="#FFA600" offset="0%"></stop>    <stop stop-color="#FF6D00" offset="100%"></stop></linearGradient></defs><g id="00_home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="01_home_carrossel1" transform="translate(-279.000000, -825.000000)"><g id="Group-9" transform="translate(240.000000, 605.000000)"><g id="Group-5" transform="translate(35.000000, 1.000000)"><g id="Group-26-Copy" transform="translate(5.000000, 220.000000)"><g id="Group-3"><g id="Group-6"><g id="Group-4"><g id="Group-30"><circle id="Oval" stroke="url(#linearGradient-1)" stroke-width="2" cx="12" cy="12" r="12"></circle><path d="M5.16020001,12.9233617 C5.05250252,12.8156642 5,12.6520987 5,12.5444012 C5,12.4367037 5.05250252,12.2765037 5.16020001,12.1688062 L5.91475552,11.4142507 C6.1308236,11.1981826 6.45391605,11.1981826 6.66931102,11.4142507 L6.72248666,11.4694456 L9.68551373,14.6451752 C9.79321121,14.7535458 9.95341122,14.7535458 10.0617818,14.6451752 L17.2761671,7.1595269 L17.3313621,7.1595269 C17.5474302,6.94682437 17.8705226,6.94682437 18.0859176,7.1595269 L18.8384538,7.91408241 C19.0538487,8.13015049 19.0538487,8.45324294 18.8384538,8.66863792 L10.2246743,17.6088754 C10.1169768,17.7165729 10.0086062,17.7690754 9.84571374,17.7690754 C9.68551373,17.7690754 9.57781624,17.7165729 9.47011876,17.6088754 L5.2678975,13.0835617 L5.16020001,12.9233617 Z" id="Fill-1" fill="#FF9602"></path></g></g></g></g></g></g></g></g></g></svg>
-                                    Esporte Interativo
-                                </li>
-                                <li>
-                                    <svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><linearGradient x1="0%" y1="93.8648897%" x2="100%" y2="5.78661152%" id="linearGradient-1"><stop stop-color="#FFA600" offset="0%"></stop>    <stop stop-color="#FF6D00" offset="100%"></stop></linearGradient></defs><g id="00_home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="01_home_carrossel1" transform="translate(-279.000000, -825.000000)"><g id="Group-9" transform="translate(240.000000, 605.000000)"><g id="Group-5" transform="translate(35.000000, 1.000000)"><g id="Group-26-Copy" transform="translate(5.000000, 220.000000)"><g id="Group-3"><g id="Group-6"><g id="Group-4"><g id="Group-30"><circle id="Oval" stroke="url(#linearGradient-1)" stroke-width="2" cx="12" cy="12" r="12"></circle><path d="M5.16020001,12.9233617 C5.05250252,12.8156642 5,12.6520987 5,12.5444012 C5,12.4367037 5.05250252,12.2765037 5.16020001,12.1688062 L5.91475552,11.4142507 C6.1308236,11.1981826 6.45391605,11.1981826 6.66931102,11.4142507 L6.72248666,11.4694456 L9.68551373,14.6451752 C9.79321121,14.7535458 9.95341122,14.7535458 10.0617818,14.6451752 L17.2761671,7.1595269 L17.3313621,7.1595269 C17.5474302,6.94682437 17.8705226,6.94682437 18.0859176,7.1595269 L18.8384538,7.91408241 C19.0538487,8.13015049 19.0538487,8.45324294 18.8384538,8.66863792 L10.2246743,17.6088754 C10.1169768,17.7165729 10.0086062,17.7690754 9.84571374,17.7690754 C9.68551373,17.7690754 9.57781624,17.7165729 9.47011876,17.6088754 L5.2678975,13.0835617 L5.16020001,12.9233617 Z" id="Fill-1" fill="#FF9602"></path></g></g></g></g></g></g></g></g></g></svg>
-                                    CN Já!
-                                </li>
-                            </ul>
-                            <p>
-                                R$ <strong>--</strong> /mês
+                                R$ <strong class="js-valor"></strong> /mês
                             </p>
                             <a href="#" class="btn-assine js-disponibilidade-modal">Assine já</a>
                         </div>
@@ -275,7 +175,7 @@
             </div>
 
             <div class="container">
-                <div class="planos-geolocation">
+                <div class="planos-geolocation planos-geolocation--true d-none">
                     <h5>
                         <small>A melhor estabilidade do mercado com velocidade de</small>
                         Download = Upload
@@ -322,15 +222,54 @@
                             <p>Informe sua cidade para podermos mostrar os planos disponíveis na sua região.</p>
                         </div>
                         <div class="col-12 col-md-4 offset-md-1 planos-geolocation--form">
-                            <label for="cidade">Onde você está?</label>
-                            <div class="input-group mb-3">
-                                <input type="text" id="cidade" class="form-control" placeholder="Ex: Curitiba" aria-label="Ex: Curitiba" aria-describedby="button-addon2">
-                                <div class="input-group-append">
-                                    <button class="btn btn-outline-secondary" type="button" id="button-addon2">
-                                        <i class="fas fa-arrow-right"></i>
-                                    </button>
+                            <form>
+                                <label for="cidade">Onde você está?</label>
+                                <div class="input-group mb-3">
+                                    <input type="text" id="cidade" class="form-control js-autocomplete-cidade" placeholder="Ex: Curitiba" aria-label="Ex: Curitiba">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-outline-secondary" type="submit">
+                                            <i class="fas fa-arrow-right"></i>
+                                        </button>
+                                    </div>
                                 </div>
-                            </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="planos-geolocation planos-geolocation--false d-none">
+                    <div class="row">
+                        <div class="col-12 col-md-6 planos-geolocation--legend">
+                            <svg width="90px" height="115px" viewBox="0 0 90 115" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g id="01_Planos-e-precos" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <g id="01_planos-e-precos_nao-disponivel" transform="translate(-154.000000, -556.000000)">
+                                        <g id="Group-39" transform="translate(156.000000, 558.000000)">
+                                            <path d="M43.5,77 C62.0015391,77 77,62.0015391 77,43.5 C77,24.9984609 62.0015391,10 43.5,10 C24.9984609,10 10,24.9984609 10,43.5 C10,62.0015391 24.9984609,77 43.5,77 Z" id="Oval-4" stroke="#C7C9CE" stroke-width="3" stroke-linecap="round" stroke-dasharray="1,6"></path>
+                                            <path d="M43,86 C66.7482442,86 86,66.7482442 86,43 C86,19.2517558 66.7482442,0 43,0 C19.2517558,0 0,19.2517558 0,43 C0,66.7482442 19.2517558,86 43,86 Z" id="Oval-4" stroke="#C7C9CE" stroke-width="3" stroke-linecap="round" stroke-dasharray="1,6"></path>
+                                            <ellipse id="Oval-3" fill="#464D5C" opacity="0.300000012" cx="43" cy="104" rx="25" ry="9"></ellipse>
+                                            <g id="placeholder" transform="translate(23.000000, 24.000000)" fill="#464D5C">
+                                                <path d="M34.3184444,28.5910664 L20.2524444,52.1222695 L5.81855556,28.8168398 C4.19266667,26.1859336 3.31111111,23.1506836 3.31111111,20.0390625 C3.31111111,10.8311133 10.81,3.31757812 20,3.31757812 C29.19,3.31757812 36.6777778,10.8311133 36.6777778,20.0390625 C36.6777778,23.0583926 35.8543333,26.0160469 34.3184444,28.5910664 Z M20,0 C8.972,0 0,8.98952344 0,20.0390625 C0,23.7723398 1.03211111,27.4156641 2.98544444,30.5764922 L18.8615556,56.2105723 C19.1656667,56.7016406 19.7014444,57 20.2776667,57 C20.2821111,57 20.2864444,57 20.2908889,57 C20.8721111,56.9954355 21.409,56.6878359 21.7075556,56.1881953 L37.179,30.3057422 C39.0245556,27.2117109 40,23.6615684 40,20.0390625 C40,8.98952344 31.028,0 20,0 Z" id="Fill-1"></path>
+                                                <path d="M20,26.6888889 C16.3047778,26.6888889 13.3111111,23.6852222 13.3111111,20 C13.3111111,16.324 16.324,13.3111111 20,13.3111111 C23.676,13.3111111 26.6777778,16.324 26.6777778,20 C26.6777778,23.6314444 23.7537778,26.6888889 20,26.6888889 Z M20,10 C14.486,10 10,14.486 10,20 C10,25.4787778 14.413,30 20,30 C25.6558889,30 30,25.4185556 30,20 C30,14.486 25.514,10 20,10 Z" id="Fill-2"></path>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                            <p>
+                                <strong>Obrigado pelo seu interesse, mas a Copel Fibra não está em <?php echo $session->cidade; echo ($session->estado) ? '/'.$session->estado : ''; ?>.</strong>
+                                Infelizmente a nossa rede de fibra óptica ainda não está na sua região.
+                            </p>
+                        </div>
+                        <div class="col-12 col-md-4 offset-md-1 planos-geolocation--form">
+                            <form>
+                                <div class="input-group">
+                                    <input type="text" class="form-control js-autocomplete-cidade" placeholder="Ex: Curitiba" aria-label="Ex: Curitiba">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-outline-secondary" type="submit">
+                                            <i class="fas fa-arrow-right"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -349,7 +288,6 @@
                     Conheça as vantagens <br>para sua casa
                 </h6>
             </div>
-            
         </section>
 
         <section class="home-fibra" id="fibraoptica">
@@ -599,7 +537,7 @@
     <div class="modal fade disponibilidade-modal" tabindex="-1" role="dialog" id="disponibilidade-modal">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
-                <button class="disponibilidade-modal--close">
+                <button class="disponibilidade-modal--close" type="button" class="close" data-dismiss="modal" aria-label="Fechar">
                     <i class="fas fa-times"></i>
                 </button>
                 <svg width="159px" class="disponibilidade-modal--retangle" height="264px" viewBox="0 0 159 264">

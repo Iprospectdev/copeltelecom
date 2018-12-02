@@ -1,26 +1,24 @@
 <?php
 	get_header();
-// session_start();
-// session_unset($_SESSION["copeltelecom"]);
+	session_start();
 
 	$services = new Services;
-	// $profile = $services->profile();
+	// unset($_SESSION);
 
-	// print_r($profile);
-
-	$planos = json_decode($services->planos("F",$_COOKIE["copel_cidade"]));
-
-	if(!$planos->bel){
-		$planos = json_decode($services->planos("F","CURITIBA"));
-		// $profile->cidade = "Curitiba";
+	$session = json_decode($_SESSION["copeltelecom"]);
+	// echo $session->cidade;
+	if($session) {
+		$planos = json_decode($services->planos("F",$session->cidade));	
 	}
+
 	$sizes = array();
-	if ($planos) {
+	if (isset($planos->bel)) {
 		for ($i=1; $i <= count($planos->bel); $i++) { 
 			$percent = ($i*(100/count($planos->bel)));
 			$sizes[] = intval((250*$percent)/100);
 		}
 	}
+
 	$sercontel = array(
 		"APUCARANA",
 		"ARAUCARIA",
@@ -63,7 +61,54 @@
 				<p>Escolha o plano que melhor se adapta ao que você precisa. Com a Copel Telecom você tem download e upload na mesma velocidade, com qualidade de conexão que você pode confiar e a entrega da velocidade contratada.</p>
 			</div>
 		</header>
-		<?php if ($planos): ?>
+		<?php if (!isset($session->cidade)): ?>
+			<article class="planos-list">
+				<div class="container">
+	                <div class="planos-geolocation">
+	                    <div class="row">
+	                        <div class="col-12 col-md-6 planos-geolocation--legend">
+
+								<svg width="90px" height="115px" viewBox="0 0 90 115" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+								<g id="00_home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+								<g id="01_home_banner1_informar-endereco" transform="translate(-154.000000, -743.000000)">
+								<g id="Group-21" transform="translate(98.000000, 606.000000)">
+								<g id="Group-9">
+								<g id="Group-30" transform="translate(58.000000, 139.000000)">
+								<g id="Group-39">
+								    <circle id="Oval-4" stroke="#FFA600" stroke-width="3" cx="43.5" cy="43.5" r="33.5"></circle>
+								    <circle id="Oval-4" stroke="#FFA600" stroke-width="3" cx="43" cy="43" r="43"></circle>
+								    <ellipse id="Oval-3" fill="#464D5C" opacity="0.300000012" cx="43" cy="104" rx="25" ry="9"></ellipse>
+								    <g id="placeholder" transform="translate(23.000000, 24.000000)" fill="#464D5C">
+								        <path d="M34.3184444,28.5910664 L20.2524444,52.1222695 L5.81855556,28.8168398 C4.19266667,26.1859336 3.31111111,23.1506836 3.31111111,20.0390625 C3.31111111,10.8311133 10.81,3.31757812 20,3.31757812 C29.19,3.31757812 36.6777778,10.8311133 36.6777778,20.0390625 C36.6777778,23.0583926 35.8543333,26.0160469 34.3184444,28.5910664 Z M20,0 C8.972,0 0,8.98952344 0,20.0390625 C0,23.7723398 1.03211111,27.4156641 2.98544444,30.5764922 L18.8615556,56.2105723 C19.1656667,56.7016406 19.7014444,57 20.2776667,57 C20.2821111,57 20.2864444,57 20.2908889,57 C20.8721111,56.9954355 21.409,56.6878359 21.7075556,56.1881953 L37.179,30.3057422 C39.0245556,27.2117109 40,23.6615684 40,20.0390625 C40,8.98952344 31.028,0 20,0 Z" id="Fill-1"></path>
+								        <path d="M20,26.6888889 C16.3047778,26.6888889 13.3111111,23.6852222 13.3111111,20 C13.3111111,16.324 16.324,13.3111111 20,13.3111111 C23.676,13.3111111 26.6777778,16.324 26.6777778,20 C26.6777778,23.6314444 23.7537778,26.6888889 20,26.6888889 Z M20,10 C14.486,10 10,14.486 10,20 C10,25.4787778 14.413,30 20,30 C25.6558889,30 30,25.4185556 30,20 C30,14.486 25.514,10 20,10 Z" id="Fill-2"></path>
+								    </g>
+								</g>
+								</g>
+								</g>
+								</g>
+								</g>
+								</g>
+								</svg>
+								<h6>Planos Copel Fibra</h6>
+								<p>Informe sua cidade para podermos mostrar os planos disponíveis na sua região.</p>
+	                        </div>
+	                        <div class="col-12 col-md-4 offset-md-1 planos-geolocation--form">
+	                        	<form action="">
+		                            <div class="input-group">
+		                                <input type="text" class="form-control js-autocomplete-cidade" placeholder="Ex: Curitiba" aria-label="Ex: Curitiba">
+		                                <div class="input-group-append">
+		                                    <button class="btn btn-outline-secondary" type="submit">
+		                                        <i class="fas fa-arrow-right"></i>
+		                                    </button>
+		                                </div>
+		                            </div>
+	                            </form>
+	                        </div>
+	                    </div>
+	                </div>
+		        </div>
+	    	</article>
+		<?php elseif (isset($planos->bel)): ?>
 			<article class="planos-list">
 				<svg class="planos-list--icon" width="245px" height="81px" viewBox="0 0 245 81" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 				    <g id="01_Planos-e-precos" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -91,79 +136,13 @@
 				    </g>
 				</svg>
 				<div class="container">
-	                <div class="planos-geolocation">
-	                    <div class="row">
-	                        <div class="col-12 col-md-6 planos-geolocation--legend">
-
-								<!--<svg width="90px" height="115px" viewBox="0 0 90 115" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-								<g id="00_home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-								<g id="01_home_banner1_informar-endereco" transform="translate(-154.000000, -743.000000)">
-								<g id="Group-21" transform="translate(98.000000, 606.000000)">
-								<g id="Group-9">
-								<g id="Group-30" transform="translate(58.000000, 139.000000)">
-								<g id="Group-39">
-								    <circle id="Oval-4" stroke="#FFA600" stroke-width="3" cx="43.5" cy="43.5" r="33.5"></circle>
-								    <circle id="Oval-4" stroke="#FFA600" stroke-width="3" cx="43" cy="43" r="43"></circle>
-								    <ellipse id="Oval-3" fill="#464D5C" opacity="0.300000012" cx="43" cy="104" rx="25" ry="9"></ellipse>
-								    <g id="placeholder" transform="translate(23.000000, 24.000000)" fill="#464D5C">
-								        <path d="M34.3184444,28.5910664 L20.2524444,52.1222695 L5.81855556,28.8168398 C4.19266667,26.1859336 3.31111111,23.1506836 3.31111111,20.0390625 C3.31111111,10.8311133 10.81,3.31757812 20,3.31757812 C29.19,3.31757812 36.6777778,10.8311133 36.6777778,20.0390625 C36.6777778,23.0583926 35.8543333,26.0160469 34.3184444,28.5910664 Z M20,0 C8.972,0 0,8.98952344 0,20.0390625 C0,23.7723398 1.03211111,27.4156641 2.98544444,30.5764922 L18.8615556,56.2105723 C19.1656667,56.7016406 19.7014444,57 20.2776667,57 C20.2821111,57 20.2864444,57 20.2908889,57 C20.8721111,56.9954355 21.409,56.6878359 21.7075556,56.1881953 L37.179,30.3057422 C39.0245556,27.2117109 40,23.6615684 40,20.0390625 C40,8.98952344 31.028,0 20,0 Z" id="Fill-1"></path>
-								        <path d="M20,26.6888889 C16.3047778,26.6888889 13.3111111,23.6852222 13.3111111,20 C13.3111111,16.324 16.324,13.3111111 20,13.3111111 C23.676,13.3111111 26.6777778,16.324 26.6777778,20 C26.6777778,23.6314444 23.7537778,26.6888889 20,26.6888889 Z M20,10 C14.486,10 10,14.486 10,20 C10,25.4787778 14.413,30 20,30 C25.6558889,30 30,25.4185556 30,20 C30,14.486 25.514,10 20,10 Z" id="Fill-2"></path>
-								    </g>
-								</g>
-								</g>
-								</g>
-								</g>
-								</g>
-								</g>
-								</svg>
-								<h6>Planos Copel Fibra</h6>
-								<p>Informe sua cidade para podermos mostrar os planos disponíveis na sua região.</p>-->
-
-								<svg width="90px" height="115px" viewBox="0 0 90 115" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-								    <g id="01_Planos-e-precos" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-								        <g id="01_planos-e-precos_nao-disponivel" transform="translate(-154.000000, -556.000000)">
-								            <g id="Group-39" transform="translate(156.000000, 558.000000)">
-								                <path d="M43.5,77 C62.0015391,77 77,62.0015391 77,43.5 C77,24.9984609 62.0015391,10 43.5,10 C24.9984609,10 10,24.9984609 10,43.5 C10,62.0015391 24.9984609,77 43.5,77 Z" id="Oval-4" stroke="#C7C9CE" stroke-width="3" stroke-linecap="round" stroke-dasharray="1,6"></path>
-								                <path d="M43,86 C66.7482442,86 86,66.7482442 86,43 C86,19.2517558 66.7482442,0 43,0 C19.2517558,0 0,19.2517558 0,43 C0,66.7482442 19.2517558,86 43,86 Z" id="Oval-4" stroke="#C7C9CE" stroke-width="3" stroke-linecap="round" stroke-dasharray="1,6"></path>
-								                <ellipse id="Oval-3" fill="#464D5C" opacity="0.300000012" cx="43" cy="104" rx="25" ry="9"></ellipse>
-								                <g id="placeholder" transform="translate(23.000000, 24.000000)" fill="#464D5C">
-								                    <path d="M34.3184444,28.5910664 L20.2524444,52.1222695 L5.81855556,28.8168398 C4.19266667,26.1859336 3.31111111,23.1506836 3.31111111,20.0390625 C3.31111111,10.8311133 10.81,3.31757812 20,3.31757812 C29.19,3.31757812 36.6777778,10.8311133 36.6777778,20.0390625 C36.6777778,23.0583926 35.8543333,26.0160469 34.3184444,28.5910664 Z M20,0 C8.972,0 0,8.98952344 0,20.0390625 C0,23.7723398 1.03211111,27.4156641 2.98544444,30.5764922 L18.8615556,56.2105723 C19.1656667,56.7016406 19.7014444,57 20.2776667,57 C20.2821111,57 20.2864444,57 20.2908889,57 C20.8721111,56.9954355 21.409,56.6878359 21.7075556,56.1881953 L37.179,30.3057422 C39.0245556,27.2117109 40,23.6615684 40,20.0390625 C40,8.98952344 31.028,0 20,0 Z" id="Fill-1"></path>
-								                    <path d="M20,26.6888889 C16.3047778,26.6888889 13.3111111,23.6852222 13.3111111,20 C13.3111111,16.324 16.324,13.3111111 20,13.3111111 C23.676,13.3111111 26.6777778,16.324 26.6777778,20 C26.6777778,23.6314444 23.7537778,26.6888889 20,26.6888889 Z M20,10 C14.486,10 10,14.486 10,20 C10,25.4787778 14.413,30 20,30 C25.6558889,30 30,25.4185556 30,20 C30,14.486 25.514,10 20,10 Z" id="Fill-2"></path>
-								                </g>
-								            </g>
-								        </g>
-								    </g>
-								</svg>
-	                         	<p>
-	                         		<strong>Obrigado pelo seu interesse, mas a Copel Fibra não está em Cascável/PR</strong>
-	                         		Infelizmente a nossa rede de fibra óptica ainda não está na sua região.
-	                         	</p>
-	                        </div>
-	                        <div class="col-12 col-md-4 offset-md-1 planos-geolocation--form">
-	                            <div class="input-group">
-	                                <input type="text" id="cidade" class="form-control" placeholder="Ex: Curitiba" aria-label="Ex: Curitiba" aria-describedby="button-addon2">
-	                                <div class="input-group-append">
-	                                    <button class="btn btn-outline-secondary" type="button" id="button-addon2">
-	                                        <i class="fas fa-arrow-right"></i>
-	                                    </button>
-	                                </div>
-	                            </div>
-	                        </div>
-	                    </div>
-	                </div>
 					<ul>
-						<?php $variable = array_fill(0, 10, 'value'); ?>
 						<?php foreach ($planos->bel as $plan): ?>
-							<?php 
-								// if($services->profile_velocidade($plan->nomeProduto) == '01'){
-								// 	echo '<small>Paraná Conectado</small>';
-								// }else{
-								// 	echo '<small>Copel Fibra</small>';
-								// }
+							<?php
 								$velocidade = $services->profile_velocidade($plan->nomeProduto);
 								$velocidade = str_replace('a', '', $velocidade);
 								$velocidade = str_replace('A', '', $velocidade);
-							 ?>
+							?>
 							<li class="planos-item">
 								<div class="planos-item--vel">
 									<h6>
@@ -211,7 +190,7 @@
 										</svg>
 										Copel Fibra
 										<strong><?php echo $velocidade; ?> Mega</strong>
-										<a href="#">Veja o plano de serviço</a>
+										<a href="<?php echo ($plan->linkInfTecnica)? $plan->linkInfTecnica : ''; ?>" target="_blank">Veja o plano de serviço</a>
 									</h6>
 								</div>
 
@@ -236,7 +215,7 @@
 									<a href="#" class="btn-assine">Assine Já</a>
 								</div>
 							</li>
-						<?php endforeach ?>
+						<?php endforeach; ?>
 					</ul>		
 				</div>
 				<div class="container">
@@ -252,31 +231,6 @@
 	                <div class="planos-geolocation">
 	                    <div class="row">
 	                        <div class="col-12 col-md-6 planos-geolocation--legend">
-
-								<!--<svg width="90px" height="115px" viewBox="0 0 90 115" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-								<g id="00_home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-								<g id="01_home_banner1_informar-endereco" transform="translate(-154.000000, -743.000000)">
-								<g id="Group-21" transform="translate(98.000000, 606.000000)">
-								<g id="Group-9">
-								<g id="Group-30" transform="translate(58.000000, 139.000000)">
-								<g id="Group-39">
-								    <circle id="Oval-4" stroke="#FFA600" stroke-width="3" cx="43.5" cy="43.5" r="33.5"></circle>
-								    <circle id="Oval-4" stroke="#FFA600" stroke-width="3" cx="43" cy="43" r="43"></circle>
-								    <ellipse id="Oval-3" fill="#464D5C" opacity="0.300000012" cx="43" cy="104" rx="25" ry="9"></ellipse>
-								    <g id="placeholder" transform="translate(23.000000, 24.000000)" fill="#464D5C">
-								        <path d="M34.3184444,28.5910664 L20.2524444,52.1222695 L5.81855556,28.8168398 C4.19266667,26.1859336 3.31111111,23.1506836 3.31111111,20.0390625 C3.31111111,10.8311133 10.81,3.31757812 20,3.31757812 C29.19,3.31757812 36.6777778,10.8311133 36.6777778,20.0390625 C36.6777778,23.0583926 35.8543333,26.0160469 34.3184444,28.5910664 Z M20,0 C8.972,0 0,8.98952344 0,20.0390625 C0,23.7723398 1.03211111,27.4156641 2.98544444,30.5764922 L18.8615556,56.2105723 C19.1656667,56.7016406 19.7014444,57 20.2776667,57 C20.2821111,57 20.2864444,57 20.2908889,57 C20.8721111,56.9954355 21.409,56.6878359 21.7075556,56.1881953 L37.179,30.3057422 C39.0245556,27.2117109 40,23.6615684 40,20.0390625 C40,8.98952344 31.028,0 20,0 Z" id="Fill-1"></path>
-								        <path d="M20,26.6888889 C16.3047778,26.6888889 13.3111111,23.6852222 13.3111111,20 C13.3111111,16.324 16.324,13.3111111 20,13.3111111 C23.676,13.3111111 26.6777778,16.324 26.6777778,20 C26.6777778,23.6314444 23.7537778,26.6888889 20,26.6888889 Z M20,10 C14.486,10 10,14.486 10,20 C10,25.4787778 14.413,30 20,30 C25.6558889,30 30,25.4185556 30,20 C30,14.486 25.514,10 20,10 Z" id="Fill-2"></path>
-								    </g>
-								</g>
-								</g>
-								</g>
-								</g>
-								</g>
-								</g>
-								</svg>
-								<h6>Planos Copel Fibra</h6>
-								<p>Informe sua cidade para podermos mostrar os planos disponíveis na sua região.</p>-->
-
 								<svg width="90px" height="115px" viewBox="0 0 90 115" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 								    <g id="01_Planos-e-precos" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
 								        <g id="01_planos-e-precos_nao-disponivel" transform="translate(-154.000000, -556.000000)">
@@ -293,19 +247,21 @@
 								    </g>
 								</svg>
 	                         	<p>
-	                         		<strong>Obrigado pelo seu interesse, mas a Copel Fibra não está em <?php echo $_SESSION['copel_cidade'].'/'.$_SESSION['copel_estado']; ?></strong>
+	                         		<strong>Obrigado pelo seu interesse, mas a Copel Fibra não está em <?php echo $session->cidade; echo ($session->estado) ? '/'.$session->estado : ''; ?>.</strong>
 	                         		Infelizmente a nossa rede de fibra óptica ainda não está na sua região.
 	                         	</p>
 	                        </div>
 	                        <div class="col-12 col-md-4 offset-md-1 planos-geolocation--form">
-	                            <div class="input-group">
-	                                <input type="text" id="cidade" class="form-control" placeholder="Ex: Curitiba" aria-label="Ex: Curitiba" aria-describedby="button-addon2">
-	                                <div class="input-group-append">
-	                                    <button class="btn btn-outline-secondary" type="button" id="button-addon2">
-	                                        <i class="fas fa-arrow-right"></i>
-	                                    </button>
-	                                </div>
-	                            </div>
+	                        	<form>
+		                            <div class="input-group">
+		                                <input type="text" class="form-control js-autocomplete-cidade" placeholder="Ex: Curitiba" aria-label="Ex: Curitiba">
+		                                <div class="input-group-append">
+		                                    <button class="btn btn-outline-secondary" type="submit">
+		                                        <i class="fas fa-arrow-right"></i>
+		                                    </button>
+		                                </div>
+		                            </div>
+	                        	</form>
 	                        </div>
 	                    </div>
 	                </div>

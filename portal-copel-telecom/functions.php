@@ -44,7 +44,7 @@ switch (get_bloginfo("url")) {
 		define("LINK_WVT", "http://hml.copel.com/wvtweb/site/verificar_disponibilidade.jsf");
 		break;
 	default:
-		define("WEBSERVICE", "http://hml.copel.com");
+		define("WEBSERVICE", "http://hml.copeltelecom.com");
 		define("LINK_WVT", "http://www.copel.com/wvtweb/site/verificar_disponibilidade.jsf");
 		break;
 }
@@ -78,15 +78,19 @@ include dirname(__FILE__) .  "/_theme/custom_search.php";
 
 # Scripts
 
-function vars(){ ?>
+function vars(){ 
+	session_start();
+?>
 	<script type="text/javascript">
-	var copel = <?php echo json_encode(array(
-		'ajax_url'      => admin_url( 'admin-ajax.php' ),
-		'template' 		=> get_bloginfo('template_url'), 
-		'url' 			=> get_bloginfo('url')."/",
-		'query_vars' 	=> json_encode( $wp_query->query )
-	)); ?>;
-	</script><?php 
+		var copel = <?php echo json_encode(array(
+			'ajax_url'      => admin_url( 'admin-ajax.php' ),
+			'template' 		=> get_bloginfo('template_url'), 
+			'url' 			=> get_bloginfo('url')."/",
+			'query_vars' 	=> json_encode( $wp_query->query ),
+			'session'		=> $_SESSION['copeltelecom'] ? json_decode($_SESSION['copeltelecom']) : ''
+		)); ?>;
+	</script>
+<?php 
 }
 add_action ( 'wp_head', 'vars' );
 
@@ -118,28 +122,6 @@ function custom_admin() {
 }
 add_action('admin_enqueue_scripts', 'custom_admin');
 add_action('login_enqueue_scripts', 'custom_admin');
-
-// Icones de Perguntas Frequentes
-function iconeFaq($slugTax){
-	switch ($slugTax) {
-		case 'planos-e-servicos':
-			echo  'i-faq-planos'; 
-			break;
-		case 'sua-conta':
-			echo  'i-faq-conta'; 
-			break;
-		case 'wifi':
-			echo  'i-faq-wifi'; 
-			break;
-		case 'suporte-tecnico':
-			echo  'i-faq-suporte'; 
-			break;
-		
-		default:
-			echo  'i-faq-conta'; 
-			break;
-	}
-}
 
 // Get Categories without LINK
 function get_the_categorias($id) {
