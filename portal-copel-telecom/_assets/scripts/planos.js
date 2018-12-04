@@ -59,16 +59,21 @@ function success(pos) {
 };
 
 function error(err) {
+	showPlanos('');
 	console.warn('ERROR(' + err.code + '): ' + err.message);
 };
 
 function requestLocation() {
 	var options = {
 	  enableHighAccuracy: true,
-	  timeout: 5000,
+	  // timeout: 5000,
 	  maximumAge: 0
 	};
-	navigator.geolocation.getCurrentPosition(success, error, options);
+	var nav = navigator.geolocation.getCurrentPosition(success, error, options);
+	if(!nav) {
+		console.log('no nav');
+		showPlanos('');
+	}
 }
 
 function initialize() {
@@ -100,8 +105,11 @@ function getCityState(lat, lng) {
 					estado: estado
 				};
 				saveSession(site);
-				$('.js-cidade-estado').html(cidade+'/'+estado);
-
+				var estado = (estado)?'/'+estado : '';
+				var cidade = (cidade) ? cidade+estado : 'Curitiba';
+				$('.js-cidade-estado').html(cidade);
+				showPlanos(cidade);
+				console.log('geo');
 			} else {
 				// alert("No results found");
 			}
@@ -150,46 +158,51 @@ function formPlanosInit() {
 	});
 }
 
-function showPlanosHome(cidade) {
+function showPlanos(cidade) {
+	console.log('do show planos');
 	var item = $('.home-planos-carousel--item').clone();
 	$('.home-planos-carousel').html('');
+	var headercidade = (cidade) ? cidade : 'Curitiba';
+	$('.js-cidade-estado').html(headercidade);
+	console.log('has planos div'+$('.home-planos .planos-geolocation').length);
 
-	jQuery.ajax({
-		url: copel.template + "/_theme/service.php",
-		type: 'GET',
-		dataType: 'json',
-		data: {
-			planos: 1,
-			tipo: 'f',
-			cidade: cidade
-		}
-	}).done(function(data) {
-		// var planos = jQuery.parseJSON(data);
-		// console.log(data.bel);
-		if(data.bel != null) {
-			$.each(data.bel, function( index, value ) {
-				item.find('.js-velocidade').html(value.download);
-				item.find('.js-valor').html(value.precoProduto);
-				$('.home-planos-carousel').append('<div>'+item.html()+'</div>');
-			});
-			planosCarouselHome();
-			$('.home-planos .planos-geolocation').addClass('d-none');
-			$('.home-planos-list').removeClass('d-none');
-	        $('.js-disponibilidade-modal').on('click', function(event) {
-	            $('#disponibilidade-modal').modal('show');
-	            return false;
-	        });
-		} else if(copel.session) {
-			$('.home-planos-list').addClass('d-none');
-			$('.home-planos .planos-geolocation--false').removeClass('d-none');
-		} else {
+	if($('.home-planos .planos-geolocation').length){
+		jQuery.ajax({
+			url: copel.template + "/_theme/service.php",
+			type: 'GET',
+			dataType: 'json',
+			data: {
+				planos: 1,
+				tipo: 'f',
+				cidade: cidade
+			}
+		}).done(function(data) {
+			if(data.bel != null) {
+				$.each(data.bel, function( index, value ) {
+					item.find('.js-velocidade').html(value.download);
+					item.find('.js-valor').html(value.precoProduto);
+					$('.home-planos-carousel').append('<div>'+item.html()+'</div>');
+				});
+				planosCarouselHome();
+				$('.home-planos .planos-geolocation').addClass('d-none');
+				$('.home-planos-list').removeClass('d-none');
+		        $('.js-disponibilidade-modal').on('click', function(event) {
+		            $('#disponibilidade-modal').modal('show');
+		            return false;
+		        });
+			} else if(copel.session) {
+				$('.home-planos-list').addClass('d-none');
+				$('.home-planos .planos-geolocation--false').removeClass('d-none');
+			} else {
+				$('.home-planos-list').addClass('d-none');
+				$('.home-planos .planos-geolocation--true').removeClass('d-none');
+			}
+			// console.log('showPlanos done!');
+		}).fail(function(data) {
 			$('.home-planos-list').addClass('d-none');
 			$('.home-planos .planos-geolocation--true').removeClass('d-none');
-		}
-		// console.log('showPlanosHome done!');
-	}).fail(function(data) {
-		// console.log('showPlanosHome error!');
-	});
+		});
+	}
 }
 
 jQuery(document).ready(function($) {
@@ -198,12 +211,11 @@ jQuery(document).ready(function($) {
 	formPlanosInit();	
 });
 
-
 // start
-if(!copel.session.cidade && !copel.session.estado){
+if(!copel.session.cidade){
 	requestLocation();
-} else {
-	var estado = (copel.session.estado)?'/'+copel.session.estado : '';
-	$('.js-cidade-estado').html(copel.session.cidade+ estado);
-	showPlanosHome(copel.session.cidade);
+	console.log('do geo');
+} else { 
+	showPlanos(copel.session.cidade);
+	console.log('dont do geo');
 }

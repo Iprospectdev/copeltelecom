@@ -255,7 +255,7 @@
                                 </g>
                             </svg>
                             <p>
-                                <strong>Obrigado pelo seu interesse, mas a Copel Fibra não está em <?php echo $session->cidade; echo ($session->estado) ? '/'.$session->estado : ''; ?>.</strong>
+                                <strong>Obrigado pelo seu interesse, mas a Copel Fibra não está em <span class="js-cidade-estado"></span>.</strong>
                                 Infelizmente a nossa rede de fibra óptica ainda não está na sua região.
                             </p>
                         </div>
@@ -486,48 +486,48 @@
                     <p>Aqui tem dicas, informações e muitos mais para você.</p>
                 </div>
                 <div class="row mx-0">
-                    <article class="col-12 col-md-12 blog-item">
-                        <a href="#">
-                            <span style="background-image: url(https://placeimg.com/640/480/tech);"></span>
-                            <h6>
-                                <small>Especialista</small>
-                                A internet para quem usa internet
-                            </h6>
-                        </a>
-                    </article>
-                    <article class="col-12 col-md-4 blog-item">
-                        <a href="#">
-                            <span style="background-image: url(https://placeimg.com/640/480/tech);"></span>
-                            <h6>
-                                <small>Especialista</small>
-                                A internet para quem usa internet
-                            </h6>
-                        </a>
-                    </article>
-                    <article class="col-12 col-md-4 blog-item">
-                        <a href="#">
-                            <span style="background-image: url(https://placeimg.com/640/480/tech);"></span>
-                            <h6>
-                                <small>Especialista</small>
-                                A internet para quem usa internet
-                            </h6>
-                        </a>
-                    </article>
-                    <div class="col-12 col-md-4 blog-item-nav">
-                        <h6>Navegar por categorias</h6>
-                        <nav>
-                            <a href="#">Copel</a>
-                            <a href="#">Curiosidades</a>
-                            <a href="#">Inovação</a>
-                            <a href="#">Em alta velocidade</a>
-                            <a href="#">Games</a>
-                            <a href="#">Wi-Fi</a>
-                            <a href="#">Institucional</a>
-                            <a href="#">Notícias</a>
-                            <a href="#">Vídeos</a>
-                        </nav>
-                        <a href="#" class="btn-assine">Veja todas as publicações</a>
-                    </div>
+               
+                    <?php
+                        query_posts(array(
+                            "post_type" => "post",
+                            'posts_per_page' => 3
+                        ));
+                        $i = 0;
+                    ?>
+                    <?php while (have_posts()): the_post(); ?>
+                        <?php
+                            if($i==0){
+                                $class = 'col-md-12 col-sm-12 col-12 float-left';
+                            }else{
+                                $class = 'col-md-4 col-sm-6 col-12 float-left';
+                            }
+                        ?>
+                        <article class="<?php echo $class; ?> blog-item">
+                            <a href="<?php the_permalink(); ?>">
+                                <span style="background-image: url(<?php echo get_the_post_thumbnail_url( $post->ID , "full" ); ?>);"></span>
+                                <h6>
+                                    <small><?php get_the_categorias($post->ID); ?></small>
+                                    <?php the_title(); ?>
+                                </h6>
+                            </a>
+                        </article>
+                        <?php if($i==2 && get_query_var( 'paged' )<=1): ?>
+                            <aside class="col-md-4 col-sm-6 col-12 blog-item-nav">
+                                <h6>Navegar por categorias</h6>
+                                <nav>
+                                    <?php
+                                        $categorias = get_terms("category");
+                                        if ($categorias) {
+                                            foreach ($categorias as $cat) {
+                                                echo '<a href="'. get_term_link($cat->slug, 'category') .'" class="bt-o">'.$cat->name.'</a>';
+                                            }
+                                        }
+                                    ?>
+                                </nav>
+                                <a href="#" class="btn-assine">Veja todas as publicações</a>
+                            </aside>
+                        <?php endif; ?>
+                    <?php $i++; endwhile; ?>
                 </div>
             </div>
 		</section>

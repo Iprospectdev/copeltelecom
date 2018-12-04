@@ -157,7 +157,7 @@
 		</div>
 	</footer>
 	<?php wp_footer(); ?>
-	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script> 
+	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false&key=AIzaSyBFAgYljSm9hYX2tTJ-1h7ZJTBPJDh3KsM"></script> 
 	<script src="<?php bloginfo('template_url');?>/_assets/js/app.bundle.js"></script>
 </body>
 </html>

@@ -379,12 +379,15 @@ a:hover {
 	max-height: 0;
 	overflow: hidden;
 	height: auto;
-	transition: all 0.2s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	width: 100%!important;
 
 	&.open {
 		background: #fff;
 		border: 1px solid #ccc;
 		max-height: 100000px;
+		width: 100%!important;
+		top: 100%!important;
 	}
 
 	ul {
