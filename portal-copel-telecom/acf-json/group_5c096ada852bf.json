@@ -1,0 +1,164 @@
+{
+    "key": "group_5c096ada852bf",
+    "title": "Configurações Gerais",
+    "fields": [
+        {
+            "key": "field_5c096c41a1aa8",
+            "label": "Formulários",
+            "name": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "open": 1,
+            "multi_expand": 0,
+            "endpoint": 0
+        },
+        {
+            "key": "field_5c096b6cffc08",
+            "label": "Solicitação de Gravação",
+            "name": "solicitacao_de_gravacao",
+            "type": "text",
+            "instructions": "Email que serão encaminhadas as SOLICITAÇÕES DE GRAVAÇÃO. Caso tenham outros emails, separa utilizando virgula(,).",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5c096ba67db0e",
+            "label": "Contato do Site",
+            "name": "contato_site",
+            "type": "text",
+            "instructions": "Email que serão encaminhadas os CONTATO DO SITE. Caso tenham outros emails, separa utilizando virgula(,).",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5c096bb67db0f",
+            "label": "Rede de Alta Velocidade",
+            "name": "form_rav",
+            "type": "text",
+            "instructions": "Email que serão encaminhadas os emails do Rede de Alta Velocidade. Caso tenham outros emails, separa utilizando virgula(,).",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5c096bc37db10",
+            "label": "IP Direto",
+            "name": "form_ipdireto",
+            "type": "text",
+            "instructions": "Email que serão encaminhadas os emails do IP Direto. Caso tenham outros emails, separa utilizando virgula(,).",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5c096cbdbaa81",
+            "label": "Outros",
+            "name": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "open": 0,
+            "multi_expand": 0,
+            "endpoint": 0
+        },
+        {
+            "key": "field_5c096cc7baa82",
+            "label": "Link do Botão Assine já!",
+            "name": "btn_assineja",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "configuracoes-gerais"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "permalink",
+        "the_content",
+        "excerpt",
+        "discussion",
+        "comments",
+        "revisions",
+        "slug",
+        "author",
+        "format",
+        "page_attributes",
+        "featured_image",
+        "categories",
+        "tags",
+        "send-trackbacks"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1544131881
+}
