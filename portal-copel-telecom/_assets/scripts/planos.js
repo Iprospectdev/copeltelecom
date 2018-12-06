@@ -144,7 +144,7 @@ function autoCompleteInit(){
 	);
 }
 
-function formPlanosInit() {
+function initFormPlanos() {
 	$('.planos-geolocation--form form').submit(function(event) {
 		var cidade = $(this).find('input').val();
 		var site = {
@@ -156,6 +156,13 @@ function formPlanosInit() {
 		console.log('submit' + cidade);
 		return false;
 	});
+}
+
+function initDisponibilidadeModal() {
+    $('.js-disponibilidade-modal').on('click', function(event) {
+        $('#disponibilidade-modal').modal('show');
+        return false;
+    });
 }
 
 function showPlanos(cidade) {
@@ -186,10 +193,7 @@ function showPlanos(cidade) {
 				planosCarouselHome();
 				$('.home-planos .planos-geolocation').addClass('d-none');
 				$('.home-planos-list').removeClass('d-none');
-		        $('.js-disponibilidade-modal').on('click', function(event) {
-		            $('#disponibilidade-modal').modal('show');
-		            return false;
-		        });
+				initDisponibilidadeModal();
 			} else if(copel.session) {
 				$('.home-planos-list').addClass('d-none');
 				$('.home-planos .planos-geolocation--false').removeClass('d-none');
@@ -208,7 +212,8 @@ function showPlanos(cidade) {
 jQuery(document).ready(function($) {
 	initialize();
 	autoCompleteInit();
-	formPlanosInit();	
+	initFormPlanos();	
+	initDisponibilidadeModal();
 });
 
 // start

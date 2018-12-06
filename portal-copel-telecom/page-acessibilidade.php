@@ -71,7 +71,7 @@
 						</h6>
 						<p>Um dos diferenciais do NVDA é que o programa não precisa ser instalado no sistema, e pode ser levado em um pendrive, CD ou outro disco removível.</p>
 						<p>Instale o plugin e siga o tutorial. </p>
-						<a href="#" class="btn-more">Saiba mais</a>
+						<a href="http://www.vlibras.gov.br/" target="_blank" class="btn-more">Saiba mais</a>
 					</div>
 				</div>
 			</div>
@@ -87,7 +87,6 @@
 					<div class="acessibilidade-item">
 						<h6><i class="fas fa-volume-up"></i>NVDA</h6>
 						<p>Uma característica que garante um grande diferencial ao NVDA é o fato dele não precisar ser instalado no sistema, podendo ser levado em um pendrive, cd ou qualquer outro disco removível.</p>
-						<a href="#" class="btn-more">Saiba mais</a>
 					</div>
 
 					<div class="acessibilidade-item">
@@ -99,7 +98,6 @@
 							• Jogos didáticos e lúdicos;<br>
 							• Programas para educação de deficientes visuais;
 						</p>
-						<a href="#" class="btn-more">Saiba mais</a>
 					</div>
 				</div>
 				<div>
@@ -114,7 +112,6 @@
 						<p>(<strong>Alt + M</strong>) Pressione a tecla Alt em conjunto com a letra M para acessar o menu.</p>
 						<p>Ao pressionar as teclas alternativas, o Firefox encaminha direto para a página solicitada. </p>
 						<p>Já o Internet Explorer apenas posiciona o foco no link, que deve ser acionado ao clicar com mouse ou pressionar ENTER com teclado.</p>
-						<a href="#" class="btn-more">Saiba mais</a>
 					</div>
 
 				</div>

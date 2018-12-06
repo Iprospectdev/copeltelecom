@@ -206,11 +206,11 @@
 					<img src="<?php bloginfo('template_url'); ?>/_assets/images/icon-phone-white.svg" alt="">
 					App Copel
 				</h6>
-				<a href="#">
-					<img src="<?php bloginfo('template_url'); ?>/_assets/images/btn-google-play-white.png" alt="">
+				<a href="https://play.google.com/store/apps/details?id=com.copeltelecom.app" target="_blank">
+					<img src="<?php bloginfo('template_url'); ?>/_assets/images/btn-google-play-white.png" alt="Google Play">
 				</a>
-				<a href="#">
-					<img src="<?php bloginfo('template_url'); ?>/_assets/images/btn-apple-store-white.png" alt="">
+				<a href="https://itunes.apple.com/br/app/copel-telecom/id1113732926?l=en&mt=8" target="_blank">
+					<img src="<?php bloginfo('template_url'); ?>/_assets/images/btn-apple-store-white.png" alt="Apple Store">
 				</a>
 			</div>
 		</aside>	

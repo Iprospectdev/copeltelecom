@@ -203,7 +203,7 @@
 					<div class="col-12 col-md-7">
 						<div class="row">
 							<div class="col-4 sobre-nos-nav--item">
-								<a href="#">
+								<a href="http://www.copeltelecom.com/site/wp-content/themes/portal-copel-telecom/_assets/pdf/estatuto-copel-telecom-abril_2016-portugues.pdf" target="_blank">
 									<svg width="24px" height="32px" viewBox="0 0 24 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 									    <g id="01_sobre-nos" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
 									        <g id="01_sobre-nos_375" transform="translate(-51.000000, -3657.000000)" fill="#464D5C">
@@ -219,7 +219,7 @@
 								</a>
 							</div>
 							<div class="col-4 sobre-nos-nav--item">
-								<a href="#">
+								<a href="http://www.copel.com/hpcopel/ri/index.jsp?_ga=2.2072818.2126978124.1544114539-1898797676.1542036985" target="_blank">
 									<svg width="38px" height="32px" viewBox="0 0 38 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 									    <g id="01_sobre-nos" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
 									        <g id="01_sobre-nos_375" transform="translate(-169.000000, -3657.000000)" fill="#464D5C">
@@ -235,7 +235,7 @@
 								</a>
 							</div>
 							<div class="col-4 sobre-nos-nav--item">
-								<a href="#">
+								<a href="http://www.copel.com/hpcopel/root/nivel2.jsp?endereco=%2Fhpcopel%2Fri%2Fpagcopel2.nsf%2Fdocs%2F8A85489DDD579DAD0325742400656466&_ga=2.114773444.2126978124.1544114539-1898797676.1542036985" target="_blank">
 									<svg width="42px" height="32px" viewBox="0 0 42 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 									    <g id="01_sobre-nos" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
 									        <g id="01_sobre-nos_375" transform="translate(-292.000000, -3657.000000)" fill="#464D5C">
@@ -255,7 +255,7 @@
 					<div class="col-12 col-md-5 sobre-nos-nav--link">
 						<p>
 							Confira aqui as informações referentes ao art. 48 da resolução 632/2014 
-							<span class="btn-more"></span>
+							<a href="http://www.copeltelecom.com/hptelecom/sitearquivos2.nsf/arquivos/tabela_de_ofertas_copel_telecom/%24FILE/Tabela%20de%20ofertas_Copel%20Telecom.xml" target="_blank" class="btn-more"></a>
 						</p>
 					</div>
 				</div>

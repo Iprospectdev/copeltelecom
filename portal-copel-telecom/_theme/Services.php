@@ -61,17 +61,17 @@ class Services {
 		session_destroy();
 	}
 
-	// public function profile() {
-	// 	$session = json_decode($_SESSION["copeltelecom"]);
+	public function profile() {
+		$session = json_decode($_SESSION["copeltelecom"]);
 
-	// 	if ($session->planos->precoProduto) {
-	// 		$session->planos->price = $this->profile_price($session->planos->precoProduto);
-	// 		$session->planos->cents = $this->profile_cents($session->planos->precoProduto);
-	// 		$session->planos->velocidade = $this->profile_velocidade($session->planos->nomeProduto);
-	// 	}
+		if ($session->planos->precoProduto) {
+			$session->planos->price = $this->profile_price($session->planos->precoProduto);
+			$session->planos->cents = $this->profile_cents($session->planos->precoProduto);
+			$session->planos->velocidade = $this->profile_velocidade($session->planos->nomeProduto);
+		}
 
-	// 	return $session;
-	// }
+		return $session;
+	}
 
 	public function profile_cents($precoProduto) {
 		$cents = substr(strrchr($precoProduto,','),1);

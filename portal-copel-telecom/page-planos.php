@@ -47,7 +47,7 @@
 		"UNIAO DA VITORIA"
 	);
 
-	// echo $profile->cidade;
+	// echo $session->cidade;
 
 ?>
 	<section class="page-planos">
@@ -212,7 +212,7 @@
 										<?php echo $services->profile_price($plan->precoProduto); ?>
 										<small>/mês*</small>
 									</span>
-									<a href="#" class="btn-assine">Assine Já</a>
+									<a href="#" class="btn-assine js-disponibilidade-modal">Assine Já</a>
 								</div>
 							</li>
 						<?php endforeach; ?>
@@ -342,7 +342,7 @@
 		</article>
 		
 		<div class="container">
-			<?php if (in_array($profile->cidade, $sercontel)): ?>
+			<?php if (in_array($session->cidade, $sercontel)): ?>
 				<article class="planos-sercomtel">
 					<img src="<?php bloginfo('template_url'); ?>/_assets/images/logo-sercomtel.png" alt="">
 					<p>

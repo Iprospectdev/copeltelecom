@@ -75,8 +75,15 @@ a:hover {
 		margin-left: 5px;
 	}
 
+	&:focus {
+		outline: none;
+		box-shadow: none;
+	}
+
 	&:hover {
 		color: color('orange-light');
+		outline: none;
+		box-shadow: none;
 
 		&:after {
 			border-radius: 50px;			
@@ -403,5 +410,25 @@ a:hover {
 				background: #c2c2c2;
 			}
 		}
+	}
+}
+
+
+/*
+ * Contraste
+ */
+body.contrast *{
+	background-color: #000 !important;
+	color: #fff !important;
+}
+
+body.zoom-site{
+	-moz-transform:scale(1.1);
+	zoom:1.1;
+}
+
+@-moz-document url-prefix() { 
+	body.zoom-site{
+    	margin-top: 118px;
 	}
 }

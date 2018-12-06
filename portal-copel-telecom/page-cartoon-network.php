@@ -9,7 +9,7 @@
 				<div class="parcerias-header--text">
 					<h2>Quem já tem Copel Telecom tem CN Já!</h2>
 					<p>Clientes da Copel Telecom têm acesso exclusivo aos desenhos do Cartoon Network onde e quando quiser.</p>
-					<a href="#" class="btn">Saiba como assistir</a>
+					<a href="#como-assistir" class="btn js-scrollto">Saiba como assistir</a>
 				</div>
 			</div>
 
@@ -132,7 +132,7 @@
 			</div>
 		</article>
 
-		<article class="parcerias-steps">
+		<article class="parcerias-steps" id="como-assistir">
 			<div class="container">
 				<h2>Quer assistir já? É fácil.</h2>
 				<p>Você poder conferir tudo antes de todo mundo. Veja como:</p>
@@ -140,8 +140,8 @@
 					<div class="col-md-4">
 						<div class="parcerias-steps--item step-1">
 							<small>1</small>
-							<p>Entre no site do <a href="http://cnja.com.br/copel">cnja.com.br/copel</a> e faça seu primeiro login para desbloquear o acesso aos conteúdos.</p>
-							<a href="#" class="btn-assine">Desbloqueie já!</a>
+							<p>Entre no site do <a href="http://cnja.com.br/copel" target="_blank">cnja.com.br/copel</a> e faça seu primeiro login para desbloquear o acesso aos conteúdos.</p>
+							<a href="http://cnja.com.br/copel" target="_blank" class="btn-assine">Desbloqueie já!</a>
 							<img src="<?php bloginfo('template_url'); ?>/_assets/images/cnja-step-1.jpg" alt="">
 						</div>
 					</div>
@@ -149,10 +149,10 @@
 						<div class="parcerias-steps--item step-2">
 							<small>2</small>
 							<p>Assista do próprio computador ou, se preferir, baixe o aplicativo do CN Já! no seu celular ou tablet.</p>
-							<a href="#">
+							<a href="https://play.google.com/store/apps/details?id=com.turner.cnja.br&hl=pt_BR" target="_blank">
 								<img src="<?php bloginfo('template_url'); ?>/_assets/images/btn-google-play.png" alt="Google Play">
 							</a>
-							<a href="#">
+							<a href="https://itunes.apple.com/us/app/cartoon-network-j%C3%A1/id1290928633?mt=8" target="_blank">
 								<img src="<?php bloginfo('template_url'); ?>/_assets/images/btn-apple-store.png" alt="Apple Store">
 							</a>
 						</div>

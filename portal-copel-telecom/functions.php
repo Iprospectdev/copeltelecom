@@ -51,7 +51,6 @@ switch (get_bloginfo("url")) {
 
 # Frameworks
 include dirname(__FILE__) . "/_theme/metabox/meta-box.php";
-include dirname(__FILE__) . "/_theme/titan-framework/titan-framework-embedder.php";
 
 # Post Types
 include dirname(__FILE__) .  "/_theme/posttypes.php";
@@ -68,9 +67,6 @@ include dirname(__FILE__) . "/_theme/ligar/ligar-admin.php";
 include dirname(__FILE__) . "/_theme/gravacao/gravacao-admin.php";
 include dirname(__FILE__) . "/_theme/rav/rav-admin.php";
 include dirname(__FILE__) . "/_theme/ipdireto/ipdireto-admin.php";
- 
-# Options titan framework
-include dirname(__FILE__) .  "/_theme/option.php"; 
 
 # Classes
 include dirname(__FILE__) .  "/_theme/Services.php";
@@ -135,19 +131,7 @@ function get_the_categorias($id) {
 	} else {
 		echo "Nenhuma Categoria";
 	}
-}
-
-// Prefix Blog nos Posts
-function add_rewrite_rules( $wp_rewrite ) {
-	$new_rules = array(
-		// 'blog/page/(.+?)/?$' => 'index.php?post_type=post&paged='. $wp_rewrite->preg_index(1),
-		'blog/(.+?)/?$' => 'index.php?post_type=post&name='. $wp_rewrite->preg_index(1),
-	);
- 
-	$wp_rewrite->rules = $new_rules + $wp_rewrite->rules;
-}
-add_action('generate_rewrite_rules', 'add_rewrite_rules');
- 
+} 
  
 function change_blog_links($post_link, $id=0){
  
@@ -182,4 +166,16 @@ if ( ! function_exists( 'count_post_views' ) ) {
         return;
     }
     add_action( 'get_header', 'count_post_views' );
+}
+
+if( function_exists('acf_add_options_page') ) {
+	
+	$option_page = acf_add_options_page(array(
+		'page_title' 	=> 'Configurações Gerais',
+		'menu_title' 	=> 'Configurações Gerais',
+		'menu_slug' 	=> 'configuracoes-gerais',
+		'capability' 	=> 'edit_posts',
+		'icon_url' 		=> 'dashicons-lightbulb',
+		'redirect' 		=> false
+	));
 }

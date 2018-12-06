@@ -11714,8 +11714,13 @@ a:hover {
     padding-right: 3px;
     text-align: right;
     margin-left: 5px; }
+  .btn-more:focus {
+    outline: none;
+    box-shadow: none; }
   .btn-more:hover {
-    color: #FF9602; }
+    color: #FF9602;
+    outline: none;
+    box-shadow: none; }
     .btn-more:hover:after {
       border-radius: 50px;
       width: 30px; }
@@ -11950,6 +11955,21 @@ a:hover {
       margin: 0; }
       .autocomplete ul li:hover {
         background: #c2c2c2; }
+
+/*
+ * Contraste
+ */
+body.contrast * {
+  background-color: #000 !important;
+  color: #fff !important; }
+
+body.zoom-site {
+  -moz-transform: scale(1.1);
+  zoom: 1.1; }
+
+@-moz-document url-prefix() {
+  body.zoom-site {
+    margin-top: 118px; } }
 
 .header {
   position: relative; }
@@ -12858,7 +12878,7 @@ body.menu-opened {
 .home-usos {
   position: relative; }
   .home-usos .fixed-top {
-    z-index: 1;
+    z-index: -1;
     min-height: 110vh;
     display: block;
     left: 0;

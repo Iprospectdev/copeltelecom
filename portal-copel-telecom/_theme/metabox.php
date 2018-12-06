@@ -33,7 +33,6 @@ function copeltelecom_mb( $meta_boxes ) {
             ),
         ),
     );
-
     $meta_boxes[] = array(
         'title'      => "Conteúdo",
         'post_types' => 'slider-home',
@@ -148,7 +147,6 @@ function copeltelecom_mb( $meta_boxes ) {
 
         ),
     );
-
 
 	return $meta_boxes;
 	

@@ -9,7 +9,7 @@
 				<div class="parcerias-header--text">
 					<h2>Cliente Copel Telecom, tem acesso gratuito ao conteúdo do Esporte Interativo</h2>
 					<p>Com ele, você pode acompanhar as maiores competições esportivas do planeta! Não perca tempo!</p>
-					<a href="#" class="btn">Saiba como assistir</a>
+					<a href="#como-assistir" class="btn js-scrollto">Saiba como assistir</a>
 				</div>
 			</div>
 
@@ -48,7 +48,7 @@
 					<div class="parcerias-sobre--text">
 						<p>O Esporte Interativo é uma das maiores marcas do mundo dedicada à produção e distribuição de conteúdos esportivos em múltiplas plataformas. Reunindo todo o conteúdo do canal, o Esporte Interativo Plus tem o objetivo de estar próximo do público apaixonado por esportes, levando o melhor da temporada, onde ele estiver.</p>
 						<p><strong>No aplicativo Esporte Interativo Plus você pode acompanhar todos os conteúdos dos Canais Esporte Interativo no celular, no computador, na smart TV LG, no tablet ou na Apple TV.</strong></p>
-						<a href="#" class="btn-o">
+						<a href="#como-assistir" class="btn-o js-scrollto">
 							Saiba como assistir
 						</a>
 					</div>
@@ -57,7 +57,7 @@
 			</div>
 		</article>
 
-		<article class="parcerias-steps">
+		<article class="parcerias-steps" id="como-assistir">
 			<div class="container">
 				<h2>Cliente Copel Telecom</h2>
 				<p>Confira abaixo como é fácil baixar o aplicativo do Esporte Interativo Plus no seu smartphone ou tablet.</p>
@@ -66,10 +66,10 @@
 						<div class="parcerias-steps--item step-1">
 							<small>1</small>
 							<p>Baixe o aplicativo Esporte Interativo Plus na Play Store ou na Apple Store.</p>
-							<a href="#">
+							<a href="https://play.google.com/store/apps/details?id=com.ideastek.esporteinterativo3" target="_blank">
 								<img src="<?php bloginfo('template_url'); ?>/_assets/images/btn-google-play.png" alt="Google Play">
 							</a>
-							<a href="#">
+							<a href="https://itunes.apple.com/us/app/esporte-interativo-ao-vivo/id509496846?ls=1&mt=8" target="_blank">
 								<img src="<?php bloginfo('template_url'); ?>/_assets/images/btn-apple-store.png" alt="Apple Store">
 							</a>
 							<p>Você também pode fazer o seu login pelo computador em www.eiplus.com.br/entrar/</p>
@@ -98,7 +98,7 @@
 			<div class="container">
 				<h6>Não consegue acesso?</h6>
 				<p>
-					Você pode recuperar sua senha no site <a href="www.eiplus.com.br/entrar" target="_blank">www.eiplus.com.br/entrar</a> escolhendo a opção <strong>“Esqueci minha senha”</strong>.<br>
+					Você pode recuperar sua senha no site <a href="http://www.eiplus.com.br/entrar" target="_blank">www.eiplus.com.br/entrar</a> escolhendo a opção <strong>“Esqueci minha senha”</strong>.<br>
 					Caso ainda não tenha conseguido acessar, entre em contato pelo e-mail <a href="mailto:relacionamento@esporteinterativoplus.com.br">relacionamento@esporteinterativoplus.com.br</a>.
 				</p>
 			</div>

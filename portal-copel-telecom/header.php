@@ -1,5 +1,3 @@
-
-<?php //session_start(); unset($_SESSION); ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -46,11 +44,11 @@
             <div class="container">
                 <nav class="header-top--nav">
                     <a href="<?php echo home_url() ?>" class="header-top--btn active">Para você</a>
-                    <a href="<?php $p=get_page_by_title('Empresas'); echo get_permalink($p->ID); ?>" class="header-top--btn">Para empresas</a>
+                    <a href="<?php $p=get_page_by_title('Para Empresas'); echo get_permalink($p->ID); ?>" class="header-top--btn">Para empresas</a>
                 </nav>
                 
                 <div class="header-top--acessibilidade">
-                    <button>
+                    <button class="js-contraste">
                         <svg width="10px" height="10px" viewBox="0 0 10 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                                 <g id="_header-hover" transform="translate(-374.000000, -22.000000)" fill="#FFFFFF">
@@ -66,11 +64,11 @@
                         </svg>
                     </button>
 
-                    <button>
+                    <button class="js-font-more">
                         A+
                     </button>
                     
-                    <button>
+                    <button class="js-font-default">
                         A-
                     </button>
 
@@ -110,7 +108,7 @@
                 
                 <div class="float-right">
                     <a href="#" class="header-top--btn"><i class="fas fa-map-marker-alt"></i><span class="js-cidade-estado">CIDADE/ESTADO</span></a>
-                    <a href="#" class="header-top--btn active">Minha copel</a>
+                    <a href="https://www.copeltelecom.com/autoatendimento/pub/login.jsf" target="_blank" class="header-top--btn active">Minha copel</a>
                 </div>
             </div>        
         </div>
@@ -180,9 +178,10 @@
                         </li>
                     </ul>
                 </nav>
-                <a href="#" class="btn-assine">
+                <a href="#" class="btn-assine js-disponibilidade-modal">
                     Assine Já
                 </a>
+
             </div>
         </div>
 
@@ -190,7 +189,7 @@
             <a href="<?php bloginfo('url'); ?>" class="logo">
                 <img src="<?php bloginfo('template_url'); ?>/_assets/images/logo-white.svg" alt="Logo Copel Telecom">
             </a>
-            <a href="#" class="header-mobile--assine">
+            <a href="#" class="header-mobile--assine js-disponibilidade-modal">
                 Assine Já
             </a>
         </div>

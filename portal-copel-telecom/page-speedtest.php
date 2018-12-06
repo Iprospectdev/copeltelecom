@@ -5,7 +5,7 @@
 		<header class="speedtest-header">
 			<div class="container">
 				<div class="main-breadcrumb">
-					<a href="#"><i class="fas fa-home"></i>Home</a>
+					<a href="<?php echo home_url(); ?>"><i class="fas fa-home"></i>Home</a>
 					<a href="#">Speedtest</a>
 				</div>
 				<h2>Speedtest Copel Telecom</h2>
@@ -142,7 +142,7 @@
 									</span>
 								</li>
 							</ul>
-							<a href="#" class="btn-assine">Assine já!</a>
+							<a href="#" class="btn-assine js-disponibilidade-modal">Assine já!</a>
 						</div>
 					</div>
 				</div>

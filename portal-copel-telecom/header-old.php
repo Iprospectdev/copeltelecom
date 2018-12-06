@@ -187,7 +187,7 @@ j=d.createElement
 									<?php if(is_page("Para sua Casa")){ ?>
 										<h1 class="current">Para sua casa</h1>
 									<?php }else{ ?>
-										<a href="<?php echo get_permalink($residencial->ID); ?>" class="<?php echo (is_page($casa)) ? "current" : ""; ?>">Para sua casa</a>
+										<a href="<?php echo home_url() ?>" class="<?php echo (is_page($casa)) ? "current" : ""; ?>">Para sua casa</a>
 									<?php } ?>
 								</li>
 								<li>
@@ -202,7 +202,7 @@ j=d.createElement
 									<?php if(is_home() || is_page("Para sua Casa")){ ?>
 										<h1 class="current">Para sua casa</h1>
 									<?php }else{ ?>
-										<a href="<?php echo get_permalink($residencial->ID); ?>" class="<?php echo (is_page($casa)) ? "current" : ""; ?>">Para sua casa</a>
+										<a href="<?php echo home_url() ?>" class="<?php echo (is_page($casa)) ? "current" : ""; ?>">Para sua casa</a>
 									<?php } ?>
 								</li>
 								<li>
