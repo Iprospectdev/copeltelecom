@@ -285,13 +285,13 @@ jQuery(document).ready(function($) {
 	// Atalho de Teclado
 	$(document).bind('keyup', 'alt+i', function(){
 		// location.href = copel.url;
-		console.log(location.href);
+		// console.log(location.href);
 	});
 
 	$(document).bind('keyup', 'alt+m', function(){
-		$('html, body').animate({
-            scrollTop: 0
-        }, 500);
+		// $('html, body').animate({
+  //           scrollTop: 0
+  //       }, 500);
 	});
 
 	// Acessibilidade
