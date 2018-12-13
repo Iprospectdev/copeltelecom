@@ -34,7 +34,7 @@
 	                        '_assets/old/bower_components/owl.carousel/dist/owl.carousel.js',
 	                        '_assets/old/bower_components/wow/dist/wow.js',
 	                        '_assets/old/bower_components/jssocials/dist/jssocials.min.js',
-	                        '_assets/old/js/*'
+	                        '_assets/old/scripts/*'
                    		];
 
     var jsFilesAdmin =  [ 
@@ -152,7 +152,7 @@
 			.pipe(gulp.dest(jsDest))
 	        .pipe(liveReload({auto: false}));
 
-	    gulp.src('_assets/old/js/compare/*')
+	    gulp.src('_assets/old/scripts/compare/*')
 			.pipe(concat('compare.min.js'))
 			.pipe(gulp.dest(jsDest))
 			.pipe(uglify())

@@ -83,8 +83,8 @@
 												<input type="hidden" name="vencimento_fatura" value="">
 												<button type="button" data-toggle="dropdown"><i class="fa fa-angle-down"></i></button>
 												<ul class="dropdown-menu">
-													<li><a href="#" data-value="1" data-text="1">1</a></li>
-													<li><a href="#" data-value="5" data-text="5">5</a></li>
+													<li><a href="#" data-value="01" data-text="01">01</a></li>
+													<li><a href="#" data-value="05" data-text="05">05</a></li>
 													<li><a href="#" data-value="10" data-text="10">10</a></li>
 													<li><a href="#" data-value="15" data-text="15">15</a></li>
 													<li><a href="#" data-value="20" data-text="20">20</a></li>
@@ -137,12 +137,8 @@
 												<input type="hidden" name="plano" value="5 Mbps">
 												<button type="button" data-toggle="dropdown"><i class="fa fa-angle-down"></i></button>
 												<ul class="dropdown-menu">
-													<li><a href="#" data-value="5 Mbps" data-text="5 Mbps">5 Mbps</a></li>
-													<li><a href="#" data-value="8 Mbps" data-text="8 Mbps">8 Mbps</a></li>
 													<li><a href="#" data-value="10 Mbps" data-text="10 Mbps">10 Mbps</a></li>
-													<li><a href="#" data-value="12 Mbps" data-text="12 Mbps">12 Mbps</a></li>
 													<li><a href="#" data-value="15 Mbps" data-text="15 Mbps">15 Mbps</a></li>
-													<li><a href="#" data-value="18 Mbps" data-text="18 Mbps">18 Mbps</a></li>
 													<li><a href="#" data-value="20 Mbps" data-text="20 Mbps">20 Mbps</a></li>
 													<li><a href="#" data-value="25 Mbps" data-text="25 Mbps">25 Mbps</a></li>
 													<li><a href="#" data-value="30 Mbps" data-text="30 Mbps">30 Mbps</a></li>

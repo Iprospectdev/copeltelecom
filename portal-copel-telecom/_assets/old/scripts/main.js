@@ -284,13 +284,15 @@ jQuery(document).ready(function($) {
 
 	// Atalho de Teclado
 	$(document).bind('keyup', 'alt+i', function(){
-		location.href = copel.url;
+		console.log('keyup alt+i');
+		// location.href = copel.url;
 	});
 
 	$(document).bind('keyup', 'alt+m', function(){
-		$('html, body').animate({
-            scrollTop: 0
-        }, 500);
+		console.log('keyup alt+m');
+		// $('html, body').animate({
+  //           scrollTop: 0
+  //       }, 500);
 	});
 
 	// Acessibilidade
