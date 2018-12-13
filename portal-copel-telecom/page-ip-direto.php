@@ -83,21 +83,12 @@
 												<input type="hidden" name="vencimento_fatura" value="">
 												<button type="button" data-toggle="dropdown"><i class="fa fa-angle-down"></i></button>
 												<ul class="dropdown-menu">
+													<li><a href="#" data-value="01" data-text="01">01</a></li>
+													<li><a href="#" data-value="05" data-text="05">05</a></li>
 													<li><a href="#" data-value="10" data-text="10">10</a></li>
 													<li><a href="#" data-value="15" data-text="15">15</a></li>
 													<li><a href="#" data-value="20" data-text="20">20</a></li>
 													<li><a href="#" data-value="25" data-text="25">25</a></li>
-													<li><a href="#" data-value="30" data-text="30">30</a></li>
-													<li><a href="#" data-value="35" data-text="35">35</a></li>
-													<li><a href="#" data-value="40" data-text="40">40</a></li>
-													<li><a href="#" data-value="45" data-text="45">45</a></li>
-													<li><a href="#" data-value="50" data-text="50">50</a></li>
-													<li><a href="#" data-value="60" data-text="60">60</a></li>
-													<li><a href="#" data-value="70" data-text="70">70</a></li>
-													<li><a href="#" data-value="80" data-text="80">80</a></li>
-													<li><a href="#" data-value="90" data-text="90">90</a></li>
-													<li><a href="#" data-value="100" data-text="100">100</a></li>
-													<li><a href="#" data-value="Maior que 100" data-text="Maior que 100">Maior que 100</a></li>
 												</ul>
 											</div>
 										</label>
@@ -146,25 +137,21 @@
 												<input type="hidden" name="plano" value="5 Mbps">
 												<button type="button" data-toggle="dropdown"><i class="fa fa-angle-down"></i></button>
 												<ul class="dropdown-menu">
-													<li><a href="#" data-value="5 Mbps" data-text="5 Mbps">5 Mbps</a></li>
-													<li><a href="#" data-value="8 Mbps" data-text="8 Mbps">8 Mbps</a></li>
-													<li><a href="#" data-value="10 Mbps" data-text="10 Mbps">10 Mbps</a></li>
-													<li><a href="#" data-value="12 Mbps" data-text="12 Mbps">12 Mbps</a></li>
-													<li><a href="#" data-value="15 Mbps" data-text="15 Mbps">15 Mbps</a></li>
-													<li><a href="#" data-value="18 Mbps" data-text="18 Mbps">18 Mbps</a></li>
-													<li><a href="#" data-value="20 Mbps" data-text="20 Mbps">20 Mbps</a></li>
-													<li><a href="#" data-value="25 Mbps" data-text="25 Mbps">25 Mbps</a></li>
-													<li><a href="#" data-value="30 Mbps" data-text="30 Mbps">30 Mbps</a></li>
-													<li><a href="#" data-value="35 Mbps" data-text="35 Mbps">35 Mbps</a></li>
-													<li><a href="#" data-value="40 Mbps" data-text="40 Mbps">40 Mbps</a></li>
-													<li><a href="#" data-value="45 Mbps" data-text="45 Mbps">45 Mbps</a></li>
-													<li><a href="#" data-value="50 Mbps" data-text="50 Mbps">50 Mbps</a></li>
-													<li><a href="#" data-value="60 Mbps" data-text="60 Mbps">60 Mbps</a></li>
-													<li><a href="#" data-value="70 Mbps" data-text="70 Mbps">70 Mbps</a></li>
-													<li><a href="#" data-value="80 Mbps" data-text="80 Mbps">80 Mbps</a></li>
-													<li><a href="#" data-value="90 Mbps" data-text="90 Mbps">90 Mbps</a></li>
-													<li><a href="#" data-value="100 Mbps" data-text="100 Mbps">100 Mbps</a></li>
-													<li><a href="#" data-value="Maior que 100 Mbps" data-text="Maior que 100 Mbps">Maior que 100 Mbps</a></li>
+													<li><a href="#" data-value="10" data-text="10">10</a></li>
+													<li><a href="#" data-value="15" data-text="15">15</a></li>
+													<li><a href="#" data-value="20" data-text="20">20</a></li>
+													<li><a href="#" data-value="25" data-text="25">25</a></li>
+													<li><a href="#" data-value="30" data-text="30">30</a></li>
+													<li><a href="#" data-value="35" data-text="35">35</a></li>
+													<li><a href="#" data-value="40" data-text="40">40</a></li>
+													<li><a href="#" data-value="45" data-text="45">45</a></li>
+													<li><a href="#" data-value="50" data-text="50">50</a></li>
+													<li><a href="#" data-value="60" data-text="60">60</a></li>
+													<li><a href="#" data-value="70" data-text="70">70</a></li>
+													<li><a href="#" data-value="80" data-text="80">80</a></li>
+													<li><a href="#" data-value="90" data-text="90">90</a></li>
+													<li><a href="#" data-value="100" data-text="100">100</a></li>
+													<li><a href="#" data-value="Maior que 100" data-text="Maior que 100">Maior que 100</a></li>
 												</ul>
 											</div>
 										</label>
