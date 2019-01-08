@@ -149,16 +149,6 @@
 					<?php endif ?>
 				</div>
 			</div>
-
-			<div class="container">
-				<div class="highlight-sercontel">
-					<dl>
-						<dd>
-							Consultando o site da Copel Telecom, observa-se que as cidades: Ângulo, Atalaia, Cascavel, Douradina, Fênix, Floraí, Flórida, Francisco Alves, Francisco Beltrão, Iguaraçu, Ivatuba, Mandaguaçu, Marialva, Mercedes, Nova Esperança, Nova Santa Rosa, Ourizona, Ouro Verde do Oeste, Paiçandu, Pato Bragado, Pitangueiras, Presidente Castelo Branco, Quatro Pontes, Quinta do Sol, Rio Branco do Ivaí, Sabáudia, São Jorge do Ivaí, São Pedro do Ivaí e Umuarama não estão com a opção: Quer contratar um plano de telefonia também?
-						</dd>
-					</dl>
-				</div>
-			</div>
 			
 			<?php if (in_array($profile->cidade, $sercontel)): ?>
 			<div class="container">

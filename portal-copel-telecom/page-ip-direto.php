@@ -133,8 +133,8 @@
 									<div class="row">
 										<label class="col-sm-10">
 											<div class="dropdown dropdown-select">
-												<input type="text" name="plano-text" value="5 Mbps" readonly>
-												<input type="hidden" name="plano" value="5 Mbps">
+												<input type="text" name="plano-text" value="10 Mbps" readonly>
+												<input type="hidden" name="plano" value="10 Mbps">
 												<button type="button" data-toggle="dropdown"><i class="fa fa-angle-down"></i></button>
 												<ul class="dropdown-menu">
 													<li><a href="#" data-value="10" data-text="10">10</a></li>
