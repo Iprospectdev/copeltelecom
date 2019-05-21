@@ -117,7 +117,7 @@
 					<ul>					
 						<li><a href="https://www.facebook.com/copeltelecom/?fref=ts" target="_blank"><i class="i-footer-facebook"></i></a></li>
 						<li><a href="https://twitter.com/copeltelecom" target="_blank"><i class="i-footer-twitter"></i></a></li>
-						<li><a href="https://www.linkedin.com/company/copel-telecom" target="_blank"><i class="i-footer-linkedin"></i></a></li>
+						<li><a href="https://www.linkedin.com/company/copeltelecom" target="_blank"><i class="i-footer-linkedin"></i></a></li>
 						<li><a href="https://www.youtube.com/channel/UCWLv_uuedAttlRGCpDhI3fg" target="_blank"><i class="i-footer-youtube"></i></a></li>
 					</ul>
 				</div>
