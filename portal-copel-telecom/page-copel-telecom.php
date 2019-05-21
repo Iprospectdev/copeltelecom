@@ -76,30 +76,6 @@
 			</div>
 		</article>
 		<aside>
-			<div class="nav-highlights wow fadeIn">
-				<div class="container">
-					<ul class="row">
-						<li class="nav-highlights-orange-light col-sm-6 col-xs-12">
-							<div class="nav-highlights-tt">
-								<a href="<?php $p = get_page_by_title("Vantagens"); echo get_permalink($p->ID); ?>">
-									<i class="i-nh-vantagens-white"></i>
-									<h4>Vantagens para você</h4>
-									<p>Veja por que a banda extra larga Copel Telecom está preparada para o futuro.<br><strong>Saiba mais.</strong></p>
-								</a>
-							</div>
-						</li>
-						<li class="col-sm-6 col-xs-12">
-							<div class="nav-highlights-tt">
-								<a href="<?php $p = get_page_by_title("Comparativo"); echo get_permalink($p->ID); ?>">
-									<i class="i-nh-simule"></i>
-									<h4>Simule seu uso</h4>
-									<p>Para o que você precisa de Internet?<br>Compare a sua internet com a da Copel Telecom.<br><strong>Saiba mais.</strong></p>
-								</a>
-							</div>
-						</li>
-					</ul>
-				</div>
-			</div>
 			<div class="nav-infos wow fadeIn">
 				<div class="container">
 					<ol class="row">
