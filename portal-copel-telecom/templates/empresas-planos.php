@@ -22,12 +22,21 @@ if(!$planos->bel){
 			<div class="col-sm-9">
 				<div class="planos-detalhes">
 					<dl>
-						<dt class="col-sm-6 col-xs-12 plano-tt" data-mh="c-dt-group">
+						<dt class="col-sm-3 col-xs-12 plano-tt" data-mh="c-dt-group">
 							<small>Copel Fibra</small>
-							<strong><?php echo $services->profile_velocidade($plan->nomeProduto); ?><span>MEGA</span></strong>
+							<strong><?php echo $services->profile_velocidade($plan->nomeProduto); ?></strong>
 						</dt>
-					
-						<dd class="col-sm-6 col-xs-12 plano-preco" data-mh="c-dt-group">
+						<dd class="col-sm-3 col-xs-6" data-mh="ct-pc-group">
+							<i class="i-down"></i>
+							<strong><?php echo $services->profile_velocidade($plan->nomeProduto); ?></strong>
+							Velocidade<br>de <small>Download</small>
+						</dd>
+						<dd class="col-sm-3 col-xs-6" data-mh="ct-pc-group">
+							<i class="i-up"></i>
+							<strong><?php echo $services->profile_velocidade($plan->nomeProduto); ?></strong>
+							Velocidade<br>de <small>Upload</small>
+						</dd>
+						<dd class="col-sm-3 col-xs-12 plano-preco" data-mh="c-dt-group">
 							<small>R$</small><?php echo $services->profile_price($plan->precoProduto); ?><small>,<?php echo $services->profile_cents($plan->precoProduto); ?>*</small>
 							<a href="<?php echo LINK_WVT; ?>?s=<?php echo $plan->id; ?>&locate=<?php echo $profile->cidade; ?>&p=<?php echo $profile->tipo->name; ?>" class="bt-o bt-o-white">VEJA SE O SEU ENDEREÇO JÁ É ATENDIDO</a>
 						</dd>
