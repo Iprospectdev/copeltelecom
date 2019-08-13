@@ -86,7 +86,7 @@
 									o maior upload do mercado e não possui filtros nem franquias.
 								</small>
 							</li>
-							<li class="col-xs-4">
+							<!-- <li class="col-xs-4">
 								<i class="i-vd-upload2"></i>
 								<strong>O maior upload</strong>do mercado
 								<small>
@@ -94,7 +94,7 @@
 									banda simétrica, ou seja, tanto download quanto upload são feitos na mesma<br>
 									velocidade.
 								</small>
-							</li>
+							</li> -->
 						</ul>
 					</div>
 					<div class="col-sm-7">
