@@ -123,7 +123,7 @@
 											$velocidade = str_replace('a', '', $velocidade);
 											$velocidade = str_replace('A', '', $velocidade);
 										 ?>
-										<strong><?php echo $velocidade; ?><span>MEGA</span></strong>
+										<strong><?php echo $upload; ?></strong>
 									</dt>
 									
 									<dd class="col-sm-15 col-xs-12 plano-preco" data-mh="c-dt-group">
