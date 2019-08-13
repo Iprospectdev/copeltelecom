@@ -36,7 +36,7 @@
 								<aside>
 
 									<h2>Veja como a Copel Telecom garante o melhor resultado</h2>
-									<p>A Copel Telecom garante a entrega da velocidade contratada, sem diferenças, tanto download como para upload. E isso, só quem tem a rede de transmissão de dados mais veloz do mundo pode oferecer.</p>
+									<p>A Copel Telecom garante a entrega da velocidade contratada. E isso, só quem tem a rede de transmissão de dados mais veloz do mundo pode oferecer.</p>
 
 									<ul>
 										

@@ -58,7 +58,7 @@
 					<div class="col-md-6 col-sm-12 col-xs-12 little wow slideInRight" data-mh="ct-pc-group">
 						<div class="row">
 							<div class="col-sm-9 col-xs-12">
-								<p>Assim, mais e mais clientes vão contar com a <strong>melhor qualidade de sinal de internet do mercado</strong>, sem interferências e sem interrupções, além de download e upload na mesma velocidade.</p>
+								<p>Assim, mais e mais clientes vão contar com a <strong>melhor qualidade de sinal de internet do mercado</strong>, sem interferências e sem interrupções.</p>
 							</div>
 						</div>
 						<div id="ct-podeconfiar-quer-dizer" class="wow fadeIn">
@@ -70,7 +70,7 @@
 							</ul>
 							<p>E tudo isso faz da Copel Telecom a internet mais estável e confiável do Brasil.</p>								
 						</div>
-						<a href="http://www.copeltelecom.com/hptelecom/sitearquivos2.nsf/arquivos/tabela_de_ofertas_copel_telecom/%24FILE/Tabela%20de%20ofertas_Copel%20Telecom.xml" target="_blank">Confira aqui as informações referentes ao Art. 48 da Resolução 632/2014.</a>
+						<!-- <a href="http://www.copeltelecom.com/hptelecom/sitearquivos2.nsf/arquivos/tabela_de_ofertas_copel_telecom/%24FILE/Tabela%20de%20ofertas_Copel%20Telecom.xml" target="_blank">Confira aqui as informações referentes ao Art. 48 da Resolução 632/2014.</a> -->
 					</div>
 				</div>
 			</div>

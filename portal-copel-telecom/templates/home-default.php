@@ -133,32 +133,7 @@
 			<?php endif ?>
 			<div class="home-slide-plano">
 				<div class="container">
-					<aside class="slide-plano">
-						<div class="slide-plano-border">
-							<h6>Plano sugerido para <strong>seu perfil:</strong></h6>
-							<div class="slide-plano-plano">
-								<div class="slide-plano-mega">
-									<?php echo $velocidade; ?> <small>MEGA</small>
-								</div>
-								<div class="slide-plano-preco">
-									<small><i>A PARTIR DE</i><br>R$</small>
-									<?php echo $price; ?>
-									<span>,<?php echo $cents; ?>*</small>
-								</div>
-							</div>
-							<div class="slide-plano-down-up">
-								<small>
-									Download: <span><?php echo $velocidade; ?></span> MEGA 
-									|
-									Upload: <span><?php echo $velocidade; ?></span> MEGA
-								</small>
-
-								<a href="#" class="bt bt-orange btn_contratar">SAIBA MAIS</a>
-								<!-- <a href="<?php echo LINK_WVT; ?>?s=<?php echo $id; ?>&locate=<?php echo $profile->cidade; ?>&p=F" class="bt bt-orange btn_contratar">CONTRATAR</a> -->
-							</div>
-						</div>
-						<a href="<?php $p = get_page_by_title("Planos"); echo get_permalink($p->ID); ?>" class="slide-plano-link">VEJA TODOS OS PLANOS</a>
-					</aside>
+					
 				</div>
 			</div>
 		</div>

@@ -99,7 +99,7 @@
 					</div>
 					<div class="col-sm-7">
 						<span class="space-45"></span>
-						<p>A Copel Telecom garante a entrega da velocidade contratada, sem diferenças, tanto download como para upload. E isso, só quem tem a rede de transmissão de dados mais veloz do mundo pode oferecer.</p>
+						<!-- <p>A Copel Telecom garante a entrega da velocidade contratada, sem diferenças, tanto download como para upload. E isso, só quem tem a rede de transmissão de dados mais veloz do mundo pode oferecer.</p> -->
 					</div>
 				</div>
 			</div>
@@ -125,16 +125,7 @@
 										 ?>
 										<strong><?php echo $velocidade; ?><span>MEGA</span></strong>
 									</dt>
-									<dd class="col-sm-15 col-xs-6" data-mh="ct-pc-group">
-										<i class="i-down-gray"></i>
-										<strong><?php echo $velocidade; ?><span>MEGA</span></strong>
-										Velocidade<br>de <small>download</small>
-									</dd>
-									<dd class="col-sm-15 col-xs-6" data-mh="ct-pc-group">
-										<i class="i-up-gray"></i>
-										<strong><?php echo $velocidade; ?><span>MEGA</span></strong>
-										Velocidade<br>de <small>upload</small>
-									</dd>
+									
 									<dd class="col-sm-15 col-xs-12 plano-preco" data-mh="c-dt-group">
 										<small>R$</small><?php echo $services->profile_price($plan->precoProduto); ?><small>,<?php echo $services->profile_cents($plan->precoProduto); ?>*</small>
 									</dd>

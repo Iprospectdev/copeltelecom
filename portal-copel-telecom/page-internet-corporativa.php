@@ -34,10 +34,10 @@
 								<i class="i-ev-fibra"></i>
 								<p>Sinal de alta disponibilidade, sem interferências, graças à tecnologia 100% em fibra óptica.</p>
 							</li>
-							<li class="col-xs-12 col-sm-4" data-mh="vantagens">
+							<!-- <li class="col-xs-12 col-sm-4" data-mh="vantagens">
 								<i class="i-ev-updown"></i>
 								<p>A maior velocidade de upload do mercado.</p>
-							</li>
+							</li> -->
 							<li class="col-xs-12 col-sm-4" data-mh="vantagens">
 								<i class="i-ev-money"></i>
 								<p>Cobrança fixa por banda, independente da distância e sem degrau tarifário.</p>
