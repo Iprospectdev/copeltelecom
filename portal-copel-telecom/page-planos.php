@@ -112,7 +112,7 @@
 						<?php foreach ($planos->bel as $plan): ?>
 							<li class="wow fadeIn">
 								<dl>
-									<dt class="col-sm-15 col-xs-12 plano-tt" data-mh="c-dt-group">
+									<dt class="col-sm-4 col-xs-12 plano-tt" data-mh="c-dt-group">
 										<?php 
 											if($services->profile_velocidade($plan->nomeProduto) == '01'){
 												echo '<small>Paraná Conectado</small>';
@@ -126,10 +126,10 @@
 										<strong><?php echo $upload; ?></strong>
 									</dt>
 									
-									<dd class="col-sm-15 col-xs-12 plano-preco" data-mh="c-dt-group">
+									<dd class="col-sm-4 col-xs-12 plano-preco" data-mh="c-dt-group">
 										<small>R$</small><?php echo $services->profile_price($plan->precoProduto); ?><small>,<?php echo $services->profile_cents($plan->precoProduto); ?>*</small>
 									</dd>
-									<dd class="col-sm-15 col-xs-12 plano-bts" data-mh="ct-pc-group">
+									<dd class="col-sm-4 col-xs-12 plano-bts" data-mh="ct-pc-group">
 										<a href="<?php echo LINK_WVT; ?>?s=<?php echo $plan->id; ?>&locate=<?php echo $profile->cidade; ?>&p=<?php echo $profile->tipo->name; ?>" class="bt">VERIFICAR DISPONIBILIDADE</a>
 										<a href="#" class="detalhe btn-planos btn_disponibilidade_<?php echo $velocidade; ?>mb">Plano de Serviço</a>
 									</dd>
