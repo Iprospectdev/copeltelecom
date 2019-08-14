@@ -24,16 +24,16 @@ if(!$planos->bel){
 					<dl>
 						<dt class="col-sm-3 col-xs-12 plano-tt" data-mh="c-dt-group">
 							<small>Copel Fibra</small>
-							<strong><?php echo $services->profile_velocidade($plan->nomeProduto); ?></strong>
+							<strong><?php echo $plan->download; ?></strong>
 						</dt>
 						<dd class="col-sm-3 col-xs-6" data-mh="ct-pc-group">
 							<i class="i-down"></i>
-							<strong><?php echo $services->profile_velocidade($plan->nomeProduto); ?></strong>
+							<strong><?php echo $plan->download; ?></strong>
 							Velocidade<br>de <small>Download</small>
 						</dd>
 						<dd class="col-sm-3 col-xs-6" data-mh="ct-pc-group">
 							<i class="i-up"></i>
-							<strong><?php echo $services->profile_velocidade($plan->nomeProduto); ?></strong>
+							<strong><?php echo $plan->upload; ?></strong>
 							Velocidade<br>de <small>Upload</small>
 						</dd>
 						<dd class="col-sm-3 col-xs-12 plano-preco" data-mh="c-dt-group">
