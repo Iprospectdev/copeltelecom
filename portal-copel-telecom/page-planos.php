@@ -68,17 +68,17 @@
 								<i class="i-vd-velocidade2"></i>
 								<?php if ($planos): ?>
 									<?php
-										$ini = $services->profile_velocidade($planos->bel[0]->nomeProduto);
-										$ini = str_replace('a', '', $ini);
-										$ini = str_replace('A', '', $ini);
+										$ini = $services->profile_velocidade($planos->bel[0]->download);
+										// $ini = str_replace('a', '', $ini);
+										// $ini = str_replace('A', '', $ini);
 
-										$end = $services->profile_velocidade(end($planos->bel)->nomeProduto);
-										$end = str_replace('a', '', $end);
-										$end = str_replace('A', '', $end);
+										$end = $services->profile_velocidade(end($planos->bel)->download);
+										// $end = str_replace('a', '', $end);
+										// $end = str_replace('A', '', $end);
 									?>
-									Velocidades de<strong><?php echo $ini; ?> a <?php echo $end; ?> mega</strong>
+									Velocidades de<strong><?php echo $ini; ?> a <?php echo $end; ?></strong>
 								<?php else: ?>
-									Velocidades de<strong>1 a 150 mega</strong>
+									Velocidades de<strong>1 mega a 1 giga</strong>
 								<?php endif; ?>
 								<small>
 									Além de fornecer internet com a estabilidade de sinal e a alta velocidade através<br>

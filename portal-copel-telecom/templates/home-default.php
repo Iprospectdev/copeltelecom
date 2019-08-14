@@ -13,11 +13,15 @@
 	if ($services->profile_velocidade($planos->bel[0]->nomeProduto) == "01") {
 		$id = $planos->bel[1]->id;
 		$velocidade = $services->profile_velocidade($planos->bel[1]->nomeProduto);
+		$download = $services->profile_velocidade($planos->bel[1]->download);
+		$upload = $services->profile_velocidade($planos->bel[1]->upload);
 		$price = $services->profile_price($planos->bel[1]->precoProduto);
 		$cents = $services->profile_cents($planos->bel[1]->precoProduto);
 	} else {
 		$id = $planos->bel[0]->id;
 		$velocidade = $services->profile_velocidade($planos->bel[0]->nomeProduto);
+		$download = $services->profile_velocidade($planos->bel[1]->download);
+		$upload = $services->profile_velocidade($planos->bel[1]->upload);
 		$price = $services->profile_price($planos->bel[0]->precoProduto);
 		$cents = $services->profile_cents($planos->bel[0]->precoProduto);
 	}
@@ -133,6 +137,32 @@
 			<?php endif ?>
 			<div class="home-slide-plano">
 				<div class="container">
+				<aside class="slide-plano">
+					<div class="slide-plano-border">
+						<h6>Plano sugerido para <strong>seu perfil:</strong></h6>
+						<div class="slide-plano-plano">
+							<div class="slide-plano-mega">
+								<?php echo $download; ?>
+							</div>
+							<div class="slide-plano-preco">
+								<small><i>A PARTIR DE</i><br>R$</small>
+								<?php echo $price; ?>
+								<span>,<?php echo $cents; ?>*</small>
+							</div>
+						</div>
+						<div class="slide-plano-down-up">
+							<small>
+								Download: <span><?php echo $download; ?></span> 
+								|
+								Upload: <span><?php echo $upload; ?></span> 
+							</small>
+
+							<a href="#" class="bt bt-orange btn_contratar">SAIBA MAIS</a>
+							<!-- <a href="<?php echo LINK_WVT; ?>?s=<?php echo $id; ?>&locate=<?php echo $profile->cidade; ?>&p=F" class="bt bt-orange btn_contratar">CONTRATAR</a> -->
+						</div>
+					</div>
+					<a href="<?php $p = get_page_by_title("Planos"); echo get_permalink($p->ID); ?>" class="slide-plano-link">VEJA TODOS OS PLANOS</a>
+				</aside>
 					
 				</div>
 			</div>
