@@ -68,13 +68,10 @@
 								<i class="i-vd-velocidade2"></i>
 								<?php if ($planos): ?>
 									<?php
-										$ini = $services->profile_velocidade($planos->bel[0]->download);
-										// $ini = str_replace('a', '', $ini);
-										// $ini = str_replace('A', '', $ini);
+										$ini = $planos->bel[0]->download;
 
-										$end = $services->profile_velocidade(end($planos->bel)->download);
-										// $end = str_replace('a', '', $end);
-										// $end = str_replace('A', '', $end);
+										$end = end($planos->bel)->download;
+
 									?>
 									Velocidades de<strong><?php echo $ini; ?> a <?php echo $end; ?></strong>
 								<?php else: ?>

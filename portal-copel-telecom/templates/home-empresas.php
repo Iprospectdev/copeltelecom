@@ -13,8 +13,8 @@
 	$id = $planos->bel[0]->id;
 
 	$velocidade = $services->profile_velocidade($planos->bel[0]->nomeProduto);
-	$download = $services->profile_velocidade($planos->bel[0]->download);
-	$upload = $services->profile_velocidade($planos->bel[0]->upload);
+	$download = $planos->bel[0]->download;
+	$upload = $planos->bel[0]->upload;
 
 	$price = $services->profile_price($planos->bel[0]->precoProduto);
 

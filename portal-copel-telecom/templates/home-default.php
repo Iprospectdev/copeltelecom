@@ -13,15 +13,15 @@
 	if ($services->profile_velocidade($planos->bel[0]->nomeProduto) == "01") {
 		$id = $planos->bel[1]->id;
 		$velocidade = $services->profile_velocidade($planos->bel[1]->nomeProduto);
-		$download = $services->profile_velocidade($planos->bel[1]->download);
-		$upload = $services->profile_velocidade($planos->bel[1]->upload);
+		$download = $planos->bel[1]->download;
+		$upload = $planos->bel[1]->upload;
 		$price = $services->profile_price($planos->bel[1]->precoProduto);
 		$cents = $services->profile_cents($planos->bel[1]->precoProduto);
 	} else {
 		$id = $planos->bel[0]->id;
 		$velocidade = $services->profile_velocidade($planos->bel[0]->nomeProduto);
-		$download = $services->profile_velocidade($planos->bel[1]->download);
-		$upload = $services->profile_velocidade($planos->bel[1]->upload);
+		$download = $planos->bel[0]->download;
+		$upload = $planos->bel[0]->upload;
 		$price = $services->profile_price($planos->bel[0]->precoProduto);
 		$cents = $services->profile_cents($planos->bel[0]->precoProduto);
 	}
