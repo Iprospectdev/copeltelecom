@@ -166,8 +166,8 @@
 				
 				<div class="legal-links">
 					<p>
-						Valor de instalação de internet com plano de fidelidade de 12 meses: R$ 99,00. <br>
-						Valor de instalação de internet sem fidelidade: R$ 999,00. <br>
+						Valor de instalação de internet com plano de fidelidade de 12 meses: R$ 100,00. <br>
+						Valor de instalação de internet sem fidelidade: R$ 1.500,00. <br>
 						Planos sujeitos a disponibilidade. Válidos para <strong><?php echo $profile->cidade; ?></strong> (<a href="" ng-click="go_cidade()">alterar</a>)
 					</p>
 
