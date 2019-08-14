@@ -123,16 +123,16 @@
 											$velocidade = str_replace('a', '', $velocidade);
 											$velocidade = str_replace('A', '', $velocidade);
 										 ?>
-										<strong><?php echo $download; ?></strong>
+										<strong><?php echo $plan->$download; ?></strong>
 									</dt>
 									<dd class="col-sm-15 col-xs-6" data-mh="ct-pc-group">
 										<i class="i-down-gray"></i>
-										<strong><?php echo $download; ?></strong>
+										<strong><?php echo $plan->$download; ?></strong>
 										Velocidade<br>de <small>download</small>
 									</dd>
 									<dd class="col-sm-15 col-xs-6" data-mh="ct-pc-group">
 										<i class="i-up-gray"></i>
-										<strong><?php echo $upload; ?></strong>
+										<strong><?php echo $plan->$upload; ?></strong>
 										Velocidade<br>de <small>upload</small>
 									</dd>
 									<dd class="col-sm-15 col-xs-12 plano-preco" data-mh="c-dt-group">
