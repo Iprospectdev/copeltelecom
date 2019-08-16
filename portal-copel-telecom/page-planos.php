@@ -147,7 +147,7 @@
 				</div>
 			</div>
 			
-			<?php if (in_array($profile->cidade, $sercontel)): ?>
+			<!-- <?php /*if (in_array($profile->cidade, $sercontel)): */?>
 			<div class="container">
 				<div class="highlight-sercontel" style="padding-top: 30px;">
 					<dl>
@@ -160,7 +160,7 @@
 					</dl>
 				</div>
 			</div>
-			<?php endif ?>
+			<?php/* endif */?> -->
 
 			<aside>
 				

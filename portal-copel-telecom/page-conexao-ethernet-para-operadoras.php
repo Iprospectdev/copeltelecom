@@ -41,10 +41,6 @@
 								<p>Interconexão de vários pontos no Paraná.</p>
 							</li>
 							<li class="col-sm-4" data-mh="vantagens">
-								<i class="i-ev-money"></i>
-								<p>Interconexão de vários pontos no Paraná.</p>
-							</li>
-							<li class="col-sm-4" data-mh="vantagens">
 								<i class="i-ev-fibra"></i>
 								<p>Sinal de alta disponibilidade, livre de interferências, graças à tecnologia 100% em fibra óptica.</p>
 							</li>

@@ -64,8 +64,8 @@
 						<div id="ct-podeconfiar-quer-dizer" class="wow fadeIn">
 							<h6>Isso quer dizer que: </h6>
 							<ul class="row">
-								<li class="col-sm-4"><i class="i-ct-velocidade"></i>Na mesma velocidade que você cria, você compartilha. </li>
-								<li class="col-sm-4"><i class="i-ct-distribui"></i>Com a mesma qualidade que você produz, você distribui. </li>
+								<li class="col-sm-4"><i class="i-ct-velocidade"></i>A qualidade se mantém do servidor até o modem da sua casa. </li>
+								<!-- <li class="col-sm-4"><i class="i-ct-distribui"></i>Com a mesma qualidade que você produz, você distribui. </li> -->
 								<li class="col-sm-4"><i class="i-ct-estabilidade"></i>Com a mesma estabilidade que você acessa, você continua navegando.</li>
 							</ul>
 							<p>E tudo isso faz da Copel Telecom a internet mais estável e confiável do Brasil.</p>								

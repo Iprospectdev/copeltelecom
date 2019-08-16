@@ -56,9 +56,9 @@
 						Logística mais ágil e redução de custos com infraestrutura.
 					</li>
 					<li class="col-sm-4 col-xs-12" data-mh="ev-group">
-						<i class="i-e-superupload"></i><br>
-						<h5>SuperUpload</h5>
-						A Copel Telecom oferece o maior upload do mercado.
+						<i class="i-e-tecnologia"></i><br>
+						<h5>Estabilidade</h5>
+						A qualidade é a mesma do servidor ao modem do seu negócio.
 					</li>
 					<li class="col-sm-4 col-xs-12" data-mh="ev-group">
 						<i class="i-e-multimidia"></i><br>

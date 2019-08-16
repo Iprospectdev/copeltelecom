@@ -39,8 +39,8 @@
 								<p>Sinal de alta disponibilidade, sem interferências, graças à tecnologia 100% em fibra óptica.</p>
 							</li>
 							<li class="col-sm-4" data-mh="vantagens">
-								<i class="i-ev-updown"></i>
-								<p>A maior velocidade de upload do mercado.</p>
+								<i class="i-ev-security"></i>
+								<p>Sistemas de vigilância e controle de acesso para monitorar sua empresa.</p>
 							</li>
 							<li class="col-sm-4" data-mh="vantagens">
 								<i class="i-ev-money"></i>
