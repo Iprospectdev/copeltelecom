@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header('old'); ?>
 	
 	<script src='https://www.google.com/recaptcha/api.js?hl=pt-BR'></script>
 
@@ -93,8 +93,7 @@
 								<input type="text" name="motivo-text" readonly required>
 								<input type="hidden" name="motivo" value="">
 								<button type="button" data-toggle="dropdown"><i class="fa fa-angle-down"></i></button>
-								<ul class="dropdown-menu">								
-									<li><a href="#" data-text="Aquisição de Internet Residencial" data-value="Aquisição de Internet Residencial">Aquisição de Internet Residencial</a></li>
+								<ul class="dropdown-menu">
 									<li><a href="#" data-text="Aquisição de Serviços Corporativos" data-value="Aquisição de Serviços Corporativos">Aquisição de Serviços Corporativos</a></li>
 									<li><a href="#" data-text="Informações Produtos" data-value="Informações Produtos">Informações Produtos</a></li>
 									<li><a href="#" data-text="Financeiro" data-value="Financeiro">Financeiro</a></li>
@@ -129,4 +128,4 @@
 		</div>
 
 	</section>
-<?php get_footer(); ?>
+<?php get_footer('old'); ?>

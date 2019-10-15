@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header('old'); ?>
 
 	<section id="home-empresas-banda-extra-larga" class="empresas home-empresas-intena">
 		
@@ -39,8 +39,8 @@
 								<p>Sinal de alta disponibilidade, sem interferências, graças à tecnologia 100% em fibra óptica.</p>
 							</li>
 							<li class="col-sm-4" data-mh="vantagens">
-								<i class="i-ev-security"></i>
-								<p>Sistemas de vigilância e controle de acesso para monitorar sua empresa.</p>
+								<i class="i-ev-updown"></i>
+								<p>A maior velocidade de upload do mercado.</p>
 							</li>
 							<li class="col-sm-4" data-mh="vantagens">
 								<i class="i-ev-money"></i>
@@ -58,7 +58,7 @@
 						<h6 class="main-tt-barra">Como funciona</h6>
 						<p>Por meio de sua rede 100% em fibra Óptica, a Copel Telecom deixa sua empresa conectada com a internet de alta velocidade e disponibilidade.</p>
 					</div>
-					<div class="col-sm-8"><img src="<?php bloginfo('template_url'); ?>/_assets/images/empresas/como-funciona.png" alt=""></div>
+					<div class="col-sm-8"><img src="<?php bloginfo('template_url'); ?>/_assets/old/images/empresas/como-funciona.png" alt=""></div>
 				</div>
 			</div>
 		</article>
@@ -86,4 +86,4 @@
 
 	</section>
 	
-<?php get_footer(); ?>
+<?php get_footer('old'); ?>

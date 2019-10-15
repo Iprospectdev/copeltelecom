@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header('old'); ?>
 
 	<section id="home-empresas-operadoras-e-provedores" class="empresas">
 		<div class="container">
@@ -174,4 +174,4 @@
 
 	</section>
 	
-<?php get_footer(); ?>
+<?php get_footer('old'); ?>

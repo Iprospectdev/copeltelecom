@@ -1,10 +1,8 @@
-<?php
+x<?php
 
 	include('../../../../../wp-load.php'); 
 
 	global $wpdb;
-
-	$titan = TitanFramework::getInstance( 'copeltelecom' );
 
 	$data = array(
 		"nome" => $_POST["nome"],
@@ -42,7 +40,7 @@
 
 	$from = 'Copel Telecom <'.get_bloginfo("admin_email").'>';
 
-	$destinatario = ($titan->getOption( 'contato_site' )) ? $titan->getOption( 'contato_site' ) : get_bloginfo("admin_email");
+	$destinatario = (get_field('contato_site', 'option')) ? get_field('contato_site', 'option') : get_bloginfo("admin_email");
 
 	if ($_POST["motivo"] == "Erro no cadastro Web Vendas" || $_POST["motivo"] == "Aquisição de Serviços Corporativos") {
 		$destinatario = "vendastelecom@copel.com";

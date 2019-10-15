@@ -1,66 +1,90 @@
-<?php get_header(); ?>
-	<section class="blog" id="blog-single">
+<?php
+	get_header();
+	the_post();
+	$i = 0;
+?>
+	<section class="blog-single">
+
 		<header class="blog-header">
 			<div class="container">
+				<div class="main-breadcrumb">
+					<a href="<?php echo home_url(); ?>"><i class="fas fa-home"></i>Home</a>
+					<a href="<?php echo bloginfo('url'); ?>/blog">Blog Conecta</a>
+					<a href="#">Categoria</a>
+				</div>
+
 				<div class="row">
-					<div class="col-sm-6">
-						<h1 class="main-tt main-tt-barra">Blog Conecta</h1>
+					<div class="col-md-6 col-12">
+						<h2>Blog Conecta</h2>
 					</div>
-					<div class="col-sm-3">
-						<h2>Aqui tem dicas, informações e muito mais conteúdo para você.</h2>
+					<div class="col-md-6 col-12">
+						<form action="<?php bloginfo("url"); ?>/">
+							<input type="hidden" name="post_type" value="post">
+							<input type="text" name="s" placeholder="Buscar assunto do blog">
+							<button type="submit"><i class="fas fa-search"></i></button>
+						</form>
 					</div>
 				</div>
 			</div>
 		</header>
 
 		<div class="container">
-			<div class="blog-margin-top">
-				<div class="row">
-					<div class="col-md-8 col-sm-12 col-xs-12">
-						<div id="blog-post">
-							<?php while( have_posts() ): the_post(); ?>
-								<article>
-									<header>
-										<div class="social-share"></div>
-										<div class="clearifx"></div>
-										<h1>
-											<small><?php get_the_categorias($post->ID); ?></small>
-											<a href="<?php the_permalink(); ?>">
-												<?php the_title(); ?>
-											</a>
-										</h1>
-									</header>
-									<a href="<?php the_permalink(); ?>">
-										<div class="post-content">
-											<?php
-												if (get_post_meta($post->ID, "gravata", true)) {
-													echo wpautop(get_post_meta($post->ID, "gravata", true));
-												} else {
-													the_excerpt();
-												}
-											?>
-										</div>
-									</a>	
-								</article>
-								<hr>
-							<?php endwhile; ?>
-							<div class="pagination">
-								<?php
-									$args = array(
-										'end_size'           => 5,
-										'mid_size'           => 5
-									);
-									echo paginate_links($args);
-								?>
-							</div>
+			<div class="row">
+				<div class="col-md-8 col-sm-12 col-xs-12">
+					<div class="blog-single-content">
+						<div class="blog-search-header">
+							<h2>
+								<small>Categoria </small> "<?php echo get_catname(get_query_var('cat')); ?>"
+							</h2>
 						</div>
-					</div>
-					<div class="col-md-4 col-sm-12 col-xs-12">
-						<?php get_sidebar(); ?>
+						<?php $category = get_category( get_query_var( 'cat' ) );
+
+						$args = array( 'cat' => $category->term_id ); $query = new WP_Query($args);  while ($query ->have_posts()) : $query -> the_post();?>
+							<article class="blog-search-item">
+								<a href="<?php the_permalink(); ?>">
+			                        <h6>
+			                            <small><?php get_the_categorias($post->ID); ?></small>
+			                            <?php the_title(); ?>
+			                        </h6>
+		                        </a>
+							</article>
+						<?php $i++; endwhile; ?>
 					</div>
 				</div>
+				<div class="col-md-4 col-sm-12 col-xs-12">
+					<?php get_sidebar(); ?>
+				</div>
 			</div>
+			<div class="blog-pagination">
+				<?php
+					$args = array(
+						'end_size'           => 3,
+						'mid_size'           => 3,
+						'prev_text'          => __('ANTERIOR'),
+						'next_text'          => __('PRÓXIMA')
+					);
+					echo paginate_links($args);
+				?>
+			</div>
+			
+			<?php query_posts("post_type=post&posts_per_page=3&orderby=rand"); if (have_posts()): ?>
+				<footer class="blog-single-footer pt-0">
+					<h5>Veja também</h5>
+					<div class="row mx-0">
+						<?php while (have_posts()): the_post(); ?>
+							<article class="blog-item col-md-4">
+								<a href="<?php the_permalink(); ?>">
+			                        <span style="background-image: url(<?php echo get_the_post_thumbnail_url( $post->ID , "full" ); ?>);"></span>
+			                        <h6>
+			                            <small><?php get_the_categorias($post->ID); ?></small>
+			                            <?php the_title(); ?>
+			                        </h6>
+			                    </a>
+							</article>
+						<?php endwhile; ?>
+					</div>
+				</footer>
+			<?php endif; wp_reset_query(); ?>
 		</div>
-
-	</section>
+	</section>	
 <?php get_footer(); ?>

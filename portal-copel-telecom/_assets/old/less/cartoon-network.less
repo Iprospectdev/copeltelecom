@@ -1,0 +1,236 @@
+#page-cartoon-network{
+	.row{
+		margin-bottom: 0;
+		padding-bottom: 0;
+		.col-md-6{padding-bottom: 0;}
+	}
+	.position-static{position: static;}
+	@media all and (max-width: 768px){
+		margin-top: -25px;
+	}
+}
+
+
+.cn-header{
+	background-image: url(../images/cartoon-network/bg.jpg);
+	background-repeat: repeat-x;
+	overflow: hidden;
+	.bt-o:hover{
+		background: none!important;
+		color: #737c8f!important;
+	}
+	@media all and (max-width: 768px){
+		background-size: cover;
+	}
+}
+
+.cn-content{
+
+	overflow: hidden;
+	position: relative;
+	min-height: 600px;
+
+	small{
+		font-size: 10px;
+		color: #737c8f;
+	}
+
+	h1{
+		color: #737c8f;
+		font-weight: 900;
+		margin: 0 0 30px;
+		font-size: 38px;
+	}
+	h2{
+		color: #737c8f;
+		font-size: 41px;
+		font-weight: 900;
+		margin: 0 0 30px;
+	}
+
+	.post-content{
+		color: #737c8f;	
+		font-weight: 400;
+		font-size: 14px;
+		a{color: #737c8f;}
+	}
+
+	.cn-img{
+		position: absolute;
+		left: 50%;
+		top: 0;
+		bottom: 0;
+		height: 100%;
+		width: auto;
+		z-index: 1;
+		&.left{
+			right: 50%;
+			left: auto;
+		}
+		&.right{
+			left: auto;
+			max-width: 50%;
+			right: 0;
+		}
+	}
+
+	.bt{
+		background: #737c8f;
+		border-radius: 55px;
+		min-width: 250px;
+		padding: 18px 60px;
+		text-align: center;
+	}
+
+	@media all and (min-width: 768px){
+
+		.col-md-6{
+			padding-right: 50px;
+			&.pull-right{
+				padding-left: 50px;
+			}
+		}
+
+	}
+
+	@media all and (max-width: 768px){
+		.cn-img{
+			height: auto;
+			position: static;
+			width: 100%;
+		}
+	}
+
+}
+
+ol.cn-ol{
+	list-style: none;
+	padding-left: 0;
+	li{
+		color: #737c8f;
+		display: block;
+		font-size: 18px;
+		height: 55px;
+		padding-left: 65px;
+		position: relative;
+		margin-bottom: 18px;
+		i{
+			border-radius: 50%;
+			display: block;
+			padding: 5px;
+			left: 0;
+			background: #656d7e;
+			position: absolute;
+			span{
+				border-radius: 50%;
+				background: #737c8f;
+				border: 3px solid #949fb7;
+				color: #ffffff;
+				display: block;
+				font-size: 29px;
+				font-style: normal;
+				font-weight: 700;
+				height: 45px;
+				line-height: 40px;
+				text-align: center;
+				width: 45px;
+			}
+			&:after{
+				background-image: url(../images/cartoon-network/li-sep.png);
+				content: "";
+				height: 21px;
+				top: 54px;
+				left: 50%;
+				position: absolute;
+				margin-left: -7px;
+				width: 14px;
+			}
+		}
+		&:last-child i:after{display: none;}
+	}
+	@media all and (max-width: 768px){
+		li{font-size: 14px;}
+	}
+}
+
+.cn-footer{
+	background-image: url(../images/cartoon-network/footer.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: #ffea00;
+	min-height: 0;
+	&.cn-content .post-content p{
+		color: #252627;
+		strong,a{color: #252627;}
+	}
+	@media all and (max-width: 768px){
+		background-size: initial;
+		background-position: -1098px 0;
+		padding-top: 120px
+	}
+}
+
+
+.cn-slide-item{
+	display: block;
+	overflow: hidden;
+	position: absolute;
+	width: 62%;
+	img{
+		min-height: 100%;
+		top: 50%;
+		.transform(translate(-50%,-50%));
+		left: 50%;
+		min-width: 100%;
+		position: absolute;
+		opacity: 0;
+		transition: all 0.3s ease-in-out; 
+		&.active{
+			opacity: 1;
+		}
+	}
+}
+
+.cn-slide{
+	height: 100%;
+	position: absolute;
+	left: 50%;
+	width: 35%;
+	z-index: 4;
+	.cn-slide-1{
+		.cn-slide-item;
+		left: 0;
+		top: 0;
+		width: 38%;
+		height: 25%;
+	}
+	.cn-slide-2{
+		.cn-slide-item;
+		left: 38%;
+		height: 50.5%;
+		top: 0;
+	}
+	.cn-slide-3{
+		.cn-slide-item;
+		left: 0;
+		bottom: 0;
+		height: 75%;
+		width: 38%;
+	}
+	.cn-slide-4{
+		.cn-slide-item;
+		left: 38%;
+		bottom: 0;
+		height: 49.5%;
+	}
+
+	@media all and (max-width: 768px){
+		.transform(translateX(-50%));
+		bottom: 0;
+		height: 320px!important;
+		left: 50%;
+		width: 320px!important;
+	}
+
+}

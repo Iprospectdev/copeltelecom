@@ -1,0 +1,190 @@
+#atendimento-e-suporte{
+	padding-bottom: 45px;
+	header{
+		margin-bottom: 130px;
+		margin-top: 40px;
+		padding: 0 15px;
+	}
+	article{
+		h2{
+			font-size: 30px;
+			font-weight: 900;
+			color: @blue;
+			margin: 0 0 10px;
+			position: relative;
+			a{
+				color: @blue;
+				font-size: 12px;
+				font-weight: 400;
+				margin-right: 5px;
+				margin-top: -5px;
+				position: absolute;
+				right: 30px;
+				top: 50%;
+				i{margin-right: 5px;}
+			}
+		}
+		p,li{
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 19px;
+			color: #7a7a7a;
+			strong{font-weight: 900;}
+		}
+		p{margin-bottom: 20px;}
+		ul{list-style: none;}
+	}
+	#as-faq{
+		margin-bottom: 30px;
+		ul{
+			border-bottom: 1px solid #eeeff0;
+			margin: 0;
+			&:last-of-type{border: 0;}
+			li{
+				border-right: 1px solid #eeeff0;
+				&:nth-child(even){border: 0;}
+				a{
+					color: @orange-light;
+					display: block;
+					font-weight: 300;
+					padding: 15px;
+				}
+			}
+		}
+	}
+	#as-area-do-cliente{
+		margin-bottom: 30px;
+		ul{
+			display: block;
+			margin: 15px 0;
+			li{
+				display: block;
+				vertical-align: middle;
+				&:last-child a{border: 0;}
+				a{
+					border-bottom: 1px solid #e3e5e9;
+					color: @blue;
+					display: block;
+					font-size: 16px;
+					padding: 11px;
+					i{
+						margin-right: 8px;
+						margin-top: -6px;
+					}
+				}
+			}
+		}
+		aside{
+			background: @orange-light;
+			a{
+				border-bottom: 1px solid #ffab33;
+				color: #ffffff;
+				display: block;
+				font-size: 16px;
+				font-weight: 900;
+				padding: 22px 25px;
+				text-align: center;
+				&:last-child{border: 0;}
+				i{margin-bottom: 5px;}
+			}
+		}
+	}
+	#as-documentos{
+		background: @blue;
+		margin-top: 30px;
+		padding: 80px 0;
+		text-align: center;
+		h1{
+			color: #ffffff;
+			font-size: 30px;
+			font-weight: 900;
+			margin: 0 0 28px;
+			text-align: center;
+		}
+		.bt-o{
+			margin: 0 5px 20px;
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+		ul{
+			list-style: none;
+			margin-top: 25px;
+			position: relative;
+			text-align: left;
+			&:before{
+				background: #ffffff;
+				content:"";
+				display: block;
+				height: 100%;
+				left: 50%;
+				margin-left: -20px;
+				position: absolute;
+				top: 0;
+				width: 1px;
+			}
+			&:after{
+				clear: both;
+				content:"";
+				display: table;
+			}
+			li{
+				float: left;
+				margin-bottom: 15px;
+				white-space: normal;
+				width: 50%;
+				a{
+					color: #ffffff;
+					display: block;
+					font-size: 14px;
+					font-weight: 400;
+					padding-left: 30px;
+					padding-right: 40px;
+					position: relative;
+					text-decoration: underline;
+					white-space: normal;
+					i{
+						left: 0;
+						position: absolute;
+						top: 5px;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+@media all and (max-width: 768px){
+	#atendimento-e-suporte{
+		padding-bottom: 0;
+		header{
+			margin-bottom: 60px;
+		}
+		article h2 a{
+			position: static;
+			margin-top: 15px;
+			display: block;
+		}
+		#as-faq{
+			margin-bottom: 60px;
+			ul{
+				border: 0;
+				li:nth-child(even),
+				li{
+					border-bottom: 1px solid #eeeff0;
+					border-right: 0;
+				}
+			}
+		}
+		#as-documentos ul{
+			&:before{display: none;}
+			li{
+				width: 100%;
+				a{padding-right: 15px;}
+			}
+		}
+
+	}
+
+}

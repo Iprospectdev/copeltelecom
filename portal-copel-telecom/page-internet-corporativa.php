@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header('old'); ?>
 
 	<section id="home-empresas-internet-corporativa" class="empresas home-empresas-intena">
 		
@@ -34,10 +34,10 @@
 								<i class="i-ev-fibra"></i>
 								<p>Sinal de alta disponibilidade, sem interferências, graças à tecnologia 100% em fibra óptica.</p>
 							</li>
-							<!-- <li class="col-xs-12 col-sm-4" data-mh="vantagens">
+							<li class="col-xs-12 col-sm-4" data-mh="vantagens">
 								<i class="i-ev-updown"></i>
 								<p>A maior velocidade de upload do mercado.</p>
-							</li> -->
+							</li>
 							<li class="col-xs-12 col-sm-4" data-mh="vantagens">
 								<i class="i-ev-money"></i>
 								<p>Cobrança fixa por banda, independente da distância e sem degrau tarifário.</p>
@@ -69,7 +69,7 @@
 							<a href="<?php bloginfo('template_url'); ?>/_assets/pdf/CS.IPDIRETO.V.2.001.pdf" target="_blank">Confira as características do serviço</a>
 						</p>
 					</div>
-					<div class="col-sm-8"><img src="<?php bloginfo('template_url'); ?>/_assets/images/empresas/como-funciona.png" alt=""></div>
+					<div class="col-sm-8"><img src="<?php bloginfo('template_url'); ?>/_assets/old/images/empresas/como-funciona.png" alt=""></div>
 				</div>
 			</div>
 		</article>
@@ -104,7 +104,7 @@
 						
 					</div>
 					<div class="col-md-6 col-sm-12 col-xs-12">
-						<img src="<?php bloginfo('template_url'); ?>/_assets/images/copel-telecom/mapa-pr.png" alt="">
+						<img src="<?php bloginfo('template_url'); ?>/_assets/old/images/copel-telecom/mapa-pr.png" alt="">
 					</div>
 				</div>
 			</div>
@@ -137,4 +137,4 @@
 
 	</section>
 	
-<?php get_footer(); ?>
+<?php get_footer('old'); ?>

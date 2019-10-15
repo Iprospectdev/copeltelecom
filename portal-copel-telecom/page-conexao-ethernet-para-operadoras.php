@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header('old'); ?>
 
 	<section class="empresas home-empresas-intena">
 		
@@ -41,6 +41,10 @@
 								<p>Interconexão de vários pontos no Paraná.</p>
 							</li>
 							<li class="col-sm-4" data-mh="vantagens">
+								<i class="i-ev-money"></i>
+								<p>Interconexão de vários pontos no Paraná.</p>
+							</li>
+							<li class="col-sm-4" data-mh="vantagens">
 								<i class="i-ev-fibra"></i>
 								<p>Sinal de alta disponibilidade, livre de interferências, graças à tecnologia 100% em fibra óptica.</p>
 							</li>
@@ -63,7 +67,7 @@
 							<a href="<?php bloginfo('template_url'); ?>/_assets/pdf/ehsn-l2.v.20121001.pdf" target="_blank">Confira as características do serviço</a>
 						</p>
 					</div>
-					<div class="col-sm-8"><img src="<?php bloginfo('template_url'); ?>/_assets/images/empresas/operadoras-cliente.png" alt=""></div>
+					<div class="col-sm-8"><img src="<?php bloginfo('template_url'); ?>/_assets/old/images/empresas/operadoras-cliente.png" alt=""></div>
 				</div>
 			</div>
 		</article>
@@ -98,7 +102,7 @@
 						
 					</div>
 					<div class="col-md-6 col-sm-12 col-xs-12">
-						<img src="<?php bloginfo('template_url'); ?>/_assets/images/copel-telecom/mapa-pr.png" alt="">
+						<img src="<?php bloginfo('template_url'); ?>/_assets/old/images/copel-telecom/mapa-pr.png" alt="">
 					</div>
 				</div>
 			</div>
@@ -144,4 +148,4 @@
 
 	</section>
 	
-<?php get_footer(); ?>
+<?php get_footer('old'); ?>

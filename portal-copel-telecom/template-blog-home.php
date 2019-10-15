@@ -23,7 +23,7 @@
 								<?php if (has_post_thumbnail( $posts[$i]->ID )): ?>
 									<?php echo get_the_post_thumbnail( $posts[$i]->ID , "thumb-blog" ); ?>
 								<?php else: ?>
-									<img src="<?php bloginfo('template_url'); ?>/_assets/images/blog/redes.png" alt="">
+									<img src="<?php bloginfo('template_url'); ?>/_assets/old/images/blog/redes.png" alt="">
 								<?php endif ?>
 								<dl>
 									<dt>
@@ -32,7 +32,7 @@
 									</dt>
 									<dd>
 										<?php 
-											if (get_post_meta($posts[$i]->ID, "gravata", true)) {
+											if (@get_post_meta($posts[$i]->ID, "gravata", true)) {
 												echo wpautop(get_post_meta($posts[$i]->ID, "gravata", true));
 											} else {
 												the_excerpt();
@@ -62,7 +62,7 @@
 										<?php if (has_post_thumbnail( $posts[$i]->ID )): ?>
 											<?php echo get_the_post_thumbnail( $posts[$i]->ID , "thumb-blog" ); ?>
 										<?php else: ?>
-											<img src="<?php bloginfo('template_url'); ?>/_assets/images/blog/redes.png" alt="">
+											<img src="<?php bloginfo('template_url'); ?>/_assets/old/images/blog/redes.png" alt="">
 										<?php endif ?>
 										<dl>
 											<dt>
@@ -93,7 +93,7 @@
 										<?php if (has_post_thumbnail( $posts[$i]->ID )): ?>
 											<?php echo get_the_post_thumbnail( $posts[$i]->ID , "thumb-blog" ); ?>
 										<?php else: ?>
-											<img src="<?php bloginfo('template_url'); ?>/_assets/images/blog/redes.png" alt="">
+											<img src="<?php bloginfo('template_url'); ?>/_assets/old/images/blog/redes.png" alt="">
 										<?php endif ?>
 										<dl>
 											<dt>

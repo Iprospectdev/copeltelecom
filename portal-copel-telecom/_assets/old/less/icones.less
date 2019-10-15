@@ -1,0 +1,670 @@
+@font-face {
+    font-family: 'icomoon';
+    src:    url('../fonts/icomoon.eot?f5i44l');
+    src:    url('../fonts/icomoon.eot?f5i44l#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?f5i44l') format('truetype'),
+        url('../fonts/icomoon.woff?f5i44l') format('woff'),
+        url('../fonts/icomoon.svg?f5i44l#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-font-bussola-01:before {
+    content: "\e900";
+}
+.icon-font-bussola-02:before {
+    content: "\e901";
+}
+.icon-font-bussola-03:before {
+    content: "\e902";
+}
+.icon-font-bussola-04:before {
+    content: "\e903";
+}
+.icon-font-bussola-05:before {
+    content: "\e904";
+}
+.icon-font-bussola-06:before {
+    content: "\e905";
+}
+.icon-font-bussola-07:before {
+    content: "\e906";
+}
+.icon-font-bussola-08:before {
+    content: "\e907";
+}
+.icon-font-bussola-09:before {
+    content: "\e908";
+}
+.icon-font-bussola-10:before {
+    content: "\e909";
+}
+.icon-font-bussola-11:before {
+    content: "\e90a";
+}
+.icon-font-bussola-12:before {
+    content: "\e90b";
+}
+.icon-play2:before {
+    content: "\e90d";
+}
+.icon-pause:before {
+    content: "\e90e";
+}
+
+// ------------------------------------------------------------------------ main
+.i-play{
+	background-image: url(../images/i-play.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	display: block;
+	height: 62px;
+	width: 62px;
+}
+.i-play-o{
+	background-image: url(../images/i-play-o.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	display: block;
+	height: 101px;
+	width: 101px;
+}
+.i-pdf{
+	display: inline-block;
+	&:before{
+		background-image: url(../images/i-pdf.png);
+		background-position: center;
+		background-repeat: no-repeat;
+		content:"";
+		display: block;
+		height: 13px;
+		width: 23px;
+	}
+}
+.i-explamacao{
+	display: inline-block;
+	&:before{
+		background-image: url(../images/i-exclamacao.png);
+		background-position: center;
+		background-repeat: no-repeat;
+		content:"";
+		display: block;
+		height: 119px;
+		width: 119px;
+	}
+}
+
+
+// ------------------------------------------------------------------------ vantagens
+.i-vantagens(@x){
+	background-image: url(../images/vantagens/i-vantagens.png);
+	background-position: @x 0;
+	background-repeat: no-repeat;
+	display: block;
+	height: 165px;
+	margin: 0 auto;
+	width: 165px;
+}
+.i-v-velocidade{.i-vantagens(left);}
+.i-v-casa{.i-vantagens(center);}
+.i-v-confianca{.i-vantagens(right);}
+
+
+
+
+// ------------------------------------------------------------------------ planos
+.i-p-bts(@x){
+	background-image: url(../images/planos/i-bts.png);
+	background-position: @x 0;
+	background-repeat: no-repeat;
+	display: inline-block;
+	height: 50px;
+	width: 50px;
+}
+.i-p-fone{.i-p-bts(left);}
+.i-p-cel{.i-p-bts(center);}
+.i-p-chat{.i-p-bts(right);}
+
+
+
+
+
+
+
+// ------------------------------------------------------------------------ comparativo/planos
+.i-updown(@x,@y){
+	background-image: url(../images/i-updown.png);
+	background-position: @x @y;
+	background-repeat: no-repeat;
+	display: block;
+	height: 45px;
+	width: 40px;
+}
+.i-up{.i-updown(left,top);}
+.i-up-gray{.i-updown(left,bottom);}
+.i-down{.i-updown(right,top);}
+.i-down-gray{.i-updown(right,bottom);}
+
+
+
+
+
+
+// ------------------------------------------------------------------------ comparativo
+.i-c-foguete{
+	background-image: url(../images/comparativo/i-foguete.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	display: block;
+	height: 112px;
+	margin: 0 auto;
+	width: 112px;
+}
+.i-c-modal-close{
+	background-color: transparent;
+	background-image: url(../images/comparativo/i-modal-close.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	border: 0;
+	display: block;
+	height: 30px;
+	margin: 0 auto;
+	width: 30px;
+}
+
+
+
+
+
+
+// ------------------------------------------------------------------------ ver diponibilidade
+.i-vd-map:before{
+	background: url(../images/vd/i-vd-map.png) no-repeat center;
+	content:"";
+	display: block;
+	height: 27px;
+	margin: 0 auto;
+	width: 20px;
+}
+
+.i-vd-share(@x){
+	&:before{
+		background: url(../images/vd/i-vd-share.png) no-repeat @x 0;
+		content:"";
+		display: inline-block;
+		height: 25px;
+		margin: 0 auto;
+		width: 25px;
+	}
+}
+.i-vd-share-facebook{.i-vd-share(left);}
+.i-vd-share-twitter{.i-vd-share(right);}
+
+.i-vd-plano-details(@y){
+	&:before{
+		background: url(../images/vd/i-vd-plano-details.png) no-repeat 0 @y;
+		content:"";
+		display: inline-block;
+		height: 43px;
+		margin: 0 auto;
+		width: 43px;
+	}
+}
+
+.i-vd-fibra{.i-vd-plano-details(0);}
+.i-vd-velocidade{.i-vd-plano-details(-60px);}
+.i-vd-upload{.i-vd-plano-details(-121px);}
+.i-vd-download{.i-vd-plano-details(-181px);}
+
+.i-vd-plano-details2(@x,@y){
+	&:before{
+		background: url(../images/vd/i-vd-plano-details2.png) no-repeat @x @y;
+		content:"";
+		display: inline-block;
+		height: 43px;
+		margin: 0 auto;
+		width: 43px;
+	}
+}
+.i-vd-fibra2-white{.i-vd-plano-details2(-45px,0);}
+.i-vd-velocidade2-white{.i-vd-plano-details2(-45px,-60px);}
+.i-vd-upload2-white{.i-vd-plano-details2(-45px,-121px);}
+.i-vd-download2-white{.i-vd-plano-details2(-45px,-181px);}
+
+.i-vd-fibra2{.i-vd-plano-details2(0,0);}
+.i-vd-velocidade2{.i-vd-plano-details2(0,-55px);}
+.i-vd-upload2{.i-vd-plano-details2(0,-121px);}
+.i-vd-download2{.i-vd-plano-details2(0,-181px);}
+
+
+
+
+
+
+
+
+
+// ------------------------------------------------------------------------ footer
+.i-footer(@x,@y){
+	background-image: url(../images/i-footer-share.png);
+	background-position: @x @y;
+	background-repeat: no-repeat;
+	display: block;
+	height: 36px;
+	width: 35px;
+}
+.i-footer-facebook{.i-footer(0,0);}
+.i-footer-twitter{.i-footer(-44px,0);}
+.i-footer-youtube{.i-footer(-89px,0);}
+.i-footer-linkedin{.i-footer(-135px,0);}
+
+
+
+
+
+
+
+
+// ------------------------------------------------------------------------ nav-highlights
+.i-nav-highlights(@x, @y){
+	background-image: url(../images/i-nav-highlights.png);
+	background-position: @x @y;
+	background-repeat: no-repeat;
+	float: left;
+	height: 55px;
+	width: 60px;
+}
+.i-nh-vantagens{.i-nav-highlights(left, top);}
+.i-nh-vantagens-white{.i-nav-highlights(left, bottom);}
+
+.i-nh-simule{.i-nav-highlights(-60px, top);}
+.i-nh-simule-white{.i-nav-highlights(-60px, bottom);}
+
+.i-nh-whitepaper{
+	.i-nav-highlights(-142px, top);
+	height: 65px;
+	width: 75px;
+}
+.i-nh-infografico{
+	.i-nav-highlights(-142px, bottom);
+	height: 65px;
+	width: 75px;
+}
+
+
+
+
+
+
+
+
+// ------------------------------------------------------------------------ nav-infos
+.i-nav-infos(@x){
+	background-image: url(../images/i-nav-infos.png);
+	background-position: @x 0;
+	background-repeat: no-repeat;
+	display: block;
+	height: 48px;
+	margin: 0 auto;
+	width: 50px;
+}
+.i-ni-estatuto{.i-nav-infos(0);}
+.i-ni-acionistas{.i-nav-infos(-50px);}
+.i-ni-balancos{.i-nav-infos(-100px);}
+
+
+
+
+
+
+
+
+// ------------------------------------------------------------------------ beneficios
+.i-beneficios(@x, @y){
+	background-image: url(../images/i-beneficios.png);
+	background-position: @x @y;
+	background-repeat: no-repeat;
+	display: inline-block;
+	height: 76px;
+	width: 76px;
+}
+.i-b-fibra{.i-beneficios(0,0);}
+.i-b-velocidade{.i-beneficios(-76px,0);}
+.i-b-upload{.i-beneficios(-152px,0);}
+.i-b-100percent{.i-beneficios(-228px,0);}
+.i-b-updown{.i-beneficios(-305px,0);}
+
+.i-b-fibra-white{.i-beneficios(0,-76px);}
+.i-b-velocidade-white{.i-beneficios(-76px,-76px);}
+.i-b-upload-white{.i-beneficios(-152px,-76px);}
+.i-b-100percent-white{.i-beneficios(-228px,-76px);}
+.i-b-updown-white{.i-beneficios(-305px,-76px);}
+
+.i-b-rede{.i-beneficios(-380px,0);}
+.i-b-rede-white{.i-beneficios(-380px,-76px);}
+
+.i-b-cloud{.i-beneficios(-454px,0);}
+.i-b-cloud-white{.i-beneficios(-454px,-76px);}
+
+.i-b-predio{.i-beneficios(-529px,0);}
+.i-b-predio-white{.i-beneficios(-529px,-76px);}
+
+
+// ------------------------------------------------------------------------ empresas
+.i-empresas(@x,@y){
+	background-image: url(../images/empresas/i-empresas.png);
+	background-position: @x @y;
+	background-repeat: no-repeat;
+	display: inline-block;
+	height: 136px;
+	width: 136px;
+}
+.i-e-flexibilidade{.i-empresas(0,0);}
+.i-e-cobertura{.i-empresas(-136px,0);}
+.i-e-fibra{.i-empresas(-271px,0);}
+.i-e-tecnologia{.i-empresas(-408px,0);}
+.i-e-qualidade{.i-empresas(-544px,0);}
+.i-e-economia{.i-empresas(-680px,0);}
+.i-e-superupload{.i-empresas(-816px,0);}
+.i-e-multimidia{.i-empresas(-952px,0);}
+.i-e-produtividade{.i-empresas(-1088px,0);}
+.i-e-seguranca{.i-empresas(-1224px,0);}
+
+.i-e-flexibilidade-gray{.i-empresas(0,100%);}
+.i-e-cobertura-gray{.i-empresas(-136px,100%);}
+.i-e-fibra-gray{.i-empresas(-271px,100%);}
+.i-e-tecnologia-gray{.i-empresas(-408px,100%);}
+.i-e-qualidade-gray{.i-empresas(-544px,100%);}
+.i-e-economia-gray{.i-empresas(-680px,100%);}
+.i-e-superupload-gray{.i-empresas(-816px,100%);}
+.i-e-multimidia-gray{.i-empresas(-952px,100%);}
+.i-e-produtividade-gray{.i-empresas(-1088px,100%);}
+.i-e-seguranca-gray{.i-empresas(-1224px,100%);}
+
+.i-para-quem(@x,@y){
+	background-image: url(../images/empresas/i-para-quem.png);
+	background-position: @x @y;
+	background-repeat: no-repeat;
+	display: block;
+	height: 134px;
+	width: 131px;
+}
+
+.i-pq-pequenas{.i-para-quem(0,0);}
+.i-pq-grandes{.i-para-quem(-131px,0);}
+.i-pq-publicos{.i-para-quem(-262px,0);}
+.i-pq-operadoras{.i-para-quem(-393px,0);}
+
+.i-empresas-vantagens(@x,@y){
+	background-image: url(../images/empresas/i-vantagens.png);
+	background-position: @x @y;
+	background-repeat: no-repeat;
+	display: block;
+	height: 114px;
+	width: 108px;
+}
+.i-ev-fibra{.i-empresas-vantagens(0,0);}
+.i-ev-updown{.i-empresas-vantagens(-108px,0);}
+.i-ev-money{.i-empresas-vantagens(-216px,0);}
+.i-ev-rj45{.i-empresas-vantagens(-324px,0);}
+.i-ev-tempo{.i-empresas-vantagens(-432px,0);}
+.i-ep-grafico{
+	background-image: url(../images/empresas/i-grafico.png);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	display: block;
+	height: 114px;
+	width: 108px;
+}
+
+// ------------------------------------------------------------------------ nav contatos
+.i-nav-contatos(@x,@y){
+	float: left;
+	&:before{
+		background-image: url(../images/i-nav-contatos.png);
+		background-position: @x @y;
+		background-repeat: no-repeat;
+		content: "";
+		display: block;
+		height: 88px;
+		width: 88px;
+	}
+}
+
+.i-nc-chat{.i-nav-contatos(0,0);}
+.i-nc-ligamos{.i-nav-contatos(0,-92px);}
+.i-nc-ligue{.i-nav-contatos(0,-183px);}
+.i-nc-whats{.i-nav-contatos(0,-276px);}
+
+
+
+
+
+
+// ------------------------------------------------------------------------ highlight-blog
+.i-lamp(@y){
+	background-image: url(../images/i-lamp.png);
+	background-position: 0 @y;
+	background-repeat: no-repeat;
+	display: block;
+	height: 47px;
+	width: 32px;
+}
+
+.i-lamp{.i-lamp(top);}
+.i-lamp-white{.i-lamp(bottom);}
+
+
+
+
+
+
+
+// ------------------------------------------------------------------------ faq
+.i-faq-search{
+	background: url(../images/faq/i-faq-search.png) no-repeat center top;
+	display: block;
+	height: 41px;
+	width: 39px;
+}
+
+.i-faq-search-orange{
+	background: url(../images/faq/i-faq-search.png) no-repeat center center;
+	display: block;
+	height: 41px;
+	width: 39px;
+}
+.i-faq-search-gray{
+	background: url(../images/faq/i-faq-search.png) no-repeat center bottom;
+	display: block;
+	height: 41px;
+	width: 39px;
+}
+
+.i-faq(@x,@y){
+	display: inline-block;
+	&:before{
+		background-image: url(../images/faq/i-faq-cat.png);
+		background-position: @x @y;
+		background-repeat: no-repeat;
+		content: "";
+		display: block;
+		height: 30px;
+		margin-bottom: -10px;
+		margin-right: 15px;
+		width: 30px;
+	}
+}
+
+.i-faq-planos{.i-faq(0,0);}
+.i-faq-planos-orange{.i-faq(0,bottom);}
+.i-faq-conta{.i-faq(-30px,0);}
+.i-faq-conta-orange{.i-faq(-30px,bottom);}
+.i-faq-wifi{.i-faq(-60px,0);}
+.i-faq-wifi-orange{.i-faq(-60px,bottom);}
+.i-faq-suporte{.i-faq(-90px,0);}
+.i-faq-suporte-orange{.i-faq(-90px,bottom);}
+
+
+
+
+
+
+
+
+
+// ------------------------------------------------------------------------ atendioment e suporte
+.i-as(@x,@y){
+	float: left;
+	&:before{
+		background-image: url(../images/atendimento-e-suporte/i-as.png);
+		background-position: @x @y;
+		background-repeat: no-repeat;
+		content: "";
+		display: block;
+		height: 30px;
+		width: 27px;
+	}
+}
+.i-as-2via{.i-as(center,0);}
+.i-as-data{.i-as(center,-30px);}
+.i-as-conta{.i-as(center,-60px);}
+.i-as-cadastro{.i-as(center,-90px);}
+.i-as-autoatendimento{.i-as(center,-120px);}
+
+
+.i-as-aside(@x,@y){
+	background-image: url(../images/atendimento-e-suporte/i-as-aside.png);
+	background-position: @x @y;
+	background-repeat: no-repeat;
+	display: block;
+	margin: 0 auto;
+	height: 50px;
+	width: 50px;
+}
+.i-as-mic{.i-as-aside(center,top);}
+.i-as-box{.i-as-aside(center,bottom);}
+
+
+.i-as-share{
+	float: left;
+	&:before{
+		background-image: url(../images/atendimento-e-suporte/i-as-share.png);
+		background-position: 0 0;
+		background-repeat: no-repeat;
+		content: "";
+		display: block;
+		height: 14px;
+		width: 16px;
+	}
+}
+
+
+.i-as-nao-encontrou(@x,@y){
+	float: left;
+	&:before{
+		background-image: url(../images/atendimento-e-suporte/i-nao-encontrou.png);
+		background-position: @x @y;
+		background-repeat: no-repeat;
+		content: "";
+		display: block;
+		height: 40px;
+		width: 40px;
+	}
+}
+.i-as-chat{.i-as-nao-encontrou(0,0);}
+.i-as-fone{.i-as-nao-encontrou(-40px,0);}
+.i-as-msg{.i-as-nao-encontrou(-80px,0);}
+
+
+// ------------------------------------------------------------------------ accdc
+.i-ccdc-nav(@y){
+	background-position: 0 @y;
+	background-image: url(../images/ccdc/i-ccdc-nav.png);
+	background-repeat: ;
+	width: 23px;
+	height: 30px;
+}
+.i-ccdc-infos{.i-ccdc-nav(0);}
+.i-ccdc-dados{.i-ccdc-nav(-30px);}
+.i-ccdc-resumo{.i-ccdc-nav(-119px);}
+
+
+
+// ------------------------------------------------------------------------ copel-telecom
+.i-ct-onde(@x){
+	background-image: url(../images/copel-telecom/i-ct-onde.png);
+	background-position: @x 0;
+	background-repeat: no-repeat;
+	float: left;
+	height: 76px;
+	width: 76px;
+}
+.i-ct-map{.i-ct-onde(left);}
+.i-ct-km{.i-ct-onde(right);}
+
+.i-ct-quer-dize(@x){
+	background-image: url(../images/copel-telecom/i-ct-quer-dizer.png);
+	background-position: @x 0;
+	background-repeat: no-repeat;
+	display: block;
+	height: 76px;
+	width: 76px;
+	margin: 0 auto;
+}
+.i-ct-velocidade{.i-ct-quer-dize(0);}
+.i-ct-distribui{.i-ct-quer-dize(-76px);}
+.i-ct-estabilidade{.i-ct-quer-dize(-152px);}
+
+
+
+// ------------------------------------------------------------------------ acessibilidade
+.i-acessibilidade(@x){
+	display: inline-block;
+	&:before{
+		background-image: url(../images/acessibilidade/i-acessibilidade.png);
+		background-position: @x 0;
+		background-repeat: no-repeat;
+		content: "";
+		display: block;
+		height: 35px;
+		width: 35px;
+	}
+}
+.i-a-visao{.i-acessibilidade(left);}
+.i-a-nav{.i-acessibilidade(right);}
+
+
+// ------------------------------------------------------------------------ speedtest
+.i-speedtest(@x){
+	display: inline-block;
+	&:before{
+		background-image: url(../images/speedtest/i-speedtest.png);
+		background-position: @x 0;
+		background-repeat: no-repeat;
+		content: "";
+		display: block;
+		height: 76px;
+		width: 76px;
+	}
+}
+.i-st-cabo{.i-speedtest(0);}
+.i-st-fibra{.i-speedtest(-76px);}
+.i-st-feche{.i-speedtest(-152px);}
+.i-st-pare{.i-speedtest(-228px);}
+.i-st-repita{.i-speedtest(-304px);}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="107px" height="104px" viewBox="0 0 107 104" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <desc>Created with Lunacy</desc>
+  <defs>
+    <linearGradient x1="1" y1="0.0578661151" x2="1.110223E-16" y2="0.9386489" id="gradient_1">
+      <stop offset="0" stop-color="#FFA600" />
+      <stop offset="1" stop-color="#FF6D00" />
+    </linearGradient>
+  </defs>
+  <g id="Page-1" transform="translate(1.5 1.5)">
+    <path d="M0 0L26.6583 0L35.2236 8.47346L35.2236 44.3687L0 44.3687L0 0Z" transform="translate(34.21143 32.34298)" id="Stroke-1" fill="none" stroke="#464D5C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M0 0L14.5946 0" transform="translate(41.32141 42.87736)" id="Stroke-5" fill="none" stroke="#464D5C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M0 0L22.4026 0" transform="translate(41.32141 47.64151)" id="Stroke-7" fill="none" stroke="#464D5C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M0 0L22.4026 0" transform="translate(41.32141 54.31132)" id="Stroke-9" fill="none" stroke="#464D5C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M0 0L0 4.65454" transform="translate(59.70374 66.69812)" id="Stroke-15" fill="none" stroke="#464D5C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M0 0L0 4.65454" transform="translate(63.55554 66.69812)" id="Stroke-17" fill="none" stroke="#464D5C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M0 0L0 4.65454" transform="translate(52 66.69812)" id="Stroke-19" fill="none" stroke="#464D5C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M0 0L0 4.65454" transform="translate(48.14819 66.69812)" id="Stroke-21" fill="none" stroke="#464D5C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M0 0L0 4.65454" transform="translate(44.29639 66.69812)" id="Stroke-23" fill="none" stroke="#464D5C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M0 0L0 4.65454" transform="translate(40.44446 66.69812)" id="Stroke-25" fill="none" stroke="#464D5C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M52 101C80.7188 101 104 78.3904 104 50.5C104 22.6096 80.7188 0 52 0C23.2812 0 0 22.6096 0 50.5C0 78.3904 23.2812 101 52 101Z" id="Oval-6" fill="none" stroke="url(#gradient_1)" stroke-width="3" />
+  </g>
+</svg>
