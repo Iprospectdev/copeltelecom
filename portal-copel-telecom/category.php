@@ -37,7 +37,9 @@
 								<small>Categoria </small> "<?php echo get_catname(get_query_var('cat')); ?>"
 							</h2>
 						</div>
-						<?php while (have_posts()): the_post(); ?>
+						<?php $category = get_category( get_query_var( 'cat' ) );
+
+						$args = array( 'cat' => $category->term_id ); $query = new WP_Query($args);  while ($query ->have_posts()) : $query -> the_post();?>
 							<article class="blog-search-item">
 								<a href="<?php the_permalink(); ?>">
 			                        <h6>

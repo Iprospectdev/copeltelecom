@@ -22,13 +22,21 @@
 				</div>
 			</div>
 		</header>
-		<div class="container">
+        <article class="sobre-nos-copel pt-0">
+            <div class="container">
+                <h4 class="text-left">Por que a Copel Telecom foi sua melhor decisão:</h4>
+                <p class="text-left">Parabéns! Mais que uma estabilidade garantida por meio da Fibra Óptica – material imune a ondas eletromagnéticas, que podem gerar interferência externa – você adquiriu alguns conteúdos exclusivos. <br> Qual destes é mais a sua cara?</p>
+            </div>
+        </article>
+        <div class="container">
+
             <div class="parcerias-item">
                 <a href="<?php $p=get_page_by_title('Esporte Interativo'); echo get_permalink($p->ID); ?>">
                     <figure>
                         <img src="<?php bloginfo('template_url'); ?>/_assets/images/sucesso-sercomtel.jpg" alt="">
                     </figure>
-                    <img src="<?php bloginfo('template_url'); ?>/_assets/images/logo-sercomtel.png" class="parcerias-item--logo" alt="">
+                    <h5>Blog Conecta</h5>
+                    
                     <h6 class="parcerias-item--heading">
                         Quer aproveitar e contratar também um plano de telefonia? A Sercomtel tem planos e opções perfeitas para você.
                     </h6>

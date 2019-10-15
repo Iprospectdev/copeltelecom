@@ -63,10 +63,12 @@ include dirname(__FILE__) . "/_theme/pages-empresas.php";
 
 # Forms
 include dirname(__FILE__) . "/_theme/contato/contato-admin.php";
-include dirname(__FILE__) . "/_theme/ligar/ligar-admin.php";
-include dirname(__FILE__) . "/_theme/gravacao/gravacao-admin.php";
-include dirname(__FILE__) . "/_theme/rav/rav-admin.php";
-include dirname(__FILE__) . "/_theme/ipdireto/ipdireto-admin.php";
+include dirname(__FILE__) . "/_theme/empresas/empresas-admin.php";
+include dirname(__FILE__) . "/_theme/ligamos/ligamos-admin.php";
+// include dirname(__FILE__) . "/_theme/ligar/ligar-admin.php";
+// include dirname(__FILE__) . "/_theme/gravacao/gravacao-admin.php";
+// include dirname(__FILE__) . "/_theme/rav/rav-admin.php";
+// include dirname(__FILE__) . "/_theme/ipdireto/ipdireto-admin.php";
 
 # Classes
 include dirname(__FILE__) .  "/_theme/Services.php";

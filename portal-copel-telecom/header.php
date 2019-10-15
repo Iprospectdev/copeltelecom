@@ -42,11 +42,6 @@
     <header class="header">
         <div class="header-top">
             <div class="container">
-                <nav class="header-top--nav">
-                    <a href="<?php echo home_url() ?>" class="header-top--btn active">Para você</a>
-                    <a href="<?php $p=get_page_by_title('Para Empresas'); echo get_permalink($p->ID); ?>" class="header-top--btn">Para empresas</a>
-                </nav>
-                
                 <div class="header-top--acessibilidade">
                     <button class="js-contraste">
                         <svg width="10px" height="10px" viewBox="0 0 10 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -107,7 +102,11 @@
                 </div>
                 
                 <div class="float-right">
-                    <a href="#" class="header-top--btn"><i class="fas fa-map-marker-alt"></i><span class="js-cidade-estado">CIDADE/ESTADO</span></a>
+                    <a href="<?php $p=get_page_by_title('Sobre Nós'); echo get_permalink($p->ID); ?>"  class="header-top--btn">Sobre nós</a>
+                    <a href="<?php bloginfo('url'); ?>/faq"  class="header-top--btn">Perguntas frequentes</a>
+                    <a href="<?php $p=get_page_by_title('Blog'); echo get_permalink($p->ID); ?>"  class="header-top--btn">Blog</a>
+
+                    <a href="#" class="header-top--btn btn-cidade"><i class="fas fa-map-marker-alt"></i><span class="js-cidade-estado">CIDADE/ESTADO</span></a>
                     <a href="https://www.copeltelecom.com/autoatendimento/pub/login.jsf" target="_blank" class="header-top--btn active">Minha copel</a>
                 </div>
             </div>        
@@ -119,68 +118,86 @@
                     <img src="<?php bloginfo('template_url'); ?>/_assets/images/logo.svg" alt="Logo Copel Telecom">
                 </a>
                 <nav>
-                    <ul data-target="#header-navbar">
-                        <li>
-                            <a href="<?php $p=get_page_by_title('Planos'); echo get_permalink($p->ID); ?>">
-                                <strong>Planos e preços</strong>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="<?php $p=get_page_by_title('Speedtest'); echo get_permalink($p->ID); ?>">
-                                <strong>Speedtest</strong>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <strong>Cobertura</strong>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="<?php $p=get_page_by_title('Sobre Nós'); echo get_permalink($p->ID); ?>">Sobre nós</a>
-                        </li>
-                        <li>
-                            <a href="<?php $p=get_page_by_title('App Copel'); echo get_permalink($p->ID); ?>">App Copel</a>
-                        </li>
-                        <li>
-                            <a href="#">Parcerias<i class="fas fa-caret-down"></i></a>
-                            <div class="header-subnav">
-                                <div class="parcerias-item">
-                                    <a href="<?php $p=get_page_by_title('Esporte Interativo'); echo get_permalink($p->ID); ?>">
-                                        <figure>
-                                            <img src="<?php bloginfo('template_url'); ?>/_assets/images/ei-menu.jpg" alt="">
-                                        </figure>
-                                        <img src="<?php bloginfo('template_url'); ?>/_assets/images/logo-ei.png" class="parcerias-item--logo" alt="">
-                                        <h6 class="parcerias-item--heading">
-                                            Assista online o melhor do esporte.
-                                        </h6>
-                                        <span class="btn-more"></span>
-                                    </a>
-                                </div>
-                                <div class="parcerias-item">
-                                    <a href="<?php $p=get_page_by_title('Cartoon Network'); echo get_permalink($p->ID); ?>">
-                                        <figure>
-                                            <img src="<?php bloginfo('template_url'); ?>/_assets/images/cnja-menu.jpg" alt="">
-                                        </figure>
-                                        <img src="<?php bloginfo('template_url'); ?>/_assets/images/logo-cnja.png" class="parcerias-item--logo" alt="">
-                                        <h6 class="parcerias-item--heading">
-                                            Seus desenhos preferidos onde você estiver.
-                                        </h6>
-                                        <span class="btn-more"></span>
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="<?php bloginfo('url'); ?>/faq">Perguntas frequentes</a>
-                        </li>
-                        <li>
-                            <a href="<?php $p=get_page_by_title('Blog'); echo get_permalink($p->ID); ?>">Blog</a>
-                        </li>
-                    </ul>
+
+                    <?php
+                        $pages = get_posts(array(
+                            'post_type' => 'page',
+                            'orderby' => 'title',
+                            'order' => 'ASC',
+                            'posts_per_page' => -1
+                        ));
+                        global $post;
+                    ?>
+
+                    <?php $p=get_page_by_title('Para Você'); ?>
+                    <?php $q=get_page_by_title('Para Empresas'); ?>
+
+                    <?php if($p->ID == $post->post_parent || $p->ID == $post->ID){
+                         $children = get_page_children($p->ID, $pages); 
+                         $pageId = $p->ID;
+                         ?>
+                         <a href="<?php $p=get_page_by_title('Para Você'); echo get_permalink($p->ID); ?>" class="btn active">Para você</a>
+                         <a href="<?php $p=get_page_by_title('Para Empresas'); echo get_permalink($p->ID); ?>" class="btn">Para empresas</a>
+                     <?php }else if($q->ID == $post->post_parent || $q->ID == $post->ID){
+                        $children = get_page_children($q->ID, $pages); 
+                        $pageId = $q->ID;
+                        ?>
+                        <a href="<?php $p=get_page_by_title('Para Você'); echo get_permalink($p->ID); ?>" class="btn">Para você</a>
+                        <a href="<?php $p=get_page_by_title('Para Empresas'); echo get_permalink($p->ID); ?>" class="btn active">Para empresas</a>
+                     <?php } else { ?>
+                        <a href="<?php $p=get_page_by_title('Para Você'); echo get_permalink($p->ID); ?>" class="btn">Para você</a>
+                        <a href="<?php $p=get_page_by_title('Para Empresas'); echo get_permalink($p->ID); ?>" class="btn">Para empresas</a>
+                    <?php } ?>
+
+                    <?php if(isset($pageId) && !empty($pageId)) {?>
+
+
+                        <ul class="subnav" data-target="#header-navbar">
+                            <?php foreach ($children as $child): ?>
+                                <?php if ($child->post_parent == $pageId): ?>
+                                    <li>
+
+                                        <?php $granchildren = get_page_children($child->ID, $pages); ?>
+
+                                        <?php if(count($granchildren) > 0){ ?>
+                                            <a href="#">
+                                                <strong><?php echo $child->post_title; ?> <i class="fas fa-caret-down"></i></strong>
+                                            </a>
+                                            <div class="header-subnav">
+                                                <?php foreach ($granchildren as $grandchild): ?>
+                                                    
+                                                    <div class="parcerias-item">
+                                                        <a href="<?php echo get_permalink($grandchild->ID); ?>">
+                                                            <strong><?php echo $grandchild->post_title; ?></strong>
+
+                                                            <figure>
+                                                                <img src="<?php echo get_the_post_thumbnail_url($grandchild->ID) ?>" alt="">
+                                                            </figure>
+                                                            <?php echo $grandchild->post_content; ?>
+                                                            <span class="btn-more"></span>
+                                                        </a>
+                                                    </div>
+                                                <?php endforeach; ?>
+                                            </div>
+                                        <?php }else{ ?>
+                                            <a href="<?php echo get_permalink($child->ID); ?>">
+                                                <strong><?php echo $child->post_title; ?></strong>
+                                            </a>
+                                        <?php } ?>
+
+                                    </li>
+                                <?php endif; ?>
+                            <?php endforeach; ?>
+
+                        </ul>
+                    <?php } ?>
+
                 </nav>
-                <a href="#" class="btn-assine js-disponibilidade-modal">
+                <?php if(isset($pageId) && !empty($pageId)) {?>
+                <a href="#" class="btn-assine js-disponibilidade-modal"">
                     Assine Já
                 </a>
+                <?php } ?>
 
             </div>
         </div>
@@ -188,7 +205,7 @@
         <div class="header-mobile">
             <a href="<?php bloginfo('url'); ?>" class="logo">
                 <img src="<?php bloginfo('template_url'); ?>/_assets/images/logo-white.svg" alt="Logo Copel Telecom">
-            </a>
+            </a><!-- js-disponibilidade-modal -->
             <a href="#" class="header-mobile--assine js-disponibilidade-modal">
                 Assine Já
             </a>
@@ -196,43 +213,29 @@
 
         <div class="header-mobile-nav">
             <div class="header-mobile-button"><div></div></div>
+            <div class="btn-home bt-nav" data-target="geral"><img src="<?php bloginfo('template_url'); ?>/_assets/images/ico_home.svg"></div>
             <div class="overflow">
-                <a href="#" class="header-mobile-nav--btn active">Para você</a>
-                <a href="#" class="header-mobile-nav--btn">Para empresas</a>
-                <nav>
+                <a href="#" class="header-mobile-nav--btn bt-nav" data-target="voce">Para você</a>
+                <a href="#" class="header-mobile-nav--btn bt-nav" data-target="empresas">Para empresas</a>
+                <nav class="nav-geral">
                     <ul>
+
                         <li>
-                            <a href="<?php $p=get_page_by_title('Planos'); echo get_permalink($p->ID); ?>">
-                                <strong>Planos e preços</strong>
+                            <a href="<?php $p=get_page_by_title('Sobre Nós'); echo get_permalink($p->ID); ?>">
+                                <strong>Sobre nós</strong>
                             </a>
                         </li>
                         <li>
-                            <a href="<?php $p=get_page_by_title('Speedtest'); echo get_permalink($p->ID); ?>">
-                                <strong>Speedtest</strong>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <strong>Cobertura</strong>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="<?php $p=get_page_by_title('Sobre Nós'); echo get_permalink($p->ID); ?>">Sobre nós</a>
-                        </li>
-                        <li>
-                            <a href="<?php $p=get_page_by_title('App Copel'); echo get_permalink($p->ID); ?>">App Copel</a>
-                        </li>
-                        <li>
-                            <a href="<?php $p=get_page_by_title('Esporte Interativo'); echo get_permalink($p->ID); ?>">Esporte Interativo</a>
-                        </li>
-                        <li>
-                            <a href="<?php $p=get_page_by_title('Cartoon Network'); echo get_permalink($p->ID); ?>">CN Já!</a>
+                            <a href="<?php $p=get_page_by_title('Blog'); echo get_permalink($p->ID); ?>">Blog Conecta</a>
                         </li>
                         <li>
                             <a href="<?php bloginfo('url'); ?>/faq">Perguntas frequentes</a>
                         </li>
                         <li>
-                            <a href="<?php $p=get_page_by_title('Blog'); echo get_permalink($p->ID); ?>">Blog</a>
+                            <a href="#">Documentos</a>
+                        </li>
+                        <li>
+                            <a href="#">Mapa do site</a>
                         </li>
                         <li class="header-mobile-nav--minhacopel">
                             <a href="#">
@@ -241,6 +244,92 @@
                         </li>
                     </ul>
                 </nav>
+                <nav class="nav-empresas">
+                    <ul>
+                        <li>
+                            <a href="<?php $p=get_page_by_title('Internet dedicada'); echo get_permalink($p->ID); ?>">
+                                <strong>Internet dedicada</strong>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="<?php $p=get_page_by_title('Redes'); echo get_permalink($p->ID); ?>">
+                                <strong>Redes</strong>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="<?php $p=get_page_by_title('Data center'); echo get_permalink($p->ID); ?>">
+                                <strong>Data center</strong>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="<?php $p=get_page_by_title('Banda larga corporativa'); echo get_permalink($p->ID); ?>">
+                                <strong>Banda larga corporativa</strong>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="<?php $p=get_page_by_title('Blog'); echo get_permalink($p->ID); ?>">
+                                <strong>Blog conecta</strong>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="<?php $p=get_page_by_title('Speedtest'); echo get_permalink($p->ID); ?>">
+                                <strong>Speedtest</strong>
+                            </a>
+                        </li>
+                        <li class="header-mobile-nav--minhacopel">
+                            <a href="#">
+                                <strong>Minha Copel</strong>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="nav-voce">
+                    <ul>
+                        <li>
+                            <a href="<?php $p=get_page_by_title('Planos'); echo get_permalink($p->ID); ?>">
+                                <strong>Planos e preços</strong>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <strong>Cobertura</strong>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn-subnav-mobile">
+                                <strong>Parcerias</strong><i class="fas fa-caret-down"></i>
+                            </a>
+                            <ul class="subnav-mobile">
+                                <li>
+                                    <a href="<?php $p=get_page_by_title('Esporte Interativo'); echo get_permalink($p->ID); ?>">Esporte Interativo</a>
+                                </li>
+                                <li>
+                                    <a href="<?php $p=get_page_by_title('Cartoon Network'); echo get_permalink($p->ID); ?>">CN Já!</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="<?php $p=get_page_by_title('App Copel'); echo get_permalink($p->ID); ?>">App Copel</a>
+                        </li>
+                        <li>
+                            <a href="<?php $p=get_page_by_title('Blog'); echo get_permalink($p->ID); ?>">
+                                <strong>Blog conecta</strong>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="<?php $p=get_page_by_title('Speedtest'); echo get_permalink($p->ID); ?>">
+                                <strong>Speedtest</strong>
+                            </a>
+                        </li>
+
+                        <li class="header-mobile-nav--minhacopel">
+                            <a href="#">
+                                <strong>Minha Copel</strong>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                
                 <div class="header-mobile-nav--acessibilidade">
                     
                     <a href="<?php $p=get_page_by_title('Acessibilidade'); echo get_permalink($p->ID); ?>"><i class="fas fa-map-marker-alt"></i><span class="js-cidade-estado">CIDADE/ESTADO</span></a>
@@ -278,29 +367,31 @@
                         Acessibilidade
                     </a>
 
-                    <button>
-                        A+
-                    </button>
-                    
-                    <button>
-                        A-
-                    </button>
-
-                    <button>
-                        <svg width="10px" height="10px" viewBox="0 0 10 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                <g id="_header-hover" transform="translate(-374.000000, -22.000000)" fill="#FFFFFF">
-                                    <g id="Group-7" transform="translate(98.000000, 12.000000)">
-                                        <g id="Group-4" transform="translate(276.000000, 3.000000)">
-                                            <g id="Group">
-                                                <path d="M9.32965749,9.49016122 C8.8825627,8.72423437 8.27614795,8.11792556 7.5099138,7.67073536 C6.7439793,7.22364504 5.90742461,7 5.00024972,7 C4.09307483,7 3.25652013,7.22364504 2.49058564,7.67073536 C1.7242516,8.11752602 1.11783684,8.72423437 0.670742061,9.49016122 C0.223547391,10.2564876 0,11.0930339 0,12.0001998 C0,12.9069661 0.223547391,13.7435124 0.670742061,14.5098388 C1.11783684,15.2757656 1.7242516,15.882474 2.49018609,16.3292646 C3.25652013,16.776355 4.09307483,17 5.00024972,17 C5.90742461,17 6.7439793,16.776355 7.5099138,16.3292646 C8.27584829,15.882474 8.8825627,15.2757656 9.32965749,14.5098388 C9.77645261,13.7435124 10,12.9069661 10,12.0001998 C10,11.0930339 9.77645261,10.2560881 9.32965749,9.49016122 Z M5,15 C4.27416307,15 3.60518374,14.843839 2.99272358,14.5303325 C2.37969935,14.2172209 1.89449192,13.7927631 1.53665003,13.2563669 C1.17892095,12.7203655 1,12.1351073 1,11.5 C1,10.8652875 1.17892095,10.2800293 1.53665003,9.74363313 C1.89449192,9.20763178 2.37969935,8.78277914 2.99272358,8.46966748 C3.60518374,8.15655583 4.27416307,8 5,8 L5,15 Z" id="adjust-contrast"></path>
+                    <div class="acessibilidade-buttons">
+                        <button>
+                            <svg width="20px" height="20px" viewBox="0 0 10 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <g id="_header-hover" transform="translate(-374.000000, -22.000000)" fill="#FFFFFF">
+                                        <g id="Group-7" transform="translate(98.000000, 12.000000)">
+                                            <g id="Group-4" transform="translate(276.000000, 3.000000)">
+                                                <g id="Group">
+                                                    <path d="M9.32965749,9.49016122 C8.8825627,8.72423437 8.27614795,8.11792556 7.5099138,7.67073536 C6.7439793,7.22364504 5.90742461,7 5.00024972,7 C4.09307483,7 3.25652013,7.22364504 2.49058564,7.67073536 C1.7242516,8.11752602 1.11783684,8.72423437 0.670742061,9.49016122 C0.223547391,10.2564876 0,11.0930339 0,12.0001998 C0,12.9069661 0.223547391,13.7435124 0.670742061,14.5098388 C1.11783684,15.2757656 1.7242516,15.882474 2.49018609,16.3292646 C3.25652013,16.776355 4.09307483,17 5.00024972,17 C5.90742461,17 6.7439793,16.776355 7.5099138,16.3292646 C8.27584829,15.882474 8.8825627,15.2757656 9.32965749,14.5098388 C9.77645261,13.7435124 10,12.9069661 10,12.0001998 C10,11.0930339 9.77645261,10.2560881 9.32965749,9.49016122 Z M5,15 C4.27416307,15 3.60518374,14.843839 2.99272358,14.5303325 C2.37969935,14.2172209 1.89449192,13.7927631 1.53665003,13.2563669 C1.17892095,12.7203655 1,12.1351073 1,11.5 C1,10.8652875 1.17892095,10.2800293 1.53665003,9.74363313 C1.89449192,9.20763178 2.37969935,8.78277914 2.99272358,8.46966748 C3.60518374,8.15655583 4.27416307,8 5,8 L5,15 Z" id="adjust-contrast"></path>
+                                                </g>
                                             </g>
                                         </g>
                                     </g>
                                 </g>
-                            </g>
-                        </svg>
-                    </button>
+                            </svg>
+                        </button>
+
+                        <button>
+                            A+
+                        </button>
+                        
+                        <button>
+                            A-
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>

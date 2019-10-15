@@ -44,8 +44,8 @@
 							<h6>
 								<?php 
 									echo '<a href="'.get_term_link( $cat ).'">';
-										$image = get_field('image', $cat);
-										if($image) { echo '<img src="'.$image.'" alt="'.$cat->name.'">'; }
+										// $image = get_field('image');
+										// if($image) { echo '<img src="'.$image.'" alt="'.$cat->name.'">'; }
 										echo $cat->name;
 										echo '<i class="btn-more"></i>';
 									echo '</a>';

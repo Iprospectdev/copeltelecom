@@ -12,19 +12,7 @@
 	
 	&--acessibilidade {
 		float: left;
-		margin-left: 25px;
-		padding-left: 25px;
 		position: relative;
-
-		&:before {
-			background: rgba(#fff,0.2);
-			content: "";
-			display: block;
-			height: 100%;
-			left: 0;
-			position: absolute;
-			width: 1px;
-		}
 
 		a, button {
 			background: none;
@@ -46,7 +34,6 @@
 	&--btn {
 		color: #fff;
 		font-size: 12px;
-		text-transform: uppercase;
 		padding: 5px 15px;
 		border-radius: 5px;
 		text-decoration: none;
@@ -64,6 +51,10 @@
 			border: 2px solid rgba(#fff,0.2);
 			font-weight: 700;
 		}
+	}
+
+	.btn-cidade{
+		margin-left: 25px;
 	}
 
 	&:after {
@@ -86,16 +77,47 @@
 
 	.logo {
 		float: left;
-		padding: 18px 20px 18px 0;
+		padding: 25px 50px 25px 0;
+	}
+
+	@include media-breakpoint-down(lg) {
+		.container { max-width: 100%; }
 	}
 
 	nav {
 		float: left;
 
+		.btn {
+			color: #464d5c;
+			font-size: 16px;
+			padding: 5px 15px;
+			border-radius: 5px;
+			text-decoration: none;
+			letter-spacing: 0.5px;
+			text-transform: uppercase;
+			margin: 25px 0;
+
+			i {
+				margin-right: 5px;
+			}
+
+			&:hover {
+				color: #333;
+			}
+
+			&.active {
+				border: 2px solid rgba(#333,0.2);
+				font-weight: 700;
+			}
+		}
+
+
 		ul {
 			list-style: none;
 			margin: 0;
 			padding: 0;
+			height: 90px;
+			overflow: hidden;
 
 			&>li {
 				display: inline-block;
@@ -104,7 +126,13 @@
 					color: color('gray');
 					display: block;
 					font-size: 12px;
-					padding: 30px 8px;
+					height: 90px;
+					display: table-cell;
+					vertical-align: middle;
+					padding: 0 8px 0 8px;
+					max-width: 110px;
+					text-align: center;
+					line-height: 1;
 
 					i {
 						margin-left: 5px;
@@ -187,6 +215,11 @@
 	}
 }
 
+.subnav {
+	float: right;
+	margin-left: 15px;
+}
+
 .header-subnav {
 	background: #F2F5F6;
 	padding: 30px 0;
@@ -258,22 +291,35 @@
 	    }
     }
 
-    &.active div {
-        transform: rotate(45deg);
-        background: #fff;
+    &.active {
+    	position: absolute;
+    	left: 0 !important;
+    	top: 0 !important;
+    	background: #ff6d00;
+    	width: 53px;
+    	height: 60px;
+    	border-radius: 0;
+    	margin-top: 0px;
+    	padding-top: 5px;
 
-	    &:before {
-	        transform: rotate(90deg);
-	        top: 0;
+	    div {
+	        transform: rotate(45deg);
 	        background: #fff;
-	    }
 
-	    &:after {
-	        transform: rotate(90deg);
-	        bottom: 0;
-	        background: #fff;
+		    &:before {
+		        transform: rotate(90deg);
+		        top: 0;
+		        background: #fff;
+		    }
+
+		    &:after {
+		        transform: rotate(90deg);
+		        bottom: 0;
+		        background: #fff;
+		    }
 	    }
     }
+
 }
 
 .header-mobile {
@@ -337,7 +383,7 @@
 		height: 100%;
 		margin: 0;
 		overflow-x: auto;
-		padding: 25px;
+		padding: 100px 25px 25px 25px;
 		width: 100%;
 	}
 
@@ -357,24 +403,32 @@
 	}
 
 	&--btn {
-		color: #fff;
 		border-radius: 5px;
-		padding: 5px 15px;
+		padding: 15px;
 		font-weight: 700;
-		font-size: 12px;
-		letter-spacing: 0.5px;
+		font-size: 16px;
+		letter-spacing: 0.4px;
+		background: #FFFFFF;
+		color: #ff6d00;
 
-		&.active {
-			border: 2px solid rgba(#FFF,0.2);	
+		&:hover{
+			color: #ff6d00;
 		}
 
-		&:hover {
+		&.active {
 			color: #fff;
+			border: 2px solid rgba(#FFF,0.2);	
+			background: none;
+
+			&:hover{
+				color: #FFFFFF;
+			}
+			
 		}
 	}
 
 	nav {
-		padding: 30px 0 0;
+		padding: 30px 0 0 30px;
 
 		ul {
 			list-style: none;
@@ -387,26 +441,57 @@
 				a {
 					color: #FFFFFF;
 					display: block;
-					font-size: 13px;
+					font-size: 18px;
 					padding: 15px 0;
 
 					strong {
 						font-weight: 500;
-						font-size: 15px;
 					}
 
 					i {
-						font-size: 15px;
 						margin-left: 10px;
 					}
 				}
 			}
 		}
 	}
+
+	.nav-geral {
+		display: block;
+	}
+	.nav-empresas {
+		display: none;
+	}
+	.nav-voce {
+		display: none;
+	}
+
+	.btn-home{
+		display: none;
+		cursor: pointer;
+		width: 54px;
+		height: 60px;
+		line-height: 60px;
+		text-align: center;
+		color: #FFFFFF;
+		position: absolute;
+		left: 54px;
+		top: 0;
+		background: rgba(0,0,0,0.5);
+		
+		&.active{
+			display: block;
+		}
+	}
+
+	.subnav-mobile {
+		display: none;
+		padding-left: 30px;
+	}
 	
 	&--minhacopel {
-		border-bottom: 1px solid #fff;
-		border-top: 1px solid #fff;
+		border-bottom: 2px solid rgba(255,255,255,0.2);
+		border-top: 2px solid rgba(255,255,255,0.2);
 		padding: 29px 0;
 		margin: 10px -25px;
 		a {
@@ -415,10 +500,12 @@
 	}
 
 	&--acessibilidade {
+		padding-left: 30px;
+
 		a {
 			color: #fff;
 			display: block;
-			font-size: 13px;
+			font-size: 18px;
 			font-weight: 500;
 			padding: 15px 0;
 
@@ -431,17 +518,27 @@
 				letter-spacing: 0.5px;
 			}
 		}
-		
-		button {
-			background: none;
-			border: 0;
-			color: #fff;
-			cursor: pointer;
-			display: inline-block;
-			margin-top: 10px;
-			padding-right: 20px;
-			padding: 0;
+
+		.acessibilidade-buttons {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			width: 60%;
+			padding-bottom: 50px;
+			
+			button {
+				background: none;
+				border: 0;
+				color: #fff;
+				cursor: pointer;
+				display: inline-block;
+				margin-top: 10px;
+				padding-right: 20px;
+				padding: 0;
+				font-size: 24px;
+			}
 		}
+		
 	}
 
 	@include media-breakpoint-up(sm) {

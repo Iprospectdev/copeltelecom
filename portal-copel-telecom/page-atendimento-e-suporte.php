@@ -1,4 +1,4 @@
-<?php get_header('old');?>
+<?php get_header('old'); /* Template Name: Atendimento */ ?>
 	<section id="atendimento-e-suporte">
 
 		<header>

@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header();/* Template Name: Blog */ ?>
 
 <?php
 	$posts_query = new WP_Query(array(

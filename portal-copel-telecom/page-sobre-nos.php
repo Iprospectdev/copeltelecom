@@ -26,7 +26,7 @@
 
 		<article class="sobre-nos-alcance">
 			<div class="container">
-				<h3>O futuro chega antes para quem tem a internet da Copel Telecom</h3>
+				<h3>O futuro chega antes para quem tem <br> a internet da Copel Telecom</h3>
 				<div class="row">
 					<div class="col-sm-6">
 						<img src="<?php bloginfo('template_url'); ?>/_assets/images/sobre-nos-mapa.svg" alt="">
@@ -109,7 +109,8 @@
 		<article class="sobre-nos-banner" style="background-image: url(<?php bloginfo('template_url'); ?>/_assets/images/sobre-nos-banner.jpg);">
 			<div class="container">
 				<h4>É a internet do futuro presente na casa dos paranaenses.</h4>
-				<p>Assim, mais e mais clientes vão contar com a melhor qualidade de sinal de internet do mercado, sem interferências e sem interrupções, além de download e upload na mesma velocidade.</p>
+				<p>Assim, mais e mais clientes vão contar com a melhor qualidade de sinal de internet do mercado, sem interferências e sem interrupções.</p>
+
 				<div class="row">
 					<div class="col-12 col-md-4">
 						<div class="sobre-nos-banner--item">

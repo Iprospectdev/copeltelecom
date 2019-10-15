@@ -3,7 +3,11 @@
 
 	&>.container {
 		padding-bottom: 30px;
-		padding-top: 30px;
+		padding-top: 60px;
+
+		@include media-breakpoint-down(md) {
+			padding-top: 0px;
+		}
 	}
 }
 
@@ -11,18 +15,33 @@
 	a {
 		display: inline-block;
 		margin-right: 5px;
+
+		font-size: 22px;
+		font-weight: 900 !important;
+		width: 44px;
+		height: 42px;
+		line-height: 44px;
+		text-decoration: none;
+		text-align: center;
+		border-radius: 50%;
+		background: #ff9602;
+		color: #f2f5f6;
+
+		&:hover {
+			background-image: linear-gradient(49deg, #FFA600 0%, #FF6D00 100%);
+		}
 	}
-	@include media-breakpoint-down(sm) {
+	@include media-breakpoint-down(md) {
 		text-align: center;
 
 		a {
-			margin: 0 13px;
+			margin: 30px 5px;
 		}
 	}
 }
 
 .footer-logos {
-	padding: 30px 0 0;
+	padding: 0;
 	a {
 		display: inline-block;
 		img {
@@ -30,7 +49,7 @@
 			margin-right: 10px;
 		}
 	}
-	@include media-breakpoint-down(sm) {
+	@include media-breakpoint-down(md) {
 		text-align: center;
 		a {
 			img {
@@ -44,14 +63,13 @@
 	position: relative;
 	
 	&:before {
-		border: 1px solid #D3D6D7;
+		border-left: 1px solid #D3D6D7;
 		content: "";
 		display: block;
-		height: 120px;
+		height: 220px;
 		left: -40px;
 		position: absolute;
 		top: 0;
-		width: 1px;
 	}
 
 	ul {
@@ -62,18 +80,23 @@
 			display: block;
 			margin: 0;
 			padding: 0;
-			line-height: 18px;
+			line-height: 1.85;
 
 			a {
 				font-size: 13px;
 				font-weight: 400;
 				color: color('gray');
 				strong {
-
+					font-size: 15px;
+					text-transform: uppercase;
 				}
 			}
 		}
 	}
+}
+
+.row-bottom {
+	margin-top: 50px;
 }
 
 .footer--btn {
@@ -82,7 +105,8 @@
 	clear: left;
 	color: color('orange-light');
 	float: left;
-	font-size: 12px;
+	font-size: 14px;
+	font-weight: bold;
 	letter-spacing: 0.5px;
 	margin-bottom: 5px;
 	padding: 5px 15px;
@@ -90,6 +114,14 @@
 
 	&:hover {
 		color: color('orange-light');
+	}
+
+	&:first-child {
+		margin-top: 130px;
+
+		@include media-breakpoint-down(md) {
+			margin-top: 30px;
+		}
 	}
 }
 
@@ -100,8 +132,10 @@
 	font-size: 30px;
 	font-weight: 700;
 	letter-spacing: 0;
-	margin-top: 15px;
 	text-align: justify;
+	@include media-breakpoint-down(md) {
+		text-align: center;
+	}
 }
 
 .footer-copy {

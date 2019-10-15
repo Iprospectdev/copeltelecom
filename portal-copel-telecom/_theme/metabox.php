@@ -42,6 +42,7 @@ function copeltelecom_mb( $meta_boxes ) {
 				'id'      => "slider_local",
 				'type'    => 'checkbox_list',
 				'options' => array(
+					'H' => "Home",
 					'F' => "Residencial",
 					'J' => "Empresarial",
 				),
@@ -56,6 +57,13 @@ function copeltelecom_mb( $meta_boxes ) {
             array(
                 'id'   				=> 'slider_image_mobile',
                 'name' 				=> "Imagem Mobile",
+                'type' 				=> 'image_advanced',
+				'max_file_uploads' 	=> 1,
+            ), 
+
+            array(
+                'id'   				=> 'slider_image_icone',
+                'name' 				=> "Icone",
                 'type' 				=> 'image_advanced',
 				'max_file_uploads' 	=> 1,
             ),
@@ -76,6 +84,13 @@ function copeltelecom_mb( $meta_boxes ) {
 			array(
 				'name' => "Texto Secundário",
 				'id'   => "slider_secundario",
+				'type' => 'textarea',
+				'rows' => 3,
+			),
+
+			array(
+				'name' => "Texto do Ícone",
+				'id'   => "text_icone",
 				'type' => 'textarea',
 				'rows' => 3,
 			),

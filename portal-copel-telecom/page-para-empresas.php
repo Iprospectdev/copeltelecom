@@ -1,234 +1,239 @@
-<?php
+<?php /* Template Name: Home Para Empresas */ ?>
+<?php get_header(); 
 
-	get_header('old');
+$slides = get_posts(array(
+    "post_type" => "slider-home",
+    "nopaging" => true,
+    'meta_query' => array(
+        array(
+            'key' => 'slider_local',
+            'value' => "J",
+            'compare' => 'IN'
+        )
+    )
+));
 
-	$services = new Services;
-	$profile = $services->profile();
-	$planos = json_decode($services->planos("J",$profile->cidade));
-
-	if(!$planos->bel){
-		$planos = json_decode($services->planos("J","CURITIBA"));
-	}
-
-	$id = $planos->bel[0]->id;
-
-	$velocidade = $services->profile_velocidade($planos->bel[0]->nomeProduto);
-
-	$price = $services->profile_price($planos->bel[0]->precoProduto);
-
-	$cents = $services->profile_cents($planos->bel[0]->precoProduto);
-
-	$slides = get_posts(array(
-		"post_type" => "slider-home",
-		"nopaging" => true,
-		'meta_query' => array(
-	        array(
-	            'key' => 'slider_local',
-	            'value' => "J",
-	            'compare' => 'IN'
-	        )
-	    )
-	));
 
 ?>
+    <section class="page-home">   
+        <nav class="header-nav fixed fixed-top">
+            <div class="container">
+                <a href="<?php bloginfo('url'); ?>" class="logo">
+                    <img src="<?php bloginfo('template_url'); ?>/_assets/images/logo.svg" alt="Logo Copel Telecom">
+                </a>
+                <nav class="js-scrollspy">
+                    <ul class="nav">
+                        <li>
+                            <a href="#beneficios" class="nav-link js-scrollto">
+                                Benefícios
+                            </a>
+                        </li>
+                         <li>
+                            <a href="#blog" class="nav-link js-scrollto">
+                                Blog
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="#" class="btn-assine js-disponibilidade-modal">
+                    Assine Já
+                </a>
+            </div>
+            <span class="header-nav--loader" style="width: 0%;"></span>
+        </nav>
+	
+        <section class="slider-topo slider-topo-empresas">
+            <img class="home-usos--bg" src="<?php bloginfo('template_url'); ?>/_assets/images/home-usos-bg.png" alt="">
+            <div class="container">
+                <div class="main-breadcrumb">
+                    <a href="<?php bloginfo('url'); ?>"><i class="fas fa-home"></i>Início</a>
+                    <a href="#">Para empresas</a>
+                </div>
+            </div>
+            <div class="slider-topo--slides owl-carousel">
 
-	<section class="empresas" id="home-empresas">
-		<div class="home-slideshow">
+                <?php if ($slides): ?>
+                <?php foreach ($slides as $slide): ?>
+                <?php
 
-			<?php if ($slides): ?>
-			<div class="owl-carousel">
-				<?php foreach ($slides as $slide): ?>
-				<article class="bgjs">
-					<?php
+                    $desktop = array_values(rwmb_meta( 'slider_image_desktop', 'type=image', $slide->ID));
+                    $desktop = $desktop[0];
 
-						$desktop = array_values(rwmb_meta( 'slider_image_desktop', 'type=image', $slide->ID));
-						$desktop = $desktop[0];
+                    $mobile = array_values(rwmb_meta( 'slider_image_mobile', 'type=image', $slide->ID));
+                    $mobile = ($mobile) ? $mobile[0] : $desktop;
 
-						$mobile = array_values(rwmb_meta( 'slider_image_mobile', 'type=image', $slide->ID));
-						$mobile = ($mobile) ? $mobile[0] : $desktop;
+                ?>
 
-					?>
-					<img src="<?php echo $desktop["full_url"]; ?>" alt="<?php echo $desktop["title"]; ?>">
-					<figure><img src="<?php echo $mobile["full_url"]; ?>" alt="<?php echo $mobile["title"]; ?>"></figure>
-					<div class="container">
-						<div class="main-tt-highlight" style="
-							<?php
-								if(get_post_meta($slide->ID, "slider_posicao_left", true)){
-									echo 'margin-left:'.get_post_meta($slide->ID, "slider_posicao_left", true).'px;';
-								}
-								if(get_post_meta($slide->ID, "slider_posicao_top", true)){
-									echo 'margin-top:'.get_post_meta($slide->ID, "slider_posicao_top", true).'px;';
-								}
-								if(get_post_meta($slide->ID, "slider_width", true)){
-									echo 'max-width:'.get_post_meta($slide->ID, "slider_width", true).'px;';
-								}
-								if(get_post_meta($slide->ID, "slider_posicao_left", true) || get_post_meta($slide->ID, "slider_posicao_top", true) || get_post_meta($slide->ID, "slider_width", true)){
-									echo 'padding: 0px;';
-								}
-							?>">
-							<h2 style="
-								<?php  if(get_post_meta($slide->ID, "slider_sn")){
-									echo 'font-weight: 700;font-size: 32px;line-height: 30px;';
-								}?>
-							"><?php echo nl2br(get_post_meta($slide->ID, "slider_principal", true)); ?></h2>
-							<p style="
-								<?php  if(get_post_meta($slide->ID, "slider_sn")){
-									echo 'font-weight: 300;font-size: 20px;line-height: 24px;';
-								}?>
-							"><?php echo nl2br(get_post_meta($slide->ID, "slider_secundario", true)); ?></p>
-						</div>
-					</div>
-				</article>
-				<?php endforeach ?>
-			</div>	
-			<?php else: ?>
-			<div class="owl-carousel">
-				<article class="bgjs">
-					<img src="<?php bloginfo('template_url'); ?>/_assets/old/images/home/home03.jpg" alt="">
-					<div class="container">
-						<div class="main-tt-highlight right">
-							<h2>
-								Na sua empresa não é assim.<br>
-								Por que sua internet tem que ser?
-							</h2>
-							<p>Ultravelocidade tanto no download como no upload.</p>
-						</div>
-					</div>
-				</article>
-			</div>
-			<?php endif; ?>
+                <div class="slide" style="background-image: url(<?php echo $desktop["full_url"]; ?>);">
+                    <div class="container">
+                        <h2><?php echo nl2br(get_post_meta($slide->ID, "slider_principal", true)); ?></h2>
+                        <p><?php echo nl2br(get_post_meta($slide->ID, "slider_secundario", true)); ?></p>
+                    </div>
+                </div>
 
-			<div class="home-slide-plano">
-				<div class="container">
-					<aside class="slide-plano">
-						<div class="slide-plano-border">
-							<h6>Plano sugerido para <strong>seu perfil:</strong></h6>
-							<div class="slide-plano-plano">
-								<div class="slide-plano-mega">
-									<?php echo $velocidade; ?> <small>MEGA</small>
-								</div>
-								<div class="slide-plano-preco">
-									<small><i>A PARTIR DE</i><br>R$</small>
-									<?php echo $price; ?>
-									<span>,<?php echo $cents; ?>*</small>
-								</div>
-							</div>
-							<div class="slide-plano-down-up">
-								<small>
-									Download: <span><?php echo $velocidade; ?></span> MEGA 
-									|
-									Upload: <span><?php echo $velocidade; ?></span> MEGA
-								</small>
-								<a href="<?php echo LINK_WVT; ?>?s=<?php echo $id; ?>&locate=<?php echo $profile->cidade; ?>&p=J" class="bt bt-orange btn_contratar">CONTRATAR</a>
-							</div>
-						</div>
-					</aside>
-				</div>
-			</div>
-		</div>
-		<article>
-			<div class="nav-highlights">
-				<div class="container">
-					<ul class="row">
-						<li class="nav-highlights-blue col-sm-6 col-xs-12" data-mh="nav-highlight-group">
-							<div class="nav-highlights-tt">
-								<a href="<?php $p = get_page_by_title("Internet"); echo get_permalink($p->ID); ?>">
-									<i class="i-b-fibra-white"></i>
-									<h3>Soluções de Internet</h3>
-									<p>Serviço de internet de alta velocidade e disponibilidade com tecnologia 100% em fibra óptica.<br><strong>Saiba mais.</strong></p>
-								</a>
-							</div>
-						</li>
-						<li class="nav-highlights-blue-light col-sm-6 col-xs-12" data-mh="nav-highlight-group">
-							<div class="nav-highlights-tt">
-								<a href="<?php $p = get_page_by_title("Redes"); echo get_permalink($p->ID); ?>">
-									<i class="i-b-rede-white"></i>
-									<h3>Soluções de Rede</h3>
-									<p>A Copel Telecom tem soluções de conectividade em rede completas e adequadas aos mais diversos perfis.<br><strong>Saiba mais.</strong></p>
-								</a>
-							</div>
-						</li>
-						<li class=" col-sm-6 col-xs-12" data-mh="nav-highlight2-group">
-							<div class="nav-highlights-tt">
-								<a href="<?php $p = get_page_by_title("Canal Dedicado"); echo get_permalink($p->ID); ?>">
-									<i class="i-b-updown"></i>
-									<h3>Soluções de Canal Dedicado</h3>
-									<p>Soluções de interconexão por canal dedicado ideais para que você se dedique somente ao seu lucro.<br><strong>Saiba mais.</strong></p>
-								</a>
-							</div>
-						</li>
-						<li class="col-sm-6 col-xs-12" data-mh="nav-highlight2-group">
-							<div class="nav-highlights-tt">
-								<a href="<?php $p = get_page_by_title("Data Center"); echo get_permalink($p->ID); ?>">
-									<i class="i-b-cloud"></i>
-									<h3>Soluções de Data Center</h3>
-									<p>Conheça as soluções que só uma empresa com mais de 40 anos de experiência em infraestrutura pode oferecer.<br><strong>Saiba mais.</strong></p>
-								</a>
-							</div>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="container">
-				<div class="empresas-highlight">
-					<div class="nav-highlights">
-						<img src="<?php bloginfo('template_url'); ?>/_assets/old/images/empresas/highlight-1.png" alt="">
-						<ul class="row">
-							<li class="col-sm-4 col-xs-12" data-mh="nav-highlight-group">
-								<div class="nav-highlights-tt no-icon">
-									<h4>Serviços Públicos</h4>
-									<p>Conheça as soluções da Copel Telecom para integrar secretarias e departamentos de órgãos públicos. </p>
-									<a href="<?php $p = get_page_by_title("Serviços Públicos"); echo get_permalink($p->ID); ?>" class="bt-o">Clique Aqui</a>
-								</div>
-							</li>
-							<li class="col-sm-4 col-sm-offset-4 col-xs-12" data-mh="nav-highlight-group">
-								<div class="nav-highlights-tt no-icon">
-									<h4>Ofertas Públicas</h4>
-									<p>Conheça as Ofertas de Referência de Produtos de Atacado da Copel Telecom para prestadoras de serviços de telecomunicações.</p>
-									<a href="<?php $p = get_page_by_title("Ofertas Públicas"); echo get_permalink($p->ID); ?>" class="bt-o">Clique Aqui</a>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</article>
-		<article>
-			<div class="empresas-vantagens">
-				<div class="container">
-					<ol class="row">
-						<li class="col-sm-3 col-xs-12" data-mh="ev-group">
-							<i class="i-e-flexibilidade"></i><br>
-							<h5>FLEXIBILIDADE</h5>
-							A Copel Telecom tem um leque variado de soluções, que podem ser combinadas para atender às necessidades específicas da sua empresa.
-						</li>
-						<li class="col-sm-3 col-xs-12" data-mh="ev-group">
-							<i class="i-e-cobertura"></i><br>
-							<h5>COBERTURA</h5>
-							Os 399 municípios do nosso estado já contam com o que há de mais avançado em tecnologia digital.
-							<a href="<?php echo LINK_WVT; ?>?s=<?php echo $id; ?>&locate=<?php echo $profile->cidade; ?>&p=J">Verifique disponibilidade técnica</a> para a sua localidade.
-						</li>
-						<li class="col-sm-3 col-xs-12" data-mh="ev-group">
-							<i class="i-e-fibra"></i><br>
-							<h5>FIBRA ÓPTICA</h5>
-							Com a tecnologia de fibra óptica da Copel Telecom, a qualidade do sinal se mantém desde a origem até o destino. Ou seja, lucro de ponta a ponta para seus negócios.
-						</li>
-						<li class="col-sm-3 col-xs-12" data-mh="ev-group">
-							<i class="i-e-tecnologia"></i><br>
-							<h5>TECNOLOGIA</h5>
-							Há mais de 40 anos, a Copel é sinônimo de tecnologia e inovação a serviço do desenvolvimento do Paraná, sendo a empresa pública mais admirada pelos paranaenses.
-						</li>
-					</ol>
-				</div>
-			</div>
-		</article>
-		
-		<aside class="empresas-bts-contato">
-			<h6 class="main-tt-barra">Fale com a gente</h6>
-			<p>Entre em contato conosco agora mesmo e conheça melhor as soluções da Copel Telecom.<br>Se preferir, nós entramos em contato com você.</p>
-			<?php get_template_part('template','bts-contato'); ?>
-		</aside>
+                <?php endforeach ?>
+                <?php endif; ?>
+
+            </div>
+        </section>
+        
+        <section class="home-produtos">
+            <div class="container">
+                <div class="row">
+                    <div class="home-produtos--box col-md-6 col-lg-3">
+                        <h6>
+                            Internet <br> dedicada
+                        </h6>
+                        <div class="info">
+                            <p>
+                                Sua empresa conectata ao mundo, com a velocidade e a estabilidade da tecnologia 100% em fibra óptica.
+                            </p>
+                            <div class="btn-descubra">
+                                <a href="<?php $p=get_page_by_title('Internet dedicada'); echo get_permalink($p->ID); ?>">Descubra</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="home-produtos--box col-md-6 col-lg-3">
+                        <h6>
+                            Redes
+                        </h6>
+                        <div class="info">
+                            <p>
+                                Interliga, com alta confiabilidade, computadores locais, servidores e estações em qualquer ponto do Paraná.
+                            </p>
+                            <div class="btn-descubra">
+                                <a href="<?php $p=get_page_by_title('Redes'); echo get_permalink($p->ID); ?>">Descubra</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="home-produtos--box col-md-6 col-lg-3">
+                        <h6>
+                            Data <br> center
+                        </h6>
+                        <div class="info">
+                            <p>
+                                O melhor lugar para armazenar sua confiança com comodidade, segurança e praticidade.
+                            </p>
+                            <div class="btn-descubra">
+                                <a href="<?php $p=get_page_by_title('Data center'); echo get_permalink($p->ID); ?>">Descubra</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="home-produtos--box col-md-6 col-lg-3">
+                        <h6>
+                            Banda larga <br> corporativa
+                        </h6>
+                        <div class="info">
+                            <p>
+                                Transmissão de dados, voz, vídeos e imagens em alta velocidade. Porque seus negócios não podem parar.
+                            </p>
+                            <div class="btn-descubra">
+                                <a href="<?php $p=get_page_by_title('Banda larga corporativa'); echo get_permalink($p->ID); ?>">Descubra</a>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        </section>
+
+        <section class="home-beneficios" id="beneficios">
+            <div class="main-heading">
+                <h6>
+                    Aproveite os benefícios <br>
+					da marca Copel para seus negócios
+                </h6>
+            </div>
+            <img src="<?php bloginfo('template_url'); ?>/_assets/images/home-testes-bg.svg" class="home-beneficios--bg" alt="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-3 home-beneficios--item">
+                        <h6 class="home-beneficios--heading">
+                            <img src="<?php bloginfo('template_url'); ?>/_assets/images/icon-phone.svg">
+                            Flexibilidade
+                        </h6>
+                        <p>A Copel Telecom tem um leque variado de soluções, que podem ser combinadas para atender às necessidades específicas da sua empresa. </p>
+                    </div>
+                    <div class="col-md-6 col-lg-3 home-beneficios--item">
+                        <h6 class="home-beneficios--heading">
+                            <img src="<?php bloginfo('template_url'); ?>/_assets/images/ico_cobertura.svg">
+                            Cobertura
+                        </h6>
+                        <p>Os 399 municípios do nosso estado já contam com o que há de mais avançado em tecnologia digital. Verifique disponibilidade técnica para a sua localidade.</p>
+                    </div>
+                    <div class="col-md-6 col-lg-3 home-beneficios--item">
+                        <h6 class="home-beneficios--heading">
+                            <img src="<?php bloginfo('template_url'); ?>/_assets/images/ico_fibraotica.svg">
+                            Fibra ótica
+                        </h6>
+                        <p>Com a tecnologia de fibra óptica da Copel Telecom, a qualidade do sinal se mantém desde a origem até o destino. Ou seja, lucro de ponta a ponta para seus negócios.</p>
+                    </div>
+                    <div class="col-md-6 col-lg-3 home-beneficios--item">
+                        <h6 class="home-beneficios--heading">
+                            <img src="<?php bloginfo('template_url'); ?>/_assets/images/ico_tecnologia.svg">
+                            Tecnologia
+                        </h6>
+                        <p>Há mais de 40 anos, a Copel é sinônimo de tecnologia e inovação a serviço do desenvolvimento do Paraná, sendo a empresa pública mais admirada pelos paranaenses.</p>
+                    </div>
+                </div>
+                <div class="hld-btn">
+                    <a class="btn-assine" href="<?php $p=get_page_by_title('Blog'); echo get_permalink($p->ID); ?>">Por que Copel?</a>
+                </div>
+            </div>
+		</section>
+
+		<section class="home-blog" id="blog">
+            <div class="container">
+                <div class="home-blog--heading">
+                    <h6>Blog Conecta</h6>
+                    <p>Aqui tem dicas, informações e muitos mais para você.</p>
+                </div>
+                <div class="row mx-0">
+               
+                    <?php
+                        query_posts(array(
+                            "post_type" => "post",
+                            'posts_per_page' => 3
+                        ));
+                        $i = 0;
+                    ?>
+                    <?php while (have_posts()): the_post(); ?>
+                        <?php
+                            if($i==0){
+                                $class = 'col-md-12 col-sm-12 col-12 float-left';
+                            }else{
+                                $class = 'col-md-4 col-sm-6 col-12 float-left';
+                            }
+                        ?>
+                        <article class="<?php echo $class; ?> blog-item">
+                            <a href="<?php the_permalink(); ?>">
+                                <span style="background-image: url(<?php echo get_the_post_thumbnail_url( $post->ID , "full" ); ?>);"></span>
+                                <h6>
+                                    <small><?php get_the_categorias($post->ID); ?></small>
+                                    <?php the_title(); ?>
+                                </h6>
+                            </a>
+                        </article>
+                        <?php if($i==2 && get_query_var( 'paged' )<=1): ?>
+                            <aside class="col-md-4 col-sm-6 col-12 blog-item-nav">
+                                <h6>Navegar por categorias</h6>
+                                <nav>
+                                    <?php
+                                        $categorias = get_terms("category");
+                                        if ($categorias) {
+                                            foreach ($categorias as $cat) {
+                                                echo '<a href="'. get_term_link($cat->slug, 'category') .'" class="bt-o">'.$cat->name.'</a>';
+                                            }
+                                        }
+                                    ?>
+                                </nav>
+                                <a href="<?php $p=get_page_by_title('Blog'); echo get_permalink($p->ID); ?>" class="btn-assine">Veja todas as publicações</a>
+                            </aside>
+                        <?php endif; ?>
+                    <?php $i++; endwhile; ?>
+                </div>
+            </div>
+		</section>
 
 	</section>
-	
-<?php get_footer('old'); ?>
+
+<?php get_footer(); ?>

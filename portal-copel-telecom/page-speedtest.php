@@ -151,7 +151,7 @@
 					<div class="col-md-7 offset-md-5">
 						<div class="speedtest-garantias--obs">
 							<p>Essa velocidade igual só é garantida quando a medição é feita através do cabo. Em transmissão através de rede sem fio, obstáculos como paredes, grandes espaços e velocidade do transmissor e receptor de wireless pode resultar em diferenças de velocidades.</p>
-							<p>Caso você queira saber mais sobre os indicadores de qualidade de acordo com as regras da Anatel, <a href="#">clique aqui</a>.</p>
+							<p>Caso você queira saber mais sobre os indicadores de qualidade de acordo com as regras da Anatel, <a href="https://www.anatel.gov.br/" target="_blank">clique aqui</a>.</p>
 						</div>
 					</div>
 				</div>
