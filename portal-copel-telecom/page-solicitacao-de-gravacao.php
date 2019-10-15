@@ -1,4 +1,4 @@
-<?php get_header('old');?>
+<?php get_header();?>
 	<section class="area-do-cliente" id="solicitar-gravacao">
 		<header>
 			<div class="breadcrumb">
@@ -150,4 +150,4 @@
 			<?php get_template_part('template','nao-encontrou'); ?>
 		</footer>
 	</section>
-<?php get_footer('old'); ?>
+<?php get_footer(); ?>

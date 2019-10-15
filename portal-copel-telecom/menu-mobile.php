@@ -28,7 +28,7 @@
 
 <div class="sb-slidebar sb-left">
 	<ul class="sb-menu">
-		<li class="sb-close"><a href="<?php bloginfo("url"); ?>/" class="logo-copel"><img src="<?php bloginfo("template_url"); ?>/_assets/old/images/logo-copel-white.svg" alt="<?php bloginfo("name"); ?>"></a></li>
+		<li class="sb-close"><a href="<?php bloginfo("url"); ?>/" class="logo-copel"><img src="<?php bloginfo("template_url"); ?>/_assets/images/logo-copel-white.svg" alt="<?php bloginfo("name"); ?>"></a></li>
 		<li class="sb-close"><a href="<?php $p = get_page_by_title("Para sua casa"); echo get_permalink($p->ID); ?>" class="current">Para sua casa</a></li>
 		<li class="sb-close"><a href="<?php $p = get_page_by_title("Para Empresas"); echo get_permalink($p->ID); ?>">Para empresas</a></li>
 		<li class="sb-close"><a href="<?php $p = get_page_by_title("Atendimento e Suporte"); echo get_permalink($p->ID); ?>">Atendimento e Suporte</a></li>

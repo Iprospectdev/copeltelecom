@@ -83,7 +83,7 @@
 									<span class="space-50"></span>
 									<div class="row">
 										<div class="col-md-6">
-											<img src="<?php bloginfo('template_url'); ?>/_assets/old/images/faq/fatura1-1.png" alt="">
+											<img src="<?php bloginfo('template_url'); ?>/_assets/images/faq/fatura1-1.png" alt="">
 										</div>
 										<div class="col-md-6">
 											<ol class="faq-faturas-ol">
@@ -130,7 +130,7 @@
 									<span class="space-50"></span>
 									<div class="row">
 										<div class="col-md-6">
-											<img src="<?php bloginfo('template_url'); ?>/_assets/old/images/faq/fatura1-2.png" alt="">
+											<img src="<?php bloginfo('template_url'); ?>/_assets/images/faq/fatura1-2.png" alt="">
 										</div>
 										<div class="col-md-6">
 											<span class="space-20"></span>
@@ -146,7 +146,7 @@
 									<span class="space-50"></span>
 									<div class="row">
 										<div class="col-md-6">
-											<img src="<?php bloginfo('template_url'); ?>/_assets/old/images/faq/fatura1-3.png" alt="">
+											<img src="<?php bloginfo('template_url'); ?>/_assets/images/faq/fatura1-3.png" alt="">
 										</div>
 										<div class="col-md-6">
 											<ol class="faq-faturas-ol">
@@ -160,7 +160,7 @@
 									<span class="space-50"></span>
 									<div class="row">
 										<div class="col-md-6">
-											<img src="<?php bloginfo('template_url'); ?>/_assets/old/images/faq/fatura1-4.png" alt="">
+											<img src="<?php bloginfo('template_url'); ?>/_assets/images/faq/fatura1-4.png" alt="">
 										</div>
 										<div class="col-md-6">
 											<ol class="faq-faturas-ol">
@@ -200,7 +200,7 @@
 									<span class="space-50"></span>
 									<div class="row">
 										<div class="col-md-6">
-											<img src="<?php bloginfo('template_url'); ?>/_assets/old/images/faq/fatura2-1.png" alt="">
+											<img src="<?php bloginfo('template_url'); ?>/_assets/images/faq/fatura2-1.png" alt="">
 										</div>
 										<div class="col-md-6">
 											<ol class="faq-faturas-ol">
@@ -247,7 +247,7 @@
 									<span class="space-50"></span>
 									<div class="row">
 										<div class="col-md-6">
-											<img src="<?php bloginfo('template_url'); ?>/_assets/old/images/faq/fatura2-2.png" alt="">
+											<img src="<?php bloginfo('template_url'); ?>/_assets/images/faq/fatura2-2.png" alt="">
 										</div>
 										<div class="col-md-6">
 											<ol class="faq-faturas-ol">
@@ -263,7 +263,7 @@
 									<span class="space-50"></span>
 									<div class="row">
 										<div class="col-md-6">
-											<img src="<?php bloginfo('template_url'); ?>/_assets/old/images/faq/fatura2-3.png" alt="">
+											<img src="<?php bloginfo('template_url'); ?>/_assets/images/faq/fatura2-3.png" alt="">
 										</div>
 										<div class="col-md-6">
 											<ol class="faq-faturas-ol">
@@ -301,7 +301,7 @@
 							</div>
 
 							<div id="glossario-de-documentos">
-								<img src="<?php bloginfo('template_url'); ?>/_assets/old/images/faq/glossario.png" style="width: 100%;" alt="">
+								<img src="<?php bloginfo('template_url'); ?>/_assets/images/faq/glossario.png" style="width: 100%;" alt="">
 							</div>
 
 							<span class="space-60"></span>

@@ -4,7 +4,7 @@
 	wp_redirect( $url );
 	exit;
 
-	get_header('old'); 
+	get_header(); 
 ?>
 	<section id="vantagens">
 		<header class="wow fadeIn">
@@ -26,11 +26,11 @@
 						<div class="owl-carousel">
 							<div>
 								<div class="video-gallery">
-									<a href="https://www.youtube.com/watch?v=42f8t17Oe1o" class="item-video"><i class="i-play-o"></i><img src="<?php bloginfo('template_url'); ?>/_assets/old/images/vantagens/slide-1.png" alt=""></a>
+									<a href="https://www.youtube.com/watch?v=42f8t17Oe1o" class="item-video"><i class="i-play-o"></i><img src="<?php bloginfo('template_url'); ?>/_assets/images/vantagens/slide-1.png" alt=""></a>
 								</div>
 							</div>
-							<div><img src="<?php bloginfo('template_url'); ?>/_assets/old/images/vantagens/slide-1.png" alt=""></div>
-							<div><img src="<?php bloginfo('template_url'); ?>/_assets/old/images/vantagens/slide-1.png" alt=""></div>
+							<div><img src="<?php bloginfo('template_url'); ?>/_assets/images/vantagens/slide-1.png" alt=""></div>
+							<div><img src="<?php bloginfo('template_url'); ?>/_assets/images/vantagens/slide-1.png" alt=""></div>
 						</div>
 					</div>
 				</div>
@@ -57,7 +57,7 @@
 				<h2>100% internet.<br>Mais liberdade de escolha</h2>
 				<p>Sem combos ou pacotes. A Copel Telecom é especialista em internet. Por isso, você não precisa contratar um pacote com telefonia fixa e outros serviços para ter a internet 100% fibra óptica.</p>
 				<div class="video-gallery">
-					<a href="https://www.youtube.com/watch?v=42f8t17Oe1o" class="item-video"><img src="<?php bloginfo('template_url'); ?>/_assets/old/images/vantagens/video.png" alt=""></a>
+					<a href="https://www.youtube.com/watch?v=42f8t17Oe1o" class="item-video"><img src="<?php bloginfo('template_url'); ?>/_assets/images/vantagens/video.png" alt=""></a>
 				</div>
 			</div>
 		</article>
@@ -70,4 +70,4 @@
 			</div>
 		</article>
 	</section>
-<?php get_footer('old'); ?>
+<?php get_footer(); ?>

@@ -4,7 +4,7 @@
 	wp_redirect( $url );
 	exit;
 
-	get_header('old'); 
+	get_header(); 
 
 	$services = new Services;
 	$profile = $services->profile();
@@ -100,4 +100,4 @@
 			google.maps.event.addDomListener(window, "load", initMap);
 		});
 	</script>
-<?php get_footer('old'); ?>
+<?php get_footer(); ?>

@@ -4,7 +4,7 @@
 	wp_redirect( $url );
 	exit;
 
-	get_header('old');
+	get_header();
 
 	$services = new Services;
 	$profile = $services->profile();
@@ -133,7 +133,7 @@
 										<canvas id="canvas_<?php echo $item["canvas"] ?>_concorrente" width="366" height="211"></canvas>
 									</span>
 									<span class="loaded">
-										<img src="<?php bloginfo('template_url'); ?>/_assets/old/images/comparativo/<?php echo ($item["img"] == "nuvem") ? $item["img"]."_concorrente" : $item["img"]; ?>.jpg" alt="">
+										<img src="<?php bloginfo('template_url'); ?>/_assets/images/comparativo/<?php echo ($item["img"] == "nuvem") ? $item["img"]."_concorrente" : $item["img"]; ?>.jpg" alt="">
 									</span>
 								</figure>
 							</div>
@@ -148,7 +148,7 @@
 										<canvas id="canvas_<?php echo $item["canvas"] ?>_copel" width="366" height="211"></canvas>
 									</span>
 									<span class="loaded">
-										<img src="<?php bloginfo('template_url'); ?>/_assets/old/images/comparativo/<?php echo ($item["img"] == "nuvem") ? $item["img"]."_copel" : $item["img"]; ?>.jpg" alt="">
+										<img src="<?php bloginfo('template_url'); ?>/_assets/images/comparativo/<?php echo ($item["img"] == "nuvem") ? $item["img"]."_copel" : $item["img"]; ?>.jpg" alt="">
 									</span>
 								</figure>
 							</div>
@@ -373,4 +373,4 @@
 	</script>
 
 
-<?php get_footer('old'); ?>
+<?php get_footer(); ?>

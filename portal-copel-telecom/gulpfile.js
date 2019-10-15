@@ -11,73 +11,74 @@
 	var uglify = require('gulp-uglify');
 	var watch = require('gulp-watch');
 	var writeFile = require('write');	
+	var bower = require('gulp-bower');
 	var flatten = require('gulp-flatten');
 
 	var fs = require('fs');
 	var pkg = JSON.parse(fs.readFileSync('./package.json'));
 
     var jsFiles =     	[
-	                        '_assets/old/bower_components/jquery/dist/jquery.min.js',
-	                        '_assets/old/bower_components/jquery-ui/jquery-ui.js',
-	                        // '_assets/old/bower_components/jquery-ui/ui/core.js',
-	                        '_assets/old/bower_components/jquery-ui/ui/widgets/droppable.js',
-	                        '_assets/old/bower_components/jquery-ui/ui/widgets/draggable.js',
-	                        '_assets/old/bower_components/jquery-ui/ui/widgets/autocomplete.js',
-	                        '_assets/old/bower_components/angular/angular.js',
-	                        '_assets/old/bower_components/bootstrap/dist/js/bootstrap.min.js',
-	                        '_assets/old/bower_components/Slidebars/dist/slidebars.min.js',
-	                        '_assets/old/bower_components/jquery-validation/dist/jquery.validate.min.js',
-	                        '_assets/old/bower_components/jquery-mask-plugin/dist/jquery.mask.min.js',
-	                        '_assets/old/bower_components/lightgallery/dist/js/lightgallery-all.js',
-	                        '_assets/old/bower_components/lightgallery/lib/jquery.mousewheel.min.js',
-	                        '_assets/old/bower_components/matchHeight/dist/jquery.matchHeight-min.js',
-	                        '_assets/old/bower_components/owl.carousel/dist/owl.carousel.js',
-	                        '_assets/old/bower_components/wow/dist/wow.js',
-	                        '_assets/old/bower_components/jssocials/dist/jssocials.min.js',
-	                        '_assets/old/scripts/*'
+	                        'bower_components/jquery/dist/jquery.min.js',
+	                        'bower_components/jquery-ui/jquery-ui.js',
+	                        // 'bower_components/jquery-ui/ui/core.js',
+	                        'bower_components/jquery-ui/ui/widgets/droppable.js',
+	                        'bower_components/jquery-ui/ui/widgets/draggable.js',
+	                        'bower_components/jquery-ui/ui/widgets/autocomplete.js',
+	                        'bower_components/angular/angular.js',
+	                        'bower_components/bootstrap/dist/js/bootstrap.min.js',
+	                        'bower_components/Slidebars/dist/slidebars.min.js',
+	                        'bower_components/jquery-validation/dist/jquery.validate.min.js',
+	                        'bower_components/jquery-mask-plugin/dist/jquery.mask.min.js',
+	                        'bower_components/lightgallery/dist/js/lightgallery-all.js',
+	                        'bower_components/lightgallery/lib/jquery.mousewheel.min.js',
+	                        'bower_components/matchHeight/dist/jquery.matchHeight-min.js',
+	                        'bower_components/owl.carousel/dist/owl.carousel.js',
+	                        'bower_components/wow/dist/wow.js',
+	                        'bower_components/jssocials/dist/jssocials.min.js',
+	                        'source/js/*'
                    		];
 
     var jsFilesAdmin =  [ 
-	                        '_assets/old/bower_components/bootstrap/dist/js/bootstrap.min.js',
-    						'_assets/old/bower_components/datatables.net/js/jquery.dataTables.min.js',
-    						'_assets/old/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js',
-	                        '_assets/old/js/admin.js'
+	                        'bower_components/bootstrap/dist/js/bootstrap.min.js',
+    						'bower_components/datatables.net/js/jquery.dataTables.min.js',
+    						'bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js',
+	                        'source/js/admin.js'
                    		];
-	var jsDest =		'_assets/old/js/';
+	var jsDest =		'_assets/js/';
 
 
     var cssFiles =   	[	
-    						'_assets/old/bower_components/bootstrap/dist/css/bootstrap.css',
-    						'_assets/old/bower_components/font-awesome/css/font-awesome.min.css',
-    						'_assets/old/bower_components/lightgallery/dist/css/lightgallery.min.css',
-    						'_assets/old/bower_components/Slidebars/dist/slidebars.min.css',
-    						'_assets/old/bower_components/wow/css/libs/animate.css',
-	                        '_assets/old/bower_components/owl.carousel/dist/assets/owl.carousel.css',
-    						'_assets/old/css/less.css'
+    						'bower_components/bootstrap/dist/css/bootstrap.css',
+    						'bower_components/font-awesome/css/font-awesome.min.css',
+    						'bower_components/lightgallery/dist/css/lightgallery.min.css',
+    						'bower_components/Slidebars/dist/slidebars.min.css',
+    						'bower_components/wow/css/libs/animate.css',
+	                        'bower_components/owl.carousel/dist/assets/owl.carousel.css',
+    						'source/css/less.css'
     					];
 
     var cssFilesAdmin = [	
-    						'_assets/old/bower_components/bootstrap/dist/css/bootstrap.min.css',
-    						'_assets/old/bower_components/font-awesome/css/font-awesome.min.css',
-    						'_assets/old/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css',
-    						'_assets/old/css/admin.css'
+    						'bower_components/bootstrap/dist/css/bootstrap.min.css',
+    						'bower_components/font-awesome/css/font-awesome.min.css',
+    						'bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css',
+    						'source/css/admin.css'
     					];
 
-	var cssDest =		'_assets/old/css/';
+	var cssDest =		'_assets/css/';
 
 	var fontsFiles = 	[
-							'_assets/old/bower_components/font-awesome/fonts/**',
-							'_assets/old/bower_components/bootstrap/dist/fonts/**',
-							'_assets/old/bower_components/lightgallery/dist/fonts/**'
+							'bower_components/font-awesome/fonts/**',
+							'bower_components/bootstrap/dist/fonts/**',
+							'bower_components/lightgallery/dist/fonts/**'
 						];
-	var fontsDest = 	'_assets/old/fonts/';
+	var fontsDest = 	'_assets/fonts/';
 
 
 
 	var phpFiles = 	[
-							// '_assets/old/bower_components/sharrre/sharrre.php'
+							// 'bower_components/sharrre/sharrre.php'
 					];
-	var phpDest = 	'_assets/old/php/';
+	var phpDest = 	'_assets/php/';
 
 
 	gulp.task('writeThemeName', function() {
@@ -85,6 +86,11 @@
 		  if (err) console.log(err);
 		});
 	});	
+
+	gulp.task('bower', function() {
+	  return bower()
+	    .pipe(gulp.dest('bower_components'))
+	});
 
 	gulp.task('copy-bower-fonts', function() {
 		gulp.src(fontsFiles)
@@ -99,23 +105,23 @@
 	});
 
 	gulp.task('less', function() {
-		gulp.src('_assets/old/less/import.less')
+		gulp.src('source/less/import.less')
 			.pipe(less())
 			.pipe(rename('less.css'))
-			.pipe(gulp.dest('_assets/old/css'));
+			.pipe(gulp.dest('source/css'));
 
-		gulp.src('_assets/old/less/admin.less')
+		gulp.src('source/less/admin.less')
 			.pipe(less())
 			.pipe(rename('admin.css'))
-			.pipe(gulp.dest('_assets/old/css'))
+			.pipe(gulp.dest('source/css'))
 			.pipe(liveReload({auto: true}));
 
-		gulp.src("_assets/old/css/less.css")
+		gulp.src("source/css/less.css")
 			.pipe(autoprefixer({
 				browsers: ['last 4 versions'],
 				cascade: false
 			}))
-			.pipe(gulp.dest('/_assets/old/css/'))
+			.pipe(gulp.dest('/source/css/'))
 			.pipe(liveReload({auto: true}));
 
 		gulp.src(cssFiles)
@@ -135,12 +141,12 @@
 	});
 
 	gulp.task('prefix', function () {
-		gulp.src("_assets/old/css/less.css")
+		gulp.src("source/css/less.css")
 		.pipe(autoprefixer({
 			browsers: ['last 4 versions'],
 			cascade: false
 		}))
-		.pipe(gulp.dest('/_assets/old/css/'))
+		.pipe(gulp.dest('/source/css/'))
 		.pipe(liveReload({auto: false}));
 	});
 
@@ -152,7 +158,7 @@
 			.pipe(gulp.dest(jsDest))
 	        .pipe(liveReload({auto: false}));
 
-	    gulp.src('_assets/old/scripts/compare/*')
+	    gulp.src('source/js/compare/*')
 			.pipe(concat('compare.min.js'))
 			.pipe(gulp.dest(jsDest))
 			.pipe(uglify())
@@ -177,7 +183,7 @@
 	    watch(jsFiles, function() {
 	        gulp.start('js');
 	    });
-	    watch('_assets/old/less/*.less', function() {
+	    watch('source/less/*.less', function() {
 	        gulp.start('less');
 	    });
 	});

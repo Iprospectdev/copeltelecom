@@ -4,6 +4,8 @@
 
 	global $wpdb;
 
+	$titan = TitanFramework::getInstance( 'copeltelecom' );
+
 	$observacoes = "";
 
 	if ($_POST["recebimento_fatura"]) {
@@ -126,7 +128,7 @@
 
 	$from = 'Copel Telecom <'.get_bloginfo("admin_email").'>';
 
-	$destinatario = (get_field('form_rav', 'option')) ? get_field('form_rav', 'option') : get_bloginfo("admin_email");
+	$destinatario = ($titan->getOption( 'form_rav' )) ? $titan->getOption( 'form_rav' ) : get_bloginfo("admin_email");
 
 	$assunto = "[". get_bloginfo("name") ."] Rede de Alta Velocidade";
 

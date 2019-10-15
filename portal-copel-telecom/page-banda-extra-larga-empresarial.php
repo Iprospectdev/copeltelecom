@@ -1,4 +1,4 @@
-<?php get_header('old'); ?>
+<?php get_header(); ?>
 
 	<section id="home-empresas-banda-extra-larga" class="empresas home-empresas-intena">
 		
@@ -58,7 +58,7 @@
 						<h6 class="main-tt-barra">Como funciona</h6>
 						<p>Por meio de sua rede 100% em fibra Óptica, a Copel Telecom deixa sua empresa conectada com a internet de alta velocidade e disponibilidade.</p>
 					</div>
-					<div class="col-sm-8"><img src="<?php bloginfo('template_url'); ?>/_assets/old/images/empresas/como-funciona.png" alt=""></div>
+					<div class="col-sm-8"><img src="<?php bloginfo('template_url'); ?>/_assets/images/empresas/como-funciona.png" alt=""></div>
 				</div>
 			</div>
 		</article>
@@ -86,4 +86,4 @@
 
 	</section>
 	
-<?php get_footer('old'); ?>
+<?php get_footer(); ?>

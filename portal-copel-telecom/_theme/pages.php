@@ -6,48 +6,21 @@
 #					#
 #...................#
 
-$page = get_page_by_title("Disponibilidade", "", "page" );
-if (!$page) {
-	$page_args = array(
-		'post_content'   => "",
-		'post_title'     => "Disponibilidade",
-		'post_status'    => 'publish',
-		'post_type'      => 'page'
-	);
-	wp_insert_post( $page_args );
-}
 
-$page = get_page_by_title("Sucesso", "", "page" );
-if (!$page) {
-	$page_args = array(
-		'post_content'   => "",
-		'post_title'     => "Sucesso",
-		'post_status'    => 'publish',
-		'post_type'      => 'page'
-	);
-	wp_insert_post( $page_args );
-}
 
-$page = get_page_by_title("Sobre Nós", "", "page" );
-if (!$page) {
-	$page_args = array(
-		'post_content'   => "",
-		'post_title'     => "Sobre Nós",
-		'post_status'    => 'publish',
-		'post_type'      => 'page'
-	);
-	wp_insert_post( $page_args );
-}
 
-$page = get_page_by_title("App Copel", "", "page" );
-if (!$page) {
-	$page_args = array(
+
+
+
+$page_bussola = get_page_by_title("Bussola", "", "page" );
+if (!$page_bussola) {
+	$page_bussola_args = array(
 		'post_content'   => "",
-		'post_title'     => "App Copel",
+		'post_title'     => "Bussola",
 		'post_status'    => 'publish',
 		'post_type'      => 'page'
 	);
-	wp_insert_post( $page_args );
+	wp_insert_post( $page_bussola_args );
 }
 
 $page_rav = get_page_by_title("RAV", "", "page" );
@@ -270,40 +243,26 @@ if (!$page_netflix) {
 	wp_insert_post( $page_netflix_args );
 }
 
-$page_parcerias = get_page_by_title("Parcerias", "", "page" );
-if (!$page_parcerias) {
-	$page_parcerias_args = array(
+$page_esporteinterativo = get_page_by_title("Esporte Interativo", "", "page" );
+if (!$page_esporteinterativo) {
+	$page_esporteinterativo_args = array(
 		'post_content'   => "",
-		'post_title'     => "Parcerias",
+		'post_title'     => "Esporte Interativo",
 		'post_status'    => 'publish',
 		'post_type'      => 'page'
 	);
-	wp_insert_post( $page_parcerias_args );
-} else {
-	$page_esporteinterativo = get_page_by_title("Esporte Interativo", "", "page" );
-	if (!$page_esporteinterativo) {
-		$page_esporteinterativo_args = array(
-			'post_parent'   => $page_parcerias->ID,
-			'post_content'   => "",
-			'post_title'     => "Esporte Interativo",
-			'post_status'    => 'publish',
-			'post_type'      => 'page'
-		);
-		wp_insert_post( $page_esporteinterativo_args );
-	}
+	wp_insert_post( $page_esporteinterativo_args );
+}
 
-	$page_cartoonnetwork = get_page_by_title("Cartoon Network", "", "page" );
-	if (!$page_cartoonnetwork) {
-		$page_cartoonnetwork_args = array(
-			'post_parent'   => $page_parcerias->ID,
-			'post_content'   => "",
-			'post_title'     => "Cartoon Network",
-			'post_status'    => 'publish',
-			'post_type'      => 'page'
-		);
-		wp_insert_post( $page_cartoonnetwork_args );
-	}
-
+$page_cartoonnetwork = get_page_by_title("Cartoon Network", "", "page" );
+if (!$page_cartoonnetwork) {
+	$page_cartoonnetwork_args = array(
+		'post_content'   => "",
+		'post_title'     => "Cartoon Network",
+		'post_status'    => 'publish',
+		'post_type'      => 'page'
+	);
+	wp_insert_post( $page_cartoonnetwork_args );
 }
 
 

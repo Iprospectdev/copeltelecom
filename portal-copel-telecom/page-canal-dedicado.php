@@ -1,5 +1,5 @@
 <?php
-	get_header('old');
+	get_header();
 	$services = new Services;
 	$profile = $services->profile();
 	$planos = json_decode($services->planos("J",$profile->cidade));
@@ -61,7 +61,7 @@
 		<article>
 			<div class="empresas-vantagens">
 				<div class="container">
-					<img src="<?php bloginfo('template_url'); ?>/_assets/old/images/empresas/highlight-canaldireto.png" alt="">
+					<img src="<?php bloginfo('template_url'); ?>/_assets/images/empresas/highlight-canaldireto.png" alt="">
 					<h4>Integre benefícios às telecomunicações da sua empresa.</h4>
 					<ul class="row">
 						<li class="col-sm-15 col-xs-12" data-mh="ev-group">
@@ -125,4 +125,4 @@
 
 	</section>
 
-<?php get_footer('old'); ?>
+<?php get_footer(); ?>

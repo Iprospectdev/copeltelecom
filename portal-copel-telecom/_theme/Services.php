@@ -4,14 +4,7 @@ session_start();
 
 class Services {
 
-	public function convertChars($string){
-	    $return = preg_replace(array("/(á|à|ã|â|ä)/","/(Á|À|Ã|Â|Ä)/","/(é|è|ê|ë)/","/(É|È|Ê|Ë)/","/(í|ì|î|ï)/","/(Í|Ì|Î|Ï)/","/(ó|ò|õ|ô|ö)/","/(Ó|Ò|Õ|Ô|Ö)/","/(ú|ù|û|ü)/","/(Ú|Ù|Û|Ü)/","/(ñ)/","/(Ñ)/"),explode(" ","a A e E i I o O u U n N"),$string);
-	    return strtoupper($return);
-	}		
-
-	public function cidades($uf="pr",$q="") {
-
-		$q = ($q) ? $this->convertChars($q) : '';
+	public function cidades($uf="pr") {
 
 		$json = @file_get_contents(WEBSERVICE."/wvtweb/rest/portal/cidades/".$uf);		
 		if (!$json) {
@@ -20,13 +13,7 @@ class Services {
 		$cidades = array();
 		if ($json) {
 			foreach (json_decode($json) as $city) {
-				if($q!="") {
-					if (strpos($city->nome, $q) !== false) {
-					    $cidades[] = $city->nome;
-					}
-				}else {
-					$cidades[] = $city->nome;	
-				}
+				$cidades[] = $city->nome;
 			}
 		}
 		return json_encode($cidades);
@@ -35,25 +22,22 @@ class Services {
 	public function planos($tipo="F", $cidade="CURITIBA") {
 
 		$cidade = preg_replace("/&([a-z])[a-z]+;/i", "$1", htmlentities(trim($cidade)));
-// echo $cidade;
+
 		$url = WEBSERVICE."/wvtweb/rest/portal/produtos/".$tipo."/".str_replace(' ','%20', $cidade);
 		$json = @file_get_contents($url);
-		
-		// if (!$json) {
-		// 	//$json = @file_get_contents(get_bloginfo("template_url") .  "/_theme/curitiba_f.json");
-		// 	if ($tipo == "F") {
-		// 		$json = '{"bel":[{"id":38,"nomeProduto":"COPEL FIBRA 50 Mbps","precoProduto":139.9,"cidade":null,"tipoPessoa":"Fí­sica"},{"id":40,"nomeProduto":"COPEL FIBRA 75 Mbps","precoProduto":174.9,"cidade":null,"tipoPessoa":"Fí­sica"},{"id":42,"nomeProduto":"COPEL FIBRA 150 Mbps","precoProduto":249.9,"cidade":null,"tipoPessoa":"Fí­sica"}]}';
-		// 	} else {
-		// 		$json = '{"bel":[{"id":41,"nomeProduto":"COPEL FIBRA 150 Mbps","precoProduto":249.9,"cidade":null,"tipoPessoa":"Jurídica"}]}';
-		// 	}
-		// }
-
+		if (!$json) {
+			//$json = @file_get_contents(get_bloginfo("template_url") .  "/_theme/curitiba_f.json");
+			if ($tipo == "F") {
+				$json = '{"bel":[{"id":38,"nomeProduto":"COPEL FIBRA 50 Mbps","precoProduto":139.9,"cidade":null,"tipoPessoa":"Fí­sica"},{"id":40,"nomeProduto":"COPEL FIBRA 75 Mbps","precoProduto":174.9,"cidade":null,"tipoPessoa":"Fí­sica"},{"id":42,"nomeProduto":"COPEL FIBRA 150 Mbps","precoProduto":249.9,"cidade":null,"tipoPessoa":"Fí­sica"}]}';
+			} else {
+				$json = '{"bel":[{"id":41,"nomeProduto":"COPEL FIBRA 150 Mbps","precoProduto":249.9,"cidade":null,"tipoPessoa":"Jurídica"}]}';
+			}
+		}
 		return $json;
 	}
 
 	public function site($session) {
 		$_SESSION["copeltelecom"] = json_encode($session);
-		return json_encode($_SESSION["copeltelecom"]);
 	}
 
 	public function exit_session() {

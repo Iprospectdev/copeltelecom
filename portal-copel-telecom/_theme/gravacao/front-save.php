@@ -4,6 +4,8 @@
 
 	global $wpdb;
 
+	$titan = TitanFramework::getInstance( 'copeltelecom' );
+
 	#
 	# Salva no Banco de Dados
 	#
@@ -40,7 +42,7 @@
 
 	$from = 'Copel Telecom <'.get_bloginfo("admin_email").'>';
 
-	$destinatario = (get_field('solicitacao_de_gravacao', 'option')) ? get_field('solicitacao_de_gravacao', 'option') : get_bloginfo("admin_email");
+	$destinatario = ($titan->getOption( 'solicitacao_de_gravacao' )) ? $titan->getOption( 'solicitacao_de_gravacao' ) : get_bloginfo("admin_email");
 
 	$assunto = "[". get_bloginfo("name") ."] Solicitação de Gravação";
 

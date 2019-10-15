@@ -1,5 +1,5 @@
 <?php
-	get_header('old'); 
+	get_header(); 
 
 ?>
 	<section id="netflix-404">
@@ -40,4 +40,4 @@
 			</div>
 		</article>
 	</section>
-<?php get_footer('old'); ?>
+<?php get_footer(); ?>

@@ -1,4 +1,4 @@
-<?php get_header('old'); ?>
+<?php get_header(); ?>
 
 	<script src='https://www.google.com/recaptcha/api.js?hl=pt-BR'></script>
 
@@ -70,4 +70,4 @@
 
 	</section>
 
-<?php get_footer('old'); ?>
+<?php get_footer(); ?>

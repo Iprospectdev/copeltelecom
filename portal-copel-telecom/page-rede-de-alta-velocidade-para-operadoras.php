@@ -1,4 +1,4 @@
-<?php get_header('old'); ?>
+<?php get_header(); ?>
 
 	<section class="empresas home-empresas-intena">
 		
@@ -65,7 +65,7 @@
 							<a href="<?php bloginfo('template_url'); ?>/_assets/pdf/ehsn.v.20121001.pdf" target="_blank">Confira as características do serviço</a>
 						</p>
 					</div>
-					<div class="col-sm-8"><img src="<?php bloginfo('template_url'); ?>/_assets/old/images/empresas/operadoras-clientes.png" alt=""></div>
+					<div class="col-sm-8"><img src="<?php bloginfo('template_url'); ?>/_assets/images/empresas/operadoras-clientes.png" alt=""></div>
 				</div>
 			</div>
 		</article>
@@ -100,7 +100,7 @@
 						
 					</div>
 					<div class="col-md-6 col-sm-12 col-xs-12">
-						<img src="<?php bloginfo('template_url'); ?>/_assets/old/images/copel-telecom/mapa-pr.png" alt="">
+						<img src="<?php bloginfo('template_url'); ?>/_assets/images/copel-telecom/mapa-pr.png" alt="">
 					</div>
 				</div>
 			</div>
@@ -130,4 +130,4 @@
 
 	</section>
 	
-<?php get_footer('old'); ?>
+<?php get_footer(); ?>

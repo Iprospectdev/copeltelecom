@@ -2,110 +2,91 @@
 	get_header();
 	the_post();
 ?>
-	<section class="blog-single">
-
+	<section class="blog" id="blog-single">
 		<header class="blog-header">
 			<div class="container">
-				<div class="main-breadcrumb">
-					<a href="<?php echo home_url(); ?>"><i class="fas fa-home"></i>Home</a>
-					<a href="<?php echo bloginfo('url'); ?>/blog">Blog Conecta</a>
-				</div>
-
 				<div class="row">
-					<div class="col-md-6 col-12">
-						<h2>Blog Conecta</h2>
+					<div class="col-sm-6">
+						<h1 class="main-tt main-tt-barra">Blog Conecta</h1>
 					</div>
-					<div class="col-md-6 col-12">
-						<form action="<?php bloginfo("url"); ?>/">
+					<div class="col-sm-6">
+						<form action="<?php bloginfo("url"); ?>/" class="blog-search">
 							<input type="hidden" name="post_type" value="post">
-							<input type="text" name="s" placeholder="Buscar assunto do blog">
-							<button type="submit"><i class="fas fa-search"></i></button>
+							<label for="" class="autocomplete">
+								<input type="text" name="s" placeholder="Buscar assunto">
+								<button type="submit"><i class="i-faq-search"></i></button>
+							</label>
 						</form>
 					</div>
 				</div>
 			</div>
 		</header>
-
 		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-sm-12 col-xs-12">
-					<div class="blog-single-content">
-						<article>
-							<header class="blog-single-header">
-								<h1>
-									<small><?php get_the_categorias($post->ID); ?></small>
-									<?php the_title(); ?>
-								</h1>
-								<div class="blog-single-header--share">
-									<a href="#">
-										<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-										    <g id="01_blog" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-										        <g id="02_post" transform="translate(-847.000000, -312.000000)" stroke="#5F5F5F">
-										            <g id="Group-5" transform="translate(848.000000, 313.000000)">
-										                <path d="M17.134409,9.85687415 L15.7194209,9.85687415 C15.1556012,9.85687415 15.0377611,10.0880221 15.0377611,10.6722372 L15.0377611,11.9535221 L17.134409,11.9535221 L16.9154983,14.0501701 L15.0377611,14.0501701 L15.0377611,21.3893444 L11.8923359,21.3893444 L11.8923359,14.0501701 L9.79568793,14.0501701 L9.79568793,11.9535221 L11.8923359,11.9535221 L11.8923359,9.53417347 C11.8923359,7.67955102 12.8681429,6.71144898 15.0681276,6.71144898 L17.134409,6.71144898 L17.134409,9.85687415 Z M14.0501701,0 C6.29130357,0 0,6.29085034 0,14.0501701 C0,21.8103963 6.29130357,28.1003401 14.0501701,28.1003401 C21.8094898,28.1003401 28.1003401,21.8103963 28.1003401,14.0501701 C28.1003401,6.29085034 21.8094898,0 14.0501701,0 Z" id="Page-1"></path>
-										            </g>
-										        </g>
-										    </g>
-										</svg>
-									</a>
-									<a href="#">
-										<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-										    <g id="01_blog" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-										        <g id="02_post" transform="translate(-881.000000, -312.000000)" stroke="#5F5F5F">
-										            <g id="Group-5" transform="translate(848.000000, 313.000000)">
-										                <path d="M53.9535849,11.8214717 C54.1402812,15.9492642 51.0618469,20.5517779 45.611594,20.5517779 C43.9760617,20.5517779 42.4532774,20.0788825 41.1646624,19.2663788 C41.1518812,19.2581625 41.1591847,19.2385346 41.1742482,19.239904 C42.6851642,19.4028612 44.1883202,18.9865672 45.3956836,18.0663383 C45.4166813,18.0503621 45.4052695,18.0165839 45.3787942,18.0156709 C44.1298921,17.9590696 43.0827497,17.1219169 42.7162042,15.9798472 C43.177239,16.0679445 43.6300573,16.0419261 44.0417933,15.9296363 C42.6308443,15.6457165 41.6562807,14.3744678 41.6882336,13.0151218 C42.0844496,13.2351368 42.536355,13.3665981 43.0174745,13.3821178 C41.7101441,12.5084481 41.3408598,10.783019 42.109099,9.46338527 C43.5561092,11.2394817 45.7193209,12.4080263 48.1582406,12.5299019 C47.7300717,10.6944652 49.1232184,8.92612864 51.0180257,8.92612864 C51.861126,8.92612864 52.624344,9.28262603 53.1593269,9.85320444 C53.7974721,9.72813365 54.3990997,9.49990229 54.9454944,9.18676886 C54.9724261,9.17124912 55.0048355,9.19772396 54.9943367,9.22739404 C54.7642758,9.87465819 54.3132833,10.4169359 53.7335663,10.7647605 C54.3214998,10.6940088 54.8825015,10.5392679 55.4042468,10.3087542 C55.4083551,10.3069284 55.4120068,10.311493 55.4097245,10.3156012 C55.0180731,10.8989605 54.5241725,11.4111117 53.9535849,11.8214717 Z M47.6734694,0 C39.8591579,0 33.5238095,6.33478973 33.5238095,14.1498881 C33.5238095,21.9640735 39.8591579,28.2993197 47.6734694,28.2993197 C55.4877809,28.2993197 61.8231293,21.9640735 61.8231293,14.1498881 C61.8231293,6.33478973 55.4877809,0 47.6734694,0 Z" id="Stroke-1"></path>
-										            </g>
-										        </g>
-										    </g>
-										</svg>
-									</a>
-									<a href="#">
-										<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-										    <g id="01_blog" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-										        <g id="02_post" transform="translate(-914.000000, -312.000000)" stroke="#5F5F5F">
-										            <g id="Group-5" transform="translate(848.000000, 313.000000)">
-										                <path d="M76.4521775,10.3137784 C77.2445942,10.3174301 77.717488,10.1006103 78.0004939,9.69618444 C78.440979,9.06580952 78.3026712,8.15105837 77.6978601,7.70189912 C77.0145377,7.19476912 75.869733,7.3257739 75.38771,7.97577671 C75.0321267,8.45597542 74.9965227,8.98638502 75.2498587,9.51359938 C75.5264742,10.0878294 76.034972,10.3083009 76.4521775,10.3137784 Z M75.2781593,19.9506179 L78.052074,19.9506179 L78.052074,11.5083412 L75.2781593,11.5083412 L75.2781593,19.9506179 Z M88.223399,19.9583777 C88.2302459,19.8634335 88.2398316,19.7926818 88.2398316,19.7219301 C88.2407445,18.1822816 88.2494173,16.6430895 88.234354,15.1038975 C88.2297894,14.6725402 88.1946419,14.2325103 88.1015238,13.8125646 C87.817605,12.5335563 87.0963963,11.6311296 85.7617037,11.364099 C84.4575941,11.1030023 83.3365253,11.4074629 82.5409135,12.5554665 C82.5290455,12.5728121 82.5039401,12.5810284 82.4528165,12.6148066 L82.4528165,11.5110799 L79.6537964,11.5110799 L79.6537964,19.9446839 L82.4587505,19.9446839 L82.4587505,19.6242471 C82.4587505,18.1211156 82.4619457,16.6179841 82.4569246,15.1148526 C82.4555552,14.6958198 82.5892984,14.3320191 82.864088,14.0229939 C83.2662303,13.5706394 83.7706199,13.4209197 84.3603678,13.5487292 C84.9295749,13.6719741 85.2112115,14.0741177 85.3289785,14.5995062 C85.3979041,14.9057927 85.4248353,15.2262294 85.4271176,15.5407322 C85.4376163,16.9082943 85.4312258,18.2753999 85.4325952,19.6425056 C85.4325952,19.7465791 85.4412679,19.8501961 85.446289,19.9583777 L88.223399,19.9583777 Z M81.1966352,4.83491738e-06 C89.0025782,-0.00638564218 95.3396291,6.32292546 95.3469325,14.1343708 C95.3542358,21.9572277 89.0199238,28.2984068 81.1975482,28.2993197 C73.3838453,28.2997762 67.0755515,21.9983093 67.0477074,14.1644973 C67.0203197,6.35807308 73.3646739,0.00639531201 81.1966352,4.83491738e-06 Z" id="Stroke-5"></path>
-										            </g>
-										        </g>
-										    </g>
-										</svg>
-									</a>
+			<div class="blog-margin-top">
+				<div class="row">
+					<div class="col-md-8 col-sm-12 col-xs-12">
+						<div id="blog-post">
+							<article>
+								<header>
+									<div class="social-share"></div>
+									<div class="clearifx"></div>
+									<h1>
+										<small><?php get_the_categorias($post->ID); ?></small>
+										<?php the_title(); ?>
+									</h1>
+								</header>
+								<div class="post-content">
+									<?php the_content(); ?>
 								</div>
-							</header>
-							<?php if ( get_the_post_thumbnail_url( $post->ID ) ):?>
-								<figure class="blog-single-figure">
-									<?php the_post_thumbnail( $post->ID , "full" ); ?>
-								</figure>
-							<?php endif; ?>
-							<div class="post-content">
-								<?php the_content(); ?>
-							</div>
-						</article>
+								<?php query_posts("post_type=post&posts_per_page=2&orderby=rand"); ?>
+									<?php if (have_posts()): $i = 0; ?>
+								<footer>
+									<h6>Veja também</h6>
+									<div class="row highlight-blog">
+										<?php while(have_posts()): the_post(); $i++; ?>
+											<a href="<?php the_permalink(); ?>" class="highlight-blog-item col-md-6 col-xs-12 bgcolor" data-color="#<?php echo ($i % 2 == 0)  ? "737c8f" : "ff9600"; ?>">
+												<?php if (has_post_thumbnail( $post->ID )): ?>
+													<?php echo get_the_post_thumbnail( $post->ID , "thumb-blog" ); ?>
+												<?php endif ?>
+												<dl>
+													<dt>
+														<span><?php get_the_categorias($post); ?></span>
+														<?php echo $post->post_title; ?>
+													</dt>
+													<dd>
+														<?php 
+															if (get_post_meta($post->ID, "gravata", true)) {
+																echo wpautop(get_post_meta($post->ID, "gravata", true));
+															} else {
+																the_excerpt();
+															}
+														?>
+													</dd>
+												</dl>
+											</a>
+										<?php endwhile; ?>
+									</div>
+								</footer>
+									<?php endif ?>
+								<?php wp_reset_query(); ?>
+							</article>
+						</div>
 					</div>
-				</div>
-				<div class="col-md-4 col-sm-12 col-xs-12">
-					<?php get_sidebar(); ?>
+					<div class="col-md-4 col-sm-12 col-xs-12">
+						<?php get_sidebar(); ?>
+					</div>
 				</div>
 			</div>
-			
-			<?php query_posts("post_type=post&posts_per_page=3&orderby=rand"); if (have_posts()): ?>
-				<footer class="blog-single-footer">
-					<h5>Veja também</h5>
-					<div class="row mx-0">
-						<?php while (have_posts()): the_post(); ?>
-							<article class="blog-item col-md-4">
-								<a href="<?php the_permalink(); ?>">
-			                        <span style="background-image: url(<?php echo get_the_post_thumbnail_url( $post->ID , "full" ); ?>);"></span>
-			                        <h6>
-			                            <small><?php get_the_categorias($post->ID); ?></small>
-			                            <?php the_title(); ?>
-			                        </h6>
-			                    </a>
-							</article>
-						<?php endwhile; ?>
-					</div>
-				</footer>
-			<?php endif; wp_reset_query(); ?>
 		</div>
-	</section>	
+	</section>
+	<script>
+		jQuery(document).ready(function($) {
+	        $(".social-share").jsSocials({
+			    showLabel: false,
+			    showCount: false,
+			    text: "<?php the_title(); ?>",
+			    shares: ["facebook", "twitter", "linkedin"]
+	        });
+		});
+	</script>	
 <?php get_footer(); ?>

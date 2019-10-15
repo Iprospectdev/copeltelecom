@@ -1,4 +1,4 @@
-<?php get_header('old'); /* Template Name: Atendimento */ ?>
+<?php get_header();?>
 	<section id="atendimento-e-suporte">
 
 		<header>
@@ -117,4 +117,4 @@
 		});
 	</script>
 
-<?php get_footer('old'); ?>
+<?php get_footer(); ?>

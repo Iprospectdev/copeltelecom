@@ -1,20 +1,9 @@
 <?php
 
-@ini_set( 'upload_max_size' , '64M' );
-@ini_set( 'post_max_size', '64M');
-@ini_set( 'max_execution_time', '300' );
-
 setlocale(LC_ALL, "pt_BR", "pt_BR.iso-8859-1", "pt_BR.utf-8", "portuguese");
 date_default_timezone_set('America/Sao_Paulo');
 
 add_theme_support( 'post-thumbnails' );
-
-
-function cc_mime_types($mimes) {
-       $mimes['svg'] = 'image/svg+xml';
-       return $mimes;
-}
-add_filter('upload_mimes', 'cc_mime_types');
 
 /*
 
@@ -36,21 +25,22 @@ add_filter('upload_mimes', 'cc_mime_types');
 
 switch (get_bloginfo("url")) {
 	case 'http://www.copeltelecom.com/site':
-		define("WEBSERVICE", "http://webprd");
-		define("LINK_WVT", "http://www.copel.com/wvtweb/site/verificar_disponibilidade.jsf");
+		define(WEBSERVICE, "http://webprd");
+		define(LINK_WVT, "http://www.copel.com/wvtweb/site/verificar_disponibilidade.jsf");
 		break;
 	case 'http://hml.copeltelecom.com/site':
-		define("WEBSERVICE", "http://webhml");
-		define("LINK_WVT", "http://hml.copel.com/wvtweb/site/verificar_disponibilidade.jsf");
+		define(WEBSERVICE, "http://webhml");
+		define(LINK_WVT, "http://hml.copel.com/wvtweb/site/verificar_disponibilidade.jsf");
 		break;
 	default:
-		define("WEBSERVICE", "http://hml.copeltelecom.com");
-		define("LINK_WVT", "http://www.copel.com/wvtweb/site/verificar_disponibilidade.jsf");
+		define(WEBSERVICE, "http://hml.copel.com");
+		define(LINK_WVT, "http://www.copel.com/wvtweb/site/verificar_disponibilidade.jsf");
 		break;
 }
 
 # Frameworks
 include dirname(__FILE__) . "/_theme/metabox/meta-box.php";
+include dirname(__FILE__) . "/_theme/titan-framework/titan-framework-embedder.php";
 
 # Post Types
 include dirname(__FILE__) .  "/_theme/posttypes.php";
@@ -63,35 +53,37 @@ include dirname(__FILE__) . "/_theme/pages-empresas.php";
 
 # Forms
 include dirname(__FILE__) . "/_theme/contato/contato-admin.php";
-include dirname(__FILE__) . "/_theme/empresas/empresas-admin.php";
-include dirname(__FILE__) . "/_theme/ligamos/ligamos-admin.php";
-// include dirname(__FILE__) . "/_theme/ligar/ligar-admin.php";
-// include dirname(__FILE__) . "/_theme/gravacao/gravacao-admin.php";
-// include dirname(__FILE__) . "/_theme/rav/rav-admin.php";
-// include dirname(__FILE__) . "/_theme/ipdireto/ipdireto-admin.php";
+include dirname(__FILE__) . "/_theme/ligar/ligar-admin.php";
+include dirname(__FILE__) . "/_theme/gravacao/gravacao-admin.php";
+include dirname(__FILE__) . "/_theme/rav/rav-admin.php";
+include dirname(__FILE__) . "/_theme/ipdireto/ipdireto-admin.php";
+ 
+# Options titan framework
+include dirname(__FILE__) .  "/_theme/option.php"; 
 
 # Classes
 include dirname(__FILE__) .  "/_theme/Services.php";
 include dirname(__FILE__) .  "/_theme/custom_search.php";
 
 # Scripts
+function theme_scripts() {
 
-function vars(){ 
-	session_start();
-?>
-	<script type="text/javascript">
-		var copel = <?php echo json_encode(array(
+	wp_enqueue_style ( 'css', get_template_directory_uri() . '/_assets/css/all.min.css' );
+	wp_enqueue_script( 'js', get_template_directory_uri() . '/_assets/js/all.min.js');
+
+	wp_localize_script(
+		'js',
+		'copel',
+		array(
 			'ajax_url'      => admin_url( 'admin-ajax.php' ),
 			'template' 		=> get_bloginfo('template_url'), 
 			'url' 			=> get_bloginfo('url')."/",
-			'query_vars' 	=> json_encode( $wp_query->query ),
-			'session'		=> $_SESSION['copeltelecom'] ? json_decode($_SESSION['copeltelecom']) : ''
-		)); ?>;
-	</script>
-<?php 
-}
-add_action ( 'wp_head', 'vars' );
+			'query_vars' 	=> json_encode( $wp_query->query )
+		)
+	);
 
+}
+add_action( 'wp_enqueue_scripts', 'theme_scripts' );
 
 # Custom Admin
 function remove_admin_bar_links() {
@@ -115,11 +107,33 @@ function remove_menus(){
 add_action( 'admin_menu', 'remove_menus' );
 
 function custom_admin() {
-	wp_enqueue_style ( 'custom-admin', get_template_directory_uri() . '/_assets/old/css/admin.min.css' );
-	wp_enqueue_script( 'custom-js', get_template_directory_uri() . '/_assets/old/js/admin.min.js');
+	wp_enqueue_style ( 'custom-admin', get_template_directory_uri() . '/_assets/css/admin.min.css' );
+	wp_enqueue_script( 'custom-js', get_template_directory_uri() . '/_assets/js/admin.min.js');
 }
 add_action('admin_enqueue_scripts', 'custom_admin');
 add_action('login_enqueue_scripts', 'custom_admin');
+
+// Icones de Perguntas Frequentes
+function iconeFaq($slugTax){
+	switch ($slugTax) {
+		case 'planos-e-servicos':
+			echo  'i-faq-planos'; 
+			break;
+		case 'sua-conta':
+			echo  'i-faq-conta'; 
+			break;
+		case 'wifi':
+			echo  'i-faq-wifi'; 
+			break;
+		case 'suporte-tecnico':
+			echo  'i-faq-suporte'; 
+			break;
+		
+		default:
+			echo  'i-faq-conta'; 
+			break;
+	}
+}
 
 // Get Categories without LINK
 function get_the_categorias($id) {
@@ -133,7 +147,19 @@ function get_the_categorias($id) {
 	} else {
 		echo "Nenhuma Categoria";
 	}
-} 
+}
+
+// Prefix Blog nos Posts
+function add_rewrite_rules( $wp_rewrite ) {
+	$new_rules = array(
+		// 'blog/page/(.+?)/?$' => 'index.php?post_type=post&paged='. $wp_rewrite->preg_index(1),
+		'blog/(.+?)/?$' => 'index.php?post_type=post&name='. $wp_rewrite->preg_index(1),
+	);
+ 
+	$wp_rewrite->rules = $new_rules + $wp_rewrite->rules;
+}
+add_action('generate_rewrite_rules', 'add_rewrite_rules');
+ 
  
 function change_blog_links($post_link, $id=0){
  
@@ -148,36 +174,42 @@ function change_blog_links($post_link, $id=0){
 add_filter('post_link', 'change_blog_links', 1, 3);
 
 
+// Verifica se não existe nenhuma função com o nome count_post_views
 if ( ! function_exists( 'count_post_views' ) ) {
+    // Conta os views do post
     function count_post_views () { 
+        // Garante que vamos tratar apenas de posts
         if ( is_single() ) {
+        
+            // Precisamos da variável $post global para obter o ID do post
             global $post;
+            
+            // Se a sessão daquele posts não estiver vazia
             if ( empty( $_SESSION[ 'post_counter_' . $post->ID ] ) ) {
+                
+                // Cria a sessão do posts
                 $_SESSION[ 'post_counter_' . $post->ID ] = true;
+            
+                // Cria ou obtém o valor da chave para contarmos
                 $key = 'post_counter';
                 $key_value = get_post_meta( $post->ID, $key, true );
-                if ( empty( $key_value ) ) {
+                
+                // Se a chave estiver vazia, valor será 1
+                if ( empty( $key_value ) ) { // Verifica o valor
                     $key_value = 1;
                     update_post_meta( $post->ID, $key, $key_value );
                 } else {
+                    // Caso contrário, o valor atual + 1
                     $key_value += 1;
                     update_post_meta( $post->ID, $key, $key_value );
-                }
-            }
-        }
+                } // Verifica o valor
+                
+            } // Checa a sessão
+            
+        } // is_single
+        
         return;
+        
     }
     add_action( 'get_header', 'count_post_views' );
-}
-
-if( function_exists('acf_add_options_page') ) {
-	
-	$option_page = acf_add_options_page(array(
-		'page_title' 	=> 'Configurações Gerais',
-		'menu_title' 	=> 'Configurações Gerais',
-		'menu_slug' 	=> 'configuracoes-gerais',
-		'capability' 	=> 'edit_posts',
-		'icon_url' 		=> 'dashicons-lightbulb',
-		'redirect' 		=> false
-	));
 }
