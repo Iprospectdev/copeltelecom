@@ -40,6 +40,7 @@ function ipdireto_settings_page() {
 						<th>Razão Social</th>
 						<th>Telefone</th>
 						<th>Inscrição</th>
+						<th>Data</th>
 						<th>Opções</th>
 					</tr>
 				</thead>
@@ -52,6 +53,7 @@ function ipdireto_settings_page() {
 							<td><?php echo $ipdireto->cnpj; ?></td>
 							<td><?php echo $ipdireto->razao_social; ?></td>
 							<td><?php echo $ipdireto->tel_fixo; ?> - <?php echo $ipdireto->tel_cel; ?></td> 
+							<td><?php echo $ipdireto->created; ?></td> 
 							<td><?php
 								if ($ipdireto->insc_municipal || $ipdireto->insc_estadual) {
 									echo ($ipdireto->insc_municipal) ? "<p>Inscrição Municipal: ".$ipdireto->insc_municipal."</p>" : "";
@@ -180,7 +182,8 @@ function ipdireto_settings_page() {
 		jQuery('#ipdireto').DataTable({
 			"language": {
 				"url": "//cdn.datatables.net/plug-ins/1.10.7/i18n/Portuguese-Brasil.json"
-			}
+			},
+			"order": [[ 1, "desc" ]]
 		});
 	</script>
 	<?php

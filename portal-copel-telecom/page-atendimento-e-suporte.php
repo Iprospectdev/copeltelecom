@@ -1,120 +1,172 @@
 <?php get_header();?>
-	<section id="atendimento-e-suporte">
+	<section class="interna-topo topo-grande atendimento">
+        <div class="container">
+            <div class="main-breadcrumb">
+                <a href="<?php bloginfo('url'); ?>"><i class="fas fa-home"></i>Início</a>
+                <a href="#">Atendimento e Suporte</a>
+            </div>
 
-		<header>
-			<h1 class="main-tt">Atendimento e Suporte</h1>
-		</header>
+            <div class="info">
+            	<img src="<?php bloginfo('template_url'); ?>/_assets/images/ico_atendimento.svg">
+                <h2>Precisa <br> de ajuda?</h2>
+                <h3>Aqui, você pode tirar algumas <br> dúvidas e falar com a gente :)</h3>
+            </div>
+        </div>
 
-		<div class="container">
-			<div id="as-faq" class="col-md-6 col-sm-12 col-xs-12">
-				<article>
-					<h2>Perguntas Frequentes</h2>
-					<p>Dúvidas sobre a internet <strong>100% em fibra óptica?</strong><br>A Copel Telecom responde.</p>
-					<form action="<?php bloginfo("url"); ?>" class="faq-form-search faq-form-search-gray">
-						<input type="hidden" name="post_type" value="faq">
-						<label class="autocomplete">
-							<input type="text" id="faq-autocomplete" name="s" placeholder="Digite aqui sua dúvida">
-							<button><i class="i-faq-search-gray"></i></button>
-						</label>
-					</form>
-					<?php
-						$categorias = get_terms("faq-categoria");
-						if ($categorias):
-							?>
-							<ul class="row">
-								<?php foreach ($categorias as $category): ?>
-								<li class="col-sm-6 col-xs-12">
-									<a href="<?php echo get_term_link( $category->slug, "faq-categoria" ); ?>">
-										<i class="i-faq-conta-orange"></i><?php echo $category->name; ?>
-									</a>
-								</li>
-								<?php endforeach; ?>
-							</ul>
-						<?php
-						endif;
-					?>
-				</article>
-			</div>
-			<div id="as-area-do-cliente" class="col-md-6 col-sm-12 col-xs-12">
-				<article>
-					<h2>Área do Cliente</h2>
-					<p>Aqui você pode acessar itens relativos à sua conta, alterar dados e obter mais informações. <strong>É só clicar.</strong></p>
-					<div class="row">
-						<ul class="col-sm-6 col-xs-12">
-							<li>
-								<a href="http://www.copeltelecom.com/autoatendimento" target="_blank">
-									<i class="i-as-2via"></i> 2ª via da conta
-								</a>
-							</li>
-							<li>
-								<a href="http://www.copeltelecom.com/autoatendimento" target="_blank">
-									<i class="i-as-data"></i> Alterar data de vencimento
-								</a>
-							</li>
-							<li>
-								<a href="http://www.copeltelecom.com/autoatendimento" target="_blank">
-									<i class="i-as-conta"></i> Conta detalhada
-								</a>
-							</li>
-							<li>
-								<a href="http://www.copeltelecom.com/autoatendimento" target="_blank">
-									<i class="i-as-cadastro"></i> Alterar dados cadastrais
-								</a>
-							</li>
-							<li>
-								<a href="http://www.copeltelecom.com/autoatendimento" target="_blank">
-									<i class="i-as-autoatendimento"></i> Autoatendimento
-								</a>
-							</li>
-						</ul>
-						<aside class="col-sm-6 col-xs-12">
-							<a href="<?php $p = get_page_by_title("Solicitação de Gravação"); echo get_permalink($p->ID); ?>"><i class="i-as-mic"></i>Solicitação de gravação</a>
-							<a href="<?php $p = get_page_by_title("Ouvidoria"); echo get_permalink($p->ID); ?>"><i class="i-as-box"></i>Ouvidoria</a>
-						</aside>
-					</div>
-				</article>
-			</div>
-		</div>
+        <div class="bg-slide-info"><img src="<?php bloginfo('template_url'); ?>/_assets/images/home-usos-bg.png"></div>
+        <div class="img" style="background-image: url('<?php bloginfo('template_url'); ?>/_assets/images/bg_atendimento_topo.jpg');"></div>
 
-		<?php $documentos = get_posts("post_type=documentos&nopaging=true&orderby=menu_order&order=asc"); ?>
-		<?php if ($documentos): ?>
-		<section id="as-documentos">
-			<div class="container">
-				<h1>Documentos</h1>
-				<nav class="col-sm-10 col-sm-offset-1 col-xs-12">
-					<?php foreach ($documentos as $doc): ?>
-						<a href="#<?php echo $doc->post_name; ?>" class="bt-o bt-o-white bt-o-hover-white bt-o-active-white"><?php echo $doc->post_title; ?></a>	
-					<?php endforeach ?>
-				</nav>
-				<div class="clearfix"></div>
-				<?php foreach ($documentos as $doc): ?>
-				<ul class="<?php echo $doc->post_name; ?>">
-					<?php if (rwmb_meta( "files", "type=file", $doc->ID )): ?>
-						<?php foreach (rwmb_meta( "files", "type=file", $doc->ID ) as $file): ?>
-						<li><a target="_blank" href="<?php echo $file["url"]; ?>"><i class="i-pdf"></i> <?php echo $file["title"]; ?></a></li>
-						<?php endforeach ?>
-					<?php endif ?>
-				</ul>
-				<?php endforeach; ?>
-			</div>
-		</section>
-		<?php endif ?>
+        <div class="boxes">
+        	<div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="box">
+                        	<div class="hld-titulo">
+	                            <img src="<?php bloginfo('template_url'); ?>/_assets/images/ico_info_perguntas.svg">
+	                            <h6>
+	                                Perguntas <br>
+	                                frequentes
+	                            </h6>
+                        	</div>
+                            <p class="txt">Dúvidas sobre a internet 100% em fibra óptica? A Copel Telecom responde.</p>
+                            <p>
+                            	<a href="<?php bloginfo('url'); ?>/blog/faq-categoria/suporte-tecnico/" class="bt-documento">Suporte técnico</a>
+                            	<a href="<?php bloginfo('url'); ?>/blog/faq-categoria/sua-conta/" class="bt-documento">Sua conta</a>
+                            	<a href="<?php bloginfo('url'); ?>/blog/faq-categoria/wi-fi-no-litoral/" class="bt-documento">Wi-fi litoral</a>
+                            	<a href="<?php bloginfo('url'); ?>/blog/faq-categoria/wi-fi/" class="bt-documento">Wi-fi</a>
+                            </p>
+                            <p class="text-center">
+                            	<a href="<?php bloginfo('url'); ?>/blog/faq" class="btn-assine">Acessar</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="box">
+                        	<div class="hld-titulo">
+	                            <img src="<?php bloginfo('template_url'); ?>/_assets/images/ico_info_area.svg">
+	                            <h6>
+	                                Área do <br>
+	                                cliente
+	                            </h6>
+                        	</div>
+                            <p class="txt">Aqui você pode acessar itens relativos à sua conta, alterar dados e obter mais informações. É só clicar.</p>
+                            <p>
+                            	<a href="http://www.copeltelecom.com/autoatendimento" target="_blank" class="bt-documento">2ª via da conta</a>
+                            	<a href="http://www.copeltelecom.com/autoatendimento" target="_blank" class="bt-documento">Alterar data de vencimento</a>
+                            	<a href="http://www.copeltelecom.com/autoatendimento" target="_blank" class="bt-documento">Conta detalhada</a>
+                            	<a href="http://www.copeltelecom.com/autoatendimento" target="_blank" class="bt-documento">Autoatendimento</a>
+                            </p>
+                            <p class="text-center">
+                            	<a href="http://www.copeltelecom.com/autoatendimento" target="_blank" class="btn-assine">Acessar</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-		<aside>
-			<?php get_template_part('template','nao-encontrou'); ?>
-		</aside>
+    <section class="interna-documentos">
+    	<div class="add-infos container">
+        	<div class="row justify-content-md-center">
+                <div class="col-md-10">
+	            	<div class="row">
+	            		<div class="col-md-6">
+	            			<div class="titulo">Solicitação <br> de gravação</div>
+	            			<div class="ico"><img src="<?php bloginfo('template_url'); ?>/_assets/images/ico_info_gravacao.svg"></div>
+	            			<div class="txt">Precisa solicitar a gravação do atendimento realizado?</div>
+	            			<div class="bt"><a href="<?php $p=get_page_by_title('Solicitação de gravação'); echo get_permalink($p->ID); ?>">Acesse</a></div>
+	            		</div>
+	            		<div class="col-md-6">
+	            			<div class="titulo">Ouvidoria</div>
+	            			<div class="ico"><img src="<?php bloginfo('template_url'); ?>/_assets/images/ico_info_ouvidoria.svg"></div>
+	            			<div class="txt">Se você recorreu a um dos Canais de Atendimento e sua solicitação não foi atendida ou a solução oferecida é insatisfatória, você pode recorrer à Ouvidoria.</div>
+	            			<div class="bt"><a href="<?php $p=get_page_by_title('Ouvidoria'); echo get_permalink($p->ID); ?>">Acesse</a></div>
+	            		</div>
+	            	</div>
+	            </div>
+	        </div>
+        </div>
 
-	</section>
 
-	<script>
-		jQuery(document).ready(function($) {
-			if(window.location.hash){
-				var href=window.location.hash;
-				href = href.replace('#','');
-				$('#as-documentos nav a[href="'+window.location.hash+'"]').addClass('active');
-				$('#as-documentos ul.'+href).slideDown();
-			}
-		});
-	</script>
+        <div class="interna-documentos--arquivos" id="atendimento-e-suporte">
+            <div class="container form-container">
+            	<div class="row justify-content-md-center">
+                    <div class="col-md-10 holder">
 
+		                <div class="row justify-content-md-center">
+		                    <div class="col-md-10">
+		                        <div class="row">
+		                            <div class="col-12 interna-documentos--heading">
+		                                <h6>
+		                                    <img src="<?php bloginfo('template_url'); ?>/_assets/images/ico_documento.svg">
+		                                    Documentos
+		                                </h6>
+		                            </div>
+		                        </div>
+		                    </div>
+		                </div>
+		                <div class="row justify-content-md-center">
+		                    <div class="col-md-10" id="as-documentos">
+
+		                    	<?php $documentos = get_posts("post_type=documentos&nopaging=true&orderby=menu_order&order=asc"); ?>
+								<?php if ($documentos): ?>
+										<nav>
+											<div class="menu-docs">
+												<?php foreach ($documentos as $doc): ?>
+													<a href="#<?php echo $doc->post_name; ?>" class="bt-documento"><?php echo $doc->post_title; ?></a>	
+												<?php endforeach ?>
+											</div>
+										</nav>
+										<?php foreach ($documentos as $doc): ?>
+										<ul class="<?php echo $doc->post_name; ?> lista-docs">
+											<?php if (rwmb_meta( "files", "type=file", $doc->ID )): ?>
+												<?php foreach (rwmb_meta( "files", "type=file", $doc->ID ) as $file): ?>
+												<li><a target="_blank" href="<?php echo $file["url"]; ?>"><i class="i-pdf"></i> <?php echo $file["title"]; ?></a></li>
+												<?php endforeach ?>
+											<?php endif ?>
+										</ul>
+										<?php endforeach; ?>
+
+								<?php endif ?>                    	
+		                    </div>
+		                </div>
+		            </div>
+		        </div>
+
+            </div>
+
+        </div>
+
+        
+        <script src="https://www.google.com/recaptcha/api.js?onload=multipleCaptcha&render=explicit&hl=pt-BR" async defer></script>
+		<script>
+			var com_protocolo = "",
+				sem_protocolo = "";
+			var multipleCaptcha = function() {
+				com_protocolo = grecaptcha.render('RecaptchaField1', {'sitekey' : '6LewnxsTAAAAAEGDgjyFW5jHpjabze__DkiuFDzU'});
+				sem_protocolo = grecaptcha.render('RecaptchaField2', {'sitekey' : '6LewnxsTAAAAAEGDgjyFW5jHpjabze__DkiuFDzU'});
+			};
+		</script>
+    </section>
+
+	<!--section class="interna-naoencontrou">
+    	<img src="<?php bloginfo('template_url'); ?>/_assets/images/home-testes-bg.svg" class="interna-naoencontrou--bg" alt="">
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="col-md-10">
+                    <div class="infos">
+                        <div class="infos--item">
+                            <div class="titulo"><h6>Não encontrou o que precisava?</h6></div>
+                            <div class="txt">
+	                            <div class="bt-fale">
+				                	<a href="#" class="btn-assine">Fale com a gente</a>
+				                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section-->
 <?php get_footer(); ?>

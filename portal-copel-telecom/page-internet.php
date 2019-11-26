@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header('old'); ?>
 
 	<section class="empresas" id="home-empresas-internet">
 		
@@ -43,7 +43,7 @@
 
 		<article class="empresas-vantagens">
 			<div class="container">
-				<img src="<?php bloginfo('template_url'); ?>/_assets/images/empresas/highlight-2.png" alt="">
+				<img src="<?php bloginfo('template_url'); ?>/_assets/old/images/empresas/highlight-2.png" alt="">
 				<ul class="row">
 					<li class="col-sm-4 col-xs-12" data-mh="ev-group">
 						<i class="i-e-qualidade"></i><br>
@@ -84,4 +84,4 @@
 
 	</section>
 	
-<?php get_footer(); ?>
+<?php get_footer('old'); ?>

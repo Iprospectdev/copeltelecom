@@ -41,6 +41,7 @@ function contato_settings_page() {
 						<th>Cidade</th>
 						<th>Estado</th>
 						<th>Assunto</th>
+						<th>Data</th>
 						<th>Opções</th>
 					</tr>
 				</thead>
@@ -55,6 +56,7 @@ function contato_settings_page() {
 							<td><?php echo $contato->cidade; ?></td>
 							<td><?php echo $contato->estado; ?></td>
 							<td><?php echo $contato->assunto; ?></td>
+							<td><?php echo $contato->created; ?></td>
 							<td>
 								<a href="#" data-toggle="modal" data-target="#modal-<?php echo $contato->id; ?>" class="btn btn-primary btn-sm"> VER</a>
 								<a href="<?php echo get_bloginfo("url"). "/wp-admin/admin.php?page=" . basename(__FILE__); ?>&id=<?php echo $contato->id; ?>" class="btn btn-danger btn-sm">EXCLUIR</a>
@@ -115,7 +117,8 @@ function contato_settings_page() {
 		jQuery('#contato').DataTable({
 			"language": {
 				"url": "//cdn.datatables.net/plug-ins/1.10.7/i18n/Portuguese-Brasil.json"
-			}
+			},
+			"order": [[ 5, "desc" ]]
 		});
 	</script>
 	<?php

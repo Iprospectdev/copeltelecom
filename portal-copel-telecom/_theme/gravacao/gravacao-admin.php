@@ -125,7 +125,8 @@ function gravacao_settings_page() {
 			"order": [],
 			"language": {
 				"url": "//cdn.datatables.net/plug-ins/1.10.7/i18n/Portuguese-Brasil.json"
-			}
+			},
+			"order": [[ 0, "desc" ]]
 		});
 	</script>
 	<?php

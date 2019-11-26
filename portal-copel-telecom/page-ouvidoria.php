@@ -1,71 +1,84 @@
 <?php get_header();?>
-	<section class="area-do-cliente" id="ouvidoria">
-		<header class="wow fadeIn">
-			<div class="breadcrumb">
-				<ul>
-					<li><a href="<?php $p = get_page_by_title("Área do Cliente Login"); echo get_permalink($p->ID); ?>">Área de cliente</a></li>
-					<li><span>Ouvidoria</span></li>
-				</ul>
-			</div>
-			<h1 class="main-tt">Ouvidoria</h1>
-		</header>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4 col-sm-12 col-xs-12 wow slideInLeft">
-					<aside>
-						<ul>
-							<li>
-								A Ouvidoria da Copel Telecom é um canal direto, de segunda instância de comunicação, para clientes, cidadãos, empregados e fornecedores. Ela recebe e analisa pedidos de informação, sugestões, reclamações, denúncias e questionamentos. Seu objetivo é contribuir para a satisfação dos envolvidos e para o aperfeiçoamento dos produtos e serviços da Copel Telecom.
-							</li>
-							<li class="active">
-								<h6 class="barra">E-mail</h6>
-								<small>ouvidoriatelecom@copel.com</small>
-							</li>
-							<li class="active">
-								<h6>Telefone</h6>
-								<small>0800 649 39 49</small>
-							</li>
-						</ul>
-					</aside>
-				</div>
-				<div class="col-md-6 col-sm-12 col-xs-12 wow slideInRight">
-					<article>
-						<div class="row">
-							<div class="col-sm-8 col-xs-12">
-								<h2>Quando usar?</h2>
-								<p>
-									Se você recorreu a um dos <strong><u>Canais de Atendimento</u></strong> e sua solicitação não foi atendida ou a solução oferecida é insatisfatória, você pode recorrer à Ouvidoria.
-								</p>
-							</div>
-						</div>
-						<hr>
-						<h2>Como usar?</h2>
-						<p>
-							1) Prepare a sua manifestação incluindo essas informações:<br>
-							<ul>
-								<li>número do protocolo registrado pelos Canais de Atendimento</li>
-								<li>nome completo</li>
-								<li>telefone com DDD</li>
-								<li>endereço de e-mail</li>
-								<li>cidade</li>
-								<li>produto</li>
-								<li>número do contrato (se houver) ou CPF / CNPJ</li>
-								<li>descrição detalhada da sua manifestação</li>
-							</ul> 
-						</p>
-						<p>
-							2) Apresente sua manifestação:<br>
-							<ul>
-								<li>por e-mail: ouvidoriatelecom@copel.com</li>
-								<li>ou pelo telefone: 0800 649 39 49 (horário de atendimento: das 10h às 16h - de segunda a sexta, em dias úteis)</li>
-							</ul>
-						</p>
-					</article>
-				</div>
-			</div>
-		</div>
-		<footer>
-			<?php get_template_part('template','nao-encontrou'); ?>
-		</footer>
-	</section>
+	<section class="interna-topo topo-grande">
+        <div class="container">
+            <div class="main-breadcrumb">
+                <a href="<?php bloginfo('url'); ?>"><i class="fas fa-home"></i>Início</a>
+                <a href="#">Atendimento e Suporte</a>
+                <a href="#">Ouvidoria</a>
+            </div>
+
+            <div class="info">
+            	<img src="<?php bloginfo('template_url'); ?>/_assets/images/ico_ouvidoria.svg">
+                <h2>Ouvidoria</h2>
+                <h3>E-mail</h3>
+                <h4>ouvidoriatelecom@copel.com</h4>
+                <h3>Telefone </h3>
+                <h4>0800 649 39 49</h4>
+                <h3>Horário de atendimento</h3>
+                <h4>das 10h às 16h</h4>
+            </div>
+        </div>
+
+        <div class="descricao">
+        	A Ouvidoria da Copel Telecom é um canal direto, de segunda instância  <br> de comunicação, para clientes, cidadãos, empregados e fornecedores.  <br> Ela recebe e analisa pedidos de informação, sugestões, reclamações, denúncias  <br> e questionamentos. <strong>Seu objetivo é contribuir para a satisfação dos envolvidos  <br> e para o aperfeiçoamento dos produtos e serviços da Copel Telecom.</strong>
+        </div>
+        <div class="bg-slide-info"><img src="<?php bloginfo('template_url'); ?>/_assets/images/home-usos-bg.png"></div>
+        <div class="img" style="background-image: url('<?php bloginfo('template_url'); ?>/_assets/images/bg_ouvidoria_topo.jpg');"></div>
+    </section>
+
+    <section class="quando-e-como">
+    	<div class="container">
+    		<div class="row justify-content-center">
+    			<div class="col-md-10">
+    				<div class="row">
+    					<div class="col-md-6 titulo">
+    						Quando usar?
+    					</div>
+    					<div class="col-md-6 texto">
+    						<p>Se você recorreu a um dos Canais de Atendimento  e sua solicitação não foi atendida ou a solução oferecida  é insatisfatória, você pode recorrer à Ouvidoria.</p>
+    					</div>
+    					<div class="col-12 divisoria"></div>
+    					<div class="col-md-6 titulo">
+    						Como usar?
+    					</div>
+    					<div class="col-md-6 texto">
+    						<p><strong>1) Prepare a sua manifestação incluindo essas informações:</strong></p>
+    						<ul>
+    							<li>Número do protocolo registrado  pelos Canais de Atendimento;</li>
+								<li>Nome completo;</li>
+								<li>Telefone com DDD;</li>
+								<li>Endereço de e-mail;</li>
+								<li>Cidade;</li>
+								<li>Produto;</li>
+								<li>Número do contrato (se houver) ou CPF / CNPJ e</li>
+								<li>Descrição detalhada da sua manifestação.</li>
+    						</ul>
+    						<p><strong>2) Apresente sua manifestação:</strong></p>
+    						<p class="pl-4">Por e-mail: <strong>ouvidoriatelecom@copel.com</strong> ou pelo telefone: <strong>0800 649 39 49</strong>  (horário de atendimento: das 10h às 16h  - de segunda a sexta, em dias úteis)</p>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+    <!--section class="interna-naoencontrou">
+    	<img src="<?php bloginfo('template_url'); ?>/_assets/images/home-testes-bg.svg" class="interna-naoencontrou--bg" alt="">
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="col-md-10">
+                    <div class="infos">
+                        <div class="infos--item">
+                            <div class="titulo"><h6>Não encontrou o que precisava?</h6></div>
+                            <div class="txt">
+	                            <div class="bt-fale">
+				                	<a href="#" class="btn-assine">Fale com a gente</a>
+				                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section-->
 <?php get_footer(); ?>

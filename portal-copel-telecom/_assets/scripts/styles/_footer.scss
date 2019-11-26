@@ -1,0 +1,170 @@
+.footer {
+	background: #F2F5F6;
+
+	&>.container {
+		padding-bottom: 30px;
+		padding-top: 60px;
+
+		@include media-breakpoint-down(md) {
+			padding-top: 0px;
+		}
+	}
+}
+
+.footer-share {
+	a {
+		display: inline-block;
+		margin-right: 5px;
+
+		font-size: 22px;
+		font-weight: 900 !important;
+		width: 44px;
+		height: 42px;
+		line-height: 44px;
+		text-decoration: none;
+		text-align: center;
+		border-radius: 50%;
+		background: #ff9602;
+		color: #f2f5f6;
+
+		&:hover {
+			background-image: linear-gradient(49deg, #FFA600 0%, #FF6D00 100%);
+		}
+	}
+	@include media-breakpoint-down(md) {
+		text-align: center;
+
+		a {
+			margin: 30px 5px;
+		}
+	}
+}
+
+.footer-logos {
+	padding: 0;
+	a {
+		display: inline-block;
+		img {
+			max-width: 100%;
+			margin-right: 10px;
+		}
+	}
+	@include media-breakpoint-down(md) {
+		text-align: center;
+		a {
+			img {
+				margin: 0 25px;
+			}
+		}
+	}
+}
+
+.footer-nav {
+	position: relative;
+	
+	&:before {
+		border-left: 1px solid #D3D6D7;
+		content: "";
+		display: block;
+		height: 220px;
+		left: -40px;
+		position: absolute;
+		top: 0;
+	}
+
+	ul {
+		list-style: none;
+		padding: 0;
+
+		li {
+			display: block;
+			margin: 0;
+			padding: 0;
+			line-height: 1.85;
+
+			a {
+				font-size: 13px;
+				font-weight: 400;
+				color: color('gray');
+				strong {
+					font-size: 15px;
+					text-transform: uppercase;
+				}
+			}
+		}
+	}
+}
+
+.row-bottom {
+	margin-top: 50px;
+}
+
+.footer--btn {
+	border-radius: 5px;
+	border: 2px solid rgba(#464D5C,0.2);
+	clear: left;
+	color: color('orange-light');
+	float: left;
+	font-size: 14px;
+	font-weight: bold;
+	letter-spacing: 0.5px;
+	margin-bottom: 5px;
+	padding: 5px 15px;
+	text-transform: uppercase;
+
+	&:hover {
+		color: color('orange-light');
+	}
+
+	&:first-child {
+		margin-top: 130px;
+
+		@include media-breakpoint-down(md) {
+			margin-top: 30px;
+		}
+	}
+}
+
+.footer-fone {
+	clear: both;
+	color: color('orange-light');
+	display: block;
+	font-size: 30px;
+	font-weight: 700;
+	letter-spacing: 0;
+	text-align: justify;
+	@include media-breakpoint-down(md) {
+		text-align: center;
+	}
+}
+
+.footer-copy {
+	background: color('orange-light');
+	display: block;
+
+	small,
+	address {
+		float: left;
+		color: #fff;
+		font-weight: 500;
+		font-size: 11px;
+		width: 50%;
+		padding: 18px 0 2px;
+
+		@include media-breakpoint-down(sm) {
+			width: 100%;
+			text-align: center;
+			padding: 9px 0;
+		}
+	}
+
+	address {
+		text-align: right;
+	}
+
+	&:after {
+		clear: both;
+		content: "";
+		display: table;
+	}
+}

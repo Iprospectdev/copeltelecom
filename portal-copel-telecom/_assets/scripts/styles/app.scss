@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Prompt:300,400,500,700');
+
+@import '~bootstrap/scss/bootstrap';
+@import '~flatpickr/dist/flatpickr.min.css';
+
+$owl-image-path: '../images/';
+@import '~owl.carousel/src/scss/owl.carousel.scss';
+
+@import 'font-awesome-pro';
+
+@import 'mixins';
+@import 'variables';
+
+@import 'main';
+@import 'header';
+@import 'slider';
+@import 'page-acessibilidade';
+@import 'page-home';
+@import 'page-sobre-nos';
+@import 'page-parcerias';
+@import 'page-app-copel';
+@import 'page-planos';
+@import 'page-speedtest';
+@import 'page-sucesso';
+@import 'page-disponibilidade';
+@import 'page-faq';
+@import 'page-404';
+@import 'page-internas';
+@import 'blog';
+@import 'wvt';
+@import 'footer';
+

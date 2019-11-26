@@ -43,6 +43,7 @@ function ligar_settings_page() {
 						<th>Telefone</th>
 						<th>Tipo</th>
 						<th>Motivo</th>
+						<th>Data</th>
 						<th>Opções</th>
 					</tr>
 				</thead>
@@ -56,7 +57,8 @@ function ligar_settings_page() {
 							<td><?php echo $contato->email; ?></td>
 							<td><?php echo $contato->telefone; ?></td>
 							<td><?php echo $contato->tipo_documento; ?></td>
-							<td><?php echo $contato->motivo; ?></td>
+							<td><?php echo $contato->tipo_documento; ?></td>
+							<td><?php echo $contato->created; ?></td>
 							<td>
 								<a href="#" data-toggle="modal" data-target="#modal-<?php echo $contato->id; ?>" class="btn btn-primary btn-sm"> VER</a>
 								<a href="<?php echo get_bloginfo("url"). "/wp-admin/admin.php?page=" . basename(__FILE__); ?>&id=<?php echo $contato->id; ?>" class="btn btn-danger btn-sm">EXCLUIR</a>
@@ -113,7 +115,7 @@ function ligar_settings_page() {
 		jQuery('#contato').DataTable({
 			"language": {
 				"url": "//cdn.datatables.net/plug-ins/1.10.7/i18n/Portuguese-Brasil.json"
-			}
+			},"order": [[ 1, "desc" ]]
 		});
 	</script>
 	<?php
