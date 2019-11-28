@@ -212,7 +212,7 @@
 										<?php echo $services->profile_price($plan->precoProduto); ?>
 										<small>/mês*</small>
 									</span>
-									<a href="https://hml.copeltelecom.com/wvtweb/site/verificar_disponibilidade.jsf" target="_blank" class="btn-assine js-disponibilidade-modall">Assine Já</a>
+									<a href="http://www.copel.com/wvtweb/site/verificar_disponibilidade.jsf" target="_blank" class="btn-assine js-disponibilidade-modall">Assine Já</a>
 								</div>
 							</li>
 						<?php endforeach; ?>
