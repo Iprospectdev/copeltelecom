@@ -59,7 +59,7 @@
 								<a href="http://www.copeltelecom.com/autoatendimento" target="_blank">Área do cliente</a>
 							</li>
 							<li>
-								<a href="<?php bloginfo('url'); ?>/faq">Perguntas Frequentes</a>
+								<a href="<?php bloginfo('url'); ?>/blog/faq">Perguntas Frequentes</a>
 							</li>
 							<li>
 								<a href="<?php bloginfo('url'); ?>/atendimento-e-suporte/#as-documentos">Documentos</a>
