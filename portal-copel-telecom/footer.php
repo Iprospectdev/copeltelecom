@@ -239,7 +239,7 @@
 	<?php wp_footer(); ?>
 	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false&key=AIzaSyBFAgYljSm9hYX2tTJ-1h7ZJTBPJDh3KsM"></script> 
 	<script src="<?php bloginfo('template_url');?>/_assets/js/app.bundle.js"></script>
-    <!-- <script>
+    <script>
 		var $_PowerZAP = { defaultCountry: '+55', widget_id: '1681', company: "5526" };
 		(function(i,s,o,g,r,a,m){
 			i[r]={context:{id:'8659e62744a37a52c5c1d594238d2d32'}};
@@ -250,6 +250,6 @@
 			m=s.getElementsByTagName(a)[0];
 			m.parentNode.insertBefore(o,m);
 		})(window,document,'script','https://widget-omni.powerzap.com.br/js/widget.js?v=6.1.0.6','pwz');
-	</script>  -->
+	</script> 
 </body>
 </html>
