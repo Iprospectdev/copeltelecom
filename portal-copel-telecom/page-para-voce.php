@@ -1,6 +1,17 @@
 <?php /* Template Name: Home Para Você */ ?>
 <?php get_header(); 
 
+session_start();
+
+$services = new Services;
+// unset($_SESSION);
+
+$session = json_decode($_SESSION["copeltelecom"]);
+// echo $session->cidade;
+if($session) {
+    $planos = json_decode($services->planos("F",$session->cidade));	
+}
+
 $slides = get_posts(array(
     "post_type" => "slider-home",
     "nopaging" => true,
@@ -15,7 +26,7 @@ $slides = get_posts(array(
 
 ?>
     <section class="page-home">   
-     <!--    <nav class="header-nav fixed fixed-top">
+        <nav class="header-nav fixed fixed-top" style="display:none;">
             <div class="container">
                 <a href="<?php bloginfo('url'); ?>" class="logo">
                     <img src="<?php bloginfo('template_url'); ?>/_assets/images/logo.svg" alt="Logo Copel Telecom">
@@ -65,7 +76,7 @@ $slides = get_posts(array(
                 </a>
             </div>
             <span class="header-nav--loader" style="width: 0%;"></span>
-        </nav> -->
+        </nav>
 	
         <section class="slider-topo">
             <div class="container">
@@ -110,12 +121,31 @@ $slides = get_posts(array(
                 
             </div>
         </section>
-
-         <article class="planos-list">
+       <?php if (!isset($session->cidade)): ?>             
+       <article class="planos-list">
             <div class="container">
                 <div class="planos-geolocation">
+                <h5>
+                        <svg width="97px" height="115px" viewBox="0 0 97 115" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g id="00_home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.149999991">
+                                <g id="01_home_banner1_informar-endereco" transform="translate(-635.000000, -606.000000)" fill="#FFFFFF">
+                                    <g id="Group-21" transform="translate(98.000000, 606.000000)">
+                                        <g id="Group-9">
+                                            <g id="Group">
+                                                <g id="Group-6">
+                                                    <path d="M600.935102,57.1789474 L634,57.1789474 L601.956154,114.357895 L538.021053,114.357895 L570.064898,57.1789474 L537,57.1789474 L569.043846,0 L632.978947,0 L600.935102,57.1789474 Z" id="Combined-Shape-Copy-5"></path>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </h5>
                     <div class="row">
+                    
                         <div class="col-12 col-md-6 planos-geolocation--legend">
+                        
 
                             <svg width="90px" height="115px" viewBox="0 0 90 115" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <g id="00_home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -147,8 +177,8 @@ $slides = get_posts(array(
                     </div>
                 </div>
             </div>
-        </article>
-        
+        </article> 
+        <?php endif; ?>
         <section class="home-planos">
             <div class="home-planos-list d-none">
                 <button class="home-planos-carousel-prev">
