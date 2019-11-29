@@ -40,7 +40,7 @@ x<?php
 
 	$from = 'Copel Telecom <'.get_bloginfo("admin_email").'>';
 
-	$destinatario = (get_field('contato_site', 'option')) ? get_field('contato_site', 'option') : get_bloginfo("admin_email");
+	$destinatario = "vendastelecom@copel.com";
 
 	if ($_POST["motivo"] == "Erro no cadastro Web Vendas" || $_POST["motivo"] == "Aquisição de Serviços Corporativos") {
 		$destinatario = "vendastelecom@copel.com";

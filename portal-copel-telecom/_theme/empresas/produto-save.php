@@ -27,44 +27,47 @@
 		);
 	}
 
-	echo json_encode($res);
+
 	
 
 	#
 	# Envia Email
 	#
-	// $data_email = array(
-	// 	"Nome" => $_POST["nome"],
-	// 	"Telefone" => $_POST["telefone"],
-	// 	"Email" => $_POST["email"],
-	// 	"Empresa" => $_POST["empresa"],
-	// 	"Produto" => $_POST["produto"],
-	// 	"Mensagem" => nl2br($_POST["mensagem"])
-	// );
+	$data_email = array(
+		"Nome" => $_POST["nome"],
+		"Telefone" => $_POST["telefone"],
+		"Email" => $_POST["email"],
+		"Empresa" => $_POST["empresa"],
+		"Produto" => $_POST["produto"],
+		"Mensagem" => nl2br($_POST["mensagem"])
+	);
 
-	// $from = 'Copel Telecom <'.get_bloginfo("admin_email").'>';
+	$from = 'Copel Telecom <'.get_bloginfo("admin_email").'>';
 
-	// $destinatario =  get_bloginfo("admin_email");
+	$destinatario =  "vendastelecom@copel.com";
 
-	// $assunto = "[". get_bloginfo("name") ."] Contato Site";
+	$assunto = "[". get_bloginfo("name") ."] Contato Site";
 
-	// $headers = "MIME-Version: 1.1\n";
-	// $headers .= "Content-Type: text/html; charset=UTF-8\n";
-	// $headers .= "From: ".$from ."\n";
-	// $headers .= "Return-Path: ".$from."\n";
-	// $headers .= "Reply-To: ".$destinatario."\n";
+	$headers = "MIME-Version: 1.1\n";
+	$headers .= "Content-Type: text/html; charset=UTF-8\n";
+	$headers .= "From: ".$from ."\n";
+	$headers .= "Return-Path: ".$from."\n";
+	$headers .= "Reply-To: ".$destinatario."\n";
 
-	// $body = '';
+	$body = '';
 
-	// foreach ($data_email as $key => $value) {
-	// 	if ($value) {
-	// 		$body .= '<tr><td bgcolor="#f4f5f6"><font face="Arial, Tahoma, Sans-serif" size="3" color="#737c8f">'.$key.'</font>';
-	// 		$body .= '</td><td bgcolor="#e9ebed"><font face="Arial, Tahoma, Sans-serif" size="3" color="#737c8f">'.$value.'</font></td></tr>';
-	// 	}
-	// }
+	foreach ($data_email as $key => $value) {
+		if ($value) {
+			$body .= '<tr><td bgcolor="#f4f5f6"><font face="Arial, Tahoma, Sans-serif" size="3" color="#737c8f">'.$key.'</font>';
+			$body .= '</td><td bgcolor="#e9ebed"><font face="Arial, Tahoma, Sans-serif" size="3" color="#737c8f">'.$value.'</font></td></tr>';
+		}
+	}
 
-	// $message = file_get_contents('email.html');
-	// $message = str_replace('../../_assets', get_template_directory_uri()."/_assets", $message);
-	// $message = str_replace('###CONTENT###', $body, $message);
+	$message = file_get_contents('email.html');
+	$message = str_replace('../../_assets', get_template_directory_uri()."/_assets", $message);
+	$message = str_replace('###CONTENT###', $body, $message);
+
+
+	echo json_encode($res);
 
 ?>

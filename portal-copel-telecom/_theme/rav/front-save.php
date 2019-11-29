@@ -126,7 +126,7 @@
 
 	$from = 'Copel Telecom <'.get_bloginfo("admin_email").'>';
 
-	$destinatario = (get_field('form_rav', 'option')) ? get_field('form_rav', 'option') : get_bloginfo("admin_email");
+	$destinatario = "vendastelecom@copel.com";
 
 	$assunto = "[". get_bloginfo("name") ."] Rede de Alta Velocidade";
 

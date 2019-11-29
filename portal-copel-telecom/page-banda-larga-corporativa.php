@@ -207,7 +207,7 @@
             </div>
 
             <div class="container">
-                <div class="planos-geolocation planos-geolocation--true d-none">
+                <div class="planos-geolocation planos-geolocation--true">
                     <h5>
                         <svg width="97px" height="115px" viewBox="0 0 97 115" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <g id="00_home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.149999991">
