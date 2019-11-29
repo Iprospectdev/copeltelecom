@@ -59,7 +59,7 @@
 								<a href="http://www.copeltelecom.com/autoatendimento" target="_blank">Área do cliente</a>
 							</li>
 							<li>
-								<a href="<?php bloginfo('url'); ?>/blog/faq">Perguntas Frequentes</a>
+								<a href="<?php bloginfo('url'); ?>/faq">Perguntas Frequentes</a>
 							</li>
 							<li>
 								<a href="<?php bloginfo('url'); ?>/atendimento-e-suporte/#as-documentos">Documentos</a>
@@ -102,11 +102,14 @@
 					0800 41 41 81
 				</div>
 				<div class="col-md-8 text-center footer-share">
-					<a href="https://www.facebook.com/copeltelecom/?fref=ts" target="_blank">
+					<!-- <a href="https://www.facebook.com/copeltelecom/?fref=ts" target="_blank">
 						<i class="fab fa-facebook-f"></i>
 					</a>
 					<a href="https://twitter.com/copeltelecom" target="_blank">
 						<i class="fab fa-twitter"></i>
+					</a> -->
+					<a href="https://www.instagram.com/copeltelecom/" target="_blank">
+						<i class="fab fa-instagram"></i>
 					</a>
 					<a href="https://www.linkedin.com/company/copeltelecom" target="_blank">
 						<i class="fab fa-linkedin-in"></i>
@@ -239,7 +242,7 @@
 	<?php wp_footer(); ?>
 	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false&key=AIzaSyBFAgYljSm9hYX2tTJ-1h7ZJTBPJDh3KsM"></script> 
 	<script src="<?php bloginfo('template_url');?>/_assets/js/app.bundle.js"></script>
-    <script>
+    <!-- <script>
 		var $_PowerZAP = { defaultCountry: '+55', widget_id: '1681', company: "5526" };
 		(function(i,s,o,g,r,a,m){
 			i[r]={context:{id:'8659e62744a37a52c5c1d594238d2d32'}};
@@ -250,6 +253,6 @@
 			m=s.getElementsByTagName(a)[0];
 			m.parentNode.insertBefore(o,m);
 		})(window,document,'script','https://widget-omni.powerzap.com.br/js/widget.js?v=6.1.0.6','pwz');
-	</script> 
+	</script>  -->
 </body>
 </html>

@@ -117,7 +117,7 @@
                 
                 <div class="float-right">
                     <a href="<?php $p=get_page_by_title('Sobre Nós'); echo get_permalink($p->ID); ?>"  class="header-top--btn">Sobre nós</a>
-                    <a href="<?php bloginfo('url'); ?>/blog/faq"  class="header-top--btn">Perguntas frequentes</a>
+                    <a href="<?php bloginfo('url'); ?>/atendimento-e-suporte"  class="header-top--btn">Atendimento e suporte</a>
                     <a href="<?php $p=get_page_by_title('Blog'); echo get_permalink($p->ID); ?>"  class="header-top--btn">Blog</a>
 
                     <a href="#" data-toggle="modal" data-target="#cidade-modal"class="header-top--btn btn-cidade"><i class="fas fa-map-marker-alt"></i><span class="js-cidade-estado">CIDADE/ESTADO</span></a>
@@ -213,13 +213,9 @@
                     <?php } ?>
 
                 </nav>
-                <!--
-                <?php if(isset($pageId) && !empty($pageId)) {?>
-                <a href="#" class="btn-assine js-disponibilidade-modal"">
-                    Assine Já
-                </a>
-                <?php } ?>
-                -->
+                
+                
+                
             </div>
         </div>
 
@@ -254,14 +250,14 @@
                             <a href="<?php $p=get_page_by_title('Blog'); echo get_permalink($p->ID); ?>">Blog Conecta</a>
                         </li>
                         <li>
-                            <a href="<?php bloginfo('url'); ?>/faq">Perguntas frequentes</a>
+                            <a href="<?php bloginfo('url'); ?>/atendimento-e-suporte/">Atendimento e suporte</a>
                         </li>
                         <li>
                             <a href="#">Documentos</a>
                         </li>
-                        <li>
+                        <!-- <li>
                             <a href="#">Mapa do site</a>
-                        </li>
+                        </li> -->
                         <li class="header-mobile-nav--minhacopel">
                             <a href="#">
                                 <strong>Minha Copel</strong>
