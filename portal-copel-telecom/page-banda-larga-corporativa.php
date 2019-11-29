@@ -193,7 +193,7 @@
                             <p>
                                 R$ <strong class="js-valor"></strong> /mês
                             </p>
-                            <a href="http://www.copel.com/wvtweb/site/verificar_disponibilidade.jsf" target="_blank" class="btn-assine js-disponibilidade-modall">Assine já</a>
+                            <a href="http://www.copeltelecom.com/wvtweb/site/verificar_disponibilidade.jsf?p=j" target="_blank" class="btn-assine js-disponibilidade-modall">Assine já</a>
                         </div>
                     </div>
                 </div>
