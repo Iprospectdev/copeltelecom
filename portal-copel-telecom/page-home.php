@@ -15,7 +15,7 @@ $slides = get_posts(array(
 
 ?>
     <section class="page-home">   
-        <nav class="header-nav fixed fixed-top">
+        <!-- <nav class="header-nav fixed fixed-top">
             <div class="container">
                 <a href="<?php bloginfo('url'); ?>" class="logo">
                     <img src="<?php bloginfo('template_url'); ?>/_assets/images/logo.svg" alt="Logo Copel Telecom">
@@ -49,7 +49,7 @@ $slides = get_posts(array(
                 </a>
             </div>
             <span class="header-nav--loader" style="width: 0%;"></span>
-        </nav>
+        </nav> -->
     
         <section class="slider-topo">
             <div class="container">
@@ -57,16 +57,16 @@ $slides = get_posts(array(
                     <a href="<?php bloginfo('url'); ?>"><i class="fas fa-home"></i>Início</a>
                 </div>
 
-                <div class="d-none d-lg-block opcoes">
-                    <!-- <div class="popup-menu">
+               <!--  <div class="d-none d-lg-block opcoes">
+                    <div class="popup-menu">
                         <a href="#" data-toggle="modal" data-target="#ligamos-modal">Ligamos para você <img src="<?php bloginfo('template_url'); ?>/_assets/images/ico_menu_ligamos.svg"></a>
                         <a href="#">Envie-nos uma mensagem <img src="<?php bloginfo('template_url'); ?>/_assets/images/ico_menu_mensagem.svg"></a>
                         <a href="#">Chat online <img src="<?php bloginfo('template_url'); ?>/_assets/images/ico_menu_chat.svg"></a>
                         <a href="#">Whatsapp <img src="<?php bloginfo('template_url'); ?>/_assets/images/ico_menu_whatsapp.svg"></a>
                         <div class="tip"></div>
-                    </div> -->
+                    </div>
                     <div class="btn" data-toggle="modal" data-target="#ligamos-modal"><img src="<?php bloginfo('template_url'); ?>/_assets/images/ico_menu_fale.svg"> Fale com um consultor</div>
-                </div>
+                </div> -->
             </div>
             <div class="slider-topo--slides owl-carousel">
 
@@ -153,15 +153,15 @@ $slides = get_posts(array(
                     <div class="col-lg-7 p-0">
                         <div class="row">
                             <div class="d-block d-lg-none home-bandalarga--bg-destaque"><img src="<?php bloginfo('template_url'); ?>/_assets/images/sobre-nos-banner.jpg" alt=""></div>
-                            <div class="col-md-4 item">
+                            <div class="col-md-6 item">
                                 <img src="<?php bloginfo('template_url'); ?>/_assets/images/ico_velocidade.svg">
-                                <p>Na mesma velocidade que você cria, você compartilha.</p>
+                                <p>A qualidade se mantém do servidor até o modem da sua casa.</p>
                             </div>
-                            <div class="col-md-4 item">
+                            <!-- <div class="col-md-4 item">
                                 <img src="<?php bloginfo('template_url'); ?>/_assets/images/ico_distribuicao.svg">
                                 <p>Com a mesma qualidade que você produz, você distribui.</p>
-                            </div>
-                            <div class="col-md-4 item">
+                            </div> -->
+                            <div class="col-md-6 item">
                                 <img src="<?php bloginfo('template_url'); ?>/_assets/images/ico_cadeado.svg">
                                 <p>Com a mesma estabilidade que você acessa, você continua navegando.</p>
                             </div>

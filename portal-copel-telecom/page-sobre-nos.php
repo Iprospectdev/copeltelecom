@@ -132,7 +132,7 @@
 							        </g>
 							    </g>
 							</svg>
-							<p>Na mesma velocidade que você cria, você compartilha. </p>
+							<p>A qualidade se mantém do servidor até o modem da sua casa.</p>
 						</div>
 					</div>
 					<div class="col-12 col-md-4">

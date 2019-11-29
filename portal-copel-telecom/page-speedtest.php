@@ -9,7 +9,7 @@
 					<a href="#">Speedtest</a>
 				</div>
 				<h2>Speedtest Copel Telecom</h2>
-				<p>Confira velocidade da sua banda larga é com o Speedtest da Copel Telecom. Se você já tem Copel Fibra, o seu download é igual ao upload. Se você ainda não tem Copel Fibra, veja o quanto a sua velocidade de upload pode ser muito maior.</p>
+				<p>Confira a velocidade da sua banda larga com o speedtest da Copel Telecom. Se você já tem Copel Fibra, você está conectado com a melhor internet do Brasil!</p>
 			</div>
 		</header>
 

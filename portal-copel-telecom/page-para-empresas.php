@@ -16,7 +16,7 @@ $slides = get_posts(array(
 
 ?>
     <section class="page-home">   
-        <nav class="header-nav fixed fixed-top">
+      <!--   <nav class="header-nav fixed fixed-top">
             <div class="container">
                 <a href="<?php bloginfo('url'); ?>" class="logo">
                     <img src="<?php bloginfo('template_url'); ?>/_assets/images/logo.svg" alt="Logo Copel Telecom">
@@ -40,8 +40,8 @@ $slides = get_posts(array(
                 </a>
             </div>
             <span class="header-nav--loader" style="width: 0%;"></span>
-        </nav>
-	
+        </nav> -->
+    
         <section class="slider-topo slider-topo-empresas">
             <img class="home-usos--bg" src="<?php bloginfo('template_url'); ?>/_assets/images/home-usos-bg.png" alt="">
             <div class="container">
@@ -86,7 +86,7 @@ $slides = get_posts(array(
                         </h6>
                         <div class="info">
                             <p>
-                                Sua empresa conectata ao mundo, com a velocidade e a estabilidade da tecnologia 100% em fibra óptica.
+                                Sua empresa conectada ao mundo, com a velocidade e a estabilidade da tecnologia 100% em fibra óptica.
                             </p>
                             <div class="btn-descubra">
                                 <a href="<?php $p=get_page_by_title('Internet dedicada'); echo get_permalink($p->ID); ?>">Descubra</a>
@@ -140,7 +140,7 @@ $slides = get_posts(array(
             <div class="main-heading">
                 <h6>
                     Aproveite os benefícios <br>
-					da marca Copel para seus negócios
+                    da marca Copel para seus negócios
                 </h6>
             </div>
             <img src="<?php bloginfo('template_url'); ?>/_assets/images/home-testes-bg.svg" class="home-beneficios--bg" alt="">
@@ -179,9 +179,9 @@ $slides = get_posts(array(
                     <a class="btn-assine" href="<?php $p=get_page_by_title('Sobre nós'); echo get_permalink($p->ID); ?>">Por que Copel?</a>
                 </div>
             </div>
-		</section>
+        </section>
 
-		<section class="home-blog" id="blog">
+        <section class="home-blog" id="blog">
             <div class="container">
                 <div class="home-blog--heading">
                     <h6>Blog Conecta</h6>
@@ -232,8 +232,8 @@ $slides = get_posts(array(
                     <?php $i++; endwhile; ?>
                 </div>
             </div>
-		</section>
+        </section>
 
-	</section>
+    </section>
 
 <?php get_footer(); ?>

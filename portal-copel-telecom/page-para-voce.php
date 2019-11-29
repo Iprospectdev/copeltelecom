@@ -15,7 +15,7 @@ $slides = get_posts(array(
 
 ?>
     <section class="page-home">   
-        <nav class="header-nav fixed fixed-top">
+     <!--    <nav class="header-nav fixed fixed-top">
             <div class="container">
                 <a href="<?php bloginfo('url'); ?>" class="logo">
                     <img src="<?php bloginfo('template_url'); ?>/_assets/images/logo.svg" alt="Logo Copel Telecom">
@@ -65,7 +65,7 @@ $slides = get_posts(array(
                 </a>
             </div>
             <span class="header-nav--loader" style="width: 0%;"></span>
-        </nav>
+        </nav> -->
 	
         <section class="slider-topo">
             <div class="container">
@@ -105,7 +105,7 @@ $slides = get_posts(array(
                 <?php endforeach ?>
                 <?php endif; ?>
 
-
+                
             </div>
         </section>
         

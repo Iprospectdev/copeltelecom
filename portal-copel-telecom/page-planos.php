@@ -58,7 +58,8 @@
 					<a href="#">Planos e preços</a>
 				</div>
 				<h2>Planos de internet banda larga Copel Fibra</h2>
-				<p>Escolha o plano que melhor se adapta ao que você precisa. Com a Copel Telecom você tem download e upload na mesma velocidade, com qualidade de conexão que você pode confiar e a entrega da velocidade contratada.</p>
+				<p>
+				Escolha o plano que melhor se adapta ao que você precisa. Com a fibra óptica da Copel Telecom, a qualidade e a velocidade se mantêm do servidor até o modem da sua casa.</p>
 			</div>
 		</header>
 		<?php if (!isset($session->cidade)): ?>
@@ -142,6 +143,8 @@
 								$velocidade = $services->profile_velocidade($plan->nomeProduto);
 								$velocidade = str_replace('a', '', $velocidade);
 								$velocidade = str_replace('A', '', $velocidade);
+								$upload = $plan->upload;
+								$download = $plan->download;
 							?>
 							<li class="planos-item">
 								<div class="planos-item--vel">
@@ -196,7 +199,7 @@
 
 								<div class="planos-item--updown">
 									<span>
-										<small><?php echo $velocidade; ?> Mega de</small> Upload
+										<small><?php echo $upload; ?> de</small> Upload
 									</span>
 									<span>
 										<img src="<?php bloginfo('template_url'); ?>/_assets/images/lines.svg" alt="">
@@ -220,8 +223,10 @@
 				</div>
 				<div class="container">
 					<small class="planos-list--obs">
-						*Valor de instalação de internet com plano de fidelidade de 12 meses: R$ 99,00. Valor de instalação de internet sem fidelidade: R$ 999,00. <a href="">Consulte aqui</a> as características técnicas dos planos de serviço.<br>
+						*Valor de instalação de internet com plano de fidelidade de 12 meses: R$ 100,00. Valor de instalação de internet sem fidelidade: R$ 1.500,00. <a href="">Consulte aqui</a> as características técnicas dos planos de serviço.<br>
 						<a href="">Contrato</a> e <a href="">termo de fidelidade</a> aplicável ao plano de serviço. Planos sujeitos a disponibilidade. Válidos para CURITIBA (<a href="#">alterar</a>). 
+
+					</p>
 					</small>
 				</div>
 			</article>
@@ -341,30 +346,5 @@
 			</div>
 		</article>
 		
-		<div class="container">
-			<?php if (in_array($session->cidade, $sercontel)): ?>
-				<article class="planos-sercomtel">
-					<img src="<?php bloginfo('template_url'); ?>/_assets/images/logo-sercomtel.png" alt="">
-					<p>
-						Quer aproveitar e contratar também um plano de telefonia? A Sercomtel tem planos e opções perfeitas para você.
-					</p>
-					<p>
-						A Copel Telecom mantém uma parceria para disponibilizar telefonia fixa da Sercomtel por meio da mesma infraestrutura de fibra óptica usada para internet. Confira os planos telefônicos da Sercomtel ou tire dúvidas sobre esse serviço por meio do telefone
-					</p>
-					<small>
-						<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-						    <g id="01_Planos-e-precos" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-						        <g id="01_planos-e-precos_nao-disponivel" transform="translate(-619.000000, -3567.000000)">
-						            <g id="Group-24" transform="translate(98.000000, 3342.000000)">
-						                <image id="Bitmap" x="521" y="225" width="30" height="30" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAKpmlDQ1BJQ0MgUHJvZmlsZQAASImVlwdQU9kax8+9N73QEkKH0JsgnQDSayiCdLAREgihhBAIKHZkUcG1oCICNnQFRMG1ALIWRBRRFgHFrguyqCjrYsGGyl7gEd6+N++9ef+Zb85vvnvud757cs7MPwBQrnFEolRYDoA0YZY41NeDGR0Ty8Q/BRiAABmgBBw53EyRe0hIIEA1M/5dH+4AaHK8ZTZZ69+f/1fJ8xIyuQBAISjH8zK5aSifRuMEVyTOAgDhoXndnCzRJG9EmS5GG0S5YpL503xikuOnuW1qTnioJ8r3ACBQOBwxHwDy72iemc3lo3UoGJQthDyBEGUblF24SRx0HQr6DMxJS0uf5AMoG8X/Ux3+32rGS2tyOHwpT3/LlAhegkxRKmf5/7kd/1tpqZKZNXTQoCSJ/UIn10P3rDolPUDKwvj5wTMs4E33NMlJEr+IGeZmesbOMI/jFTDDkpQI9xnmiGffFWSxw2dYnB4qrS9MnR8orZ/AlnJCpnfYDCcKfNgznJsUHjXD2YLI+TOcmRIWMDvHU5oXS0KlPSeKfaTfmJY52xuXM7tWVlK432wP0dJ+eAle3tK8MEI6X5TlIa0pSg2Z7T/VV5rPzA6TvpuFHrAZTub4h8zWCZHuDxCAIMAB3KyEZZPnCnimi5aLBfykLKY7eksSmGwh13wO08rCkgXA5J2b/knfMabuEsS4PpvLaAHAoRBN8mdzHF0Azj4DgPZhNqf7Fj0O2wA4382ViLOnc5NHHWABCcgCOlABmkAXGAEzYAXsgBNwA97AHwSDcBADlgAuSAJpQAxywEqwDhSAIrAN7AJlYD84BKrBcXASNIJz4BK4Cm6AbtAHHoJ+MARegVHwAYxDEISHqBANUoG0IH3IFLKCWJAL5A0FQqFQDBQH8SEhJIFWQuuhIqgYKoMOQjXQz9BZ6BLUAfVA96EBaBh6C32BEZgC02EN2ACeC7NgdzgADocXw3w4A86F8+EtcClcCR+DG+BL8A24D+6HX8FjCEDICAPRRswQFuKJBCOxSCIiRlYjhUgJUonUIc1IO3IL6UdGkM8YHIaGYWLMME4YP0wEhovJwKzGbMaUYaoxDZg2zC3MAGYU8x1LxapjTbGOWDY2GsvH5mALsCXYI9gz2CvYPuwQ9gMOh2PgDHH2OD9cDC4ZtwK3GbcXV49rwfXgBnFjeDxeBW+Kd8YH4zn4LHwBfg/+GP4ivhc/hP9EIBO0CFYEH0IsQUjII5QQjhIuEHoJzwnjRDmiPtGRGEzkEZcTtxIPE5uJN4lDxHGSPMmQ5EwKJyWT1pFKSXWkK6RHpHdkMlmH7EBeQBaQ15JLySfI18gD5M8UBYoJxZOyiCKhbKFUUVoo9ynvqFSqAdWNGkvNom6h1lAvU59QP8nQZMxl2DI8mTUy5TINMr0yr2WJsvqy7rJLZHNlS2RPyd6UHZEjyhnIecpx5FbLlcudlbsrNyZPk7eUD5ZPk98sf1S+Q/6FAl7BQMFbgaeQr3BI4bLCIA2h6dI8aVzaetph2hXaEB1HN6Sz6cn0Ivpxehd9VFFB0UYxUnGZYrniecV+BsIwYLAZqYytjJOMO4wvShpK7koJSpuU6pR6lT4qqym7KScoFyrXK/cpf1FhqnirpKhsV2lUeayKUTVRXaCao7pP9YrqiBpdzUmNq1aodlLtgTqsbqIeqr5C/ZB6p/qYhqaGr4ZIY4/GZY0RTYamm2ay5k7NC5rDWjQtFy2B1k6ti1ovmYpMd2Yqs5TZxhzVVtf205ZoH9Tu0h7XMdSJ0MnTqdd5rEvSZekm6u7UbdUd1dPSC9JbqVer90CfqM/ST9Lfrd+u/9HA0CDKYINBo8ELQ2VDtmGuYa3hIyOqkatRhlGl0W1jnDHLOMV4r3G3CWxia5JkUm5y0xQ2tTMVmO417ZmDneMwRzincs5dM4qZu1m2Wa3ZgDnDPNA8z7zR/PVcvbmxc7fPbZ/73cLWItXisMVDSwVLf8s8y2bLt1YmVlyrcqvb1lRrH+s11k3Wb2xMbRJs9tncs6XZBtlusG21/WZnbye2q7Mbttezj7OvsL/LorNCWJtZ1xywDh4OaxzOOXx2tHPMcjzp+KeTmVOK01GnF/MM5yXMOzxv0FnHmeN80LnfhekS53LApd9V25XjWun61E3Xjed2xO25u7F7svsx99ceFh5ijzMeHz0dPVd5tnghXr5ehV5d3greEd5l3k98dHz4PrU+o762vit8W/ywfgF+2/3usjXYXHYNe9Tf3n+Vf1sAJSAsoCzgaaBJoDiwOQgO8g/aEfRovv584fzGYBDMDt4R/DjEMCQj5JcFuAUhC8oXPAu1DF0Z2h5GC1sadjTsQ7hH+NbwhxFGEZKI1kjZyEWRNZEfo7yiiqP6o+dGr4q+EaMaI4hpisXHRsYeiR1b6L1w18KhRbaLChbdWWy4eNnijiWqS1KXnF8qu5Sz9FQcNi4q7mjcV04wp5IzFs+Or4gf5Xpyd3Nf8dx4O3nDCc4JxQnPE50TixNf8J35O/jDSa5JJUkjAk9BmeBNsl/y/uSPKcEpVSkTqVGp9WmEtLi0s0IFYYqwLV0zfVl6j8hUVCDqz3DM2JUxKg4QH8mEMhdnNmXRUXPTKTGS/CAZyHbJLs/+lBOZc2qZ/DLhss7lJss3LX+e65P70wrMCu6K1pXaK9etHFjlvurgamh1/OrWNbpr8tcMrfVdW72OtC5l3a95FnnFee/XR61vztfIX5s/+IPvD7UFMgXigrsbnDbs34jZKNjYtcl6055N3wt5hdeLLIpKir5u5m6+/qPlj6U/TmxJ3NK11W7rvm24bcJtd7a7bq8uli/OLR7cEbSjYSdzZ+HO97uW7uoosSnZv5u0W7K7vzSwtGmP3p5te76WJZX1lXuU11eoV2yq+LiXt7d3n9u+uv0a+4v2fzkgOHDvoO/BhkqDypJDuEPZh54djjzc/hPrp5ojqkeKjnyrElb1V4dWt9XY19QcVT+6tRauldQOH1t0rPu41/GmOrO6g/WM+qIT4ITkxMuf436+czLgZOsp1qm60/qnK87QzhQ2QA3LG0Ybkxr7m2Kaes76n21tdmo+84v5L1XntM+Vn1c8v/UC6UL+hYmLuRfHWkQtI5f4lwZbl7Y+vBx9+XbbgrauKwFXrl31uXq53b394jXna+c6HDvOXmddb7xhd6Oh07bzzK+2v57psutquGl/s6nbobu5Z17PhV7X3ku3vG5dvc2+faNvfl/PnYg79+4uutt/j3fvxf3U+28eZD8Yf7j2EfZR4WO5xyVP1J9U/mb8W32/Xf/5Aa+BzqdhTx8Ocgdf/Z75+9eh/GfUZyXPtZ7XvLB6cW7YZ7j75cKXQ69Er8ZHCv6Q/6PitdHr03+6/dk5Gj069Eb8ZuLt5ncq76re27xvHQsZe/Ih7cP4x8JPKp+qP7M+t3+J+vJ8POcr/mvpN+Nvzd8Dvj+aSJuYEHHEnCkrgKABJyYC8LYKAGoM6h26ASDJTHviKUHTPn6KwH/iad88JTsAqtwAiFgLQCDqUfahoY8yBR0nLVG4G4CtraXxD2UmWltN16KgzhL7aWLinQYA+GYAvoknJsb3Tkx8O4w2ex+AloxpLz4pHPoP5QBlkjoM9ejgX/QXAHQBG0vRsCcAAAU0SURBVEgNpZZbbJRFFMfP7GorUVTQNhEhMbw0pgpVJIZGwoMpsV4Sq4l3MQQjUsvFS8Vri1wi2oQGSq1NKSENic0mYtIoEgho1Cho0CoPvphapIIRqrWgKbHb8Xdmv2+Z/Xa3bHGa6Zw5t/+ZM2fOt0YuYNg2eRyz65zpmByTMTlslsuRibgyE1FWXfuO7GP5jdnP1DGDOYd5lRhJSEwazVL5SwXjjQkBA1qGsx5T69YMv7ZFpklcVsBcJla65KSsNGvIRZ6RAWzb5WpJytvozmR+A0B91A7wIzj+kJP9gyzG7MP9PvOMy4LYBPCnZDP8+WSgyiyT36M+dK+GbuBwHaBHcTqAwRqYl8H7xDbJpSmN4H9cbnOUlSJ0Y8yF7HvR3c2cYx6QJAHXIVmkvuC9kWHvb1TI7LNbuSdvwGuyrbLLY2WQFFlpyLDvyp3sD2OzncxdrHy7RUrY5wQ3pKaI1PwtozLNrOBmIgPDbjJwlJStDkXw9BTPMzXdw8h78NJolshpAtU0V3LaO0ydDCq4XCS/ojPdT3sM0FqYrblAcaBDi+WpFJn+v5BUVpHSUgVgjspZOc6JN3HXK/G3B/khzaDzm6Tqrex39x+40Du6kuIYSruMEDj/E9a3OLndEx2nHqo5TTFAP6HzokziZGNyBdn4AHoDuu9RZnudjr5xK59yyJbQR4zoThJdScjIs07Gyem0LC5LsbuRFA4D1ENQ5WaxjBDEEvg/y4h0E8zrgH2GTrvaIVvO8jD6U3SvJ/6eOVs3uQaKG5APcT9fh3IaxCkc1zCL4W3DSyK4W0HvOU4+iF0z8meRX09gtwa2bfhaq3SMSL5gLQ8jCRTcAm8dRDWneNDn+zTOe8hGBTrT0d/iZEnqRuQJu02mAtRIYKknNSrN6D2kOuE7TkC/oIzIqCT6epzrPecdZOBf2oQGt4BnNZuCOgtAB9wGDrYHupyMzHCFZqUfem4K2MibGD2a5dlwDTGqtoBBexxF92UCVV86NK33OmpM9rJqo+GypZf/FQ6Ye+lnc5DnsJ713DhDgYjUuVZ6jpuXMk/LboTzbadMDnwWY3sNvD4AZzpDy5sWuTZMtdAAaolwld3EYwiGqaexWGni6ewKu1Eoy7vqGx6RetJZgU4J13ACUP2zvk0a2DwpfyBol0uCAgm0uKMGTL4DvNs3zEvHaDgxmQXQDnRSaTdcg+Vh6aAImQMZXyflU5mfsxygoBp1Hw74HRhPIpDHQl6hK03kcmAPoq+fySF8pz40vgPtrYBYXX2+0qSvk7kzyi90Tw3dEOpmnVgFAOu7u4/2UKmNP1QOZG2spSTvEfdsfCE0z2keyxR628cmcq++ak5gVSC6t0jtXACqowAE1oxKJbK73dtUfSpZWyX3N5WtvnttPJup7lXQWSMvsGoGAGUA1OQA16yo0+3Mj5gNAH0F0Gpo/SVSJIOyFbKMYrtf26zywzEusCo5cCM304XuAXw4NHQyvk4UzXoAbyI7hyiaV32502mlN2vLLZZbotcW1c3aA76RovoxV8FlKedg6LXho8MXpd+xz4zSnOQlok5wumMEsDYqP+8+KZ3oLPD1CgJWA/eu4+7xzyP6LldMvqfxaENDEfnBVykYWI2C73AVpz/B90d/BGz0neWibTO/cIQis/zy9MZ5i8vTzSCDbqTf37uYO/gmtxDYL76S/uaior+E9z4Ze8WXXTBw6MQVXFxeIws18LTf90IPcEJ9z4uY+ktEv3IZ438D+94oPP0iuV8jAGsQXfT2M75OSP8HKfW8ddxDnsYAAAAASUVORK5CYII="></image>
-						            </g>
-						        </g>
-						    </g>
-						</svg>
-						103 43
-					</small>
-				</article>
-			<?php endif; ?>
-		</div>
 	</section>
 <?php get_footer(); ?>

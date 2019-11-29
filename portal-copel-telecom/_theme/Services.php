@@ -65,9 +65,11 @@ class Services {
 		$session = json_decode($_SESSION["copeltelecom"]);
 
 		if ($session->planos->precoProduto) {
-			$session->planos->price = $this->profile_price($session->planos->precoProduto);
-			$session->planos->cents = $this->profile_cents($session->planos->precoProduto);
+			$session->planos->price =$session->planos->precoProduto;
+			$session->planos->cents = $session->planos->precoProduto;
 			$session->planos->velocidade = $this->profile_velocidade($session->planos->nomeProduto);
+			$session->planos->download = $session->planos->download;
+			$session->planos->upload = $session->planos->upload;
 		}
 
 		return $session;
@@ -79,10 +81,14 @@ class Services {
 		return $cents;
 	}
 
+	// public function profile_price($precoProduto) {
+	// 	$price = strrev( strchr(strrev($precoProduto),",") );
+	// 	$price = str_replace(",", "", $price);
+	// 	return $price;
+	// }
+
 	public function profile_price($precoProduto) {
-		$price = strrev( strchr(strrev($precoProduto),",") );
-		$price = str_replace(",", "", $price);
-		return $price;
+		return $precoProduto;
 	}
 
 	public function profile_velocidade($nomeProduto) {
