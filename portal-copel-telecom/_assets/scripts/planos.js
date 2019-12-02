@@ -211,12 +211,14 @@ function showPlanos(cidade) {
 
 jQuery(document).ready(function($) {
 	//initialize();
-	autoCompleteInit();
-	initFormPlanos();	
-	initDisponibilidadeModal();
+	//autoCompleteInit();
+	//initFormPlanos();	
+	//initDisponibilidadeModal();
 });
 
 // start
-if(copel.session.cidade){
-	showPlanos(copel.session.cidade);
-}
+// if(copel.session.cidade){
+// 	showPlanos(copel.session.cidade);
+// }
+
+showPlanos('Curitiba');

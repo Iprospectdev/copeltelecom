@@ -71,7 +71,7 @@ $slides = get_posts(array(
                         </li>
                     </ul>
                 </nav>
-                <a href="<?php echo LINK_WVT; ?>" target="_blank" class="btn-assine js-disponibilidade-modall">
+                <a href="<?php echo LINK_WVT; ?>" target="_blank" class="btn-assine">
                     Assine Já
                 </a>
             </div>
@@ -121,64 +121,7 @@ $slides = get_posts(array(
                 
             </div>
         </section>
-       <?php if (!isset($session->cidade)): ?>             
-       <article class="planos-list">
-            <div class="container">
-                <div class="planos-geolocation">
-                <h5>
-                        <svg width="97px" height="115px" viewBox="0 0 97 115" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <g id="00_home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.149999991">
-                                <g id="01_home_banner1_informar-endereco" transform="translate(-635.000000, -606.000000)" fill="#FFFFFF">
-                                    <g id="Group-21" transform="translate(98.000000, 606.000000)">
-                                        <g id="Group-9">
-                                            <g id="Group">
-                                                <g id="Group-6">
-                                                    <path d="M600.935102,57.1789474 L634,57.1789474 L601.956154,114.357895 L538.021053,114.357895 L570.064898,57.1789474 L537,57.1789474 L569.043846,0 L632.978947,0 L600.935102,57.1789474 Z" id="Combined-Shape-Copy-5"></path>
-                                                </g>
-                                            </g>
-                                        </g>
-                                    </g>
-                                </g>
-                            </g>
-                        </svg>
-                    </h5>
-                    <div class="row">
-                    
-                        <div class="col-12 col-md-6 planos-geolocation--legend">
-                        
-
-                            <svg width="90px" height="115px" viewBox="0 0 90 115" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <g id="00_home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                            <g id="01_home_banner1_informar-endereco" transform="translate(-154.000000, -743.000000)">
-                            <g id="Group-21" transform="translate(98.000000, 606.000000)">
-                            <g id="Group-9">
-                            <g id="Group-30" transform="translate(58.000000, 139.000000)">
-                            <g id="Group-39">
-                                <circle id="Oval-4" stroke="#FFA600" stroke-width="3" cx="43.5" cy="43.5" r="33.5"></circle>
-                                <circle id="Oval-4" stroke="#FFA600" stroke-width="3" cx="43" cy="43" r="43"></circle>
-                                <ellipse id="Oval-3" fill="#464D5C" opacity="0.300000012" cx="43" cy="104" rx="25" ry="9"></ellipse>
-                                <g id="placeholder" transform="translate(23.000000, 24.000000)" fill="#464D5C">
-                                    <path d="M34.3184444,28.5910664 L20.2524444,52.1222695 L5.81855556,28.8168398 C4.19266667,26.1859336 3.31111111,23.1506836 3.31111111,20.0390625 C3.31111111,10.8311133 10.81,3.31757812 20,3.31757812 C29.19,3.31757812 36.6777778,10.8311133 36.6777778,20.0390625 C36.6777778,23.0583926 35.8543333,26.0160469 34.3184444,28.5910664 Z M20,0 C8.972,0 0,8.98952344 0,20.0390625 C0,23.7723398 1.03211111,27.4156641 2.98544444,30.5764922 L18.8615556,56.2105723 C19.1656667,56.7016406 19.7014444,57 20.2776667,57 C20.2821111,57 20.2864444,57 20.2908889,57 C20.8721111,56.9954355 21.409,56.6878359 21.7075556,56.1881953 L37.179,30.3057422 C39.0245556,27.2117109 40,23.6615684 40,20.0390625 C40,8.98952344 31.028,0 20,0 Z" id="Fill-1"></path>
-                                    <path d="M20,26.6888889 C16.3047778,26.6888889 13.3111111,23.6852222 13.3111111,20 C13.3111111,16.324 16.324,13.3111111 20,13.3111111 C23.676,13.3111111 26.6777778,16.324 26.6777778,20 C26.6777778,23.6314444 23.7537778,26.6888889 20,26.6888889 Z M20,10 C14.486,10 10,14.486 10,20 C10,25.4787778 14.413,30 20,30 C25.6558889,30 30,25.4185556 30,20 C30,14.486 25.514,10 20,10 Z" id="Fill-2"></path>
-                                </g>
-                            </g>
-                            </g>
-                            </g>
-                            </g>
-                            </g>
-                            </g>
-                            </svg>
-                            <h6>Planos Copel Fibra</h6>
-                            <p>Informe sua cidade para podermos mostrar os planos disponíveis na sua região.</p>
-                        </div>
-                        <div class="col-12 col-md-4 offset-md-1 planos-geolocation--form">
-                            <a href="<?php $p=get_page_by_title('Planos'); echo get_permalink($p->ID); ?>" class="btn-assine">Descubra o seu plano</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </article> 
-        <?php endif; ?>
+       
         <section class="home-planos">
             <div class="home-planos-list d-none">
                 <button class="home-planos-carousel-prev">
@@ -356,7 +299,7 @@ $slides = get_posts(array(
             </div>
         </section>
 
-        <section class="home-fibra" id="fibraoptica">
+        <section class="home-fibra" id="fibraoptica" data-target="PorQueACopel">
             <img src="<?php bloginfo('template_url'); ?>/_assets/images/placeholder/home-fibra.jpg" alt="">
             <div class="container">
                 <div class="home-fibra--text">
@@ -463,7 +406,7 @@ $slides = get_posts(array(
             <img src="<?php bloginfo('template_url'); ?>/_assets/images/home-testes-bg.svg" class="home-testes--bg" alt="">
 			<div class="container">
                 <div class="row">
-                    <div class="col-12 col-md-6">
+                    <div class="col-12 col-md-6" data-target="Cobertura">
                         <div class="home-testes--box">
                             <h6>
                                 <svg width="90px" height="117px" viewBox="0 0 90 117" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><filter x="-6.0%" y="-16.7%" width="112.0%" height="133.3%" filterUnits="objectBoundingBox" id="filter-1"><feGaussianBlur stdDeviation="1" in="SourceGraphic"></feGaussianBlur></filter></defs><g id="00_home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="01_home_banner1_informar-endereco" transform="translate(-152.000000, -3014.000000)"><g id="Group-51" transform="translate(98.000000, 2962.000000)"><g id="Group-39" transform="translate(56.000000, 54.000000)"><g id="Group-45"><circle id="Oval-4" stroke="#FFA600" stroke-width="3" cx="43.5" cy="43.5" r="33.5"></circle><circle id="Oval-4" stroke="#FFA600" stroke-width="3" cx="43" cy="43" r="43"></circle><ellipse id="Oval-3" fill="#464D5C" opacity="0.5" filter="url(#filter-1)" cx="43" cy="104" rx="25" ry="9"></ellipse><g id="placeholder" transform="translate(23.000000, 24.000000)" fill="#464D5C"><path d="M34.3184444,28.5910664 L20.2524444,52.1222695 L5.81855556,28.8168398 C4.19266667,26.1859336 3.31111111,23.1506836 3.31111111,20.0390625 C3.31111111,10.8311133 10.81,3.31757812 20,3.31757812 C29.19,3.31757812 36.6777778,10.8311133 36.6777778,20.0390625 C36.6777778,23.0583926 35.8543333,26.0160469 34.3184444,28.5910664 Z M20,0 C8.972,0 0,8.98952344 0,20.0390625 C0,23.7723398 1.03211111,27.4156641 2.98544444,30.5764922 L18.8615556,56.2105723 C19.1656667,56.7016406 19.7014444,57 20.2776667,57 C20.2821111,57 20.2864444,57 20.2908889,57 C20.8721111,56.9954355 21.409,56.6878359 21.7075556,56.1881953 L37.179,30.3057422 C39.0245556,27.2117109 40,23.6615684 40,20.0390625 C40,8.98952344 31.028,0 20,0 Z" id="Fill-1"></path><path d="M20,26.6888889 C16.3047778,26.6888889 13.3111111,23.6852222 13.3111111,20 C13.3111111,16.324 16.324,13.3111111 20,13.3111111 C23.676,13.3111111 26.6777778,16.324 26.6777778,20 C26.6777778,23.6314444 23.7537778,26.6888889 20,26.6888889 Z M20,10 C14.486,10 10,14.486 10,20 C10,25.4787778 14.413,30 20,30 C25.6558889,30 30,25.4185556 30,20 C30,14.486 25.514,10 20,10 Z" id="Fill-2"></path></g></g></g></g></g></g></svg>

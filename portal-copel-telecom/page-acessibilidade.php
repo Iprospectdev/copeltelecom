@@ -87,6 +87,7 @@
 					<div class="acessibilidade-item">
 						<h6><i class="fas fa-volume-up"></i>NVDA</h6>
 						<p>Uma característica que garante um grande diferencial ao NVDA é o fato dele não precisar ser instalado no sistema, podendo ser levado em um pendrive, cd ou qualquer outro disco removível.</p>
+						<a href="https://www.baixaki.com.br/download/nvda.htm" target="_blank" class="btn-more">Saiba mais</a>
 					</div>
 
 					<div class="acessibilidade-item">
@@ -98,6 +99,7 @@
 							• Jogos didáticos e lúdicos;<br>
 							• Programas para educação de deficientes visuais;
 						</p>
+						<a href="https://www.baixaki.com.br/download/dosvox.htm" target="_blank" class="btn-more">Saiba mais</a>
 					</div>
 				</div>
 				<div>

@@ -114,7 +114,7 @@
 										<nav>
 											<div class="menu-docs">
 												<?php foreach ($documentos as $doc): ?>
-													<a href="#<?php echo $doc->post_name; ?>" class="bt-documento"><?php echo $doc->post_title; ?></a>	
+													<a href="#<?php echo $doc->post_name; ?>" data-target="<?php echo $doc->post_name; ?>" class="bt-documento"><?php echo $doc->post_title; ?></a>	
 												<?php endforeach ?>
 											</div>
 										</nav>

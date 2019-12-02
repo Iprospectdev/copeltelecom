@@ -202,12 +202,12 @@ $slides = get_posts(array(
                             0800 41 41 81
                             </a>
                         </div>
-                        <div class="contato">
+                        <!-- <div class="contato">
                             <img src="<?php bloginfo('template_url'); ?>/_assets/images/ico_contato.svg"> 
                             Contato
-                        </div>
+                        </div> -->
                         <div class="perguntas">
-                            <a href="<?php bloginfo('url'); ?>/faq">
+                            <a href="<?php bloginfo('url'); ?>/blog/faq">
                             <img src="<?php bloginfo('template_url'); ?>/_assets/images/ico_pergunta.svg">
                             Perguntas frequentes
                             </a>

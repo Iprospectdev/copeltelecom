@@ -19,19 +19,32 @@ jQuery(document).ready(function($) {
         }
     });
 
+    var docAberto = '';
+
     $('#as-documentos ul').css({'display':'none'});
     
     if(window.location.hash){
+        console.log(docAberto)
         var href=window.location.hash;
         href = href.replace('#','');
+        if(docAberto != ''){
+            $('#as-documentos ul.'+docAberto).slideUp();
+            $('#as-documentos nav a[href="#'+docAberto+'"]').removeClass('active');
+        }
+        docAberto = href;
         $('#as-documentos nav a[href="'+window.location.hash+'"]').addClass('active');
         $('#as-documentos ul.'+href).slideDown();
     } 
 
      $(window).on('hashchange',function(){ 
+        console.log(docAberto)
         var href=window.location.hash;
-        console.log('trocou = '+href);
         href = href.replace('#','');
+        if(docAberto != ''){
+            $('#as-documentos ul.'+docAberto).slideUp();
+            $('#as-documentos nav a[href="#'+docAberto+'"]').removeClass('active');
+        }
+        docAberto = href;
         $('#as-documentos nav a[href="'+window.location.hash+'"]').addClass('active');
         $('#as-documentos ul.'+href).slideDown();
      }); 

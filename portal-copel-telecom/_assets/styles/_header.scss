@@ -63,7 +63,7 @@
 		display: table;
 	}
 
-	@include media-breakpoint-down(sm) {
+	@include media-breakpoint-down(lg) {
 		display: none;
 	}
 }
@@ -214,7 +214,7 @@
 		}
 	}
 
-	@include media-breakpoint-down(sm) {
+	@include media-breakpoint-down(lg) {
 		display: none;
 	}
 }
@@ -257,7 +257,7 @@ header {
     	margin: 0 15px;
     }
 
-	@include media-breakpoint-down(sm) {
+	@include media-breakpoint-down(lg) {
 		display: none;
 	}
 }
@@ -348,6 +348,7 @@ header {
 	top: 0;
 	width: 100%;
 	z-index: 10;
+	display: none;
 
 	.logo {
 		display: inline-block;
@@ -377,14 +378,14 @@ header {
 		display: table;
 	}
 
-	@include media-breakpoint-up(sm) {
-		display: none;
+	@include media-breakpoint-down(lg) {
+		display: block;
 	}
 }
 
 .header-mobile-nav {
 	background: color('orange-light');
-	display: block;
+	display: none;
 	height: 100%;
 	left: calc(-100% + 66px);
 	position: fixed;
@@ -445,7 +446,7 @@ header {
 			
 		}
  
-		@include media-breakpoint-down(sm) {
+		@include media-breakpoint-down(lg) {
 			margin-bottom: 15px;
 			display: inline-block;
 		}
@@ -566,8 +567,8 @@ header {
 		
 	}
 
-	@include media-breakpoint-up(sm) {
-		display: none;
+	@include media-breakpoint-down(lg) {
+		display: block;
 	}
 }
 

@@ -120,8 +120,8 @@
                     <a href="<?php bloginfo('url'); ?>/atendimento-e-suporte"  class="header-top--btn">Atendimento e suporte</a>
                     <a href="<?php $p=get_page_by_title('Blog'); echo get_permalink($p->ID); ?>"  class="header-top--btn">Blog</a>
 
-                    <a href="#" data-toggle="modal" data-target="#cidade-modal"class="header-top--btn btn-cidade"><i class="fas fa-map-marker-alt"></i><span class="js-cidade-estado">CIDADE/ESTADO</span></a>
-                    <a href="https://www.copeltelecom.com/autoatendimento/pub/login.jsf" target="_blank" class="header-top--btn active">Minha Copel</a>
+                    <!-- <a href="#" data-toggle="modal" data-target="#cidade-modal"class="header-top--btn btn-cidade"><i class="fas fa-map-marker-alt"></i><span class="js-cidade-estado">CIDADE/ESTADO</span></a> -->
+                    <a href="https://www.copeltelecom.com/autoatendimento/pub/login.jsf" target="_blank" class="header-top--btn active">Minha copel</a>
                 </div>
             </div>        
         </div>
@@ -144,6 +144,7 @@
                         ));
                         global $post;
                     ?>
+                    <?php $area = ''; ?>
 
                     <?php $p=get_page_by_title('Para Você'); ?>
                     <?php $q=get_page_by_title('Para Empresas'); ?>
@@ -151,16 +152,20 @@
                     <?php if($p->ID == $post->post_parent || $p->ID == $post->ID){
                          $children = get_page_children($p->ID, $pages); 
                          $pageId = $p->ID;
+                         $area = 'voce';
                          ?>
                          <a href="<?php $p=get_page_by_title('Para Você'); echo get_permalink($p->ID); ?>" class="btn active">Para você</a>
                          <a href="<?php $p=get_page_by_title('Para Empresas'); echo get_permalink($p->ID); ?>" class="btn">Para empresas</a>
                      <?php }else if($q->ID == $post->post_parent || $q->ID == $post->ID){
                         $children = get_page_children($q->ID, $pages); 
                         $pageId = $q->ID;
+                        $area = 'empresa';
                         ?>
                         <a href="<?php $p=get_page_by_title('Para Você'); echo get_permalink($p->ID); ?>" class="btn">Para você</a>
                         <a href="<?php $p=get_page_by_title('Para Empresas'); echo get_permalink($p->ID); ?>" class="btn active">Para empresas</a>
-                     <?php } else { ?>
+                     <?php } else { 
+                        $area = '';
+                        ?>
                         <a href="<?php $p=get_page_by_title('Para Você'); echo get_permalink($p->ID); ?>" class="btn">Para você</a>
                         <a href="<?php $p=get_page_by_title('Para Empresas'); echo get_permalink($p->ID); ?>" class="btn">Para empresas</a>
                     <?php } ?>
@@ -209,6 +214,28 @@
                                 <?php endif; ?>
                             <?php endforeach; ?>
 
+                            <?php if ($area == 'voce') { ?>
+                                <li>
+                                    <a href="<?php $p=get_page_by_title('Para Você'); echo get_permalink($p->ID); ?>#Cobertura">
+                                        <div class="hld">
+                                            <strong>Cobertura</strong>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="<?php $p=get_page_by_title('Para Você'); echo get_permalink($p->ID); ?>#PorQueACopel">
+                                        <div class="hld">
+                                            <strong>Por que a Copel</strong>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <a href="<?php echo LINK_WVT; ?>" target="_blank" class="btn-assine" style="margin-left: 15px">
+                                    Assine Já
+                                </a>
+
+                            <?php } ?>
+
                         </ul>
                     <?php } ?>
 
@@ -234,11 +261,12 @@
 
         <div class="header-mobile-nav">
             <div class="header-mobile-button"><div></div></div>
-            <div class="btn-home bt-nav" data-target="geral"><img src="<?php bloginfo('template_url'); ?>/_assets/images/ico_home.svg"></div>
+            <div class="btn-home <?php if ($area != '') { echo 'd-block'; } else { echo 'd-none'; } ?>"><a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('template_url'); ?>/_assets/images/ico_home.svg"></a></div>
             <div class="overflow">
-                <a href="#" class="header-mobile-nav--btn bt-nav" data-target="voce">Para você</a>
-                <a href="#" class="header-mobile-nav--btn bt-nav" data-target="empresas">Para empresas</a>
-                <nav class="nav-geral">
+                
+                <a href="<?php $p=get_page_by_title('Para você'); echo get_permalink($p->ID); ?>" class="header-mobile-nav--btn <?php if ($area == 'voce') { echo 'active'; } ?>">Para você</a>
+                <a href="<?php $p=get_page_by_title('Para empresas'); echo get_permalink($p->ID); ?>" class="header-mobile-nav--btn <?php if ($area == 'empresa') { echo 'active'; } ?>">Para empresas</a>
+                <nav class="nav-geral <?php if ($area == '') { echo 'd-block'; } else { echo 'd-none'; } ?>">
                     <ul>
 
                         <li>
@@ -253,19 +281,19 @@
                             <a href="<?php bloginfo('url'); ?>/atendimento-e-suporte/">Atendimento e suporte</a>
                         </li>
                         <li>
-                            <a href="#">Documentos</a>
+                            <a href="<?php bloginfo('url'); ?>/atendimento-e-suporte/#as-documentos">Documentos</a>
                         </li>
                         <!-- <li>
                             <a href="#">Mapa do site</a>
                         </li> -->
                         <li class="header-mobile-nav--minhacopel">
-                            <a href="#">
+                            <a href="https://www.copeltelecom.com/autoatendimento/pub/login.jsf" target="_blank">
                                 <strong>Minha Copel</strong>
                             </a>
                         </li>
                     </ul>
                 </nav>
-                <nav class="nav-empresas">
+                <nav class="nav-empresas <?php if ($area == 'empresa') { echo 'd-block'; } else { echo 'd-none'; } ?>">
                     <ul>
                         <li>
                             <a href="<?php $p=get_page_by_title('Internet dedicada'); echo get_permalink($p->ID); ?>">
@@ -298,13 +326,13 @@
                             </a>
                         </li>
                         <li class="header-mobile-nav--minhacopel">
-                            <a href="#">
+                            <a href="https://www.copeltelecom.com/autoatendimento/pub/login.jsf" target="_blank">
                                 <strong>Minha Copel</strong>
                             </a>
                         </li>
                     </ul>
                 </nav>
-                <nav class="nav-voce">
+                <nav class="nav-voce <?php if ($area == 'voce') { echo 'd-block'; } else { echo 'd-none'; } ?>">
                     <ul>
                         <li>
                             <a href="<?php $p=get_page_by_title('Planos'); echo get_permalink($p->ID); ?>">
@@ -312,7 +340,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="<?php $p=get_page_by_title('Para Você'); echo get_permalink($p->ID); ?>#Cobertura">
                                 <strong>Cobertura</strong>
                             </a>
                         </li>
@@ -344,7 +372,7 @@
                         </li>
 
                         <li class="header-mobile-nav--minhacopel">
-                            <a href="#">
+                            <a href="https://www.copeltelecom.com/autoatendimento/pub/login.jsf" target="_blank">
                                 <strong>Minha Copel</strong>
                             </a>
                         </li>
@@ -353,9 +381,9 @@
                 
                 <div class="header-mobile-nav--acessibilidade">
                     
-                    <a href="<?php $p=get_page_by_title('Acessibilidade'); echo get_permalink($p->ID); ?>"><i class="fas fa-map-marker-alt"></i><span class="js-cidade-estado">CIDADE/ESTADO</span></a>
+                    <!-- <a href="<?php $p=get_page_by_title('Acessibilidade'); echo get_permalink($p->ID); ?>"><i class="fas fa-map-marker-alt"></i><span class="js-cidade-estado">CIDADE/ESTADO</span></a> -->
 
-                    <a href="#">
+                    <a href="<?php $p=get_page_by_title('Acessibilidade'); echo get_permalink($p->ID); ?>">
                         <svg width="17px" height="23px" viewBox="0 0 17 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <defs>
                                 <polygon id="path-1" points="0.0215292819 0.0350019048 13.8385332 0.0350019048 13.8385332 15.085696 0.0215292819 15.085696"></polygon>

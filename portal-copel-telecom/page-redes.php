@@ -277,16 +277,20 @@
                             </div>
                             <div class="col-md-4 contatos">
                                 <div class="holder fone">
+                                    <a href="tel:0800414181" target="_blank">
                                     <img src="<?php bloginfo('template_url'); ?>/_assets/images/ico_phone.svg"> 
                                     0800 41 41 81
+                                    </a>
                                 </div>
-                                <div class="holder contato">
-                                    <img src="<?php bloginfo('template_url'); ?>/_assets/images/ico_contato.svg">  
+                                <!-- <div class="holder contato">
+                                    <img src="<?php bloginfo('template_url'); ?>/_assets/images/ico_contato.svg"> 
                                     Contato
-                                </div>
+                                </div> -->
                                 <div class="holder perguntas">
-                                    <img src="<?php bloginfo('template_url'); ?>/_assets/images/ico_pergunta.svg">  
+                                    <a href="<?php bloginfo('url'); ?>/blog/faq">
+                                    <img src="<?php bloginfo('template_url'); ?>/_assets/images/ico_pergunta.svg">
                                     Perguntas frequentes
+                                    </a>
                                 </div>
                             </div>
                         </div>
