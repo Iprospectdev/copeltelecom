@@ -79,7 +79,7 @@ window.onload = function() {
                   response = JSON.parse(response);
                 }
                 if (response.status == "success") {
-                   window.location.href = copel.url + '/sucesso/'
+                   window.location.href = copel.url + '/sucesso-contato/'
                 } else {
                   $(this).addClass('error');
                 } 
@@ -136,7 +136,7 @@ window.onload = function() {
                   response = JSON.parse(response);
                 }
                 if (response.status == "success") {
-                   window.location.href = copel.url + '/sucesso/'
+                   window.location.href = copel.url + '/sucesso-contato/'
                 } else {
                   $(this).addClass('error');
                 } 
@@ -180,7 +180,7 @@ window.onload = function() {
                   response = JSON.parse(response);
                 }
                 if (response.status == "success") {
-                   window.location.href = copel.url + '/sucesso/'
+                   window.location.href = copel.url + '/sucesso-contato/'
                 } else {
                   $(this).addClass('error');
                 } 
@@ -229,7 +229,7 @@ window.onload = function() {
                         response = JSON.parse(response);
                       }
                       if (response.status == "success") {
-                         window.location.href = copel.url + '/sucesso/'
+                         window.location.href = copel.url + '/sucesso-contato/'
                       } else {
                         $(this).addClass('error');
                       } 
