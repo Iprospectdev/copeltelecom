@@ -327,6 +327,11 @@
 			}
 		}
 	}
+
+	@include media-breakpoint-down(sm) {
+		width: 95%;
+		margin-left: 5%;
+	}
 }
 
 .home-planos-carousel {
@@ -365,6 +370,10 @@
 			text-align: left;
 			position: relative;
 			border-right: 1px solid rgba(#fff,0.5);
+
+			i {
+				display: none;
+			}
 
 			small {
 				color: #fff;
@@ -442,12 +451,22 @@
 
 		@include media-breakpoint-down(sm) {
 			h6,p,ul {
-				padding: 0 55px;
+				padding: 0 35px;
+			}
+			h6 {
+				i {
+					position: absolute;
+					top: 35px;
+					right: 15px;
+					font-size: 30px;
+					color: #FFFFFF;
+					display: block;
+				}
 			}
 			.btn-assine {
-				margin-left: 55px;
-				margin-right: 55px;
-				width: calc(100% - 110px);
+				margin-left: 35px;
+				margin-right: 35px;
+				width: calc(100% - 70px);
 			}
 		}
 	}
@@ -1628,6 +1647,7 @@
 		border: 0;
 		font-weight: 400;
 		border-radius: 0;
+		z-index: 999;
 	}
 
 	&--retangle {
@@ -1679,6 +1699,10 @@
 
 	@include media-breakpoint-down(sm) {
 		padding: 15px;
+
+		.modal-content {
+		padding: 15px;
+		}
 
 		p {
 			margin-bottom: 0;

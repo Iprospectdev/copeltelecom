@@ -280,15 +280,24 @@
 				}
 			}
 			@include media-breakpoint-down(md) {
-				height: 230vh;
+				height: 300vh;
 				.img {
-					height: 230vh;
+					height: 300vh;
+					&:after {
+						height: 300vh;
+					}
 				}
 			}
 		}
 		@include media-breakpoint-down(md) {
 			.bg-slide-info {
 				width: 70%;
+			}
+
+			.info {
+				h3 {
+					color: #FFFFFF;
+				}
 			}
 		}
 
@@ -299,15 +308,49 @@
 		}
 	}
 
-	@include media-breakpoint-down(md) {
+	@include media-breakpoint-down(sm) {
+		.info {
+			padding : 275px 0 150px 0;
+
+			h3 {
+				font-size: 25px;
+			}
+			.bg-raio {
+				img {
+					height: 150px;
+				}
+			}
+		}
+		.container {
+			height: 600px;
+		}
+		.img {
+			height: 600px;
+
+			&:after {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 600px;
+				background: rgba(0,0,0,0.5);
+			}
+		}
 		.bg-slide-info {
 			width: 70%;
 		}
+
+		&--detalhe{
+			top: 510px;
+			width: 50px;
+		}
+
 	}
 
 	@include media-breakpoint-down(sm) {
 		.bg-slide-info {
-			width: 100%;
+			width: 60%;
 		}
 	}
 }
@@ -978,6 +1021,10 @@
 			@include main-lines('bottom');
 		}
 
+		@include media-breakpoint-down(sm) {
+			padding: 50px 30px 50px 30px;
+		}
+
 		&-carousel--item{
 			flex-wrap: wrap;
 			display: flex;
@@ -1005,6 +1052,10 @@
 				.titulo {
 					width: 100%;
 					display: block;
+
+					h6 {
+						font-size: 40px;
+					}
 				}
 
 				.txt {
@@ -1290,7 +1341,7 @@
 	}
 .interna-colocation{
 	position: relative;
-	background: url('../images/sobre-nos-banner.jpg') no-repeat center;
+	background: url('../images/bg_interna_colocation.jpg') no-repeat center;
 	background-size: cover;
 	padding: 100px 0 100px 0;
 	color: #FFFFFF;
@@ -1570,6 +1621,21 @@
 
 		.owl-dots{
 			right: -80px;
+		}
+
+		@include media-breakpoint-down(sm) {
+			.owl-dots{
+				right: 0;
+				transform: translateY(100%);
+				top: auto;
+				bottom: 0;
+				width: 100%;
+				text-align: center;
+
+				.owl-dot {
+					display: inline-block;
+				}
+			}
 		}
 
 		&-carousel--item{
@@ -1930,12 +1996,12 @@
 		top: 0;
 		width: 150%;
 		height: 100%;
-		background: url('../images/sobre-nos-banner.jpg') no-repeat center;
-		background-size: cover;
+		background: url('../images/bg_servico_recomendado.jpg') no-repeat center;
+		background-size: cover; 
 	}
 
 	.destaque--text {
-		color: #FFFFFF;
+		color: #FFFFFF; 
 		font-size: 15px;
 		span{
 			font-weight: bold;
@@ -2401,6 +2467,13 @@
 		}
 	
 	}
+	@include media-breakpoint-down(md) {
+		&--heading {
+			h6 {
+				font-size: 30px;
+			}
+		}
+	}
 	.menu-docs {
 		margin: 30px 0;
 
@@ -2421,6 +2494,9 @@
 				color: #FFFFFF;
 			}
 		}
+		@include media-breakpoint-down(md) {
+				padding: 15px;
+			}
 	}
 
 	.lista-docs {
@@ -2443,6 +2519,13 @@
 				color: #464D5C;
 				display: table-cell;
 			}
+		}
+
+		@include media-breakpoint-down(md) {
+			columns: 1;
+		-webkit-columns: 1;
+		-moz-columns: 1;
+		padding: 15px;
 		}
 	}
 
@@ -2554,6 +2637,7 @@
 			font-size: 25px;
 			font-weight: bold;
 			height: 75px;
+			margin-top: 30px;
 		}
 
 		.ico {
@@ -2563,6 +2647,13 @@
 		.txt {
 			font-size: 15px;
 			height: 100px;
+		}
+
+		@include media-breakpoint-down(md) {
+			.txt {
+				height: auto;
+				margin-bottom: 30px;
+			}
 		}
 
 		.bt {

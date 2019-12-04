@@ -15,8 +15,13 @@
 	$contents .= "MENSAGEM \t";
 	$contents .= "DATA \t \n";
 
-	header('Content-type: application/ms-excel');
-	header('Content-Disposition: attachment; filename='.$filename);
+	header ("Expires: Mon, 26 Jul 1997 05:00:00 GMT");
+	header ("Last-Modified: " . gmdate("D,d M YH:i:s") . " GMT");
+	header ("Cache-Control: no-cache, must-revalidate");
+	header ("Pragma: no-cache");
+	header ("Content-type: application/x-msexcel");
+	header ("Content-Disposition: attachment; filename=\"{$filename}\"" );
+	header ("Content-Description: PHP Generated Data" );
 
 	if ($contatos): foreach($contatos as $contato):
 		$contents .= $contato->nome . "\t";
@@ -28,7 +33,7 @@
 		$contents .= $contato->created . "\t \n";
 	endforeach; endif;
 
-	echo $contents;
+	echo utf8_decode(strip_tags($contents));
 
 	exit();
 
