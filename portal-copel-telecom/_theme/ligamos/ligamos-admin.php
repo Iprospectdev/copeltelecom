@@ -23,16 +23,29 @@ function contato_ligamos_settings_page() {
 
 ?>
 	<div class="wrap">
-		<div class="container">
-			<h3>Contato</h3>
+
+	<h3>Contatos</h3>
+
+	<?php
+		$contatos = $wpdb->get_var("SELECT COUNT(*) FROM contatos_ligamos");
+		if ( $_GET['id'] ):
+			$delete = $wpdb->query( "DELETE FROM contatos_ligamos WHERE id = '". $_GET['id'] ."'" );
+			echo '<div id="message" class="updated"><p><strong>Contato apagado com sucesso.</strong></p></div>';
+		endif;
+	?>
+
+<p class="btn btn-primary">
+				Total de Contatos: <?php print_r($contatos); ?>
+</p><br /><br />
+
+<p>
+	<a href="<?php bloginfo("template_url"); ?>/_theme/ligamos/download.php" target="_blank" class="btn btn-success">Download dos Contatos</a>
+</p>
+
+		<!-- <div class="container">
+			
 			<hr>
-			<?php
-				$contatos = $wpdb->get_results("SELECT * FROM contatos_ligamos");
-				if ( $_GET['id'] ):
-					$delete = $wpdb->query( "DELETE FROM contatos_ligamos WHERE id = '". $_GET['id'] ."'" );
-					echo '<div id="message" class="updated"><p><strong>Contato apagado com sucesso.</strong></p></div>';
-				endif;
-			?>
+		
 			<table class="widefat" id="contato">
 				<thead>
 					<tr>
@@ -67,13 +80,11 @@ function contato_ligamos_settings_page() {
 
 			<hr>
 
-			<p>
-				<a href="<?php bloginfo("template_url"); ?>/_theme/ligamos/download.php" target="_blank" class="btn btn-success">Download dos Contatos</a>
-			</p>
+		
 
-		</div>
+		</div> -->
 	</div>
-	
+<!-- 	
 	<?php
 		if($contatos): 
 			foreach($contatos as $contato):
@@ -97,7 +108,7 @@ function contato_ligamos_settings_page() {
 	<?php 
 			endforeach;
 		endif;
-	?>
+	?> -->
 
 	<script>
 		jQuery('#contato').DataTable({

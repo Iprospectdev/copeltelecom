@@ -15829,6 +15829,28 @@ body.menu-opened {
       margin-bottom: 50px;
       padding: 15px; } }
 
+.disponibilidade-header-off {
+  margin-bottom: 130px; }
+  @media (max-width: 1199.98px) {
+    .disponibilidade-header-off {
+      margin-bottom: 50px;
+      margin-top: 100px; } }
+
+.disponibilidade-content-off {
+  margin-top: -500px; }
+  @media (max-width: 1199.98px) {
+    .disponibilidade-content-off {
+      width: auto;
+      position: relative;
+      margin-bottom: 50px;
+      margin-top: 0; }
+      .disponibilidade-content-off .post-content div {
+        display: block !important;
+        text-align: center; }
+        .disponibilidade-content-off .post-content div p {
+          text-align: left;
+          margin-top: 30px; } }
+
 .page-faq {
   padding-bottom: 110px; }
 

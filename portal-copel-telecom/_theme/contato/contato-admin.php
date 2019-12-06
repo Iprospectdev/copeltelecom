@@ -22,18 +22,31 @@ function contato_settings_page() {
 	global $wpdb;
 
 ?>
+
+<?php
+		$contatos = $wpdb->get_var("SELECT COUNT(*) FROM contatos");
+		if ( $_GET['id'] ):
+			$delete = $wpdb->query( "DELETE FROM contatos WHERE id = '". $_GET['id'] ."'" );
+			echo '<div id="message" class="updated"><p><strong>Contato apagado com sucesso.</strong></p></div>';
+		endif;
+	?>
+
 	<div class="wrap">
+
+	<h3>Contatos</h3>
+
+	<p class="btn btn-primary">
+				Total de Contatos: <?php print_r($contatos); ?>
+	</p><br /><br />
+
+	<p>
+		<a href="<?php bloginfo("template_url"); ?>/_theme/contato/download.php" target="_blank" class="btn btn-success">Download dos Contatos</a>
+	</p>
+
 		<div class="container">
-			<h3>Contato</h3>
-			<hr>
-			<?php
-				$contatos = $wpdb->get_results("SELECT * FROM contatos");
-				if ( $_GET['id'] ):
-					$delete = $wpdb->query( "DELETE FROM contatos WHERE id = '". $_GET['id'] ."'" );
-					echo '<div id="message" class="updated"><p><strong>Contato apagado com sucesso.</strong></p></div>';
-				endif;
-			?>
-			<table class="widefat" id="contato">
+			<!-- <h3>Contato</h3> -->
+		
+			<!-- <table class="widefat" id="contato">
 				<thead>
 					<tr>
 						<th>Nome</th>
@@ -67,13 +80,7 @@ function contato_settings_page() {
 						endif;
 					?>
 				</tbody>
-			</table>
-
-			<hr>
-
-			<p>
-				<a href="<?php bloginfo("template_url"); ?>/_theme/contato/download.php" target="_blank" class="btn btn-success">Download dos Contatos</a>
-			</p>
+			</table> -->
 
 		</div>
 	</div>
@@ -82,7 +89,7 @@ function contato_settings_page() {
 		if($contatos): 
 			foreach($contatos as $contato):
 	?>
-	<div class="modal fade" id="modal-<?php echo $contato->id; ?>" tabindex="-1" role="dialog">
+	<!-- <div class="modal fade" id="modal-<?php echo $contato->id; ?>" tabindex="-1" role="dialog">
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
@@ -107,7 +114,7 @@ function contato_settings_page() {
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 	<?php 
 			endforeach;
 		endif;
