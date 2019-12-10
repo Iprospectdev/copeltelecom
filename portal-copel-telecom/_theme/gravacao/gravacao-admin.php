@@ -33,113 +33,49 @@ function gravacao_settings_page() {
 		$contatos = $wpdb->get_var("SELECT COUNT(*)  FROM gravacoes ORDER BY id DESC");
 	?>
 
-<p class="btn btn-primary">
-				Total de Contatos: <?php print_r($contatos); ?>
-	</p><br /><br />
-
-
-<p>
-				<a href="<?php bloginfo("template_url"); ?>/_theme/gravacao/download.php" target="_blank" class="btn btn-success">Download dos Contatos</a>
-</p>
-		<!-- <div class="container">
-			
-			<hr>
-		
-			<table class="widefat" id="gravacao">
-				<thead>
-					<tr>
-						<th>Data da Solicitação</th>
-						<th>Nome</th>
-						<th>Telefone</th>
-						<th>Email</th>
-						<th>Protocolo</th>
-						<th>Opções</th>
-					</tr>
-				</thead>
-				<tbody>
-					<?php
-						if($gravacoes): 
-							foreach($gravacoes as $gravacao):
-					?>
-						<tr>
-							<td><?php echo $gravacao->created; ?></td>
-							<td><?php echo $gravacao->nome_solicitante; ?></td>
-							<td><?php echo $gravacao->telefone_solicitante; ?></td>
-							<td><?php echo $gravacao->email_solicitante; ?></td>
-							<td><?php echo ($gravacao->protocolo_num) ? $gravacao->protocolo_num : " - "; ?></td>
-							<td>
-								<a href="#" data-toggle="modal" data-target="#modal-<?php echo $gravacao->id; ?>" class="btn btn-primary btn-sm"> VER</a>
-								<a href="<?php echo get_bloginfo("url"). "/wp-admin/admin.php?page=" . basename(__FILE__); ?>&id=<?php echo $gravacao->id; ?>" class="btn btn-danger btn-sm">EXCLUIR</a>
-							</td>
-						</tr>
-					<?php 
-							endforeach;
-						endif;
-					?>
-				</tbody>
-			</table>
-
-			<hr>
-
-			<p>
-				<a href="<?php bloginfo("template_url"); ?>/_theme/gravacao/download.php" target="_blank" class="btn btn-success">Download dos Contatos</a>
-			</p>
-
-		</div> -->
+	<div class="col-md-12">
+		<p class="btn btn-primary">Total de Contatos: <?php print_r($contatos); ?></p><br /><br />
 	</div>
-	
-	<!-- <?php
-		if($gravacoes): 
-			foreach($gravacoes as $gravacao):
-	?>
-	<div class="modal fade" id="modal-<?php echo $gravacao->id; ?>" tabindex="-1" role="dialog">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-label="Fechar"><span aria-hidden="true">&times;</span></button>
-					<h4 class="modal-title"><?php echo $gravacao->nome; ?></h4>
-				</div>
-				<div class="modal-body">
 
-					<div class="alert alert-warning text-center">
-						<strong>Data da Solicitação</strong>: <?php echo $gravacao->created; ?>
-					</div>
-					
-					<p><strong>Nome Solicitante</strong>: <?php echo $gravacao->nome_solicitante; ?></p>
-					<p><strong>Telefone Solicitante</strong>: <?php echo $gravacao->telefone_solicitante; ?></p>
-					<p><strong>Email Solicitante</strong>: <?php echo $gravacao->email_solicitante; ?></p>
+	<br /><br /><br />
 
-					<div class="alert alert-success">
-						<?php if ($gravacao->protocolo == "nao"): ?>
-							<p><strong>Nome do atendente</strong>: <?php echo $gravacao->nome_atendente; ?></p>
-							<p><strong>Data da Ligação</strong>: <?php echo $gravacao->data_ligacao; ?></p>
-							<p><strong>Hora da Ligação</strong>: <?php echo $gravacao->hora_ligacao; ?></p>
-							<p><strong>Número de origem da ligação</strong>: <?php echo $gravacao->numero_ligacao; ?></p>
-							<p><strong>Número do Contrato</strong>: <?php echo $gravacao->numero_contrato; ?></p>
-						<?php else: ?>
-							<p><strong>NÚMERO DO PROTOCOLO</strong>: <?php echo $gravacao->protocolo_num; ?></p>
-						<?php endif ?>
-					</div>
-					
-
-				</div>
-			</div>
+	<form method="post" action="<?php bloginfo("template_url"); ?>/_theme/gravacao/download.php">
+	    <div class="col-md-2">
+	    	<label>Mês</label>
+		    <select name="mes" class="form-control col-md-4">
+		      <option value="01">Janeiro</option>
+		      <option value="02">Fevereiro</option>
+		      <option value="03">Março</option>
+		      <option value="04">Abril</option>
+		      <option value="05">Maio</option>
+		      <option value="06">Junho</option>
+		      <option value="07">Julho</option>
+		      <option value="08">Agosto</option>
+		      <option value="09">Setembro</option>
+		      <option value="10">Outubro</option>
+		      <option value="11">Novembro</option>
+		      <option value="12">Dezembro</option>
+		    </select>
 		</div>
-	</div>
-	<?php 
-			endforeach;
-		endif;
-	?> -->
+		<div class="col-md-2">
+			<label>Ano</label>
+			<select name="ano" class="form-control col-md-4">
+			<?php $ano = date('Y'); $i = 1;
 
-	<script>
-		jQuery('#gravacao').DataTable({
-			"order": [],
-			"language": {
-				"url": "//cdn.datatables.net/plug-ins/1.10.7/i18n/Portuguese-Brasil.json"
-			},
-			"order": [[ 0, "desc" ]]
-		});
-	</script>
+			for($i=1; $i<=10; $i++){ ?>	
+		      <option value="<?php echo $ano; ?>"><?php echo $ano; ?></option>
+		     <?php $ano--;} ?> 
+		    </select>
+		</div>
+		<br /><br /><br />
+		<div class="col-md-12">
+		<input type="submit" name="enviar" value="Download dos Contatos" class="btn btn-success">
+		</div>
+		
+	</form>
+
+	</div>
+
 	<?php
 }
 

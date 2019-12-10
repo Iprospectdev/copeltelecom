@@ -4,8 +4,11 @@
 
 	global $wpdb;
 
+	$inicio = $_POST['ano'].'-'.$_POST['mes'].'-01 00:00:00';
+	$fim = $_POST['ano'].'-'.$_POST['mes'].'-31 23:59:00';
+
 	$filename = 'contato_' . date("d-m-y") . '_'.date("h-i").'.xls';
-	$contatos = $wpdb->get_results("SELECT * FROM contatos");
+	$contatos = $wpdb->get_results("SELECT * FROM contatos WHERE created BETWEEN '$inicio' AND '$fim'");
 
 	$contents = "NOME\t";
 	$contents .= "TELEFONE \t";

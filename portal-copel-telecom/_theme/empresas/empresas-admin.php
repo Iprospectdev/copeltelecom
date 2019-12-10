@@ -33,105 +33,49 @@ function contato_empresas_settings_page() {
 		endif;
 	?>
 
-	<p class="btn btn-primary">
-				Total de Contatos: <?php print_r($contatos); ?>
-	</p><br /><br />
-
-	<p>
-				<a href="<?php bloginfo("template_url"); ?>/_theme/empresas/download.php" target="_blank" class="btn btn-success">Download dos Contatos</a>
-	</p>
-
-
-		<!-- <div class="container">
-			<h3>Contato</h3>
-			<hr>
-			<?php
-				$contatos = $wpdb->get_results("SELECT * FROM contatos_produtos");
-				if ( $_GET['id'] ):
-					$delete = $wpdb->query( "DELETE FROM contatos_produtos WHERE id = '". $_GET['id'] ."'" );
-					echo '<div id="message" class="updated"><p><strong>Contato apagado com sucesso.</strong></p></div>';
-				endif;
-			?>
-			<table class="widefat" id="contato">
-				<thead>
-					<tr>
-						<th>Nome</th>
-						<th>Email</th>
-						<th>Telefone</th>
-						<th>Empresa</th>
-						<th>Produto</th>
-						<th>Data</th>
-						<th>Opções</th>
-					</tr>
-				</thead>
-				<tbody>
-					<?php
-						if($contatos): 
-							foreach($contatos as $contato):
-					?>
-						<tr>
-							<td><?php echo $contato->nome; ?></td>
-							<td><?php echo $contato->email; ?></td>
-							<td><?php echo $contato->telefone; ?></td>
-							<td><?php echo $contato->empresa; ?></td>
-							<td><?php echo $contato->produto; ?></td>
-							<td><?php echo $contato->created; ?></td>
-							<td>
-								<a href="#" data-toggle="modal" data-target="#modal-<?php echo $contato->id; ?>" class="btn btn-primary btn-sm"> VER</a>
-								<a href="<?php echo get_bloginfo("url"). "/wp-admin/admin.php?page=" . basename(__FILE__); ?>&id=<?php echo $contato->id; ?>" class="btn btn-danger btn-sm">EXCLUIR</a>
-							</td>
-						</tr>
-					<?php 
-							endforeach;
-						endif;
-					?>
-				</tbody>
-			</table>
-
-			<hr> -->
-
-		
-
-		<!-- </div> -->
+	<div class="col-md-12">
+		<p class="btn btn-primary">Total de Contatos: <?php print_r($contatos); ?></p><br /><br />
 	</div>
-<!-- 	
-	<?php
-		if($contatos): 
-			foreach($contatos as $contato):
-	?>
-	<div class="modal fade" id="modal-<?php echo $contato->id; ?>" tabindex="-1" role="dialog">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-label="Fechar"><span aria-hidden="true">&times;</span></button>
-					<h4 class="modal-title"><?php echo $contato->nome; ?></h4>
-				</div>
-				<div class="modal-body">
-					<p><strong>Data</strong>: <?php echo $contato->created; ?></p>
-					<p><strong>Nome</strong>: <?php echo $contato->nome; ?></p>
-					<p><strong>Telefone</strong>: <?php echo $contato->telefone; ?></p>
-					<p><strong>Email</strong>: <?php echo $contato->email; ?></p>
-					<p><strong>Empresa</strong>: <?php echo $contato->empresa; ?></p>
-					<p><strong>Produto</strong>: <?php echo $contato->produto; ?></p>
-					<p><strong>Mensagem</strong>:</p>
-					<div class="alert alert-warning"><?php echo $contato->mensagem; ?></div>
-				</div>
-			</div>
+
+	<br /><br /><br />
+	<form method="post" action="<?php bloginfo("template_url"); ?>/_theme/empresas/download.php">
+	    <div class="col-md-2">
+	    	<label>Mês</label>
+		    <select name="mes" class="form-control col-md-4">
+		      <option value="01">Janeiro</option>
+		      <option value="02">Fevereiro</option>
+		      <option value="03">Março</option>
+		      <option value="04">Abril</option>
+		      <option value="05">Maio</option>
+		      <option value="06">Junho</option>
+		      <option value="07">Julho</option>
+		      <option value="08">Agosto</option>
+		      <option value="09">Setembro</option>
+		      <option value="10">Outubro</option>
+		      <option value="11">Novembro</option>
+		      <option value="12">Dezembro</option>
+		    </select>
 		</div>
-	</div>
-	<?php 
-			endforeach;
-		endif;
-	?> -->
+		<div class="col-md-2">
+			<label>Ano</label>
+			<select name="ano" class="form-control col-md-4">
+			<?php $ano = date('Y'); $i = 1;
 
-	<script>
-		jQuery('#contato').DataTable({
-			"language": {
-				"url": "//cdn.datatables.net/plug-ins/1.10.7/i18n/Portuguese-Brasil.json"
-			},
-			"order": [[ 5, "desc" ]]
-		});
-	</script>
+			for($i=1; $i<=10; $i++){ ?>	
+		      <option value="<?php echo $ano; ?>"><?php echo $ano; ?></option>
+		     <?php $ano--;} ?> 
+		    </select>
+		</div>
+		<br /><br /><br />
+		<div class="col-md-12">
+		<!-- <p><a href="<?php bloginfo("template_url"); ?>/_theme/empresas/download.php" target="_blank" class="btn btn-success">Download dos Contatos</a></p> -->
+		<input type="submit" name="enviar" value="Download dos Contatos" class="btn btn-success">
+		</div>
+		
+	</form>
+
+	</div>
+
 	<?php
 }
 
