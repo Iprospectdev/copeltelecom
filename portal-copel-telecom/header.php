@@ -321,7 +321,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="<?php $p=get_page_by_title('Speedtest'); echo get_permalink($p->ID); ?>">
+                            <a href="http://tvc.copel.net/index_ookla.html" target="_blank">
                                 <strong>Speedtest</strong>
                             </a>
                         </li>
@@ -366,7 +366,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="<?php $p=get_page_by_title('Speedtest'); echo get_permalink($p->ID); ?>">
+                            <a href="http://tvc.copel.net/index_ookla.html" target="_blank">
                                 <strong>Speedtest</strong>
                             </a>
                         </li>

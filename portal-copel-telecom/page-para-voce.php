@@ -455,7 +455,7 @@ $slides = get_posts(array(
                                 Speedtest
                             </h6>
                             <p>Quer ver como está a velocidade da sua internet?</p>
-                            <a href="<?php $p=get_page_by_title('Speedtest'); echo get_permalink($p->ID); ?>" class="btn-assine">Teste</a>
+                            <a href="http://tvc.copel.net/index_ookla.html" target="_blank" class="btn-assine">Teste</a>
                         </div>
                     </div>
                 </div>

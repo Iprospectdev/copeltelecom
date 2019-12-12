@@ -19,7 +19,7 @@
 								<a href="<?php $p=get_page_by_title('Planos'); echo get_permalink($p->ID); ?>">Planos e preços</a>
 							</li>
 							<li>
-								<a href="<?php $p=get_page_by_title('Speedtest'); echo get_permalink($p->ID); ?>">Speedtest</a>
+								<a href="http://tvc.copel.net/index_ookla.html" target="_blank">Speedtest</a>
 							</li>
 							<li>
 								<a href="<?php $p=get_page_by_title('Para Você'); echo get_permalink($p->ID); ?>#Cobertura">Cobertura</a>
