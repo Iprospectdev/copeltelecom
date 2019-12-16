@@ -1,3 +1,8 @@
+<script type="text/javascript">
+	window.location.href = "http://tvc.clientes.copel.net/index_ookla.html";
+</script>
+
+
 <?php
 	get_header();
 ?>
