@@ -43,30 +43,6 @@
                     <span class="btn-more">Saiba mais</span>
                 </a>
             </div>			
-            <div class="parcerias-item">
-                <a href="<?php $p=get_page_by_title('Esporte Interativo'); echo get_permalink($p->ID); ?>">
-                    <figure>
-                        <img src="<?php bloginfo('template_url'); ?>/_assets/images/ei-menu.jpg" alt="">
-                    </figure>
-                    <img src="<?php bloginfo('template_url'); ?>/_assets/images/logo-ei.png" class="parcerias-item--logo" alt="">
-                    <h6 class="parcerias-item--heading">
-                        Cliente Copel Fibra tem acesso gratuito ao conteúdo do Esporte Interativo para assistir ao vivo o melhor da Liga dos Campeões, Europa League, E-League e muito mais.
-                    </h6>
-                    <span class="btn-more">Saiba mais</span>
-                </a>
-            </div>
-            <div class="parcerias-item">
-                <a href="<?php $p=get_page_by_title('Cartoon Network'); echo get_permalink($p->ID); ?>">
-                    <figure>
-                        <img src="<?php bloginfo('template_url'); ?>/_assets/images/cnja-menu.jpg" alt="">
-                    </figure>
-                    <img src="<?php bloginfo('template_url'); ?>/_assets/images/logo-cnja.png" class="parcerias-item--logo" alt="">
-                    <h6 class="parcerias-item--heading">
-                        Seus desenhos preferidos onde você estiver. Agora quem tem a banda larga Copel Fibra tem acesso ao aplicativo CN Já!, a plataforma de vídeos do Cartoon Network.
-                    </h6>
-                    <span class="btn-more">Saiba mais</span>
-                </a>
-            </div>
 		</div>
 	</section>
 <?php get_footer(); ?>
