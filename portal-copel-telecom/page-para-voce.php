@@ -39,18 +39,8 @@ $slides = get_posts(array(
                             </a>
                         </li>
                         <li>
-                            <a href="#usosideias" class="nav-link js-scrollto" data-show=".home-usos--devices, .home-usos--mockups-usos, .fixed-top">
+                            <a href="#usosideias" class="nav-link js-scrollto" data-show=".home-usos--devices">
                                 Usos Ideais
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#ei" class="nav-link js-scrollto" data-show=".home-usos--devices, .home-usos--mockups-ei, .fixed-top">
-                                Esporta Interativo
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#cnja" class="nav-link js-scrollto" data-show=".home-usos--devices, .home-usos--mockups-cnja">
-                                CN Já!
                             </a>
                         </li>
                         <li>
@@ -167,14 +157,6 @@ $slides = get_posts(array(
                                 <li>
                                     <svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><linearGradient x1="0%" y1="93.8648897%" x2="100%" y2="5.78661152%" id="linearGradient-1"><stop stop-color="#FFA600" offset="0%"></stop>    <stop stop-color="#FF6D00" offset="100%"></stop></linearGradient></defs><g id="00_home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="01_home_carrossel1" transform="translate(-279.000000, -825.000000)"><g id="Group-9" transform="translate(240.000000, 605.000000)"><g id="Group-5" transform="translate(35.000000, 1.000000)"><g id="Group-26-Copy" transform="translate(5.000000, 220.000000)"><g id="Group-3"><g id="Group-6"><g id="Group-4"><g id="Group-30"><circle id="Oval" stroke="url(#linearGradient-1)" stroke-width="2" cx="12" cy="12" r="12"></circle><path d="M5.16020001,12.9233617 C5.05250252,12.8156642 5,12.6520987 5,12.5444012 C5,12.4367037 5.05250252,12.2765037 5.16020001,12.1688062 L5.91475552,11.4142507 C6.1308236,11.1981826 6.45391605,11.1981826 6.66931102,11.4142507 L6.72248666,11.4694456 L9.68551373,14.6451752 C9.79321121,14.7535458 9.95341122,14.7535458 10.0617818,14.6451752 L17.2761671,7.1595269 L17.3313621,7.1595269 C17.5474302,6.94682437 17.8705226,6.94682437 18.0859176,7.1595269 L18.8384538,7.91408241 C19.0538487,8.13015049 19.0538487,8.45324294 18.8384538,8.66863792 L10.2246743,17.6088754 C10.1169768,17.7165729 10.0086062,17.7690754 9.84571374,17.7690754 C9.68551373,17.7690754 9.57781624,17.7165729 9.47011876,17.6088754 L5.2678975,13.0835617 L5.16020001,12.9233617 Z" id="Fill-1" fill="#FF9602"></path></g></g></g></g></g></g></g></g></g></svg>
                                     Modem com Wi-Fi
-                                </li>
-                                <li>
-                                    <svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><linearGradient x1="0%" y1="93.8648897%" x2="100%" y2="5.78661152%" id="linearGradient-1"><stop stop-color="#FFA600" offset="0%"></stop>    <stop stop-color="#FF6D00" offset="100%"></stop></linearGradient></defs><g id="00_home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="01_home_carrossel1" transform="translate(-279.000000, -825.000000)"><g id="Group-9" transform="translate(240.000000, 605.000000)"><g id="Group-5" transform="translate(35.000000, 1.000000)"><g id="Group-26-Copy" transform="translate(5.000000, 220.000000)"><g id="Group-3"><g id="Group-6"><g id="Group-4"><g id="Group-30"><circle id="Oval" stroke="url(#linearGradient-1)" stroke-width="2" cx="12" cy="12" r="12"></circle><path d="M5.16020001,12.9233617 C5.05250252,12.8156642 5,12.6520987 5,12.5444012 C5,12.4367037 5.05250252,12.2765037 5.16020001,12.1688062 L5.91475552,11.4142507 C6.1308236,11.1981826 6.45391605,11.1981826 6.66931102,11.4142507 L6.72248666,11.4694456 L9.68551373,14.6451752 C9.79321121,14.7535458 9.95341122,14.7535458 10.0617818,14.6451752 L17.2761671,7.1595269 L17.3313621,7.1595269 C17.5474302,6.94682437 17.8705226,6.94682437 18.0859176,7.1595269 L18.8384538,7.91408241 C19.0538487,8.13015049 19.0538487,8.45324294 18.8384538,8.66863792 L10.2246743,17.6088754 C10.1169768,17.7165729 10.0086062,17.7690754 9.84571374,17.7690754 C9.68551373,17.7690754 9.57781624,17.7165729 9.47011876,17.6088754 L5.2678975,13.0835617 L5.16020001,12.9233617 Z" id="Fill-1" fill="#FF9602"></path></g></g></g></g></g></g></g></g></g></svg>
-                                    Esporte Interativo
-                                </li>
-                                <li>
-                                    <svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><linearGradient x1="0%" y1="93.8648897%" x2="100%" y2="5.78661152%" id="linearGradient-1"><stop stop-color="#FFA600" offset="0%"></stop>    <stop stop-color="#FF6D00" offset="100%"></stop></linearGradient></defs><g id="00_home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="01_home_carrossel1" transform="translate(-279.000000, -825.000000)"><g id="Group-9" transform="translate(240.000000, 605.000000)"><g id="Group-5" transform="translate(35.000000, 1.000000)"><g id="Group-26-Copy" transform="translate(5.000000, 220.000000)"><g id="Group-3"><g id="Group-6"><g id="Group-4"><g id="Group-30"><circle id="Oval" stroke="url(#linearGradient-1)" stroke-width="2" cx="12" cy="12" r="12"></circle><path d="M5.16020001,12.9233617 C5.05250252,12.8156642 5,12.6520987 5,12.5444012 C5,12.4367037 5.05250252,12.2765037 5.16020001,12.1688062 L5.91475552,11.4142507 C6.1308236,11.1981826 6.45391605,11.1981826 6.66931102,11.4142507 L6.72248666,11.4694456 L9.68551373,14.6451752 C9.79321121,14.7535458 9.95341122,14.7535458 10.0617818,14.6451752 L17.2761671,7.1595269 L17.3313621,7.1595269 C17.5474302,6.94682437 17.8705226,6.94682437 18.0859176,7.1595269 L18.8384538,7.91408241 C19.0538487,8.13015049 19.0538487,8.45324294 18.8384538,8.66863792 L10.2246743,17.6088754 C10.1169768,17.7165729 10.0086062,17.7690754 9.84571374,17.7690754 C9.68551373,17.7690754 9.57781624,17.7165729 9.47011876,17.6088754 L5.2678975,13.0835617 L5.16020001,12.9233617 Z" id="Fill-1" fill="#FF9602"></path></g></g></g></g></g></g></g></g></g></svg>
-                                    CN Já!
                                 </li>
                             </ul>
                             <p>
@@ -319,40 +301,13 @@ $slides = get_posts(array(
             <div class="fixed-top">
                 <img class="home-usos--bg" src="<?php bloginfo('template_url'); ?>/_assets/images/home-usos-bg.png" alt="">
                 <div class="home-usos--devices">
-                    <div class="tv">
-                        <div class="tv--img">
-                            <img src="<?php bloginfo('template_url'); ?>/_assets/images/placeholder/mockup-tv.jpg" class="home-usos--mockups-usos active" alt="">
-                            <img src="<?php bloginfo('template_url'); ?>/_assets/images/placeholder/mockup-ei-tv.jpg" class="home-usos--mockups-ei" alt="">
-                            <img src="<?php bloginfo('template_url'); ?>/_assets/images/placeholder/mockup-cnja-tv.jpg" class="home-usos--mockups-cnja" alt="">
-                        </div>
-                    </div>
-                    <div class="notebook">
-                        <div class="notebook--img">
-                            <img src="<?php bloginfo('template_url'); ?>/_assets/images/placeholder/mockup-notebook.jpg" class="home-usos--mockups-usos active" alt="">
-                            <img src="<?php bloginfo('template_url'); ?>/_assets/images/placeholder/mockup-ei-notebook.jpg" class="home-usos--mockups-ei" alt="">
-                            <img src="<?php bloginfo('template_url'); ?>/_assets/images/placeholder/mockup-cnja-notebook.jpg" class="home-usos--mockups-cnja" alt="">
-                        </div>
-                    </div>
-                    <div class="ipad">
-                        <div class="ipad--img">
-                            <img src="<?php bloginfo('template_url'); ?>/_assets/images/placeholder/mockup-ipad.jpg" class="home-usos--mockups-usos active" alt="">
-                            <img src="<?php bloginfo('template_url'); ?>/_assets/images/placeholder/mockup-ei-ipad.jpg" class="home-usos--mockups-ei" alt="">
-                            <img src="<?php bloginfo('template_url'); ?>/_assets/images/placeholder/mockup-cnja-ipad.jpg" class="home-usos--mockups-cnja" alt="">
-                        </div>
-                    </div>
-                    <div class="phone">
-                        <div class="phone--img">
-                            <img src="<?php bloginfo('template_url'); ?>/_assets/images/placeholder/mockup-phone.jpg" class="home-usos--mockups-usos active" alt="">
-                            <img src="<?php bloginfo('template_url'); ?>/_assets/images/placeholder/mockup-ei-phone.jpg" class="home-usos--mockups-ei" alt="">
-                            <img src="<?php bloginfo('template_url'); ?>/_assets/images/placeholder/mockup-cnja-phone.jpg" class="home-usos--mockups-cnja" alt="">
-                        </div>
-                    </div>
+                    <img src="<?php bloginfo('template_url'); ?>/_assets/images/placeholder/mockup_full.png" class="home-usos--mockups-usos active" alt="">
                 </div>
             </div>
             <section class="home-usos-ideias" id="usosideias">
                 <div class="container d-flex align-items-center">
                     <div class="home-usos--content">
-                        <img src="<?php bloginfo('template_url'); ?>/_assets/images/placeholder/mockups.jpg" class="home-usos--mobile" alt="">
+                        <img src="<?php bloginfo('template_url'); ?>/_assets/images/placeholder/mockup_full.png" class="home-usos--mobile" alt="">
                         <h6>
                             <svg width="112px" height="112px" viewBox="0 0 112 112" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="00_home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="01_home" transform="translate(-797.000000, -2587.000000)"><g id="Group-49" transform="translate(798.000000, 2589.000000)"><g id="Group-25"><g id="Group-41"><g id="Group-42" transform="translate(1.000000, 0.000000)"><g id="Group-56"><circle id="Oval-6" stroke="#FFA600" stroke-width="3" cx="54" cy="54" r="54"></circle><path d="M68.3989703,30.0819608 L39.4873452,52.6945422 C39.2585893,52.8751343 39.3123122,53.239825 39.5843931,53.343271 L49.7796272,57.2514236 C49.9997181,57.335583 50.0881011,57.6055944 49.9598591,57.805473 L38.0628198,76.4187291 C37.8357969,76.7729 38.2725127,77.1779172 38.6017826,76.9166723 L66.7474221,54.7020948 C66.970979,54.5250093 66.922455,54.1708385 66.6607721,54.0603793 L56.8398658,49.957608 C56.6249739,49.8681887 56.543523,49.6016839 56.6717649,49.4053119 L68.9362,30.5851639 C69.1649559,30.2309931 68.7299731,29.8224692 68.3989703,30.0819608 Z" id="Page-1" stroke="#464D5C" stroke-width="2"></path></g></g></g></g></g></g></g></svg>
                             A internet que acompanha o seu uso!
@@ -381,26 +336,6 @@ $slides = get_posts(array(
                     </div>
                 </div>
             </section>
-    		<section class="home-ei home-usos--height" id="ei">
-                <div class="container d-flex align-items-center">
-                    <div class="home-usos--content">
-                        <img src="<?php bloginfo('template_url'); ?>/_assets/images/placeholder/mockups-ei.jpg" class="home-usos--mobile" alt="">
-                        <img src="<?php bloginfo('template_url'); ?>/_assets/images/logo-ei.png" alt="">
-                        <p>Cliente Copel Fibra tem acesso gratuito ao conteúdo do Esporte Interativo para assitir ao vivo o melhor da Liga dos Campeões, Europa League, E-League e muito mais.</p>
-                        <a href="<?php bloginfo('url') ?>/para-voce/parcerias/esporte-interativo" class="btn-more">Saiba mais</a>
-                    </div>
-                </div>
-    		</section>
-    		<section class="home-cn-ja home-usos--height" id="cnja">
-                <div class="container d-flex align-items-center">
-                    <div class="home-usos--content">
-                        <img src="<?php bloginfo('template_url'); ?>/_assets/images/placeholder/mockups-cnja.jpg" class="home-usos--mobile" alt="">
-                        <img src="<?php bloginfo('template_url'); ?>/_assets/images/logo-cnja.png" alt="">
-                        <p>Seu desenhos preferidos onde você estiver. Agora quem tem a banda larga Copel Fibra tem acesso ao aplicativo CN Já!, a plataforma de vídeos do Cartoon Network.</p>
-                        <a href="<?php bloginfo('url') ?>/para-voce/parcerias/cartoon-network" class="btn-more">Saiba mais</a>
-                    </div>
-                </div>
-    		</section>
         </div>
 
 		<section class="home-testes" id="testes">

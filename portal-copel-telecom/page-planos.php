@@ -186,7 +186,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-7 col-12">
-						<img src="<?php bloginfo('template_url'); ?>/_assets/images/planos-mockups.jpg" alt="">
+						<img src="<?php bloginfo('template_url'); ?>/_assets/images/placeholder/mockup_full.png" alt="">
 					</div>
 					<div class="col-md-5 col-12">
 						<h6>
@@ -207,48 +207,6 @@
 						<p>
 							Copel Fibra é fibra óptica de ponta a ponta. A fibra que sai da Copel chega dentro da sua casa. Tudo isso para garantir uma conexão com toda a tecnologia que só a Copel Telecom oferece.
 						</p>
-						<p>
-							Cliente Copel Fibra ainda tem acesso exclusivo ao Esporte Interativo e ao CN Já, sem nenhum custo adicional. Assinou Copel Fibra, ganhou.
-						</p>
-					</div>
-				</div>
-			</div>
-		</article>
-
-		<article class="planos-parcerias">
-			<div class="container">
-				<header class="planos-parcerias--header">
-					<h4>Diversão e conexão para toda a família</h4>
-					<p>Além da melhor estabilidade do mercado e uma conexão que você pode confiar, ao contratar o seu plano Copel Fibra, você e sua família têm a disposição serviços exclusivos e gratuitos, como Esporte Interativo e o CN Já, do Cartoon Network.</p>
-				</header>
-				<div class="row">
-					<div class="col-md-6">
-                        <div class="parcerias-item">
-                            <a href="<?php $p=get_page_by_title('Esporte Interativo'); echo get_permalink($p->ID); ?>">
-                                <figure>
-                                    <img src="<?php bloginfo('template_url'); ?>/_assets/images/ei-menu.jpg" alt="">
-                                </figure>
-                                <img src="<?php bloginfo('template_url'); ?>/_assets/images/logo-ei.png" class="parcerias-item--logo" alt="">
-                                <h6 class="parcerias-item--heading">
-                                    Assista online o melhor do esporte.
-                                </h6>
-                                <span class="btn-more">Saiba mais</span>
-                            </a>
-                        </div>	
-					</div>
-					<div class="col-md-6">
-                        <div class="parcerias-item">
-                            <a href="<?php $p=get_page_by_title('Cartoon Network'); echo get_permalink($p->ID); ?>">
-                                <figure>
-                                    <img src="<?php bloginfo('template_url'); ?>/_assets/images/cnja-menu.jpg" alt="">
-                                </figure>
-                                <img src="<?php bloginfo('template_url'); ?>/_assets/images/logo-cnja.png" class="parcerias-item--logo" alt="">
-                                <h6 class="parcerias-item--heading">
-                                    Seus desenhos preferidos onde você estiver.
-                                </h6>
-                                <span class="btn-more">Saiba mais</span>
-                            </a>
-                        </div>
 					</div>
 				</div>
 			</div>

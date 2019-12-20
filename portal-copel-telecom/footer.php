@@ -25,12 +25,6 @@
 								<a href="<?php $p=get_page_by_title('Para Você'); echo get_permalink($p->ID); ?>#Cobertura">Cobertura</a>
 							</li>
 							<li>
-								<a href="<?php $p=get_page_by_title('Esporte Interativo'); echo get_permalink($p->ID); ?>">Esporte Interativo</a>
-							</li>
-							<li>
-								<a href="<?php $p=get_page_by_title('Cartoon Network'); echo get_permalink($p->ID); ?>">CN Já!</a>
-							</li>
-							<li>
 								<a href="<?php $p=get_page_by_title('App Copel'); echo get_permalink($p->ID); ?>">App Copel</a>
 							</li>
 						</ul>
@@ -70,7 +64,7 @@
 						</ul>
 						<ul>
 							<li>
-								<a href=""><strong>Institucional</strong></a>
+								<a href="<?php $p=get_page_by_title('Sobre Nós'); echo get_permalink($p->ID); ?>"><strong>Institucional</strong></a>
 							</li>
 							<li>
 								<a href="<?php $p=get_page_by_title('Sobre Nós'); echo get_permalink($p->ID); ?>">Sobre nós</a>

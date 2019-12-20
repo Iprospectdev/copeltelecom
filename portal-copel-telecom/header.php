@@ -121,7 +121,7 @@
                     <a href="<?php $p=get_page_by_title('Blog'); echo get_permalink($p->ID); ?>"  class="header-top--btn">Blog</a>
 
                     <!-- <a href="#" data-toggle="modal" data-target="#cidade-modal"class="header-top--btn btn-cidade"><i class="fas fa-map-marker-alt"></i><span class="js-cidade-estado">CIDADE/ESTADO</span></a> -->
-                    <a href="https://www.copeltelecom.com/autoatendimento/pub/login.jsf" target="_blank" class="header-top--btn active">Minha copel</a>
+                    <a href="https://www.copeltelecom.com/autoatendimento/pub/login.jsf" target="_blank" class="header-top--btn active">Minha Copel</a>
                 </div>
             </div>        
         </div>
