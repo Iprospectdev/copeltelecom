@@ -58,6 +58,18 @@
 	$message = str_replace('../../_assets', get_template_directory_uri()."/_assets", $message);
 	$message = str_replace('###CONTENT###', $body, $message);
 
-	echo json_encode($res);
+	if (wp_mail( $destinatario, $assunto, $message, $headers )){
+			
+		echo json_encode($res);
+
+	}else{
+
+		$res = array(
+			"status" => "error"
+		);
+
+		echo json_encode($res);
+
+	}
 
 ?>

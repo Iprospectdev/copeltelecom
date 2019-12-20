@@ -66,14 +66,20 @@ x<?php
 	$message = file_get_contents('email.html');
 	$message = str_replace('../../_assets', get_template_directory_uri()."/_assets", $message);
 	$message = str_replace('###CONTENT###', $body, $message);
+	
+	if (wp_mail( $destinatario, $assunto, $message, $headers )){
+			
+		echo json_encode($res);
+
+	}else{
+
+		$res = array(
+			"status" => "error"
+		);
+
+		echo json_encode($res);
+
+	}
 
 ?>
 
-<?php if (wp_mail( $destinatario, $assunto, $message, $headers )): ?>
-	<p>
-		<strong><?php echo $_POST["nome"] ?></strong>, seu email foi enviado com sucesso. Em breve entraremos em contato pelos dados: <br>
-		<strong><?php echo $_POST["email"] ?></strong> | <strong><?php echo $_POST["telefone"] ?></strong>
-	</p>
-<?php else: ?>
-	<p><strong>Estamos passando por manutenção, tente novamente mais tarde.</strong></p>
-<?php endif ?>
