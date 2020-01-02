@@ -58,17 +58,17 @@
 						                                </div>
 						                                <div class="col-12">
 						                                    <div class="wvt-form-control">
-						                                        <input type="text" id="data_ligacao" name="data_ligacao" placeholder="Data da ligação">
+						                                        <input type="text" id="data_ligacao" name="data_ligacao" class="mask-data" placeholder="Data da ligação">
 						                                    </div>
 						                                </div>
 						                                <div class="col-12">
 						                                    <div class="wvt-form-control">
-						                                        <input type="text" id="hora_ligacao" name="hora_ligacao" placeholder="Hora da ligação">
+						                                        <input type="text" id="hora_ligacao" name="hora_ligacao" class="mask-hora" placeholder="Hora da ligação">
 						                                    </div>
 						                                </div>
 						                                <div class="col-12">
 						                                    <div class="wvt-form-control">
-						                                        <input type="text" id="numero_ligacao" name="numero_ligacao" placeholder="Número de origem da ligação">
+						                                        <input type="text" id="numero_ligacao" name="numero_ligacao" class="mask-tel" placeholder="Número de origem da ligação">
 						                                    </div>
 						                                </div>
 						                                <div class="col-12">
@@ -84,7 +84,7 @@
 						                                </div>
 						                                <div class="col-12">
 						                                    <div class="wvt-form-control">
-						                                        <input type="text" id="telefone_solicitante" name="telefone_solicitante" placeholder="Telefone">
+						                                        <input type="text" id="telefone_solicitante" name="telefone_solicitante" class="mask-tel" placeholder="Telefone">
 						                                    </div>
 						                                </div>
 						                                <div class="col-12">
@@ -135,7 +135,7 @@
 						                                </div>
 						                                <div class="col-12">
 						                                    <div class="wvt-form-control">
-						                                        <input type="text" id="telefone" name="telefone_solicitante" placeholder="Telefone">
+						                                        <input type="text" id="telefone" name="telefone_solicitante" class="mask-tel" placeholder="Telefone">
 						                                    </div>
 						                                </div>
 						                                <div class="col-12">

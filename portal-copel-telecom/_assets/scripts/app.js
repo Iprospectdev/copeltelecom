@@ -98,7 +98,7 @@ window.onload = function() {
       e.preventDefault();
 
         var nome_atendente = $('#nome_atendente').val();
-        var data_ligacao = $('#data').val();
+        var data_ligacao = $('#data_ligacao').val();
         var hora_ligacao = $('#hora_ligacao').val();
         var numero_ligacao = $('#numero_ligacao').val();
         var numero_contrato = $('#numero_contrato').val();
@@ -199,6 +199,8 @@ window.onload = function() {
         }   
     };
     $('.mask-tel').mask(SPMaskBehavior, spOptions);
+    $('.mask-data').mask('00/00/0000');
+    $('.mask-hora').mask('00:00');
 
       $('#form-ligamos-pravc').on('submit', function(e) {
             var $form = $(this);
