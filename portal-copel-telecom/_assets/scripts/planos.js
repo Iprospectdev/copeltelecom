@@ -60,9 +60,9 @@ function success(pos) {
 
 function error(err) {
 	showPlanos('');
-	console.warn('ERROR(' + err.code + '): ' + err.message);
+	// console.warn('ERROR(' + err.code + '): ' + err.message);
 };
-
+ 
 function requestLocation() {
 	var options = {
 	  enableHighAccuracy: true,
@@ -71,7 +71,7 @@ function requestLocation() {
 	};
 	var nav = navigator.geolocation.getCurrentPosition(success, error, options);
 	if(!nav) {
-		console.log('no nav');
+		// console.log('no nav');
 		showPlanos('');
 	}
 }
@@ -109,7 +109,7 @@ function getCityState(lat, lng) {
 				var cidade = (cidade) ? cidade+estado : 'Curitiba';
 				$('.js-cidade-estado').html(cidade);
 				showPlanos(cidade);
-				console.log('geo');
+				// console.log('geo');
 			} else {
 				// alert("No results found");
 			}
@@ -153,7 +153,7 @@ function initFormPlanos() {
 		};
 		saveSession(site);
 		location.reload();
-		console.log('submit' + cidade);
+		// console.log('submit' + cidade);
 		return false;
 	});
 }
@@ -166,25 +166,28 @@ function initDisponibilidadeModal() {
 }
 
 function showPlanos(cidade) {
-	console.log('do show planos');
+	// console.log('do show planos');
 	var item = $('.home-planos-carousel--item').clone();
 	$('.home-planos-carousel').html('');
 	var headercidade = (cidade) ? cidade : 'Curitiba';
 	$('.js-cidade-estado').html(headercidade);
-	console.log('has planos div'+$('.home-planos .planos-geolocation').length);
+	// console.log('has planos div'+$('.home-planos .planos-geolocation').length+' | '+cidade);
 
 	if($('.home-planos .planos-geolocation').length){
+		// console.log(copel.template + "/_theme/service.php")
 		jQuery.ajax({
-			url: copel.template + "/_theme/service.php",
+			url: copel.template + "/_theme/service.php",	
 			type: 'GET',
-			dataType: 'json',
+			dataType: 'json', 
 			data: {
 				planos: 1,
 				tipo: 'f',
 				cidade: cidade
 			}
 		}).done(function(data) {
+			// console.log(data)
 			if(data.bel != null) {
+				// console.log('passou 1');
 				$.each(data.bel, function( index, value ) {
 					item.find('.js-velocidade').html(value.download);
 					item.find('.js-valor').html(value.precoProduto);
@@ -195,14 +198,17 @@ function showPlanos(cidade) {
 				$('.home-planos-list').removeClass('d-none');
 				initDisponibilidadeModal();
 			} else if(copel.session) {
+				// console.log('passou 2');
 				$('.home-planos-list').addClass('d-none');
 				$('.home-planos .planos-geolocation--false').removeClass('d-none');
 			} else {
+				// console.log('passou 3');
 				$('.home-planos-list').addClass('d-none');
 				$('.home-planos .planos-geolocation--true').removeClass('d-none');
 			}
-			// console.log('showPlanos done!');
+			 // console.log('showPlanos done!');
 		}).fail(function(data) {
+			// console.log('passou 4');
 			$('.home-planos-list').addClass('d-none');
 			$('.home-planos .planos-geolocation--true').removeClass('d-none');
 		});
@@ -214,11 +220,10 @@ jQuery(document).ready(function($) {
 	//autoCompleteInit();
 	//initFormPlanos();	
 	//initDisponibilidadeModal();
+	showPlanos('Curitiba');
 });
 
 // start
 // if(copel.session.cidade){
 // 	showPlanos(copel.session.cidade);
 // }
-
-showPlanos('Curitiba');

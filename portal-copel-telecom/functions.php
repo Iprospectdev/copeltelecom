@@ -35,17 +35,17 @@ add_filter('upload_mimes', 'cc_mime_types');
 */
 
 switch (get_bloginfo("url")) {
-	case 'http://www.copeltelecom.com/site':
-		define("WEBSERVICE", "http://www.copeltelecom.com");
-		define("LINK_WVT", "http://www.copel.com/wvtweb/site/verificar_disponibilidade.jsf");
+	case 'https://www.copeltelecom.com/site':
+		define("WEBSERVICE", "https://www.copeltelecom.com");
+		define("LINK_WVT", "https://www.copel.com/wvtweb/site/verificar_disponibilidade.jsf");
 		break;
-	case 'http://hml.copeltelecom.com/site':
-		define("WEBSERVICE", "http://www.copeltelecom.com");
-		define("LINK_WVT", "http://hml.copel.com/wvtweb/site/verificar_disponibilidade.jsf");
+	case 'https://hml.copeltelecom.com/site':
+		define("WEBSERVICE", "https://www.copeltelecom.com");
+		define("LINK_WVT", "https://hml.copel.com/wvtweb/site/verificar_disponibilidade.jsf");
 		break;
 	default:
-		define("WEBSERVICE", "http://www.copeltelecom.com");
-		define("LINK_WVT", "http://www.copel.com/wvtweb/site/verificar_disponibilidade.jsf");
+		define("WEBSERVICE", "https://www.copeltelecom.com");
+		define("LINK_WVT", "https://www.copel.com/wvtweb/site/verificar_disponibilidade.jsf");
 		break;
 }
 

@@ -236,7 +236,6 @@
     </div>
 
 	<?php wp_footer(); ?>
-	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false&key=AIzaSyBFAgYljSm9hYX2tTJ-1h7ZJTBPJDh3KsM"></script> 
 	<script src="<?php bloginfo('template_url');?>/_assets/js/app.bundle.js"></script>
     <script>
 		var $_PowerZAP = { defaultCountry: '+55', widget_id: '1681', company: "5526" };
