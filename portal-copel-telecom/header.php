@@ -321,7 +321,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="http://tvc.copel.net/index_ookla.html" target="_blank">
+                            <a href="<?php bloginfo('url'); ?>/speedtest" target="_blank">
                                 <strong>Speedtest</strong>
                             </a>
                         </li>
@@ -366,7 +366,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="http://tvc.copel.net/index_ookla.html" target="_blank">
+                            <a href="<?php bloginfo('url'); ?>/speedtest" target="_blank">
                                 <strong>Speedtest</strong>
                             </a>
                         </li>

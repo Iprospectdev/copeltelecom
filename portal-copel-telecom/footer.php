@@ -1,4 +1,4 @@
-	<footer class="footer">
+<footer class="footer">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-3">
@@ -19,7 +19,7 @@
 								<a href="<?php $p=get_page_by_title('Planos'); echo get_permalink($p->ID); ?>">Planos e preços</a>
 							</li>
 							<li>
-								<a href="http://tvc.copel.net/index_ookla.html" target="_blank">Speedtest</a>
+								<a href="<?php bloginfo('url'); ?>/speedtest" target="_blank">Speedtest</a>
 							</li>
 							<li>
 								<a href="<?php $p=get_page_by_title('Para Você'); echo get_permalink($p->ID); ?>#Cobertura">Cobertura</a>

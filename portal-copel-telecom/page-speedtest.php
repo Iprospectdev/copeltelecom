@@ -1,8 +1,3 @@
-<script type="text/javascript">
-	window.location.href = "http://tvc.clientes.copel.net/index_ookla.html";
-</script>
-
-
 <?php
 	get_header();
 ?>
@@ -47,7 +42,7 @@
 		</div>
 
 		<div class="speedtest-iframe">
-			<iframe src="http://tvc.copel.net/index_ookla.html" frameborder="0" height="620px" style="height: 620px;" width="100%"></iframe>
+			<iframe src="https://tvc.copeltelecom.com/index_ookla.html" frameborder="0" height="620px" style="height: 620px;" width="100%"></iframe>
 			<div class="container">
 				<svg width="113px" height="169px" viewBox="0 0 113 169" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 				    <g id="01_speedtest" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
