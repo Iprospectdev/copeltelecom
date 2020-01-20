@@ -19,7 +19,7 @@
 								<a href="<?php $p=get_page_by_title('Planos'); echo get_permalink($p->ID); ?>">Planos e preços</a>
 							</li>
 							<li>
-								<a href="<?php bloginfo('url'); ?>/speedtest" target="_blank">Speedtest</a>
+								<a href="<?php bloginfo('url'); ?>/speedtest">Speedtest</a>
 							</li>
 							<li>
 								<a href="<?php $p=get_page_by_title('Para Você'); echo get_permalink($p->ID); ?>#Cobertura">Cobertura</a>

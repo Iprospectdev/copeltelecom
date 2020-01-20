@@ -390,7 +390,7 @@ $slides = get_posts(array(
                                 Speedtest
                             </h6>
                             <p>Quer ver como está a velocidade da sua internet?</p>
-                            <a href="<?php bloginfo('url'); ?>/speedtest" target="_blank" class="btn-assine">Teste</a>
+                            <a href="<?php bloginfo('url'); ?>/speedtest" class="btn-assine">Teste</a>
                         </div>
                     </div>
                 </div>

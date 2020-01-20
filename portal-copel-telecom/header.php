@@ -321,7 +321,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="<?php bloginfo('url'); ?>/speedtest" target="_blank">
+                            <a href="<?php bloginfo('url'); ?>/speedtest">
                                 <strong>Speedtest</strong>
                             </a>
                         </li>
@@ -366,7 +366,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="<?php bloginfo('url'); ?>/speedtest" target="_blank">
+                            <a href="<?php bloginfo('url'); ?>/speedtest">
                                 <strong>Speedtest</strong>
                             </a>
                         </li>
