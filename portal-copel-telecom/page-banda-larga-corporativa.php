@@ -201,7 +201,7 @@
 
                 <div class="container">
                     <small class="home-planos-list--alert">
-                        *Valor de instalação de internet com plano de fidelidade de 12 meses: R$ 100,00. Valor de instalação de internet sem fidelidade: R$ 1.500,00. <a href="<?php bloginfo('url'); ?>/wp-content/uploads/2019/08/Caracter%C3%ADstcas-T%C3%A9cnicas-Copel-Fibra-Assimetrico-jul-2019.pdf" target="_blank">Consulte aqui</a> as características técnicas dos planos de serviço.<br><a href="<?php bloginfo('url'); ?>/wp-content/uploads/2018/04/Contrato-COPEL-FIBRA-2.pdf" target="_blank">Contrato</a> e <a href="<?php bloginfo('url'); ?>/wp-content/uploads/2019/08/Termo-de-oferta-de-benef%C3%ADcio-e-fideliza%C3%A7%C3%A3o-Copel-Fibra-jul-2019-2.pdf" target="_blank">termo de fidelidade</a> aplicável ao plano de serviço. Planos sujeitos a disponibilidade.
+                        *Valor de instalação de internet com plano de fidelidade de 12 meses: R$ 100,00. Valor de instalação de internet sem fidelidade: R$ 1.500,00. <a href="<?php bloginfo('url'); ?>/wp-content/uploads/2019/08/Caracter%C3%ADstcas-T%C3%A9cnicas-Copel-Fibra-Assimetrico-jul-2019.pdf" target="_blank">Consulte aqui</a> as características técnicas dos planos de serviço.<br><a href="<?php bloginfo('url'); ?>/wp-content/uploads/2019/08/Contrato-COPEL-FIBRA-ASSIMETRICO-jul-2019.pdf" target="_blank">Contrato</a> e <a href="<?php bloginfo('url'); ?>/wp-content/uploads/2019/08/Termo-de-oferta-de-benef%C3%ADcio-e-fideliza%C3%A7%C3%A3o-Copel-Fibra-jul-2019-2.pdf" target="_blank">termo de fidelidade</a> aplicável ao plano de serviço. Planos sujeitos a disponibilidade.
                     </small>
 
                 </div>
